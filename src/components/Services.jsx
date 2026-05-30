@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 // SplitText helper for dynamic GSAP word/letter layouts
 const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
@@ -52,9 +56,67 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 
 // Reusable ServiceCard subcomponent
 const ServiceCard = ({ number, title, excerpt, imgSrc, srcSet, projectCount, cardClass, dataWId, linkDataWId }) => {
+    const cardRef = useRef(null);
+
+    useLayoutEffect(() => {
+        const card = cardRef.current;
+        if (!card) return;
+
+        const ctx = gsap.context(() => {
+            const img = card.querySelector(".service-card-image");
+            const link = card.querySelector(".service-card-link");
+
+            // Initial scaling configuration
+            gsap.set(img, { scale: 1 });
+
+            // Service Card Hover zoom effect
+            card.addEventListener("mouseenter", () => {
+                gsap.to(img, { scale: 1.1, duration: 0.5, ease: "power2.out" });
+            });
+
+            card.addEventListener("mouseleave", () => {
+                gsap.to(img, { scale: 1.0, duration: 0.5, ease: "power2.out" });
+            });
+
+            // Action Link button hover animation
+            if (link) {
+                const frontLetters = link.querySelectorAll(".link-front-text .gsap_split_letter");
+                const backLetters = link.querySelectorAll(".link-back-text .gsap_split_letter");
+                const frontArrow = link.querySelector(".link-front-icon");
+                const backArrow = link.querySelector(".link-back-icon");
+
+                // Initialize split texts and back arrow positions
+                gsap.set(backLetters, { yPercent: 100 });
+                gsap.set(backArrow, { x: -25, y: 25 });
+
+                link.addEventListener("mouseenter", () => {
+                    gsap.killTweensOf([frontLetters, backLetters, frontArrow, backArrow]);
+                    gsap.to(frontLetters, { yPercent: -100, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                    gsap.to(backLetters, { yPercent: 0, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                    gsap.to(frontArrow, { x: 25, y: -25, duration: 0.4, ease: "power2.out" });
+                    gsap.to(backArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
+                });
+
+                link.addEventListener("mouseleave", () => {
+                    gsap.killTweensOf([frontLetters, backLetters, frontArrow, backArrow]);
+                    gsap.to(frontLetters, { yPercent: 0, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                    gsap.to(backLetters, { yPercent: 100, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                    gsap.to(frontArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
+                    gsap.to(backArrow, { x: -25, y: 25, duration: 0.4, ease: "power2.out" });
+                });
+            }
+        }, card);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <div data-w-id={dataWId} className={`single-service-card ${cardClass}`}
-            style={{ "willChange": "transform", "transform": "translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}>
+        <div ref={cardRef} data-w-id={dataWId} className={`single-service-card ${cardClass}`}
+            style={{ 
+                "willChange": "transform", 
+                "transformStyle": "preserve-3d",
+                "transition": "none" // Crucial: prevents CSS transition from fighting GSAP scroll animations!
+            }}>
             <div className="service-title-excerpt">
                 <h3 className="service-block-title">{title}</h3>
                 <p className="service-block-excerpt">{excerpt}</p>
@@ -64,15 +126,12 @@ const ServiceCard = ({ number, title, excerpt, imgSrc, srcSet, projectCount, car
                     <img
                         src={imgSrc}
                         loading="lazy"
-                        style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
                         sizes="100vw" alt="Service Card Image"
                         srcSet={srcSet}
                         className="service-card-image"
                     />
-                    {/* <div className="service-counter-text">{number}</div> */}
-                    {/* <div className="total-project-title">{projectCount}</div> */}
                 </div>
-                {/* <a data-w-id={linkDataWId} href="#Contact" className="service-card-link w-inline-block" aria-label="Get This ServiceGet This Service">
+                <a data-w-id={linkDataWId} href="#Contact" className="service-card-link w-inline-block" aria-label="Get This ServiceGet This Service">
                     <div className="service-text-box">
                         <div className="link-front-text">
                             <SplitText text="Get This Service" startIndex={1} plainStyle={true} />
@@ -85,23 +144,23 @@ const ServiceCard = ({ number, title, excerpt, imgSrc, srcSet, projectCount, car
                         <img
                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bf_Arrow%20Right%20Up.svg"
                             loading="lazy"
-                            style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
                             alt="Front Icon" className="link-front-icon"
                         />
                         <img
                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bf_Arrow%20Right%20Up.svg"
                             loading="lazy"
-                            style={{ "transform": "translate3d(-25px, 25px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
-                            alt="Front Icon" className="link-back-icon"
+                            alt="Back Icon" className="link-back-icon"
                         />
                     </div>
-                </a> */}
+                </a>
             </div>
         </div>
     );
 };
 
 export default function Services() {
+    const servicesRef = useRef(null);
+
     // Dynamic service card array mapping
     const servicesList = [
         {
@@ -194,9 +253,84 @@ export default function Services() {
         }
     ];
 
+    useLayoutEffect(() => {
+        let ctx;
+        const timer = setTimeout(() => {
+            gsap.registerPlugin(ScrollTrigger);
+            ctx = gsap.context(() => {
+                const mm = gsap.matchMedia();
+
+                // Desktop layout animations (>= 992px)
+                mm.add("(min-width: 992px)", () => {
+                    // Initial styling matching Webflow starting positions
+                    gsap.set(".project-title-area", { y: 50 });
+                    gsap.set(".single-service-card._01", { y: 50 });
+                    gsap.set(".single-service-card._02", { y: 200 });
+                    gsap.set(".single-service-card._03", { y: 400 });
+                    gsap.set(".single-service-card._04", { y: 600 });
+
+                    // Create parallax scroll timeline with linear mapping to scroll progress
+                    const tl = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: ".service-section-block",
+                            start: "top bottom",
+                            end: "bottom top",
+                            scrub: 1.5, // Ultra-smooth scrolling transition
+                        }
+                    });
+
+                    // Map keyframes 0% -> 45% and 0% -> 60% linearly
+                    tl.fromTo(".project-title-area", { y: 50 }, { y: 0, duration: 45, ease: "none" }, 0)
+                      .fromTo(".single-service-card._01", { y: 50 }, { y: 0, duration: 45, ease: "none" }, 0)
+                      .fromTo(".single-service-card._02", { y: 200 }, { y: 0, duration: 60, ease: "none" }, 0)
+                      .fromTo(".single-service-card._03", { y: 400 }, { y: 0, duration: 60, ease: "none" }, 0)
+                      .fromTo(".single-service-card._04", { y: 600 }, { y: 0, duration: 60, ease: "none" }, 0)
+                      // Fill remaining timeline up to 100 to scale scroll progress to 100% exactly
+                      .to({}, { duration: 40 }, 60);
+
+                    // Spin and scale star subtitle icon on viewport entrance
+                    gsap.fromTo(".project-subtitle-box .subtitle-image-icon",
+                        { rotate: 0, scale: 0 },
+                        {
+                            rotate: 116.964,
+                            scale: 1,
+                            duration: 1.2,
+                            ease: "power4.out",
+                            scrollTrigger: {
+                                trigger: ".project-subtitle-box",
+                                start: "top 90%",
+                                toggleActions: "play none none reverse"
+                            }
+                        }
+                    );
+                });
+
+                // Mobile/Tablet reset (width < 992px)
+                mm.add("(max-width: 991px)", () => {
+                    gsap.set(".project-title-area", { y: 0 });
+                    gsap.set(".single-service-card", { y: 0 });
+                    gsap.set(".project-subtitle-box .subtitle-image-icon", { rotate: 116.964, scale: 1 });
+                });
+
+                // 3D rotation float animation on the decorative background services-shape
+                gsap.to(".services-shape", {
+                    rotateZ: "-=360",
+                    ease: "none",
+                    duration: 35,
+                    repeat: -1,
+                });
+            }, servicesRef);
+        }, 100);
+
+        return () => {
+            clearTimeout(timer);
+            if (ctx) ctx.revert();
+        };
+    }, []);
+
     return (
         <>
-            <div className="service-block">
+            <div ref={servicesRef} className="service-block">
                 <section id="Services" className="service">
                     <div className="we-do-card-shape">
                         <img
@@ -209,7 +343,7 @@ export default function Services() {
                         <div data-w-id="83b6645c-69a4-34e9-aadc-848274859eb2" className="service-section-block">
                             <div className="service-content-wrapper">
                                 <div className="project-title-area"
-                                    style={{ "willChange": "transform", "transform": "translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}>
+                                    style={{ "willChange": "transform", "transformStyle": "preserve-3d" }}>
                                     <div className="project-subtitle-box">
                                         <img
                                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"

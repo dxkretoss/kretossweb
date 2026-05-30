@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 // SplitText helper for dynamic GSAP word/letter layouts inside Contact
 const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, letterStyle }) => {
@@ -12,7 +16,7 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
         translate: "none",
         rotate: "none",
         scale: "none",
-        transform: "translate(20px, 0px) scale(0.8, 0.8)"
+        transform: "translate3d(20px, 0px, 0px) scale(0.8)"
     };
 
     return (
@@ -49,6 +53,8 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 };
 
 export default function Contact() {
+    const contactRef = useRef(null);
+
     // Dropdown and form configuration
     const budgetOptions = [
         { value: "First", label: "First choice" },
@@ -56,9 +62,104 @@ export default function Contact() {
         { value: "Third", label: "Third choice" }
     ];
 
+    useLayoutEffect(() => {
+        let ctx;
+        const timer = setTimeout(() => {
+            gsap.registerPlugin(ScrollTrigger);
+            ctx = gsap.context(() => {
+                // Spin and scale star subtitle icon on viewport entrance
+                gsap.fromTo(".contact-about-block .subtitle-image-icon",
+                    { rotate: 0, scale: 0 },
+                    {
+                        rotate: 116.964,
+                        scale: 1,
+                        duration: 1.2,
+                        ease: "power4.out",
+                        scrollTrigger: {
+                            trigger: ".contact-about-block",
+                            start: "top 90%",
+                            toggleActions: "play none none reverse"
+                        }
+                    }
+                );
+
+                // Stagger fade-in/slide up for form block and about block
+                gsap.fromTo(".contact-form-block",
+                    { opacity: 0, y: 50 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1,
+                        ease: "power4.out",
+                        scrollTrigger: {
+                            trigger: ".contact-form-block",
+                            start: "top 85%",
+                            toggleActions: "play none none reverse"
+                        }
+                    }
+                );
+
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: ".contact-about-block",
+                        start: "top 85%",
+                        toggleActions: "play none none reverse"
+                    }
+                });
+
+                tl.fromTo(".contact-about-block",
+                    { opacity: 0, y: 50 },
+                    { opacity: 1, y: 0, duration: 1, ease: "power4.out" }
+                );
+
+                // Animate SplitText characters in title (slide left + scale up)
+                const titleLetters = contactRef.current.querySelectorAll(".contact-title-02 .gsap_split_letter");
+                tl.fromTo(titleLetters,
+                    { opacity: 0, x: 20, scale: 0.8 },
+                    { opacity: 1, x: 0, scale: 1, duration: 0.8, stagger: 0.02, ease: "power4.out" },
+                    "-=0.7"
+                );
+
+                tl.fromTo(".contact-text",
+                    { opacity: 0, y: 20 },
+                    { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
+                    "-=0.5"
+                );
+
+                // Stagger zoom-in star review ratings inside badge
+                tl.fromTo(".hero-icon-rating._02",
+                    { opacity: 0, scale: 0.8 },
+                    { opacity: 1, scale: 1, duration: 0.6, ease: "power4.out" },
+                    "-=0.4"
+                );
+
+                const ratingStars = contactRef.current.querySelectorAll(".hero-icon-rating._02 .single-review-star");
+                tl.fromTo(ratingStars,
+                    { scale: 0 },
+                    { scale: 1, duration: 0.5, stagger: 0.06, ease: "back.out(1.5)" },
+                    "-=0.2"
+                );
+
+                // Loop rotation on decorative background star shape
+                gsap.to(".contact-shape-icon", {
+                    rotate: 360,
+                    ease: "none",
+                    duration: 25,
+                    repeat: -1,
+                });
+
+            }, contactRef);
+        }, 100);
+
+        return () => {
+            clearTimeout(timer);
+            if (ctx) ctx.revert();
+        };
+    }, []);
+
     return (
         <>
-            <section id="Contact" className="contact">
+            <section ref={contactRef} id="Contact" className="contact">
                 <div className="w-layout-blockcontainer container contact-container w-container">
                     <div className="contact-content-wrapper">
                         {/* Contact Form Block */}
@@ -202,7 +303,7 @@ export default function Contact() {
                 </div>
                 
                 {/* Decorative Shape */}
-                <div className="contact-shape-block">
+                <div className="contact-shape-block" style={{ overflow: "hidden" }}>
                     <img
                         src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0f8518b8df300bcd021c1_emojistar%202%20(1).svg"
                         loading="lazy" alt="Icon" className="contact-shape-icon"

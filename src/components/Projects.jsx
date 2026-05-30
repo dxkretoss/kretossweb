@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 // SplitText helper for dynamic GSAP word/letter layouts
 const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
@@ -68,11 +72,73 @@ const ProjectCard = ({
     linkDataWId
 }) => {
     const isEven = parseInt(id, 10) % 2 === 0;
+    const cardRef = useRef(null);
 
     const itemClass = isEven ? `project-single-item _${id}` : "project-single-item";
     const cardLeftClass = `project-card-left _${id}`;
     const authorWrapperClass = isEven ? `project-author-wrapper _${id}` : "project-author-wrapper";
     const linkIconBoxClass = isEven ? `project-link-icon-box _${id}` : "project-link-icon-box";
+
+    useLayoutEffect(() => {
+        let ctx;
+        const timer = setTimeout(() => {
+            gsap.registerPlugin(ScrollTrigger);
+            const card = cardRef.current;
+            if (!card) return;
+
+            ctx = gsap.context(() => {
+                const mm = gsap.matchMedia();
+
+                // Desktop: staggered scroll scaling + translation parallax
+                mm.add("(min-width: 992px)", () => {
+                    gsap.set(card, { scale: 0.8, y: 150 });
+
+                    gsap.to(card, {
+                        scale: 1,
+                        y: 0,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: card,
+                            start: "top bottom",
+                            end: "center center",
+                            scrub: 1.2,
+                        }
+                    });
+                });
+
+                // Mobile layout fallback reset
+                mm.add("(max-width: 991px)", () => {
+                    gsap.set(card, { scale: 1, y: 0 });
+                });
+
+                // Button Hover Arrow Diagonal Slide
+                const link = card.querySelector(".project-link-box");
+                if (link) {
+                    const frontArrow = link.querySelector(".front-button-icon");
+                    const backArrow = link.querySelector(".back-button-icon");
+
+                    gsap.set(backArrow, { x: -20, y: 20 });
+
+                    link.addEventListener("mouseenter", () => {
+                        gsap.killTweensOf([frontArrow, backArrow]);
+                        gsap.to(frontArrow, { x: 20, y: -20, duration: 0.4, ease: "power2.out" });
+                        gsap.to(backArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
+                    });
+
+                    link.addEventListener("mouseleave", () => {
+                        gsap.killTweensOf([frontArrow, backArrow]);
+                        gsap.to(frontArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
+                        gsap.to(backArrow, { x: -20, y: 20, duration: 0.4, ease: "power2.out" });
+                    });
+                }
+            }, card);
+        }, 100);
+
+        return () => {
+            clearTimeout(timer);
+            if (ctx) ctx.revert();
+        };
+    }, []);
 
     const leftBlock = (
         <div className={cardLeftClass}>
@@ -132,7 +198,6 @@ const ProjectCard = ({
                     <img
                         src={thumbnailImg}
                         loading="lazy"
-                        style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
                         sizes="100vw" alt="Project Thumbnail"
                         srcSet={srcset}
                         className="project-thumbnail"
@@ -161,13 +226,11 @@ const ProjectCard = ({
                                 <img
                                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b13771c3fe4b103672b9f0_Vector%20(Stroke).svg"
                                     loading="lazy"
-                                    style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
                                     alt="Project Card Link Icon" className="front-button-icon"
                                 />
                                 <img
                                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b13771c3fe4b103672b9f0_Vector%20(Stroke).svg"
                                     loading="lazy"
-                                    style={{ "transform": "translate3d(-20px, 20px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
                                     alt="Project Card Link Icon" className="back-button-icon"
                                 />
                             </div>
@@ -180,9 +243,14 @@ const ProjectCard = ({
 
     return (
         <div
+            ref={cardRef}
             data-w-id={dataWId}
             className={itemClass}
-            style={{ "willChange": "transform", "transform": "translate3d(0px, 150px, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
+            style={{ 
+                "willChange": "transform", 
+                "transformStyle": "preserve-3d",
+                "transition": "none" // Disable standard CSS transition to allow conflict-free GSAP scrubbing!
+            }}
         >
             {isEven ? (
                 <>
@@ -268,9 +336,56 @@ export default function Projects() {
         }
     ];
 
+    const projectsRef = useRef(null);
+
+    useLayoutEffect(() => {
+        let ctx;
+        const timer = setTimeout(() => {
+            gsap.registerPlugin(ScrollTrigger);
+            ctx = gsap.context(() => {
+                // Spin and scale star subtitle icon on viewport entrance
+                gsap.fromTo(".project-subtitle-box .subtitle-image-icon",
+                    { rotate: 0, scale: 0 },
+                    {
+                        rotate: 116.964,
+                        scale: 1,
+                        duration: 1.2,
+                        ease: "power4.out",
+                        scrollTrigger: {
+                            trigger: ".project-subtitle-box",
+                            start: "top 90%",
+                            toggleActions: "play none none reverse"
+                        }
+                    }
+                );
+
+                // Title block scale and slide animation
+                gsap.fromTo(".home-project-title",
+                    { opacity: 0, y: 50 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1,
+                        ease: "power4.out",
+                        scrollTrigger: {
+                            trigger: ".home-project-title",
+                            start: "top 90%",
+                            toggleActions: "play none none reverse"
+                        }
+                    }
+                );
+            }, projectsRef);
+        }, 100);
+
+        return () => {
+            clearTimeout(timer);
+            if (ctx) ctx.revert();
+        };
+    }, []);
+
     return (
         <>
-            <section id="Projects" className="project">
+            <section ref={projectsRef} id="Projects" className="project">
                 <div className="w-layout-blockcontainer container w-container">
                     <div className="project-content-wrapper">
                         <div className="home-project-title _02">

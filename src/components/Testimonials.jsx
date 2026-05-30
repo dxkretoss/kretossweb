@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useLayoutEffect, useState, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 // SplitText helper for dynamic GSAP word/letter layouts
 const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
@@ -52,17 +56,56 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 
 // Reusable MarqueeReviewCard Component
 const MarqueeReviewCard = ({ id, author, text, img, srcset, dataWId }) => {
+    const cardRef = useRef(null);
+
+    useLayoutEffect(() => {
+        const card = cardRef.current;
+        if (!card) return;
+
+        const ctx = gsap.context(() => {
+            const authorStar = card.querySelector(".review-author-star");
+            const textBox = card.querySelector(".review-text-box");
+            const overly = card.querySelector(".testimonial-image-overly");
+            const image = card.querySelector(".testimonial-image");
+
+            // Initial states (force visible in the marquee track)
+            gsap.set(authorStar, { y: 0, opacity: 1 });
+            gsap.set(textBox, { y: 20, opacity: 0 });
+            gsap.set(overly, { opacity: 1 });
+            gsap.set(image, { scale: 1 });
+
+            // Interactive hover listeners
+            card.addEventListener("mouseenter", () => {
+                gsap.killTweensOf([authorStar, textBox, overly, image]);
+                gsap.to(authorStar, { y: -20, opacity: 0, duration: 0.3, ease: "power2.out" });
+                gsap.to(overly, { opacity: 0, duration: 0.3, ease: "power2.out" });
+                gsap.to(image, { scale: 1.1, duration: 0.5, ease: "power2.out" });
+                gsap.to(textBox, { y: 0, opacity: 1, duration: 0.3, delay: 0.1, ease: "power2.out" });
+            });
+
+            card.addEventListener("mouseleave", () => {
+                gsap.killTweensOf([authorStar, textBox, overly, image]);
+                gsap.to(textBox, { y: 20, opacity: 0, duration: 0.3, ease: "power2.out" });
+                gsap.to(image, { scale: 1.0, duration: 0.5, ease: "power2.out" });
+                gsap.to(overly, { opacity: 1, duration: 0.3, ease: "power2.out" });
+                gsap.to(authorStar, { y: 0, opacity: 1, duration: 0.3, delay: 0.1, ease: "power2.out" });
+            });
+        }, card);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
         <div 
+            ref={cardRef}
             data-w-id={dataWId}
             className={`testimonial-item-content _${id}`}
-            style={{ "willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(60px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
+            style={{ "willChange": "opacity, transform", "transformStyle": "preserve-3d" }}
         >
             <div className="testimonial-image-box">
                 <img
                     src={img}
                     loading="lazy"
-                    style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
                     sizes="100vw" alt="Review Box"
                     srcSet={srcset}
                     className="testimonial-image" 
@@ -70,25 +113,19 @@ const MarqueeReviewCard = ({ id, author, text, img, srcset, dataWId }) => {
                 <img
                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0eb4b7d940baadd7ed25d_Rectangle%20240649182.png"
                     loading="lazy" style={{ "opacity": "1" }}
-                    alt="Abstract black-to-transparent gradient."
+                    alt="Abstract gradient overlay"
                     className="testimonial-image-overly" 
                 />
             </div>
             <div className="review-content-box">
-                <div 
-                    style={{ "opacity": "1", "transform": "translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
-                    className="review-author-star"
-                >
+                <div className="review-author-star">
                     <img
                         src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69ae9736111a514c404138c5_Frame%202147223258.svg"
                         loading="lazy" alt="Icon" className="author-star-icon" 
                     />
                     <div className="review-author">{author}</div>
                 </div>
-                <div 
-                    style={{ "transform": "translate3d(0px, 20px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "opacity": "0", "transformStyle": "preserve-3d" }}
-                    className="review-text-box"
-                >
+                <div className="review-text-box">
                     <div className="review-text-wrapper">
                         <div className="rating-icon-quote">
                             <img
@@ -143,7 +180,7 @@ const SliderReviewCard = ({ id, author, designation, text, img, rating, lightbox
                         <img
                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288820_Frame%202147223258.svg"
                             loading="lazy" alt="Light Box Rating" className="light-box-rating" 
-                        />
+                    />
                         <div className="review-rating-text">{rating}</div>
                     </div>
                     <div className="review-light-box-block">
@@ -171,7 +208,10 @@ const SliderReviewCard = ({ id, author, designation, text, img, rating, lightbox
 };
 
 export default function Testimonials() {
-    // Scrolling Marquee Testimonials (Duplicated lists inside review-slider-content for infinite scroll effect)
+    const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+    const testimonialsRef = useRef(null);
+
+    // Scrolling Marquee Testimonials
     const marqueeList = [
         {
             id: "01",
@@ -184,7 +224,7 @@ export default function Testimonials() {
         {
             id: "02",
             author: "Silva Olivia",
-            text: "“Buying my first home felt overwhelming at first. Their team answered every question patiently and guided me through each step with clarity. I felt  entire journey.”",
+            text: "“Buying my first home felt overwhelming at first. Their team answered every question patiently and guided me through each step with clarity. I felt journey.”",
             img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea0bafa3ba75245d197f6_Rectangle%20240649176.webp",
             srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea0bafa3ba75245d197f6_Rectangle%20240649176-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea0bafa3ba75245d197f6_Rectangle%20240649176.webp 700w",
             dataWId: "7b05b637-365e-040c-56d8-088ee9ff7423"
@@ -272,9 +312,145 @@ export default function Testimonials() {
         }
     ];
 
+    // 1. Core Scroll and ScrollTrigger Animations (Mount-only, stable coordinates)
+    useLayoutEffect(() => {
+        let ctx;
+        const timer = setTimeout(() => {
+            gsap.registerPlugin(ScrollTrigger);
+            ctx = gsap.context(() => {
+                const mm = gsap.matchMedia();
+
+                // Desktop layout animations (>= 992px)
+                mm.add("(min-width: 992px)", () => {
+                    // Eliminate potential transition stutters
+                    gsap.set([".testimonial-item-content", ".review-slider-content"], { transition: "none" });
+
+                    // Initial states matching Webflow starting positions at keyframe 0
+                    gsap.set(".testimonial-item-content", { x: 60, scale: 1.1, opacity: 0 });
+                    gsap.set(".review-slider-content", { xPercent: 0 });
+
+                    // Create parallax scroll timeline bound to scroll progress
+                    const tl = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: testimonialsRef.current,
+                            start: "top bottom",
+                            end: "bottom top",
+                            scrub: 1.2, // Ultra-smooth scrolling integration
+                        }
+                    });
+
+                    // Keyframe mapping from Webflow a-55 continuous scroll action:
+                    // Staggered card entrance: 5% -> 40%
+                    tl.fromTo(".testimonial-item-content._01", { x: 60, scale: 1.1, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 10, ease: "none" }, 5)
+                      .fromTo(".testimonial-item-content._02", { x: 60, scale: 1.1, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 15)
+                      .fromTo(".testimonial-item-content._03", { x: 60, scale: 1.1, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 20)
+                      .fromTo(".testimonial-item-content._04", { x: 60, scale: 1.1, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 25)
+                      .fromTo(".testimonial-item-content._05", { x: 60, scale: 1.1, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 30)
+                      .fromTo(".testimonial-item-content._06", { x: 60, scale: 1.1, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 35)
+                      // Horizontal scroll tracking: 40% -> 100%
+                      .to(".review-slider-content", { xPercent: -50, duration: 60, ease: "none" }, 40);
+
+                    // Section header elements fade/zoom entrance
+                    gsap.fromTo(".testimonial-title",
+                        { opacity: 0 },
+                        {
+                            opacity: 1,
+                            duration: 1.0,
+                            ease: "power2.out",
+                            scrollTrigger: {
+                                trigger: ".review-ssubtitle-title",
+                                start: "top 85%",
+                                toggleActions: "play none none reverse"
+                            }
+                        }
+                    );
+
+                    gsap.fromTo(".review-section-quote",
+                        { scale: 0, opacity: 0 },
+                        {
+                            scale: 1,
+                            opacity: 1,
+                            duration: 1.2,
+                            ease: "back.out(1.5)",
+                            scrollTrigger: {
+                                trigger: ".review-black-box",
+                                start: "top 80%",
+                                toggleActions: "play none none reverse"
+                            }
+                        }
+                    );
+
+                    // Spin and scale star subtitle icon on viewport entrance
+                    gsap.fromTo(".review-ssubtitle-title .subtitle-image-icon",
+                        { rotate: 0, scale: 0 },
+                        {
+                            rotate: 116.964,
+                            scale: 1,
+                            duration: 1.2,
+                            ease: "power4.out",
+                            scrollTrigger: {
+                                trigger: ".review-ssubtitle-title",
+                                start: "top 90%",
+                                toggleActions: "play none none reverse"
+                            }
+                        }
+                    );
+                });
+
+                // Mobile/Tablet reset (width < 992px)
+                mm.add("(max-width: 991px)", () => {
+                    gsap.set(".testimonial-item-content", { x: 0, scale: 1, opacity: 1, transition: "" });
+                    gsap.set(".review-slider-content", { xPercent: 0 });
+
+                    gsap.fromTo(".review-title-area .subtitle-image-icon",
+                        { rotate: 0, scale: 0 },
+                        {
+                            rotate: 116.964,
+                            scale: 1,
+                            duration: 1.2,
+                            ease: "power4.out",
+                            scrollTrigger: {
+                                trigger: ".review-title-area",
+                                start: "top 90%",
+                                toggleActions: "play none none reverse"
+                            }
+                        }
+                    );
+                });
+
+            }, testimonialsRef);
+        }, 100);
+
+        return () => {
+            clearTimeout(timer);
+            if (ctx) ctx.revert();
+        };
+    }, []);
+
+    // 2. Slider Dot Navigation Translation (Only triggers when slide changes)
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            const slides = gsap.utils.toArray(".review-slider-item");
+            gsap.to(slides, {
+                xPercent: -100 * currentSlideIndex,
+                duration: 0.6,
+                ease: "power2.out"
+            });
+        }, testimonialsRef);
+        return () => ctx.revert();
+    }, [currentSlideIndex]);
+
+    const handlePrev = () => {
+        setCurrentSlideIndex(prev => (prev - 1 + sliderList.length) % sliderList.length);
+    };
+
+    const handleNext = () => {
+        setCurrentSlideIndex(prev => (prev + 1) % sliderList.length);
+    };
+
     return (
         <>
-            <section id="Testimonials" data-w-id="582f9675-a38e-2687-4a72-2679bbd25ff9" className="review update-review">
+            <section ref={testimonialsRef} id="Testimonials" data-w-id="582f9675-a38e-2687-4a72-2679bbd25ff9" className="review update-review">
                 <div className="update-review-box">
                     <div className="testimonial-content">
                         <div className="review-box-content">
@@ -295,7 +471,7 @@ export default function Testimonials() {
                                 <img
                                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aeb31a38bdebd46ea4e4eb_Group%202087325413.svg"
                                     loading="lazy"
-                                    style={{ "opacity": "1", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
+                                    style={{ "opacity": "1", "transformStyle": "preserve-3d" }}
                                     data-w-id="d5730785-2cee-187c-5afb-e116ff888dc1" alt="Quote Icon"
                                     className="review-section-quote" 
                                 />
@@ -307,7 +483,6 @@ export default function Testimonials() {
                                     className="review-slider-content"
                                     style={{ "willChange": "transform", "transform": "translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
                                 >
-                                    {/* Duplicated Lists inside single-review-box wrappers to run Webflow infinite marquee smoothly */}
                                     <div className="single-review-box">
                                         {marqueeList.map((review) => (
                                             <MarqueeReviewCard
@@ -330,7 +505,7 @@ export default function Testimonials() {
                                                 text={review.text}
                                                 img={review.img}
                                                 srcset={review.srcset}
-                                                dataWId={review.dataWId} // Duplicate matching w-ids are fine in Webflow infinite lists
+                                                dataWId={review.dataWId}
                                             />
                                         ))}
                                     </div>
@@ -359,15 +534,20 @@ export default function Testimonials() {
                             data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0"
                             data-nav-spacing="3" data-duration="500" data-infinite="true" role="region" aria-label="carousel"
                         >
-                            <div className="review-mask w-slider-mask" id="w-slider-mask-0">
+                            <div className="review-mask w-slider-mask" id="w-slider-mask-0" style={{ display: "flex", overflow: "hidden" }}>
                                 {sliderList.map((slide, idx) => (
                                     <div 
                                         key={idx}
                                         className="review-slider-item w-slide" 
                                         aria-label={`${slide.id} of ${sliderList.length}`} 
                                         role="group"
-                                        aria-hidden={idx !== 0}
-                                        style={{ "transition": "all", "transform": "translateX(0px)", "opacity": "1" }}
+                                        aria-hidden={idx !== currentSlideIndex}
+                                        style={{ 
+                                            flex: "0 0 100%", 
+                                            width: "100%", 
+                                            display: "block",
+                                            opacity: "1" 
+                                        }}
                                     >
                                         <SliderReviewCard
                                             id={slide.id}
@@ -381,23 +561,24 @@ export default function Testimonials() {
                                     </div>
                                 ))}
                             </div>
-                            <div className="review-left-arrow w-slider-arrow-left" role="button" tabIndex="0" aria-controls="w-slider-mask-0" aria-label="previous slide">
+                            <div className="review-left-arrow w-slider-arrow-left" role="button" tabIndex="0" onClick={handlePrev} aria-label="previous slide" style={{ cursor: "pointer" }}>
                                 <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/699d1705da9a1ee8953e9a5f_Union.svg" loading="lazy" alt="img" className="review-icon-arrow" />
                             </div>
-                            <div className="review-right-arrow w-slider-arrow-right" role="button" tabIndex="0" aria-controls="w-slider-mask-0" aria-label="next slide">
+                            <div className="review-right-arrow w-slider-arrow-right" role="button" tabIndex="0" onClick={handleNext} aria-label="next slide" style={{ cursor: "pointer" }}>
                                 <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/699d1705e6b5d673ce0c553e_Union-2.svg" loading="lazy" alt="img" className="review-icon-arrow" />
                             </div>
                             <div className="slide-nav w-slider-nav w-round w-num">
                                 {sliderList.map((slide, idx) => (
                                     <div 
                                         key={idx}
-                                        className={`w-slider-dot ${idx === 0 ? 'w-active' : ''}`}
+                                        className={`w-slider-dot ${idx === currentSlideIndex ? 'w-active' : ''}`}
                                         data-wf-ignore="" 
                                         aria-label={`Show slide ${slide.id} of ${sliderList.length}`} 
-                                        aria-pressed={idx === 0}
+                                        aria-pressed={idx === currentSlideIndex}
                                         role="button" 
-                                        tabIndex={idx === 0 ? 0 : -1} 
-                                        style={{ "marginLeft": "3px", "marginRight": "3px" }}
+                                        onClick={() => setCurrentSlideIndex(idx)}
+                                        tabIndex={idx === currentSlideIndex ? 0 : -1} 
+                                        style={{ "marginLeft": "3px", "marginRight": "3px", cursor: "pointer" }}
                                     >
                                         {slide.id}
                                     </div>

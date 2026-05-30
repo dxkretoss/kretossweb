@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 // SplitText helper for dynamic GSAP word/letter layouts
 const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
@@ -14,8 +18,7 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
             translate: "none",
             rotate: "none",
             scale: "none",
-            transform: "translate(20px, 0px) scale(0.8, 0.8)",
-            opacity: "0"
+            transform: "translate3d(0px, 0px, 0px)"
         };
 
     return (
@@ -61,12 +64,8 @@ const ProductTicker = ({ directionClass = "top", list }) => {
         ? "top-single-ticker" 
         : "ticker-content-box";
 
-    const styleObj = directionClass === "top"
-        ? { "transform": "translate3d(73.336%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "willChange": "transform" }
-        : { "transform": "translate3d(-7.967%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "willChange": "transform" };
-
     const renderTrack = () => (
-        <div className={contentClass} style={styleObj}>
+        <div className={contentClass} style={{ display: "flex", flexShrink: 0 }}>
             {list.map((item, idx) => (
                 <div key={idx} className="product-ticker-single">
                     <img
@@ -80,8 +79,8 @@ const ProductTicker = ({ directionClass = "top", list }) => {
     );
 
     return (
-        <div className={`product-ticker-block ${directionClass}`}>
-            <div className={wrapperClass}>
+        <div className={`product-ticker-block ${directionClass}`} style={{ overflow: "hidden", display: "flex" }}>
+            <div className={wrapperClass} style={{ display: "flex", width: "max-content", flexShrink: 0 }}>
                 {renderTrack()}
                 {renderTrack()}
             </div>
@@ -96,7 +95,7 @@ const SlideImage = ({ type, img, srcset }) => {
         : "product-single-image-box horizontal-image";
 
     return (
-        <div className={boxClass}>
+        <div className={boxClass} style={{ flexShrink: 0 }}>
             <img
                 src={img}
                 loading="lazy"
@@ -192,9 +191,69 @@ export default function Product() {
         }
     ];
 
+    const productRef = useRef(null);
+
+    useLayoutEffect(() => {
+        let ctx;
+        const timer = setTimeout(() => {
+            gsap.registerPlugin(ScrollTrigger);
+            ctx = gsap.context(() => {
+                // Spin and scale star subtitle icon on viewport entrance
+                gsap.fromTo(".product-subtitle-box .subtitle-image-icon",
+                    { rotate: 0, scale: 0 },
+                    {
+                        rotate: 116.964,
+                        scale: 1,
+                        duration: 1.2,
+                        ease: "power4.out",
+                        scrollTrigger: {
+                            trigger: ".product-subtitle-box",
+                            start: "top 90%",
+                            toggleActions: "play none none reverse"
+                        }
+                    }
+                );
+
+                // 1. Ticker Row 1 (top-ticker): continuous infinite scroll left
+                gsap.to(".project-top-ticker .top-single-ticker", {
+                    xPercent: -50,
+                    ease: "none",
+                    duration: 20,
+                    repeat: -1,
+                });
+
+                // 2. Ticker Row 2 (project-ticker): continuous infinite scroll right
+                gsap.fromTo(".project-ticker .ticker-content-box",
+                    { xPercent: -50 },
+                    { xPercent: 0, ease: "none", duration: 20, repeat: -1 }
+                );
+
+                // 3. Product image row 1 (duplicated 3 times): scroll left
+                gsap.to(".product-single-slider._01", {
+                    xPercent: -100 / 3,
+                    ease: "none",
+                    duration: 30,
+                    repeat: -1,
+                });
+
+                // 4. Product image row 2 (duplicated 3 times): scroll right
+                gsap.fromTo(".product-single-slider._02",
+                    { xPercent: -100 / 3 },
+                    { xPercent: 0, ease: "none", duration: 30, repeat: -1 }
+                );
+
+            }, productRef);
+        }, 100);
+
+        return () => {
+            clearTimeout(timer);
+            if (ctx) ctx.revert();
+        };
+    }, []);
+
     return (
         <>
-            <div className="product-block">
+            <div ref={productRef} className="product-block">
                 <section id="Product" className="product">
                     <div className="product-content-wrapper">
                         <div className="w-layout-blockcontainer container w-container">
@@ -217,46 +276,44 @@ export default function Product() {
                         <div className="gallery-content-block">
                             <ProductTicker directionClass="top" list={tickerItems} />
                             
-                            <div className="product-tab-pane-dev">
-                                <div className="product-slider-wrapper">
-                                    {/* Slide row 1: Track _01 duplicated three times for infinite marquee */}
-                                    <div className="product-single-slider _01" style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(-33.755%, 0px, 0px)" }}>
+                            <div className="product-tab-pane-dev" style={{ overflow: "hidden" }}>
+                                <div className="product-slider-wrapper" style={{ display: "flex", width: "max-content", flexShrink: 0 }}>
+                                    <div className="product-single-slider _01" style={{ display: "flex", flexShrink: 0 }}>
                                         {trackOneList.map((item, idx) => (
                                             <SlideImage key={`track1-1-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
-                                    <div className="product-single-slider _01" style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(-33.755%, 0px, 0px)" }}>
+                                    <div className="product-single-slider _01" style={{ display: "flex", flexShrink: 0 }}>
                                         {trackOneList.map((item, idx) => (
                                             <SlideImage key={`track1-2-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
-                                    <div className="product-single-slider _01" style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(-33.755%, 0px, 0px)" }}>
+                                    <div className="product-single-slider _01" style={{ display: "flex", flexShrink: 0 }}>
                                         {trackOneList.map((item, idx) => (
                                             <SlideImage key={`track1-3-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
                                 </div>
-
-                                <div className="product-slider-wrapper">
-                                    {/* Slide row 2: Track _02 duplicated with subtle variations in Webflow tracks */}
-                                    <div className="product-single-slider _02" style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(-66.245%, 0px, 0px)" }}>
+ 
+                                <div className="product-slider-wrapper" style={{ display: "flex", width: "max-content", flexShrink: 0 }}>
+                                    <div className="product-single-slider _02" style={{ display: "flex", flexShrink: 0 }}>
                                         {trackTwoRepOne.map((item, idx) => (
                                             <SlideImage key={`track2-1-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
-                                    <div className="product-single-slider _02" style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(-66.245%, 0px, 0px)" }}>
+                                    <div className="product-single-slider _02" style={{ display: "flex", flexShrink: 0 }}>
                                         {trackTwoRepTwo.map((item, idx) => (
                                             <SlideImage key={`track2-2-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
-                                    <div className="product-single-slider _02" style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(-66.245%, 0px, 0px)" }}>
+                                    <div className="product-single-slider _02" style={{ display: "flex", flexShrink: 0 }}>
                                         {trackTwoRepThree.map((item, idx) => (
                                             <SlideImage key={`track2-3-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
                                 </div>
                             </div>
-
+ 
                             <ProductTicker directionClass="two" list={tickerItems} />
                         </div>
                     </div>

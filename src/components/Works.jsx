@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 // SplitText helper for dynamic GSAP word/letter layouts
 const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
@@ -87,7 +91,6 @@ const WorkStep = ({ id, duration, title, description, icon, isFirst, isLast }) =
                 style={{ 
                     "willChange": "opacity, transform", 
                     "opacity": "0", 
-                    "transform": "translate3d(0px, 0px, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", 
                     "transformStyle": "preserve-3d" 
                 }}
             >
@@ -153,9 +156,103 @@ export default function Works() {
         }
     ];
 
+    const worksRef = useRef(null);
+
+    useLayoutEffect(() => {
+        let ctx;
+        const timer = setTimeout(() => {
+            gsap.registerPlugin(ScrollTrigger);
+            ctx = gsap.context(() => {
+                const cards = gsap.utils.toArray(".step-card-wrapper-data");
+
+                // Infinite 3D rotation on decorative helix background shape
+                gsap.to(".step-shape-icon", {
+                    rotateZ: "+=360",
+                    ease: "none",
+                    duration: 40,
+                    repeat: -1,
+                });
+
+                // Spin and scale star subtitle icon on viewport entrance
+                gsap.fromTo(".work-title .subtitle-image-icon",
+                    { rotate: 0, scale: 0 },
+                    {
+                        rotate: 116.964,
+                        scale: 1,
+                        duration: 1.2,
+                        ease: "power4.out",
+                        scrollTrigger: {
+                            trigger: ".work-title",
+                            start: "top 90%",
+                            toggleActions: "play none none reverse"
+                        }
+                    }
+                );
+
+                // Title block slide entrance
+                gsap.fromTo(".work-title",
+                    { opacity: 0, y: 50 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1,
+                        ease: "power4.out",
+                        scrollTrigger: {
+                            trigger: ".work-title",
+                            start: "top 90%",
+                            toggleActions: "play none none reverse"
+                        }
+                    }
+                );
+
+                // Staggered Scroll-highlighting and fade-scale for step cards
+                // Initialize starting states
+                cards.forEach((card) => {
+                    const border = card.querySelector("[class^='border-box-border']");
+                    const cardBox = card.querySelector("[class^='step-card-wrapper-box']");
+                    gsap.set(cardBox, { scale: 0.8, opacity: 0 });
+                    gsap.set(border, { backgroundColor: "rgb(180, 210, 249)" });
+                });
+
+                // Single ScrollTrigger timeline bound to the parent sticky scrolling container
+                const stepTl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: worksRef.current,
+                        start: "top 60px",
+                        end: "bottom bottom",
+                        scrub: 1,
+                    }
+                });
+
+                cards.forEach((card, index) => {
+                    const border = card.querySelector("[class^='border-box-border']");
+                    const cardBox = card.querySelector("[class^='step-card-wrapper-box']");
+
+                    stepTl.to(cardBox, {
+                        scale: 1,
+                        opacity: 1,
+                        duration: 1.0,
+                        ease: "power2.out"
+                    }, index * 1.2)
+                    .to(border, {
+                        backgroundColor: "#0e54f1",
+                        duration: 1.0,
+                        ease: "power2.out"
+                    }, "<");
+                });
+
+            }, worksRef);
+        }, 100);
+
+        return () => {
+            clearTimeout(timer);
+            if (ctx) ctx.revert();
+        };
+    }, []);
+
     return (
         <>
-            <section id="Work" className="step">
+            <section ref={worksRef} id="Work" className="step">
                 <div className="step-shape-box">
                     <img
                         src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b111dabcb84206b63f263a_cube-helix%202.svg"
@@ -167,7 +264,8 @@ export default function Works() {
                     <div className="step-block-data">
                         <div className="w-layout-blockcontainer container w-container">
                             <div className="step-content-wrapper">
-                                <div className="project-title-area work-title">
+                                <div className="project-title-area work-title"
+                                    style={{ "willChange": "transform", "transformStyle": "preserve-3d" }}>
                                     <div className="project-subtitle-box">
                                         <img
                                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"

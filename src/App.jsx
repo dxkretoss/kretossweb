@@ -33,7 +33,13 @@ export default function App() {
             }
         }
 
-        window.scrollTo(0, 0);
+
+        // Ensure GSAP ScrollTriggers refresh their coordinates once React DOM is fully mounted
+        setTimeout(() => {
+            if (window.ScrollTrigger) {
+                window.ScrollTrigger.refresh();
+            }
+        }, 200);
     }, []);
 
     return (

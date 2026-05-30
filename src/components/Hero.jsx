@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
-// Highly-efficient React component to dynamically generate the exact nested HTML structures
-// and sequential classNames expected by Webflow's external CSS and GSAP SplitText engines.
+// SplitText component - generates character-level DOM elements for GSAP animation.
+// Characters start at translate3d(0, 30px, 0) opacity:0 – identical to Webflow's IX2 initial state.
 const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
     const words = text.split(" ");
     let globalLetterIdx = startIndex;
@@ -11,11 +12,11 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
         : {
             position: "relative",
             display: "inline-block",
-            opacity: "1",
+            opacity: "0",
             translate: "none",
             rotate: "none",
             scale: "none",
-            transform: "translate3d(0px, 0px, 0px)"
+            transform: "translate3d(0px, 30px, 0px)"
         };
 
     return (
@@ -54,7 +55,7 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 // Subcomponent: RatingBadge
 const RatingBadge = () => {
     return (
-        <div data-w-id="7bf5d453-3919-ceec-d900-dbc18b9514f9" style={{ opacity: "1" }} className="hero-icon-rating">
+        <div style={{ opacity: 0 }} className="hero-icon-rating">
             <div className="hero-icon-box">
                 <img
                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887f8_Frame%202147227821.svg"
@@ -76,21 +77,12 @@ const RatingBadge = () => {
                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69acfb7509f4926e7df68a47_Vector.svg"
                             alt="Review Star"
                             className={`single-review-star _0${i + 1}`}
-                            style={{
-                                transform: "translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                transformStyle: "preserve-3d"
-                            }}
+                            style={{ transform: "scale(0)" }}
                         />
                     ))}
                     <div
-                        data-w-id="24d529b2-eddf-a276-b94a-c690df1fa54f"
                         className="trust-score"
-                        style={{
-                            transform: "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                            opacity: "0.999609",
-                            willChange: "transform, opacity"
-                        }}
+                        style={{ opacity: 0 }}
                     >
                         Trust Score
                     </div>
@@ -110,40 +102,31 @@ const ScrollingTags = () => {
     ];
 
     return (
-        <div data-w-id="69a0a433-8305-9809-e39a-ccf7f85fdd87" style={{ opacity: "1" }} className="hero-icon-text">
+        <div style={{ opacity: 0 }} className="hero-icon-text">
             <div className="hero-meta-icon-box">
                 <img
                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69acfcaea6bf20ffc4b2d559_Vector.svg"
                     alt="Hero Icon"
                     className="hero-meta-box-icon"
-                    style={{ translate: "none", rotate: "none", scale: "none", transform: "translate3d(0px, 0px, 0px) rotateY(57.28deg)" }}
+                    style={{ transform: "rotateY(57.28deg)" }}
                 />
             </div>
             <div className="hero-meta-tag-box">
-                {tags.map((tag, idx) => {
-                    const translateMap = ["-100%", "-200%", "-100%", "0%"];
-                    const willChangeVal = idx === 2 ? "transform" : undefined;
-                    return (
-                        <div
-                            key={tag.key}
-                            className={`single-tag-item ${tag.key}`}
-                            style={{
-                                transform: `translate3d(0px, ${translateMap[idx]}, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`,
-                                transformStyle: "preserve-3d",
-                                willChange: willChangeVal
-                            }}
-                        >
-                            {tag.text}
-                        </div>
-                    );
-                })}
+                {tags.map((tag) => (
+                    <div
+                        key={tag.key}
+                        className={`single-tag-item ${tag.key}`}
+                    >
+                        {tag.text}
+                    </div>
+                ))}
             </div>
         </div>
     );
 };
 
 // Subcomponent: Reusable FloatingBadge
-const FloatingBadge = ({ text, type = 'purple', dataWId, arrowRot = -17.9137, badgeClass = '', iconSrc, arrowSvg }) => {
+const FloatingBadge = ({ text, type = 'purple', arrowRot = -17.9137, badgeClass = '', iconSrc, arrowSvg }) => {
     // Arrow rotate style
     const arrowStyle = {
         translate: "none",
@@ -154,7 +137,7 @@ const FloatingBadge = ({ text, type = 'purple', dataWId, arrowRot = -17.9137, ba
 
     if (type === 'web') {
         return (
-            <div data-w-id={dataWId} style={{ opacity: "1" }} className={`hero-shap-wrapper ${badgeClass}`}>
+            <div style={{ opacity: 0 }} className={`hero-shap-wrapper ${badgeClass}`}>
                 <div className="hero-arrow-box _01" style={arrowStyle}>
                     {arrowSvg || (
                         <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,7 +155,7 @@ const FloatingBadge = ({ text, type = 'purple', dataWId, arrowRot = -17.9137, ba
 
     if (type === 'orange') {
         return (
-            <div data-w-id={dataWId} style={{ opacity: "1" }} className={`hero-shap-wrapper right-shape ${badgeClass}`}>
+            <div style={{ opacity: 0 }} className={`hero-shap-wrapper right-shape ${badgeClass}`}>
                 <div className="hero-arrow-box right-arrow" style={arrowStyle}>
                     <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288810_Vector%204526%20(1).svg" alt="Hero Arrow Icon" className="hero-arrow-icon" />
                 </div>
@@ -186,7 +169,7 @@ const FloatingBadge = ({ text, type = 'purple', dataWId, arrowRot = -17.9137, ba
 
     // Default Purple UI Design Badge
     return (
-        <div data-w-id={dataWId} style={{ opacity: "1" }} className={`hero-shap-wrapper _01 ${badgeClass}`}>
+        <div style={{ opacity: 0 }} className={`hero-shap-wrapper _01 ${badgeClass}`}>
             <div className="hero-arrow-box _01" style={arrowStyle}>
                 <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28880e_Vector%204526.svg" alt="Hero Arrow Icon" className="hero-arrow-icon" />
             </div>
@@ -199,17 +182,17 @@ const FloatingBadge = ({ text, type = 'purple', dataWId, arrowRot = -17.9137, ba
 };
 
 // Subcomponent: PrimaryCTAButton
-const PrimaryCTAButton = ({ href = "#Contact", dataWId }) => {
+const PrimaryCTAButton = ({ href = "#Contact" }) => {
     return (
         <div className="hero-button">
-            <a data-w-id={dataWId} href={href} className="primary-button w-inline-block" aria-label="LET’S TALKLET’S TALK">
+            <a href={href} className="primary-button w-inline-block" aria-label="LET'S TALKLET'S TALK">
                 <div className="button-text-wrapper">
                     <div className="button-text-box">
                         <div className="button-front-text">
-                            <SplitText text="LET’S TALK" startIndex={1} plainStyle={true} />
+                            <SplitText text="LET'S TALK" startIndex={1} plainStyle={true} />
                         </div>
                         <div className="button-back-text">
-                            <SplitText text="LET’S TALK" startIndex={10} plainStyle={true} />
+                            <SplitText text="LET'S TALK" startIndex={10} plainStyle={true} />
                         </div>
                     </div>
                 </div>
@@ -245,9 +228,169 @@ const PrimaryCTAButton = ({ href = "#Contact", dataWId }) => {
 };
 
 export default function Hero() {
+    const heroRef = useRef(null);
+
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            // ========================================================
+            // WEBFLOW-EXACT ANIMATION: outQuart easing, 1000ms duration
+            // Character-by-character from translate3d(0, 30px, 0) → (0, 0, 0)
+            // opacity: 0 → 1, all with outQuart easing
+            // ========================================================
+
+            // 1. Rating Badge cross-fade (runs independently / asynchronously)
+            const ratingTl = gsap.timeline();
+            ratingTl.to(".hero-icon-rating", {
+                opacity: 1, y: 0, duration: 1, ease: "power4.out"
+            });
+            ratingTl.to(".trust-score", {
+                opacity: 1, scale: 1, duration: 1, ease: "power4.out"
+            }, "-=0.6");
+            ratingTl.to(".trust-score", {
+                opacity: 0, scale: 0.8, duration: 0.4, ease: "power2.in"
+            }, "+=1.5");
+            ratingTl.fromTo(".single-review-star",
+                { scale: 0 },
+                { scale: 1, duration: 0.5, stagger: 0.06, ease: "back.out(1.5)" },
+                "-=0.2"
+            );
+
+            // 2. Main Timeline – NO DELAYS, starts immediately
+            const tl = gsap.timeline();
+
+            // Scrolling tags container fade in
+            tl.to(".hero-icon-text", {
+                opacity: 1, y: 0, duration: 1, ease: "power4.out"
+            }, 0);
+
+            // Hero title containers: exact Webflow outQuart, 1000ms
+            // Each title goes: opacity 0→1, y 100→0 (Webflow's slideInBottom)
+            tl.fromTo(".hero-title.banner",
+                { opacity: 0, y: 100 },
+                { opacity: 1, y: 0, duration: 1, ease: "power4.out" },
+                0.1
+            );
+            tl.fromTo(".hero-title.banner-02",
+                { opacity: 0, y: 100 },
+                { opacity: 1, y: 0, duration: 1, ease: "power4.out" },
+                0.2
+            );
+            tl.fromTo(".hero-title._03",
+                { opacity: 0, y: 100 },
+                { opacity: 1, y: 0, duration: 1, ease: "power4.out" },
+                0.3
+            );
+            tl.fromTo(".hero-bbottom-ttitle.banner-04",
+                { opacity: 0, y: 100 },
+                { opacity: 1, y: 0, duration: 1, ease: "power4.out" },
+                0.4
+            );
+
+            // Star icon: scale 0→1, rotate to -43.425deg
+            tl.fromTo(".brans-star-image",
+                { scale: 0, rotate: 0 },
+                { scale: 1, rotate: -43.425, duration: 1, ease: "power4.out" },
+                0.2
+            );
+
+            // Hero images: scale3d(1.3,1.3,1) → scale3d(1,1,1), opacity 0→1
+            // Matches reference: transform: translate3d(0, 0, 0) scale3d(1.3, 1.3, 1)
+            tl.fromTo(".hero-image-01",
+                { opacity: 0, scale: 1.3 },
+                { opacity: 1, scale: 1, duration: 1, ease: "power4.out" },
+                0.3
+            );
+            tl.fromTo(".hero-image-02",
+                { opacity: 0, scale: 1.3 },
+                { opacity: 1, scale: 1, duration: 1, ease: "power4.out" },
+                0.4
+            );
+
+            // Floating badges
+            tl.fromTo(".hero-shap-wrapper._01",
+                { opacity: 0, scale: 0.8 },
+                { opacity: 1, scale: 1, duration: 1, ease: "power4.out" },
+                0.5
+            );
+            tl.fromTo(".hero-shap-wrapper.right-shape",
+                { opacity: 0, scale: 0.8 },
+                { opacity: 1, scale: 1, duration: 1, ease: "power4.out" },
+                0.6
+            );
+
+            // Bottom text & CTA button
+            tl.fromTo(".hero-text-button",
+                { opacity: 0, y: 30 },
+                { opacity: 1, y: 0, duration: 1, ease: "power4.out" },
+                0.5
+            );
+
+            // Gentle continuous floating drift for badges
+            gsap.to(".hero-shap-wrapper._01", {
+                y: -6, duration: 2.5, repeat: -1, yoyo: true, ease: "power1.inOut"
+            });
+            gsap.to(".hero-shap-wrapper.right-shape", {
+                y: 6, duration: 2.8, repeat: -1, yoyo: true, ease: "power1.inOut"
+            });
+
+            // Loop vertical scrolling tags
+            const tags = gsap.utils.toArray(".single-tag-item");
+            if (tags.length > 0) {
+                gsap.set(tags, { yPercent: 0 });
+                const tagTimeline = gsap.timeline({ repeat: -1 });
+
+                tagTimeline.to(tags[0], { yPercent: -100, duration: 0.6, ease: "power2.inOut" }, "+=2.0");
+                tagTimeline.to(tags[1], { yPercent: -100, duration: 0.6, ease: "power2.inOut" }, "<");
+
+                tagTimeline.to(tags[1], { yPercent: -200, duration: 0.6, ease: "power2.inOut" }, "+=2.0");
+                tagTimeline.to(tags[2], { yPercent: -100, duration: 0.6, ease: "power2.inOut" }, "<");
+
+                tagTimeline.to(tags[2], { yPercent: -200, duration: 0.6, ease: "power2.inOut" }, "+=2.0");
+                tagTimeline.to(tags[3], { yPercent: -100, duration: 0.6, ease: "power2.inOut" }, "<");
+
+                tagTimeline.set(tags[0], { yPercent: 100 });
+                tagTimeline.to(tags[3], { yPercent: -200, duration: 0.6, ease: "power2.inOut" }, "+=2.0");
+                tagTimeline.to(tags[0], { yPercent: 0, duration: 0.6, ease: "power2.inOut" }, "<");
+
+                tagTimeline.set(tags[1], { yPercent: 0 });
+                tagTimeline.set(tags[2], { yPercent: 0 });
+                tagTimeline.set(tags[3], { yPercent: 0 });
+            }
+
+            // Button hover – scoped to heroRef only
+            const button = heroRef.current?.querySelector(".primary-button");
+            if (button) {
+                const frontLetters = button.querySelectorAll(".button-front-text .gsap_split_letter");
+                const backLetters = button.querySelectorAll(".button-back-text .gsap_split_letter");
+                const frontArrow = button.querySelector(".button-front-arrow");
+                const backArrow = button.querySelector(".button-back-arrow");
+
+                gsap.set(backLetters, { yPercent: 100 });
+
+                button.addEventListener("mouseenter", () => {
+                    gsap.killTweensOf([frontLetters, backLetters, frontArrow, backArrow]);
+                    gsap.to(frontLetters, { yPercent: -100, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                    gsap.to(backLetters, { yPercent: 0, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                    gsap.to(frontArrow, { x: 13, y: -14, duration: 0.4, ease: "power2.out" });
+                    gsap.to(backArrow, { x: 13, y: -14, duration: 0.4, ease: "power2.out" });
+                });
+
+                button.addEventListener("mouseleave", () => {
+                    gsap.killTweensOf([frontLetters, backLetters, frontArrow, backArrow]);
+                    gsap.to(frontLetters, { yPercent: 0, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                    gsap.to(backLetters, { yPercent: 100, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                    gsap.to(frontArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
+                    gsap.to(backArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
+                });
+            }
+        }, heroRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
         <>
-            <section id="Hero" data-w-id="7a0582b1-f9bf-b465-911c-fd471b3be13f" className="hero">
+            <section ref={heroRef} id="Hero" className="hero">
                 <div className="w-layout-blockcontainer container-full-width hero-container w-container">
                     <div className="hero-content-wrapper">
                         <div className="hero-icon-title-wrapper">
@@ -259,45 +402,38 @@ export default function Hero() {
                             {/* Building Future-Ready Software for Enterprises and Disruptive Startups */}
                             <div className="hero-title-box">
                                 <div className="hero-top-title">
-                                    <h1 className="hero-title banner" aria-label="We Build Meaningful">
-                                        <SplitText text="Building Future-Ready Software for" startIndex={1} />
+                                    <h1 className="hero-title banner" style={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }} aria-label="We Build Meaningful">
+                                        Building Future-Ready Software for
                                     </h1>
                                 </div>
                                 <div className="hero-title-box-two">
-                                    <div className="star-image"
-                                        style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(-43.425deg)" }}>
+                                    <div className="star-image">
                                         <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69a7bdd8a6aca7844d7d9c03_star.webp"
-                                            loading="lazy" alt="img" className="brans-star-image" />
+                                            loading="lazy" alt="img" className="brans-star-image" style={{ transform: "scale(0) rotate(0deg)" }} />
                                     </div>
                                     <div className="hero-brand-ttitle" aria-label="brands  &">
-                                        <h2 className="hero-title banner-02">
-                                            <span className="hero-text-span">
-                                                <SplitText text="Enterprises" startIndex={1} />
-                                            </span>{" "}
-                                            <span className="hero-text-span _03">
-                                                <SplitText text="&" startIndex={7} />
-                                            </span>
+                                        <h2 className="hero-title banner-02" style={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }}>
+                                            <span className="hero-text-span">Enterprises</span>{" "}
+                                            <span className="hero-text-span _03">&</span>
                                         </h2>
                                     </div>
                                     <div className="hero-title-image-box">
-                                        <div style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "opacity": "1", "transformStyle": "preserve-3d" }}
-                                            className="hero-image-01"><img
+                                        <div className="hero-image-01" style={{ opacity: 0, transform: "translate3d(0, 0, 0) scale3d(1.3, 1.3, 1)" }}>
+                                            <img
                                                 src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69a920fbf513673f9f509557_ee.png"
                                                 alt="img" className="hero-box-image-01"
-                                                style={{ "willChange": "transform", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }} />
+                                            />
                                         </div>
-                                        <div style={{ "opacity": "1", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
-                                            className="hero-image-02"><img
+                                        <div className="hero-image-02" style={{ opacity: 0, transform: "translate3d(0, 0, 0) scale3d(1.3, 1.3, 1)" }}>
+                                            <img
                                                 src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996e56b0a887493352d810d_hero-02.webp"
                                                 alt="img" className="hero-box-image-02"
-                                                style={{ "willChange": "transform", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }} />
+                                            />
                                         </div>
                                     </div>
                                     <div className="digital-title-box" aria-label="digital">
-                                        <h2 className="hero-title _03">
-                                            <span className="hero-text-span banner-03">
-                                                <SplitText text="Disruptive" startIndex={1} />
-                                            </span>
+                                        <h2 className="hero-title _03" style={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }}>
+                                            <span className="hero-text-span banner-03">Disruptive</span>
                                         </h2>
                                     </div>
                                 </div>
@@ -305,18 +441,16 @@ export default function Hero() {
                                     <FloatingBadge
                                         text="UI Design"
                                         type="purple"
-                                        dataWId="21fc7176-604f-f716-f660-40a8e585dcef"
                                         iconSrc="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69ae5662b2e13877eb79af61_figma.svg"
                                     />
                                     <div className="hero-bottom-title" aria-label="experiences.">
-                                        <h2 className="hero-bbottom-ttitle banner-04">
-                                            <SplitText text="Startups" startIndex={1} />
+                                        <h2 className="hero-bbottom-ttitle banner-04" style={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }}>
+                                            Startups
                                         </h2>
                                     </div>
                                     <FloatingBadge
                                         text="Development"
                                         type="orange"
-                                        dataWId="d5e042c1-3fc3-d56e-0ecc-41bdbbd9077f"
                                         arrowRot={27.375}
                                         iconSrc="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69ae563ba2e7fb14e4aaf00c_webflow.svg"
                                     />
@@ -324,11 +458,9 @@ export default function Hero() {
                             </div>
                         </div>
                         <div className="hero-top-content">
-                            <div data-w-id="713abfe8-0f02-cb6e-919e-6e6f3dd4c10e"
-                                style={{ "opacity": "1", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
-                                className="hero-text-button">
+                            <div className="hero-text-button" style={{ opacity: 0 }}>
                                 <div className="hero-text">We partner with enterprises and startups to build high-performance digital products—fast, secure, and designed for real-world scalability</div>
-                                <PrimaryCTAButton dataWId="ab51d9de-df2b-4802-d942-68915cb0ab19" href="#Contact" />
+                                <PrimaryCTAButton href="#Contact" />
                             </div>
                         </div>
                     </div>

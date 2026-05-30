@@ -15,7 +15,7 @@ body {
   background-color: #0c0c0c !important;
   color: #ffffff !important;
   font-family: var(--font-sans);
-  scroll-behavior: smooth;
+  scroll-behavior: auto !important;
   margin: 0;
   padding: 0;
   /* overflow-x: hidden; */
@@ -125,7 +125,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: auto !important;
 }
 
 article,
@@ -5692,7 +5692,8 @@ p {
 
 .testimonial-item-content {
   border-radius: 12px;
-  width: 100%;
+  width: 350px;
+  flex: none;
   padding-right: 0;
   position: relative;
   overflow: hidden;
