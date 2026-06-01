@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-orange: #ff6b35;
-  --color-brand-black: #0c0c0c;
-  --color-brand-gray: #161616;
   --font-heading: 'DM Serif Text', serif;
   --font-template: 'Montserrat', sans-serif;
   --font-sans: 'Inter', sans-serif;
@@ -7518,7 +7515,7 @@ p {
   }
 }
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
   .w-container {
     max-width: 728px;
   }
@@ -8479,9 +8476,9 @@ p {
   .changelog-page-wrapper {
     padding-bottom: 60px;
   }
-}
+} */
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
 
   .w-hidden-main,
   .w-hidden-medium {
@@ -8945,9 +8942,9 @@ p {
   .about-subtitle-text {
     font-weight: var(--font-weight--font-regular);
   }
-}
+} */
 
-@media screen and (max-width: 479px) {
+/* @media screen and (max-width: 479px) {
   .w-container {
     max-width: none;
   }
@@ -9698,7 +9695,7 @@ p {
   .changelog-page-wrapper {
     padding-bottom: 20px;
   }
-}
+} */
 
 /* Hide dynamically injected Webflow badge */
 .w-webflow-badge {

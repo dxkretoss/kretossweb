@@ -391,7 +391,7 @@ export default function Hero() {
                                         />
                                     </div>
                                 </div>
-                                <div className="hero-text-three !flex !flex-wrap !justify-center !gap-4 md:!gap-0 !items-center">
+                                <div className="hero-text-three">
                                     <FloatingBadge
                                         text="UI Design"
                                         type="purple"

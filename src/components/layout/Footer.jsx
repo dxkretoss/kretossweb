@@ -107,7 +107,7 @@ export default function Footer() {
                 {/* Footer Main Menu Area */}
                 <div className="footer-top-wrapper">
                     <div className="w-layout-blockcontainer container w-container">
-                        <div className="footer-top-box !grid !grid-cols-1 sm:!grid-cols-2 lg:!grid-cols-4 !gap-8 md:!gap-12">
+                        <div className="footer-top-box">
                             {/* Dynamic links columns */}
                             {footerMenus.map((menu, idx) => (
                                 <div key={idx} className="footer-menu-box">
@@ -175,8 +175,8 @@ export default function Footer() {
                 {/* Footer Credits / Address Area */}
                 <div className="footer-bottom-wrapper">
                     <div className="w-layout-blockcontainer container w-container">
-                        <div className="footer-bottom-content !flex !flex-col md:!flex-row !items-center !justify-between !gap-4 !text-center md:!text-left">
-                            <div className="copyright-box !w-full md:!w-auto">
+                        <div className="footer-bottom-content">
+                            <div className="copyright-box">
                                 <div className="copyright-text">
                                     © All Rights Reserved Kretoss Technology
                                 </div>
@@ -188,7 +188,7 @@ export default function Footer() {
                             {/* Rolling country list */}
                             <div className="footer-address-wrapper">
                                 <div className="footer-country-block">
-                                    <div className="footer-country-slider !w-full md:!w-auto !flex !justify-center overflow-hidden w-full relative">
+                                    <div className="footer-country-slider ">
                                         {Array.from({ length: 2 }).map((_, boxIdx) => (
                                             <div
                                                 key={boxIdx}
