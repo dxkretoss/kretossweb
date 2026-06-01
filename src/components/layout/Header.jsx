@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // SplitText helper for dynamic GSAP SplitText word/letter class structures
 const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
@@ -51,7 +51,7 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 };
 
 // Reusable BookCallButton to encapsulate the dynamic B-o-o-k a C-a-l-l letters and styling
-const BookCallButton = ({ href = "https://kretoss.com/#Contact" }) => {
+const BookCallButton = ({ href = "/#Contact" }) => {
     return (
         <a href={href} className="button-two w-inline-block" aria-label="Book a CallBook a Call">
             <div className="button-two-bg">
@@ -81,14 +81,15 @@ const BookCallButton = ({ href = "https://kretoss.com/#Contact" }) => {
     );
 };
 
-export default function Header() {
+export default function Header({ currentRoute }) {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     // Dynamic navigation list array mapping all elements
     const navigationLinks = [
-        { text: "Home", href: "#Hero" },
-        { text: "About Us", href: "#About" },
-        { text: "Services", href: "#Services" },
-        { text: "Works", href: "#Work" },
-        { text: "Testimonials", href: "#Testimonials" }
+        { text: "Home", href: "/" },
+        { text: "About Us", href: "/about" },
+        { text: "Services", href: "#" },
+        { text: "Portfolio", href: "#" },
+        { text: "Careers", href: "#" }
     ];
 
     // Fast scroll handler that stops propagation and uses native smooth scrolling
@@ -96,12 +97,26 @@ export default function Header() {
         if (href.startsWith("#")) {
             e.preventDefault();
             e.stopPropagation();
+
             const targetId = href.substring(1);
-            const element = document.getElementById(targetId);
-            if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
+            if (currentRoute === 'about' && href !== '#about-us') {
+                window.location.hash = href;
+                setTimeout(() => {
+                    const element = document.getElementById(targetId);
+                    if (element) {
+                        element.scrollIntoView({ behavior: "smooth" });
+                    }
+                }, 100);
+            } else if (href === '#about-us') {
+                window.location.hash = '#about-us';
+            } else {
+                const element = document.getElementById(targetId);
+                if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                }
             }
         }
+        setIsMenuOpen(false); // Close menu on navigation
     };
 
     return (
@@ -120,9 +135,9 @@ export default function Header() {
                                         className="nav-logo"
                                     />
                                 </a>
-                                <nav role="navigation" className="nav-list w-nav-menu">
+                                <nav role="navigation" className={`nav-list w-nav-menu ${isMenuOpen ? '!flex !flex-col !absolute !top-full !left-0 !w-full !bg-brand-black !p-6 !border-b !border-white/10 z-50' : '!hidden lg:!flex'}`}>
                                     {navigationLinks.map((link, idx) => (
-                                        <div key={idx} className="menu-box">
+                                        <div key={idx} className="menu-box !mb-4 lg:!mb-0">
                                             <a
                                                 href={link.href}
                                                 onClick={(e) => handleScroll(e, link.href)}
@@ -135,12 +150,15 @@ export default function Header() {
                                     ))}
                                 </nav>
                                 <div className="header-button">
-                                    <div className="header-button-box">
-                                        <BookCallButton href="https://kretoss.com/#Contact" />
+                                    <div className="header-button-box !hidden lg:!block">
+                                        <BookCallButton href="/#Contact" />
                                     </div>
-                                    <div className="menu-button w-nav-button" style={{ "WebkitUserSelect": "text" }} aria-label="menu"
+                                    <div 
+                                        className="menu-button w-nav-button lg:!hidden" 
+                                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                        style={{ "WebkitUserSelect": "text" }} aria-label="menu"
                                         role="button" tabIndex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu"
-                                        aria-expanded="false">
+                                        aria-expanded={isMenuOpen}>
                                         <div className="menu-bar-block">
                                             <div className="menu-bar-top"
                                                 style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}>
@@ -166,7 +184,7 @@ export default function Header() {
                         <a href="#Hero" onClick={(e) => handleScroll(e, "#Hero")} className="hero-link w-inline-block">
                             <div className="nav-link-text">Home</div>
                         </a>
-                        <a href="#About" onClick={(e) => handleScroll(e, "#About")} className="hero-link w-inline-block">
+                        <a href="#about-us" onClick={(e) => handleScroll(e, "#about-us")} className="hero-link w-inline-block">
                             <div className="nav-link-text">About Us</div>
                         </a>
                         <BookCallButton href="#Contact" />

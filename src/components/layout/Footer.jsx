@@ -13,70 +13,60 @@ export default function Footer() {
             title: "Instant Links",
             links: [
                 { label: "Home", href: "/", isCurrent: true },
-                { label: "About Us", href: "https://kretoss.com/#About" },
-                { label: "Projects", href: "https://kretoss.com/#Projects" },
-                { label: "Services", href: "https://kretoss.com/#Services" }
+                { label: "About Us", href: "/about" },
+                { label: "Services", href: "#" },
+                { label: "Portfolio", href: "#" },
+                { label: "Careers", href: "#" },
             ]
         },
-        {
-            title: "Services",
-            links: [
-                { label: "UX/UI Design", href: "https://kretoss.com/#Contact", textBlock: true },
-                { label: "webflow Development", href: "https://kretoss.com/#Contact" },
-                { label: "Framer Development", href: "https://kretoss.com/#Contact" },
-                { label: "SaaS Design", href: "https://kretoss.com/#Contact" }
-            ]
-        },
-        {
-            title: "Utilities",
-            links: [
-                { label: "Style Guide", href: "/style-guide" },
-                { label: "Changelog", href: "/changelog" },
-                { label: "Licenses", href: "/license" },
-                { label: "404 Error Page", href: "https://kretoss.com/404" }
-            ]
-        }
+        // {
+        //     title: "Services",
+        //     links: [
+        //         { label: "UX/UI Design", href: "/#Contact", textBlock: true },
+        //         { label: "webflow Development", href: "/#Contact" },
+        //         { label: "Framer Development", href: "/#Contact" },
+        //         { label: "SaaS Design", href: "/#Contact" }
+        //     ]
+        // },
+        // {
+        //     title: "Utilities",
+        //     links: [
+        //         { label: "Style Guide", href: "/style-guide" },
+        //         { label: "Changelog", href: "/changelog" },
+        //         { label: "Licenses", href: "/license" },
+        //         { label: "404 Error Page", href: "/404" }
+        //     ]
+        // }
     ];
 
     // Social accounts
     const socialLinks = [
         {
+            id: "facebook",
+            href: "https://www.facebook.com/kretosstechnology/",
+            icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b2f1129a4011857f80c862_Vector.svg",
+            dataWId: "2b015486-5275-f4d0-67a5-7bf5cd52a279",
+            isFacebook: true
+        },
+        {
             id: "instagram",
-            href: "https://www.instagram.com/pixoora_agency/",
+            href: "https://www.instagram.com/kretoss_technology_/",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28878a_Social%20Icon%20(1).svg",
             dataWId: "2b015486-5275-f4d0-67a5-7bf5cd52a285"
         },
         {
-            id: "linkedin",
-            href: "https://www.linkedin.com/company/pixoora",
-            icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28878e_ri_linkedin-fill.svg",
-            dataWId: "2b015486-5275-f4d0-67a5-7bf5cd52a289"
-        },
-        {
             id: "twitter",
-            href: "https://x.com/pixoora",
+            href: "https://x.com/KretossTechnol3",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28878c_Social%20Icon%20(3).svg",
             dataWId: "2b015486-5275-f4d0-67a5-7bf5cd52a281"
         },
         {
-            id: "behance",
-            href: "https://www.behance.net/pixoora",
-            icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28878f_Social%20Icon%20(4).svg",
-            dataWId: "2b015486-5275-f4d0-67a5-7bf5cd52a27d"
-        },
-        {
-            id: "dribbble",
-            href: "https://dribbble.com/pixoora",
-            icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28878d_Social%20Icon.svg",
-            dataWId: "2b015486-5275-f4d0-67a5-7bf5cd52a275"
-        },
-        {
-            id: "facebook",
-            href: "https://www.facebook.com/pixoora/",
-            icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b2f1129a4011857f80c862_Vector.svg",
-            dataWId: "2b015486-5275-f4d0-67a5-7bf5cd52a279",
-            isFacebook: true
+            id: "linkedin",
+            href: "https://www.linkedin.com/company/kretoss/",
+            icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28878e_ri_linkedin-fill.svg",
+            dataWId: "2b015486-5275-f4d0-67a5-7bf5cd52a289"
         }
+
     ];
 
     // Country roll lists
@@ -94,19 +84,18 @@ export default function Footer() {
         <>
             <section className="footer">
                 {/* Scrolling let's talk ticker (Preserving Webflow double layer) */}
-                <div className="ticker-wrapper">
-                    {Array.from({ length: 2 }).map((_, trackIdx) => (
+                <div className="ticker-wrapper !flex !overflow-hidden">
+                    {Array.from({ length: 4 }).map((_, trackIdx) => (
                         <div
                             key={trackIdx}
-                            className="ticker-content-box"
+                            className="ticker-content-box animate-marquee !flex !shrink-0"
                             style={{
-                                "transform": "translate3d(-7.967%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                                 "transformStyle": "preserve-3d",
                                 "willChange": "transform"
                             }}
                         >
                             {tickerItems.map((item, idx) => (
-                                <div key={idx} className="ticker-single-box">
+                                <div key={idx} className="ticker-single-box !flex !items-center !shrink-0">
                                     <img loading="lazy" src={item.icon} alt="Ticker Icon" className="ticker-icon" />
                                     <div className="ticker-text">{item.text}</div>
                                 </div>
@@ -118,7 +107,7 @@ export default function Footer() {
                 {/* Footer Main Menu Area */}
                 <div className="footer-top-wrapper">
                     <div className="w-layout-blockcontainer container w-container">
-                        <div className="footer-top-box">
+                        <div className="footer-top-box !grid !grid-cols-1 sm:!grid-cols-2 lg:!grid-cols-4 !gap-8 md:!gap-12">
                             {/* Dynamic links columns */}
                             {footerMenus.map((menu, idx) => (
                                 <div key={idx} className="footer-menu-box">
@@ -186,29 +175,24 @@ export default function Footer() {
                 {/* Footer Credits / Address Area */}
                 <div className="footer-bottom-wrapper">
                     <div className="w-layout-blockcontainer container w-container">
-                        <div className="footer-bottom-content">
-                            <div className="copyright-box">
+                        <div className="footer-bottom-content !flex !flex-col md:!flex-row !items-center !justify-between !gap-4 !text-center md:!text-left">
+                            <div className="copyright-box !w-full md:!w-auto">
                                 <div className="copyright-text">
-                                    © All Rights Reserved <a href="/" aria-current="page" className="footer-copy-link w--current">Pixohub</a> - Powered By <a href="https://webflow.com/" target="_blank" rel="noopener noreferrer" className="footer-copy-link">Webflow</a>
+                                    © All Rights Reserved Kretoss Technology
                                 </div>
-                                <div className="copyright-text">
-                                    Designed & Developed By <a href="https://pixoora.com/" target="_blank" rel="noopener noreferrer" className="footer-copy-link">Pixoora</a>
-                                </div>
+                                {/* <div className="copyright-text">
+                                    Designed & Developed By <a href="/" target="_blank" rel="noopener noreferrer" className="footer-copy-link">Kretoss Technology</a>
+                                </div> */}
                             </div>
 
                             {/* Rolling country list */}
                             <div className="footer-address-wrapper">
                                 <div className="footer-country-block">
-                                    <div className="footer-country-slider">
+                                    <div className="footer-country-slider !w-full md:!w-auto !flex !justify-center overflow-hidden w-full relative">
                                         {Array.from({ length: 2 }).map((_, boxIdx) => (
                                             <div
                                                 key={boxIdx}
-                                                className="single-country-box"
-                                                style={{
-                                                    "transform": "translate3d(0px, -94.615%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                                    "transformStyle": "preserve-3d",
-                                                    "willChange": "transform"
-                                                }}
+                                                className="single-country-box animate-marquee-vertical"
                                             >
                                                 {countryList.map((country, idx) => (
                                                     <div key={idx} className="footer-single-address">

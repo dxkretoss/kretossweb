@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -112,8 +112,8 @@ const ServiceCard = ({ number, title, excerpt, imgSrc, srcSet, projectCount, car
 
     return (
         <div ref={cardRef} data-w-id={dataWId} className={`single-service-card ${cardClass}`}
-            style={{ 
-                "willChange": "transform", 
+            style={{
+                "willChange": "transform",
                 "transformStyle": "preserve-3d",
                 "transition": "none" // Crucial: prevents CSS transition from fighting GSAP scroll animations!
             }}>
@@ -131,14 +131,10 @@ const ServiceCard = ({ number, title, excerpt, imgSrc, srcSet, projectCount, car
                         className="service-card-image"
                     />
                 </div>
-                <a data-w-id={linkDataWId} href="#Contact" className="service-card-link w-inline-block" aria-label="Get This ServiceGet This Service">
+                {/* <a data-w-id={linkDataWId} href="#Contact" className="service-card-link w-inline-block" aria-label="Get This ServiceGet This Service">
                     <div className="service-text-box">
-                        <div className="link-front-text">
-                            <SplitText text="Get This Service" startIndex={1} plainStyle={true} />
-                        </div>
-                        <div className="link-back-text">
-                            <SplitText text="Get This Service" startIndex={15} plainStyle={true} />
-                        </div>
+                        <div className="link-front-text">Get This Service</div>
+                        <div className="link-back-text">Get This Service</div>
                     </div>
                     <div className="button-icon-block">
                         <img
@@ -152,7 +148,7 @@ const ServiceCard = ({ number, title, excerpt, imgSrc, srcSet, projectCount, car
                             alt="Back Icon" className="link-back-icon"
                         />
                     </div>
-                </a>
+                </a> */}
             </div>
         </div>
     );
@@ -167,8 +163,8 @@ export default function Services() {
             number: "01",
             title: "Cloud Infrastructure",
             excerpt: "Scalable and secure cloud architecture optimized for high-demand enterprise applications and 99.9% uptime.",
-            imgSrc: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0028c78379861278d4a2e_fd.webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0028c78379861278d4a2e_fd-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0028c78379861278d4a2e_fd-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0028c78379861278d4a2e_fd.webp 1024w",
+            imgSrc: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+            srcSet: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80 800w",
             projectCount: "28+ Projects",
             cardClass: "_01",
             dataWId: "7ba2c9fc-e567-d38f-880a-0f0d02ad444d",
@@ -178,8 +174,8 @@ export default function Services() {
             number: "02",
             title: "Frontend Excellence",
             excerpt: "Building responsive, lightning-fast user interfaces using modern frameworks and performance-first methodology.",
-            imgSrc: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00c4efe2c51bd2fe0b849_w%20(2).webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00c4efe2c51bd2fe0b849_w%20(2)-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00c4efe2c51bd2fe0b849_w%20(2)-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00c4efe2c51bd2fe0b849_w%20(2).webp 904w",
+            imgSrc: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+            srcSet: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80 800w",
             projectCount: "34+ Projects",
             cardClass: "_02",
             dataWId: "188b70d9-9ccb-b630-fa3e-37af8680f01d",
@@ -189,8 +185,8 @@ export default function Services() {
             number: "03",
             title: "Backend Systems",
             excerpt: "Robust server-side logic and sophisticated database management for mission-critical business systems.",
-            imgSrc: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cb11b833c96697a2100_w%20(1).webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cb11b833c96697a2100_w%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cb11b833c96697a2100_w%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cb11b833c96697a2100_w%20(1).webp 904w",
+            imgSrc: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+            srcSet: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80 800w",
             projectCount: "90+ Projects",
             cardClass: "_03",
             dataWId: "dea47cae-1763-3ca2-1904-948e3c97b196",
@@ -200,8 +196,8 @@ export default function Services() {
             number: "04",
             title: "Mobile Development",
             excerpt: "High-performance native and cross-platform mobile experiences that delight users on every device.",
-            imgSrc: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cf2d78fec12c8c004a7_w%20(3).webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cf2d78fec12c8c004a7_w%20(3)-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cf2d78fec12c8c004a7_w%20(3)-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cf2d78fec12c8c004a7_w%20(3)-p-1080.webp 1080w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cf2d78fec12c8c004a7_w%20(3).webp 1200w",
+            imgSrc: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
+            srcSet: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80 800w",
             projectCount: "09+ Projects",
             cardClass: "_04",
             dataWId: "1c5dac51-26ed-5099-d9d1-2ae6efac5ec6",
@@ -211,8 +207,8 @@ export default function Services() {
             number: "05",
             title: "CMS",
             excerpt: "Flexible CMS solutions for easy content management, scalability, and performance.",
-            imgSrc: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00c4efe2c51bd2fe0b849_w%20(2).webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00c4efe2c51bd2fe0b849_w%20(2)-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00c4efe2c51bd2fe0b849_w%20(2)-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00c4efe2c51bd2fe0b849_w%20(2).webp 904w",
+            imgSrc: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80",
+            srcSet: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80 800w",
             projectCount: "42+ Projects",
             cardClass: "_01",
             dataWId: "7ba2c9fc-e567-d38f-880a-0f0d02ad444d",
@@ -222,8 +218,8 @@ export default function Services() {
             number: "06",
             title: "Data Analytics",
             excerpt: "Transforming raw data into actionable intelligence through advanced visualization & ML pipelines.",
-            imgSrc: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0028c78379861278d4a2e_fd.webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0028c78379861278d4a2e_fd-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0028c78379861278d4a2e_fd-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0028c78379861278d4a2e_fd.webp 1024w",
+            imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+            srcSet: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80 800w",
             projectCount: "19+ Projects",
             cardClass: "_02",
             dataWId: "188b70d9-9ccb-b630-fa3e-37af8680f01d",
@@ -233,8 +229,8 @@ export default function Services() {
             number: "07",
             title: "Vibe Coding",
             excerpt: "Fast-track product development using vibe-coding tools and scalable engineering practices.",
-            imgSrc: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cb11b833c96697a2100_w%20(1).webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cb11b833c96697a2100_w%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cb11b833c96697a2100_w%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cb11b833c96697a2100_w%20(1).webp 904w",
+            imgSrc: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+            srcSet: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80 800w",
             projectCount: "37+ Projects",
             cardClass: "_03",
             dataWId: "dea47cae-1763-3ca2-1904-948e3c97b196",
@@ -244,8 +240,8 @@ export default function Services() {
             number: "08",
             title: "Python & ERP Development",
             excerpt: "High-performance ERP and backend development using Python, Django, and Odoo.",
-            imgSrc: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cf2d78fec12c8c004a7_w%20(3).webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cf2d78fec12c8c004a7_w%20(3)-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cf2d78fec12c8c004a7_w%20(3)-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cf2d78fec12c8c004a7_w%20(3)-p-1080.webp 1080w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b00cf2d78fec12c8c004a7_w%20(3).webp 1200w",
+            imgSrc: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+            srcSet: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80 800w",
             projectCount: "25+ Projects",
             cardClass: "_04",
             dataWId: "1c5dac51-26ed-5099-d9d1-2ae6efac5ec6",
@@ -263,11 +259,11 @@ export default function Services() {
                 // Desktop layout animations (>= 992px)
                 mm.add("(min-width: 992px)", () => {
                     // Initial styling matching Webflow starting positions
-                    gsap.set(".project-title-area", { y: 50 });
-                    gsap.set(".single-service-card._01", { y: 50 });
-                    gsap.set(".single-service-card._02", { y: 200 });
-                    gsap.set(".single-service-card._03", { y: 400 });
-                    gsap.set(".single-service-card._04", { y: 600 });
+                    gsap.set(".project-title-area", { y: 20 });
+                    gsap.set(".single-service-card._01", { y: 20 });
+                    gsap.set(".single-service-card._02", { y: 60 });
+                    gsap.set(".single-service-card._03", { y: 100 });
+                    gsap.set(".single-service-card._04", { y: 140 });
 
                     // Create parallax scroll timeline with linear mapping to scroll progress
                     const tl = gsap.timeline({
@@ -280,13 +276,13 @@ export default function Services() {
                     });
 
                     // Map keyframes 0% -> 45% and 0% -> 60% linearly
-                    tl.fromTo(".project-title-area", { y: 50 }, { y: 0, duration: 45, ease: "none" }, 0)
-                      .fromTo(".single-service-card._01", { y: 50 }, { y: 0, duration: 45, ease: "none" }, 0)
-                      .fromTo(".single-service-card._02", { y: 200 }, { y: 0, duration: 60, ease: "none" }, 0)
-                      .fromTo(".single-service-card._03", { y: 400 }, { y: 0, duration: 60, ease: "none" }, 0)
-                      .fromTo(".single-service-card._04", { y: 600 }, { y: 0, duration: 60, ease: "none" }, 0)
-                      // Fill remaining timeline up to 100 to scale scroll progress to 100% exactly
-                      .to({}, { duration: 40 }, 60);
+                    tl.fromTo(".project-title-area", { y: 20 }, { y: 0, duration: 45, ease: "none" }, 0)
+                        .fromTo(".single-service-card._01", { y: 20 }, { y: 0, duration: 45, ease: "none" }, 0)
+                        .fromTo(".single-service-card._02", { y: 60 }, { y: 0, duration: 60, ease: "none" }, 0)
+                        .fromTo(".single-service-card._03", { y: 100 }, { y: 0, duration: 60, ease: "none" }, 0)
+                        .fromTo(".single-service-card._04", { y: 140 }, { y: 0, duration: 60, ease: "none" }, 0)
+                        // Fill remaining timeline up to 100 to scale scroll progress to 100% exactly
+                        .to({}, { duration: 40 }, 60);
 
                     // Spin and scale star subtitle icon on viewport entrance
                     gsap.fromTo(".project-subtitle-box .subtitle-image-icon",
@@ -340,8 +336,8 @@ export default function Services() {
                         />
                     </div>
                     <div className="w-layout-blockcontainer container w-container">
-                        <div data-w-id="83b6645c-69a4-34e9-aadc-848274859eb2" className="service-section-block">
-                            <div className="service-content-wrapper">
+                        <div data-w-id="83b6645c-69a4-34e9-aadc-848274859eb2" className="service-section-block !pb-12 md:!pb-24 lg:!pb-64 !overflow-visible">
+                            <div className="service-content-wrapper !overflow-visible">
                                 <div className="project-title-area"
                                     style={{ "willChange": "transform", "transformStyle": "preserve-3d" }}>
                                     <div className="project-subtitle-box">
@@ -356,7 +352,7 @@ export default function Services() {
                                         <SplitText text="Our Services" startIndex={1} />
                                     </h2>
                                 </div>
-                                <div className="service-card-box">
+                                <div className="service-card-box !w-full !overflow-visible !pb-12">
                                     {servicesList.map((service, idx) => (
                                         <ServiceCard
                                             key={idx}

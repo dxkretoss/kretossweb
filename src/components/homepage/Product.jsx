@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -56,12 +56,12 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 
 // Reusable Ticker Component
 const ProductTicker = ({ directionClass = "top", list }) => {
-    const wrapperClass = directionClass === "top" 
-        ? "ticker-box-wrapper project-top-ticker" 
+    const wrapperClass = directionClass === "top"
+        ? "ticker-box-wrapper project-top-ticker"
         : "ticker-wrapper project-ticker";
 
-    const contentClass = directionClass === "top" 
-        ? "top-single-ticker" 
+    const contentClass = directionClass === "top"
+        ? "top-single-ticker"
         : "ticker-content-box";
 
     const renderTrack = () => (
@@ -70,7 +70,7 @@ const ProductTicker = ({ directionClass = "top", list }) => {
                 <div key={idx} className="product-ticker-single">
                     <img
                         src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                        loading="lazy" alt="Ticker Icon" className="ticker-icon" 
+                        loading="lazy" alt="Ticker Icon" className="ticker-icon"
                     />
                     <div className="ticker-text">{item}</div>
                 </div>
@@ -90,8 +90,8 @@ const ProductTicker = ({ directionClass = "top", list }) => {
 
 // Reusable SlideImage Component
 const SlideImage = ({ type, img, srcset }) => {
-    const boxClass = type === "vertical" 
-        ? "product-single-image-box vertical-image" 
+    const boxClass = type === "vertical"
+        ? "product-single-image-box vertical-image"
         : "product-single-image-box horizontal-image";
 
     return (
@@ -102,7 +102,7 @@ const SlideImage = ({ type, img, srcset }) => {
                 sizes="100vw"
                 srcSet={srcset}
                 alt="Product Single Image"
-                className="product-single-image" 
+                className="product-single-image"
             />
         </div>
     );
@@ -111,35 +111,36 @@ const SlideImage = ({ type, img, srcset }) => {
 export default function Product() {
     // Dynamic Ticker Strings
     const tickerItems = [
-        "Remedive Medicine Delivery",
-        "Mobile App",
-        "Website",
-        "UI Design",
-        "Agency Website",
-        "Management Dashboard",
-        "Healthcare Website"
+        "Frontend Excellence",
+        "Cloud Infrastructure",
+        "Backend Systems",
+        "Mobile Development",
+        "CMS",
+        "Data Analytics",
+        "Vibe Coding",
+        "Python & ERP Development"
     ];
 
     // Image tracks for slider row 1 (Track _01)
     const trackOneList = [
         {
             type: "horizontal",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887a7_Rectangle%2034624350.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887a7_Rectangle%252034624350-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887a7_Rectangle%2034624350.webp 608w"
+            img: "/grouppics/Group-1.png",
+            srcset: "/grouppics/Group-1.png 500w, /grouppics/Group-1.png 608w"
         },
         {
             type: "vertical",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887a6_iPhone%2014%20%26%2015%20Pro%20-%201.webp"
+            img: "/grouppics/Group-6.png",
         },
         {
             type: "horizontal",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887a8_Rectangle%2034624351.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887a8_Rectangle%252034624351-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887a8_Rectangle%2034624351.webp 608w"
+            img: "/grouppics/Group-3.png",
+            srcset: "/grouppics/Group-3.png 500w, /grouppics/Group-3.png 608w"
         },
         {
             type: "horizontal",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe28879e_Rectangle%2034624352.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879e_Rectangle%252034624352-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879e_Rectangle%252034624352-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879e_Rectangle%252034624352-p-1080.webp 1080w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879e_Rectangle%252034624352.webp 1215w"
+            img: "/grouppics/Group-4.png",
+            srcset: "/grouppics/Group-4.png 500w, /grouppics/Group-4.png 800w, /grouppics/Group-4.png 1080w, /grouppics/Group-4.png 1215w"
         }
     ];
 
@@ -147,23 +148,19 @@ export default function Product() {
     const trackTwoRepOne = [
         {
             type: "horizontal",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0d0fa7355a6eeb12d350_Rectangle%2034624350.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0d0fa7355a6eeb12d350_Rectangle%2034624350-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0d0fa7355a6eeb12d350_Rectangle%2034624350-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0d0fa7355a6eeb12d350_Rectangle%2034624350-p-1080.webp 1080w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0d0fa7355a6eeb12d350_Rectangle%2034624350.webp 1215w"
+            img: "/grouppics/Group-4.png"
         },
         {
             type: "vertical",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0d23dad7c3f15494afb3_iPhone%2014%20%26%2015%20Pro%20-%201.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0d23dad7c3f15494afb3_iPhone%2014%20%26%2015%20Pro%20-%201-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0d23dad7c3f15494afb3_iPhone%2014%20%26%2015%20Pro%20-%201.webp 527w"
+            img: "/grouppics/Group-5.png"
         },
         {
             type: "horizontal",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0dbf2fc8523467b5bff0_Rectangle%2034624351.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0dbf2fc8523467b5bff0_Rectangle%2034624351-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0dbf2fc8523467b5bff0_Rectangle%2034624351-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0dbf2fc8523467b5bff0_Rectangle%2034624351-p-1080.webp 1080w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0dbf2fc8523467b5bff0_Rectangle%2034624351.webp 1215w"
+            img: "/grouppics/Group-6.png"
         },
         {
             type: "horizontal",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0dd7d0e284809d49d9c2_Rectangle%2034624352.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0dd7d0e284809d49d9c2_Rectangle%2034624352-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0dd7d0e284809d49d9c2_Rectangle%2034624352-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0dd7d0e284809d49d9c2_Rectangle%2034624352-p-1080.webp 1080w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69af0dd7d0e284809d49d9c2_Rectangle%2034624352.webp 1215w"
+            img: "/grouppics/Group-7.png"
         }
     ];
 
@@ -172,22 +169,19 @@ export default function Product() {
     const trackTwoRepThree = [
         {
             type: "horizontal",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bb_Rectangle%2034624353.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bb_Rectangle%252034624353-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bb_Rectangle%2034624353.webp 608w"
+            img: "/grouppics/Group-2.png"
         },
         {
             type: "vertical",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887b9_iPhone%2014%20%26%2015%20Pro%20-%202.webp"
+            img: "/grouppics/Group-7.png"
         },
         {
             type: "horizontal",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bd_Rectangle%2034624354.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bd_Rectangle%252034624354-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bd_Rectangle%2034624354.webp 608w"
+            img: "/grouppics/Group-4.png"
         },
         {
             type: "horizontal",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bc_Rectangle%2034624355.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bc_Rectangle%252034624355-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bc_Rectangle%2034624355.webp 608w"
+            img: "/grouppics/Group-5.png"
         }
     ];
 
@@ -263,19 +257,19 @@ export default function Product() {
                                         <img
                                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
                                             loading="lazy" alt="Subtitle Icon" className="subtitle-image-icon"
-                                            style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }} 
+                                            style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }}
                                         />
                                         <div className="product-subtitle-text">Industry Hit</div>
                                     </div>
-                                    <h2 className="title white" aria-label="&quot;Our Successful Products Highlight&quot;">
-                                        <SplitText text='"Our Successful Products Highlight"' startIndex={1} />
+                                    <h2 className="title white" aria-label="&quot;Memories & Milestones&quot;">
+                                        <SplitText text='"Memories & Milestones"' startIndex={1} />
                                     </h2>
                                 </div>
                             </div>
                         </div>
                         <div className="gallery-content-block">
                             <ProductTicker directionClass="top" list={tickerItems} />
-                            
+
                             <div className="product-tab-pane-dev" style={{ overflow: "hidden" }}>
                                 <div className="product-slider-wrapper" style={{ display: "flex", width: "max-content", flexShrink: 0 }}>
                                     <div className="product-single-slider _01" style={{ display: "flex", flexShrink: 0 }}>
@@ -294,7 +288,7 @@ export default function Product() {
                                         ))}
                                     </div>
                                 </div>
- 
+
                                 <div className="product-slider-wrapper" style={{ display: "flex", width: "max-content", flexShrink: 0 }}>
                                     <div className="product-single-slider _02" style={{ display: "flex", flexShrink: 0 }}>
                                         {trackTwoRepOne.map((item, idx) => (
@@ -313,7 +307,7 @@ export default function Product() {
                                     </div>
                                 </div>
                             </div>
- 
+
                             <ProductTicker directionClass="two" list={tickerItems} />
                         </div>
                     </div>

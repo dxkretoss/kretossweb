@@ -1,5 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import { Link } from 'react-router-dom';
+import gsap from 'gsap';
+import { ArrowUpRight } from 'lucide-react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -62,20 +64,21 @@ const ProjectCard = ({
     description,
     timeline,
     acquisition,
-    author,
-    authorImg,
+    technology,
+    techicon,
     thumbnailImg,
     srcset,
     linkIcon,
     linkUrl,
     dataWId,
-    linkDataWId
+    linkDataWId,
+    slug
 }) => {
     const isEven = parseInt(id, 10) % 2 === 0;
     const cardRef = useRef(null);
 
-    const itemClass = isEven ? `project-single-item _${id}` : "project-single-item";
-    const cardLeftClass = `project-card-left _${id}`;
+    const itemClass = isEven ? `project-single-item _${id} even !flex !flex-col md:!grid md:!grid-cols-2` : `project-single-item _${id} !flex !flex-col md:!grid md:!grid-cols-2`;
+    const cardLeftClass = isEven ? `project-card-left _${id} even !w-full` : `project-card-left _${id} !w-full`;
     const authorWrapperClass = isEven ? `project-author-wrapper _${id}` : "project-author-wrapper";
     const linkIconBoxClass = isEven ? `project-link-icon-box _${id}` : "project-link-icon-box";
 
@@ -161,8 +164,8 @@ const ProjectCard = ({
                 </div>
                 <div className="project-card-text">{description}</div>
             </div>
-            <div className="project-card-bottom">
-                <div className="project-number-wrapper">
+            <div className="project-card-bottom !flex !flex-col md:!flex-row !gap-6">
+                <div className="project-number-wrapper !grid !grid-cols-2 !w-full md:!w-auto md:!flex md:!flex-col">
                     <div className="project-number-box">
                         <div className="project-number-text">Project timeline</div>
                         <h3 className="project-number-title">{timeline}</h3>
@@ -175,25 +178,31 @@ const ProjectCard = ({
                 <div className={authorWrapperClass}>
                     <div className="project-author-box">
                         <div className="project-author-image-box">
-                            <img src={authorImg} loading="lazy" alt="Project Author" className="project-author-image" />
+                            <img src={techicon} loading="lazy" alt="Project Author" className="project-author-image" />
                         </div>
                         <div className="project-title-designation">
-                            <h3 className="project-author-title">{author.name}</h3>
-                            <div className="project-author-text">{author.role}</div>
+                            <h3 className="project-author-title">{technology}</h3>
+                            {/* <div className="project-author-text">{technology.role}</div> */}
                         </div>
                     </div>
-                    <img
+
+                    <div>
+                        <Link to={`/project/${slug}`} className="flex items-center justify-center gap-2 px-6 py-3 border border-white/20 rounded-full text-white text-sm font-medium hover:scale-105 transition-all duration-300">
+                            View <ArrowUpRight size={18} />
+                        </Link>
+                    </div>
+                    {/* <img
                         src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c5_arrow-turn-forward.svg"
                         loading="lazy" alt="Project Card Icon" className="project-card-icon"
-                    />
+                    /> */}
                 </div>
             </div>
         </div>
     );
 
     const rightBlock = (
-        <div className="project-right-box">
-            <div className="project-right-wrapper">
+        <div className="project-right-box !w-full">
+            <div className="project-right-wrapper !h-full">
                 <div className="project-thumbnail-box">
                     <img
                         src={thumbnailImg}
@@ -202,40 +211,6 @@ const ProjectCard = ({
                         srcSet={srcset}
                         className="project-thumbnail"
                     />
-                </div>
-                <div className="project-card-overlay">
-                    <div className="project-link-overlay">
-                        <div className="project-link-icon-title">
-                            <div className={linkIconBoxClass}>
-                                <img src={linkIcon} loading="lazy" alt="Project Link Icon" className="project-link-icon" />
-                            </div>
-                            <div className="link-box-title-text">
-                                <h3 className="link-box-title">Scroll Down</h3>
-                                <div className="link-box-text">Step into 2026 with bold looks, limited releases, and trend-Design Ideas.</div>
-                            </div>
-                        </div>
-                        <a
-                            data-w-id={linkDataWId}
-                            href={linkUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="project-link-box w-inline-block"
-                        >
-                            <div className="project-button-text">View Design</div>
-                            <div className="project-icon-box">
-                                <img
-                                    src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b13771c3fe4b103672b9f0_Vector%20(Stroke).svg"
-                                    loading="lazy"
-                                    alt="Project Card Link Icon" className="front-button-icon"
-                                />
-                                <img
-                                    src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b13771c3fe4b103672b9f0_Vector%20(Stroke).svg"
-                                    loading="lazy"
-                                    alt="Project Card Link Icon" className="back-button-icon"
-                                />
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -246,8 +221,8 @@ const ProjectCard = ({
             ref={cardRef}
             data-w-id={dataWId}
             className={itemClass}
-            style={{ 
-                "willChange": "transform", 
+            style={{
+                "willChange": "transform",
                 "transformStyle": "preserve-3d",
                 "transition": "none" // Disable standard CSS transition to allow conflict-free GSAP scrubbing!
             }}
@@ -272,15 +247,16 @@ export default function Projects() {
     const projectsList = [
         {
             id: "01",
-            tag: "Delivery",
-            title: "Delivery Service Projects",
-            description: "Kawika brought us his pride and joy, a classic fastback that had seen better days.Years of island sun and salt air had dulled the shine,",
-            timeline: "2.5 Months",
-            acquisition: "80%",
-            authorImg: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c4_Ellipse%204010.webp",
-            author: { name: "Windy", role: "Yenex CEO" },
-            thumbnailImg: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c1_Frame%202147227851.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c1_Frame%25202147227851-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c1_Frame%202147227851.webp 736w",
+            slug: "drawn-dating-app",
+            tag: "Dating App",
+            title: "A stylish Mobile app store created for Drawn Dating App",
+            description: `"The design is clean, user-friendly, and perfectly aligns with our brand vision. Everything was executed with attention to detail, and the functionality works seamlessly. The team was professional, responsive, and delivered the project on time. We couldn't be happier with the outcome-thank you for bringing our ideas to life!"`,
+            timeline: "2.1 Months",
+            acquisition: "60%",
+            techicon: "/portfolio/icon.png",
+            technology: "Vue.js & Laravel",
+            thumbnailImg: "/portfolio/Drawn.png",
+            srcset: "/portfolio/Drawn.png 500w, /portfolio/Drawn.png 736w",
             linkIcon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c7_Group%202085664886.svg",
             linkUrl: "https://dribbble.com/shots/26978225-AGENCE-modern-Modern-Creative-Agency-Landing-Page-webflow",
             dataWId: "3f73e51d-3176-e96d-293b-9d441d9d29dd",
@@ -288,15 +264,16 @@ export default function Projects() {
         },
         {
             id: "02",
-            tag: "Delivery",
-            title: "Delivery Service Projects",
+            slug: "trischedule",
+            tag: "Workout app",
+            title: "Trischedule app",
             description: "Kawika brought us his pride and joy, a classic fastback that had seen better days.Years of island sun and salt air had dulled the shine,",
-            timeline: "2.3 Months",
-            acquisition: "70%",
-            authorImg: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c4_Ellipse%204010.webp",
-            author: { name: "Windy", role: "Yenex CEO" },
-            thumbnailImg: "https://cdn.prod.website-files.com/6996a337655d586ffe2887c9_Frame%202147239829.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c9_Frame%25202147239829-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c9_Frame%25202147239829-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c9_Frame%25202147239829-p-1080.webp 1080w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c9_Frame%202147239829.webp 1472w",
+            timeline: "2.2 Months",
+            acquisition: "60%",
+            techicon: "/portfolio/icon.png",
+            technology: "Flutter",
+            thumbnailImg: "/protfolio/Trischedule.png",
+            srcset: "/portfolio/Trischedule.png 500w, /portfolio/Trischedule.png 800w, /portfolio/Trischedule.png 1080w, /portfolio/Trischedule.png 1472w",
             linkIcon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887dc_Group%202085664886.svg",
             linkUrl: "https://dribbble.com/shots/26482298-Creative-Modern-Analytics-Admin-Dashboard",
             dataWId: "3f73e51d-3176-e96d-293b-9d441d9d2a14",
@@ -304,15 +281,16 @@ export default function Projects() {
         },
         {
             id: "03",
-            tag: "Delivery",
-            title: "Delivery Service Projects",
-            description: "Kawika brought us his pride and joy, a classic fastback that had seen better days.Years of island sun and salt air had dulled the shine,",
-            timeline: "2.2 Months",
-            acquisition: "60%",
-            authorImg: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c4_Ellipse%204010.webp",
-            author: { name: "Windy", role: "Yenex CEO" },
-            thumbnailImg: "https://cdn.prod.website-files.com/6996a337655d586ffe2887e8_Frame%202147239830.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887e8_Frame%25202147239830-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887e8_Frame%202147239830.webp 736w",
+            slug: "business-compliance",
+            tag: "Business Management",
+            title: "Simplify Business Compliance Management and Stay Ahead of Every Deadline",
+            description: "Track GST, TDS, Income Tax, and other compliance tasks in one unified platform. Stay organized, avoid penalties, and gain full visibility into what’s done, pending, and who’s responsible.",
+            timeline: "2.3 Months",
+            acquisition: "70%",
+            techicon: "/portfolio/icon.png",
+            technology: "ReactJS + Supabase",
+            thumbnailImg: "/portfolio/fily.png",
+            srcset: "/portfolio/fily.png 500w, /portfolio/fily.png 736w",
             linkIcon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887e4_Group%202085664913.svg",
             linkUrl: "https://dribbble.com/shots/27049558-Digital-Agency-Landing-Page-UI-Design",
             dataWId: "3f73e51d-3176-e96d-293b-9d441d9d2a4b",
@@ -320,15 +298,16 @@ export default function Projects() {
         },
         {
             id: "04",
-            tag: "Delivery",
+            slug: "delivery-service",
+            tag: "Crypto Currency",
             title: "Delivery Service Projects",
             description: "Kawika brought us his pride and joy, a classic fastback that had seen better days.Years of island sun and salt air had dulled the shine,",
             timeline: "2.1 Months",
             acquisition: "60%",
-            authorImg: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c4_Ellipse%204010.webp",
-            author: { name: "Windy", role: "Yenex CEO" },
-            thumbnailImg: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887ec_Frame%202147239834.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887ec_Frame%25202147239834-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887ec_Frame%202147239834.webp 736w",
+            techicon: "/portfolio/icon.png",
+            technology: "Blockchain - React.js - Node.js",
+            thumbnailImg: "/portfolio/palzea.png",
+            srcset: "/portfolio/palzea.png 500w, /portfolio/palzea.png 736w",
             linkIcon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887ef_Group%202085664886.svg",
             linkUrl: "https://dribbble.com/shots/26016371--Consultify-Business-Agency-Template",
             dataWId: "3f73e51d-3176-e96d-293b-9d441d9d2a82",
@@ -397,8 +376,8 @@ export default function Projects() {
                                 />
                                 <div className="subtitle-text white">Industry Hit Projects</div>
                             </div>
-                            <h2 className="title white" aria-label="Where Great Ideas Became Real">
-                                <SplitText text="Where Great Ideas Became Real " startIndex={1} />
+                            <h2 className="title white" aria-label="Where Great Ideas Became Real Results">
+                                <SplitText text="Where Great Ideas Became Real Results" startIndex={1} />
                             </h2>
                         </div>
                         <div className="project-card-wrapper-box">
@@ -412,14 +391,15 @@ export default function Projects() {
                                         description={project.description}
                                         timeline={project.timeline}
                                         acquisition={project.acquisition}
-                                        authorImg={project.authorImg}
-                                        author={project.author}
+                                        techicon={project.techicon}
+                                        technology={project.technology}
                                         thumbnailImg={project.thumbnailImg}
                                         srcset={project.srcset}
                                         linkIcon={project.linkIcon}
                                         linkUrl={project.linkUrl}
                                         dataWId={project.dataWId}
                                         linkDataWId={project.linkDataWId}
+                                        slug={project.slug}
                                     />
                                 ))}
                             </div>

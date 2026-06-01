@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, letterStyle }) => {
     const words = text.split(" ");
     let globalLetterIdx = startIndex;
-    
+
     const defaultStyle = letterStyle || {
         position: "relative",
         display: "inline-block",
@@ -170,13 +170,13 @@ export default function Contact() {
                                         <form id="email-form" name="email-form" data-name="Email Form" method="get"
                                             className="contact-form" data-wf-page-id="6996a337655d586ffe288774"
                                             data-wf-element-id="b09bb3e0-8acd-7f5d-cd42-fa88661e496a" aria-label="Email Form">
-                                            
+
                                             <div className="single-contact-group">
                                                 <label htmlFor="Name" className="contact-label">Full Name</label>
                                                 <input className="contact-input w-input" maxLength="256" name="Name"
                                                     data-name="Name" placeholder="Enter Your Name" type="text" id="Name" />
                                             </div>
-                                            
+
                                             <div className="contact-group">
                                                 <div className="single-contact-group">
                                                     <label htmlFor="Company-Name" className="contact-label">Company name</label>
@@ -189,7 +189,7 @@ export default function Contact() {
                                                         placeholder="Enter Your Email" type="email" id="email" />
                                                 </div>
                                             </div>
-                                            
+
                                             <div className="contact-group">
                                                 <div className="single-contact-group">
                                                     <label htmlFor="Services-1" className="contact-label">Services required*</label>
@@ -206,13 +206,13 @@ export default function Contact() {
                                                     </select>
                                                 </div>
                                             </div>
-                                            
+
                                             <div className="single-contact-group">
                                                 <label htmlFor="field" className="contact-label">Projects Details*</label>
                                                 <textarea placeholder="Tell us more about your idea" maxLength="5000" id="field" name="field" data-name="Field"
                                                     className="textarea w-input"></textarea>
                                             </div>
-                                            
+
                                             <div className="contact-button-text">
                                                 <div className="form-button">
                                                     <div className="button-text-wrapper _02">
@@ -221,13 +221,13 @@ export default function Contact() {
                                                 </div>
                                                 <div className="contact-call-box">
                                                     <div className="contact-call-text">Not in the mood to submit the from?</div>
-                                                    <a href="https://webflow.com/templates/designers/pixoora" target="_blank" rel="noopener noreferrer" className="call-link w-inline-block">
+                                                    <a href="/#Contact" className="call-link w-inline-block">
                                                         <div>Book A Call Directly</div>
                                                     </a>
                                                 </div>
                                             </div>
                                         </form>
-                                        
+
                                         <div className="success-message w-form-done" tabIndex="-1" role="region" aria-label="Email Form success">
                                             <div className="contact-success-text">Thank you! Your submission has been received!</div>
                                         </div>
@@ -247,7 +247,7 @@ export default function Contact() {
                                         <img
                                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887be_Star%2018.svg"
                                             loading="lazy" alt="Contact Subtitle Icon" className="subtitle-image-icon"
-                                            style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }} 
+                                            style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }}
                                         />
                                         <div className="subtitle-text">Project idea</div>
                                     </div>
@@ -261,7 +261,7 @@ export default function Contact() {
                                 <div className="contact-text">We'll schedule a call to discuss your idea. After discovery sessions,
                                     we'll send a proposal, and upon approval, we'll get started.</div>
                             </div>
-                            
+
                             <div className="contact-author-review">
                                 <div className="contact-auhtor-box">
                                     <div className="contact-review-area">
@@ -280,7 +280,7 @@ export default function Contact() {
                                                             key={starIdx}
                                                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69acfb7509f4926e7df68a47_Vector.svg"
                                                             loading="lazy" alt="Review Star" className={`single-review-star _0${starIdx + 1}`}
-                                                            style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }} 
+                                                            style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
                                                         />
                                                     ))}
                                                     <div className="trust-score _02">Trust Score</div>
@@ -289,27 +289,27 @@ export default function Contact() {
                                         </div>
                                     </div>
                                     <div className="author-image-box">
-                                        <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288795_Frame%202147228191.webp"
+                                        <img src="/grouppics/ankursir.png"
                                             loading="lazy" alt="Author Image" className="author-image" />
                                     </div>
                                 </div>
                                 <div className="author-title-designation">
-                                    <h3 className="author-title">Prantik Chakraborty</h3>
-                                    <div className="author-designation">Chief Digital Officer</div>
+                                    <h3 className="author-title">Ankur Patel</h3>
+                                    <div className="author-designation">CEO & Founder</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 {/* Decorative Shape */}
-                <div className="contact-shape-block" style={{ overflow: "hidden" }}>
+                {/* <div className="contact-shape-block" style={{ overflow: "hidden" }}>
                     <img
                         src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0f8518b8df300bcd021c1_emojistar%202%20(1).svg"
                         loading="lazy" alt="Icon" className="contact-shape-icon"
-                        style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }} 
+                        style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
                     />
-                </div>
+                </div> */}
             </section>
         </>
     );

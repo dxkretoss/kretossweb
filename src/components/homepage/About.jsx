@@ -1,8 +1,13 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import AnimatedButton from '../ui/AnimatedButton';
+
+console.log("GSAP:", gsap);
+console.log("registerPlugin:", gsap.registerPlugin);
 
 gsap.registerPlugin(ScrollTrigger);
+
 
 // SplitText helper – IDENTICAL to Hero.jsx version
 // Characters start at translate3d(0, 30px, 0) opacity:0 — matching Webflow IX2 initial state
@@ -55,33 +60,35 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
     );
 };
 
-// Reusable CounterBox subcomponent for the statistical animations
-const CounterBox = ({ leftDigits, rightDigits, suffix, label, hasLine = true, rightOneClass = "" }) => {
+// CounterBox component
+const CounterBox = ({ leftDigits, rightDigits, suffix, label, hasLine, rightOneClass = '' }) => {
     return (
-        <div className="counter-number-box">
-            <div className="counter-single-box">
-                <div className="counter-block" style={{ height: "60px", overflow: "hidden", display: "flex", position: "relative" }}>
-                    <div className="counter-left-box" style={{ display: "flex", flexDirection: "column" }}>
-                        {leftDigits.map((d, i) => (
-                            <div key={i} className="counter-box-title" style={{ height: "60px", lineHeight: "60px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
-                        ))}
+        <div className="counter-single-box !relative !pr-6 md:!pr-10">
+            <div className="counter-number-box !flex-col !items-start !gap-1">
+                <div className="counter-title-box" style={{ display: "flex", alignItems: "center" }}>
+                    <div className="counter-block" style={{ height: "47.5px", overflow: "hidden", display: "flex", position: "relative" }}>
+                        <div className="counter-left-box !text-[#0a0a0a]" style={{ display: "flex", flexDirection: "column" }}>
+                            {leftDigits.map((d, i) => (
+                                <div key={i} className="counter-box-title !text-4xl md:!text-5xl !tracking-tight !text-[#0a0a0a]" style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
+                            ))}
+                        </div>
+                        <div className="counter-right-box !text-[#0a0a0a]" style={{ display: "flex", flexDirection: "column" }}>
+                            {rightDigits.map((d, i) => (
+                                <div key={i} className={`counter-box-title ${rightOneClass} !text-4xl md:!text-5xl !tracking-tight !text-[#0a0a0a]`} style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
+                            ))}
+                        </div>
                     </div>
-                    <div className="counter-right-box" style={{ display: "flex", flexDirection: "column" }}>
-                        {rightDigits.map((d, i) => (
-                            <div key={i} className={`counter-box-title ${rightOneClass}`} style={{ height: "60px", lineHeight: "60px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
-                        ))}
-                    </div>
-                    <h2 className="counter-box-title" style={{ height: "60px", lineHeight: "60px", display: "flex", alignItems: "center" }}>{suffix}</h2>
+                    <h2 className="counter-box-title !text-4xl md:!text-5xl" style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", marginLeft: "2px" }}>{suffix}</h2>
                 </div>
                 <div className="counter-subtitle-text counter-number">
-                    <div className="counter-text">{label}</div>
+                    <div className="counter-text !text-sm md:!text-base !font-medium !text-gray-600 max-w-[100px] leading-tight pt-1">{label}</div>
                 </div>
-                {hasLine && (
-                    <div className="counter-bar">
-                        <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69ad58d10421ab7969cf6518_Line%20928.png" loading="lazy" alt="img" />
-                    </div>
-                )}
             </div>
+            {hasLine && (
+                <div className="counter-bar !absolute !right-0 !top-1/2 !-translate-y-1/2">
+                    <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69ad58d10421ab7969cf6518_Line%20928.png" loading="lazy" alt="img" className="h-[60px] opacity-30" />
+                </div>
+            )}
         </div>
     );
 };
@@ -126,28 +133,31 @@ export default function About() {
     // Statistics counters
     const statisticsCounters = [
         {
-            left: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-            right: [5, 4, 3, 2, 1, 0, 6, 7, 5],
+            left: ["0", "20", "40", "60", "80", "90", "95", "98", "100"],
+            right: ["", "", "", "", "", "", "", "", ""],
             suffix: "+",
-            label: "Brand Style"
+            label: "Countries Served",
+            hasLine: true
         },
         {
-            left: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-            right: [8, 7, 6, 5, 3, 3, 2, 1, 8],
+            left: ["0", "10", "30", "50", "70", "85", "90", "93", "95"],
+            right: ["", "", "", "", "", "", "", "", ""],
             suffix: "%",
-            label: "Client Satisfaction"
+            label: "Our Transformative",
+            hasLine: true
         },
         {
-            left: [8, 7, 6, 5, 0, 1, 2, 3, 4],
-            right: [0, 1, 2, 3, 4, 5, 6, 7, 0],
+            left: ["0", "5", "10", "15", "20", "25", "28", "29", "30"],
+            right: ["", "", "", "", "", "", "", "", ""],
             suffix: "+",
-            label: "International Creators"
+            label: "Award Winning",
+            hasLine: true
         },
         {
-            left: [9, 8, 7, 6, 5, 4, 3, 2, 1],
-            right: [0, 1, 2, 3, 4, 5, 6, 7, 0],
-            suffix: "+",
-            label: "Years of Experience",
+            left: ["0", "0", "0", "1", "1", "1", "1", "2", "2"],
+            right: ["", "", "", "", "", "", "", "", ""],
+            suffix: "k+",
+            label: "Projects Delivered",
             hasLine: false,
             rightOneClass: "one"
         }
@@ -156,14 +166,22 @@ export default function About() {
     useLayoutEffect(() => {
         let ctx;
         let slideshowInterval;
-        const timer = setTimeout(() => {
-            gsap.registerPlugin(ScrollTrigger);
-            ctx = gsap.context(() => {
-                // ========================================================
-                // WEBFLOW-EXACT ANIMATION: outQuart easing, 1000ms duration
-                // IDENTICAL animation logic to Hero.jsx – same easing, durations
-                // ========================================================
 
+        // 1. Synchronously set initial hidden states to prevent mounting flashes
+        gsap.registerPlugin(ScrollTrigger);
+        ctx = gsap.context(() => {
+            gsap.set(".about-subtitle-box", { opacity: 0, y: 100 });
+            gsap.set(".about-subtitle-box .subtitle-image-icon", { rotate: 0, scale: 0 });
+            gsap.set(".about-section-title", { opacity: 0, y: 100 });
+            gsap.set(".about-text", { opacity: 0, y: 100 });
+            gsap.set(".about-button", { opacity: 0, y: 100 });
+            gsap.set(".about-gallery-image", { opacity: 0, scale: 0.3 });
+            gsap.set(".about-counter", { opacity: 0 });
+        }, aboutRef);
+
+        // 2. Defer ScrollTrigger creation to allow coordinates to settle
+        const timer = setTimeout(() => {
+            ctx.add(() => {
                 const tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: ".about-content-wrapper",
@@ -265,8 +283,8 @@ export default function About() {
                     counterLeftBoxes.forEach((leftBox, idx) => {
                         const rightBox = counterRightBoxes[idx];
                         if (leftBox && rightBox) {
-                            const leftTranslate = -(leftBox.children.length - 1) * 60;
-                            const rightTranslate = -(rightBox.children.length - 1) * 60;
+                            const leftTranslate = -(leftBox.children.length - 1) * 47.5;
+                            const rightTranslate = -(rightBox.children.length - 1) * 47.5;
 
                             tl.fromTo(leftBox,
                                 { y: 0 },
@@ -359,7 +377,7 @@ export default function About() {
                         gsap.to(backArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
                     });
                 }
-            }, aboutRef);
+            });
         }, 100);
 
         return () => {
@@ -378,11 +396,10 @@ export default function About() {
                             <div className="about-slider" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
                                 <div className="about-slider-two"></div>
                             </div>
-                            <div className="about-subtitle-box" style={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }}>
+                            <div className="about-subtitle-box">
                                 <img
                                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887be_Star%2018.svg"
-                                    loading="lazy" alt="Contact Subtitle Icon" className="subtitle-image-icon"
-                                    style={{ transform: "rotate(0deg) scale(0)" }}
+                                    loading="lazy" alt="Contact Subtitle Icon" className="subtitle-image-icon animate-[spin_4s_linear_infinite]"
                                 />
                                 <div className="about-subtitle-text">About Kretoss</div>
                             </div>
@@ -392,49 +409,28 @@ export default function About() {
                                 <div className="about-slider _02" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
                                     <div className="about-slider-two _02"></div>
                                 </div>
-                                <h2 className="about-section-title" style={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }}>
+                                <h2 className="about-section-title">
                                     Crafting Scalable, Secure, & Smart Digital Experiences
                                 </h2>
                             </div>
                             <div className="about-title-button">
                                 <div className="about-block">
-                                    <div className="about-text" style={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }}>Trusted by global clients, Kretoss Technology is your technology partner for mobile apps, websites, and digital solutions affordable, reliable, and tailored to your business needs. With over 12 years of experience, we deliver scalable, high-quality solutions that drive real business growth.</div>
-                                    <div className="about-button" style={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }}>
-                                        <a
-                                            href="https://www.pixoora.com" className="primary-button w-inline-block"
-                                            aria-label="MORE ABOUT USMORE ABOUT US">
-                                            <div className="button-text-wrapper">
-                                                <div className="button-text-box">
-                                                    <div className="button-front-text">
-                                                        <SplitText text="MORE ABOUT US" startIndex={1} plainStyle={true} />
-                                                    </div>
-                                                    <div className="button-back-text">
-                                                        <SplitText text="MORE ABOUT US" startIndex={12} plainStyle={true} />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="button-arrow-box">
-                                                <div className="button-arrow-box-icon">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bf_Arrow%20Right%20Up.svg"
-                                                        alt="Button Icon" className="button-front-arrow"
-                                                    />
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bf_Arrow%20Right%20Up.svg"
-                                                        alt="Button Icon" className="button-back-arrow"
-                                                        style={{ transform: "translate3d(-13px, 14px, 0px)" }}
-                                                    />
-                                                </div>
-                                            </div>
-                                            <div className="button-dot-box">
-                                                <div className="button-dot"></div>
-                                                <div className="button-dot"></div>
-                                            </div>
-                                            <div className="button-dot-box right-box">
-                                                <div className="button-dot"></div>
-                                                <div className="button-dot"></div>
-                                            </div>
-                                        </a>
+                                    <div className="about-text">Trusted by global clients, Kretoss Technology is your technology partner for mobile apps, websites, and digital solutions affordable, reliable, and tailored to your business needs. With over 12 years of experience, we deliver scalable, high-quality solutions that drive real business growth.</div>
+                                    <div className="about-button">
+                                        <AnimatedButton href="#about" text="MORE ABOUT US" />
+                                    </div>
+                                    <div className="about-counter !mt-3 md:!mt-6 !flex !flex-row !justify-between !items-start !w-full !gap-4 md:!gap-8">
+                                        {statisticsCounters.map((counter, idx) => (
+                                            <CounterBox
+                                                key={idx}
+                                                leftDigits={counter.left}
+                                                rightDigits={counter.right}
+                                                suffix={counter.suffix}
+                                                label={counter.label}
+                                                hasLine={counter.hasLine}
+                                                rightOneClass={counter.rightOneClass}
+                                            />
+                                        ))}
                                     </div>
                                 </div>
                                 <div className="about-block-right">
@@ -446,23 +442,9 @@ export default function About() {
                                             sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 888px" alt="About Image"
                                             srcSet={image.srcSet}
                                             className={`about-gallery-image ${image.key}`}
-                                            style={{ opacity: 0, transform: "translate3d(0, 0, 0) scale3d(0.3, 0.3, 1)" }}
                                         />
                                     ))}
                                 </div>
-                            </div>
-                            <div className="about-counter" style={{ opacity: 0 }}>
-                                {statisticsCounters.map((counter, idx) => (
-                                    <CounterBox
-                                        key={idx}
-                                        leftDigits={counter.left}
-                                        rightDigits={counter.right}
-                                        suffix={counter.suffix}
-                                        label={counter.label}
-                                        hasLine={counter.hasLine}
-                                        rightOneClass={counter.rightOneClass}
-                                    />
-                                ))}
                             </div>
                         </div>
                     </div>

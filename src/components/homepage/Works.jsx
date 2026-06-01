@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -57,23 +57,23 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 // Reusable WorkStep Component
 const WorkStep = ({ id, duration, title, description, icon, isFirst, isLast }) => {
     const isEven = parseInt(id, 10) % 2 === 0;
-    
+
     // Classes setup
-    const wrapperClass = isFirst 
-        ? "step-card-wrapper-data _01" 
-        : isLast 
-            ? "step-card-wrapper-data last-card" 
-            : "step-card-wrapper-data";
+    const wrapperClass = isFirst
+        ? "step-card-wrapper-data _01 !h-full !flex !flex-col"
+        : isLast
+            ? "step-card-wrapper-data last-card !h-full !flex !flex-col"
+            : "step-card-wrapper-data !h-full !flex !flex-col";
 
     const borderBoxClass = isFirst ? "border-box-work _01" : "border-box-work";
     const borderBoxBorderClass = `border-box-border _${id}`;
-    const cardBoxClass = `step-card-wrapper-box _${id}`;
-    const cardClass = isEven ? "step-single-card _02" : "step-single-card";
+    const cardBoxClass = `step-card-wrapper-box _${id} !flex-1 !flex !flex-col`;
+    const cardClass = isEven ? "step-single-card _02 !flex-1 !flex !flex-col !justify-between" : "step-single-card !flex-1 !flex !flex-col !justify-between";
 
     return (
         <div className={wrapperClass}>
             <div className={borderBoxClass}>
-                <div 
+                <div
                     className={borderBoxBorderClass}
                     style={{ "willChange": "background", "backgroundColor": "rgb(180, 210, 249)" }}
                 >
@@ -86,23 +86,24 @@ const WorkStep = ({ id, duration, title, description, icon, isFirst, isLast }) =
                     <div className="border-work-title">STEP {id}</div>
                 </div>
             </div>
-            <div 
+            <div
                 className={cardBoxClass}
-                style={{ 
-                    "willChange": "opacity, transform", 
-                    "opacity": "0", 
-                    "transformStyle": "preserve-3d" 
+                style={{
+                    "willChange": "opacity, transform",
+                    "opacity": "0",
+                    "transformStyle": "preserve-3d"
                 }}
             >
                 <div className={cardClass}>
                     <div className="step-card-top">
                         <div className="step-icon-box">
-                            <img src={icon} loading="lazy" alt="Step Icon" className="step-icon" />
+                            {id}
+                            {/* <img src={icon} loading="lazy" alt="Step Icon" className="step-icon" /> */}
                         </div>
                         <div className="step-date-box">
                             <img
                                 src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288818_clock-01.svg"
-                                loading="lazy" alt="Step Date Icon" className="step-date-icon" 
+                                loading="lazy" alt="Step Date Icon" className="step-date-icon"
                             />
                             <div className="step-date-text">{duration}</div>
                         </div>
@@ -116,7 +117,7 @@ const WorkStep = ({ id, duration, title, description, icon, isFirst, isLast }) =
             {isLast && (
                 <img
                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b3a122ef14b16145540e79_Vector%202779.svg"
-                    loading="lazy" alt="Card Icon" className="last-card-arrow-icon" 
+                    loading="lazy" alt="Card Icon" className="last-card-arrow-icon"
                 />
             )}
         </div>
@@ -129,29 +130,29 @@ export default function Works() {
         {
             id: "01",
             duration: "2 Hours",
-            title: "Requirements Analysis",
-            description: "Understanding your goals, users, and project needs from the ground up.",
+            title: "Decode",
+            description: "We don’t just take briefs we break them down.",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288817_files-02.svg"
         },
         {
             id: "02",
             duration: "2-5 Days",
-            title: "User Research Ideation",
-            description: "Understanding your goals, users, and project needs from the ground up.",
+            title: "Blueprint",
+            description: "Before anything goes live, we map everything out.",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288817_files-02.svg"
         },
         {
             id: "03",
             duration: "2-4 Days",
-            title: "Design & Development",
-            description: "Understanding your goals, users, and project needs from the ground up.",
+            title: "Build Bold",
+            description: "We craft user-centered digital solutions that are fast, secure, and scalable.",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288817_files-02.svg"
         },
         {
             id: "04",
             duration: "2-4 Days",
-            title: "User Feedback & Launch",
-            description: "Understanding your goals, users, and project needs from the ground up.",
+            title: "Launch & Level Up",
+            description: "We track, refine, and continuously evolve your product to keep you ahead of the curve.",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288817_files-02.svg"
         }
     ];
@@ -234,11 +235,11 @@ export default function Works() {
                         duration: 1.0,
                         ease: "power2.out"
                     }, index * 1.2)
-                    .to(border, {
-                        backgroundColor: "#0e54f1",
-                        duration: 1.0,
-                        ease: "power2.out"
-                    }, "<");
+                        .to(border, {
+                            backgroundColor: "#0e54f1",
+                            duration: 1.0,
+                            ease: "power2.out"
+                        }, "<");
                 });
 
             }, worksRef);
@@ -257,7 +258,7 @@ export default function Works() {
                     <img
                         src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b111dabcb84206b63f263a_cube-helix%202.svg"
                         loading="lazy" alt="Step Shape Icon" className="step-shape-icon"
-                        style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(29.668deg) rotateY(14.834deg) rotateZ(267.012deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "willChange": "transform" }} 
+                        style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(29.668deg) rotateY(14.834deg) rotateZ(267.012deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "willChange": "transform" }}
                     />
                 </div>
                 <div className="step-block">
@@ -270,16 +271,16 @@ export default function Works() {
                                         <img
                                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
                                             loading="lazy" alt="Step Subtitle Icon" className="subtitle-image-icon"
-                                            style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }} 
+                                            style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }}
                                         />
-                                        <div className="subtitle-text white">Work Process</div>
+                                        <div className="subtitle-text white">Process</div>
                                     </div>
                                     <h2 className="title white" aria-label="Our Approach to Success">
                                         <SplitText text="Our Approach to Success" startIndex={1} />
                                     </h2>
                                 </div>
                                 <div className="step-card-block-data">
-                                    <div data-w-id="bb7856e3-93e6-b16d-dea6-bc4e2f65e613" className="step-card-wrapper">
+                                    <div data-w-id="bb7856e3-93e6-b16d-dea6-bc4e2f65e613" className="step-card-wrapper !items-stretch">
                                         {stepsData.map((step, idx) => (
                                             <WorkStep
                                                 key={step.id}
@@ -294,7 +295,7 @@ export default function Works() {
                                         ))}
                                         <img
                                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/699c625038a0e177239d679e_dd.svg"
-                                            loading="lazy" alt="img" className="process-middel-icon" 
+                                            loading="lazy" alt="img" className="process-middel-icon"
                                         />
                                     </div>
                                 </div>
