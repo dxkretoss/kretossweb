@@ -164,8 +164,8 @@ const ProjectCard = ({
                 </div>
                 <div className="project-card-text">{description}</div>
             </div>
-            <div className="project-card-bottom !flex !flex-col md:!flex-row !gap-6">
-                <div className="project-number-wrapper !grid !grid-cols-2 !w-full md:!w-auto md:!flex md:!flex-col">
+            <div className="project-card-bottom">
+                <div className="project-number-wrapper">
                     <div className="project-number-box">
                         <div className="project-number-text">Project timeline</div>
                         <h3 className="project-number-title">{timeline}</h3>
