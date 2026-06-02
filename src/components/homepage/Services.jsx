@@ -284,11 +284,10 @@ export default function Services() {
                         // Fill remaining timeline up to 100 to scale scroll progress to 100% exactly
                         .to({}, { duration: 40 }, 60);
 
-                    // Spin and scale star subtitle icon on viewport entrance
+                    // Scale star subtitle icon on viewport entrance
                     gsap.fromTo(".project-subtitle-box .subtitle-image-icon",
-                        { rotate: 0, scale: 0 },
+                        { scale: 0 },
                         {
-                            rotate: 116.964,
                             scale: 1,
                             duration: 1.2,
                             ease: "power4.out",
@@ -301,18 +300,73 @@ export default function Services() {
                     );
                 });
 
-                // Mobile/Tablet reset (width < 992px)
+                // Mobile/Tablet layout smooth entrance animations
                 mm.add("(max-width: 991px)", () => {
-                    gsap.set(".project-title-area", { y: 0 });
-                    gsap.set(".single-service-card", { y: 0 });
-                    gsap.set(".project-subtitle-box .subtitle-image-icon", { rotate: 116.964, scale: 1 });
+                    // Animate title block
+                    gsap.fromTo(".project-title-area", 
+                        { opacity: 0, y: 30 }, 
+                        { 
+                            opacity: 1, 
+                            y: 0, 
+                            duration: 0.8, 
+                            ease: "power3.out",
+                            scrollTrigger: {
+                                trigger: ".project-title-area",
+                                start: "top 85%",
+                                toggleActions: "play none none reverse"
+                            }
+                        }
+                    );
+
+                    // Animate each individual service card
+                    const cards = gsap.utils.toArray(".single-service-card");
+                    cards.forEach((card) => {
+                        gsap.fromTo(card, 
+                            { opacity: 0, y: 40, scale: 0.95 }, 
+                            { 
+                                opacity: 1, 
+                                y: 0, 
+                                scale: 1,
+                                duration: 0.8, 
+                                ease: "power3.out",
+                                scrollTrigger: {
+                                    trigger: card,
+                                    start: "top 85%",
+                                    toggleActions: "play none none reverse"
+                                }
+                            }
+                        );
+                    });
+
+                    // Subtitle star icon entrance
+                    gsap.fromTo(".project-subtitle-box .subtitle-image-icon",
+                        { scale: 0 },
+                        {
+                            scale: 1,
+                            duration: 1.2,
+                            ease: "power4.out",
+                            scrollTrigger: {
+                                trigger: ".project-subtitle-box",
+                                start: "top 90%",
+                                toggleActions: "play none none reverse"
+                            }
+                        }
+                    );
+                });
+
+                // Continuous spin for the subtitle star icon
+                gsap.to(".project-subtitle-box .subtitle-image-icon", {
+                    rotate: 360,
+                    ease: "none",
+                    duration: 10,
+                    repeat: -1,
                 });
 
                 // 3D rotation float animation on the decorative background services-shape
                 gsap.to(".services-shape", {
                     rotateZ: "-=360",
                     ease: "none",
-                    duration: 35,
+                    duration: 10,
                     repeat: -1,
                 });
             }, servicesRef);
@@ -336,7 +390,7 @@ export default function Services() {
                         />
                     </div>
                     <div className="w-layout-blockcontainer container w-container">
-                        <div data-w-id="83b6645c-69a4-34e9-aadc-848274859eb2" className="service-section-block !pb-12 md:!pb-24 lg:!pb-64 !overflow-visible">
+                        <div data-w-id="83b6645c-69a4-34e9-aadc-848274859eb2" className="service-section-block">
                             <div className="service-content-wrapper !overflow-visible">
                                 <div className="project-title-area"
                                     style={{ "willChange": "transform", "transformStyle": "preserve-3d" }}>
@@ -352,7 +406,7 @@ export default function Services() {
                                         <SplitText text="Our Services" startIndex={1} />
                                     </h2>
                                 </div>
-                                <div className="service-card-box !w-full !overflow-visible !pb-12">
+                                <div className="service-card-box">
                                     {servicesList.map((service, idx) => (
                                         <ServiceCard
                                             key={idx}

@@ -3,56 +3,6 @@ import gsap from 'gsap';
 import { Globe, Settings, Palette, Code } from 'lucide-react';
 import AnimatedButton from '../ui/AnimatedButton';
 
-// SplitText component - generates character-level DOM elements for GSAP animation.
-// Characters start at translate3d(0, 30px, 0) opacity:0 – identical to Webflow's IX2 initial state.
-const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
-    const words = text.split(" ");
-    let globalLetterIdx = startIndex;
-
-    const letterStyle = plainStyle
-        ? { position: "relative", display: "inline-block" }
-        : {
-            position: "relative",
-            display: "inline-block",
-            opacity: "0",
-            translate: "none",
-            rotate: "none",
-            scale: "none",
-            transform: "translate3d(0px, 30px, 0px)"
-        };
-
-    return (
-        <>
-            {words.map((word, wordIdx) => {
-                const chars = word.split("");
-                return (
-                    <React.Fragment key={wordIdx}>
-                        <div
-                            className={`${wordClassPrefix} ${wordClassPrefix}${wordIdx + 1}`}
-                            aria-hidden="true"
-                            style={{ position: "relative", display: "inline-block" }}
-                        >
-                            {chars.map((char, charIdx) => {
-                                const currentIdx = globalLetterIdx++;
-                                return (
-                                    <div
-                                        key={charIdx}
-                                        className={`${letterClassPrefix} ${letterClassPrefix}${currentIdx}`}
-                                        aria-hidden="true"
-                                        style={letterStyle}
-                                    >
-                                        {char}
-                                    </div>
-                                );
-                            })}
-                        </div>
-                        {wordIdx < words.length - 1 && " "}
-                    </React.Fragment>
-                );
-            })}
-        </>
-    );
-};
 
 // Subcomponent: RatingBadge
 const RatingBadge = () => {
@@ -140,20 +90,21 @@ const FloatingBadge = ({ text, type = 'purple', arrowRot = -17.9137, badgeClass 
     if (type === 'orange') {
         bgColor = "#F8902A";
         textColor = "#fff";
-        arrowClass = "hero-arrow-box right-arrow";
+        arrowClass = "hero-arrow-box right-arrow hero-arrow-box _04";
         shapeClass = "hero-shape-box right-shape";
         if (arrowRot === -17.9137) arrowRot = -90.375;
     } else if (type === 'web') {
         bgColor = "#a9bf15";
         textColor = "#fff";
-        arrowClass = "hero-arrow-box _01";
+        arrowClass = "hero-arrow-box _03"; // Bottom-right
         shapeClass = "hero-shape-box _01";
+        if (arrowRot === -17.9137) arrowRot = 72.086; // Point down-right
     } else if (type === 'erp') {
         bgColor = "#dd986d";
         textColor = "#fff";
-        arrowClass = "hero-arrow-box right-arrow";
+        arrowClass = "hero-arrow-box _02"; // Bottom-left
         shapeClass = "hero-shape-box right-shape";
-        if (arrowRot === -17.9137) arrowRot = -90.375;
+        if (arrowRot === -17.9137) arrowRot = -202.086; // Point down-left
     }
 
     const arrowStyle = {
@@ -205,22 +156,38 @@ export default function Hero() {
             // opacity: 0 → 1, all with outQuart easing
             // ========================================================
 
-            // 1. Rating Badge cross-fade (runs independently / asynchronously)
-            const ratingTl = gsap.timeline();
-            ratingTl.to(".hero-icon-rating", {
+            // 1. Rating Badge initial fade in
+            gsap.to(".hero-icon-rating", {
                 opacity: 1, y: 0, duration: 1, ease: "power4.out"
             });
-            ratingTl.to(".trust-score", {
-                opacity: 1, scale: 1, duration: 1, ease: "power4.out"
-            }, "-=0.6");
-            ratingTl.to(".trust-score", {
+
+            // Loop timeline for Trust Score <-> 4.8 + Stars
+            const ratingLoopTl = gsap.timeline({ repeat: -1 });
+
+            // Trust score fades in
+            ratingLoopTl.to(".trust-score", {
+                opacity: 1, scale: 1, duration: 0.6, ease: "power4.out"
+            });
+            // Wait 2s
+            ratingLoopTl.to({}, { duration: 1 });
+            // Trust score fades out
+            ratingLoopTl.to(".trust-score", {
                 opacity: 0, scale: 0.8, duration: 0.4, ease: "power2.in"
-            }, "+=1.5");
-            ratingTl.fromTo(".single-review-star",
+            });
+
+            // 4.8 Text stays permanent. Stars fade in
+            ratingLoopTl.fromTo(".single-review-star",
                 { scale: 0 },
-                { scale: 1, duration: 0.5, stagger: 0.06, ease: "back.out(1.5)" },
-                "-=0.2"
+                { scale: 1, duration: 0.5, stagger: 0.06, ease: "back.out(1.5)" }
             );
+
+            // Wait 2s
+            ratingLoopTl.to({}, { duration: 2 });
+
+            // Stars fade out
+            ratingLoopTl.to(".single-review-star", {
+                scale: 0, duration: 0.4, stagger: 0.04, ease: "power2.in"
+            });
 
             // 2. Main Timeline – NO DELAYS, starts immediately
             const tl = gsap.timeline();
@@ -253,12 +220,28 @@ export default function Hero() {
                 0.4
             );
 
-            // Star icon: scale 0→1, rotate to -43.425deg
+            // Star icon: scale 0→1
             tl.fromTo(".brans-star-image",
-                { scale: 0, rotate: 0 },
-                { scale: 1, rotate: -43.425, duration: 1, ease: "power4.out" },
+                { scale: 0 },
+                { scale: 1, duration: 1, ease: "power4.out" },
                 0.2
             );
+
+            // Star icon continuous spin
+            gsap.to(".brans-star-image", {
+                rotate: 360,
+                duration: 10,
+                repeat: -1,
+                ease: "linear"
+            });
+
+            // Hero meta icon continuous Y-axis spin
+            gsap.to(".hero-meta-box-icon", {
+                rotationY: 360,
+                duration: 6,
+                repeat: -1,
+                ease: "linear"
+            });
 
             // Hero images: scale3d(1.3,1.3,1) → scale3d(1,1,1), opacity 0→1
             // Matches reference: transform: translate3d(0, 0, 0) scale3d(1.3, 1.3, 1)
@@ -324,7 +307,14 @@ export default function Hero() {
                 tagTimeline.set(tags[3], { yPercent: 0 });
             }
 
-
+            // Wiggle animation for all floating badge arrows (half rotate back and forth)
+            gsap.to(".hero-arrow-box", {
+                rotation: "+=30",
+                duration: 1.5,
+                repeat: -1,
+                yoyo: true,
+                ease: "sine.inOut"
+            });
         }, heroRef);
 
         return () => ctx.revert();
@@ -343,10 +333,24 @@ export default function Hero() {
 
                             {/* Building Future-Ready Software for Enterprises and Disruptive Startups */}
                             <div className="hero-title-box">
+                                <FloatingBadge
+                                    text="Web"
+                                    type="web"
+                                    badgeClass="!absolute !top-12 md:!-top-20 !-left-[10px] md:!left-[200px] !z-10 scale-75 md:scale-100"
+                                    iconComponent={<Globe size={18} color="#fff" />}
+                                />
+
+                                <FloatingBadge
+                                    text="ERP/Automation"
+                                    type="erp"
+                                    badgeClass="!absolute !top-12 md:!-top-20 !right-[10px] md:!-right-[-150px] !z-10 scale-75 md:scale-100"
+                                    iconComponent={<Settings size={18} color="#fff" />}
+                                />
                                 <div className="hero-top-title">
                                     <h1 className="hero-title banner" aria-label="We Build Meaningful">
                                         Building Future-Ready Software for
                                     </h1>
+
                                 </div>
                                 <div className="hero-title-box-two">
                                     <div className="star-image">
@@ -354,12 +358,12 @@ export default function Hero() {
                                             loading="lazy" alt="img" className="brans-star-image" />
                                     </div>
                                     <div className="hero-brand-ttitle relative" aria-label="brands  &">
-                                        <FloatingBadge
+                                        {/* <FloatingBadge
                                             text="Web"
                                             type="web"
-                                            badgeClass="!absolute !-top-12 md:!-top-2 !-left-[10px] md:!-left-[140px] !z-10 scale-75 md:scale-100"
+                                            // badgeClass="!absolute !-top-12 md:!-top-2 !-left-[10px] md:!-left-[140px] !z-10 scale-75 md:scale-100"
                                             iconComponent={<Globe size={18} color="#fff" />}
-                                        />
+                                        /> */}
                                         <h2 className="hero-title banner-02">
                                             <span className="hero-text-span">Enterprises</span>{" "}
                                             <span className="hero-text-span _03">&</span>
@@ -383,12 +387,12 @@ export default function Hero() {
                                         <h2 className="hero-title _03">
                                             <span className="hero-text-span banner-03">Disruptive</span>
                                         </h2>
-                                        <FloatingBadge
+                                        {/* <FloatingBadge
                                             text="ERP/Automation"
                                             type="erp"
-                                            badgeClass="!absolute !-top-16 md:!-top-10 !right-[10px] md:!right-[-200px] !z-10 scale-75 md:scale-100"
+                                            // badgeClass="!absolute !-top-16 md:!-top-10 !right-[10px] md:!right-[-200px] !z-10 scale-75 md:scale-100"
                                             iconComponent={<Settings size={18} color="#fff" />}
-                                        />
+                                        /> */}
                                     </div>
                                 </div>
                                 <div className="hero-text-three">

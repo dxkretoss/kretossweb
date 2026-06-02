@@ -174,11 +174,10 @@ export default function Works() {
                     repeat: -1,
                 });
 
-                // Spin and scale star subtitle icon on viewport entrance
+                // Scale star subtitle icon on viewport entrance
                 gsap.fromTo(".work-title .subtitle-image-icon",
-                    { rotate: 0, scale: 0 },
+                    { scale: 0 },
                     {
-                        rotate: 116.964,
                         scale: 1,
                         duration: 1.2,
                         ease: "power4.out",
@@ -189,6 +188,14 @@ export default function Works() {
                         }
                     }
                 );
+
+                // Continuous spin for the subtitle star icon
+                gsap.to(".work-title .subtitle-image-icon", {
+                    rotate: 360,
+                    ease: "none",
+                    duration: 10,
+                    repeat: -1,
+                });
 
                 // Title block slide entrance
                 gsap.fromTo(".work-title",

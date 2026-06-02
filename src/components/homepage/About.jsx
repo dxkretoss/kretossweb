@@ -3,82 +3,27 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
 
-console.log("GSAP:", gsap);
-console.log("registerPlugin:", gsap.registerPlugin);
-
 gsap.registerPlugin(ScrollTrigger);
-
-
-// SplitText helper – IDENTICAL to Hero.jsx version
-// Characters start at translate3d(0, 30px, 0) opacity:0 — matching Webflow IX2 initial state
-const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
-    const words = text.split(" ");
-    let globalLetterIdx = startIndex;
-
-    const letterStyle = plainStyle
-        ? { position: "relative", display: "inline-block" }
-        : {
-            position: "relative",
-            display: "inline-block",
-            opacity: "0",
-            translate: "none",
-            rotate: "none",
-            scale: "none",
-            transform: "translate3d(0px, 30px, 0px)"
-        };
-
-    return (
-        <>
-            {words.map((word, wordIdx) => {
-                const chars = word.split("");
-                return (
-                    <React.Fragment key={wordIdx}>
-                        <div
-                            className={`${wordClassPrefix} ${wordClassPrefix}${wordIdx + 1}`}
-                            aria-hidden="true"
-                            style={{ position: "relative", display: "inline-block" }}
-                        >
-                            {chars.map((char, charIdx) => {
-                                const currentIdx = globalLetterIdx++;
-                                return (
-                                    <div
-                                        key={charIdx}
-                                        className={`${letterClassPrefix} ${letterClassPrefix}${currentIdx}`}
-                                        aria-hidden="true"
-                                        style={letterStyle}
-                                    >
-                                        {char}
-                                    </div>
-                                );
-                            })}
-                        </div>
-                        {wordIdx < words.length - 1 && " "}
-                    </React.Fragment>
-                );
-            })}
-        </>
-    );
-};
 
 // CounterBox component
 const CounterBox = ({ leftDigits, rightDigits, suffix, label, hasLine, rightOneClass = '' }) => {
     return (
-        <div className="counter-single-box !relative !pr-6 md:!pr-10">
-            <div className="counter-number-box !flex-col !items-start !gap-1">
+        <div className="counter-single-box ">
+            <div className="counter-number-box">
                 <div className="counter-title-box" style={{ display: "flex", alignItems: "center" }}>
                     <div className="counter-block" style={{ height: "47.5px", overflow: "hidden", display: "flex", position: "relative" }}>
-                        <div className="counter-left-box !text-[#0a0a0a]" style={{ display: "flex", flexDirection: "column" }}>
+                        <div className="counter-left-box" style={{ display: "flex", flexDirection: "column" }}>
                             {leftDigits.map((d, i) => (
-                                <div key={i} className="counter-box-title !text-4xl md:!text-5xl !tracking-tight !text-[#0a0a0a]" style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
+                                <div key={i} className="counter-box-title" style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
                             ))}
                         </div>
-                        <div className="counter-right-box !text-[#0a0a0a]" style={{ display: "flex", flexDirection: "column" }}>
+                        <div className="counter-right-box" style={{ display: "flex", flexDirection: "column" }}>
                             {rightDigits.map((d, i) => (
-                                <div key={i} className={`counter-box-title ${rightOneClass} !text-4xl md:!text-5xl !tracking-tight !text-[#0a0a0a]`} style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
+                                <div key={i} className={`counter-box-title ${rightOneClass}`} style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
                             ))}
                         </div>
                     </div>
-                    <h2 className="counter-box-title !text-4xl md:!text-5xl" style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", marginLeft: "2px" }}>{suffix}</h2>
+                    <h2 className="counter-box-title" style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", marginLeft: "2px" }}>{suffix}</h2>
                 </div>
                 <div className="counter-subtitle-text counter-number">
                     <div className="counter-text !text-sm md:!text-base !font-medium !text-gray-600 max-w-[100px] leading-tight pt-1">{label}</div>
@@ -419,7 +364,7 @@ export default function About() {
                                     <div className="about-button">
                                         <AnimatedButton href="#about" text="MORE ABOUT US" />
                                     </div>
-                                    <div className="about-counter !mt-3 md:!mt-6 !flex !flex-row !justify-between !items-start !w-full !gap-4 md:!gap-8">
+                                    <div className="about-counter">
                                         {statisticsCounters.map((counter, idx) => (
                                             <CounterBox
                                                 key={idx}

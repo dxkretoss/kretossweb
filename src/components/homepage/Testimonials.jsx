@@ -389,11 +389,10 @@ export default function Testimonials() {
                         }
                     );
 
-                    // Spin and scale star subtitle icon on viewport entrance
+                    // Scale star subtitle icon on viewport entrance
                     gsap.fromTo(".review-ssubtitle-title .subtitle-image-icon",
-                        { rotate: 0, scale: 0 },
+                        { scale: 0 },
                         {
-                            rotate: 116.964,
                             scale: 1,
                             duration: 1.2,
                             ease: "power4.out",
@@ -406,25 +405,51 @@ export default function Testimonials() {
                     );
                 });
 
-                // Mobile/Tablet reset (width < 992px)
+                // Mobile/Tablet reset (width < 991px)
                 mm.add("(max-width: 991px)", () => {
-                    gsap.set(".testimonial-item-content", { x: 0, scale: 1, opacity: 1, transition: "" });
+                    gsap.set([".testimonial-item-content", ".review-slider-content"], { transition: "none" });
+
+                    gsap.set(".testimonial-item-content", { x: 30, scale: 1.05, opacity: 0 });
                     gsap.set(".review-slider-content", { xPercent: 0 });
 
-                    gsap.fromTo(".review-title-area .subtitle-image-icon",
-                        { rotate: 0, scale: 0 },
+                    const tl = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: testimonialsRef.current,
+                            start: "top bottom",
+                            end: "bottom top",
+                            scrub: 1.2,
+                        }
+                    });
+
+                    tl.fromTo(".testimonial-item-content._01", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 10, ease: "none" }, 5)
+                        .fromTo(".testimonial-item-content._02", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 15)
+                        .fromTo(".testimonial-item-content._03", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 20)
+                        .fromTo(".testimonial-item-content._04", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 25)
+                        .fromTo(".testimonial-item-content._05", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 30)
+                        .fromTo(".testimonial-item-content._06", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 35)
+                        .to(".review-slider-content", { xPercent: -50, duration: 60, ease: "none" }, 40);
+
+                    gsap.fromTo(".review-ssubtitle-title .subtitle-image-icon",
+                        { scale: 0 },
                         {
-                            rotate: 116.964,
                             scale: 1,
                             duration: 1.2,
                             ease: "power4.out",
                             scrollTrigger: {
-                                trigger: ".review-title-area",
+                                trigger: ".review-ssubtitle-title",
                                 start: "top 90%",
                                 toggleActions: "play none none reverse"
                             }
                         }
                     );
+                });
+
+                // Continuous spin for the subtitle star icon
+                gsap.to(".review-ssubtitle-title .subtitle-image-icon", {
+                    rotate: 360,
+                    ease: "none",
+                    duration: 10,
+                    repeat: -1,
                 });
 
             }, testimonialsRef);

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 // SplitText helper for dynamic GSAP SplitText word/letter class structures
 const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
@@ -51,7 +52,7 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 };
 
 // Reusable BookCallButton to encapsulate the dynamic B-o-o-k a C-a-l-l letters and styling
-const BookCallButton = ({ href = "/#Contact" }) => {
+const BookCallButton = ({ href = "#" }) => {
     return (
         <a href={href} className="button-two w-inline-block" aria-label="Book a CallBook a Call">
             <div className="button-two-bg">
@@ -124,9 +125,7 @@ export default function Header({ currentRoute }) {
             <section className="header">
                 <div className="w-layout-blockcontainer container-full-width w-container">
                     <div className="header-content-wrapper">
-                        <div data-w-id="c5dbb921-5697-94d2-30c7-149bf2164714" data-animation="default" data-collapse="medium"
-                            data-duration="400" data-easing="ease" data-easing2="ease" role="banner"
-                            className="navbar-wrapper w-nav">
+                        <div className="navbar-wrapper w-nav">
                             <div className="navbar-content">
                                 <a href="/" aria-current="page" className="nav-link w-nav-brand w--current" aria-label="home">
                                     <img
@@ -135,9 +134,15 @@ export default function Header({ currentRoute }) {
                                         className="nav-logo"
                                     />
                                 </a>
-                                <nav role="navigation" className={`nav-list w-nav-menu ${isMenuOpen ? '!flex !flex-col !absolute !top-full !left-0 !w-full !bg-brand-black !p-6 !border-b !border-white/10 z-50' : '!hidden lg:!flex'}`}>
+
+
+                                <nav
+                                    role="navigation"
+                                    className={`nav-list w-nav-menu ${isMenuOpen ? "mobile-menu-open" : ""
+                                        }`}
+                                >
                                     {navigationLinks.map((link, idx) => (
-                                        <div key={idx} className="menu-box !mb-4 lg:!mb-0">
+                                        <div key={idx} className="menu-box">
                                             <a
                                                 href={link.href}
                                                 onClick={(e) => handleScroll(e, link.href)}
@@ -150,23 +155,18 @@ export default function Header({ currentRoute }) {
                                     ))}
                                 </nav>
                                 <div className="header-button">
-                                    <div className="header-button-box !hidden lg:!block">
-                                        <BookCallButton href="/#Contact" />
+                                    <div className="header-button-box desktop-header-button">
+                                        <BookCallButton />
                                     </div>
-                                    <div 
-                                        className="menu-button w-nav-button lg:!hidden" 
-                                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                                        style={{ "WebkitUserSelect": "text" }} aria-label="menu"
-                                        role="button" tabIndex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu"
-                                        aria-expanded={isMenuOpen}>
-                                        <div className="menu-bar-block">
-                                            <div className="menu-bar-top"
-                                                style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}>
-                                            </div>
-                                            <div className="menu-bar-bottom"
-                                                style={{ "width": "25px", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div
+                                    className="menu-button mobile-menu-toggle"
+                                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                    style={{ "WebkitUserSelect": "text" }} aria-label="menu"
+                                    role="button" tabIndex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu"
+                                    aria-expanded={isMenuOpen}>
+                                    <div className="menu-bar-block">
+                                        {isMenuOpen ? <X /> : <Menu />}
                                     </div>
                                 </div>
                             </div>
@@ -175,28 +175,6 @@ export default function Header({ currentRoute }) {
                     </div>
                 </div>
             </section>
-
-            {/* Sticky Floating Navigation Drawer */}
-            <div data-w-id="40c52eab-c370-ed18-4687-f5b1cc3aee06" className="sticky-nav-box"
-                style={{ "willChange": "transform, width, height, opacity", "transform": "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "height": "0px", "opacity": "0" }}>
-                <div className="hero-link-block">
-                    <div className="hero-link-bar">
-                        <a href="#Hero" onClick={(e) => handleScroll(e, "#Hero")} className="hero-link w-inline-block">
-                            <div className="nav-link-text">Home</div>
-                        </a>
-                        <a href="#about-us" onClick={(e) => handleScroll(e, "#about-us")} className="hero-link w-inline-block">
-                            <div className="nav-link-text">About Us</div>
-                        </a>
-                        <BookCallButton href="#Contact" />
-                        <a href="#Services" onClick={(e) => handleScroll(e, "#Services")} className="hero-link w-inline-block">
-                            <div className="nav-link-text">Services</div>
-                        </a>
-                        <a href="#Work" onClick={(e) => handleScroll(e, "#Work")} className="hero-link w-inline-block">
-                            <div className="nav-link-text">Works</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </>
     );
 }

@@ -148,19 +148,23 @@ export default function Product() {
     const trackTwoRepOne = [
         {
             type: "horizontal",
-            img: "/grouppics/Group-4.png"
+            img: "/grouppics/Group-4.png",
+            srcset: "/grouppics/Group-4.png 500w, /grouppics/Group-4.png 800w, /grouppics/Group-4.png 1080w, /grouppics/Group-4.png 1215w"
         },
         {
             type: "vertical",
-            img: "/grouppics/Group-5.png"
+            img: "/grouppics/Group-5.png",
+            srcset: "/grouppics/Group-5.png 500w, /grouppics/Group-5.png 527w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-6.png"
+            img: "/grouppics/Group-6.png",
+            srcset: "/grouppics/Group-6.png 500w, /grouppics/Group-6.png 800w, /grouppics/Group-6.png 1080w, /grouppics/Group-6.png 1215w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-7.png"
+            img: "/grouppics/Group-7.png",
+            srcset: "/grouppics/Group-7.png 500w, /grouppics/Group-7.png 800w, /grouppics/Group-7.png 1080w, /grouppics/Group-7.png 1215w"
         }
     ];
 
@@ -169,7 +173,8 @@ export default function Product() {
     const trackTwoRepThree = [
         {
             type: "horizontal",
-            img: "/grouppics/Group-2.png"
+            img: "/grouppics/Group-2.png",
+            srcset: "/grouppics/Group-2.png 500w, /grouppics/Group-2.png 608w"
         },
         {
             type: "vertical",
@@ -177,11 +182,13 @@ export default function Product() {
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-4.png"
+            img: "/grouppics/Group-4.png",
+            srcset: "/grouppics/Group-4.png 500w, /grouppics/Group-4.png 608w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-5.png"
+            img: "/grouppics/Group-5.png",
+            srcset: "/grouppics/Group-5.png 500w, /grouppics/Group-5.png 608w"
         }
     ];
 
@@ -192,11 +199,10 @@ export default function Product() {
         const timer = setTimeout(() => {
             gsap.registerPlugin(ScrollTrigger);
             ctx = gsap.context(() => {
-                // Spin and scale star subtitle icon on viewport entrance
+                // Scale star subtitle icon on viewport entrance
                 gsap.fromTo(".product-subtitle-box .subtitle-image-icon",
-                    { rotate: 0, scale: 0 },
+                    { scale: 0 },
                     {
-                        rotate: 116.964,
                         scale: 1,
                         duration: 1.2,
                         ease: "power4.out",
@@ -207,6 +213,14 @@ export default function Product() {
                         }
                     }
                 );
+
+                // Continuous spin for the subtitle star icon
+                gsap.to(".product-subtitle-box .subtitle-image-icon", {
+                    rotate: 360,
+                    ease: "none",
+                    duration: 10,
+                    repeat: -1,
+                });
 
                 // 1. Ticker Row 1 (top-ticker): continuous infinite scroll left
                 gsap.to(".project-top-ticker .top-single-ticker", {

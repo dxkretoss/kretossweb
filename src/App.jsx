@@ -10,6 +10,7 @@ export default function App() {
             <Routes>
                 {/* The Layout component wraps all routes inside it */}
                 <Route element={<Layout />}>
+                    {/* <Route> */}
                     <Route path="/" element={<Homepage />} />
                     <Route path="/about" element={<AboutPage />} />
                     {/* Add more routes here later */}

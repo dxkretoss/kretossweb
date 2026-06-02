@@ -77,9 +77,9 @@ const ProjectCard = ({
     const isEven = parseInt(id, 10) % 2 === 0;
     const cardRef = useRef(null);
 
-    const itemClass = isEven ? `project-single-item _${id} even !flex !flex-col md:!grid md:!grid-cols-2` : `project-single-item _${id} !flex !flex-col md:!grid md:!grid-cols-2`;
-    const cardLeftClass = isEven ? `project-card-left _${id} even !w-full` : `project-card-left _${id} !w-full`;
-    const authorWrapperClass = isEven ? `project-author-wrapper _${id}` : "project-author-wrapper";
+    const itemClass = isEven ? `project-single-item _${id} even` : `project-single-item _${id}`;
+    const cardLeftClass = isEven ? `project-card-left _${id} even` : `project-card-left _${id}`;
+    const authorWrapperClass = isEven ? `project-author-wrapper _${id}` : `project-author-wrapper _${id}`;
     const linkIconBoxClass = isEven ? `project-link-icon-box _${id}` : "project-link-icon-box";
 
     useLayoutEffect(() => {
@@ -94,10 +94,9 @@ const ProjectCard = ({
 
                 // Desktop: staggered scroll scaling + translation parallax
                 mm.add("(min-width: 992px)", () => {
-                    gsap.set(card, { scale: 0.8, y: 150 });
+                    gsap.set(card, { y: 150 });
 
                     gsap.to(card, {
-                        scale: 1,
                         y: 0,
                         ease: "none",
                         scrollTrigger: {
@@ -109,9 +108,23 @@ const ProjectCard = ({
                     });
                 });
 
-                // Mobile layout fallback reset
+                // Mobile layout smooth entrance animation
                 mm.add("(max-width: 991px)", () => {
-                    gsap.set(card, { scale: 1, y: 0 });
+                    gsap.fromTo(card,
+                        { scale: 0.95, opacity: 0, y: 50 },
+                        {
+                            scale: 1,
+                            opacity: 1,
+                            y: 0,
+                            duration: 0.8,
+                            ease: "power3.out",
+                            scrollTrigger: {
+                                trigger: card,
+                                start: "top 85%",
+                                toggleActions: "play none none reverse"
+                            }
+                        }
+                    );
                 });
 
                 // Button Hover Arrow Diagonal Slide
@@ -201,9 +214,10 @@ const ProjectCard = ({
     );
 
     const rightBlock = (
-        <div className="project-right-box !w-full">
+        <div className="project-right-box">
             <div className="project-right-wrapper !h-full">
                 <div className="project-thumbnail-box">
+                    <img class="project-thumbnail-bg" src={thumbnailImg} alt=""></img>
                     <img
                         src={thumbnailImg}
                         loading="lazy"
@@ -222,8 +236,6 @@ const ProjectCard = ({
             data-w-id={dataWId}
             className={itemClass}
             style={{
-                "willChange": "transform",
-                "transformStyle": "preserve-3d",
                 "transition": "none" // Disable standard CSS transition to allow conflict-free GSAP scrubbing!
             }}
         >
@@ -272,7 +284,7 @@ export default function Projects() {
             acquisition: "60%",
             techicon: "/portfolio/icon.png",
             technology: "Flutter",
-            thumbnailImg: "/protfolio/Trischedule.png",
+            thumbnailImg: "/portfolio/Trischedule.png",
             srcset: "/portfolio/Trischedule.png 500w, /portfolio/Trischedule.png 800w, /portfolio/Trischedule.png 1080w, /portfolio/Trischedule.png 1472w",
             linkIcon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887dc_Group%202085664886.svg",
             linkUrl: "https://dribbble.com/shots/26482298-Creative-Modern-Analytics-Admin-Dashboard",
@@ -322,11 +334,10 @@ export default function Projects() {
         const timer = setTimeout(() => {
             gsap.registerPlugin(ScrollTrigger);
             ctx = gsap.context(() => {
-                // Spin and scale star subtitle icon on viewport entrance
+                // Scale star subtitle icon on viewport entrance
                 gsap.fromTo(".project-subtitle-box .subtitle-image-icon",
-                    { rotate: 0, scale: 0 },
+                    { scale: 0 },
                     {
-                        rotate: 116.964,
                         scale: 1,
                         duration: 1.2,
                         ease: "power4.out",
@@ -337,6 +348,14 @@ export default function Projects() {
                         }
                     }
                 );
+
+                // Continuous spin for the subtitle star icon
+                gsap.to(".project-subtitle-box .subtitle-image-icon", {
+                    rotate: 360,
+                    ease: "none",
+                    duration: 10,
+                    repeat: -1,
+                });
 
                 // Title block scale and slide animation
                 gsap.fromTo(".home-project-title",

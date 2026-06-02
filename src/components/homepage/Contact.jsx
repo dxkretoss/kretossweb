@@ -67,11 +67,10 @@ export default function Contact() {
         const timer = setTimeout(() => {
             gsap.registerPlugin(ScrollTrigger);
             ctx = gsap.context(() => {
-                // Spin and scale star subtitle icon on viewport entrance
+                // Scale star subtitle icon on viewport entrance
                 gsap.fromTo(".contact-about-block .subtitle-image-icon",
-                    { rotate: 0, scale: 0 },
+                    { scale: 0 },
                     {
-                        rotate: 116.964,
                         scale: 1,
                         duration: 1.2,
                         ease: "power4.out",
@@ -82,6 +81,14 @@ export default function Contact() {
                         }
                     }
                 );
+
+                // Continuous spin for the subtitle star icon
+                gsap.to(".contact-about-block .subtitle-image-icon", {
+                    rotate: 360,
+                    ease: "none",
+                    duration: 10,
+                    repeat: -1,
+                });
 
                 // Stagger fade-in/slide up for form block and about block
                 gsap.fromTo(".contact-form-block",
