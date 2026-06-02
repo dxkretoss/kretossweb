@@ -66,7 +66,7 @@ export default function AnimatedButton({ href = "#Contact", text = "LET'S TALK",
                 
                 // Arrows transition
                 gsap.to(frontArrow, { x: 13, y: -14, duration: 0.4, ease: "power2.out" });
-                gsap.to(backArrow, { x: 13, y: -14, duration: 0.4, ease: "power2.out" });
+                gsap.to(backArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
             });
 
             button.addEventListener("mouseleave", () => {
@@ -80,7 +80,7 @@ export default function AnimatedButton({ href = "#Contact", text = "LET'S TALK",
                 
                 // Arrows transition
                 gsap.to(frontArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
-                gsap.to(backArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
+                gsap.to(backArrow, { x: -13, y: 14, duration: 0.4, ease: "power2.out" });
             });
         }, buttonRef);
 

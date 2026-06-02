@@ -125,70 +125,55 @@ export default function Product() {
     const trackOneList = [
         {
             type: "horizontal",
-            img: "/grouppics/Group-1.png",
-            srcset: "/grouppics/Group-1.png 500w, /grouppics/Group-1.png 608w"
-        },
-        {
-            type: "vertical",
-            img: "/grouppics/Group-6.png",
+            img: "/grouppics/Group-1.jpg",
+            srcset: "/grouppics/Group-1.jpg 500w, /grouppics/Group-1.jpg 608w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-3.png",
-            srcset: "/grouppics/Group-3.png 500w, /grouppics/Group-3.png 608w"
+            img: "/grouppics/Group-7.jpg",
+            srcset: "/grouppics/Group-7.jpg 500w, /grouppics/Group-7.jpg 608w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-4.png",
-            srcset: "/grouppics/Group-4.png 500w, /grouppics/Group-4.png 800w, /grouppics/Group-4.png 1080w, /grouppics/Group-4.png 1215w"
+            img: "/grouppics/Group-2.jpg",
+            srcset: "/grouppics/Group-2.jpg 500w, /grouppics/Group-2.jpg 800w, /grouppics/Group-2.jpg 1080w, /grouppics/Group-2.jpg 1215w"
         }
     ];
 
     // Image tracks for slider row 2 (Track _02)
-    const trackTwoRepOne = [
+    const trackTwoList = [
         {
             type: "horizontal",
-            img: "/grouppics/Group-4.png",
-            srcset: "/grouppics/Group-4.png 500w, /grouppics/Group-4.png 800w, /grouppics/Group-4.png 1080w, /grouppics/Group-4.png 1215w"
-        },
-        {
-            type: "vertical",
-            img: "/grouppics/Group-5.png",
-            srcset: "/grouppics/Group-5.png 500w, /grouppics/Group-5.png 527w"
+            img: "/grouppics/Group-4.jpg",
+            srcset: "/grouppics/Group-4.jpg 500w, /grouppics/Group-4.jpg 800w, /grouppics/Group-4.jpg 1080w, /grouppics/Group-4.jpg 1215w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-6.png",
-            srcset: "/grouppics/Group-6.png 500w, /grouppics/Group-6.png 800w, /grouppics/Group-6.png 1080w, /grouppics/Group-6.png 1215w"
+            img: "/grouppics/Group-6.jpg",
+            srcset: "/grouppics/Group-6.jpg 500w, /grouppics/Group-6.jpg 800w, /grouppics/Group-6.jpg 1080w, /grouppics/Group-6.jpg 1215w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-7.png",
-            srcset: "/grouppics/Group-7.png 500w, /grouppics/Group-7.png 800w, /grouppics/Group-7.png 1080w, /grouppics/Group-7.png 1215w"
+            img: "/grouppics/Group-3.jpg",
+            srcset: "/grouppics/Group-3.jpg 500w, /grouppics/Group-3.jpg 800w, /grouppics/Group-3.jpg 1080w, /grouppics/Group-3.jpg 1215w"
         }
     ];
 
-    const trackTwoRepTwo = trackOneList;
-
-    const trackTwoRepThree = [
+    const trackThreeList = [
         {
             type: "horizontal",
-            img: "/grouppics/Group-2.png",
-            srcset: "/grouppics/Group-2.png 500w, /grouppics/Group-2.png 608w"
-        },
-        {
-            type: "vertical",
-            img: "/grouppics/Group-7.png"
+            img: "/grouppics/Group-8.jpg",
+            srcset: "/grouppics/Group-8.jpg 500w, /grouppics/Group-8.jpg 608w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-4.png",
-            srcset: "/grouppics/Group-4.png 500w, /grouppics/Group-4.png 608w"
+            img: "/grouppics/Group-5.jpg",
+            srcset: "/grouppics/Group-5.jpg 500w, /grouppics/Group-5.jpg 608w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-5.png",
-            srcset: "/grouppics/Group-5.png 500w, /grouppics/Group-5.png 608w"
+            img: "/grouppics/Group-1.jpg",
+            srcset: "/grouppics/Group-1.jpg 500w, /grouppics/Group-1.jpg 608w"
         }
     ];
 
@@ -292,12 +277,12 @@ export default function Product() {
                                         ))}
                                     </div>
                                     <div className="product-single-slider _01" style={{ display: "flex", flexShrink: 0 }}>
-                                        {trackOneList.map((item, idx) => (
+                                        {trackTwoList.map((item, idx) => (
                                             <SlideImage key={`track1-2-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
                                     <div className="product-single-slider _01" style={{ display: "flex", flexShrink: 0 }}>
-                                        {trackOneList.map((item, idx) => (
+                                        {trackThreeList.map((item, idx) => (
                                             <SlideImage key={`track1-3-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
@@ -305,17 +290,17 @@ export default function Product() {
 
                                 <div className="product-slider-wrapper" style={{ display: "flex", width: "max-content", flexShrink: 0 }}>
                                     <div className="product-single-slider _02" style={{ display: "flex", flexShrink: 0 }}>
-                                        {trackTwoRepOne.map((item, idx) => (
+                                        {trackThreeList.map((item, idx) => (
                                             <SlideImage key={`track2-1-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
                                     <div className="product-single-slider _02" style={{ display: "flex", flexShrink: 0 }}>
-                                        {trackTwoRepTwo.map((item, idx) => (
+                                        {trackOneList.map((item, idx) => (
                                             <SlideImage key={`track2-2-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
                                     <div className="product-single-slider _02" style={{ display: "flex", flexShrink: 0 }}>
-                                        {trackTwoRepThree.map((item, idx) => (
+                                        {trackTwoList.map((item, idx) => (
                                             <SlideImage key={`track2-3-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
