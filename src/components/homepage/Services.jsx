@@ -278,9 +278,9 @@ export default function Services() {
                     // Map keyframes 0% -> 45% and 0% -> 60% linearly
                     tl.fromTo(".project-title-area", { y: 20 }, { y: 0, duration: 45, ease: "none" }, 0)
                         .fromTo(".single-service-card._01", { y: 20 }, { y: 0, duration: 45, ease: "none" }, 0)
-                        .fromTo(".single-service-card._02", { y: 60 }, { y: 0, duration: 60, ease: "none" }, 0)
-                        .fromTo(".single-service-card._03", { y: 100 }, { y: 0, duration: 60, ease: "none" }, 0)
-                        .fromTo(".single-service-card._04", { y: 140 }, { y: 0, duration: 60, ease: "none" }, 0)
+                        .fromTo(".single-service-card._02", { y: 120 }, { y: 0, duration: 60, ease: "none" }, 0)
+                        .fromTo(".single-service-card._03", { y: 200 }, { y: 0, duration: 60, ease: "none" }, 0)
+                        .fromTo(".single-service-card._04", { y: 260 }, { y: 0, duration: 60, ease: "none" }, 0)
                         // Fill remaining timeline up to 100 to scale scroll progress to 100% exactly
                         .to({}, { duration: 40 }, 60);
 
@@ -303,12 +303,12 @@ export default function Services() {
                 // Mobile/Tablet layout smooth entrance animations
                 mm.add("(max-width: 991px)", () => {
                     // Animate title block
-                    gsap.fromTo(".project-title-area", 
-                        { opacity: 0, y: 30 }, 
-                        { 
-                            opacity: 1, 
-                            y: 0, 
-                            duration: 0.8, 
+                    gsap.fromTo(".project-title-area",
+                        { opacity: 0, y: 30 },
+                        {
+                            opacity: 1,
+                            y: 0,
+                            duration: 0.8,
                             ease: "power3.out",
                             scrollTrigger: {
                                 trigger: ".project-title-area",
@@ -321,13 +321,13 @@ export default function Services() {
                     // Animate each individual service card
                     const cards = gsap.utils.toArray(".single-service-card");
                     cards.forEach((card) => {
-                        gsap.fromTo(card, 
-                            { opacity: 0, y: 40, scale: 0.95 }, 
-                            { 
-                                opacity: 1, 
-                                y: 0, 
+                        gsap.fromTo(card,
+                            { opacity: 0, y: 40, scale: 0.95 },
+                            {
+                                opacity: 1,
+                                y: 0,
                                 scale: 1,
-                                duration: 0.8, 
+                                duration: 0.8,
                                 ease: "power3.out",
                                 scrollTrigger: {
                                     trigger: card,

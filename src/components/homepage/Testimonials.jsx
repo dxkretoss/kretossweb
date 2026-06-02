@@ -68,27 +68,47 @@ const MarqueeReviewCard = ({ id, author, text, img, srcset, dataWId }) => {
             const overly = card.querySelector(".testimonial-image-overly");
             const image = card.querySelector(".testimonial-image");
 
-            // Initial states (force visible in the marquee track)
-            gsap.set(authorStar, { y: 0, opacity: 1 });
-            gsap.set(textBox, { y: 20, opacity: 0 });
-            gsap.set(overly, { opacity: 1 });
-            gsap.set(image, { scale: 1 });
+            const mm = gsap.matchMedia();
 
-            // Interactive hover listeners
-            card.addEventListener("mouseenter", () => {
-                gsap.killTweensOf([authorStar, textBox, overly, image]);
-                gsap.to(authorStar, { y: -20, opacity: 0, duration: 0.3, ease: "power2.out" });
-                gsap.to(overly, { opacity: 0, duration: 0.3, ease: "power2.out" });
-                gsap.to(image, { scale: 1.1, duration: 0.5, ease: "power2.out" });
-                gsap.to(textBox, { y: 0, opacity: 1, duration: 0.3, delay: 0.1, ease: "power2.out" });
+            mm.add("(min-width: 992px)", () => {
+                // Initial states (force visible in the marquee track)
+                gsap.set(authorStar, { y: 0, opacity: 1 });
+                gsap.set(textBox, { y: 20, opacity: 0 });
+                gsap.set(overly, { opacity: 1 });
+                gsap.set(image, { scale: 1 });
+
+                // Interactive hover listeners
+                const onEnter = () => {
+                    gsap.killTweensOf([authorStar, textBox, overly, image]);
+                    gsap.to(authorStar, { y: -20, opacity: 0, duration: 0.3, ease: "power2.out" });
+                    gsap.to(overly, { opacity: 0, duration: 0.3, ease: "power2.out" });
+                    gsap.to(image, { scale: 1.1, duration: 0.5, ease: "power2.out" });
+                    gsap.to(textBox, { y: 0, opacity: 1, duration: 0.3, delay: 0.1, ease: "power2.out" });
+                };
+
+                const onLeave = () => {
+                    gsap.killTweensOf([authorStar, textBox, overly, image]);
+                    gsap.to(textBox, { y: 20, opacity: 0, duration: 0.3, ease: "power2.out" });
+                    gsap.to(image, { scale: 1.0, duration: 0.5, ease: "power2.out" });
+                    gsap.to(overly, { opacity: 1, duration: 0.3, ease: "power2.out" });
+                    gsap.to(authorStar, { y: 0, opacity: 1, duration: 0.3, delay: 0.1, ease: "power2.out" });
+                };
+
+                card.addEventListener("mouseenter", onEnter);
+                card.addEventListener("mouseleave", onLeave);
+
+                return () => {
+                    card.removeEventListener("mouseenter", onEnter);
+                    card.removeEventListener("mouseleave", onLeave);
+                };
             });
 
-            card.addEventListener("mouseleave", () => {
-                gsap.killTweensOf([authorStar, textBox, overly, image]);
-                gsap.to(textBox, { y: 20, opacity: 0, duration: 0.3, ease: "power2.out" });
-                gsap.to(image, { scale: 1.0, duration: 0.5, ease: "power2.out" });
-                gsap.to(overly, { opacity: 1, duration: 0.3, ease: "power2.out" });
-                gsap.to(authorStar, { y: 0, opacity: 1, duration: 0.3, delay: 0.1, ease: "power2.out" });
+            mm.add("(max-width: 991px)", () => {
+                // Mobile: Always show review text, hide hover states
+                gsap.set(authorStar, { y: -20, opacity: 0 });
+                gsap.set(textBox, { y: 0, opacity: 1 });
+                gsap.set(overly, { opacity: 0 });
+                gsap.set(image, { scale: 1 });
             });
         }, card);
 
@@ -412,22 +432,27 @@ export default function Testimonials() {
                     gsap.set(".testimonial-item-content", { x: 30, scale: 1.05, opacity: 0 });
                     gsap.set(".review-slider-content", { xPercent: 0 });
 
-                    const tl = gsap.timeline({
+                    // Entrance animations on scroll (no scrub)
+                    gsap.to(".testimonial-item-content", {
+                        x: 0,
+                        scale: 1,
+                        opacity: 1,
+                        duration: 0.8,
+                        stagger: 0.1,
+                        ease: "power2.out",
                         scrollTrigger: {
                             trigger: testimonialsRef.current,
-                            start: "top bottom",
-                            end: "bottom top",
-                            scrub: 1.2,
+                            start: "top 80%",
                         }
                     });
 
-                    tl.fromTo(".testimonial-item-content._01", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 10, ease: "none" }, 5)
-                        .fromTo(".testimonial-item-content._02", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 15)
-                        .fromTo(".testimonial-item-content._03", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 20)
-                        .fromTo(".testimonial-item-content._04", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 25)
-                        .fromTo(".testimonial-item-content._05", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 30)
-                        .fromTo(".testimonial-item-content._06", { x: 30, scale: 1.05, opacity: 0 }, { x: 0, scale: 1.0, opacity: 1, duration: 5, ease: "none" }, 35)
-                        .to(".review-slider-content", { xPercent: -50, duration: 60, ease: "none" }, 40);
+                    // Infinite continuous horizontal scroll
+                    gsap.to(".review-slider-content", {
+                        xPercent: -50,
+                        duration: 30,
+                        ease: "none",
+                        repeat: -1
+                    });
 
                     gsap.fromTo(".review-ssubtitle-title .subtitle-image-icon",
                         { scale: 0 },

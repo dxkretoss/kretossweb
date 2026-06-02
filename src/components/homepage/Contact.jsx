@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import AnimatedButton from '../ui/AnimatedButton';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,9 +58,10 @@ export default function Contact() {
 
     // Dropdown and form configuration
     const budgetOptions = [
-        { value: "First", label: "First choice" },
-        { value: "Second", label: "Second choice" },
-        { value: "Third", label: "Third choice" }
+        { value: "First", label: "1000$ - 5000$" },
+        { value: "Second", label: "5000$ - 15000$" },
+        { value: "Third", label: "15000$ - 30000$" },
+        { value: "Fourth", label: "30000$ - 50000$" },
     ];
 
     useLayoutEffect(() => {
@@ -267,6 +269,8 @@ export default function Contact() {
                                 </div>
                                 <div className="contact-text">We'll schedule a call to discuss your idea. After discovery sessions,
                                     we'll send a proposal, and upon approval, we'll get started.</div>
+
+                                <AnimatedButton text="BOOK A CALL"></AnimatedButton>
                             </div>
 
                             <div className="contact-author-review">

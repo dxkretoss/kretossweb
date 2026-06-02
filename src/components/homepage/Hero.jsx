@@ -3,7 +3,19 @@ import gsap from 'gsap';
 import { Globe, Settings, Palette, Code } from 'lucide-react';
 import AnimatedButton from '../ui/AnimatedButton';
 
-
+// Subcomponent: SplitText
+const SplitText = ({ text }) => {
+    return text.split(" ").map((word, wordIdx, wordsArr) => (
+        <span key={wordIdx} className="hero-word" style={{ display: 'inline-block', whiteSpace: 'nowrap' }}>
+            {word.split("").map((char, charIdx) => (
+                <span key={charIdx} className="hero-char" style={{ opacity: 0, display: 'inline-block' }}>
+                    {char}
+                </span>
+            ))}
+            {wordIdx < wordsArr.length - 1 && <span className="hero-char" style={{ opacity: 0, display: 'inline-block', whiteSpace: 'pre' }}> </span>}
+        </span>
+    ));
+};
 // Subcomponent: RatingBadge
 const RatingBadge = () => {
     return (
@@ -142,18 +154,13 @@ export default function Hero() {
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
             // Initial states (replaces inline styles to prevent React VDOM conflicts)
-            gsap.set(".hero-title.banner", { opacity: 0, y: 100 });
+            gsap.set(".hero-char", { opacity: 0 });
             gsap.set(".brans-star-image", { scale: 0, rotate: 0 });
-            gsap.set(".hero-title.banner-02", { opacity: 0, y: 100 });
             gsap.set(".hero-image-01", { opacity: 0, scale: 1.3 });
             gsap.set(".hero-image-02", { opacity: 0, scale: 1.3 });
-            gsap.set(".hero-title._03", { opacity: 0, y: 100 });
-            gsap.set(".hero-bbottom-ttitle.banner-04", { opacity: 0, y: 100 });
 
             // ========================================================
             // WEBFLOW-EXACT ANIMATION: outQuart easing, 1000ms duration
-            // Character-by-character from translate3d(0, 30px, 0) → (0, 0, 0)
-            // opacity: 0 → 1, all with outQuart easing
             // ========================================================
 
             // 1. Rating Badge initial fade in
@@ -197,26 +204,25 @@ export default function Hero() {
                 opacity: 1, y: 0, duration: 1, ease: "power4.out"
             }, 0);
 
-            // Hero title containers: exact Webflow outQuart, 1000ms
-            // Each title goes: opacity 0→1, y 100→0 (Webflow's slideInBottom)
-            tl.fromTo(".hero-title.banner",
-                { opacity: 0, y: 100 },
-                { opacity: 1, y: 0, duration: 1, ease: "power4.out" },
+            // Hero title containers
+            tl.fromTo(".hero-top-title .hero-char",
+                { opacity: 0 },
+                { opacity: 1, duration: 0.8, ease: "power4.out", stagger: { amount: 0.6, from: "center" } },
                 0.1
             );
-            tl.fromTo(".hero-title.banner-02",
-                { opacity: 0, y: 100 },
-                { opacity: 1, y: 0, duration: 1, ease: "power4.out" },
+            tl.fromTo(".hero-title.banner-02 .hero-char",
+                { opacity: 0 },
+                { opacity: 1, duration: 0.8, ease: "power4.out", stagger: { amount: 0.6, from: "end" } },
                 0.2
             );
-            tl.fromTo(".hero-title._03",
-                { opacity: 0, y: 100 },
-                { opacity: 1, y: 0, duration: 1, ease: "power4.out" },
+            tl.fromTo(".hero-title._03 .hero-char",
+                { opacity: 0 },
+                { opacity: 1, duration: 0.8, ease: "power4.out", stagger: { amount: 0.6, from: "start" } },
                 0.3
             );
-            tl.fromTo(".hero-bbottom-ttitle.banner-04",
-                { opacity: 0, y: 100 },
-                { opacity: 1, y: 0, duration: 1, ease: "power4.out" },
+            tl.fromTo(".hero-bbottom-ttitle.banner-04 .hero-char",
+                { opacity: 0 },
+                { opacity: 1, duration: 0.8, ease: "power4.out", stagger: { amount: 0.6, from: "center" } },
                 0.4
             );
 
@@ -347,8 +353,17 @@ export default function Hero() {
                                     iconComponent={<Settings size={18} color="#fff" />}
                                 />
                                 <div className="hero-top-title">
-                                    <h1 className="hero-title banner" aria-label="We Build Meaningful">
-                                        Building Future-Ready Software for
+                                    <h1 className="hero-title banner" aria-label="Building Future-Ready Software for" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+                                        {"Building Future-Ready Software for".split(" ").map((word, wordIdx, wordsArr) => (
+                                            <span key={wordIdx} className="hero-word" style={{ display: 'inline-block', whiteSpace: 'nowrap' }}>
+                                                {word.split("").map((char, charIdx) => (
+                                                    <span key={charIdx} className="hero-char" style={{ opacity: 0, display: 'inline-block' }}>
+                                                        {char}
+                                                    </span>
+                                                ))}
+                                                {wordIdx < wordsArr.length - 1 && <span className="hero-char" style={{ opacity: 0, display: 'inline-block' }}> </span>}
+                                            </span>
+                                        ))}
                                     </h1>
 
                                 </div>
@@ -358,15 +373,9 @@ export default function Hero() {
                                             loading="lazy" alt="img" className="brans-star-image" />
                                     </div>
                                     <div className="hero-brand-ttitle relative" aria-label="brands  &">
-                                        {/* <FloatingBadge
-                                            text="Web"
-                                            type="web"
-                                            // badgeClass="!absolute !-top-12 md:!-top-2 !-left-[10px] md:!-left-[140px] !z-10 scale-75 md:scale-100"
-                                            iconComponent={<Globe size={18} color="#fff" />}
-                                        /> */}
-                                        <h2 className="hero-title banner-02">
-                                            <span className="hero-text-span">Enterprises</span>{" "}
-                                            <span className="hero-text-span _03">&</span>
+                                        <h2 className="hero-title banner-02" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+                                            <span className="hero-text-span"><SplitText text="Enterprises" /></span>{" "}
+                                            <span className="hero-text-span _03"><SplitText text="&" /></span>
                                         </h2>
                                     </div>
                                     <div className="hero-title-image-box">
@@ -384,15 +393,9 @@ export default function Hero() {
                                         </div>
                                     </div>
                                     <div className="digital-title-box relative" aria-label="digital">
-                                        <h2 className="hero-title _03">
-                                            <span className="hero-text-span banner-03">Disruptive</span>
+                                        <h2 className="hero-title _03" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+                                            <span className="hero-text-span banner-03"><SplitText text="Disruptive" /></span>
                                         </h2>
-                                        {/* <FloatingBadge
-                                            text="ERP/Automation"
-                                            type="erp"
-                                            // badgeClass="!absolute !-top-16 md:!-top-10 !right-[10px] md:!right-[-200px] !z-10 scale-75 md:scale-100"
-                                            iconComponent={<Settings size={18} color="#fff" />}
-                                        /> */}
                                     </div>
                                 </div>
                                 <div className="hero-text-three">
@@ -402,12 +405,12 @@ export default function Hero() {
                                         iconComponent={<Palette size={18} color="#fff" />}
                                     />
                                     <div className="hero-bottom-title" aria-label="experiences.">
-                                        <h2 className="hero-bbottom-ttitle banner-04 !text-center">
-                                            Startups
+                                        <h2 className="hero-bbottom-ttitle banner-04 !text-center" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+                                            <SplitText text="Startups" />
                                         </h2>
                                     </div>
                                     <FloatingBadge
-                                        text="Development"
+                                        text="App Development"
                                         type="orange"
                                         iconComponent={<Code size={18} color="#fff" />}
                                     />

@@ -1,4 +1,5 @@
 import React from 'react';
+import AnimatedButton from '../ui/AnimatedButton';
 
 export default function Footer() {
     // Ticker configuration for infinite rolling track
@@ -17,26 +18,12 @@ export default function Footer() {
                 { label: "Services", href: "#" },
                 { label: "Portfolio", href: "#" },
                 { label: "Careers", href: "#" },
+            ],
+            addresses: [
+                { country: "India", icon: "https://flagcdn.com/in.svg", address: "B-1007, Shilp Corporate Park, Near Rajpath Club, Rajpath-Rangoli Road, Ahmedabad. 380054" },
+                { country: "United States", icon: "https://flagcdn.com/us.svg", address: "9245 East Wood Drive, SCOTTSDALE, AZ 85260" }
             ]
-        },
-        // {
-        //     title: "Services",
-        //     links: [
-        //         { label: "UX/UI Design", href: "/#Contact", textBlock: true },
-        //         { label: "webflow Development", href: "/#Contact" },
-        //         { label: "Framer Development", href: "/#Contact" },
-        //         { label: "SaaS Design", href: "/#Contact" }
-        //     ]
-        // },
-        // {
-        //     title: "Utilities",
-        //     links: [
-        //         { label: "Style Guide", href: "/style-guide" },
-        //         { label: "Changelog", href: "/changelog" },
-        //         { label: "Licenses", href: "/license" },
-        //         { label: "404 Error Page", href: "/404" }
-        //     ]
-        // }
+        }
     ];
 
     // Social accounts
@@ -110,25 +97,46 @@ export default function Footer() {
                         <div className="footer-top-box">
                             {/* Dynamic links columns */}
                             {footerMenus.map((menu, idx) => (
-                                <div key={idx} className="footer-menu-box">
+                                <div key={idx} className="footer-menu-box !w-auto">
                                     <div className="footer-menu-block">
-                                        <h3 className="footer-menu-title">{menu.title}</h3>
-                                        <div className="footer-link-box">
-                                            {menu.links.map((link, lIdx) => (
-                                                <a
-                                                    key={lIdx}
-                                                    href={link.href}
-                                                    aria-current={link.isCurrent ? "page" : undefined}
-                                                    className={`footer-link w-inline-block ${link.isCurrent ? 'w--current' : ''}`}
-                                                >
-                                                    {link.textBlock ? (
-                                                        <div className="text-block">{link.label}</div>
-                                                    ) : (
-                                                        <div>{link.label}</div>
-                                                    )}
-                                                </a>
-                                            ))}
+                                        <div>
+                                            <h3 className="footer-menu-title">{menu.title}</h3>
+                                            <div className="footer-link-box">
+                                                {menu.links.map((link, lIdx) => (
+                                                    <a
+                                                        key={lIdx}
+                                                        href={link.href}
+                                                        aria-current={link.isCurrent ? "page" : undefined}
+                                                        className={`footer-link w-inline-block ${link.isCurrent ? 'w--current' : ''}`}
+                                                    >
+                                                        {link.textBlock ? (
+                                                            <div className="text-block">{link.label}</div>
+                                                        ) : (
+                                                            <div>{link.label}</div>
+                                                        )}
+                                                    </a>
+                                                ))}
+                                            </div>
                                         </div>
+
+                                        {menu.addresses && (
+                                            <div>
+                                                <h3 className="footer-menu-title">Our Offices</h3>
+                                                <div className="flex flex-col gap-6 text-[#a3b3c9]">
+                                                    {menu.addresses.map((addr, aIdx) => (
+                                                        <div key={aIdx}>
+                                                            <div className="flex items-center gap-2 mb-1">
+                                                                <img src={addr.icon} alt={`${addr.country} Flag`} className="w-10 h-auto object-contain" />
+                                                                <h4 className="text-white font-medium text-[16px]">{addr.country}</h4>
+                                                            </div>
+                                                            <p className="text-[14px] leading-relaxed max-w-[280px] whitespace-normal">
+                                                                {addr.address}
+                                                            </p>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             ))}
@@ -136,7 +144,12 @@ export default function Footer() {
                             {/* Social Profiles Menu */}
                             <div className="footer-menu-box">
                                 <div className="footer-menu-block social-box">
-                                    <h3 className="footer-menu-title _02">Follow Us</h3>
+                                    <div className='flex flex-col gap-2'>
+                                        <h3 className='!text-[24px]'>Let’s Work Together!</h3>
+                                        <p> Have a great idea? We're here to bring it to life with innovative & digital solutions</p>
+                                    </div>
+                                    <AnimatedButton text="BOOK A CALL"></AnimatedButton>
+                                    {/* <h3 className="footer-menu-title _02">Follow Us</h3> */}
                                     <div className="footer-social-box">
                                         {socialLinks.map((social) => (
                                             <a
@@ -176,17 +189,11 @@ export default function Footer() {
                 <div className="footer-bottom-wrapper">
                     <div className="w-layout-blockcontainer container w-container">
                         <div className="footer-bottom-content">
-                            <div className="copyright-box">
-                                <div className="copyright-text">
-                                    © All Rights Reserved Kretoss Technology
-                                </div>
-                                {/* <div className="copyright-text">
-                                    Designed & Developed By <a href="/" target="_blank" rel="noopener noreferrer" className="footer-copy-link">Kretoss Technology</a>
-                                </div> */}
-                            </div>
+
 
                             {/* Rolling country list */}
-                            <div className="footer-address-wrapper">
+                            <div className="footer-address-wrapper flex flex-col items-center">
+                                <h3 className="footer-menu-title">Our Clients</h3>
                                 <div className="footer-country-block">
                                     <div className="footer-country-slider ">
                                         {Array.from({ length: 2 }).map((_, boxIdx) => (
@@ -213,7 +220,7 @@ export default function Footer() {
                                     <h2 className="footer-text">KRETOSS</h2>
                                 </div>
                                 <div className="footer-gradient"></div>
-                                <div className="footer-image-box">
+                                <div className="footer-image-box relative">
                                     <img
                                         sizes="100vw"
                                         srcSet="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b90cedc2778a1e5a4bf678_footer-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b90cedc2778a1e5a4bf678_footer-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b90cedc2778a1e5a4bf678_footer-p-1080.webp 1080w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b90cedc2778a1e5a4bf678_footer-p-1600.webp 1600w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b90cedc2778a1e5a4bf678_footer.webp 3353w"
@@ -222,6 +229,11 @@ export default function Footer() {
                                         loading="lazy"
                                         className="footer-image"
                                     />
+                                    <div className="copyright-box">
+                                        <div className="copyright-text !text-center">
+                                            © All Rights Reserved Kretoss Technology
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
