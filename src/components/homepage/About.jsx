@@ -6,22 +6,19 @@ import AnimatedButton from '../ui/AnimatedButton';
 gsap.registerPlugin(ScrollTrigger);
 
 // CounterBox component
-const CounterBox = ({ leftDigits, rightDigits, suffix, label, hasLine, rightOneClass = '' }) => {
+const CounterBox = ({ columns, suffix, label, hasLine, rightOneClass = '' }) => {
     return (
         <div className="counter-single-box ">
             <div className="counter-number-box">
                 <div className="counter-title-box" style={{ display: "flex", alignItems: "center" }}>
                     <div className="counter-block" style={{ height: "47.5px", overflow: "hidden", display: "flex", position: "relative" }}>
-                        <div className="counter-left-box" style={{ display: "flex", flexDirection: "column" }}>
-                            {leftDigits.map((d, i) => (
-                                <div key={i} className="counter-box-title" style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
-                            ))}
-                        </div>
-                        <div className="counter-right-box" style={{ display: "flex", flexDirection: "column" }}>
-                            {rightDigits.map((d, i) => (
-                                <div key={i} className={`counter-box-title ${rightOneClass}`} style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
-                            ))}
-                        </div>
+                        {columns.map((col, colIdx) => (
+                            <div key={colIdx} className={`counter-digit-column ${col.direction === 'up' ? 'scroll-up' : 'scroll-down'}`} style={{ display: "flex", flexDirection: "column" }}>
+                                {col.digits.map((d, i) => (
+                                    <div key={i} className={`counter-box-title ${colIdx === 1 ? rightOneClass : ''}`} style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
+                                ))}
+                            </div>
+                        ))}
                     </div>
                     <h2 className="counter-box-title" style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", marginLeft: "2px" }}>{suffix}</h2>
                 </div>
@@ -78,29 +75,38 @@ export default function About() {
     // Statistics counters
     const statisticsCounters = [
         {
-            left: ["0", "20", "40", "60", "80", "90", "95", "98", "100"],
-            right: ["", "", "", "", "", "", "", "", ""],
+            columns: [
+                { digits: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"], direction: "down" },
+                { digits: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"], direction: "up" },
+                { digits: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"], direction: "down" }
+            ],
             suffix: "+",
             label: "Countries Served",
             hasLine: true
         },
         {
-            left: ["0", "10", "30", "50", "70", "85", "90", "93", "95"],
-            right: ["", "", "", "", "", "", "", "", ""],
+            columns: [
+                { digits: ["9", "8", "7", "6", "5", "4", "3", "2", "1"], direction: "down" },
+                { digits: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "5"], direction: "up" }
+            ],
             suffix: "%",
             label: "Our Transformative",
             hasLine: true
         },
         {
-            left: ["0", "5", "10", "15", "20", "25", "28", "29", "30"],
-            right: ["", "", "", "", "", "", "", "", ""],
+            columns: [
+                { digits: ["3", "2", "1", "0"], direction: "down" },
+                { digits: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"], direction: "up" }
+            ],
             suffix: "+",
             label: "Award Winning",
             hasLine: true
         },
         {
-            left: ["0", "0", "0", "1", "1", "1", "1", "2", "2"],
-            right: ["", "", "", "", "", "", "", "", ""],
+            columns: [
+                { digits: ["0", "1", "2"], direction: "up" },
+                { digits: ["", "", ""], direction: "up" }
+            ],
             suffix: "k+",
             label: "Projects Delivered",
             hasLine: false,
@@ -218,34 +224,33 @@ export default function About() {
                 );
 
                 // Synchronized CounterBox digits rolling when the parent starts fading in
-                const counterLeftBoxes = aboutRef.current?.querySelectorAll(".counter-left-box");
-                const counterRightBoxes = aboutRef.current?.querySelectorAll(".counter-right-box");
+                const counterDigitColumns = aboutRef.current?.querySelectorAll(".counter-digit-column");
 
-                if (counterLeftBoxes && counterRightBoxes) {
+                if (counterDigitColumns) {
                     // Add a label inside the timeline slightly overlapping the parent fade-in
                     tl.addLabel("counterStart", "0.8");
 
-                    counterLeftBoxes.forEach((leftBox, idx) => {
-                        const rightBox = counterRightBoxes[idx];
-                        if (leftBox && rightBox) {
-                            const leftTranslate = -(leftBox.children.length - 1) * 47.5;
-                            const rightTranslate = -(rightBox.children.length - 1) * 47.5;
+                    counterDigitColumns.forEach((colBox, idx) => {
+                        const isUp = colBox.classList.contains("scroll-up");
+                        const translateDist = -(colBox.children.length - 1) * 47.5;
+                        const duration = 2.0 + (idx % 3) * 0.2; 
 
-                            tl.fromTo(leftBox,
+                        if (isUp) {
+                            tl.fromTo(colBox,
                                 { y: 0 },
                                 {
-                                    y: leftTranslate,
-                                    duration: 2.0,
+                                    y: translateDist,
+                                    duration: duration,
                                     ease: "power3.out"
                                 },
                                 "counterStart"
                             );
-
-                            tl.fromTo(rightBox,
-                                { y: 0 },
+                        } else {
+                            tl.fromTo(colBox,
+                                { y: translateDist },
                                 {
-                                    y: rightTranslate,
-                                    duration: 2.2,
+                                    y: 0,
+                                    duration: duration,
                                     ease: "power3.out"
                                 },
                                 "counterStart"
@@ -368,8 +373,7 @@ export default function About() {
                                         {statisticsCounters.map((counter, idx) => (
                                             <CounterBox
                                                 key={idx}
-                                                leftDigits={counter.left}
-                                                rightDigits={counter.right}
+                                                columns={counter.columns}
                                                 suffix={counter.suffix}
                                                 label={counter.label}
                                                 hasLine={counter.hasLine}
