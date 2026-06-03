@@ -237,48 +237,42 @@ export default function Testimonials() {
             id: "01",
             author: "Kartik",
             text: "“Kretoss Technology helped develop the mobile app and did an incredible job. They are incredibly knowledgeable and were able to pivot and build new features. Really enjoy working with this team.”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69ae945d663264bd9a69185a_Rectangle%20240649177.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69ae945d663264bd9a69185a_Rectangle%20240649177-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69ae945d663264bd9a69185a_Rectangle%20240649177.webp 700w",
+            img: "/avatar1.png",
             dataWId: "7b05b637-365e-040c-56d8-088ee9ff7413"
         },
         {
             id: "02",
             author: "Chirstine",
             text: "“Ankur and his team are the best developers I have ever worked with. I am very impressed by the quality of work, communication skills, and deliverables.”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea0bafa3ba75245d197f6_Rectangle%20240649176.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea0bafa3ba75245d197f6_Rectangle%20240649176-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea0bafa3ba75245d197f6_Rectangle%20240649176.webp 700w",
+            img: "/avatar2.png",
             dataWId: "7b05b637-365e-040c-56d8-088ee9ff7423"
         },
         {
             id: "03",
             author: "Kelly Yoga Teacher",
             text: "“Ankur is a fantastic designer and developer! His work ethic is impeccable, his communication is top of the line, and the work he delivers is out of this world!”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea0ad2b1630454c293acf_Group%202087325433.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea0ad2b1630454c293acf_Group%202087325433-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea0ad2b1630454c293acf_Group%202087325433.webp 700w",
+            img: "/avatar4.png",
             dataWId: "7b05b637-365e-040c-56d8-088ee9ff7433"
         },
         {
             id: "04",
             author: "Activelab",
             text: "“The entire team of Kretoss Technology; led by Ankur and Chintan delivered quality work on our ActiveLab app.”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea1255e565fa4c0fffbb8_Group%202087325416.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea1255e565fa4c0fffbb8_Group%202087325416-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea1255e565fa4c0fffbb8_Group%202087325416.webp 700w",
+            img: "/avatar3.png",
             dataWId: "7b05b637-365e-040c-56d8-088ee9ff7443"
         },
         {
             id: "05",
             author: "Martynas Jonaitis",
             text: "“Excellent team and quality of work. We've been working with Kretoss technology for over 3 years and I can only say good things about the team.”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea16824f377f293dd2d23_Group%202087325431.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea16824f377f293dd2d23_Group%202087325431-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea16824f377f293dd2d23_Group%202087325431.webp 700w",
+            img: "/avatar5.png",
             dataWId: "7b05b637-365e-040c-56d8-088ee9ff7453"
         },
         {
             id: "06",
             author: "Jorge Andre",
             text: "“Ankur is one of the very best designers and coders I've ever had the pleasure to work with. He and his team are extremely knowledgeable, work fast, and are always in contact.”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea19783fc0466264dbc28_Rectangle%20240649173.webp",
-            srcset: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea19783fc0466264dbc28_Rectangle%20240649173-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aea19783fc0466264dbc28_Rectangle%20240649173.webp 700w",
+            img: "/avatar6.png",
             dataWId: "7b05b637-365e-040c-56d8-088ee9ff7463"
         }
     ];
@@ -290,7 +284,7 @@ export default function Testimonials() {
             author: "Kocy Nilo",
             designation: "Founder at Softera IT",
             text: "“Kretoss Technology helped develop the mobile app and did an incredible job. They are incredibly knowledgeable and were able to pivot and build new features.”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887f0_Frame%202147228701.webp",
+            img: "/avatar7.png",
             rating: "4.5/ 2k reviews",
             lightboxVideoUrl: "https://youtube.com/watch?v=677IU_NErto?si=zjBXB-oFR2KyoKe2"
         },
@@ -299,7 +293,7 @@ export default function Testimonials() {
             author: "Benjamin Nilo",
             designation: "Founder at Softera IT",
             text: "“Their team completely overhauled our legacy ERP system. The communication was flawless, and the final product has drastically improved our operational efficiency.”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28881f_Frame%202147228701.webp",
+            img: "/avatar8.png",
             rating: "4.5/ 2k reviews",
             lightboxVideoUrl: "https://youtube.com/watch?v=677IU_NErto?si=zjBXB-oFR2KyoKe2"
         },
@@ -308,7 +302,7 @@ export default function Testimonials() {
             author: "Okat Puio",
             designation: "CTO at LaunchPad",
             text: "“We brought Kretoss Technology on board for a complex web application build. They delivered high-quality code ahead of schedule and were an absolute pleasure to work with.”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28881e_Frame%202147228701%20(1).webp",
+            img: "/avatar8.png",
             rating: "4.5/ 2k reviews",
             lightboxVideoUrl: "https://youtube.com/watch?v=677IU_NErto?si=zjBXB-oFR2KyoKe2"
         },
@@ -317,7 +311,7 @@ export default function Testimonials() {
             author: "Agro Seenty",
             designation: "Product Lead at VibeTech",
             text: "“The vibe-coding approach they use is revolutionary. We launched our MVP in half the expected time, and the UI design is stunning. Highly recommend them for startups!”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887f0_Frame%202147228701.webp",
+            img: "/avatar1.png",
             rating: "4.5/ 2k reviews",
             lightboxVideoUrl: "https://youtube.com/watch?v=677IU_NErto?si=zjBXB-oFR2KyoKe2"
         },
@@ -326,7 +320,7 @@ export default function Testimonials() {
             author: "Michael Anderson",
             designation: "Director of IT",
             text: "“From cloud infrastructure setup to frontend excellence, Kretoss handled our entire tech stack migration with zero downtime. True professionals.”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28881f_Frame%202147228701.webp",
+            img: "/avatar2.png",
             rating: "4.5/ 2k reviews",
             lightboxVideoUrl: "https://youtube.com/watch?v=677IU_NErto?si=zjBXB-oFR2KyoKe2"
         },
@@ -335,7 +329,7 @@ export default function Testimonials() {
             author: "Ava Collins",
             designation: "CEO at DataSync",
             text: "“Exceptional data analytics implementation! They seamlessly integrated our fragmented data pipelines into a clean, actionable dashboard that our executives love.”",
-            img: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28881e_Frame%202147228701%20(1).webp",
+            img: "/avatar3.png",
             rating: "4.5/ 2k reviews",
             lightboxVideoUrl: "https://youtube.com/watch?v=677IU_NErto?si=zjBXB-oFR2KyoKe2"
         }
@@ -509,7 +503,7 @@ export default function Testimonials() {
 
     return (
         <>
-            <section ref={testimonialsRef} id="Testimonials" data-w-id="582f9675-a38e-2687-4a72-2679bbd25ff9" className="review update-review">
+            <section ref={testimonialsRef} id="Testimonials" className="review update-review">
                 <div className="update-review-box">
                     <div className="testimonial-content">
                         <div className="review-box-content">
@@ -523,7 +517,7 @@ export default function Testimonials() {
                                         />
                                         <div className="subtitle-text white">Testimonials</div>
                                     </div>
-                                    <h2 data-w-id="b3e45bb1-96f9-fd73-2b1c-3c29c32c513c" style={{ "opacity": "1" }} className="testimonial-title">
+                                    <h2 style={{ "opacity": "1" }} className="testimonial-title">
                                         Happy Clients <span className="review-subtitle">Observation</span>
                                     </h2>
                                 </div>
@@ -531,7 +525,7 @@ export default function Testimonials() {
                                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69aeb31a38bdebd46ea4e4eb_Group%202087325413.svg"
                                     loading="lazy"
                                     style={{ "opacity": "1", "transformStyle": "preserve-3d" }}
-                                    data-w-id="d5730785-2cee-187c-5afb-e116ff888dc1" alt="Quote Icon"
+                                    alt="Quote Icon"
                                     className="review-section-quote"
                                 />
                             </div>

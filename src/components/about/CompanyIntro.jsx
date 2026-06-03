@@ -1,8 +1,39 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function CompanyIntro() {
+    const sectionRef = useRef(null);
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        let ctx = gsap.context(() => {
+            gsap.from(".about-middle-title, .about-page-thumbnail, .about-content-block", {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+            
+            gsap.to(".single-ticker-block", {
+                xPercent: -100,
+                repeat: -1,
+                duration: 10,
+                ease: "linear"
+            });
+        }, sectionRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <section className="about-section section-padding">
+        <section className="about-section section-padding" ref={sectionRef}>
             <div className="w-layout-blockcontainer container w-container">
                 <div className="about-section-content">
                     <img 

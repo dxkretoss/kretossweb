@@ -149,8 +149,8 @@ export default function Product() {
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-6.jpg",
-            srcset: "/grouppics/Group-6.jpg 500w, /grouppics/Group-6.jpg 800w, /grouppics/Group-6.jpg 1080w, /grouppics/Group-6.jpg 1215w"
+            img: "/grouppics/Group-5.jpg",
+            srcset: "/grouppics/Group-5.jpg 500w, /grouppics/Group-5.jpg 800w, /grouppics/Group-5.jpg 1080w, /grouppics/Group-5.jpg 1215w"
         },
         {
             type: "horizontal",
@@ -295,12 +295,12 @@ export default function Product() {
                                         ))}
                                     </div>
                                     <div className="product-single-slider _02" style={{ display: "flex", flexShrink: 0 }}>
-                                        {trackOneList.map((item, idx) => (
+                                        {trackTwoList.map((item, idx) => (
                                             <SlideImage key={`track2-2-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>
                                     <div className="product-single-slider _02" style={{ display: "flex", flexShrink: 0 }}>
-                                        {trackTwoList.map((item, idx) => (
+                                        {trackOneList.map((item, idx) => (
                                             <SlideImage key={`track2-3-${idx}`} type={item.type} img={item.img} srcset={item.srcset} />
                                         ))}
                                     </div>

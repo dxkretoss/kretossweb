@@ -19,12 +19,13 @@ export default function Footer() {
                 { label: "Portfolio", href: "#" },
                 { label: "Careers", href: "#" },
             ],
-            addresses: [
-                { country: "India", icon: "https://flagcdn.com/in.svg", address: "B-1007, Shilp Corporate Park, Near Rajpath Club, Rajpath-Rangoli Road, Ahmedabad. 380054" },
-                { country: "United States", icon: "https://flagcdn.com/us.svg", address: "9245 East Wood Drive, SCOTTSDALE, AZ 85260" }
-            ]
         }
     ];
+
+    const officeaddress = [
+        { country: "India", icon: "https://flagcdn.com/in.svg", address: "B-1007, Shilp Corporate Park, Near Rajpath Club, Rajpath-Rangoli Road, Ahmedabad. 380054" },
+        { country: "United States", icon: "https://flagcdn.com/us.svg", address: "9245 East Wood Drive, SCOTTSDALE, AZ 85260" }
+    ]
 
     // Social accounts
     const socialLinks = [
@@ -119,27 +120,33 @@ export default function Footer() {
                                             </div>
                                         </div>
 
-                                        {menu.addresses && (
-                                            <div>
-                                                <h3 className="footer-menu-title">Our Offices</h3>
-                                                <div className="flex flex-col gap-6 text-[#a3b3c9]">
-                                                    {menu.addresses.map((addr, aIdx) => (
-                                                        <div key={aIdx}>
-                                                            <div className="flex items-center gap-2 mb-1">
-                                                                <img src={addr.icon} alt={`${addr.country} Flag`} className="w-10 h-auto object-contain" />
-                                                                <h4 className="text-white font-medium text-[16px]">{addr.country}</h4>
-                                                            </div>
-                                                            <p className="text-[14px] leading-relaxed max-w-[280px] whitespace-normal">
-                                                                {addr.address}
-                                                            </p>
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        )}
                                     </div>
                                 </div>
                             ))}
+
+                            <div className="footer-menu-box">
+                                <div className="footer-menu-block social-box">
+                                    {officeaddress && (
+                                        <div>
+                                            <h3 className="footer-menu-title">Our Offices</h3>
+                                            <div className="flex flex-col gap-6 text-[#a3b3c9]">
+                                                {officeaddress.map((addr, aIdx) => (
+                                                    <div key={aIdx}>
+                                                        <div className="flex items-center gap-2 mb-1">
+                                                            <img src={addr.icon} alt={`${addr.country} Flag`} className="w-10 h-auto object-contain" />
+                                                            <h4 className="text-white font-medium text-[16px]">{addr.country}</h4>
+                                                        </div>
+                                                        <p className="text-[14px] leading-relaxed max-w-[280px] whitespace-normal">
+                                                            {addr.address}
+                                                        </p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+
+                                </div>
+                            </div>
 
                             {/* Social Profiles Menu */}
                             <div className="footer-menu-box">
@@ -239,7 +246,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
         </>
     );
 }

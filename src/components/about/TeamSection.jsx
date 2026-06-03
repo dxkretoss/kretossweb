@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const teamMembersTop = [
     {
@@ -43,8 +45,39 @@ const teamMembersBottom = [
 ];
 
 export default function TeamSection() {
+    const sectionRef = useRef(null);
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        let ctx = gsap.context(() => {
+            gsap.from(".team-left-contant", {
+                opacity: 0,
+                x: -50,
+                duration: 1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 80%",
+                }
+            });
+            gsap.from(".single-team-card", {
+                opacity: 0,
+                y: 50,
+                duration: 0.8,
+                stagger: 0.15,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: ".team-collection-list",
+                    start: "top 85%",
+                }
+            });
+        }, sectionRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <section className="team-section section-padding">
+        <section className="team-section section-padding" ref={sectionRef}>
             <div className="w-layout-blockcontainer container w-container">
                 <div className="team-contant-wrapper">
                     <div className="team-top-contant">

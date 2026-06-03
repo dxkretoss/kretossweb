@@ -172,7 +172,7 @@ export default function Contact() {
                 <div className="w-layout-blockcontainer container contact-container w-container">
                     <div className="contact-content-wrapper">
                         {/* Contact Form Block */}
-                        <div data-w-id="c01846ba-ed4a-f28e-506a-8849409148d6" style={{ "opacity": "0" }} className="contact-form-block">
+                        <div style={{ "opacity": "0" }} className="contact-form-block">
                             <div className="contact-form-wrapper">
                                 <div className="contact-form-wrapper-dev">
                                     <div className="contact-form-box w-form">
@@ -249,7 +249,7 @@ export default function Contact() {
                         </div>
 
                         {/* Contact Author / Intro Block */}
-                        <div data-w-id="9738c077-b734-c7bb-4513-dc3d92b63640" style={{ "opacity": "0" }} className="contact-about-block">
+                        <div style={{ "opacity": "0" }} className="contact-about-block">
                             <div className="contact-title-text">
                                 <div className="contact-title-subtitle">
                                     <div className="about-subtitle-box">
@@ -276,7 +276,7 @@ export default function Contact() {
                             <div className="contact-author-review">
                                 <div className="contact-auhtor-box">
                                     <div className="contact-review-area">
-                                        <div data-w-id="45e0fb23-5c50-82a8-01c4-3f9a1c5ac689" style={{ "opacity": "0" }} className="hero-icon-rating _02">
+                                        <div style={{ "opacity": "0" }} className="hero-icon-rating _02">
                                             <div className="hero-icon-box">
                                                 <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887f8_Frame%202147227821.svg"
                                                     loading="lazy" alt="Hero Icon" className="hero-left-meta-icon _01 icon" />

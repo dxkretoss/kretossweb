@@ -390,7 +390,7 @@ export default function Services() {
                         />
                     </div>
                     <div className="w-layout-blockcontainer container w-container">
-                        <div data-w-id="83b6645c-69a4-34e9-aadc-848274859eb2" className="service-section-block">
+                        <div  className="service-section-block">
                             <div className="service-content-wrapper !overflow-visible">
                                 <div className="project-title-area"
                                     style={{ "willChange": "transform", "transformStyle": "preserve-3d" }}>

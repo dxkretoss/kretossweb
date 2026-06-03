@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useLayoutEffect, useRef } from 'react';
+import gsap from 'gsap';
 import { Menu, X } from 'lucide-react';
 
 // SplitText helper for dynamic GSAP SplitText word/letter class structures
@@ -53,20 +54,49 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 
 // Reusable BookCallButton to encapsulate the dynamic B-o-o-k a C-a-l-l letters and styling
 const BookCallButton = ({ href = "#" }) => {
+    const buttonRef = useRef(null);
+
+    useLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+            const button = buttonRef.current;
+            if (!button) return;
+
+            const frontLetters = button.querySelectorAll(".button-text-one:not(._02) .gsap_split_letter");
+            const backLetters = button.querySelectorAll(".button-text-one._02 .gsap_split_letter");
+
+            // Initial setup: push back text down
+            gsap.set(backLetters, { yPercent: 100 });
+
+            button.addEventListener("mouseenter", () => {
+                gsap.killTweensOf([frontLetters, backLetters]);
+                gsap.to(frontLetters, { yPercent: -100, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                gsap.to(backLetters, { yPercent: 0, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+            });
+
+            button.addEventListener("mouseleave", () => {
+                gsap.killTweensOf([frontLetters, backLetters]);
+                gsap.to(frontLetters, { yPercent: 0, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                gsap.to(backLetters, { yPercent: 100, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+            });
+        }, buttonRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <a href={href} className="button-two w-inline-block" aria-label="Book a CallBook a Call">
+        <a ref={buttonRef} href={href} className="button-two w-inline-block" aria-label="Book a Call">
             <div className="button-two-bg">
                 <img
                     alt="img"
                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288823_date.svg"
                     className="header-button-icon"
                 />
-                <div className="button-text-two">
+                <div className="button-text-two" style={{ position: 'relative', overflow: 'hidden' }}>
                     <div className="button-text-one">
                         <SplitText text="Book a Call" startIndex={1} plainStyle={true} />
                     </div>
-                    <div className="button-text-one _02">
-                        <SplitText text="Book a Call" startIndex={10} plainStyle={true} />
+                    <div className="button-text-one _02" style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none' }}>
+                        <SplitText text="Book a Call" startIndex={100} plainStyle={true} />
                     </div>
                 </div>
                 <div className="button-dot-box">

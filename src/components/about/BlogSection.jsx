@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const posts = [
     {
@@ -28,8 +30,50 @@ const posts = [
 ];
 
 export default function BlogSection() {
+    const sectionRef = useRef(null);
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        let ctx = gsap.context(() => {
+            gsap.from(".blog-top-contant", {
+                opacity: 0,
+                y: 30,
+                duration: 1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 80%",
+                }
+            });
+            gsap.from(".blog-featured-post", {
+                opacity: 0,
+                scale: 0.95,
+                y: 50,
+                duration: 1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: ".featured-blog-post",
+                    start: "top 85%",
+                }
+            });
+            gsap.from(".blog-single-card-box", {
+                opacity: 0,
+                y: 50,
+                duration: 0.8,
+                stagger: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: ".post-collection",
+                    start: "top 85%",
+                }
+            });
+        }, sectionRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <section className="blog-section section-padding">
+        <section className="blog-section section-padding" ref={sectionRef}>
             <div className="w-layout-blockcontainer container w-container">
                 <div className="blog-contant-wrapper">
                     <div className="blog-top-contant">

@@ -2393,7 +2393,7 @@ p {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-rows: auto;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: space-between;
   align-items: center;
@@ -4109,7 +4109,7 @@ p {
 .hero-title.banner-02 {
   grid-column-gap: 9px;
   grid-row-gap: 9px;
-  font-size: px;
+  font-size: 64px;
   text-transform: uppercase;
   position: relative;
 }
@@ -6284,8 +6284,8 @@ p {
 }
 
 .product-ticker-block.top {
-  padding-top: var(--_spacing---spacing--space-medium);
-  padding-bottom: var(--_spacing---spacing--space-medium);
+  padding-top: var(--_spacing---spacing--space-regular);
+  padding-bottom: var(--_spacing---spacing--space-regular);
   width: 100%;
   height: 88px;
 }
@@ -6350,7 +6350,7 @@ p {
   .footer-top-box {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
   }
 
@@ -9742,6 +9742,33 @@ p {
 /* Desktop Default */
 .mobile-menu-toggle {
   display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-title.banner {
+    font-size: 42px;
+  }
+
+  .hero-text-span.banner-03,
+  .hero-title.banner-02 {
+    font-size: 42px;
+  }
+
+  .hero-bbottom-ttitle.banner-04 {
+    font-size: 42px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  .about-block {
+    max-width: 450px;
+  }
+
+  .service-card-box {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Below 991px */

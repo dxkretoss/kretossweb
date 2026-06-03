@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const awards = [
     {
@@ -28,8 +30,45 @@ const awards = [
 ];
 
 export default function AwardsSection() {
+    const sectionRef = useRef(null);
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        let ctx = gsap.context(() => {
+            gsap.from(".award-button-title-box", {
+                opacity: 0,
+                y: 30,
+                duration: 0.8,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 80%",
+                }
+            });
+            gsap.from(".single-buttom-contant-wrapper", {
+                opacity: 0,
+                x: -30,
+                duration: 0.8,
+                stagger: 0.15,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: ".award-buttom-contant",
+                    start: "top 85%",
+                }
+            });
+            gsap.to(".star-shape, .single-star-shape", {
+                rotation: 360,
+                duration: 20,
+                repeat: -1,
+                ease: "linear"
+            });
+        }, sectionRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <section className="award-section section-padding">
+        <section className="award-section section-padding" ref={sectionRef}>
             <div className="w-layout-blockcontainer container award-container w-container">
                 <div className="award-contant-wrapper">
                     <div className="award-top-contant">
