@@ -258,7 +258,7 @@ export default function Product() {
                                             loading="lazy" alt="Subtitle Icon" className="subtitle-image-icon"
                                             style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }}
                                         />
-                                        <div className="product-subtitle-text">Industry Hit</div>
+                                        <div className="product-subtitle-text">Culture & Moments</div>
                                     </div>
                                     <h2 className="title white" aria-label="&quot;Memories & Milestones&quot;">
                                         <SplitText text='"Memories & Milestones"' startIndex={1} />

@@ -39,7 +39,7 @@ const SplitText = ({ text, startIndex = 1 }) => {
     );
 };
 
-export default function AnimatedButton({ href = "#Contact", text = "LET'S TALK", onClick, className = "" }) {
+export default function AnimatedButton({ href = "#Contact", text = "LET'S TALK", onClick, className = "", target }) {
     const buttonRef = useRef(null);
 
     useLayoutEffect(() => {
@@ -89,7 +89,7 @@ export default function AnimatedButton({ href = "#Contact", text = "LET'S TALK",
 
     return (
         <div className={`hero-button ${className}`}>
-            <a ref={buttonRef} href={href} onClick={onClick} className="primary-button w-inline-block" aria-label={text} style={{ position: 'relative' }}>
+            <a ref={buttonRef} href={href} target={target} onClick={onClick} className="primary-button w-inline-block" aria-label={text} style={{ position: 'relative' }}>
                 <div className="button-text-wrapper" style={{ position: 'relative', overflow: 'hidden' }}>
                     <div className="button-text-box" style={{ position: 'relative' }}>
                         <div className="button-front-text">

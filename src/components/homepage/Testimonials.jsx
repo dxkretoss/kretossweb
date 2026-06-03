@@ -129,6 +129,7 @@ const MarqueeReviewCard = ({ id, author, text, img, srcset, dataWId }) => {
                     sizes="100vw" alt="Review Box"
                     srcSet={srcset}
                     className="testimonial-image"
+                    style={{ objectFit: "cover" }}
                 />
                 <img
                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0eb4b7d940baadd7ed25d_Rectangle%20240649182.png"
@@ -186,7 +187,7 @@ const SliderReviewCard = ({ id, author, designation, text, img, rating, lightbox
         <div className="review-single-card">
             <div className="review-card-title-text">
                 <div className="review-image-box">
-                    <img src={img} loading="lazy" alt="Review Image" className="review-image" />
+                    <img src={img} loading="lazy" alt="Review Image" className="review-image" style={{ objectFit: "cover" }} />
                 </div>
                 <div className="review-title-designation">
                     <h3 className="review-author-title">{author}</h3>

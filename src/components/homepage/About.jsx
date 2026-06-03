@@ -23,7 +23,7 @@ const CounterBox = ({ columns, suffix, label, hasLine, rightOneClass = '' }) => 
                     <h2 className="counter-box-title" style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", marginLeft: "2px" }}>{suffix}</h2>
                 </div>
                 <div className="counter-subtitle-text counter-number">
-                    <div className="counter-text !text-sm md:!text-base !font-medium !text-gray-600 max-w-[100px] leading-tight pt-1">{label}</div>
+                    <div className="counter-text">{label}</div>
                 </div>
             </div>
             {hasLine && (
@@ -233,7 +233,7 @@ export default function About() {
                     counterDigitColumns.forEach((colBox, idx) => {
                         const isUp = colBox.classList.contains("scroll-up");
                         const translateDist = -(colBox.children.length - 1) * 47.5;
-                        const duration = 2.0 + (idx % 3) * 0.2; 
+                        const duration = 2.0 + (idx % 3) * 0.2;
 
                         if (isUp) {
                             tl.fromTo(colBox,
@@ -367,7 +367,7 @@ export default function About() {
                                 <div className="about-block">
                                     <div className="about-text">Trusted by global clients, Kretoss Technology is your technology partner for mobile apps, websites, and digital solutions affordable, reliable, and tailored to your business needs. With over 12 years of experience, we deliver scalable, high-quality solutions that drive real business growth.</div>
                                     {/* <div className="about-button"> */}
-                                    <AnimatedButton href="#about" text="MORE ABOUT US" ></AnimatedButton>
+                                    <AnimatedButton href="/about" text="MORE ABOUT US" ></AnimatedButton>
                                     {/* </div> */}
                                     <div className="about-counter">
                                         {statisticsCounters.map((counter, idx) => (

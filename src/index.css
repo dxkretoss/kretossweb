@@ -2085,7 +2085,7 @@ textarea.w-select {
   --_typography---h3--font-weight: var(--font-weight--font-semi-bold);
   --_color---theme-colors--background-color: #0a0a0a;
   --_spacing---spacing--space-medium: 32px;
-  --_spacing---spacing--space-bold: 100px;
+  --_spacing---spacing--space-bold: 80px;
   --_spacing---spacing--space-regular-xxl: 30px;
   --_spacing---spacing--space-large-xl: 60px;
   --_spacing---spacing--space-regular: 20px;
@@ -2102,7 +2102,7 @@ textarea.w-select {
   --_spacing---gaps--gap-regular: 20px;
   --_spacing---gaps--gap-medium: 32px;
   --_color---base-colors--transparent: #0000;
-  --_spacing---spacing--space-bold-xl: 120px;
+  --_spacing---spacing--space-bold-xl: 80px;
   --_spacing---spacing--space-large-xxl: 80px;
   --_spacing---spacing--space-small: 10px;
   --_spacing---spacing--space-medium-xl: 40px;
@@ -2228,7 +2228,7 @@ body {
   --letter-spacing--letter-medium: -1px;
   --letter-spacing--letter-small: 1px;
   --_spacing---spacing--space-medium: 32px;
-  --_spacing---spacing--space-bold: 100px;
+  --_spacing---spacing--space-bold: 80px;
   --_spacing---spacing--space-regular-xxl: 30px;
   --_spacing---spacing--space-large-xl: 60px;
   --_spacing---spacing--space-regular: 20px;
@@ -2239,7 +2239,7 @@ body {
   --_spacing---gaps--gap-large: 60px;
   --_spacing---gaps--gap-regular: 20px;
   --_spacing---gaps--gap-medium: 32px;
-  --_spacing---spacing--space-bold-xl: 120px;
+  --_spacing---spacing--space-bold-xl: 80px;
   --_spacing---spacing--space-large-xxl: 80px;
   --_spacing---spacing--space-small: 10px;
   --_spacing---spacing--space-medium-xl: 40px;
@@ -2495,7 +2495,7 @@ p {
   align-items: center;
   display: flex;
   position: absolute;
-  bottom: 30px;
+  bottom: 80px;
 }
 
 .copyright-text {
@@ -2539,7 +2539,7 @@ p {
 }
 
 .footer-address-wrapper {
-  z-index: 6;
+  z-index: 999;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -2596,7 +2596,7 @@ p {
   display: flex;
   position: absolute;
   inset: auto auto -30% 0%;
-  position: relative;
+  /* position: relative; */
 }
 
 .footer-image {
@@ -4768,7 +4768,7 @@ p {
 
 .step-block {
   position: sticky;
-  top: -60px;
+  top: -40px;
 }
 
 .product-tab-pane-dev {
@@ -6497,7 +6497,7 @@ p {
 
   .counter-text {
     color: #373232;
-    font-size: 20px;
+    font-size: 14px;
     line-height: var(--line-height--height-extra);
   }
 

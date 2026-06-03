@@ -53,7 +53,7 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 };
 
 // Reusable BookCallButton to encapsulate the dynamic B-o-o-k a C-a-l-l letters and styling
-const BookCallButton = ({ href = "#" }) => {
+const BookCallButton = ({ href = "https://calendly.com/ankur-k-kretoss/30min" }) => {
     const buttonRef = useRef(null);
 
     useLayoutEffect(() => {
@@ -84,7 +84,7 @@ const BookCallButton = ({ href = "#" }) => {
     }, []);
 
     return (
-        <a ref={buttonRef} href={href} className="button-two w-inline-block" aria-label="Book a Call">
+        <a ref={buttonRef} href={href} target='_blank' className="button-two w-inline-block" aria-label="Book a Call">
             <div className="button-two-bg">
                 <img
                     alt="img"

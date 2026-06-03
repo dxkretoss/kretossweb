@@ -133,8 +133,8 @@ export default function Footer() {
                                                 {officeaddress.map((addr, aIdx) => (
                                                     <div key={aIdx}>
                                                         <div className="flex items-center gap-2 mb-1">
-                                                            <img src={addr.icon} alt={`${addr.country} Flag`} className="w-10 h-auto object-contain" />
-                                                            <h4 className="text-white font-medium text-[16px]">{addr.country}</h4>
+                                                            <img src={addr.icon} alt={`${addr.country} Flag`} className="w-8 h-auto object-contain" />
+                                                            <h4 className="text-white font-medium !text-[20px] uppercase">{addr.country}</h4>
                                                         </div>
                                                         <p className="text-[14px] leading-relaxed max-w-[280px] whitespace-normal">
                                                             {addr.address}
@@ -152,10 +152,11 @@ export default function Footer() {
                             <div className="footer-menu-box">
                                 <div className="footer-menu-block social-box">
                                     <div className='flex flex-col gap-2'>
-                                        <h3 className='!text-[24px]'>Let’s Work Together!</h3>
+                                        <h3 className="footer-menu-title">Let’s Work Together!</h3>
                                         <p> Have a great idea? We're here to bring it to life with innovative & digital solutions</p>
                                     </div>
-                                    <AnimatedButton text="BOOK A CALL"></AnimatedButton>
+                                    <AnimatedButton href="https://calendly.com/ankur-k-kretoss/30min" text="BOOK A CALL"
+                                        target="_blank"></AnimatedButton>
                                     {/* <h3 className="footer-menu-title _02">Follow Us</h3> */}
                                     <div className="footer-social-box">
                                         {socialLinks.map((social) => (
@@ -200,7 +201,7 @@ export default function Footer() {
 
                             {/* Rolling country list */}
                             <div className="footer-address-wrapper flex flex-col items-center">
-                                <h3 className="footer-menu-title">Our Clients</h3>
+                                <h3 className="footer-menu-title">Countries We Serve</h3>
                                 <div className="footer-country-block">
                                     <div className="footer-country-slider ">
                                         {Array.from({ length: 2 }).map((_, boxIdx) => (

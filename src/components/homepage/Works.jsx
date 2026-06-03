@@ -130,29 +130,29 @@ export default function Works() {
         {
             id: "01",
             duration: "2 Hours",
-            title: "Decode",
-            description: "We don’t just take briefs we break them down.",
+            title: "Discover",
+            description: "We dive deep into your vision, goals, audience, and requirements to understand exactly what your business needs to succeed.",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288817_files-02.svg"
         },
         {
             id: "02",
             duration: "2-5 Days",
-            title: "Blueprint",
-            description: "Before anything goes live, we map everything out.",
+            title: "Strategize",
+            description: "We create a clear roadmap, structure, and execution plan to ensure a smooth and scalable development process.",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288817_files-02.svg"
         },
         {
             id: "03",
             duration: "2-4 Days",
-            title: "Build Bold",
-            description: "We craft user-centered digital solutions that are fast, secure, and scalable.",
+            title: "Create & Develop",
+            description: "Our team designs and develops powerful digital experiences with modern technology, seamless functionality, and stunning visuals.",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288817_files-02.svg"
         },
         {
             id: "04",
             duration: "2-4 Days",
             title: "Launch & Level Up",
-            description: "We track, refine, and continuously evolve your product to keep you ahead of the curve.",
+            description: "After launch, we optimize, improve, and scale your product continuously to help your business grow faster and stay ahead.",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288817_files-02.svg"
         }
     ];

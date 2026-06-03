@@ -270,7 +270,8 @@ export default function Contact() {
                                 <div className="contact-text">We'll schedule a call to discuss your idea. After discovery sessions,
                                     we'll send a proposal, and upon approval, we'll get started.</div>
 
-                                <AnimatedButton text="BOOK A CALL"></AnimatedButton>
+                                <AnimatedButton href="https://calendly.com/ankur-k-kretoss/30min" text="BOOK A CALL"
+                                    target="_blank"></AnimatedButton>
                             </div>
 
                             <div className="contact-author-review">

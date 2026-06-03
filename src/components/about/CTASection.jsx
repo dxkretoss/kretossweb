@@ -42,7 +42,7 @@ export default function CTASection() {
         <section ref={sectionRef} className="py-24 relative px-6">
             <div className="container mx-auto max-w-5xl">
                 <div className="cta-box rounded-3xl p-12 md:p-20 text-center border border-black/10 bg-gradient-to-br from-[#161616] to-[#0c0c0c] shadow-2xl relative overflow-hidden group">
-                    
+
                     {/* Hover Glow Effect */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#ff6b35]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
 
@@ -58,7 +58,8 @@ export default function CTASection() {
 
                         <div className="cta-text mt-12">
                             <a
-                                href="#Contact"
+                                href="https://calendly.com/ankur-k-kretoss/30min"
+                                target="_blank"
                                 onClick={(e) => {
                                     e.preventDefault();
                                     window.location.hash = '#home';
@@ -71,7 +72,7 @@ export default function CTASection() {
                             >
                                 BOOK A CALL
                                 <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
-                                    <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </a>
                         </div>
