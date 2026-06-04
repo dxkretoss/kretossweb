@@ -233,7 +233,8 @@ export default function About() {
                     counterDigitColumns.forEach((colBox, idx) => {
                         const isUp = colBox.classList.contains("scroll-up");
                         const translateDist = -(colBox.children.length - 1) * 47.5;
-                        const duration = 2.0 + (idx % 3) * 0.2;
+                        // Increased base duration and variance for a slower, smoother rolling effect
+                        const duration = 2.5 + (idx % 3) * 0.5;
 
                         if (isUp) {
                             tl.fromTo(colBox,
@@ -241,7 +242,7 @@ export default function About() {
                                 {
                                     y: translateDist,
                                     duration: duration,
-                                    ease: "power3.out"
+                                    ease: "expo.out"
                                 },
                                 "counterStart"
                             );
@@ -251,7 +252,7 @@ export default function About() {
                                 {
                                     y: 0,
                                     duration: duration,
-                                    ease: "power3.out"
+                                    ease: "expo.out"
                                 },
                                 "counterStart"
                             );

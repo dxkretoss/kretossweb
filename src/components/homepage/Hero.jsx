@@ -209,8 +209,8 @@ export default function Hero() {
                 });
             }
 
-            // 2. Main Timeline – NO DELAYS, starts immediately
-            const tl = gsap.timeline();
+            // 2. Main Timeline – Add a slight delay so users don't miss the initial animations
+            const tl = gsap.timeline({ delay: 0.2 });
 
             // Scrolling tags container fade in
             tl.to(".hero-icon-text", {
@@ -220,22 +220,22 @@ export default function Hero() {
             // Hero title containers
             tl.fromTo(".hero-top-title .hero-char",
                 { opacity: 0 },
-                { opacity: 1, duration: 0.8, ease: "power4.out", stagger: { amount: 0.6, from: "center" } },
+                { opacity: 1, duration: 1.5, ease: "power4.out", stagger: { amount: 1.2, from: "center" } },
                 0.1
             );
             tl.fromTo(".hero-title.banner-02 .hero-char",
                 { opacity: 0 },
-                { opacity: 1, duration: 0.8, ease: "power4.out", stagger: { amount: 0.6, from: "end" } },
+                { opacity: 1, duration: 1.5, ease: "power4.out", stagger: { amount: 1.2, from: "end" } },
                 0.2
             );
             tl.fromTo(".hero-title._03 .hero-char",
                 { opacity: 0 },
-                { opacity: 1, duration: 0.8, ease: "power4.out", stagger: { amount: 0.6, from: "start" } },
+                { opacity: 1, duration: 1.5, ease: "power4.out", stagger: { amount: 1.2, from: "start" } },
                 0.3
             );
             tl.fromTo(".hero-bbottom-ttitle.banner-04 .hero-char",
                 { opacity: 0 },
-                { opacity: 1, duration: 0.8, ease: "power4.out", stagger: { amount: 0.6, from: "center" } },
+                { opacity: 1, duration: 1.5, ease: "power4.out", stagger: { amount: 1.2, from: "center" } },
                 0.4
             );
 
