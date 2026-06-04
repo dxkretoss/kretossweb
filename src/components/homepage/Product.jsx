@@ -130,50 +130,66 @@ export default function Product() {
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-7.jpg",
-            srcset: "/grouppics/Group-7.jpg 500w, /grouppics/Group-7.jpg 608w"
+            img: "/grouppics/Group-11.jpg",
+            srcset: "/grouppics/Group-11.jpg 500w, /grouppics/Group-11.jpg 608w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-2.jpg",
-            srcset: "/grouppics/Group-2.jpg 500w, /grouppics/Group-2.jpg 800w, /grouppics/Group-2.jpg 1080w, /grouppics/Group-2.jpg 1215w"
-        }
+            img: "/grouppics/Group-8.jpg",
+            srcset: "/grouppics/Group-8.jpg 500w, /grouppics/Group-8.jpg 800w, /grouppics/Group-8.jpg 1080w, /grouppics/Group-8.jpg 1215w"
+        },
+        {
+            type: "horizontal",
+            img: "/grouppics/Group-10.png",
+            srcset: "/grouppics/Group-10.png 500w, /grouppics/Group-10.png 800w, /grouppics/Group-10.png 1080w, /grouppics/Group-10.png 1215w"
+        },
     ];
 
     // Image tracks for slider row 2 (Track _02)
     const trackTwoList = [
         {
             type: "horizontal",
-            img: "/grouppics/Group-4.jpg",
-            srcset: "/grouppics/Group-4.jpg 500w, /grouppics/Group-4.jpg 800w, /grouppics/Group-4.jpg 1080w, /grouppics/Group-4.jpg 1215w"
+            img: "/grouppics/Group-2.jpg",
+            srcset: "/grouppics/Group-2.jpg 500w, /grouppics/Group-2.jpg 800w, /grouppics/Group-2.jpg 1080w, /grouppics/Group-2.jpg 1215w"
+        },
+        {
+            type: "horizontal",
+            img: "/grouppics/Group-7.jpg",
+            srcset: "/grouppics/Group-7.jpg 500w, /grouppics/Group-7.jpg 800w, /grouppics/Group-7.jpg 1080w, /grouppics/Group-7.jpg 1215w"
+        },
+        {
+            type: "horizontal",
+            img: "/grouppics/Group-3.jpg",
+            srcset: "/grouppics/Group-3.jpg 500w, /grouppics/Group-3.jpg 800w, /grouppics/Group-3.jpg 1080w, /grouppics/Group-3.jpg 1215w"
         },
         {
             type: "horizontal",
             img: "/grouppics/Group-5.jpg",
             srcset: "/grouppics/Group-5.jpg 500w, /grouppics/Group-5.jpg 800w, /grouppics/Group-5.jpg 1080w, /grouppics/Group-5.jpg 1215w"
         },
-        {
-            type: "horizontal",
-            img: "/grouppics/Group-3.jpg",
-            srcset: "/grouppics/Group-3.jpg 500w, /grouppics/Group-3.jpg 800w, /grouppics/Group-3.jpg 1080w, /grouppics/Group-3.jpg 1215w"
-        }
     ];
 
     const trackThreeList = [
         {
             type: "horizontal",
-            img: "/grouppics/Group-8.jpg",
-            srcset: "/grouppics/Group-8.jpg 500w, /grouppics/Group-8.jpg 608w"
+            img: "/grouppics/Group-7.jpg",
+            srcset: "/grouppics/Group-7.jpg 500w, /grouppics/Group-7.jpg 608w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-5.jpg",
-            srcset: "/grouppics/Group-5.jpg 500w, /grouppics/Group-5.jpg 608w"
+            img: "/grouppics/Group-4.jpg",
+            srcset: "/grouppics/Group-4.jpg 500w, /grouppics/Group-4.jpg 608w"
         },
         {
             type: "horizontal",
-            img: "/grouppics/Group-1.jpg",
-            srcset: "/grouppics/Group-1.jpg 500w, /grouppics/Group-1.jpg 608w"
+            img: "/grouppics/Group-6.jpg",
+            srcset: "/grouppics/Group-6.jpg 500w, /grouppics/Group-6.jpg 800w, /grouppics/Group-6.jpg 1080w, /grouppics/Group-6.jpg 1215w"
+        },
+
+        {
+            type: "horizontal",
+            img: "/grouppics/Group-2.jpg",
+            srcset: "/grouppics/Group-2.jpg 500w, /grouppics/Group-2.jpg 608w"
         }
     ];
 

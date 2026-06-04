@@ -18,76 +18,85 @@ const SplitText = ({ text }) => {
 };
 // Subcomponent: RatingBadge
 const RatingBadge = () => {
+    const ratingsData = [
+        { platform: "Reviews", score: "4.9", isScore: true, icon: <img src="/Google.svg" alt="Google" className="h-4 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
+        { platform: "Reviews", score: "5.0", isScore: true, icon: <img src="/Clutch.svg" alt="Clutch" className="h-4  object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
+        { platform: "Reviews", score: "4.7", isScore: true, icon: <img src="/trustpilot.svg" alt="Trustpilot" className="object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
+        { platform: "Reviews", score: "4.0", isScore: true, icon: <img src="/sitejabber.svg" alt="Sitejabber" className="object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left", filter: "brightness(0) invert(1)" }} /> },
+        { platform: "Global Clients", score: "952+", isScore: false, icon: <Globe color="#fff" size={24} className="single-review-star" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> }
+    ];
+
     return (
-        <div style={{ opacity: 0 }} className="hero-icon-rating">
-            <div className="hero-icon-box">
-                <img
-                    src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887f8_Frame%202147227821.svg"
-                    alt="Hero Icon"
-                    className="hero-left-meta-icon _01"
-                />
-                <img
-                    src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887f9_Frame%202147227822.svg"
-                    alt="Hero Icon"
-                    className="hero-left-meta-logo _02"
-                />
-            </div>
-            <div className="hero-rating-text">
-                <div className="hero-rating-text">4.8</div>
-                <div className="hero-star-wrapper">
-                    {[...Array(5)].map((_, i) => (
-                        <img
-                            key={i}
-                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69acfb7509f4926e7df68a47_Vector.svg"
-                            alt="Review Star"
-                            className={`single-review-star _0${i + 1}`}
-                            style={{ transform: "scale(0)" }}
-                        />
-                    ))}
-                    <div
-                        className="trust-score"
-                        style={{ opacity: 0 }}
-                    >
-                        Trust Score
+        <div style={{ opacity: 0, position: "relative", minHeight: "48px", minWidth: "300px" }} className="hero-icon-rating">
+            {ratingsData.map((item, idx) => (
+                <div key={idx} className="rating-block-wrapper" style={{ display: idx === 0 ? "flex" : "none", position: "absolute", top: 0, left: 0, width: "100%", alignItems: "center", height: "100%", gap: "16px" }}>
+                    <div className="hero-icon-box flex items-center">
+                        {item.icon}
+                    </div>
+
+                    {item.isScore && <div className="single-review-star" style={{ width: "1px", height: "22px", backgroundColor: "rgba(255,255,255,0.3)" }}></div>}
+
+                    <div className="hero-rating-text">
+                        <div className="hero-star-wrapper" style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                            <div className="hero-rating-text single-review-star" style={{ transform: "scale(0)", display: "inline-block", transformOrigin: "center left", width: "auto", height: "auto", fontWeight: "600" }}>{item.score}</div>
+
+                            {item.isScore && [...Array(5)].map((_, i) => {
+                                const isFilled = i < Math.floor(parseFloat(item.score));
+                                const isHalf = !isFilled && i < parseFloat(item.score);
+                                return (
+                                    <img
+                                        key={i}
+                                        src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69acfb7509f4926e7df68a47_Vector.svg"
+                                        alt="Review Star"
+                                        className={`single-review-star _0${i + 1}`}
+                                        style={{ transform: "scale(0)", opacity: isFilled || isHalf ? 1 : 0.3, display: "inline-block", transformOrigin: "center left", width: "16px", height: "16px" }}
+                                    />
+                                );
+                            })}
+
+                            <div className="single-review-star" style={{ transform: "scale(0)", whiteSpace: "nowrap", display: "inline-block", transformOrigin: "center left", width: "auto", height: "auto", color: "rgba(255,255,255,0.7)", marginLeft: "4px" }}>
+                                {item.platform}
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            ))}
         </div>
     );
 };
 
 // Subcomponent: ScrollingTags
-const ScrollingTags = () => {
-    const tags = [
-        { key: "_01", text: "Certified Partner" },
-        { key: "_02", text: "Trusted Quality" },
-        { key: "_03", text: "Expert Support" },
-        { key: "_04", text: "Secure Service" }
-    ];
+// const ScrollingTags = () => {
+//     const tags = [
+//         { key: "_01", text: "Certified Partner" },
+//         { key: "_02", text: "Trusted Quality" },
+//         { key: "_03", text: "Expert Support" },
+//         { key: "_04", text: "Secure Service" }
+//     ];
 
-    return (
-        <div style={{ opacity: 0 }} className="hero-icon-text">
-            <div className="hero-meta-icon-box">
-                <img
-                    src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69acfcaea6bf20ffc4b2d559_Vector.svg"
-                    alt="Hero Icon"
-                    className="hero-meta-box-icon"
-                    style={{ transform: "rotateY(57.28deg)" }}
-                />
-            </div>
-            <div className="hero-meta-tag-box">
-                {tags.map((tag) => (
-                    <div
-                        key={tag.key}
-                        className={`single-tag-item ${tag.key}`}
-                    >
-                        {tag.text}
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-};
+//     return (
+//         <div style={{ opacity: 0 }} className="hero-icon-text">
+//             <div className="hero-meta-icon-box">
+//                 <img
+//                     src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69acfcaea6bf20ffc4b2d559_Vector.svg"
+//                     alt="Hero Icon"
+//                     className="hero-meta-box-icon"
+//                     style={{ transform: "rotateY(57.28deg)" }}
+//                 />
+//             </div>
+//             <div className="hero-meta-tag-box">
+//                 {tags.map((tag) => (
+//                     <div
+//                         key={tag.key}
+//                         className={`single-tag-item ${tag.key}`}
+//                     >
+//                         {tag.text}
+//                     </div>
+//                 ))}
+//             </div>
+//         </div>
+//     );
+// };
 
 // Subcomponent: Reusable FloatingBadge
 const FloatingBadge = ({ text, type = 'purple', arrowRot = -17.9137, badgeClass = '', iconSrc, iconComponent }) => {
@@ -168,33 +177,37 @@ export default function Hero() {
                 opacity: 1, y: 0, duration: 1, ease: "power4.out"
             });
 
-            // Loop timeline for Trust Score <-> 4.8 + Stars
-            const ratingLoopTl = gsap.timeline({ repeat: -1 });
+            // Loop timeline for 5 platforms
+            const blocks = gsap.utils.toArray(".rating-block-wrapper");
+            if (blocks.length > 0) {
+                gsap.set(blocks, { opacity: 0, display: "none" });
 
-            // Trust score fades in
-            ratingLoopTl.to(".trust-score", {
-                opacity: 1, scale: 1, duration: 0.6, ease: "power4.out"
-            });
-            // Wait 2s
-            ratingLoopTl.to({}, { duration: 1 });
-            // Trust score fades out
-            ratingLoopTl.to(".trust-score", {
-                opacity: 0, scale: 0.8, duration: 0.4, ease: "power2.in"
-            });
+                const ratingLoopTl = gsap.timeline({ repeat: -1 });
 
-            // 4.8 Text stays permanent. Stars fade in
-            ratingLoopTl.fromTo(".single-review-star",
-                { scale: 0 },
-                { scale: 1, duration: 0.5, stagger: 0.06, ease: "back.out(1.5)" }
-            );
+                blocks.forEach((block) => {
+                    const elements = block.querySelectorAll(".rating-icon, .single-review-star");
 
-            // Wait 2s
-            ratingLoopTl.to({}, { duration: 2 });
+                    // Show this block immediately
+                    ratingLoopTl.set(block, { display: "flex", opacity: 1 });
 
-            // Stars fade out
-            ratingLoopTl.to(".single-review-star", {
-                scale: 0, duration: 0.4, stagger: 0.04, ease: "power2.in"
-            });
+                    // Stagger elements pop in
+                    ratingLoopTl.fromTo(elements,
+                        { scale: 0 },
+                        { scale: 1, duration: 0.5, stagger: 0.06, ease: "back.out(1.5)" }
+                    );
+
+                    // Wait for 2s
+                    ratingLoopTl.to({}, { duration: 2 });
+
+                    // Stagger elements pop out
+                    ratingLoopTl.to(elements, {
+                        scale: 0, duration: 0.4, stagger: 0.04, ease: "power2.in"
+                    });
+
+                    // Hide block
+                    ratingLoopTl.set(block, { display: "none", opacity: 0 });
+                });
+            }
 
             // 2. Main Timeline – NO DELAYS, starts immediately
             const tl = gsap.timeline();
@@ -334,7 +347,7 @@ export default function Hero() {
                         <div className="hero-icon-title-wrapper">
                             <div className="hero-icon-wrapper">
                                 <RatingBadge />
-                                <ScrollingTags />
+                                {/* <ScrollingTags /> */}
                             </div>
 
                             {/* Building Future-Ready Software for Enterprises and Disruptive Startups */}
