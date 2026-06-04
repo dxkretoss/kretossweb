@@ -260,10 +260,10 @@ export default function Services() {
                 mm.add("(min-width: 992px)", () => {
                     // Initial styling matching Webflow starting positions
                     gsap.set(".project-title-area", { y: 20 });
-                    gsap.set(".single-service-card._01", { y: 20 });
-                    gsap.set(".single-service-card._02", { y: 60 });
-                    gsap.set(".single-service-card._03", { y: 100 });
-                    gsap.set(".single-service-card._04", { y: 140 });
+                    gsap.set(".single-service-card._01", { y: 50 });
+                    gsap.set(".single-service-card._02", { y: 200 });
+                    gsap.set(".single-service-card._03", { y: 400 });
+                    gsap.set(".single-service-card._04", { y: 600 });
 
                     // Create parallax scroll timeline with linear mapping to scroll progress
                     const tl = gsap.timeline({
@@ -277,10 +277,10 @@ export default function Services() {
 
                     // Map keyframes 0% -> 45% and 0% -> 60% linearly
                     tl.fromTo(".project-title-area", { y: 20 }, { y: 0, duration: 45, ease: "none" }, 0)
-                        .fromTo(".single-service-card._01", { y: 20 }, { y: 0, duration: 45, ease: "none" }, 0)
-                        .fromTo(".single-service-card._02", { y: 120 }, { y: 0, duration: 60, ease: "none" }, 0)
-                        .fromTo(".single-service-card._03", { y: 200 }, { y: 0, duration: 60, ease: "none" }, 0)
-                        .fromTo(".single-service-card._04", { y: 260 }, { y: 0, duration: 60, ease: "none" }, 0)
+                        .fromTo(".single-service-card._01", { y: 50 }, { y: 0, duration: 45, ease: "none" }, 0)
+                        .fromTo(".single-service-card._02", { y: 200 }, { y: 0, duration: 60, ease: "none" }, 0)
+                        .fromTo(".single-service-card._03", { y: 400 }, { y: 0, duration: 60, ease: "none" }, 0)
+                        .fromTo(".single-service-card._04", { y: 600 }, { y: 0, duration: 60, ease: "none" }, 0)
                         // Fill remaining timeline up to 100 to scale scroll progress to 100% exactly
                         .to({}, { duration: 40 }, 60);
 
@@ -390,7 +390,7 @@ export default function Services() {
                         />
                     </div>
                     <div className="w-layout-blockcontainer container w-container">
-                        <div  className="service-section-block">
+                        <div className="service-section-block">
                             <div className="service-content-wrapper !overflow-visible">
                                 <div className="project-title-area"
                                     style={{ "willChange": "transform", "transformStyle": "preserve-3d" }}>
