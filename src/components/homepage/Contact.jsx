@@ -276,7 +276,7 @@ export default function Contact() {
 
                             <div className="contact-author-review">
                                 <div className="contact-auhtor-box">
-                                    <div className="contact-review-area">
+                                    {/* <div className="contact-review-area">
                                         <div style={{ "opacity": "0" }} className="hero-icon-rating _02">
                                             <div className="hero-icon-box">
                                                 <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887f8_Frame%202147227821.svg"
@@ -299,7 +299,7 @@ export default function Contact() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className="author-image-box">
                                         <img src="/grouppics/ankursir.png"
                                             loading="lazy" alt="Author Image" className="author-image" />

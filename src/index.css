@@ -3268,7 +3268,7 @@ p {
 
 .about-counter {
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   /* margin-top: 50px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -3281,7 +3281,7 @@ p {
 
 .counter-box-title {
   color: #0a0a0a;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 100%;
   font-weight: var(--font-weight--font-semi-bold);
   margin-top: 0;
@@ -4270,6 +4270,13 @@ p {
   height: 1200px;
   position: relative;
   top: -2px;
+}
+
+.technology {
+  padding: var(--_spacing---spacing--space-bold-xl) var(--_spacing---spacing--space-regular-xxl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .step-content-wrapper {
@@ -6236,6 +6243,12 @@ p {
   max-width: 650px;
 }
 
+.technology-section-title {
+  font-size: 36px;
+  line-height: 140%;
+  font-weight: var(--font-weight--font-semi-bold);
+}
+
 .service-block {
   background-color: #fafcff;
 }
@@ -7531,6 +7544,11 @@ p {
     line-height: 150%;
   }
 
+  .technology-section-title {
+    font-size: 48px;
+    line-height: 150%;
+  }
+
   .ticker-box-wrapper {
     width: 172%;
   }
@@ -7551,6 +7569,10 @@ p {
 @media screen and (max-width: 1024px) {
   .hero-title.banner {
     font-size: 42px;
+  }
+
+  .counter-subtitle-text {
+    font-size: 13px;
   }
 
   .hero-text-span.banner-03,
@@ -7847,7 +7869,7 @@ p {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
-    place-items: center stretch;
+    /* place-items: center stretch; */
     margin-top: 0;
     display: grid;
   }
@@ -8017,6 +8039,7 @@ p {
     padding-bottom: 100px;
   }
 
+  .technology,
   .step {
     padding: var(--_spacing---spacing--space-large-xxl) var(--_spacing---spacing--space-regular);
     height: 100%;
@@ -8494,6 +8517,11 @@ p {
   }
 
   .about-section-title {
+    font-size: 28px;
+    line-height: var(--line-height--height-large);
+  }
+
+  .technology-section-title {
     font-size: 28px;
     line-height: var(--line-height--height-large);
   }
@@ -8982,6 +9010,10 @@ p {
     font-size: 28px;
   }
 
+  .technology-section-title {
+    font-size: 28px;
+  }
+
   .about-subtitle-text {
     font-weight: var(--font-weight--font-regular);
   }
@@ -9398,6 +9430,8 @@ p {
     padding-bottom: 80px;
   }
 
+  .review.update-review,
+  .technology,
   .step {
     padding-top: var(--_spacing---spacing--space-large-xl);
     padding-bottom: var(--_spacing---spacing--space-large-xl);
@@ -9747,6 +9781,10 @@ p {
   }
 
   .about-section-title {
+    font-size: 24px;
+  }
+
+  .technology-section-title {
     font-size: 24px;
   }
 

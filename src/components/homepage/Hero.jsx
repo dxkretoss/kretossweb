@@ -19,48 +19,61 @@ const SplitText = ({ text }) => {
 // Subcomponent: RatingBadge
 const RatingBadge = () => {
     const ratingsData = [
-        { platform: "Reviews", score: "4.9", isScore: true, icon: <img src="/Google.svg" alt="Google" className="h-4 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
-        { platform: "Reviews", score: "5.0", isScore: true, icon: <img src="/Clutch.svg" alt="Clutch" className="h-4  object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
-        { platform: "Reviews", score: "4.7", isScore: true, icon: <img src="/trustpilot.svg" alt="Trustpilot" className="object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
-        { platform: "Reviews", score: "4.0", isScore: true, icon: <img src="/sitejabber.svg" alt="Sitejabber" className="object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left", filter: "brightness(0) invert(1)" }} /> },
+        { platform: "Google", score: "4.9", isScore: true, icon: <img src="/Google.svg" alt="Google" className="h-4 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
+        { platform: "Clutch", score: "5.0", isScore: true, icon: <img src="/clutch.png" alt="Clutch" className="h-4  object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
+        { platform: "Trustpilot", score: "4.7", isScore: true, icon: <img src="/trustpilot.webp" alt="Trustpilot" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
+        { platform: "Sitejabber", score: "4.0", isScore: true, icon: <img src="/sitejabber.svg" alt="Sitejabber" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left", filter: "brightness(0) invert(1)" }} /> },
         { platform: "Global Clients", score: "952+", isScore: false, icon: <Globe color="#fff" size={24} className="single-review-star" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> }
     ];
 
     return (
-        <div style={{ opacity: 0, position: "relative", minHeight: "48px", minWidth: "300px" }} className="hero-icon-rating">
-            {ratingsData.map((item, idx) => (
-                <div key={idx} className="rating-block-wrapper" style={{ display: idx === 0 ? "flex" : "none", position: "absolute", top: 0, left: 0, width: "100%", alignItems: "center", height: "100%", gap: "16px" }}>
-                    <div className="hero-icon-box flex items-center">
-                        {item.icon}
-                    </div>
+        <div className='flex items-center justify-center gap-2'>
+            <div style={{ opacity: 0, position: "relative", minHeight: "48px", minWidth: "300px" }} className="hero-icon-rating">
+                {ratingsData.map((item, idx) => (
+                    <div key={idx} className="rating-block-wrapper" style={{ display: idx === 0 ? "flex" : "none", width: "100%", alignItems: "center", justifyContent: 'center', height: "100%", gap: "16px" }}>
+                        <div className="hero-meta-icon-box">
+                            <img
+                                src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69acfcaea6bf20ffc4b2d559_Vector.svg"
+                                alt="Hero Icon"
+                                className="hero-meta-box-icon"
+                                style={{ transform: "rotateY(57.28deg)" }}
+                            />
+                        </div>
 
-                    {item.isScore && <div className="single-review-star" style={{ width: "1px", height: "22px", backgroundColor: "rgba(255,255,255,0.3)" }}></div>}
+                        <div className="hero-icon-box flex items-center rating-icon">
+                            {item.platform}
+                        </div>
 
-                    <div className="hero-rating-text">
-                        <div className="hero-star-wrapper" style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                            <div className="hero-rating-text single-review-star" style={{ transform: "scale(0)", display: "inline-block", transformOrigin: "center left", width: "auto", height: "auto", fontWeight: "600" }}>{item.score}</div>
+                        <div className="single-review-star" style={{ width: "1px", height: "22px", backgroundColor: "rgba(255,255,255,0.3)" }}></div>
 
-                            {item.isScore && [...Array(5)].map((_, i) => {
-                                const isFilled = i < Math.floor(parseFloat(item.score));
-                                const isHalf = !isFilled && i < parseFloat(item.score);
-                                return (
-                                    <img
-                                        key={i}
-                                        src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69acfb7509f4926e7df68a47_Vector.svg"
-                                        alt="Review Star"
-                                        className={`single-review-star _0${i + 1}`}
-                                        style={{ transform: "scale(0)", opacity: isFilled || isHalf ? 1 : 0.3, display: "inline-block", transformOrigin: "center left", width: "16px", height: "16px" }}
-                                    />
-                                );
-                            })}
+                        <div className="hero-rating-text">
+                            <div className="hero-star-wrapper" style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                                <div className="hero-rating-text single-review-star" style={{ transform: "scale(0)", display: "inline-block", transformOrigin: "center left", width: "auto", height: "auto", fontWeight: "600" }}>{item.score}</div>
 
-                            <div className="single-review-star" style={{ transform: "scale(0)", whiteSpace: "nowrap", display: "inline-block", transformOrigin: "center left", width: "auto", height: "auto", color: "rgba(255,255,255,0.7)", marginLeft: "4px" }}>
-                                {item.platform}
+                                {item.isScore && [...Array(5)].map((_, i) => {
+                                    const isFilled = i < Math.floor(parseFloat(item.score));
+                                    const isHalf = !isFilled && i < parseFloat(item.score);
+                                    return (
+                                        <img
+                                            key={i}
+                                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69acfb7509f4926e7df68a47_Vector.svg"
+                                            alt="Review Star"
+                                            className={`single-review-star _0${i + 1}`}
+                                            style={{ transform: "scale(0)", opacity: isFilled || isHalf ? 1 : 0.3, display: "inline-block", transformOrigin: "center left", width: "16px", height: "16px" }}
+                                        />
+                                    );
+                                })}
+
+                                {/* {item.isScore === false &&
+                                    <div className="single-review-star" style={{ transform: "scale(0)", whiteSpace: "nowrap", display: "inline-block", transformOrigin: "center left", width: "auto", height: "auto", color: "rgba(255,255,255,0.7)", marginLeft: "4px" }}>
+                                        {item.platform}
+                                    </div>
+                                } */}
                             </div>
                         </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 };
