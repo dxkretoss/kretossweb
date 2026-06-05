@@ -19,10 +19,12 @@ const SplitText = ({ text }) => {
 // Subcomponent: RatingBadge
 const RatingBadge = () => {
     const ratingsData = [
-        { platform: "Google", score: "4.9", isScore: true, icon: <img src="/Google.svg" alt="Google" className="h-4 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
-        { platform: "Clutch", score: "5.0", isScore: true, icon: <img src="/clutch.png" alt="Clutch" className="h-4  object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
-        { platform: "Trustpilot", score: "4.7", isScore: true, icon: <img src="/trustpilot.webp" alt="Trustpilot" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
-        { platform: "Sitejabber", score: "4.0", isScore: true, icon: <img src="/sitejabber.svg" alt="Sitejabber" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left", filter: "brightness(0) invert(1)" }} /> },
+        { platform: "Google", score: "4.9", isScore: true, icon: <img src="/Google.png" alt="Google" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
+        {
+            platform: "Clutch", score: "5.0", isScore: true, icon: <img src="/clutch.png" alt="Clutch" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} />
+        },
+        { platform: "Trustpilot", score: "4.7", isScore: true, icon: <img src="/trustpilot.png" alt="Trustpilot" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
+        { platform: "Sitejabber", score: "4.0", isScore: true, icon: <img src="/sitejabber.png" alt="Sitejabber" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
         { platform: "Global Clients", score: "952+", isScore: false, icon: <Globe color="#fff" size={24} className="single-review-star" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> }
     ];
 
@@ -39,7 +41,6 @@ const RatingBadge = () => {
                                 style={{ transform: "rotateY(57.28deg)" }}
                             />
                         </div>
-
                         <div className="hero-icon-box flex items-center rating-icon">
                             {item.platform}
                         </div>
@@ -48,6 +49,9 @@ const RatingBadge = () => {
 
                         <div className="hero-rating-text">
                             <div className="hero-star-wrapper" style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                                <div>
+                                    {item.icon}
+                                </div>
                                 <div className="hero-rating-text single-review-star" style={{ transform: "scale(0)", display: "inline-block", transformOrigin: "center left", width: "auto", height: "auto", fontWeight: "600" }}>{item.score}</div>
 
                                 {item.isScore && [...Array(5)].map((_, i) => {

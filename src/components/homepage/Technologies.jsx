@@ -135,7 +135,8 @@ export default function Technologies() {
               {activeTab === tab && (
                 <motion.div
                   layoutId="active-tab"
-                  className="absolute inset-0 bg-gradient-to-r from-[#005a87] to-[#007bb5] rounded-xl shadow-md"
+                  className="absolute inset-0 rounded-xl shadow-md"
+                  style={{ backgroundImage: 'linear-gradient(#44c7f6, #0037f0)' }}
                   transition={{ type: "spring", stiffness: 400, damping: 30 }}
                 />
               )}
