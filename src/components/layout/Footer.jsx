@@ -78,7 +78,6 @@ export default function Footer() {
                             key={trackIdx}
                             className="ticker-content-box animate-marquee !flex !shrink-0"
                             style={{
-                                "transformStyle": "preserve-3d",
                                 "willChange": "transform"
                             }}
                         >

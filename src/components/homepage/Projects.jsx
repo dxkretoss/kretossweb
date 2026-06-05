@@ -121,7 +121,7 @@ const ProjectCard = ({
                             scrollTrigger: {
                                 trigger: card,
                                 start: "top 85%",
-                                toggleActions: "play none none reverse"
+                                toggleActions: "play none none none"
                             }
                         }
                     );
@@ -344,7 +344,7 @@ export default function Projects() {
                         scrollTrigger: {
                             trigger: ".project-subtitle-box",
                             start: "top 90%",
-                            toggleActions: "play none none reverse"
+                            toggleActions: "play none none none"
                         }
                     }
                 );
@@ -368,7 +368,7 @@ export default function Projects() {
                         scrollTrigger: {
                             trigger: ".home-project-title",
                             start: "top 90%",
-                            toggleActions: "play none none reverse"
+                            toggleActions: "play none none none"
                         }
                     }
                 );

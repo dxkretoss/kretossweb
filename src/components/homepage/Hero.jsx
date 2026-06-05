@@ -235,7 +235,7 @@ export default function Hero() {
             );
             tl.fromTo(".hero-bbottom-ttitle.banner-04 .hero-char",
                 { opacity: 0 },
-                { opacity: 1, duration: 1.5, ease: "power4.out", stagger: { amount: 1.2, from: "center" } },
+                { opacity: 1, duration: 0.6, ease: "power4.out", stagger: { amount: 0.4, from: "center" } },
                 0.4
             );
 
@@ -417,7 +417,7 @@ export default function Hero() {
                                         type="purple"
                                         iconComponent={<Palette size={18} color="#fff" />}
                                     />
-                                    <div className="hero-bottom-title" aria-label="experiences.">
+                                    <div className="hero-bottom-title" aria-label="Startups.">
                                         <h2 className="hero-bbottom-ttitle banner-04 !text-center" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                                             <SplitText text="Startups" />
                                         </h2>

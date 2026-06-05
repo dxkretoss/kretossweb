@@ -398,7 +398,8 @@ th {
 }
 
 html {
-  height: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 body {
@@ -2356,7 +2357,7 @@ p {
   width: 100%;
   padding-top: 32px;
   position: relative;
-  overflow: clip;
+  overflow: hidden;
 }
 
 .container {
@@ -5627,7 +5628,8 @@ p {
   justify-content: flex-start;
   align-items: center;
   width: 300px;
-  height: 340px;
+  height: 240px;
+  margin-top: 30px;
   display: flex;
   overflow: hidden;
 }
@@ -7546,6 +7548,33 @@ p {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .hero-title.banner {
+    font-size: 42px;
+  }
+
+  .hero-text-span.banner-03,
+  .hero-title.banner-02 {
+    font-size: 42px;
+  }
+
+  .hero-bbottom-ttitle.banner-04 {
+    font-size: 42px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  .about-block {
+    max-width: 450px;
+  }
+
+  .service-card-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .w-container {
     max-width: 728px;
@@ -7667,6 +7696,7 @@ p {
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
+    bottom: 40px;
   }
 
   .single-country-box {
@@ -9745,32 +9775,7 @@ p {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
-  .hero-title.banner {
-    font-size: 42px;
-  }
 
-  .hero-text-span.banner-03,
-  .hero-title.banner-02 {
-    font-size: 42px;
-  }
-
-  .hero-bbottom-ttitle.banner-04 {
-    font-size: 42px;
-  }
-
-  .hero-text {
-    font-size: 18px;
-  }
-
-  .about-block {
-    max-width: 450px;
-  }
-
-  .service-card-box {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 
 /* Below 991px */
 @media screen and (max-width: 991px) {
