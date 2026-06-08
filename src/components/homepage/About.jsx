@@ -367,9 +367,7 @@ export default function About() {
                             <div className="about-title-button">
                                 <div className="about-block">
                                     <div className="about-text">Trusted by global clients, Kretoss Technology is your technology partner for mobile apps, websites, and digital solutions affordable, reliable, and tailored to your business needs. With over 12 years of experience, we deliver scalable, high-quality solutions that drive real business growth.</div>
-                                    {/* <div className="about-button"> */}
                                     <AnimatedButton href="/about" text="MORE ABOUT US" ></AnimatedButton>
-                                    {/* </div> */}
                                     <div className="about-counter">
                                         {statisticsCounters.map((counter, idx) => (
                                             <CounterBox
