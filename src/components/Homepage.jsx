@@ -8,7 +8,9 @@ import Works from './homepage/Works'
 import Testimonials from './homepage/Testimonials'
 import Product from './homepage/Product'
 import ClientMarquee from './homepage/ClientMarquee'
+import AIVibeCodingWorkflow from './homepage/AIVibeCodingWorkflow'
 import Technologies from './homepage/Technologies'
+import Faq from './homepage/Faq'
 
 export default function Homepage() {
     return (
@@ -16,6 +18,7 @@ export default function Homepage() {
             <Hero />
             <About />
             <ClientMarquee />
+            <AIVibeCodingWorkflow />
             <Services />
             <Projects />
             <Works />
@@ -23,6 +26,7 @@ export default function Homepage() {
             <Testimonials />
             <Product />
             <Contact />
+            {/* <Faq/> */}
         </div>
     )
 }

@@ -119,6 +119,32 @@ export default function Technologies() {
 
   return (
     <section className="technology bg-[#fafcff] relative overflow-hidden">
+      <svg style={{ position: 'absolute', width: 0, height: 0 }} aria-hidden="true">
+        <filter id="duotone-0c1736" colorInterpolationFilters="sRGB">
+          <feColorMatrix type="matrix" values="
+            0.2126 0.7152 0.0722 0 0
+            0.2126 0.7152 0.0722 0 0
+            0.2126 0.7152 0.0722 0 0
+            0 0 0 1 0" result="gray" />
+          <feComponentTransfer>
+            <feFuncR type="table" tableValues="0.047 0.047 0.047 0.047 0.047 0.047 0.047 0.047 0.047 1.0" />
+            <feFuncG type="table" tableValues="0.090 0.090 0.090 0.090 0.090 0.090 0.090 0.090 0.090 1.0" />
+            <feFuncB type="table" tableValues="0.212 0.212 0.212 0.212 0.212 0.212 0.212 0.212 0.212 1.0" />
+          </feComponentTransfer>
+        </filter>
+        <filter id="duotone-php" colorInterpolationFilters="sRGB">
+          <feColorMatrix type="matrix" values="
+            0.2126 0.7152 0.0722 0 0
+            0.2126 0.7152 0.0722 0 0
+            0.2126 0.7152 0.0722 0 0
+            0 0 0 1 0" result="gray" />
+          <feComponentTransfer>
+            <feFuncR type="table" tableValues="1.0 1.0 0.047 0.047 0.047 0.047 1.0" />
+            <feFuncG type="table" tableValues="1.0 1.0 0.090 0.090 0.090 0.090 1.0" />
+            <feFuncB type="table" tableValues="1.0 1.0 0.212 0.212 0.212 0.212 1.0" />
+          </feComponentTransfer>
+        </filter>
+      </svg>
       {/* Subtle Background Glows for modern look */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-[100px]"></div>
@@ -213,7 +239,8 @@ export default function Technologies() {
                         <img
                           src={item.icon}
                           alt={item.name}
-                          className="max-h-full max-w-full object-contain filter group-hover:drop-shadow-sm transition-all duration-300"
+                          className="max-h-full max-w-full object-contain transition-all duration-300"
+                          style={{ filter: item.icon.includes('php') ? "url(#duotone-php)" : "url(#duotone-0c1736)" }}
                           onError={(e) => {
                             e.target.onerror = null;
                             e.target.src = `https://placehold.co/100x100/e2e8f0/475569.png?text=${item.name.charAt(0)}`;

@@ -149,6 +149,11 @@ export default function Product() {
     const trackTwoList = [
         {
             type: "horizontal",
+            img: "/grouppics/Group-3.jpg",
+            srcset: "/grouppics/Group-3.jpg 500w, /grouppics/Group-3.jpg 800w, /grouppics/Group-3.jpg 1080w, /grouppics/Group-3.jpg 1215w"
+        },
+        {
+            type: "horizontal",
             img: "/grouppics/Group-2.jpg",
             srcset: "/grouppics/Group-2.jpg 500w, /grouppics/Group-2.jpg 800w, /grouppics/Group-2.jpg 1080w, /grouppics/Group-2.jpg 1215w"
         },
@@ -157,11 +162,7 @@ export default function Product() {
             img: "/grouppics/Group-7.jpg",
             srcset: "/grouppics/Group-7.jpg 500w, /grouppics/Group-7.jpg 800w, /grouppics/Group-7.jpg 1080w, /grouppics/Group-7.jpg 1215w"
         },
-        {
-            type: "horizontal",
-            img: "/grouppics/Group-3.jpg",
-            srcset: "/grouppics/Group-3.jpg 500w, /grouppics/Group-3.jpg 800w, /grouppics/Group-3.jpg 1080w, /grouppics/Group-3.jpg 1215w"
-        },
+
         {
             type: "horizontal",
             img: "/grouppics/Group-5.jpg",
@@ -188,7 +189,7 @@ export default function Product() {
 
         {
             type: "horizontal",
-            img: "/grouppics/Group-2.jpg",
+            img: "/grouppics/Group-11.jpg",
             srcset: "/grouppics/Group-2.jpg 500w, /grouppics/Group-2.jpg 608w"
         }
     ];

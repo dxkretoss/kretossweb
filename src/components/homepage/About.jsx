@@ -22,7 +22,7 @@ const CounterBox = ({ columns, suffix, label, hasLine, rightOneClass = '' }) => 
                     </div>
                     <h2 className="counter-box-title" style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", marginLeft: "2px" }}>{suffix}</h2>
                 </div>
-                <div className="counter-subtitle-text counter-number">
+                <div className="counter-subtitle-text counter-number" style={{ fontSize: "14px", lineHeight: "1.2", marginTop: "4px" }}>
                     <div className="counter-text">{label}</div>
                 </div>
             </div>
@@ -38,39 +38,7 @@ const CounterBox = ({ columns, suffix, label, hasLine, rightOneClass = '' }) => 
 export default function About() {
     const aboutRef = useRef(null);
 
-    // Gallery images array
-    const galleryImages = [
-        {
-            key: "_01",
-            src: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b05ffe37eb094e21b329d2_Frame%202147228677.webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b05ffe37eb094e21b329d2_Frame%202147228677-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b05ffe37eb094e21b329d2_Frame%202147228677-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b05ffe37eb094e21b329d2_Frame%202147228677.webp 888w"
-        },
-        {
-            key: "_02",
-            src: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b06150b40e8760bb32c0ab_Frame%202147228678.webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b06150b40e8760bb32c0ab_Frame%202147228678-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b06150b40e8760bb32c0ab_Frame%202147228678-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b06150b40e8760bb32c0ab_Frame%202147228678.webp 888w"
-        },
-        {
-            key: "_03",
-            src: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b061673b4e2693104d760d_Frame%202147228677%20(1).webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b061673b4e2693104d760d_Frame%202147228677%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b061673b4e2693104d760d_Frame%202147228677%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b061673b4e2693104d760d_Frame%202147228677%20(1).webp 888w"
-        },
-        {
-            key: "_04",
-            src: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0617c7ba4f8190ac35236_Frame%202147228679.webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0617c7ba4f8190ac35236_Frame%202147228679-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0617c7ba4f8190ac35236_Frame%202147228679-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0617c7ba4f8190ac35236_Frame%202147228679.webp 888w"
-        },
-        {
-            key: "_05",
-            src: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0618c2ccc3a3ad6e65ab5_Frame%202147228681.webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0618c2ccc3a3ad6e65ab5_Frame%202147228681-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0618c2ccc3a3ad6e65ab5_Frame%202147228681-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b0618c2ccc3a3ad6e65ab5_Frame%202147228681.webp 888w"
-        },
-        {
-            key: "_06",
-            src: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b061a0ef4d0ea49424f2bf_Frame%202147228680.webp",
-            srcSet: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b061a0ef4d0ea49424f2bf_Frame%202147228680-p-500.webp 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b061a0ef4d0ea49424f2bf_Frame%202147228680-p-800.webp 800w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b061a0ef4d0ea49424f2bf_Frame%202147228680.webp 888w"
-        }
-    ];
+    const videoRef = useRef(null);
 
     // Statistics counters
     const statisticsCounters = [
@@ -126,7 +94,7 @@ export default function About() {
             gsap.set(".about-section-title", { opacity: 0, y: 100 });
             gsap.set(".about-text", { opacity: 0, y: 100 });
             gsap.set(".about-button", { opacity: 0, y: 100 });
-            gsap.set(".about-gallery-image", { opacity: 0, scale: 0.3 });
+            gsap.set(".about-video", { opacity: 0, scale: 0.8 });
             gsap.set(".about-counter", { opacity: 0 });
         }, aboutRef);
 
@@ -260,46 +228,22 @@ export default function About() {
                     });
                 }
 
-                // 6. Gallery images slideshow – scale3d(0.3, 0.3, 1) → scale3d(1, 1, 1)
-                const images = gsap.utils.toArray(".about-gallery-image");
-                if (images.length > 0) {
-                    gsap.set(images, { opacity: 0, scale: 0.3 });
-
-                    // First image revealed with the scroll timeline
-                    tl.fromTo(images[0],
-                        { opacity: 0, scale: 0.3 },
+                // 6. Video fade in and play
+                const videoElement = videoRef.current;
+                if (videoElement) {
+                    tl.fromTo(videoElement,
+                        { opacity: 0, scale: 0.8 },
                         {
                             opacity: 1,
                             scale: 1,
                             duration: 1,
-                            ease: "power4.out"
+                            ease: "power4.out",
+                            onStart: () => {
+                                videoElement.play().catch(e => console.log("Autoplay prevented:", e));
+                            }
                         },
                         "0.4"
                     );
-
-                    // Infinite loop slideshow – 5 second pause between transitions (not too fast)
-                    let currentIndex = 0;
-                    slideshowInterval = setInterval(() => {
-                        const nextIndex = (currentIndex + 1) % images.length;
-
-                        // Outgoing image: fade + shrink
-                        gsap.to(images[currentIndex], {
-                            opacity: 0,
-                            scale: 0.3,
-                            duration: 1.2,
-                            ease: "power2.inOut"
-                        });
-
-                        // Incoming image: grow + fade in
-                        gsap.to(images[nextIndex], {
-                            opacity: 1,
-                            scale: 1,
-                            duration: 1.2,
-                            ease: "power2.inOut"
-                        });
-
-                        currentIndex = nextIndex;
-                    }, 5000);
                 }
 
                 // Button hover – scoped to aboutRef only (avoids conflicts with Hero button)
@@ -356,18 +300,21 @@ export default function About() {
                             </div>
                         </div>
                         <div className="about-right-box">
-                            <div className="about-title-text">
-                                <div className="about-slider _02" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
-                                    <div className="about-slider-two _02"></div>
-                                </div>
-                                <h2 className="about-section-title">
-                                    Crafting Scalable, Secure, & Smart Digital Experiences
-                                </h2>
-                            </div>
-                            <div className="about-title-button">
-                                <div className="about-block">
+                            <div className="about-title-button" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'stretch' }}>
+                                <div className="about-block" style={{ flex: 1, minWidth: '300px' }}>
+                                    <div className="about-title-text" style={{ marginBottom: '20px' }}>
+                                        <div className="about-slider _02" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
+                                            <div className="about-slider-two _02"></div>
+                                        </div>
+                                        <h2 className="about-section-title">
+                                            Crafting Scalable, Secure, & Smart Digital Experiences
+                                        </h2>
+                                    </div>
                                     <div className="about-text">Trusted by global clients, Kretoss Technology is your technology partner for mobile apps, websites, and digital solutions affordable, reliable, and tailored to your business needs. With over 12 years of experience, we deliver scalable, high-quality solutions that drive real business growth.</div>
-                                    <AnimatedButton href="/about" text="MORE ABOUT US" ></AnimatedButton>
+
+                                    <div className="about-button">
+                                        <AnimatedButton href="/about" text="MORE ABOUT US" ></AnimatedButton>
+                                    </div>
                                     <div className="about-counter">
                                         {statisticsCounters.map((counter, idx) => (
                                             <CounterBox
@@ -382,16 +329,15 @@ export default function About() {
                                     </div>
                                 </div>
                                 <div className="about-block-right">
-                                    {galleryImages.map((image) => (
-                                        <img
-                                            key={image.key}
-                                            src={image.src}
-                                            loading="lazy"
-                                            sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 888px" alt="About Image"
-                                            srcSet={image.srcSet}
-                                            className={`about-gallery-image ${image.key}`}
-                                        />
-                                    ))}
+                                    <video
+                                        ref={videoRef}
+                                        muted
+                                        loop
+                                        playsInline
+                                        className="about-video"
+                                        style={{ width: '100%', height: '100%', minHeight: '480px', objectFit: 'cover', borderRadius: '16px' }}
+                                        src="https://www.pexels.com/download/video/8814502/"
+                                    />
                                 </div>
                             </div>
                         </div>

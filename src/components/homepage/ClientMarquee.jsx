@@ -15,7 +15,8 @@ const ClientMarquee = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
 
                     {/* Left Side: Avatar & Clients Text */}
-                    <div className="flex items-center gap-4 shrink-0 bg-white/40 backdrop-blur-sm rounded-full py-2 px-4 border border-white/60 shadow-sm lg:ml-8 xl:ml-18">
+                    {/* <div className="flex items-center gap-4 shrink-0 bg-white/40 backdrop-blur-sm rounded-full py-2 px-4 border border-white/60 shadow-sm lg:ml-8 xl:ml-18"> */}
+                    <div className="flex items-center gap-4 shrink-0 bg-white/40 backdrop-blur-sm rounded-full py-2 px-4 border border-white/60 shadow-sm">
                         <div className="flex -space-x-3">
                             <img className="w-10 h-10 rounded-full border-2 border-white object-cover" src="/avatar1.png" alt="Client 1" />
                             <img className="w-10 h-10 rounded-full border-2 border-white object-cover" src="/avatar2.png" alt="Client 2" />

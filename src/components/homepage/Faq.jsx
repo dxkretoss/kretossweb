@@ -36,33 +36,38 @@ export default function Faq() {
     const faqList = [
         {
             id: "01",
-            question: "What service does your company provide?",
-            answer: "Our company provides creative digital solutions including web design, branding, UI/UX design, and digital marketing services. We help businesses build strong online presence, improve user experience, and grow their brand through modern and effective strategies.",
-            dataWId: "85965d0e-8a67-be96-944f-b4e84a803a53"
+            question: "Discovery & Consulation",
+            answer: "We begin with a detailed discussion to understand your idea, goals, target audience, and business needs. This helps us align our strategy with your vision.",
         },
         {
             id: "02",
-            question: "How long does a typical project take?",
-            answer: "A typical project usually takes between two to six weeks, depending on the scope, complexity, and specific requirements. We work closely with clients throughout the process to ensure quality results and timely delivery.",
-            dataWId: "85965d0e-8a67-be96-944f-b4e84a803a5e"
+            question: "Research & Planning",
+            answer: "We conduct in-depth market research and competitor analysis to create a comprehensive project roadmap, ensuring all technical and business requirements are met.",
         },
         {
             id: "03",
-            question: "Do you work with international clients?",
-            answer: "Yes, we work with clients from around the world. Our team collaborates remotely using modern communication and project management tools to ensure smooth workflow, clear communication, and successful project delivery regardless of location.",
-            dataWId: "85965d0e-8a67-be96-944f-b4e84a803a69"
+            question: "UI/UX Design",
+            answer: "Our design team crafts intuitive, engaging, and visually appealing user interfaces, focusing on seamless user experiences that resonate with your target audience.",
         },
         {
             id: "04",
-            question: "What do you need from me to start a project?",
-            answer: "To start a project, we typically need a brief overview of your goals, brand details, project requirements, and any references or ideas you may have. This helps us understand your vision and create a strategy that fits your needs",
-            dataWId: "85965d0e-8a67-be96-944f-b4e84a803a74"
+            question: "Development",
+            answer: "We utilize cutting-edge technologies to build scalable, robust, and secure applications. Our agile development process ensures timely delivery and high performance.",
         },
         {
             id: "05",
-            question: "How does the payment process work?",
-            answer: "Our payment process is transparent and straightforward. Payments are typically structured based on project scope and milestones, with clear terms outlined upfront to ensure clarity, flexibility, and mutual trust throughout the engagement.",
-            dataWId: "85965d0e-8a67-be96-944f-b4e84a803a7f"
+            question: "Testing & QA",
+            answer: "Rigorous testing protocols are implemented across all devices and platforms to identify and resolve any bugs, ensuring a flawless and reliable final product.",
+        },
+        {
+            id: "06",
+            question: "Launch & Deployment",
+            answer: "We handle the entire deployment process, ensuring a smooth transition to the live environment. We configure servers, set up databases, and monitor the launch.",
+        },
+        {
+            id: "07",
+            question: "Post Launch Support",
+            answer: "Our commitment doesn't end at launch. We provide ongoing maintenance, regular updates, and technical support to keep your application running smoothly over time.",
         }
     ];
 
@@ -138,10 +143,10 @@ export default function Faq() {
                             className="subtitle-image-icon"
                             style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }} 
                         />
-                        <div className="subtitle-text-2">Faq</div>
+                        <div className="subtitle-text-2">Have a project in mind?</div>
                     </div>
                     <h2 className="faq-section-title">
-                        Happy Clients <span className="review-subtitle-2">Observation</span>
+                        We convert your ideas into reality
                     </h2>
                 </div>
                 <div className="faq-content-box">
