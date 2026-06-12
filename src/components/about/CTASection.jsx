@@ -47,8 +47,8 @@ export default function CtaSection() {
 
                 {/* Button */}
                 <AnimatedButton
-                    title="Book a Call"
-                    link="/contact"
+                    text="LET'S TALK"
+                    href="/contact"
                 />
 
             </div>

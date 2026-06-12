@@ -118,7 +118,7 @@ export default function Header({ currentRoute }) {
     const navigationLinks = [
         { text: "Home", href: "/", current: currentRoute === '/' },
         { text: "About Us", href: "/about", current: currentRoute === 'about' },
-        { text: "Services", href: "/services", current: false },
+        { text: "Services", href: "/services", current: currentRoute === 'services' },
         { text: "Portfolio", href: "/portfolio", current: false },
         { text: "Careers", href: "/careers", current: false }
     ];

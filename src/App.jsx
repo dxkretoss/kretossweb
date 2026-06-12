@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Layout from './components/layout/Layout';
 import Homepage from './components/Homepage';
 import AboutPage from './components/AboutPage';
+import ContactPage from './components/ContactPage';
+import ServicePage from './components/ServicePage';
 import NotFoundPage from './components/NotFoundPage';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
@@ -53,6 +55,8 @@ export default function App() {
                     {/* <Route> */}
                     <Route path="/" element={<Homepage />} />
                     <Route path="/about" element={<AboutPage />} />
+                    <Route path="/services" element={<ServicePage />} />
+                    <Route path="/contact" element={<ContactPage />} />
                     {/* Catch-all route for 404 Not Found */}
                     <Route path="*" element={<NotFoundPage />} />
                 </Route>
