@@ -65,79 +65,6 @@ body {
   font-family: var(--font-template), sans-serif;
 }
 
-.text-gradient {
-  background: linear-gradient(135deg, #ffffff 40%, rgba(255, 255, 255, 0.4) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-brand-gradient {
-  background: linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Button & Card Micro-Animations */
-.premium-card {
-  background: rgba(22, 22, 22, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.premium-card:hover {
-  border-color: rgba(255, 107, 53, 0.2);
-  background: rgba(22, 22, 22, 0.8);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-}
-
-.premium-btn-primary {
-  position: relative;
-  background: #ff6b35;
-  color: #ffffff;
-  font-family: var(--font-template);
-  font-weight: 600;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  overflow: hidden;
-}
-
-.premium-btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: all 0.6s ease;
-}
-
-.premium-btn-primary:hover::before {
-  left: 100%;
-}
-
-.premium-btn-primary:hover {
-  background: #ff8c5a;
-  transform: scale(1.02);
-  box-shadow: 0 0 20px rgba(255, 107, 53, 0.4);
-}
-
-.premium-btn-secondary {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(12px);
-  font-family: var(--font-template);
-  font-weight: 500;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.premium-btn-secondary:hover {
-  border-color: #ff6b35;
-  background: rgba(255, 107, 53, 0.05);
-  color: #ff6b35;
-}
 
 html {
   -webkit-text-size-adjust: 100%;
@@ -209,60 +136,10 @@ dfn {
   font-style: italic;
 }
 
-h1 {
-  margin: .67em 0;
-  font-size: 2em;
-}
 
-mark {
-  color: #000;
-  background: #ff0;
-}
 
-small {
-  font-size: 80%;
-}
 
-sub,
-sup {
-  vertical-align: baseline;
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-}
 
-sup {
-  top: -.5em;
-}
-
-sub {
-  bottom: -.25em;
-}
-
-img {
-  border: 0;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-}
-
-pre {
-  overflow: auto;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace;
-  font-size: 1em;
-}
 
 button,
 input,
@@ -561,80 +438,9 @@ pre.w-code-block code {
   display: inline-block !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 10px;
-  font-weight: bold;
-}
 
-h1 {
-  margin-top: 20px;
-  font-size: 38px;
-  line-height: 44px;
-}
 
-h2 {
-  margin-top: 20px;
-  font-size: 32px;
-  line-height: 36px;
-}
 
-h3 {
-  margin-top: 20px;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-h4 {
-  margin-top: 10px;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-h5 {
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-h6 {
-  margin-top: 10px;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-blockquote {
-  border-left: 5px solid #e2e2e2;
-  margin: 0 0 10px;
-  padding: 10px 20px;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-figure {
-  margin: 0 0 10px;
-}
-
-figcaption {
-  text-align: center;
-  margin-top: 5px;
-}
-
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 10px;
-  padding-left: 40px;
-}
 
 .w-list-unstyled {
   padding-left: 0;
@@ -2299,58 +2105,6 @@ body {
   --_typography---body--letter-spacing: 0px;
 }
 
-h1 {
-  font-size: 80px;
-  line-height: var(--line-height--height-medium);
-  font-weight: var(--font-weight--font-bold);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h2 {
-  font-size: 48px;
-  line-height: 36px;
-  font-weight: var(--font-weight--font-bold);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h3 {
-  color: var(--_color---base-colors--white);
-  font-size: 36px;
-  line-height: var(--_typography---h3--line-height);
-  font-weight: var(--_typography---h3--font-weight);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h4 {
-  font-size: 32px;
-  line-height: var(--line-height--height-medium);
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 700;
-}
-
-h5 {
-  font-size: 24px;
-  line-height: var(--line-height--height-medium);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-h6 {
-  font-size: 22px;
-  line-height: var(--line-height--height-medium);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-p {
-  margin-bottom: 0;
-}
 
 .footer {
   background-color: var(--_color---theme-colors--background-color);
@@ -5123,9 +4877,6 @@ p {
   display: flex;
 }
 
-.h1 {
-  font-size: 64px;
-}
 
 .paragraph-1 {
   font-size: 20px;
@@ -5498,6 +5249,27 @@ p {
   font-weight: var(--font-weight--font-semi-bold);
   text-align: center;
   max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.testimonial-title.teams {
+  color: var(--_color---base-colors--white);
+  font-size: 32px;
+  line-height: var(--line-height--height-medium);
+  font-weight: var(--font-weight--font-semi-bold);
+  text-align: left;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.testimonial-title.aboutus {
+  color: black;
+  font-size: 32px;
+  line-height: var(--line-height--height-medium);
+  font-weight: var(--font-weight--font-semi-bold);
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .review-subtitle {
@@ -6774,9 +6546,7 @@ p {
     grid-row-gap: 100px;
   }
 
-  .h1 {
-    font-size: 64px;
-  }
+
 
   .h2 {
     font-size: 48px;
@@ -6849,6 +6619,14 @@ p {
   .testimonial-title {
     font-size: 42px;
     max-width: 327px;
+  }
+
+  .testimonial-title.aboutus {
+    font-size: 42px;
+  }
+
+  .testimonial-title.teams {
+    font-size: 42px;
   }
 
   .process-middel-icon {
@@ -7090,9 +6868,6 @@ p {
     font-size: 18px;
   }
 
-  .h1 {
-    font-size: 80px;
-  }
 
   .license-data-block,
   .changelog-data {
@@ -7104,6 +6879,14 @@ p {
   }
 
   .testimonial-title {
+    font-size: 48px;
+  }
+
+  .testimonial-title.teams {
+    font-size: 48px;
+  }
+
+  .testimonial-title.aboutus {
     font-size: 48px;
   }
 
@@ -7473,6 +7256,15 @@ p {
     font-size: 48px;
     line-height: var(--line-height--height-medium);
     max-width: 350px;
+  }
+
+  .testimonial-title.aboutus {
+    font-size: 48px;
+    line-height: var(--line-height--height-medium);
+  }
+
+  .testimonial-title.teams {
+    font-size: 48px;
   }
 
   .review-testimonial {
@@ -8342,9 +8134,7 @@ p {
     padding-bottom: 50px;
   }
 
-  .h1 {
-    font-size: 48px;
-  }
+
 
   .h2 {
     font-size: 36px;
@@ -9630,9 +9420,7 @@ p {
     padding-bottom: 80px;
   }
 
-  .h1 {
-    font-size: 24px;
-  }
+
 
   .h2,
   .h3 {
@@ -9743,6 +9531,14 @@ p {
   }
 
   .testimonial-title {
+    font-size: 28px;
+  }
+
+  .testimonial-title.aboutus {
+    font-size: 28px;
+  }
+
+  .testimonial-title.teams {
     font-size: 28px;
   }
 
@@ -9873,4 +9669,8 @@ p {
   .nav-list {
     display: flex !important;
   }
+}
+
+.team-card {
+  background: #FFFFFF;
 }

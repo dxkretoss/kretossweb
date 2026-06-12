@@ -4,28 +4,34 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const awards = [
     {
-        title: "Red Dot Design Award (Product Design)",
-        desc: "Excellence in Product Design & Innovation",
-        year: "2015",
-        Tag: "h2"
+        title: "Pro Web & App Developers",
+        desc: "Web & App Developers",
+        year: "2020",
+        image: "/awards/award-cup-1.png"
     },
     {
-        title: "IDEA (International Design Excellence Awards)",
-        desc: "Outstanding User Experience",
-        year: "2017",
-        Tag: "h3"
-    },
-    {
-        title: "Good Design Award (by The Chicago Athenaeum)",
-        desc: "For Cutting-Edge Product Design",
+        title: "Creative Impact Award",
+        desc: "Brand Identity & Design",
         year: "2024",
-        Tag: "h3"
+        image: "/awards/award-cup-2.png"
     },
     {
-        title: "Core77 Design Awards",
-        desc: "Elevating Digital & Physical Experiences",
-        year: "2025",
-        Tag: "h3"
+        title: "Best UI Design Award",
+        desc: "Web and Mobile Design",
+        year: "2022",
+        image: "/awards/award-cup-3.png"
+    },
+    {
+        title: "Web Development Experts",
+        desc: "Web GURU",
+        year: "2023",
+        image: "/awards/award-cup-4.png"
+    },
+    {
+        title: "Top Mobile App Developers",
+        desc: "The Genuine Quality",
+        year: "2024",
+        image: "/awards/award-cup-5.png"
     }
 ];
 
@@ -35,101 +41,92 @@ export default function AwardsSection() {
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         let ctx = gsap.context(() => {
-            gsap.from(".award-button-title-box", {
-                opacity: 0,
-                y: 30,
-                duration: 0.8,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: sectionRef.current,
-                    start: "top 80%",
+            gsap.fromTo(".award-header",
+                { opacity: 0, y: 30 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: sectionRef.current,
+                        start: "top 80%",
+                    }
                 }
-            });
-            gsap.from(".single-buttom-contant-wrapper", {
-                opacity: 0,
-                x: -30,
-                duration: 0.8,
-                stagger: 0.15,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: ".award-buttom-contant",
-                    start: "top 85%",
+            );
+            gsap.fromTo(".award-row",
+                { opacity: 0, y: 40 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    stagger: 0.15,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: ".award-list",
+                        start: "top 85%",
+                    }
                 }
-            });
-            gsap.to(".star-shape, .single-star-shape", {
-                rotation: 360,
-                duration: 20,
-                repeat: -1,
-                ease: "linear"
-            });
+            );
         }, sectionRef);
 
         return () => ctx.revert();
     }, []);
 
     return (
-        <section className="award-section section-padding" ref={sectionRef}>
-            <div className="w-layout-blockcontainer container award-container w-container">
-                <div className="award-contant-wrapper">
-                    <div className="award-top-contant">
-                        <div className="award-button-title-box">
-                            <div className="gradient-subtitle-box">
-                                <div className="gradient-subtitle">
-                                    <img 
-                                        loading="lazy" 
-                                        src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69bb87e98872e9273f75433b_shape.svg" 
-                                        alt="Subtitle Star" 
-                                        className="subtitle-star" 
-                                    />
-                                    <div className="section-subtitle-text">Awards</div>
-                                </div>
-                                <div className="gradient-subtitle-shape"></div>
+        <section className=" container bg-[#fafcff] text-gray-900 py-24 px-6 md:px-12 relative overflow-hidden" ref={sectionRef}>
+            <div className=" mx-auto relative z-10">
+
+                {/* Header */}
+                <div className="award-header flex flex-col items-center mb-16 text-center">
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-black/5 border border-black/10 mb-6">
+                        <img
+                            loading="lazy"
+                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887be_Star%2018.svg"
+                            alt="Star"
+                            className="w-3 h-3 animate-[spin_4s_linear_infinite]"
+                        />
+                        <span className="text-xs text-gray-600 font-medium tracking-widest uppercase mt-0.5">Awards</span>
+                    </div>
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-black">Our Milestones</h2>
+                </div>
+
+                {/* Awards List */}
+                <div className="award-list flex flex-col">
+                    {awards.map((award, idx) => (
+                        <div
+                            key={idx}
+                            className="award-row group relative flex items-center justify-between py-8 md:py-10 border-b border-black/10 hover:border-black/30 transition-colors duration-500 cursor-pointer"
+                        >
+                            {/* Left: Text */}
+                            <div className="flex flex-col gap-2 relative z-20">
+                                <h3 className="text-xl md:text-2xl font-bold tracking-wide text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                                    {award.title}
+                                </h3>
+                                <p className="text-gray-600 text-sm md:text-base">
+                                    {award.desc}
+                                </p>
                             </div>
-                            <h2 className="award-title">Our All Awards <span className="award-subtitle">List</span></h2>
+
+                            {/* Right: Year */}
+                            <div className="relative z-20">
+                                <span className="text-gray-500 text-sm md:text-base tracking-widest">
+                                    Year: {award.year}
+                                </span>
+                            </div>
+
+                            {/* Center Hover Image Reveal */}
+                            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-32 md:w-64 md:h-40 rounded-xl overflow-hidden opacity-0 scale-50 rotate-6 group-hover:opacity-100 group-hover:scale-100 group-hover:rotate-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-10 pointer-events-none shadow-2xl bg-gray-100 flex items-center justify-center p-4 border border-gray-200">
+                                <img
+                                    src={award.image}
+                                    alt="Award Trophy"
+                                    className="w-full h-full object-contain drop-shadow-lg"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div className="award-buttom-contant">
-                        {awards.map((award, idx) => {
-                            const TitleTag = award.Tag;
-                            return (
-                                <div key={idx} className="single-buttom-contant-wrapper">
-                                    <div className="award-buttom-text-title-box">
-                                        <TitleTag className="award-buttom-title">{award.title}</TitleTag>
-                                        <div className="award-buttom-text">{award.desc}</div>
-                                    </div>
-                                    <div className="award-date-box">
-                                        <div className="award-date-text">Year: {award.year}</div>
-                                    </div>
-                                </div>
-                            );
-                        })}
-                    </div>
+                    ))}
                 </div>
             </div>
-            <img 
-                src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69c9404a968ac97c61efbbd3_Frame.png" 
-                loading="lazy" 
-                alt="Award Stars" 
-                className="star-shape" 
-            />
-            <img 
-                src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69c943badee1335e3d6a545e_Vector_42.svg" 
-                loading="lazy" 
-                alt="Single Star Shape" 
-                className="single-star-shape" 
-            />
-            <img 
-                src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69c943badee1335e3d6a545e_Vector_42.svg" 
-                loading="lazy" 
-                alt="Single Star Shape" 
-                className="single-star-shape _02" 
-            />
-            <img 
-                src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69c943badee1335e3d6a545e_Vector_42.svg" 
-                loading="lazy" 
-                alt="Single Star Shape" 
-                className="single-star-shape _03" 
-            />
         </section>
     );
 }

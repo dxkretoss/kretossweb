@@ -1,46 +1,20 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import AnimatedButton from '../ui/AnimatedButton';
 
 const teamMembersTop = [
     {
-        name: "Solgan Millik",
-        role: "Worer",
-        image: "https://cdn.prod.website-files.com/69c95b070d7e68dff978af81/69c962a4c6681f6cd315d9a5_team01%20(8).webp",
-        link: "/teams/solgan-millik"
+        name: "Ankur Kavathiya",
+        role: "CEO & Founder",
+        image: "/grouppics/ankursir.png",
+        link: "/teams/ankur-kavathiya"
     },
     {
-        name: "Flamex Gill",
-        role: "Worker",
-        image: "https://cdn.prod.website-files.com/69c95b070d7e68dff978af81/69c961880bebdfb6126c3066_team01%20(9).webp",
-        link: "/teams/flamex-gill"
-    }
-];
-
-const teamMembersBottom = [
-    {
-        name: "Sujana Mendal",
-        role: "Worker",
-        image: "https://cdn.prod.website-files.com/69c95b070d7e68dff978af81/69c9614a708b546e99e9dbe8_team01%20(10).webp",
-        link: "/teams/sujana-mendal"
-    },
-    {
-        name: "Pixel Pauls",
-        role: "CTO",
-        image: "https://cdn.prod.website-files.com/69c95b070d7e68dff978af81/69c9610495343e8ebec78f56_team01%20(12).webp",
-        link: "/teams/pixel-pauls"
-    },
-    {
-        name: "Camron Kiltis",
-        role: "Worker",
-        image: "https://cdn.prod.website-files.com/69c95b070d7e68dff978af81/69c95f29f9ac118cbb69d811_team01%20(1).webp",
-        link: "/teams/camron-kiltis"
-    },
-    {
-        name: "Orsha Gomez",
-        role: "Worker",
-        image: "https://cdn.prod.website-files.com/69c95b070d7e68dff978af81/69c95ee5a858e3b0a355b0a7_team01%20(4).webp",
-        link: "/teams/orsha-gomez"
+        name: "Chintan Ramani",
+        role: "Co-Founder",
+        image: "/grouppics/chintansir.png",
+        link: "/teams/chintan-ramani"
     }
 ];
 
@@ -50,135 +24,101 @@ export default function TeamSection() {
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         let ctx = gsap.context(() => {
-            gsap.from(".team-left-contant", {
-                opacity: 0,
-                x: -50,
-                duration: 1,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: sectionRef.current,
-                    start: "top 80%",
+            gsap.fromTo(".team-left-content",
+                { opacity: 0, x: -50 },
+                {
+                    opacity: 1,
+                    x: 0,
+                    duration: 1,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: sectionRef.current,
+                        start: "top 80%",
+                    }
                 }
-            });
-            gsap.from(".single-team-card", {
-                opacity: 0,
-                y: 50,
-                duration: 0.8,
-                stagger: 0.15,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: ".team-collection-list",
-                    start: "top 85%",
+            );
+            gsap.fromTo(".team-card",
+                { opacity: 0, y: 50 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    stagger: 0.15,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: ".team-grid",
+                        start: "top 85%",
+                    }
                 }
-            });
+            );
         }, sectionRef);
 
         return () => ctx.revert();
     }, []);
 
     return (
-        <section className="team-section section-padding" ref={sectionRef}>
-            <div className="w-layout-blockcontainer container w-container">
-                <div className="team-contant-wrapper">
-                    <div className="team-top-contant">
-                        <div className="team-left-contant">
-                            <div className="team-logo-button-box">
-                                <div className="gradient-subtitle-box">
-                                    <div className="gradient-subtitle">
-                                        <img 
-                                            loading="lazy" 
-                                            src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69bb87e98872e9273f75433b_shape.svg" 
-                                            alt="Subtitle Star" 
-                                            className="subtitle-star" 
-                                        />
-                                        <div className="section-subtitle-text">Our Teams</div>
-                                    </div>
-                                    <div className="gradient-subtitle-shape"></div>
-                                </div>
-                                <div className="team-left-title-text-box">
-                                    <h2 className="team-title">
-                                        Meet our teams that <span className="team-subtitle">professional in this field</span>
-                                    </h2>
-                                    <div className="team-text">Meet the talented people behind our creative process—designers, strategists, and thinkers working together to bring ideas to life.</div>
-                                </div>
-                            </div>
-                            <div className="orange-button-box">
-                                <a href="/team" className="orange-button w-inline-block">
-                                    <div className="button-content-box">
-                                        <div className="button-text-box">
-                                            <div className="button-text-front">Meet the Team</div>
-                                            <div className="button-text-back white">Meet the Team</div>
-                                        </div>
-                                        <div className="button-icon-box _02">
-                                            <img 
-                                                loading="lazy" 
-                                                src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69a3cbac79af0e495c37fca8_cxczdc.svg" 
-                                                alt="Icon" 
-                                                className="button-front-icon _02" 
-                                            />
-                                            <img 
-                                                loading="lazy" 
-                                                src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69a3cbac79af0e495c37fca8_cxczdc.svg" 
-                                                alt="Icon" 
-                                                className="button-back-icon _02" 
-                                            />
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="top-right-contant">
-                            <div className="team-collection _01 w-dyn-list">
-                                <div role="list" className="team-collection-list w-dyn-items">
-                                    {teamMembersTop.map((member, idx) => (
-                                        <div key={idx} role="listitem" className="team-collection-item w-dyn-item">
-                                            <a href={member.link} className="single-team-card w-inline-block">
-                                                <div className="single-team-card-image-box">
-                                                    <img 
-                                                        loading="lazy" 
-                                                        alt={member.name} 
-                                                        src={member.image} 
-                                                        className="single-team-card-image" 
-                                                    />
-                                                </div>
-                                                <div className="team-card-title-text">
-                                                    <h3 className="team-card-title">{member.name}</h3>
-                                                    <div className="team-card-text">{member.role}</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
+        <section className="container bg-[#0c0c0c] text-white py-24 px-6 md:px-12 relative overflow-hidden" ref={sectionRef}>
+            <div className="mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center relative z-10">
+
+                {/* Left Content */}
+                <div className="team-left-content lg:col-span-6 flex flex-col items-start">
+                    {/* Badge */}
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-white/5 border border-white/10 mb-6">
+                        <img
+                            loading="lazy"
+                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887be_Star%2018.svg"
+                            alt="Star"
+                            className="w-3 h-3 animate-[spin_4s_linear_infinite]"
+                        />
+                        <span className="text-xs text-gray-300 font-medium tracking-widest uppercase mt-0.5">Our Teams</span>
                     </div>
-                    <div className="team-buttom-contant">
-                        <div className="team-collection _02 w-dyn-list">
-                            <div role="list" className="team-collection-list _02 w-dyn-items">
-                                {teamMembersBottom.map((member, idx) => (
-                                    <div key={idx} role="listitem" className="team-collection-item w-dyn-item">
-                                        <a href={member.link} className="single-team-card w-inline-block">
-                                            <div className="single-team-card-image-box">
-                                                <img 
-                                                    loading="lazy" 
-                                                    alt={member.name} 
-                                                    src={member.image} 
-                                                    className="single-team-card-image" 
-                                                />
-                                            </div>
-                                            <div className="team-card-title-text">
-                                                <h4 className="team-card-title">{member.name}</h4>
-                                                <div className="team-card-text">{member.role}</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+
+                    {/* Title */}
+                    <h2 className="testimonial-title teams" style={{ opacity: 1 }}>
+
+                        <span className='bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text'>Kretoss Technology</span> <span className="review-subtitle">
+                            A top rated team</span></h2>
+
+
+                    {/* Description */}
+                    <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-10 max-w-xl">
+                        Mr. Ankur Kavathiya & Chintan Ramani founded Kretoss Technology in 2015 with the goal of assisting and supporting the expansion of small and medium-sized businesses. They can establish an online presence for their company and build it to generate more and more revenue.                    </p>
+
+                    {/* Button */}
+                    <div>
+                        <AnimatedButton href="/team" text="MEET THE TEAM" />
                     </div>
-                    <img src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69c8db184a3afd8a87765d86_Group%201597883177.png" loading="lazy" alt="Shape" className="sectyion-shape" />
-                    <img src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69c8db184a3afd8a87765d86_Group%201597883177.png" loading="lazy" alt="Shape" className="sectyion-shape _02" />
                 </div>
+
+                {/* Right Content - Cards Grid */}
+                <div className="team-grid lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {teamMembersTop.map((member, idx) => (
+                        <a
+                            key={idx}
+                            href={'#'}
+                            className="team-card flex flex-col bg-white rounded-md p-2 overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-2 group w-full max-w-[350px] h-[400px] mx-auto"
+                        >
+                            <div className="rounded-md overflow-hidden relative flex-1 bg-gray-100">
+                                <img
+                                    loading="lazy"
+                                    alt={member.name}
+                                    src={member.image}
+                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                />
+                            </div>
+                            <div className="pt-3 pb-2 px-2 text-left">
+                                <h3 className="text-lg font-bold text-gray-900 mb-0.5 tracking-tight">{member.name}</h3>
+                                <p className="text-gray-500 font-medium text-sm">{member.role}</p>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+
+            </div>
+
+            {/* Background shapes (optional, from original) */}
+            <div className="absolute top-0 right-0 -z-10 opacity-20 pointer-events-none">
+                <img src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69c8db184a3afd8a87765d86_Group%201597883177.png" loading="lazy" alt="Shape" className="w-[400px] md:w-[600px] animate-pulse opacity-30" />
             </div>
         </section>
     );
