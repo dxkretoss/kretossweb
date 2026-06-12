@@ -57,26 +57,27 @@ export default function TeamSection() {
     }, []);
 
     return (
-        <section className="container bg-[#0c0c0c] text-white py-24 px-6 md:px-12 relative overflow-hidden" ref={sectionRef}>
+        <section className="container bg-[#fafcff] text-white py-24 px-6 md:px-12 relative overflow-hidden" ref={sectionRef}>
             <div className="mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center relative z-10">
 
                 {/* Left Content */}
                 <div className="team-left-content lg:col-span-6 flex flex-col items-start">
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-white/5 border border-white/10 mb-6">
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-black/5 border border-black/10 mb-6">
                         <img
                             loading="lazy"
                             src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887be_Star%2018.svg"
                             alt="Star"
                             className="w-3 h-3 animate-[spin_4s_linear_infinite]"
                         />
-                        <span className="text-xs text-gray-300 font-medium tracking-widest uppercase mt-0.5">Our Teams</span>
+                        <span className="text-xs text-gray-600 font-medium tracking-widest uppercase mt-0.5">Our Teams</span>
+
                     </div>
 
                     {/* Title */}
-                    <h2 className="testimonial-title teams" style={{ opacity: 1 }}>
+                    <h2 className="testimonial-title teams text-black" style={{ opacity: 1 }}>
 
-                        <span className='bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text'>Kretoss Technology</span> <span className="review-subtitle">
+                        <span className='bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text'>Kretoss Technology</span> <span className="review-subtitle text-black">
                             A top rated team</span></h2>
 
 
