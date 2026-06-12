@@ -11,8 +11,6 @@ export default function Layout() {
     const currentRoute = location.pathname === '/about' ? 'about' : '/';
 
     useEffect(() => {
-        // Scroll to top on route change
-        window.scrollTo(0, 0);
 
         // Set standard attributes (for Webflow compatibility if needed)
         document.documentElement.setAttribute('data-wf-page', '6996a337655d586ffe288774');

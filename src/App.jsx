@@ -1,10 +1,24 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Homepage from './components/Homepage';
 import AboutPage from './components/AboutPage';
+import NotFoundPage from './components/NotFoundPage';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
+
+function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        if (window.lenis) {
+            window.lenis.scrollTo(0, { immediate: true });
+        }
+    }, [pathname]);
+
+    return null;
+}
 
 export default function App() {
     useEffect(() => {
@@ -14,6 +28,9 @@ export default function App() {
             wheelMultiplier: 0.7,
             touchMultiplier: 1.5,
         });
+        
+        // Expose globally for route change resets
+        window.lenis = lenis;
 
         function raf(time) {
             lenis.raf(time);
@@ -29,13 +46,15 @@ export default function App() {
 
     return (
         <Router>
+            <ScrollToTop />
             <Routes>
                 {/* The Layout component wraps all routes inside it */}
                 <Route element={<Layout />}>
                     {/* <Route> */}
                     <Route path="/" element={<Homepage />} />
                     <Route path="/about" element={<AboutPage />} />
-                    {/* Add more routes here later */}
+                    {/* Catch-all route for 404 Not Found */}
+                    <Route path="*" element={<NotFoundPage />} />
                 </Route>
             </Routes>
         </Router>

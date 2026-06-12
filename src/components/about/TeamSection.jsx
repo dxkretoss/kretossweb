@@ -57,7 +57,7 @@ export default function TeamSection() {
     }, []);
 
     return (
-        <section className="container bg-[#fafcff] text-white py-24 px-6 md:px-12 relative overflow-hidden" ref={sectionRef}>
+        <section className="container bg-[#fafcff] text-white py-20 px-6 md:px-12 relative overflow-hidden" ref={sectionRef}>
             <div className="mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center relative z-10">
 
                 {/* Left Content */}

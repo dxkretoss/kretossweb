@@ -17,25 +17,41 @@ export default function HeroSection() {
 
     const cards = [
         {
-            title: "CODE",
-            icon: "</>",
-            subtitle: "Driven By Logic",
+            title: "MISSION",
+            icon: (
+                <svg className="w-4 h-4 text-current" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+            ),
+            subtitle: "Empowering Businesses",
             gradient: "from-[#44c7f6] to-[#0037f0]",
-            bgText: "01010011 01001101 01000001 01010010 01010100 00100000 01000100 01000101 01010110 00100000 01010011 01010100 01010101 01001110 01001110 01001001 01001110 01000111 00100000 01000100 01000101 01010011 01001001 01000111 01001110", // binary pattern
+            bgText: "MISSION INNOVATION USER CENTRIC DIGITAL SOLUTIONS SEAMLESS UI UX DESIGN ROBUST WEB MOBILE APPLICATIONS ENGAGEMENT VALUE ",
+            desc: "At Kretoss Technology, our mission is to empower businesses by delivering innovative, user-centric digital solutions. We are committed to crafting seamless UI/UX designs and robust web and mobile applications that drive engagement, enhance user experience, and create measurable value for our clients across industries."
         },
         {
-            title: "DESIGN",
-            icon: "✨",
-            subtitle: "Crafted With Passion",
+            title: "VISION",
+            icon: (
+                <svg className="w-4 h-4 text-current" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+            ),
+            subtitle: "Global Tech Partner",
             gradient: "from-[#f86602] to-[#ff9b50]",
-            bgText: "DESIGN STUNNING PIXELS VECTOR UI UX INTERFACE EXPERIENCE CREATIVE PROTOTYPE COLOR TYPOGRAPHY LAYOUT GRID RESPONSIVE ANIMATION INTERACTION VISUAL AESTHETIC",
+            bgText: "VISION GLOBALLY RECOGNIZED TECHNOLOGY PARTNER TRANSFORMING IDEAS IMPACTFUL EXPERIENCES NEW STANDARDS CREATIVITY EXCELLENCE CONTINUOUS ",
+            desc: "Our vision is to become a globally recognized technology partner, known for transforming ideas into impactful digital experiences. We aim to set new standards in UI/UX and application development by embracing creativity, excellence, and continuous innovation."
         },
         {
-            title: "IMPACT",
-            icon: "🚀",
-            subtitle: "Delivering Results",
+            title: "GOAL",
+            icon: (
+                <svg className="w-4 h-4 text-current" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+            ),
+            subtitle: "Exceeding Expectations",
             gradient: "from-[#10b981] to-[#3b82f6]",
-            bgText: "GROWTH SCALE REVENUE PERFORMANCE METRICS ANALYTICS SUCCESS LAUNCH CONVERSION ENGAGEMENT RETENTION TRAFFIC SEO OPTIMIZATION ROI STRATEGY GOALS",
+            bgText: "GOAL HIGH QUALITY SCALABLE INTUITIVE DIGITAL PRODUCTS EXCEED CLIENT EXPECTATIONS LONG TERM PARTNERSHIPS TRANSPARENCY DEADLINES EVOLVING ",
+            desc: "Our goal is to consistently deliver high-quality, scalable, and intuitive digital products that exceed client expectations. We strive to build long-term partnerships by maintaining transparency, meeting deadlines, and constantly evolving with emerging technologies to stay ahead in a dynamic digital world."
         }
     ];
 
@@ -114,7 +130,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section className="relative min-h-screen flex items-center bg-[#0a0a0a] overflow-hidden py-24" ref={heroRef}>
+        <section className="relative h-[calc(100dvh-100px)] flex items-center bg-[#0a0a0a] overflow-hidden py-24" ref={heroRef}>
             {/* Dotted Grid SVG Background */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-60 ">
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -152,10 +168,10 @@ export default function HeroSection() {
                         </div>
 
                         <h1 className="banner-title text-5xl sm:text-6xl lg:text-[60px] font-bold text-white leading-[1.1] tracking-tight mb-8">
-                            <AnimatedWord text="Smart " isGradient={false} />
-                            <AnimatedWord text="Development" isGradient={true} /><br />
                             <AnimatedWord text="Stunning " isGradient={true} />
                             <AnimatedWord text="Design" isGradient={false} /><br />
+                            <AnimatedWord text="Smart " isGradient={false} />
+                            <AnimatedWord text="Development" isGradient={true} /><br />
                             <AnimatedWord text="Real " isGradient={false} />
                             <AnimatedWord text="Impact" isGradient={true} />
                         </h1>
@@ -186,8 +202,7 @@ export default function HeroSection() {
                     <div className="w-full lg:w-[45%] relative z-20 flex justify-center  mt-12 lg:mt-0">
                         <div className="hero-video-box relative w-full max-w-[380px]">
                             {/* Background Glow */}
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#0037f0]/20 to-[#f86602]/20 blur-[80px] -z-20 rounded-full pointer-events-none"></div>
-
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[linear-gradient(#44c7f6,#0037f0)] opacity-20 blur-[80px] -z-20 rounded-full pointer-events-none"></div>
                             {/* Card Stack Container */}
                             <div className="relative w-full aspect-[4/4.5] perspective-[1000px]">
                                 {cards.map((card, idx) => {
@@ -222,41 +237,35 @@ export default function HeroSection() {
                                             className={`absolute inset-0 bg-[#121212] border border-white/10 rounded-xl overflow-hidden transition-all duration-700 ease-out origin-bottom ${transformClass} ${zIndex} ${opacity} ${shadow}`}
                                         >
                                             {/* Card Top / Image Area */}
-                                            <div className="relative w-full h-[60%] bg-[#080808] overflow-hidden flex items-center justify-center">
+                                            <div className="relative w-full h-[35%] bg-[#080808] overflow-hidden flex items-center justify-center border-b border-white/5">
                                                 {/* Text Background Pattern */}
                                                 <div className={`absolute inset-0 opacity-10 flex flex-wrap content-start p-3 text-xs font-mono overflow-hidden break-all leading-tight select-none bg-gradient-to-br ${card.gradient} text-transparent bg-clip-text`}>
                                                     {Array(15).fill(card.bgText).join(" ")}
                                                 </div>
 
-                                                {/* Big Title */}
-                                                <h3 className={`relative z-10 text-5xl sm:text-6xl font-black tracking-tighter bg-gradient-to-r ${card.gradient} text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]`}>
-                                                    {card.title}
-                                                </h3>
+                                                {/* Big Title Area */}
+                                                <div className="relative z-10 flex flex-col items-center">
+                                                    <span className="text-sm font-bold tracking-[0.2em] uppercase text-white/50 -mb-1">Our</span>
+                                                    <h3 className={`text-4xl sm:text-5xl font-black tracking-tighter bg-gradient-to-r ${card.gradient} text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]`}>
+                                                        {card.title}
+                                                    </h3>
+                                                </div>
                                             </div>
 
                                             {/* Card Bottom / Details Area */}
-                                            <div className="h-[40%] p-5 sm:p-6 flex flex-col justify-between bg-gradient-to-b from-[#181818] to-[#0a0a0a]">
-                                                <div className="flex items-center justify-between text-gray-300">
+                                            <div className="h-[65%] p-5 sm:p-6 flex flex-col bg-gradient-to-b from-[#181818] to-[#0a0a0a]">
+                                                <div className="flex items-center justify-between text-gray-300 mb-4">
                                                     <div className="flex items-center gap-3">
                                                         <div className="bg-white/5 w-8 h-8 rounded-full flex items-center justify-center text-sm border border-white/10 shadow-inner">
                                                             {card.icon}
                                                         </div>
-                                                        <span className="font-medium tracking-wide text-sm sm:text-base">{card.subtitle}</span>
+                                                        <span className="font-semibold tracking-wide text-sm sm:text-base text-white">{card.subtitle}</span>
                                                     </div>
-                                                    <span className="font-mono text-sm opacity-50 tracking-widest">2026</span>
                                                 </div>
 
-                                                <div className="flex flex-col gap-2.5 sm:gap-3 mt-4">
-                                                    <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                                                        <div className={`h-full w-[85%] bg-white/20 rounded-full transition-all duration-1000 delay-100 ${offset === 0 ? 'translate-x-0' : '-translate-x-full'}`}></div>
-                                                    </div>
-                                                    <div className="h-1.5 w-[90%] bg-white/5 rounded-full overflow-hidden">
-                                                        <div className={`h-full w-[65%] bg-white/20 rounded-full transition-all duration-1000 delay-200 ${offset === 0 ? 'translate-x-0' : '-translate-x-full'}`}></div>
-                                                    </div>
-                                                    <div className="h-1.5 w-[75%] bg-white/5 rounded-full overflow-hidden">
-                                                        <div className={`h-full w-[45%] bg-white/20 rounded-full transition-all duration-1000 delay-300 ${offset === 0 ? 'translate-x-0' : '-translate-x-full'}`}></div>
-                                                    </div>
-                                                </div>
+                                                <p className="text-gray-400 text-sm leading-relaxed">
+                                                    {card.desc}
+                                                </p>
                                             </div>
                                         </div>
                                     );

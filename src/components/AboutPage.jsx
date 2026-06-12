@@ -4,13 +4,15 @@ import CoreValues from "./about/CoreValues";
 import TeamSection from "./about/TeamSection";
 import AwardsSection from "./about/AwardsSection";
 import CtaSection from "./about/CTASection";
+import About from "./homepage/About";
 // import "../about-us.css";
 
 export default function AboutPage() {
     return (
         <main className="about-page-wrapper">
             <HeroSection />
-            <CompanyIntro />
+            <About />
+            {/* <CompanyIntro /> */}
             <CoreValues />
             <TeamSection />
             <AwardsSection />
