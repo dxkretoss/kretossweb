@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function FloatingNav() {
     const [isVisible, setIsVisible] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
-            // Show the floating nav when scrolled down past 200px (approx height of top header)
             if (window.scrollY > 200) {
                 setIsVisible(true);
             } else {
@@ -17,6 +17,11 @@ export default function FloatingNav() {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const getLinkClass = (path) => {
+        const isActive = location.pathname === path;
+        return `text-base font-medium transition-colors whitespace-nowrap ${isActive ? 'text-[#44c7f6]' : 'text-gray-300 hover:text-white'}`;
+    };
 
     return (
         <div
@@ -31,19 +36,19 @@ export default function FloatingNav() {
                 <div className="absolute bottom-2 right-2 w-[4px] h-[4px] bg-white rounded-sm z-10"></div>
 
                 <nav className="bg-[#0c0c0c]/90 backdrop-blur-lg border border-white/10 rounded-md px-8 py-3 flex flex-row items-center justify-center space-x-6 shadow-2xl overflow-x-auto no-scrollbar">
-                    <Link to="/" className="text-base font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap">
+                    <Link to="/" className={getLinkClass('/')}>
                         Home
                     </Link>
-                    <Link to="/about" className="text-base font-medium text-[#44c7f6] hover:text-white transition-colors whitespace-nowrap">
+                    <Link to="/about" className={getLinkClass('/about')}>
                         About Us
                     </Link>
-                    <Link to="#" className="text-base font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap">
+                    <Link to="/services" className={getLinkClass('/services')}>
                         Services
                     </Link>
-                    <Link to="#" className="text-base font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap">
+                    <Link to="/portfolio" className={getLinkClass('/portfolio')}>
                         Portfolio
                     </Link>
-                    <Link to="#" className="text-base font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap">
+                    <Link to="/careers" className={getLinkClass('/careers')}>
                         Careers
                     </Link>
                 </nav>

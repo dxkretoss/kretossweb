@@ -116,11 +116,11 @@ export default function Header({ currentRoute }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     // Dynamic navigation list array mapping all elements
     const navigationLinks = [
-        { text: "Home", href: "/" },
-        { text: "About Us", href: "/about" },
-        { text: "Services", href: "#" },
-        { text: "Portfolio", href: "#" },
-        { text: "Careers", href: "#" }
+        { text: "Home", href: "/", current: currentRoute === '/' },
+        { text: "About Us", href: "/about", current: currentRoute === 'about' },
+        { text: "Services", href: "#", current: false },
+        { text: "Portfolio", href: "#", current: false },
+        { text: "Careers", href: "#", current: false }
     ];
 
     // Fast scroll handler that stops propagation and uses native smooth scrolling
@@ -179,7 +179,7 @@ export default function Header({ currentRoute }) {
                                                 aria-current={link.current ? "page" : undefined}
                                                 className={`menu-link w-inline-block ${link.current ? "w--current" : ""}`}
                                             >
-                                                <div className="menu-link-text">{link.text}</div>
+                                                <div className={`menu-link-text transition-colors duration-300 ${link.current ? "text-[#44c7f6]" : "text-white"}`}>{link.text}</div>
                                             </a>
                                         </div>
                                     ))}
