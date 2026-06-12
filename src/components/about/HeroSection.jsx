@@ -245,7 +245,7 @@ export default function HeroSection() {
 
                                                 {/* Big Title Area */}
                                                 <div className="relative z-10 flex flex-col items-center">
-                                                    <span className="text-sm font-bold tracking-[0.2em] uppercase text-white/50 -mb-1">Our</span>
+                                                    {/* <span className="text-sm font-bold tracking-[0.2em] uppercase text-white/50 -mb-1">Our</span> */}
                                                     <h3 className={`text-4xl sm:text-5xl font-black tracking-tighter bg-gradient-to-r ${card.gradient} text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]`}>
                                                         {card.title}
                                                     </h3>
