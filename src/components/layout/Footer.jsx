@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimatedButton from '../ui/AnimatedButton';
 
-export default function Footer() {
+export default function Footer({ currentRoute }) {
     // Ticker configuration for infinite rolling track
     const tickerItems = Array.from({ length: 8 }).map((_, idx) => ({
         icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288792_Group%202087325406.svg",
@@ -13,11 +13,11 @@ export default function Footer() {
         {
             title: "Instant Links",
             links: [
-                { label: "Home", href: "/", isCurrent: true },
-                { label: "About Us", href: "/about" },
-                { label: "Services", href: "#" },
-                { label: "Portfolio", href: "#" },
-                { label: "Careers", href: "#" },
+                { label: "Home", href: "/", isCurrent: currentRoute === '/' },
+                { label: "About Us", href: "/about", isCurrent: currentRoute === 'about' },
+                { label: "Services", href: "/services", isCurrent: currentRoute === 'services' },
+                { label: "Portfolio", href: "/portfolio", isCurrent: currentRoute === 'portfolio' },
+                { label: "Careers", href: "/careers", isCurrent: currentRoute === 'careers' },
             ],
         }
     ];

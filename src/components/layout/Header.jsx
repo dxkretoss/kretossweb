@@ -120,7 +120,7 @@ export default function Header({ currentRoute }) {
         { text: "About Us", href: "/about", current: currentRoute === 'about' },
         { text: "Services", href: "/services", current: currentRoute === 'services' },
         { text: "Portfolio", href: "/portfolio", current: currentRoute === 'portfolio' },
-        { text: "Careers", href: "/careers", current: false }
+        { text: "Careers", href: "/careers", current: currentRoute === 'careers' }
     ];
 
     // Fast scroll handler that stops propagation and uses native smooth scrolling
