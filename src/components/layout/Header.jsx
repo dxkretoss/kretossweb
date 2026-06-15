@@ -119,7 +119,7 @@ export default function Header({ currentRoute }) {
         { text: "Home", href: "/", current: currentRoute === '/' },
         { text: "About Us", href: "/about", current: currentRoute === 'about' },
         { text: "Services", href: "/services", current: currentRoute === 'services' },
-        { text: "Portfolio", href: "/portfolio", current: false },
+        { text: "Portfolio", href: "/portfolio", current: currentRoute === 'portfolio' },
         { text: "Careers", href: "/careers", current: false }
     ];
 
