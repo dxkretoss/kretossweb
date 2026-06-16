@@ -58,11 +58,11 @@ export default function TeamSection() {
     }, []);
 
     return (
-        <section className="container bg-[#fafcff] text-white py-20 px-6 md:px-12 relative overflow-hidden" ref={sectionRef}>
-            <div className="mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center relative z-10">
+        <section className="w-full bg-[#fafcff] text-black py-10 lg:py-20 relative overflow-hidden" ref={sectionRef}>
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
 
                 {/* Left Content */}
-                <div className="team-left-content lg:col-span-6 flex flex-col items-start">
+                <div className="team-left-content lg:col-span-6 flex flex-col items-center sm:items-start text-center sm:text-left">
 
 
                     <div className='mb-5'>
@@ -77,8 +77,9 @@ export default function TeamSection() {
 
 
                     {/* Description */}
-                    <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-10 max-w-xl">
-                        Mr. Ankur Kavathiya & Chintan Ramani founded Kretoss Technology in 2015 with the goal of assisting and supporting the expansion of small and medium-sized businesses. They can establish an online presence for their company and build it to generate more and more revenue.                    </p>
+                    <p className="text-gray-500 text-sm sm:text-base leading-relaxed mb-8 sm:mb-10 max-w-xl">
+                        Mr. Ankur Kavathiya & Chintan Ramani founded Kretoss Technology in 2015 with the goal of assisting and supporting the expansion of small and medium-sized businesses. They can establish an online presence for their company and build it to generate more and more revenue.
+                    </p>
 
                     {/* Button */}
                     <div>
@@ -87,12 +88,12 @@ export default function TeamSection() {
                 </div>
 
                 {/* Right Content - Cards Grid */}
-                <div className="team-grid lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="team-grid lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-0 lg:mt-0">
                     {teamMembersTop.map((member, idx) => (
                         <a
                             key={idx}
                             href={'#'}
-                            className="team-card flex flex-col bg-white rounded-md p-2 overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-2 group w-full max-w-[350px] h-[400px] mx-auto"
+                            className="team-card flex flex-col bg-white rounded-md p-2 overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 group w-full max-w-[320px] sm:max-w-[350px] h-[340px] sm:h-[400px] mx-auto"
                         >
                             <div className="rounded-md overflow-hidden relative flex-1 bg-gray-100">
                                 <img

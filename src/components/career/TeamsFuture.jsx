@@ -70,22 +70,22 @@ export default function TeamsFuture() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="py-24 bg-[#0a0a0a] relative overflow-hidden">
+        <section ref={sectionRef} className="py-10 lg:py-20 bg-[#0a0a0a] relative overflow-hidden">
             {/* Background ambient glow matching the dark theme */}
             <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-[#0037f0]/20 to-transparent pointer-events-none"></div>
 
-            <div className="container  mx-auto px-6 lg:px-12 relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
                 <div className="section-header flex flex-col items-center text-center mb-16">
                     {/* Standardized Badge */}
 
 
-                    <div className='mb-5 flex justify-start'>
+                    <div className='mb-4 sm:mb-5 flex justify-center'>
                         <Badge variant="white">Team's Future</Badge>
 
                     </div>
 
                     {/* Heading */}
-                    <h2 className="text-4xl md:text-5xl lg:text-[36px] font-bold text-white tracking-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold text-white tracking-tight">
                         What drives our <span className="bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text">employee experience</span>
                     </h2>
                 </div>
@@ -95,7 +95,7 @@ export default function TeamsFuture() {
                     {features.map((feature, idx) => (
                         <div key={idx} className="feature-card">
                             <div
-                                className="relative p-8 md:p-10 rounded-[24px] border border-white/[0.08] bg-[#121212] overflow-hidden h-full flex flex-col z-10 transition-transform duration-300 hover:-translate-y-1"
+                                className="relative p-6 sm:p-8 md:p-10 rounded-[24px] border border-white/[0.08] bg-[#121212] overflow-hidden h-full flex flex-col z-10 transition-transform duration-300 hover:-translate-y-1"
                             >
                                 {/* Subtle gradient overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-b from-[#0e54f1]/5 to-transparent pointer-events-none"></div>
@@ -104,15 +104,15 @@ export default function TeamsFuture() {
                                 <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#0e54f1] to-transparent pointer-events-none"></div>
 
                                 {/* Icon Container */}
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-b from-[#44c7f6] to-[#0037f0] flex items-center justify-center text-white mb-8 relative z-20 shadow-[0_8px_25px_-5px_rgba(0,55,240,0.5)] border border-white/10">
+                                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-b from-[#44c7f6] to-[#0037f0] flex items-center justify-center text-white mb-6 sm:mb-8 relative z-20 shadow-[0_8px_25px_-5px_rgba(0,55,240,0.5)] border border-white/10">
                                     {feature.icon}
                                 </div>
 
                                 {/* Content */}
-                                <h3 className="text-xl md:text-2xl font-semibold text-white mb-4 relative z-20">
+                                <h3 className="text-xl md:text-2xl font-semibold text-white mb-3 sm:mb-4 relative z-20">
                                     {feature.title}
                                 </h3>
-                                <p className="text-[#888888] text-[15px] md:text-base leading-relaxed relative z-20 font-medium">
+                                <p className="text-[#888888] text-sm sm:text-[15px] md:text-base leading-relaxed relative z-20 font-medium">
                                     {feature.description}
                                 </p>
 

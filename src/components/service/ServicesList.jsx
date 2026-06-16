@@ -3,15 +3,15 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
 import Badge from '../ui/Badge';
-import { 
-    FaReact, FaAngular, FaVuejs, FaNodeJs, FaPython, 
-    FaLaravel, FaJava, FaSwift, FaApple, FaAws, 
-    FaDigitalOcean, FaWordpress, FaShopify, FaMagento, 
+import {
+    FaReact, FaAngular, FaVuejs, FaNodeJs, FaPython,
+    FaLaravel, FaJava, FaSwift, FaApple, FaAws,
+    FaDigitalOcean, FaWordpress, FaShopify, FaMagento,
     FaDrupal, FaJs, FaChartBar, FaChartLine, FaMicrosoft, FaDatabase
 } from 'react-icons/fa';
-import { 
-    SiNextdotjs, SiNestjs, SiFlutter, SiKotlin, 
-    SiPandas, SiGooglecloud, SiBigcommerce 
+import {
+    SiNextdotjs, SiNestjs, SiFlutter, SiKotlin,
+    SiPandas, SiGooglecloud, SiBigcommerce
 } from 'react-icons/si';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -180,7 +180,7 @@ export default function ServicesList() {
     }, []);
 
     return (
-        <section className="bg-[#fafcff] py-20 px-6 md:px-12 overflow-hidden relative" ref={containerRef}>
+        <section className="bg-[#fafcff] py-10 lg:py-20 px-4 sm:px-6 lg:px-12 overflow-hidden relative" ref={containerRef}>
             {/* SVG Definitions for Gradient Icons */}
             <svg width="0" height="0" className="absolute">
                 <defs>
@@ -193,14 +193,12 @@ export default function ServicesList() {
 
             <div className="container mx-auto max-w-7xl relative z-10">
                 {/* Section Title */}
-                <div className="text-center mb-16 service-list-title flex flex-col items-center">
-
-
+                <div className="text-center mb-8 lg:mb-16 service-list-title flex flex-col items-center">
                     <div className='mb-5'>
                         <Badge variant="blue">Our Capabilities</Badge>
 
                     </div>
-                    <h2 className="text-4xl md:text-5xl lg:text-[36px] font-bold text-[#111] tracking-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold text-[#111] tracking-tight">
                         Solutions We Deliver
                     </h2>
                 </div>
@@ -211,26 +209,26 @@ export default function ServicesList() {
                         const isEven = index % 2 !== 0;
 
                         return (
-                            <div key={service.id} className="service-row relative group flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                            <div key={service.id} className="service-row relative group flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
 
                                 {/* Text Content Area */}
                                 <div className={`service-text-col w-full lg:w-1/2 flex flex-col items-start relative z-10 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                                     {/* Number & Title Area */}
-                                    <div className="flex items-end gap-6 mb-8">
-                                        <div className="text-6xl md:text-8xl font-black bg-gradient-to-br from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text leading-none drop-shadow-sm">
+                                    <div className="flex flex-row items-end gap-4 sm:gap-6 mb-6 sm:mb-8">
+                                        <div className="text-5xl sm:text-6xl md:text-8xl font-black bg-gradient-to-br from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text leading-none drop-shadow-sm">
                                             {service.id}
                                         </div>
-                                        <h3 className="text-3xl md:text-5xl font-bold text-[#111] tracking-tight leading-tight mb-2">
+                                        <h3 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#111] tracking-tight leading-tight mb-1 sm:mb-2">
                                             {service.title}
                                         </h3>
                                     </div>
 
-                                    <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-10 max-w-lg">
+                                    <p className="text-gray-600 text-base sm:text-lg md:text-xl leading-relaxed mb-8 sm:mb-10 max-w-lg">
                                         {service.desc}
                                     </p>
 
                                     {/* Tech Pills */}
-                                    <div className="flex flex-wrap gap-3 mb-10">
+                                    <div className="flex flex-wrap gap-2 sm:gap-3 mb-8 sm:mb-10">
                                         {service.technologies.map((tech, i) => (
                                             <span key={i} className="group flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-200 bg-white shadow-sm text-sm font-semibold text-gray-800 hover:border-[#0037f0] hover:text-[#0037f0] transition-colors duration-300 cursor-default">
                                                 {tech.Icon && <tech.Icon className="w-4 h-4 text-gray-600 group-hover:fill-[url(#service-tech-grad)] group-hover:text-transparent transition-all duration-300" />}
@@ -261,8 +259,8 @@ export default function ServicesList() {
                                     </div>
 
                                     {/* Floating tech element decorative */}
-                                    <div className={`absolute -bottom-8 ${isEven ? '-right-8' : '-left-8'} w-24 h-24 bg-white rounded-2xl shadow-xl flex items-center justify-center border border-gray-100 animate-[bounce_5s_infinite] overflow-hidden`}>
-                                        <img src={service.icon} alt={`${service.title} icon`} className="w-[85%] h-[85%] object-cover rounded-xl" />
+                                    <div className={`absolute -bottom-6 sm:-bottom-8 ${isEven ? 'right-4 sm:-right-8' : 'left-4 sm:-left-8'} w-16 h-16 sm:w-24 sm:h-24 bg-white rounded-xl sm:rounded-2xl shadow-xl flex items-center justify-center border border-gray-100 animate-[bounce_5s_infinite] overflow-hidden`}>
+                                        <img src={service.icon} alt={`${service.title} icon`} className="w-[85%] h-[85%] object-cover rounded-lg sm:rounded-xl" />
                                     </div>
 
                                 </div>

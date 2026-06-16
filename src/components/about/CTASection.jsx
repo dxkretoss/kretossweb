@@ -28,20 +28,20 @@ export default function CtaSection() {
     }, []);
 
     return (
-        <section className="bg-[#0c0c0c] text-white py-32 px-6 md:px-12 relative overflow-hidden" ref={sectionRef}>
+        <section className="w-full bg-[#0c0c0c] text-white py-20 lg:py-32 px-4 sm:px-6 lg:px-12 relative overflow-hidden" ref={sectionRef}>
             {/* Background Glow */}
             <div className="absolute bottom-[-100px] left-1/2 -translate-x-1/2 w-full max-w-4xl h-[300px] bg-[#0037f0] opacity-40 blur-[100px] rounded-full pointer-events-none z-0"></div>
 
             {/* Modern Grid Background */}
             <div className="absolute inset-0 z-0 pointer-events-none flex justify-center items-center overflow-hidden">
-                <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_100%,#000_20%,transparent_100%)]"></div>
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-[size:3rem_3rem] sm:bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_100%,#000_20%,transparent_100%)]"></div>
             </div>
 
             <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center text-center cta-content">
-                <h2 className="text-4xl md:text-[36px] font-bold tracking-tight mb-6 uppercase text-white">
+                <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold tracking-tight mb-4 sm:mb-6 uppercase text-white leading-tight">
                     Ready to start a project?
                 </h2>
-                <p className="text-gray-400 text-sm md:text-base mb-10 tracking-wide">
+                <p className="text-gray-400 text-sm sm:text-base mb-8 sm:mb-10 tracking-wide max-w-[280px] sm:max-w-none mx-auto">
                     Ready to Partner with Kretoss & unlock the full potential?
                 </p>
 

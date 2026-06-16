@@ -66,11 +66,11 @@ export default function ContactPage() {
 
             {/* Contact Section Wrapper */}
 
-            <section className="pt-20 pb-20 contact">
-                <div className='contact-content-wrapper'>
-                    <div className="contact-form-block">
+            <section className="py-10 lg:py-20 contact relative">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+                    <div className="w-full lg:w-[55%] xl:w-[60%]">
                         {/* Left: Dark Form matching screenshot */}
-                        <div className="bg-[#0f0f0f] rounded-xl p-8 md:p-[30px] shadow-2xl">
+                        <div className="bg-[#0f0f0f] rounded-xl p-6 sm:p-8 md:p-[30px] shadow-2xl">
                             <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
                                 {/* Full Name */}
                                 <div className="flex flex-col gap-2.5">
@@ -136,16 +136,16 @@ export default function ContactPage() {
                     </div>
 
                     {/* Right: Contact Details (User's Text) Perfectly Styled */}
-                    <div className="contact-about-block">
+                    <div className="w-full lg:w-[45%] xl:w-[40%] flex flex-col">
 
-                        <div className='flex flex-col gap-10'>
+                        <div className='flex flex-col gap-10 lg:gap-12'>
                             {/* Header Area */}
-                            <div className="flex flex-col items-start gap-4">
+                            <div className="flex flex-col items-start gap-3 sm:gap-4">
 
-                                <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-[1.1] tracking-tight">
+                                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-[1.1] tracking-tight">
                                     Have questions?
                                 </h2>
-                                <p className="text-gray-500 text-lg leading-relaxed max-w-md">
+                                <p className="text-gray-500 text-base sm:text-lg leading-relaxed max-w-md">
                                     Contact us using the form and details on this page. We're ready to help bring your ideas to life.
                                 </p>
                             </div>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                                         </div>
                                         <h4 className="text-base font-bold text-gray-900 tracking-wide">Call Us</h4>
                                     </div>
-                                    <p className="text-gray-600 font-medium text-lg ml-13">(+91) 63534-23473</p>
+                                    <p className="text-gray-600 font-medium text-base sm:text-lg ml-0 sm:ml-13">(+91) 63534-23473</p>
                                 </div>
 
                                 {/* Email */}
@@ -177,7 +177,7 @@ export default function ContactPage() {
                                         </div>
                                         <h4 className="text-base font-bold text-gray-900 tracking-wide">Email</h4>
                                     </div>
-                                    <p className="text-[#0037f0] font-medium text-lg ml-13 underline decoration-[#0037f0]/30 underline-offset-4">info@kretoss.com</p>
+                                    <p className="text-[#0037f0] font-medium text-base sm:text-lg ml-0 sm:ml-13 underline decoration-[#0037f0]/30 underline-offset-4 break-all">info@kretoss.com</p>
                                 </div>
                             </div>
 
@@ -200,7 +200,7 @@ export default function ContactPage() {
 
                             {/* Author info */}
                             <div className="flex flex-col items-start gap-4">
-                                <div className="w-[200px] h-[200px] rounded-lg border border-gray-200/80 p-1.5 bg-white shadow-sm">
+                                <div className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] rounded-lg border border-gray-200/80 p-1.5 bg-white shadow-sm">
                                     <img src="/grouppics/ankursir.png" loading="lazy" alt="Ankur Patel" className="w-full h-full object-cover rounded-md" />
                                 </div>
                                 <div className="flex flex-col gap-1">

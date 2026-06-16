@@ -75,18 +75,18 @@ export default function AwardsSection() {
     }, []);
 
     return (
-        <section className=" container bg-[#fafcff] text-gray-900 py-20 px-6 md:px-12 relative overflow-hidden" ref={sectionRef}>
-            <div className=" mx-auto relative z-10 flex flex-col lg:flex-row justify-between items-start gap-16 lg:gap-12">
+        <section className="w-full bg-[#fafcff] text-gray-900 py-10 lg:py-20 relative overflow-hidden" ref={sectionRef}>
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10 flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-12">
 
                 {/* Left Side: Text and List */}
                 <div className="flex-1 w-full lg:max-w-[65%]">
                     {/* Header */}
-                    <div className="award-header flex flex-col items-start mb-8 text-left">
+                    <div className="award-header flex flex-col items-center lg:items-start mb-8 text-left">
 
                         <div className='mb-5'>
                             <Badge variant="blue">Awards</Badge>
                         </div>
-                        <h2 className="text-4xl md:text-[36px] font-bold tracking-tight text-black">Our Milestones</h2>
+                        <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold tracking-tight text-black">Our Milestones</h2>
                     </div>
 
                     {/* Awards List */}
@@ -97,8 +97,8 @@ export default function AwardsSection() {
                                 className="award-row group relative flex items-center justify-between py-6 border-b border-black/10 hover:border-black/30 transition-colors duration-500 cursor-pointer"
                             >
                                 {/* Left: Text */}
-                                <div className="flex flex-col gap-2 relative z-20">
-                                    <h3 className="text-xl md:text-2xl font-bold tracking-wide text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                                <div className="flex flex-col gap-1 sm:gap-2 relative z-20">
+                                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-wide text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                                         {award.title}
                                     </h3>
                                     <p className="text-gray-600 text-sm md:text-base">
@@ -113,8 +113,8 @@ export default function AwardsSection() {
                                     </span>
                                 </div>
 
-                                {/* Center Hover Image Reveal */}
-                                <div className="absolute right-15 top-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-32 md:w-48 md:h-32 rounded-xl overflow-hidden opacity-0 scale-50 rotate-6 group-hover:opacity-100 group-hover:scale-100 group-hover:rotate-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-10 pointer-events-none shadow-2xl bg-gray-100 flex items-center justify-center p-4 border border-gray-200">
+                                {/* Center Hover Image Reveal - Hidden on Mobile */}
+                                <div className="absolute right-[10%] lg:right-[15%] top-1/2 -translate-y-1/2 w-48 h-32 rounded-xl overflow-hidden opacity-0 scale-50 rotate-6 group-hover:opacity-100 group-hover:scale-100 group-hover:rotate-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-10 pointer-events-none shadow-2xl bg-gray-100 hidden md:flex items-center justify-center p-4 border border-gray-200">
                                     <img
                                         src={award.image}
                                         alt="Award Trophy"

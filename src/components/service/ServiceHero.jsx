@@ -154,7 +154,7 @@ export default function ServiceHero() {
     }, []);
 
     return (
-        <section className="relative h-[calc(100dvh-100px)] flex items-center bg-[#0a0a0a] overflow-hidden py-24" ref={heroRef}>
+        <section className="relative min-h-[calc(100dvh-100px)] flex items-center bg-[#0a0a0a] overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-24" ref={heroRef}>
             {/* Dotted Grid SVG Background */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-60 ">
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -177,25 +177,25 @@ export default function ServiceHero() {
                 </svg>
             </div>
 
-            <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative z-10">
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-8">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-7xl relative z-10 mt-8 lg:mt-0">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8">
 
                     {/* Left Content */}
-                    <div className="w-full lg:w-[55%] flex flex-col items-start relative z-20">
+                    <div className="w-full lg:w-[55%] flex flex-col items-center sm:items-start text-center sm:text-left relative z-20">
 
 
                         <div className='mb-5'>
                             <Badge variant="white">Our Services</Badge>
                         </div>
 
-                        <h1 className="banner-title text-5xl sm:text-6xl lg:text-[60px] font-bold text-white leading-[1.1] tracking-tight mb-8">
+                        <h1 className="banner-title text-[24px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 lg:mb-8">
                             <AnimatedWord text="Design & " isGradient={false} /><br />
                             <AnimatedWord text="Development " isGradient={false} /><br />
                             <AnimatedWord text="Agency - " isGradient={false} />
                             <AnimatedWord text="Services" isGradient={true} />
                         </h1>
 
-                        <p className="banner-text text-lg sm:text-xl text-gray-300 max-w-lg font-medium mb-8 ">
+                        <p className="banner-text text-base sm:text-xl text-gray-300 max-w-lg font-medium mb-8">
                             <AnimatedWord text="We design, develop, and deliver creative solutions for growing brands." isGradient={false} />
                         </p>
 
@@ -218,12 +218,12 @@ export default function ServiceHero() {
                     </div>
 
                     {/* Right Content - 3D Card Stack */}
-                    <div className="w-full lg:w-[45%] relative z-20 flex justify-center  mt-12 lg:mt-0">
-                        <div className="hero-video-box relative w-full max-w-[380px]">
+                    <div className="w-full lg:w-[45%] relative z-20 flex justify-center ">
+                        <div className="hero-video-box relative w-full max-w-[320px] sm:max-w-[380px]">
                             {/* Background Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[linear-gradient(#44c7f6,#0037f0)] opacity-20 blur-[80px] -z-20 rounded-full pointer-events-none"></div>
                             {/* Card Stack Container */}
-                            <div className="relative w-full aspect-[4/4.5] perspective-[1000px]">
+                            <div className="relative w-full aspect-[4/5] sm:aspect-[4/4.5] perspective-[1000px]">
                                 {cards.map((card, idx) => {
                                     const offset = (idx - activeIndex + cards.length) % cards.length;
 
@@ -270,7 +270,7 @@ export default function ServiceHero() {
 
                                                 {/* Big Title Area */}
                                                 <div className="relative z-10 flex flex-col items-center">
-                                                    <h3 className={`text-3xl sm:text-4xl font-black tracking-tighter bg-gradient-to-r ${card.gradient} text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]`}>
+                                                    <h3 className={`text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter bg-gradient-to-r ${card.gradient} text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]`}>
                                                         {card.title}
                                                     </h3>
                                                 </div>
@@ -287,7 +287,7 @@ export default function ServiceHero() {
                                                     </div>
                                                 </div>
 
-                                                <p className="text-gray-400 text-sm leading-relaxed">
+                                                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
                                                     {card.desc}
                                                 </p>
                                             </div>

@@ -37,41 +37,75 @@ export default function CoreValues() {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        let ctx = gsap.context(() => {
+        let mm = gsap.matchMedia();
+
+        // Desktop Animation (3D Grid Tilt)
+        mm.add("(min-width: 1024px)", () => {
             cardsRef.current.forEach((card, idx) => {
                 if (!card) return;
+                const position = idx % 3 === 0 ? "left" : idx % 3 === 1 ? "center" : "right";
 
-                // The initial states are set via inline styles, but GSAP takes over here
-                // We animate them to scale 1 and rotateY 0
-                gsap.to(card, {
-                    rotateY: 0,
-                    scale: 1,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: sectionRef.current,
-                        start: "top bottom", // Starts animating exactly when the section enters the bottom of the screen
-                        end: "center center", // Reaches 0 exactly at center
-                        scrub: 1, // Ties animation smoothly to scrollbar
+                // Set initial perspective on the parent wrapper if needed, or directly on element via GSAP
+                gsap.set(card, { transformPerspective: 1400 });
+
+                gsap.fromTo(card,
+                    {
+                        rotationY: position === "left" ? 30 : position === "right" ? -30 : 0,
+                        scale: 0.8
+                    },
+                    {
+                        rotationY: 0,
+                        scale: 1,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: sectionRef.current,
+                            start: "top bottom",
+                            end: "center center",
+                            scrub: 1,
+                        }
                     }
-                });
+                );
             });
-        }, sectionRef);
+        });
 
-        return () => ctx.revert();
+        // Mobile & Tablet Animation (Slide Up Fade)
+        mm.add("(max-width: 1023px)", () => {
+            cardsRef.current.forEach((card) => {
+                if (!card) return;
+
+                gsap.fromTo(card,
+                    { scale: 0.9, opacity: 0.2, y: 50 },
+                    {
+                        scale: 1,
+                        opacity: 1,
+                        y: 0,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: card,
+                            start: "top 95%",
+                            end: "top 70%",
+                            scrub: 1,
+                        }
+                    }
+                );
+            });
+        });
+
+        return () => mm.revert();
     }, []);
 
     return (
-        <section ref={sectionRef} className="container bg-[#0c0c0c] text-white py-20 px-6 md:px-12 relative overflow-hidden">
-            <div className="flex flex-col items-center relative z-10">
+        <section ref={sectionRef} className="w-full bg-[#0c0c0c] text-white py-10 lg:py-20 relative overflow-hidden">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center relative z-10">
 
                 {/* Header */}
-                <div className="flex flex-col items-center mb-16 text-center">
+                <div className="flex flex-col items-center mb-8 lg:mb-16 text-center">
 
                     <div className="mb-5">
                         <Badge variant="white">Core values</Badge>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl lg:text-[36px] font-bold tracking-tight">
+                    <h2 className="text-[28px] lg:text-[36px] font-bold tracking-tight">
                         What Are Our Core Values
                     </h2>
                 </div>
@@ -90,18 +124,12 @@ export default function CoreValues() {
                             <div
                                 key={idx}
                                 ref={(el) => (cardsRef.current[idx] = el)}
-                                className="group relative border border-white/10 rounded-2xl md:p-6 overflow-hidden transition-colors transition-shadow duration-500 hover:border-white/20 hover:shadow-[0_20px_40px_-15px_rgba(255,255,255,0.05)] cursor-pointer will-change-transform"
+                                className="group relative border border-white/10 rounded-2xl p-6 sm:p-8 overflow-hidden transition-colors transition-shadow duration-500 hover:border-white/20 hover:shadow-[0_20px_40px_-15px_rgba(255,255,255,0.05)] cursor-pointer will-change-transform"
                                 style={{
                                     backgroundImage: `url('/about/card-bg.png')`,
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
-                                    transformStyle: "preserve-3d",
-                                    transform:
-                                        position === "left"
-                                            ? "perspective(1400px) rotateY(30deg) scale(0.8)"
-                                            : position === "right"
-                                                ? "perspective(1400px) rotateY(-30deg) scale(0.8)"
-                                                : "perspective(1400px) rotateY(0deg) scale(0.8)",
+                                    transformStyle: "preserve-3d"
                                 }}
                             >
                                 {/* Overlay */}

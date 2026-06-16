@@ -103,7 +103,7 @@ export default function PortfolioHero() {
     }, []);
 
     return (
-        <section className="relative h-[calc(100dvh-100px)] flex items-center bg-[#0a0a0a] overflow-hidden py-24" ref={heroRef}>
+        <section className="relative min-h-[calc(100dvh-100px)] flex items-center bg-[#0a0a0a] overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-24" ref={heroRef}>
             {/* Dotted Grid SVG Background */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-60 ">
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -126,17 +126,17 @@ export default function PortfolioHero() {
                 </svg>
             </div>
 
-            <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative z-10">
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-8">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-7xl relative z-10 mt-8 lg:mt-0">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8">
 
                     {/* Left Content */}
-                    <div className="w-full lg:w-[55%] flex flex-col items-start relative z-20">
+                    <div className="w-full lg:w-[55%] flex flex-col items-center sm:items-start text-center sm:text-left relative z-20">
 
                         <div className='mb-5'>
                             <Badge variant='white'>Portfolio</Badge>
                         </div>
 
-                        <h1 className="banner-title text-5xl sm:text-6xl lg:text-[60px] font-bold text-white leading-[1.1] tracking-tight mb-8">
+                        <h1 className="banner-title text-[24px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 lg:mb-8">
                             <AnimatedWord text="Check " isGradient={false} />
                             <AnimatedWord text="Out " isGradient={false} />
                             <AnimatedWord text="Our " isGradient={false} />
@@ -147,7 +147,7 @@ export default function PortfolioHero() {
                             <AnimatedWord text="Works" isGradient={false} />
                         </h1>
 
-                        <p className="banner-text text-lg sm:text-xl text-gray-300 max-w-lg font-medium mb-8">
+                        <p className="banner-text text-gray-400 text-xs sm:text-sm leading-relaxed max-w-lg font-medium mb-8">
                             <AnimatedWord text="We specialize in innovative design and development solutions, tailored for impactful brand growth." isGradient={false} />
                         </p>
 
@@ -184,17 +184,7 @@ export default function PortfolioHero() {
 
                                     {/* Screen Content */}
                                     <div className="relative w-full h-full bg-[#121212] overflow-hidden">
-                                        {/* Browser Header / Navigation Bar Mockup */}
-                                        <div className="absolute top-0 left-0 w-full h-6 sm:h-8 bg-[#1a1a1a] flex items-center px-3 sm:px-4 gap-1.5 sm:gap-2 z-40 border-b border-white/5">
-                                            <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#ff5f56]"></div>
-                                            <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#ffbd2e]"></div>
-                                            <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#27c93f]"></div>
-                                            {/* URL Bar */}
-                                            <div className="hidden sm:block ml-4 flex-1 max-w-xs h-4 sm:h-5 bg-[#2a2a2a] rounded text-[8px] text-white/30 px-2 flex items-center">
-                                                kretoss.com/portfolio
-                                            </div>
-                                        </div>
-                                        <div className="relative w-full h-full mt-6 sm:mt-8">
+                                        <div className="relative w-full h-full">
                                             {cards.map((card, idx) => {
                                                 const isActive = idx === activeIndex;
                                                 return (

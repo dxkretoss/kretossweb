@@ -14,7 +14,7 @@ const PortfolioCard = ({ item }) => {
         // Auto-detect color for all images, ignoring any hardcoded JSON colors
         if (imgRef.current) {
             const fac = new FastAverageColor();
-            
+
             const extractColor = async () => {
                 try {
                     const color = await fac.getColorAsync(imgRef.current);
@@ -29,7 +29,7 @@ const PortfolioCard = ({ item }) => {
                     console.log('Failed to extract color:', e);
                 }
             };
-            
+
             if (imgRef.current.complete) {
                 extractColor();
             } else {
@@ -40,8 +40,8 @@ const PortfolioCard = ({ item }) => {
     }, [item.portfolioImage]);
 
     return (
-        <div className="border-1 border-[#C3C3C3] p-4 w-full rounded-[15px] overflow-hidden">
-            <div className="flex flex-col lg:flex-row gap-3 rounded-[10px] p-3 transition-colors duration-500" style={{ background: bgColor }}>
+        <div className="border-1 border-[#C3C3C3] p-2 sm:p-4 w-full rounded-[15px] overflow-hidden">
+            <div className="flex flex-col lg:flex-row gap-3 rounded-[10px] p-2 sm:p-3 transition-colors duration-500" style={{ background: bgColor }}>
 
                 {/* Left Side - Image Panel */}
                 <div
@@ -57,7 +57,7 @@ const PortfolioCard = ({ item }) => {
 
                 {/* Right Side - Content Panel */}
                 <div
-                    className="w-full lg:w-[40%] rounded-[5px] p-8 flex flex-col justify-between self-stretch relative overflow-hidden transition-colors duration-500"
+                    className="w-full lg:w-[40%] rounded-[5px] p-6 sm:p-8 flex flex-col justify-between self-stretch relative overflow-hidden transition-colors duration-500"
                     style={{
                         background: `
                             repeating-linear-gradient(
@@ -82,10 +82,10 @@ const PortfolioCard = ({ item }) => {
                         </div>
 
                         {/* Title & Description */}
-                        <h3 className="text-[24px] md:text-[32px] font-bold text-white mb-4 leading-tight">
+                        <h3 className="text-2xl sm:text-[32px] font-bold text-white mb-3 sm:mb-4 leading-tight">
                             {item.title}
                         </h3>
-                        <p className="text-[#DADADA] text-[14px] md:text-[19px] mb-8 leading-relaxed">
+                        <p className="text-[#DADADA] text-sm sm:text-base md:text-[19px] mb-6 sm:mb-8 leading-relaxed">
                             {item.description}
                         </p>
                     </div>
@@ -156,14 +156,14 @@ export default function Portfolios() {
     const sectionRef = useRef(null);
 
     const scrollToTop = () => {
-        // Use a slightly longer timeout to ensure React and image loading 
-        // have stabilized the DOM before triggering the native smooth scroll.
         setTimeout(() => {
             const anchor = document.getElementById('portfolio-scroll-anchor');
             if (anchor) {
-                anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const yOffset = -100; // Account for any fixed headers
+                const y = anchor.getBoundingClientRect().top + window.scrollY + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
             }
-        }, 300);
+        }, 100);
     };
 
     const categories = [
@@ -182,11 +182,11 @@ export default function Portfolios() {
     const currentItems = currentPortfolios.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
     return (
-        <section ref={sectionRef} className="py-20 bg-[#0a0a0a] relative">
+        <section ref={sectionRef} className="py-10 lg:py-20 bg-[#0a0a0a] relative">
             {/* Stable anchor for smooth scrolling */}
-            <div id="portfolio-scroll-anchor" className="absolute top-[-80px] left-0 w-full" />
-            
-            <div className="container mx-auto px-6 lg:px-12 max-w-[1400px]">
+            <div id="portfolio-scroll-anchor" className="absolute top-0 left-0 w-full" />
+
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-[1400px]">
                 <div className="flex flex-col items-center mb-8">
 
 
@@ -194,12 +194,12 @@ export default function Portfolios() {
                         <Badge variant='white'>Categories</Badge>
                     </div>
 
-                    <h2 className="text-4xl md:text-[36px] font-bold text-white text-center">
+                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold text-white text-center">
                         Our Expertise
                     </h2>
                 </div>
 
-                <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-16">
+                <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 mb-10 sm:mb-16">
                     {categories.map((category, index) => {
                         const isActive = category === activeCategory;
                         const handleCategoryClick = (e) => {
