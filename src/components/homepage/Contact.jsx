@@ -203,8 +203,12 @@ export default function Contact() {
                                             <div className="contact-group">
                                                 <div className="single-contact-group">
                                                     <label htmlFor="Services-1" className="contact-label">Services required*</label>
-                                                    <input className="contact-input w-input" maxLength="256" name="Services"
-                                                        data-name="Services" placeholder="Select Your Service" type="text" id="Services-1" />
+                                                    <select id="Services-1" name="Services" data-name="Services" className="contact-input input-dropdown w-select" defaultValue="">
+                                                        <option value="" disabled>Select Your Service</option>
+                                                        <option value="UI/UX Design" className="bg-[#0f0f0f] text-white">UI/UX Design</option>
+                                                        <option value="Web Development" className="bg-[#0f0f0f] text-white">Web Development</option>
+                                                        <option value="App Development" className="bg-[#0f0f0f] text-white">App Development</option>
+                                                    </select>
                                                 </div>
                                                 <div className="single-contact-group">
                                                     <label htmlFor="field-2" className="contact-label">Project budget*</label>
@@ -271,30 +275,7 @@ export default function Contact() {
 
                             <div className="contact-author-review">
                                 <div className="contact-auhtor-box">
-                                    {/* <div className="contact-review-area">
-                                        <div style={{ "opacity": "0" }} className="hero-icon-rating _02">
-                                            <div className="hero-icon-box">
-                                                <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887f8_Frame%202147227821.svg"
-                                                    loading="lazy" alt="Hero Icon" className="hero-left-meta-icon _01 icon" />
-                                                <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887f9_Frame%202147227822.svg"
-                                                    loading="lazy" alt="Hero Icon" className="hero-left-meta-logo _02 icon" />
-                                            </div>
-                                            <div className="hero-rating-text">
-                                                <div className="hero-rating-text contact-rating">4.8</div>
-                                                <div className="hero-star-wrapper">
-                                                    {Array.from({ length: 5 }).map((_, starIdx) => (
-                                                        <img
-                                                            key={starIdx}
-                                                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69acfb7509f4926e7df68a47_Vector.svg"
-                                                            loading="lazy" alt="Review Star" className={`single-review-star _0${starIdx + 1}`}
-                                                            style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d" }}
-                                                        />
-                                                    ))}
-                                                    <div className="trust-score _02">Trust Score</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
+
                                     <div className="author-image-box">
                                         <img src="/grouppics/ankursir.png"
                                             loading="lazy" alt="Author Image" className="author-image" />

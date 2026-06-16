@@ -1,27 +1,33 @@
 import React, { useLayoutEffect, useRef } from 'react';
-import gsap from 'gsap';
+import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
 import Badge from '../ui/Badge';
 
-const CounterBox = ({ columns, suffix, label, hasLeftLine, rightOneClass = '' }) => {
+const CounterBox = ({ columns, suffix, label, hasLine, rightOneClass = '' }) => {
     return (
-        <div className="relative flex flex-col items-start gap-2">
-            <div className="flex items-center text-3xl md:text-4xl font-bold text-black">
-                <div className="h-[40px] overflow-hidden flex relative">
-                    {columns.map((col, colIdx) => (
-                        <div key={colIdx} className={`counter-digit-column flex flex-col ${col.direction === 'up' ? 'scroll-up' : 'scroll-down'}`}>
-                            {col.digits.map((d, i) => (
-                                <div key={i} className={`h-[40px] flex items-center justify-center ${colIdx === 1 ? rightOneClass : ''}`}>{d}</div>
-                            ))}
-                        </div>
-                    ))}
+        <div className="counter-single-box ">
+            <div className="counter-number-box">
+                <div className="counter-title-box" style={{ display: "flex", alignItems: "center" }}>
+                    <div className="counter-block" style={{ height: "47.5px", overflow: "hidden", display: "flex", position: "relative" }}>
+                        {columns.map((col, colIdx) => (
+                            <div key={colIdx} className={`counter-digit-column ${col.direction === 'up' ? 'scroll-up' : 'scroll-down'}`} style={{ display: "flex", flexDirection: "column" }}>
+                                {col.digits.map((d, i) => (
+                                    <div key={i} className={`counter-box-title ${colIdx === 1 ? rightOneClass : ''}`} style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", justifyContent: "center" }}>{d}</div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                    <h2 className="counter-box-title" style={{ height: "47.5px", lineHeight: "47.5px", display: "flex", alignItems: "center", marginLeft: "2px" }}>{suffix}</h2>
                 </div>
-                <div className="h-[40px] flex items-center ml-1">{suffix}</div>
+                <div className="counter-subtitle-text counter-number" style={{ fontSize: "14px", lineHeight: "1.2", marginTop: "4px" }}>
+                    <div className="counter-text">{label}</div>
+                </div>
             </div>
-            <div className="text-sm text-gray-600 font-medium tracking-wide text-left">{label}</div>
-            {hasLeftLine && (
-                <div className="hidden md:block absolute -left-6 top-1/2 -translate-y-1/2 h-10 w-[1px] bg-black/10"></div>
+            {hasLine && (
+                <div className="counter-bar !absolute !right-0 !top-1/2 !-translate-y-1/2">
+                    <img src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69ad58d10421ab7969cf6518_Line%20928.png" loading="lazy" alt="img" className="h-[60px] opacity-30" />
+                </div>
             )}
         </div>
     );
@@ -33,39 +39,41 @@ export default function BuildWithUs() {
     const statisticsCounters = [
         {
             columns: [
-                { digits: ["9", "8", "7", "6", "5", "4", "3", "2", "1"], direction: "down" },
-                { digits: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"], direction: "up" },
-                { digits: ["9", "8", "7", "6", "5", "4", "3", "2", "0"], direction: "down" }
+                { digits: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"], direction: "down" },
+                { digits: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"], direction: "up" },
+                { digits: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"], direction: "down" }
             ],
             suffix: "+",
             label: "Countries Served",
-            hasLeftLine: false
+            hasLine: true
         },
         {
             columns: [
-                { digits: ["1", "2", "3", "4", "5", "6", "7", "8", "9"], direction: "down" },
-                { digits: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "5"], direction: "up" }
+                { digits: ["9", "8", "7", "6", "5", "4", "3", "2", "1"], direction: "down" },
+                { digits: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "5"], direction: "up" }
             ],
             suffix: "%",
             label: "Our Transformative",
-            hasLeftLine: true
+            hasLine: true
         },
         {
             columns: [
-                { digits: ["9", "8", "7", "6", "5", "4", "3", "2", "3"], direction: "down" },
-                { digits: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"], direction: "up" }
+                { digits: ["3", "2", "1", "0"], direction: "down" },
+                { digits: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"], direction: "up" }
             ],
             suffix: "+",
             label: "Award Winning",
-            hasLeftLine: true
+            hasLine: true
         },
         {
             columns: [
-                { digits: ["9", "8", "7", "6", "5", "4", "3", "2", "2"], direction: "down" }
+                { digits: ["0", "1", "2"], direction: "up" },
+                { digits: ["", "", ""], direction: "up" }
             ],
-            suffix: "k +",
+            suffix: "k+",
             label: "Projects Delivered",
-            hasLeftLine: true
+            hasLine: false,
+            rightOneClass: "one"
         }
     ];
 
@@ -77,139 +85,149 @@ export default function BuildWithUs() {
     ];
 
     useLayoutEffect(() => {
+        let ctx;
         gsap.registerPlugin(ScrollTrigger);
-        let ctx = gsap.context(() => {
-            gsap.from(".fade-up-element", {
-                opacity: 0,
-                y: 50,
-                duration: 1,
-                stagger: 0.2,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: sectionRef.current,
-                    start: "top 80%",
-                    toggleActions: "play none none reverse"
-                }
-            });
 
-            // Counter animations
-            gsap.set(".build-counter-container", { opacity: 0 });
-
-            const counterDigitColumns = sectionRef.current?.querySelectorAll(".counter-digit-column");
-            if (counterDigitColumns) {
-                counterDigitColumns.forEach((colBox, idx) => {
-                    const direction = colBox.classList.contains("scroll-up") ? -1 : 1;
-                    const childrenCount = colBox.children.length;
-                    const digitHeight = 40; // Must match h-[40px] in Tailwind
-
-                    if (direction === -1) {
-                        gsap.set(colBox, { y: 0 });
-                        gsap.to(colBox, {
-                            y: -1 * digitHeight * (childrenCount - 1),
-                            duration: 1.8 + idx * 0.15,
-                            ease: "power3.out",
-                            scrollTrigger: {
-                                trigger: ".build-counter-container",
-                                start: "top 85%",
-                                toggleActions: "play none none reverse"
-                            }
-                        });
-                    } else {
-                        gsap.set(colBox, { y: -1 * digitHeight * (childrenCount - 1) });
-                        gsap.to(colBox, {
-                            y: 0,
-                            duration: 1.8 + idx * 0.15,
-                            ease: "power3.out",
-                            scrollTrigger: {
-                                trigger: ".build-counter-container",
-                                start: "top 85%",
-                                toggleActions: "play none none reverse"
-                            }
-                        });
-                    }
-                });
-            }
-
-            gsap.to(".build-counter-container", {
-                opacity: 1,
-                duration: 1.2,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: ".build-counter-container",
-                    start: "top 85%",
-                    toggleActions: "play none none reverse"
-                }
-            });
-
+        ctx = gsap.context(() => {
+            gsap.set(".about-subtitle-box", { opacity: 0, y: 100 });
+            gsap.set(".about-subtitle-box .subtitle-image-icon", { rotate: 0, scale: 0 });
+            gsap.set(".about-section-title", { opacity: 0, y: 100 });
+            gsap.set(".about-text", { opacity: 0, y: 100 });
+            gsap.set(".about-button", { opacity: 0, y: 100 });
+            gsap.set(".about-image", { opacity: 0, scale: 0.8 });
+            gsap.set(".about-counter", { opacity: 0 });
+            gsap.set(".build-list-items", { opacity: 0, y: 100 });
         }, sectionRef);
 
-        return () => ctx.revert();
+        const timer = setTimeout(() => {
+            ctx.add(() => {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: ".about-content-wrapper",
+                        start: "top 85%",
+                        toggleActions: "play none none reverse"
+                    }
+                });
+
+                tl.fromTo(".about-slider", { scaleX: 0 }, { scaleX: 1, transformOrigin: "left center", duration: 1, ease: "power4.out" });
+                tl.fromTo(".about-subtitle-box", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1, ease: "power4.out" }, "0.2");
+                tl.fromTo(".subtitle-image-icon", { rotate: 0, scale: 0 }, { rotate: 116.964, scale: 1, duration: 1, ease: "power4.out" }, "0.2");
+                tl.fromTo(".about-section-title", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1, ease: "power4.out" }, "0.4");
+                tl.fromTo(".about-text", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1, ease: "power4.out" }, "0.6");
+                tl.fromTo(".build-list-items", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1, ease: "power4.out" }, "0.65");
+                tl.fromTo(".about-button", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1, ease: "power4.out" }, "0.7");
+                tl.fromTo(".about-counter", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1, ease: "power4.out" }, "0.8");
+
+                const counterDigitColumns = sectionRef.current?.querySelectorAll(".counter-digit-column");
+                if (counterDigitColumns) {
+                    tl.addLabel("counterStart", "0.8");
+                    counterDigitColumns.forEach((colBox, idx) => {
+                        const isUp = colBox.classList.contains("scroll-up");
+                        const translateDist = -(colBox.children.length - 1) * 47.5;
+                        const duration = 2.5 + (idx % 3) * 0.5;
+
+                        if (isUp) {
+                            tl.fromTo(colBox, { y: 0 }, { y: translateDist, duration: duration, ease: "expo.out" }, "counterStart");
+                        } else {
+                            tl.fromTo(colBox, { y: translateDist }, { y: 0, duration: duration, ease: "expo.out" }, "counterStart");
+                        }
+                    });
+                }
+
+                tl.fromTo(".about-image", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 1, ease: "power4.out" }, "0.4");
+
+                const button = sectionRef.current?.querySelector(".primary-button");
+                if (button) {
+                    const frontLetters = button.querySelectorAll(".button-front-text .gsap_split_letter");
+                    const backLetters = button.querySelectorAll(".button-back-text .gsap_split_letter");
+                    const frontArrow = button.querySelector(".button-front-arrow");
+                    const backArrow = button.querySelector(".button-back-arrow");
+
+                    gsap.set(backLetters, { yPercent: 100 });
+
+                    button.addEventListener("mouseenter", () => {
+                        gsap.killTweensOf([frontLetters, backLetters, frontArrow, backArrow]);
+                        gsap.to(frontLetters, { yPercent: -100, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                        gsap.to(backLetters, { yPercent: 0, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                        gsap.to(frontArrow, { x: 13, y: -14, duration: 0.4, ease: "power2.out" });
+                        gsap.to(backArrow, { x: 13, y: -14, duration: 0.4, ease: "power2.out" });
+                    });
+
+                    button.addEventListener("mouseleave", () => {
+                        gsap.killTweensOf([frontLetters, backLetters, frontArrow, backArrow]);
+                        gsap.to(frontLetters, { yPercent: 0, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                        gsap.to(backLetters, { yPercent: 100, duration: 0.4, stagger: 0.02, ease: "power2.out" });
+                        gsap.to(frontArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
+                        gsap.to(backArrow, { x: 0, y: 0, duration: 0.4, ease: "power2.out" });
+                    });
+                }
+            });
+        }, 100);
+
+        return () => {
+            clearTimeout(timer);
+            if (ctx) ctx.revert();
+        };
     }, []);
 
     return (
-        <section ref={sectionRef} className="py-24 bg-[#fafcff] relative overflow-hidden text-black">
-            {/* Ambient Gradients - Blue Shades */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#44c7f6]/10 via-[#0037f0]/5 to-transparent pointer-events-none"></div>
-            <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-[#0037f0]/10 via-[#44c7f6]/5 to-transparent pointer-events-none"></div>
-
-            <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative z-10">
-                <div className="flex flex-col lg:flex-row gap-16 lg:gap-20">
-
-                    {/* Left Column */}
-                    <div className="w-full lg:w-5/12 flex flex-col gap-8 fade-up-element">
-                        {/* Badge */}
-
-                        <div className='mb-5 flex justify-start'>
-                            <Badge variant="blue">Build with us!</Badge>
+        <section ref={sectionRef} className="about">
+            <div className="w-layout-blockcontainer container w-container">
+                <div className="about-content-wrapper">
+                    <div className="about-left-box">
+                        <div className="about-slider" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
+                            <div className="about-slider-two"></div>
                         </div>
-
-                        {/* Image */}
-                        <div className="w-full aspect-[4/5] overflow-hidden rounded-xl shadow-2xl relative">
-                            <img
-                                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                alt="Team walking in office"
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
-                            />
-                        </div>
+                        <Badge variant='blue'>Build with us!</Badge>
                     </div>
+                    <div className="about-right-box">
+                        <div className="about-title-button" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'stretch' }}>
+                            <div className="about-block" style={{ flex: 1, minWidth: '300px' }}>
+                                <div className="about-title-text" style={{ marginBottom: '20px' }}>
+                                    <div className="about-slider _02" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
+                                        <div className="about-slider-two _02"></div>
+                                    </div>
+                                    <h2 className="about-section-title">
+                                        Be part of something extraordinary
+                                    </h2>
+                                </div>
+                                <div className="about-text">
+                                    Joining our team means being part of a dynamic group of professionals dedicated to shaping the future with innovative tech.
+                                </div>
 
-                    {/* Right Column */}
-                    <div className="w-full lg:w-7/12 flex flex-col justify-center gap-8 fade-up-element">
-                        <h2 className="text-4xl md:text-5xl font-bold text-[#222] tracking-tight leading-tight">
-                            Be part of something extraordinary
-                        </h2>
+                                <ul className="build-list-items flex flex-col gap-3 mb-6">
+                                    {listItems.map((item, idx) => (
+                                        <li key={idx} className="flex items-center gap-3 text-[#111] font-medium text-[15px]">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-[#0e54f1] shrink-0">
+                                                <path d="M12 2L14.09 8.26L20 9.27L15 13.14L16.18 19.02L12 15.77L7.82 19.02L9 13.14L4 9.27L9.91 8.26L12 2Z" fill="currentColor" />
+                                            </svg>
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
 
-                        <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
-                            Joining our team means being part of a dynamic group of professionals dedicated to shaping the future.
-                        </p>
-
-                        <ul className="flex flex-col gap-4">
-                            {listItems.map((item, idx) => (
-                                <li key={idx} className="flex items-center gap-3 text-gray-800 font-medium">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-black shrink-0">
-                                        <path d="M12 2L14.09 8.26L20 9.27L15 13.14L16.18 19.02L12 15.77L7.82 19.02L9 13.14L4 9.27L9.91 8.26L12 2Z" fill="currentColor" />
-                                    </svg>
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-
-                        <div className="mt-4">
-                            <AnimatedButton href="/about" text="More About Us" className="!w-auto" />
-                        </div>
-
-                        {/* Numbers Section */}
-                        <div className="mt-12 pt-8 border-t border-black/10 w-full">
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-6 build-counter-container pl-6">
-                                {statisticsCounters.map((counter, idx) => (
-                                    <CounterBox
-                                        key={idx}
-                                        columns={counter.columns}
-                                        suffix={counter.suffix}
-                                        label={counter.label}
-                                        hasLeftLine={counter.hasLeftLine}
-                                    />
-                                ))}
+                                <div className="about-button">
+                                    <AnimatedButton href="/career" text="MORE ABOUT US" ></AnimatedButton>
+                                </div>
+                                <div className="about-counter">
+                                    {statisticsCounters.map((counter, idx) => (
+                                        <CounterBox
+                                            key={idx}
+                                            columns={counter.columns}
+                                            suffix={counter.suffix}
+                                            label={counter.label}
+                                            hasLine={counter.hasLine}
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="about-block-right">
+                                <img
+                                    src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="Team walking in office"
+                                    className="about-image"
+                                    style={{ width: '100%', height: '100%', minHeight: '480px', objectFit: 'cover', borderRadius: '16px' }}
+                                />
                             </div>
                         </div>
                     </div>

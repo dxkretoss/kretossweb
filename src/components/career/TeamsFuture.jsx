@@ -85,7 +85,7 @@ export default function TeamsFuture() {
                     </div>
 
                     {/* Heading */}
-                    <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold text-white tracking-tight">
+                    <h2 className="text-4xl md:text-5xl lg:text-[36px] font-bold text-white tracking-tight">
                         What drives our <span className="bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text">employee experience</span>
                     </h2>
                 </div>
@@ -95,26 +95,28 @@ export default function TeamsFuture() {
                     {features.map((feature, idx) => (
                         <div key={idx} className="feature-card">
                             <div
-                                className="group relative p-8 md:p-10 rounded-2xl border border-white/5 bg-[#111] hover:bg-[#161616] hover:-translate-y-2 hover:shadow-[0_10px_40px_-15px_rgba(0,55,240,0.3)] transition-all duration-500 overflow-hidden h-full"
+                                className="relative p-8 md:p-10 rounded-[24px] border border-white/[0.08] bg-[#121212] overflow-hidden h-full flex flex-col z-10 transition-transform duration-300 hover:-translate-y-1"
                             >
-                                {/* Hover glow effect behind the card */}
-                                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                                    <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#44c7f6] rounded-full blur-[80px] opacity-20"></div>
-                                    <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-[#0037f0] rounded-full blur-[80px] opacity-20"></div>
-                                </div>
+                                {/* Subtle gradient overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-b from-[#0e54f1]/5 to-transparent pointer-events-none"></div>
 
-                                {/* Icon */}
-                                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-white/10 to-white/5 flex items-center justify-center text-white mb-8 border border-white/10 shadow-inner group-hover:scale-110 group-hover:text-[#44c7f6] transition-all duration-500 relative z-10">
+                                {/* Top glowing line */}
+                                <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#0e54f1] to-transparent pointer-events-none"></div>
+
+                                {/* Icon Container */}
+                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-b from-[#44c7f6] to-[#0037f0] flex items-center justify-center text-white mb-8 relative z-20 shadow-[0_8px_25px_-5px_rgba(0,55,240,0.5)] border border-white/10">
                                     {feature.icon}
                                 </div>
 
                                 {/* Content */}
-                                <h3 className="text-xl md:text-2xl font-bold text-white mb-4 relative z-10 group-hover:text-[#44c7f6] transition-colors duration-500">
+                                <h3 className="text-xl md:text-2xl font-semibold text-white mb-4 relative z-20">
                                     {feature.title}
                                 </h3>
-                                <p className="text-[#DADADA] text-sm md:text-base leading-relaxed relative z-10">
+                                <p className="text-[#888888] text-[15px] md:text-base leading-relaxed relative z-20 font-medium">
                                     {feature.description}
                                 </p>
+
+
                             </div>
                         </div>
                     ))}

@@ -195,7 +195,7 @@ export default function ServiceHero() {
                             <AnimatedWord text="Services" isGradient={true} />
                         </h1>
 
-                        <p className="banner-text text-lg sm:text-xl text-gray-300 max-w-lg font-medium mb-8">
+                        <p className="banner-text text-lg sm:text-xl text-gray-300 max-w-lg font-medium mb-8 ">
                             <AnimatedWord text="We design, develop, and deliver creative solutions for growing brands." isGradient={false} />
                         </p>
 

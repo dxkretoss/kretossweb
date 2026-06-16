@@ -7,8 +7,18 @@ export default function JobDetailsPage() {
     const { slug } = useParams();
     const job = jobsData.find(j => j.slug === slug);
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
+    React.useLayoutEffect(() => {
+        const scrollToTop = () => {
+            if (window.lenis) {
+                window.lenis.scrollTo(0, { immediate: true });
+            }
+            window.scrollTo(0, 0);
+        };
+
+        scrollToTop();
+        const timeoutId = setTimeout(scrollToTop, 50);
+
+        return () => clearTimeout(timeoutId);
     }, [slug]);
 
     if (!job) {
@@ -112,8 +122,8 @@ export default function JobDetailsPage() {
                             <ul className="flex flex-col gap-4">
                                 {job.responsibilities.map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-3 text-gray-600 leading-relaxed">
-                                        <div className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-0.5">
-                                            <div className="w-2 h-2 rounded-full bg-[#ff6b35]"></div>
+                                        <div className="w-5 h-5 rounded-full bg-[#44c7f6]/15 flex items-center justify-center shrink-0 mt-0.5">
+                                            <div className="w-2 h-2 rounded-full bg-gradient-to-b from-[#44c7f6] to-[#0037f0]"></div>
                                         </div>
                                         <span>{item}</span>
                                     </li>
@@ -129,8 +139,8 @@ export default function JobDetailsPage() {
                             <ul className="flex flex-col gap-4">
                                 {job.requirements.map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-3 text-gray-600 leading-relaxed">
-                                        <div className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-0.5">
-                                            <div className="w-2 h-2 rounded-full bg-[#ff6b35]"></div>
+                                        <div className="w-5 h-5 rounded-full bg-[#44c7f6]/15 flex items-center justify-center shrink-0 mt-0.5">
+                                            <div className="w-2 h-2 rounded-full bg-gradient-to-b from-[#44c7f6] to-[#0037f0]"></div>
                                         </div>
                                         <span>{item}</span>
                                     </li>
@@ -147,8 +157,8 @@ export default function JobDetailsPage() {
                                 <ul className="flex flex-col gap-4">
                                     {job.niceToHave.map((item, idx) => (
                                         <li key={idx} className="flex items-start gap-3 text-gray-600 leading-relaxed">
-                                            <div className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-0.5">
-                                                <div className="w-2 h-2 rounded-full bg-[#ff6b35]"></div>
+                                            <div className="w-5 h-5 rounded-full bg-[#44c7f6]/15 flex items-center justify-center shrink-0 mt-0.5">
+                                                <div className="w-2 h-2 rounded-full bg-gradient-to-b from-[#44c7f6] to-[#0037f0]"></div>
                                             </div>
                                             <span>{item}</span>
                                         </li>

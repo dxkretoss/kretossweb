@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-router-dom';
 import { jobsData } from '../../data/jobs';
 import Badge from '../ui/Badge';
+import AnimatedButton from '../ui/AnimatedButton';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,7 +50,7 @@ export default function JobOpenings() {
                         <Badge>We're Hiring</Badge>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold text-[#111] tracking-tight">
+                    <h2 className="text-4xl md:text-5xl lg:text-[36px] font-bold text-[#111] tracking-tight">
                         Open Job Positions
                     </h2>
                 </div>
@@ -78,10 +79,12 @@ export default function JobOpenings() {
 
                                 {/* Badges */}
                                 <div className="flex flex-wrap gap-3 mb-6">
-                                    <span className="px-4 py-1.5 rounded-full border border-gray-200 text-sm font-medium text-gray-600 bg-gray-50">
+                                    <span className="flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-gray-200 text-sm font-medium text-gray-600 bg-gray-50">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                                         {job.location}
                                     </span>
-                                    <span className="px-4 py-1.5 rounded-full border border-gray-200 text-sm font-medium text-gray-600 bg-gray-50">
+                                    <span className="flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-gray-200 text-sm font-medium text-gray-600 bg-gray-50">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                                         {job.type}
                                     </span>
                                 </div>
@@ -92,14 +95,12 @@ export default function JobOpenings() {
                                 </p>
 
                                 {/* Action Button */}
-                                <div>
-                                    <Link to={`/careers/${job.slug}`} className="inline-flex items-center gap-2 px-6 py-3 border border-[#111] text-[#111] hover:bg-[#111] hover:text-white transition-all duration-300 rounded-md font-medium text-sm tracking-wide uppercase">
-                                        Apply Now
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transform -rotate-45">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </Link>
+                                <div className="mt-4">
+                                    <AnimatedButton
+                                        href={`/careers/${job.slug}`}
+                                        text="APPLY NOW"
+                                        className="!w-auto"
+                                    />
                                 </div>
                             </div>
 

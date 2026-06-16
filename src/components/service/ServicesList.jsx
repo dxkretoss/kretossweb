@@ -3,88 +3,105 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
 import Badge from '../ui/Badge';
+import { 
+    FaReact, FaAngular, FaVuejs, FaNodeJs, FaPython, 
+    FaLaravel, FaJava, FaSwift, FaApple, FaAws, 
+    FaDigitalOcean, FaWordpress, FaShopify, FaMagento, 
+    FaDrupal, FaJs, FaChartBar, FaChartLine, FaMicrosoft, FaDatabase
+} from 'react-icons/fa';
+import { 
+    SiNextdotjs, SiNestjs, SiFlutter, SiKotlin, 
+    SiPandas, SiGooglecloud, SiBigcommerce 
+} from 'react-icons/si';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const servicesData = [
     {
         id: "01",
-        title: "Cloud Infrastructure",
-        desc: "Scalable and secure cloud architecture optimized for high-demand enterprise applications and 99.9% uptime.",
-        image: "/services/main_cloud.png",
-        icon: "/services/icon_cloud.png",
-        technologies: [
-            { num: "01", name: "AWS" },
-            { num: "02", name: "Google Cloud" },
-            { num: "03", name: "Azure" },
-            { num: "04", name: "Terraform" }
-        ]
-    },
-    {
-        id: "02",
         title: "Frontend Excellence",
         desc: "Building responsive, lightning-fast user interfaces using modern frameworks and performance-first methodology.",
         image: "/services/main_frontend.png",
         icon: "/services/icon_frontend.png",
         technologies: [
-            { num: "01", name: "React.js" },
-            { num: "02", name: "Angular" },
-            { num: "03", name: "Vue.js" },
-            { num: "04", name: "Next.js" }
+            { num: "01", name: "React.js", Icon: FaReact },
+            { num: "02", name: "Angular", Icon: FaAngular },
+            { num: "03", name: "Vue.js", Icon: FaVuejs },
+            { num: "04", name: "Next.js", Icon: SiNextdotjs },
+            { num: "05", name: "Knockout JS", Icon: FaJs },
         ]
     },
+
     {
-        id: "03",
+        id: "02",
         title: "Backend Systems",
         desc: "Robust server-side logic and sophisticated database management for mission-critical business systems.",
         image: "/services/main_backend.png",
         icon: "/services/icon_backend.png",
         technologies: [
-            { num: "01", name: "Node.js" },
-            { num: "02", name: "NestJS" },
-            { num: "03", name: "Laravel" },
-            { num: "04", name: "PostgreSQL" }
+            { num: "01", name: "Node.js", Icon: FaNodeJs },
+            { num: "02", name: "Python", Icon: FaPython },
+            { num: "03", name: "NestJS", Icon: SiNestjs },
+            { num: "04", name: "Laravel", Icon: FaLaravel },
+            { num: "05", name: "Java", Icon: FaJava },
         ]
     },
     {
-        id: "04",
+        id: "03",
         title: "Mobile App Development",
         desc: "High-performance native and cross-platform mobile experiences that delight users on every device.",
         image: "/services/main_mobile.png",
         icon: "/services/icon_mobile.png",
         technologies: [
-            { num: "01", name: "Flutter" },
-            { num: "02", name: "React Native" },
-            { num: "03", name: "Swift" },
-            { num: "04", name: "Firebase" }
+            { num: "01", name: "Flutter", Icon: SiFlutter },
+            { num: "02", name: "React Native", Icon: FaReact },
+            { num: "03", name: "Swift", Icon: FaSwift },
+            { num: "04", name: "iOS", Icon: FaApple },
+            { num: "05", name: "Kotlin", Icon: SiKotlin },
         ]
     },
     {
-        id: "05",
-        title: "CMS",
-        desc: "Flexible CMS solutions for easy content management, scalability, and performance.",
-        image: "/services/main_cms.png",
-        icon: "/services/icon_cms.png",
-        technologies: [
-            { num: "01", name: "WordPress" },
-            { num: "02", name: "Shopify" },
-            { num: "03", name: "Magento" },
-            { num: "04", name: "Drupal" }
-        ]
-    },
-    {
-        id: "06",
+        id: "04",
         title: "Data Analytics",
         desc: "Transforming raw data into actionable intelligence through advanced visualization and ML pipelines.",
         image: "/services/main_data.png",
         icon: "/services/icon_data.png",
         technologies: [
-            { num: "01", name: "Python" },
-            { num: "02", name: "Pandas" },
-            { num: "03", name: "Tableau" },
-            { num: "04", name: "Power BI" }
+            { num: "01", name: "Python", Icon: FaPython },
+            { num: "02", name: "Pandas", Icon: SiPandas },
+            { num: "03", name: "Tableau", Icon: FaChartBar },
+            { num: "04", name: "Power BI", Icon: FaChartLine }
         ]
-    }
+    },
+    {
+        id: "05",
+        title: "Cloud Infrastructure",
+        desc: "Scalable and secure cloud architecture optimized for high-demand enterprise applications and 99.9% uptime.",
+        image: "/services/main_cloud.png",
+        icon: "/services/icon_cloud.png",
+        technologies: [
+            { num: "01", name: "AWS", Icon: FaAws },
+            { num: "02", name: "Google Cloud", Icon: SiGooglecloud },
+            { num: "03", name: "Azure", Icon: FaMicrosoft },
+            { num: "04", name: "Oracle Cloud", Icon: FaDatabase },
+            { num: "05", name: "DigitalOcean", Icon: FaDigitalOcean },
+        ]
+    },
+    {
+        id: "06",
+        title: "CMS",
+        desc: "Flexible CMS solutions for easy content management, scalability, and performance.",
+        image: "/services/main_cms.png",
+        icon: "/services/icon_cms.png",
+        technologies: [
+            { num: "01", name: "WordPress", Icon: FaWordpress },
+            { num: "02", name: "Shopify", Icon: FaShopify },
+            { num: "03", name: "Magento", Icon: FaMagento },
+            { num: "04", name: "Drupal", Icon: FaDrupal },
+            { num: "05", name: "BigCommerce", Icon: SiBigcommerce },
+        ]
+    },
+
 ];
 
 export default function ServicesList() {
@@ -164,6 +181,15 @@ export default function ServicesList() {
 
     return (
         <section className="bg-[#fafcff] py-20 px-6 md:px-12 overflow-hidden relative" ref={containerRef}>
+            {/* SVG Definitions for Gradient Icons */}
+            <svg width="0" height="0" className="absolute">
+                <defs>
+                    <linearGradient id="service-tech-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop stopColor="rgb(68, 199, 246)" offset="0%" />
+                        <stop stopColor="rgb(0, 55, 240)" offset="100%" />
+                    </linearGradient>
+                </defs>
+            </svg>
 
             <div className="container mx-auto max-w-7xl relative z-10">
                 {/* Section Title */}
@@ -174,7 +200,7 @@ export default function ServicesList() {
                         <Badge variant="blue">Our Capabilities</Badge>
 
                     </div>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111] tracking-tight">
+                    <h2 className="text-4xl md:text-5xl lg:text-[36px] font-bold text-[#111] tracking-tight">
                         Solutions We Deliver
                     </h2>
                 </div>
@@ -206,7 +232,8 @@ export default function ServicesList() {
                                     {/* Tech Pills */}
                                     <div className="flex flex-wrap gap-3 mb-10">
                                         {service.technologies.map((tech, i) => (
-                                            <span key={i} className="px-5 py-2.5 rounded-full border border-gray-200 bg-white shadow-sm text-sm font-semibold text-gray-800 hover:border-[#0037f0] hover:text-[#0037f0] transition-colors duration-300 cursor-default">
+                                            <span key={i} className="group flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-200 bg-white shadow-sm text-sm font-semibold text-gray-800 hover:border-[#0037f0] hover:text-[#0037f0] transition-colors duration-300 cursor-default">
+                                                {tech.Icon && <tech.Icon className="w-4 h-4 text-gray-600 group-hover:fill-[url(#service-tech-grad)] group-hover:text-transparent transition-all duration-300" />}
                                                 {tech.name}
                                             </span>
                                         ))}

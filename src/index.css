@@ -2188,7 +2188,7 @@ body {
 
 .footer-link.w--current {
   color: #3eb9f5;
-  font-size: 16px;
+  font-size: 18px;
   line-height: var(--line-height--height-medium);
 }
 
@@ -2988,7 +2988,7 @@ body {
 }
 
 .button-text-wrapper {
-  padding: var(--_spacing---spacing--space-regular) 14px var(--_spacing---spacing--space-regular) var(--_spacing---spacing--space-regular-xl);
+  padding: var(--_spacing---spacing--space-regular);
   border-right: .5px solid var(--_color---base-colors--white);
   align-items: center;
   height: 100%;
@@ -6762,7 +6762,7 @@ body {
   }
 
   .title {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   .about-counter {
@@ -6879,15 +6879,15 @@ body {
   }
 
   .testimonial-title {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   .testimonial-title.teams {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   .testimonial-title.aboutus {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   .process-middel-icon {

@@ -173,7 +173,7 @@ export default function HeroSection() {
                             <AnimatedWord text="Impact" isGradient={true} />
                         </h1>
 
-                        <p className="banner-text text-lg sm:text-xl text-gray-300 max-w-lg font-medium mb-8">
+                        <p className="banner-text text-lg sm:text-xl text-gray-300 max-w-lg font-medium mb-8 ">
                             <AnimatedWord text="We take you from consultation to successful launch." isGradient={false} />
                         </p>
 

@@ -102,24 +102,6 @@ export default function AnimatedButtonBorder({ href = "#Contact", text = "LET'S 
                         </div>
                     </div>
                 </div>
-                <div className="button-arrow-box" style={{ position: 'relative', overflow: 'hidden' }}>
-                    <div className="button-arrow-box-icon">
-                        <img
-                            loading="lazy"
-                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bf_Arrow%20Right%20Up.svg"
-                            alt="Button Icon"
-                            className="button-front-arrow"
-                            style={{ transform: "translate3d(0px, 0px, 0px)", position: 'relative', zIndex: 2 }}
-                        />
-                        <img
-                            loading="lazy"
-                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bf_Arrow%20Right%20Up.svg"
-                            alt="Button Icon"
-                            className="button-back-arrow"
-                            style={{ transform: "translate3d(-13px, 14px, 0px)", position: 'absolute', top: 0, left: 0, zIndex: 1 }}
-                        />
-                    </div>
-                </div>
                 <div className="button-dot-box">
                     <div className="button-dot"></div>
                     <div className="button-dot"></div>

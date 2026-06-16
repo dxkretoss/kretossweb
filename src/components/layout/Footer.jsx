@@ -18,6 +18,7 @@ export default function Footer({ currentRoute }) {
                 { label: "Services", href: "/services", isCurrent: currentRoute === 'services' },
                 { label: "Portfolio", href: "/portfolio", isCurrent: currentRoute === 'portfolio' },
                 { label: "Careers", href: "/careers", isCurrent: currentRoute === 'careers' },
+                { label: "Contact", href: "/contact", isCurrent: currentRoute === 'contact' },
             ],
         }
     ];

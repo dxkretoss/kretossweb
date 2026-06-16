@@ -72,8 +72,8 @@ export default function TeamSection() {
                     {/* Title */}
                     <h2 className="testimonial-title teams text-black" style={{ opacity: 1 }}>
 
-                        <span className='bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text'>Kretoss Technology</span> <span className="review-subtitle text-black">
-                            A top rated team</span></h2>
+                        <span className='bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text'>Kretoss Technology</span><br />
+                        <span className="review-subtitle text-black">A top rated team</span></h2>
 
 
                     {/* Description */}

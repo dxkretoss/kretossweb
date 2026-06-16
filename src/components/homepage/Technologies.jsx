@@ -1,114 +1,118 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Badge from '../ui/Badge';
+import AnimatedButton from '../ui/AnimatedButton';
+
+import { 
+  FaApple, FaAndroid, FaSwift, FaPython, FaNodeJs, FaPhp, FaCode, FaLaravel, 
+  FaJava, FaAngular, FaReact, FaJs, FaVuejs, FaMicrosoft, FaGithub, FaDatabase,
+  FaWordpress, FaMagento, FaShopify, FaDrupal, FaShoppingCart, FaAws, 
+  FaDigitalOcean, FaServer, FaDocker 
+} from 'react-icons/fa';
+import { 
+  SiKotlin, SiFlutter, SiSvelte, SiWoocommerce, SiGooglecloud, 
+  SiKubernetes, SiJenkins, SiMongodb, SiSqlite, SiMysql, SiMariadb, SiRedis
+} from 'react-icons/si';
+import { GrOracle } from 'react-icons/gr';
 
 const technologiesData = {
   "App Development": {
     description: "We build native and cross-platform mobile applications that provide intuitive user experiences. Our mobile solutions are designed for both iOS and Android platforms to maximize your reach.",
     items: [
-      { name: "iOS", icon: "/skills/ios.svg" },
-      { name: "Android", icon: "/skills/android.svg" },
-      { name: "Swift", icon: "/skills/swift.svg" },
-      { name: "Kotlin", icon: "/skills/kotlin.svg" },
-      { name: "Flutter", icon: "/skills/flutter.svg" },
-      { name: "Python", icon: "/skills/python.svg" },
+      { name: "iOS", Icon: FaApple },
+      { name: "Android", Icon: FaAndroid },
+      { name: "Swift", Icon: FaSwift },
+      { name: "Kotlin", Icon: SiKotlin },
+      { name: "Flutter", Icon: SiFlutter },
+      { name: "Python", Icon: FaPython },
     ]
   },
-
   "Web Development": {
     description: "We create dynamic, high-performing websites and web applications tailored to your business needs. Our web solutions are built using the latest technologies to ensure security, scalability, and an excellent user experience.",
     items: [
-      { name: "NodeJS", icon: "/skills/nodejs.svg" },
-      { name: "PHP", icon: "/skills/php.svg" },
-      { name: "Codeigniter", icon: "/skills/codeIgniter.svg" },
-      { name: "Laravel", icon: "/skills/laravel.svg" },
-      { name: "Java Spring Boot", icon: "/skills/spring.svg" },
-      { name: "Python", icon: "/skills/python1.svg" },
+      { name: "NodeJS", Icon: FaNodeJs },
+      { name: "PHP", Icon: FaPhp },
+      { name: "Codeigniter", Icon: FaCode },
+      { name: "Laravel", Icon: FaLaravel },
+      { name: "Java Spring Boot", Icon: FaJava },
+      { name: "Python", Icon: FaPython },
     ]
   },
-
   "Frontend": {
     description: "We craft engaging and highly responsive user interfaces using modern frontend frameworks. Our focus is on delivering seamless user experiences, fast load times, and cross-platform compatibility.",
     items: [
-      { name: "Angular", icon: "/skills/angular.svg" },
-      { name: "React JS", icon: "/skills/React.svg" },
-      { name: "Knockout JS", icon: "/skills/knock.svg" },
-      { name: "Express JS", icon: "/skills/express.svg" },
-      { name: "Vue.js", icon: "/skills/Vue.js.svg" },
-      { name: "Svelte", icon: "/skills/Svelte.svg" },
+      { name: "Angular", Icon: FaAngular },
+      { name: "React JS", Icon: FaReact },
+      { name: "Knockout JS", Icon: FaJs },
+      { name: "Express JS", Icon: FaNodeJs },
+      { name: "Vue.js", Icon: FaVuejs },
+      { name: "Svelte", Icon: SiSvelte },
     ]
   },
   "Backend": {
     description: "Our backend development services ensure robust, secure, and scalable server-side applications. We build robust architectures that can handle high traffic and complex data processing.",
     items: [
-      { name: "NodeJS", icon: "/skills/nodejs.svg" },
-      { name: "Python", icon: "/skills/python1.svg" },
-      { name: "Java", icon: "/skills/java.svg" },
-      { name: "Express JS", icon: "/skills/express.svg" },
-      { name: "Spring", icon: "/skills/spring.svg" },
-      { name: "Laravel", icon: "/skills/laravel.svg" },
+      { name: "NodeJS", Icon: FaNodeJs },
+      { name: "Python", Icon: FaPython },
+      { name: "Java", Icon: FaJava },
+      { name: "Express JS", Icon: FaNodeJs },
+      { name: "Spring", Icon: FaJava },
+      { name: "Laravel", Icon: FaLaravel },
     ]
   },
-
   "Microsoft": {
     description: "We leverage the power of the Microsoft ecosystem to build enterprise-grade applications. Our expertise spans across .NET frameworks, Azure cloud services, and Microsoft business solutions.",
     items: [
-      { name: "ASP.NET", icon: "/skills/dontnet.svg" },
-      { name: "C#", icon: "/skills/c.svg" },
-      { name: "ASP.NET Core", icon: "/skills/NET_Core.svg" },
-      { name: "GitHub", icon: "/skills/git.svg" },
-      { name: "SQL", icon: "/skills/Sql_data.svg" },
-      { name: "Power Apps", icon: "/skills/Powerapps.svg" },
+      { name: "ASP.NET", Icon: FaMicrosoft },
+      { name: "C#", Icon: FaMicrosoft },
+      { name: "ASP.NET Core", Icon: FaMicrosoft },
+      { name: "GitHub", Icon: FaGithub },
+      { name: "SQL", Icon: FaDatabase },
+      { name: "Power Apps", Icon: FaMicrosoft },
     ]
   },
   "Open Source": {
     description: "We specialize in popular open-source content management systems and ecommerce platforms. Our solutions give you the flexibility to manage your content and scale your online business.",
     items: [
-      { name: "WordPress", icon: "/skills/wordpress.svg" },
-      { name: "Magento", icon: "/skills/magento.svg" },
-      { name: "WooCommerce", icon: "/skills/woo.svg" },
-      { name: "Shopify", icon: "/skills/shopify.svg" },
-      { name: "Drupal", icon: "/skills/drupal.svg" },
-      { name: "Bagisto", icon: "/skills/bagisto.svg" },
+      { name: "WordPress", Icon: FaWordpress },
+      { name: "Magento", Icon: FaMagento },
+      { name: "WooCommerce", Icon: SiWoocommerce },
+      { name: "Shopify", Icon: FaShopify },
+      { name: "Drupal", Icon: FaDrupal },
+      { name: "Bagisto", Icon: FaShoppingCart },
     ]
   },
-
-
   Servers: {
     description: "We provide reliable and scalable server infrastructure solutions to keep your applications running smoothly. Whether it's cloud-based or dedicated servers, our configurations ensure optimal performance, high availability, and secure data hosting.",
     items: [
-      { name: "Amazon Web Services", icon: "/skills/aws.svg" },
-      { name: "Google Cloud", icon: "/skills/google.svg" },
-      { name: "Microsoft Azure", icon: "/skills/micro-azure.svg" },
-      { name: "IBM Cloud", icon: "/skills/ibm.svg" },
-      { name: "Oracle Cloud", icon: "/skills/oracle-cloud.svg" },
-      { name: "DigitalOcean", icon: "/skills/digitalocean.svg" },
+      { name: "Amazon Web Services", Icon: FaAws },
+      { name: "Google Cloud", Icon: SiGooglecloud },
+      { name: "Microsoft Azure", Icon: FaMicrosoft },
+      { name: "IBM Cloud", Icon: FaServer },
+      { name: "Oracle Cloud", Icon: FaDatabase },
+      { name: "DigitalOcean", Icon: FaDigitalOcean },
     ]
   },
   "Devops": {
     description: "Both cloud and DevOps engineers are essential and complementary components of contemporary infrastructure management and software development. To enhance your cloud experience and help you create more quickly, we provide dependable cloud and DevOps services on cloud platforms. DevOps enables almost instantaneous cloud product and service deployment, going beyond continuous integration and delivery (CI/CD).",
     items: [
-      { name: "Kubernetes", icon: "/skills/kuber.svg" },
-      { name: "Jenkins", icon: "/skills/jenkins.svg" },
-      { name: "Chef", icon: "/skills/chef.svg" },
-      { name: "Maven", icon: "/skills/maven.svg" },
-      { name: "Docker", icon: "/skills/docer.svg" },
-      { name: "OpenShift", icon: "/skills/openswift.svg" },
+      { name: "Kubernetes", Icon: SiKubernetes },
+      { name: "Jenkins", Icon: SiJenkins },
+      { name: "Chef", Icon: FaServer },
+      { name: "Maven", Icon: FaCode },
+      { name: "Docker", Icon: FaDocker },
+      { name: "OpenShift", Icon: FaServer },
     ]
   },
-
-
-
-
   "Database": {
     description: "We design and manage secure, high-performance databases tailored to your data architecture. From relational to NoSQL databases, we ensure your data is always accessible and safe.",
     items: [
-      { name: "MySQL", icon: "/skills/Sql_data.svg" },
-      { name: "Oracle", icon: "/skills/oracle.svg" },
-      { name: "MongoDB", icon: "/skills/mongo.svg" },
-      { name: "MariaDB", icon: "/skills/maria.svg" },
-      { name: "SQLite", icon: "/skills/sqlite.svg" },
-      { name: "Redis", icon: "/skills/redis.svg" },
+      { name: "MySQL", Icon: SiMysql },
+      { name: "Oracle", Icon: GrOracle },
+      { name: "MongoDB", Icon: SiMongodb },
+      { name: "MariaDB", Icon: SiMariadb },
+      { name: "SQLite", Icon: SiSqlite },
+      { name: "Redis", Icon: SiRedis },
     ]
   }
 };
@@ -120,32 +124,16 @@ export default function Technologies() {
 
   return (
     <section className="technology bg-[#fafcff] relative overflow-hidden">
-      <svg style={{ position: 'absolute', width: 0, height: 0 }} aria-hidden="true">
-        <filter id="duotone-0c1736" colorInterpolationFilters="sRGB">
-          <feColorMatrix type="matrix" values="
-            0.2126 0.7152 0.0722 0 0
-            0.2126 0.7152 0.0722 0 0
-            0.2126 0.7152 0.0722 0 0
-            0 0 0 1 0" result="gray" />
-          <feComponentTransfer>
-            <feFuncR type="table" tableValues="0.047 0.047 0.047 0.047 0.047 0.047 0.047 0.047 0.047 1.0" />
-            <feFuncG type="table" tableValues="0.090 0.090 0.090 0.090 0.090 0.090 0.090 0.090 0.090 1.0" />
-            <feFuncB type="table" tableValues="0.212 0.212 0.212 0.212 0.212 0.212 0.212 0.212 0.212 1.0" />
-          </feComponentTransfer>
-        </filter>
-        <filter id="duotone-php" colorInterpolationFilters="sRGB">
-          <feColorMatrix type="matrix" values="
-            0.2126 0.7152 0.0722 0 0
-            0.2126 0.7152 0.0722 0 0
-            0.2126 0.7152 0.0722 0 0
-            0 0 0 1 0" result="gray" />
-          <feComponentTransfer>
-            <feFuncR type="table" tableValues="1.0 1.0 0.047 0.047 0.047 0.047 1.0" />
-            <feFuncG type="table" tableValues="1.0 1.0 0.090 0.090 0.090 0.090 1.0" />
-            <feFuncB type="table" tableValues="1.0 1.0 0.212 0.212 0.212 0.212 1.0" />
-          </feComponentTransfer>
-        </filter>
+      {/* SVG Definitions for Gradient Icons */}
+      <svg width="0" height="0" className="absolute">
+        <defs>
+          <linearGradient id="tech-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop stopColor="rgb(68, 199, 246)" offset="0%" />
+            <stop stopColor="rgb(0, 55, 240)" offset="100%" />
+          </linearGradient>
+        </defs>
       </svg>
+      
       {/* Subtle Background Glows for modern look */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-[100px]"></div>
@@ -227,6 +215,10 @@ export default function Technologies() {
                 <p className="text-gray-600 leading-relaxed text-lg">
                   {technologiesData[activeTab].description}
                 </p>
+
+                <div className="pt-2">
+                  <AnimatedButton text="LET'S WORK TOGETHER" href="/contact" />
+                </div>
               </div>
 
               {/* Right Side: Grid */}
@@ -241,16 +233,7 @@ export default function Technologies() {
                       <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                       <div className="h-14 sm:h-16 flex items-center justify-center mb-4 relative z-10 transform group-hover:scale-110 group-hover:-translate-y-1 transition-transform duration-300">
-                        <img
-                          src={item.icon}
-                          alt={item.name}
-                          className="max-h-full max-w-full object-contain transition-all duration-300"
-                          style={{ filter: item.icon.includes('php') ? "url(#duotone-php)" : "url(#duotone-0c1736)" }}
-                          onError={(e) => {
-                            e.target.onerror = null;
-                            e.target.src = `https://placehold.co/100x100/e2e8f0/475569.png?text=${item.name.charAt(0)}`;
-                          }}
-                        />
+                        {item.Icon && <item.Icon className="w-12 h-12 text-[#475569] group-hover:fill-[url(#tech-grad)] group-hover:text-transparent transition-all duration-300" />}
                       </div>
                       <span className="text-gray-700 font-semibold text-sm text-center relative z-10 group-hover:text-[#005a87] transition-colors duration-300">
                         {item.name}

@@ -38,7 +38,7 @@ export default function CtaSection() {
             </div>
 
             <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center text-center cta-content">
-                <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 uppercase text-white">
+                <h2 className="text-4xl md:text-[36px] font-bold tracking-tight mb-6 uppercase text-white">
                     Ready to start a project?
                 </h2>
                 <p className="text-gray-400 text-sm md:text-base mb-10 tracking-wide">

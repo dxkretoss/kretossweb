@@ -71,7 +71,7 @@ export default function CoreValues() {
                         <Badge variant="white">Core values</Badge>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight">
+                    <h2 className="text-4xl md:text-5xl lg:text-[36px] font-bold tracking-tight">
                         What Are Our Core Values
                     </h2>
                 </div>

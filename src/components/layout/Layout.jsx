@@ -50,8 +50,10 @@ export default function Layout() {
 
             <Footer currentRoute={currentRoute} />
 
-            {/* Global Floating Navigation */}
-            <FloatingNav />
+            {/* Global Floating Navigation - Hidden on screens below 768px */}
+            <div className="hidden md:block">
+                <FloatingNav />
+            </div>
         </div>
     );
 }
