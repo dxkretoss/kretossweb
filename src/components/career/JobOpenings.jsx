@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-router-dom';
 import { jobsData } from '../../data/jobs';
+import Badge from '../ui/Badge';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,12 +45,8 @@ export default function JobOpenings() {
                 {/* Header */}
                 <div className="job-header flex flex-col items-center text-center mb-16">
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gray-200 bg-white shadow-sm mb-6">
-                        <img
-                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                            loading="lazy" alt="Star Icon" className="w-3.5 h-3.5 animate-[spin_4s_linear_infinite] filter brightness-0"
-                        />
-                        <span className="text-sm text-gray-800 font-medium tracking-wide uppercase mt-0.5">We're Hiring</span>
+                    <div className='mb-5'>
+                        <Badge>We're Hiring</Badge>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold text-[#111] tracking-tight">
@@ -61,12 +58,12 @@ export default function JobOpenings() {
                 <div className="jobs-container flex flex-col gap-8">
                     {jobsData.map((job) => (
                         <div key={job.id} className="job-card flex flex-col lg:flex-row gap-6 lg:gap-8 min-h-[400px]">
-                            
+
                             {/* Render Image First on Mobile, conditional on Desktop */}
                             <div className={`w-full lg:w-1/2 rounded-2xl overflow-hidden relative group ${job.imagePosition === 'right' ? 'lg:order-2' : 'lg:order-1'}`}>
-                                <img 
-                                    src={job.image} 
-                                    alt={job.title} 
+                                <img
+                                    src={job.image}
+                                    alt={job.title}
                                     className="w-full h-full object-cover min-h-[300px] lg:min-h-full group-hover:scale-105 transition-transform duration-700 ease-out"
                                 />
                                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>

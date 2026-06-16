@@ -2,6 +2,7 @@ import React, { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
+import Badge from '../ui/Badge';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -167,13 +168,11 @@ export default function ServicesList() {
             <div className="container mx-auto max-w-7xl relative z-10">
                 {/* Section Title */}
                 <div className="text-center mb-16 service-list-title flex flex-col items-center">
-                    <div className="about-subtitle-box w-max mb-6" style={{ backgroundColor: 'transparent' }}>
-                        <img
-                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                            loading="lazy" alt="Subtitle Icon" className="subtitle-image-icon animate-[spin_4s_linear_infinite]"
-                            style={{ filter: 'brightness(0)' }}
-                        />
-                        <span className="text-xs text-gray-800 font-medium tracking-widest uppercase mt-0.5">Our Capabilities</span>
+
+
+                    <div className='mb-5'>
+                        <Badge variant="blue">Our Capabilities</Badge>
+
                     </div>
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111] tracking-tight">
                         Solutions We Deliver

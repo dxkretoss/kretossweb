@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
+import Badge from '../ui/Badge';
 
 const CounterBox = ({ columns, suffix, label, hasLeftLine, rightOneClass = '' }) => {
     return (
@@ -153,23 +154,19 @@ export default function BuildWithUs() {
 
             <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative z-10">
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-20">
-                    
+
                     {/* Left Column */}
                     <div className="w-full lg:w-5/12 flex flex-col gap-8 fade-up-element">
                         {/* Badge */}
-                        <div className="about-subtitle-box w-max" style={{ backgroundColor: 'transparent' }}>
-                            <img
-                                src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                                loading="lazy" alt="Subtitle Icon" className="subtitle-image-icon animate-[spin_4s_linear_infinite]"
-                                style={{ filter: 'brightness(0)' }}
-                            />
-                            <span className="text-xs text-gray-800 font-medium tracking-widest uppercase mt-0.5">Build with us!</span>
+
+                        <div className='mb-5 flex justify-start'>
+                            <Badge variant="blue">Build with us!</Badge>
                         </div>
 
                         {/* Image */}
                         <div className="w-full aspect-[4/5] overflow-hidden rounded-xl shadow-2xl relative">
-                            <img 
-                                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            <img
+                                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                                 alt="Team walking in office"
                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
                             />
@@ -181,7 +178,7 @@ export default function BuildWithUs() {
                         <h2 className="text-4xl md:text-5xl font-bold text-[#222] tracking-tight leading-tight">
                             Be part of something extraordinary
                         </h2>
-                        
+
                         <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
                             Joining our team means being part of a dynamic group of professionals dedicated to shaping the future.
                         </p>

@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useRef, useState, useEffect } from 'react';
 import gsap from 'gsap';
+import Badge from '../ui/Badge';
 
 const AnimatedWord = ({ text, isGradient }) => {
     const gradientClass = isGradient ? "bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text" : "";
@@ -157,13 +158,9 @@ export default function ContactHero() {
 
                     {/* Left Content */}
                     <div className="w-full lg:w-[55%] flex flex-col items-start relative z-20">
-                        <div className="about-subtitle-box mb-4" style={{ backgroundColor: 'transparent' }}>
-                            <img
-                                src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                                loading="lazy" alt="Contact Subtitle Icon" className="subtitle-image-icon animate-[spin_4s_linear_infinite]"
-                            />
-                            <span className="text-xs text-gray-300 font-medium tracking-widest uppercase mt-0.5">Contact Us</span>
 
+                        <div className='mb-5'>
+                            <Badge variant='white'>Contact Us</Badge>
                         </div>
 
                         <h1 className="banner-title text-5xl sm:text-6xl lg:text-[72px] font-bold text-white leading-[1.1] tracking-tight mb-8">

@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useState, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Badge from '../ui/Badge';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -510,14 +511,7 @@ export default function Testimonials() {
                         <div className="review-box-content">
                             <div className="review-black-box">
                                 <div className="review-ssubtitle-title">
-                                    <div className="project-subtitle-box">
-                                        <img
-                                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                                            loading="lazy" alt="Step Subtitle Icon" className="subtitle-image-icon"
-                                            style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }}
-                                        />
-                                        <div className="subtitle-text white">Testimonials</div>
-                                    </div>
+                                    <Badge variant='white'>Testimonials</Badge>
                                     <h2 style={{ "opacity": "1" }} className="testimonial-title">
                                         Happy Clients <span className="review-subtitle">Observation</span>
                                     </h2>

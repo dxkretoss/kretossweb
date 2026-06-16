@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Badge from "../ui/Badge";
 
 const values = [
     {
@@ -65,17 +66,9 @@ export default function CoreValues() {
 
                 {/* Header */}
                 <div className="flex flex-col items-center mb-16 text-center">
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-white/5 border border-white/10 mb-6">
-                        <img
-                            loading="lazy"
-                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887be_Star%2018.svg"
-                            alt="Star"
-                            className="w-3 h-3 animate-[spin_4s_linear_infinite]"
-                        />
 
-                        <span className="text-xs text-gray-300 font-medium tracking-widest uppercase mt-0.5">
-                            Core values
-                        </span>
+                    <div className="mb-5">
+                        <Badge variant="white">Core values</Badge>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight">

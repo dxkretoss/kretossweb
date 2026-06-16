@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
+import Badge from '../ui/Badge';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -291,13 +292,7 @@ export default function About() {
                             <div className="about-slider" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
                                 <div className="about-slider-two"></div>
                             </div>
-                            <div className="about-subtitle-box">
-                                <img
-                                    src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887be_Star%2018.svg"
-                                    loading="lazy" alt="Contact Subtitle Icon" className="subtitle-image-icon animate-[spin_4s_linear_infinite]"
-                                />
-                                <div className="about-subtitle-text">About Kretoss</div>
-                            </div>
+                            <Badge variant='blue'>About Kretoss</Badge>
                         </div>
                         <div className="about-right-box">
                             <div className="about-title-button" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'stretch' }}>

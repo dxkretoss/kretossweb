@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Badge from '../ui/Badge';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -269,14 +270,9 @@ export default function Product() {
                         <div className="w-layout-blockcontainer container w-container">
                             <div className="project-title-tag-box">
                                 <div className="project-title-subtitle">
-                                    <div className="product-subtitle-box">
-                                        <img
-                                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                                            loading="lazy" alt="Subtitle Icon" className="subtitle-image-icon"
-                                            style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }}
-                                        />
-                                        <div className="product-subtitle-text">Culture & Moments</div>
-                                    </div>
+
+
+                                    <Badge variant='white'>Culture & Moments</Badge>
                                     <h2 className="title white" aria-label="&quot;Memories & Milestones&quot;">
                                         <SplitText text='"Memories & Milestones"' startIndex={1} />
                                     </h2>

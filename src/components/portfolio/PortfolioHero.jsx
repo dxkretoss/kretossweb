@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useRef, useState, useEffect } from 'react';
 import gsap from 'gsap';
+import Badge from '../ui/Badge';
 
 const AnimatedWord = ({ text, isGradient }) => {
     const gradientClass = isGradient ? "bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text" : "";
@@ -130,13 +131,9 @@ export default function PortfolioHero() {
 
                     {/* Left Content */}
                     <div className="w-full lg:w-[55%] flex flex-col items-start relative z-20">
-                        <div className="about-subtitle-box mb-4" style={{ backgroundColor: 'transparent' }}>
-                            <img
-                                src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                                loading="lazy" alt="Contact Subtitle Icon" className="subtitle-image-icon animate-[spin_4s_linear_infinite]"
-                            />
-                            <span className="text-xs text-gray-300 font-medium tracking-widest uppercase mt-0.5">Portfolio</span>
 
+                        <div className='mb-5'>
+                            <Badge variant='white'>Portfolio</Badge>
                         </div>
 
                         <h1 className="banner-title text-5xl sm:text-6xl lg:text-[60px] font-bold text-white leading-[1.1] tracking-tight mb-8">
@@ -177,14 +174,14 @@ export default function PortfolioHero() {
                         <div className="hero-video-box relative w-full max-w-[600px] lg:mr-[-30px]">
                             {/* Background Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[linear-gradient(#44c7f6,#0037f0)] opacity-20 blur-[80px] -z-20 rounded-full pointer-events-none"></div>
-                            
+
                             {/* Laptop Container */}
                             <div className="relative w-full">
                                 {/* Screen Lid */}
                                 <div className="relative w-full bg-[#0a0a0a] rounded-t-2xl sm:rounded-t-3xl border-[4px] sm:border-[8px] border-[#222] shadow-2xl aspect-[16/10] overflow-hidden z-20">
                                     {/* Camera dot */}
                                     <div className="absolute top-1.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-[#111] rounded-full z-30 ring-1 ring-white/10 hidden sm:block"></div>
-                                    
+
                                     {/* Screen Content */}
                                     <div className="relative w-full h-full bg-[#121212] overflow-hidden">
                                         {/* Browser Header / Navigation Bar Mockup */}
@@ -205,9 +202,9 @@ export default function PortfolioHero() {
                                                         key={idx}
                                                         className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${isActive ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                                                     >
-                                                        <img 
-                                                            src={card.image} 
-                                                            alt={`Portfolio Work ${idx + 1}`} 
+                                                        <img
+                                                            src={card.image}
+                                                            alt={`Portfolio Work ${idx + 1}`}
                                                             className="w-full h-full object-cover object-top"
                                                         />
                                                     </div>

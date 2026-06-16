@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ArrowUpRight } from 'lucide-react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Badge from '../ui/Badge';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -387,14 +388,8 @@ export default function Projects() {
                 <div className="w-layout-blockcontainer container w-container">
                     <div className="project-content-wrapper">
                         <div className="home-project-title _02">
-                            <div className="project-subtitle-box">
-                                <img
-                                    src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                                    loading="lazy" alt="Project Subtitle Icon" className="subtitle-image-icon"
-                                    style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }}
-                                />
-                                <div className="subtitle-text white">Industry Hit Projects</div>
-                            </div>
+
+                            <Badge variant="white">Industry Hit Projects</Badge>
                             <h2 className="title white" aria-label="Where Great Ideas Became Real Results">
                                 <SplitText text="Where Great Ideas Became Real Results" startIndex={1} />
                             </h2>

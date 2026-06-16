@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AnimatedButton from '../ui/AnimatedButton';
 import AnimatedButtonBorder from '../ui/AnimatedButtonBorder';
 import { portfolioData } from './portfolio';
+import Badge from '../ui/Badge';
 
 export default function Portfolios() {
     const [activeCategory, setActiveCategory] = useState("Custom web");
@@ -25,13 +26,12 @@ export default function Portfolios() {
         <section className="py-20 bg-[#0a0a0a]">
             <div className="container mx-auto px-6 lg:px-12 max-w-[1400px]">
                 <div className="flex flex-col items-center mb-16">
-                    <div className="about-subtitle-box mb-4" style={{ backgroundColor: 'transparent' }}>
-                        <img
-                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                            loading="lazy" alt="Portfolio Categories" className="subtitle-image-icon animate-[spin_4s_linear_infinite]"
-                        />
-                        <span className="text-xs text-gray-300 font-medium tracking-widest uppercase mt-0.5">Categories</span>
+
+
+                    <div className='mb-5'>
+                        <Badge variant='white'>Categories</Badge>
                     </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold text-white text-center">
                         Our Expertise
                     </h2>
@@ -140,7 +140,7 @@ export default function Portfolios() {
                                                 </div>
 
                                                 {/* View Project Button */}
-                                                <Link 
+                                                <Link
                                                     to={`/portfolio/${item.slug}`}
                                                     className="flex items-center bg-white rounded overflow-hidden hover:bg-gray-200 transition-colors"
                                                     style={{ color: "#333334" }}

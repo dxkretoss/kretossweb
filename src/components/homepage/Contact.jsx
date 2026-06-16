@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
+import Badge from '../ui/Badge';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -252,14 +253,8 @@ export default function Contact() {
                         <div style={{ "opacity": "0" }} className="contact-about-block">
                             <div className="contact-title-text">
                                 <div className="contact-title-subtitle">
-                                    <div className="about-subtitle-box">
-                                        <img
-                                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887be_Star%2018.svg"
-                                            loading="lazy" alt="Contact Subtitle Icon" className="subtitle-image-icon"
-                                            style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }}
-                                        />
-                                        <div className="subtitle-text">Project idea</div>
-                                    </div>
+                                    <Badge variant='blue'>Project idea</Badge>
+
                                     <h2 className="title contact-title-02" aria-label="Have A Project Idea In Mind?">
                                         <SplitText text="Have A Project Idea In" startIndex={1} />{' '}
                                         <span className="review-subtitle-2">

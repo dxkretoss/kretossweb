@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Badge from '../ui/Badge';
 
 const awards = [
     {
@@ -81,14 +82,9 @@ export default function AwardsSection() {
                 <div className="flex-1 w-full lg:max-w-[65%]">
                     {/* Header */}
                     <div className="award-header flex flex-col items-start mb-16 text-left">
-                        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-black/5 border border-black/10 mb-6">
-                            <img
-                                loading="lazy"
-                                src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887be_Star%2018.svg"
-                                alt="Star"
-                                className="w-3 h-3 animate-[spin_4s_linear_infinite]"
-                            />
-                            <span className="text-xs text-gray-600 font-medium tracking-widest uppercase mt-0.5">Awards</span>
+
+                        <div className='mb-5'>
+                            <Badge variant="blue">Awards</Badge>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-black">Our Milestones</h2>
                     </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Badge from '../ui/Badge';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -73,15 +74,14 @@ export default function TeamsFuture() {
             {/* Background ambient glow matching the dark theme */}
             <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-[#0037f0]/20 to-transparent pointer-events-none"></div>
 
-            <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative z-10">
+            <div className="container  mx-auto px-6 lg:px-12 relative z-10">
                 <div className="section-header flex flex-col items-center text-center mb-16">
                     {/* Standardized Badge */}
-                    <div className="about-subtitle-box mb-6" style={{ backgroundColor: 'transparent' }}>
-                        <img
-                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                            loading="lazy" alt="Subtitle Icon" className="subtitle-image-icon animate-[spin_4s_linear_infinite]"
-                        />
-                        <span className="text-xs text-gray-300 font-medium tracking-widest uppercase mt-0.5">Team's Future</span>
+
+
+                    <div className='mb-5 flex justify-start'>
+                        <Badge variant="white">Team's Future</Badge>
+
                     </div>
 
                     {/* Heading */}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Badge from '../ui/Badge';
 
 const technologiesData = {
   "App Development": {
@@ -153,8 +154,12 @@ export default function Technologies() {
 
       <div className="w-layout-blockcontainer container w-container relative z-10">
 
+        <div className='flex justify-center mb-5'>
+          <Badge variant='blue'>Technologies</Badge>
+        </div>
+
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -13,6 +13,7 @@ import {
   Users,
   RefreshCw,
 } from "lucide-react";
+import Badge from "../ui/Badge";
 
 export default function AIVibeCodingWorkflow() {
   const [messages, setMessages] = useState([]);
@@ -175,6 +176,10 @@ export default function AIVibeCodingWorkflow() {
             }}
           >
             {/* Badge */}
+            <div className="flex justify-start mb-5">
+              <Badge variant="blue">Vibe Coding</Badge>
+            </div>
+
 
             {/* Heading */}
 

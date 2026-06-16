@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
+import Badge from '../ui/Badge';
 
 const teamMembersTop = [
     {
@@ -62,16 +63,10 @@ export default function TeamSection() {
 
                 {/* Left Content */}
                 <div className="team-left-content lg:col-span-6 flex flex-col items-start">
-                    {/* Badge */}
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-black/5 border border-black/10 mb-6">
-                        <img
-                            loading="lazy"
-                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887be_Star%2018.svg"
-                            alt="Star"
-                            className="w-3 h-3 animate-[spin_4s_linear_infinite]"
-                        />
-                        <span className="text-xs text-gray-600 font-medium tracking-widest uppercase mt-0.5">Our Teams</span>
 
+
+                    <div className='mb-5'>
+                        <Badge variant="blue">Our Teams</Badge>
                     </div>
 
                     {/* Title */}

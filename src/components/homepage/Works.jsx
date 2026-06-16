@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Badge from '../ui/Badge';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -274,14 +275,7 @@ export default function Works() {
                             <div className="step-content-wrapper">
                                 <div className="project-title-area work-title"
                                     style={{ "willChange": "transform", "transformStyle": "preserve-3d" }}>
-                                    <div className="project-subtitle-box">
-                                        <img
-                                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                                            loading="lazy" alt="Step Subtitle Icon" className="subtitle-image-icon"
-                                            style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }}
-                                        />
-                                        <div className="subtitle-text white">Process</div>
-                                    </div>
+                                    <Badge variant='white'>Process</Badge>
                                     <h2 className="title white" aria-label="Our Approach to Success">
                                         <SplitText text="Our Approach to Success" startIndex={1} />
                                     </h2>

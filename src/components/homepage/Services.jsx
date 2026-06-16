@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Badge from '../ui/Badge';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -394,14 +395,8 @@ export default function Services() {
                             <div className="service-content-wrapper !overflow-visible">
                                 <div className="project-title-area"
                                     style={{ "willChange": "transform", "transformStyle": "preserve-3d" }}>
-                                    <div className="project-subtitle-box">
-                                        <img
-                                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe28879c_Star%2018%20(1).svg"
-                                            loading="lazy" alt="Service Subtitle Icon" className="subtitle-image-icon"
-                                            style={{ "translate": "none", "rotate": "none", "scale": "none", "transform": "translate3d(0px, 0px, 0px) rotate(116.964deg)" }}
-                                        />
-                                        <div className="subtitle-text white">What We Do</div>
-                                    </div>
+                                    <Badge variant="white">What We Do</Badge>
+
                                     <h2 className="title white" aria-label="Our Services">
                                         <SplitText text="Our Services" startIndex={1} />
                                     </h2>
