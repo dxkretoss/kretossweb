@@ -3,7 +3,7 @@ export const portfolioDetailsData = [
         "id": 1,
         "slug": "guestway",
         "name": "Guestway",
-        "portfolioImage": "/portfolio/custom/Guestway.webp",
+        "portfolioImage": "/portfolio/custom/Guestway-full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Angular + Node.js",
@@ -23,7 +23,7 @@ export const portfolioDetailsData = [
         "id": 2,
         "slug": "iiccrypto",
         "name": "IIC Metaverse",
-        "portfolioImage": "/portfolio/custom/IIC-Metaverse.webp",
+        "portfolioImage": "/portfolio/custom/IIC-Metaverse-full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "HTML + CSS + JS",
@@ -43,7 +43,7 @@ export const portfolioDetailsData = [
         "id": 3,
         "slug": "nexthunt",
         "name": "NextHunt",
-        "portfolioImage": "/portfolio/custom/portfolio_nexthunt.webp",
+        "portfolioImage": "/portfolio/custom/portfolio_nexthunt_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "React.js + Supabase",
@@ -63,7 +63,7 @@ export const portfolioDetailsData = [
         "id": 4,
         "slug": "palzea-widget",
         "name": "Palzea",
-        "portfolioImage": "/portfolio/custom/portfolio_palzea-widget.webp",
+        "portfolioImage": "/portfolio/custom/portfolio_palzea-widget_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Blockchain + React.js + Node.js",
@@ -83,7 +83,7 @@ export const portfolioDetailsData = [
         "id": 5,
         "slug": "dreamload",
         "name": "Dreamload",
-        "portfolioImage": "/portfolio/custom/portfolio_dreamload.webp",
+        "portfolioImage": "/portfolio/custom/portfolio_dreamload_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "ReactJS + Python",
@@ -103,7 +103,7 @@ export const portfolioDetailsData = [
         "id": 6,
         "slug": "phoenixfc",
         "name": "PhoenixFC",
-        "portfolioImage": "/portfolio/custom/portfolio_phoenix.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_phoenix_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "ReactJS + Python",
@@ -123,7 +123,7 @@ export const portfolioDetailsData = [
         "id": 7,
         "slug": "palzea",
         "name": "Palzea",
-        "portfolioImage": "/portfolio/custom/portfolio_palzea.png",
+        "portfolioImage": "/portfolio/custom/portfolio_palzea_full.webp",
         "category": "Custom web",
         "timeline": "3.5 Months",
         "techStack": "Vue.js + Laravel",
@@ -143,7 +143,7 @@ export const portfolioDetailsData = [
         "id": 8,
         "slug": "fily",
         "name": "Fily",
-        "portfolioImage": "/portfolio/custom/portfolio_fily.png",
+        "portfolioImage": "/portfolio/custom/portfolio_fily_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "ReactJS + Supabase",
@@ -163,7 +163,7 @@ export const portfolioDetailsData = [
         "id": 9,
         "slug": "stb",
         "name": "Student Travel Buddy",
-        "portfolioImage": "/portfolio/custom/portfolio_stb.png",
+        "portfolioImage": "/portfolio/custom/portfolio_stb_full.webp",
         "category": "Custom web",
         "timeline": "2.1 Months",
         "techStack": "ReactJS + Node.js",
@@ -183,7 +183,7 @@ export const portfolioDetailsData = [
         "id": 10,
         "slug": "klubbrabatten",
         "name": "Klubbrabatten",
-        "portfolioImage": "/portfolio/custom/portfolio_klubbrabatten.png",
+        "portfolioImage": "/portfolio/custom/portfolio_klubbrabatten_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "ReactJS + Supabase + Node.js",
@@ -203,7 +203,7 @@ export const portfolioDetailsData = [
         "id": 11,
         "slug": "giveaways",
         "name": "Giveaway",
-        "portfolioImage": "/portfolio/custom/portfolio_giveaways.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_giveaways_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Laravel",
@@ -223,7 +223,7 @@ export const portfolioDetailsData = [
         "id": 12,
         "slug": "sarhachat",
         "name": "Sarhachat",
-        "portfolioImage": "/portfolio/custom/portfolio_sarhachat.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_sarhachat_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "AI",
@@ -243,7 +243,7 @@ export const portfolioDetailsData = [
         "id": 13,
         "slug": "wallstreets",
         "name": "Wall Street",
-        "portfolioImage": "/portfolio/custom/portfolio_wallstreet.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_wallstreet_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Angular & Laravel",
@@ -263,7 +263,7 @@ export const portfolioDetailsData = [
         "id": 14,
         "slug": "allbots",
         "name": "Allbots",
-        "portfolioImage": "/portfolio/custom/portfolio_allbots.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_allbots_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Bubble",
@@ -283,7 +283,7 @@ export const portfolioDetailsData = [
         "id": 15,
         "slug": "searchive",
         "name": "Searchive",
-        "portfolioImage": "/portfolio/custom/portfolio_searchive.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_searchive_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "ReactJS",
@@ -303,7 +303,7 @@ export const portfolioDetailsData = [
         "id": 16,
         "slug": "coyna",
         "name": "Coyna",
-        "portfolioImage": "/portfolio/custom/portfolio_coyna.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_coyna_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Angular, JavaScript",
@@ -323,7 +323,7 @@ export const portfolioDetailsData = [
         "id": 17,
         "slug": "gujarat-tiles-info",
         "name": "Gujarat Tiles Info",
-        "portfolioImage": "/portfolio/custom/portfolio_gujarat_tiles_info.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_gujarat_tiles_info_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Angular & Laravel",
@@ -343,7 +343,7 @@ export const portfolioDetailsData = [
         "id": 18,
         "slug": "implanstock",
         "name": "Implant Stock",
-        "portfolioImage": "/portfolio/custom/portfolio_implantstock.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_implantstock_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Laravel & React",
@@ -363,7 +363,7 @@ export const portfolioDetailsData = [
         "id": 19,
         "slug": "locum-prime",
         "name": "Locum Prime",
-        "portfolioImage": "/portfolio/custom/portfolio_locumprime.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_locumprime_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Angular, Codeigniter",
@@ -383,7 +383,7 @@ export const portfolioDetailsData = [
         "id": 20,
         "slug": "trust-arthur-group",
         "name": "Trust Arthur Group",
-        "portfolioImage": "/portfolio/custom/portfolio_trust_arthur_group.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_trust_arthur_group_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Python, ReactJS",
@@ -403,7 +403,7 @@ export const portfolioDetailsData = [
         "id": 21,
         "slug": "taxley-custom",
         "name": "Taxley",
-        "portfolioImage": "/portfolio/custom/portfolio_taxley.jpg",
+        "portfolioImage": "/portfolio/custom/portfolio_taxley_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "MySQL, Node JS, ReactJS",
@@ -437,7 +437,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 23,
@@ -457,7 +471,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 24,
@@ -477,7 +505,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 25,
@@ -497,7 +539,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 26,
@@ -517,7 +573,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 27,
@@ -537,7 +607,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 28,
@@ -557,7 +641,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 29,
@@ -577,7 +675,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 30,
@@ -597,7 +709,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 31,
@@ -617,7 +743,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 32,
@@ -637,7 +777,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 33,
@@ -657,7 +811,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 34,
@@ -677,7 +845,21 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 35,
@@ -697,13 +879,27 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "mobileScreens": [
+            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
+            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+        ],
+        "appLinks": {
+            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
+            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        }
     },
     {
         "id": 36,
         "slug": "kates-real-food",
         "name": "Kate's Real Food",
-        "portfolioImage": "/portfolio/shopify/portfolio_katesrealfood.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_katesrealfood_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -723,7 +919,7 @@ export const portfolioDetailsData = [
         "id": 37,
         "slug": "ludic-life",
         "name": "Ludic Life",
-        "portfolioImage": "/portfolio/shopify/portfolio_ludic-life.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_ludic-life-full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -743,7 +939,7 @@ export const portfolioDetailsData = [
         "id": 38,
         "slug": "ludic-global",
         "name": "Ludic Global",
-        "portfolioImage": "/portfolio/shopify/portfolio_ludic-global.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_ludic-global-full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -763,7 +959,7 @@ export const portfolioDetailsData = [
         "id": 39,
         "slug": "ludic-kitchen",
         "name": "Ludic Kitchen",
-        "portfolioImage": "/portfolio/shopify/portfolio_ludic-kitchen.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_ludic-kitchen-full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -783,7 +979,7 @@ export const portfolioDetailsData = [
         "id": 40,
         "slug": "almost-peaceful",
         "name": "Almost Peaceful",
-        "portfolioImage": "/portfolio/shopify/portfolio_almost.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_almost_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -803,7 +999,7 @@ export const portfolioDetailsData = [
         "id": 41,
         "slug": "impetus-health",
         "name": "Impetus Health",
-        "portfolioImage": "/portfolio/shopify/portfolio_impectus.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_impectus_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -823,7 +1019,7 @@ export const portfolioDetailsData = [
         "id": 42,
         "slug": "roamaly",
         "name": "Roamaly",
-        "portfolioImage": "/portfolio/shopify/portfolio_roamaly.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_roamaly_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -843,7 +1039,7 @@ export const portfolioDetailsData = [
         "id": 43,
         "slug": "kids-posters",
         "name": "Kids Posters",
-        "portfolioImage": "/portfolio/shopify/portfolio_kidsPoster.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_kidsPoster_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -863,7 +1059,7 @@ export const portfolioDetailsData = [
         "id": 44,
         "slug": "the-pawcan",
         "name": "The Pawcan",
-        "portfolioImage": "/portfolio/shopify/portfolio_pawcan.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_pawcan_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -883,7 +1079,7 @@ export const portfolioDetailsData = [
         "id": 45,
         "slug": "recreation-beauty",
         "name": "Recreation Beauty",
-        "portfolioImage": "/portfolio/shopify/portfolio_recreation.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_recreation_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -903,7 +1099,7 @@ export const portfolioDetailsData = [
         "id": 46,
         "slug": "tango-swim",
         "name": "Tango Swim",
-        "portfolioImage": "/portfolio/shopify/portfolio_tango.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_tango_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -923,7 +1119,7 @@ export const portfolioDetailsData = [
         "id": 47,
         "slug": "tilit",
         "name": "Tilit",
-        "portfolioImage": "/portfolio/shopify/portfolio_tilit.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_tilit_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -943,7 +1139,7 @@ export const portfolioDetailsData = [
         "id": 48,
         "slug": "honey-stinger",
         "name": "Honey Stinger",
-        "portfolioImage": "/portfolio/shopify/portfolio_honeyStinger.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_honeyStinger_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -963,7 +1159,7 @@ export const portfolioDetailsData = [
         "id": 49,
         "slug": "moanarose",
         "name": "Moanarose",
-        "portfolioImage": "/portfolio/shopify/portfolio_moanarose.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_moanarose_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -983,7 +1179,7 @@ export const portfolioDetailsData = [
         "id": 50,
         "slug": "prime-nails",
         "name": "Prime Nails",
-        "portfolioImage": "/portfolio/shopify/portfolio_primeNails.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_primeNails_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1003,7 +1199,7 @@ export const portfolioDetailsData = [
         "id": 51,
         "slug": "source-bulk-foods",
         "name": "The Source Bulk Foods",
-        "portfolioImage": "/portfolio/shopify/portfolio_sourcebulkfoods.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_sourcebulkfoods_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1023,7 +1219,7 @@ export const portfolioDetailsData = [
         "id": 52,
         "slug": "beadspoint",
         "name": "Beadspoint",
-        "portfolioImage": "/portfolio/shopify/portfolio_beadspoint.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_beadspoint_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1043,7 +1239,7 @@ export const portfolioDetailsData = [
         "id": 53,
         "slug": "vacurect",
         "name": "Vacurect",
-        "portfolioImage": "/portfolio/shopify/portfolio_vacurect.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_vacurect_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1063,7 +1259,7 @@ export const portfolioDetailsData = [
         "id": 54,
         "slug": "hydro-peptide",
         "name": "Hydro Peptide",
-        "portfolioImage": "/portfolio/shopify/portfolio_hydroPeptide.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_hydroPeptide_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1083,7 +1279,7 @@ export const portfolioDetailsData = [
         "id": 55,
         "slug": "boxraw",
         "name": "Boxraw",
-        "portfolioImage": "/portfolio/shopify/portfolio_boxraw.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_boxraw_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1103,7 +1299,7 @@ export const portfolioDetailsData = [
         "id": 56,
         "slug": "ultimate-ears",
         "name": "Ultimate Ears",
-        "portfolioImage": "/portfolio/shopify/portfolio_ultimateEars.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_ultimateEars_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1123,7 +1319,7 @@ export const portfolioDetailsData = [
         "id": 57,
         "slug": "ruumi-art",
         "name": "Ruumi Art",
-        "portfolioImage": "/portfolio/shopify/portfolio_ruumiArt.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_ruumiArt_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1143,7 +1339,7 @@ export const portfolioDetailsData = [
         "id": 58,
         "slug": "ludic",
         "name": "Ludic",
-        "portfolioImage": "/portfolio/shopify/portfolio_ludic.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_ludic_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1163,7 +1359,7 @@ export const portfolioDetailsData = [
         "id": 59,
         "slug": "vegamour",
         "name": "Vegamour",
-        "portfolioImage": "/portfolio/shopify/portfolio_vegamour.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_vegamour_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1183,7 +1379,7 @@ export const portfolioDetailsData = [
         "id": 60,
         "slug": "kretoss",
         "name": "Kretoss",
-        "portfolioImage": "/portfolio/shopify/portfolio_kretoss.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_kretoss_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1203,7 +1399,7 @@ export const portfolioDetailsData = [
         "id": 61,
         "slug": "vitality",
         "name": "Vitality",
-        "portfolioImage": "/portfolio/shopify/portfolio_vitality.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_vitality_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1223,7 +1419,7 @@ export const portfolioDetailsData = [
         "id": 62,
         "slug": "anveshan-farm-technologies",
         "name": "Anveshan Farm Technologies",
-        "portfolioImage": "/portfolio/shopify/portfolio_anveshan.jpg",
+        "portfolioImage": "/portfolio/shopify/portfolio_anveshan_full.webp",
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
@@ -1243,7 +1439,7 @@ export const portfolioDetailsData = [
         "id": 63,
         "slug": "anthem",
         "name": "Anthem Home Comfort",
-        "portfolioImage": "/portfolio/wordpress/portfolio_anthem.jpg",
+        "portfolioImage": "/portfolio/wordpress/portfolio_anthem_full.jpg",
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
@@ -1263,7 +1459,7 @@ export const portfolioDetailsData = [
         "id": 64,
         "slug": "freight-plus",
         "name": "Freight Plus",
-        "portfolioImage": "/portfolio/wordpress/portfolio_freightplus.jpg",
+        "portfolioImage": "/portfolio/wordpress/portfolio_freightplus_full.jpg",
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
@@ -1283,7 +1479,7 @@ export const portfolioDetailsData = [
         "id": 65,
         "slug": "sobel",
         "name": "Sobel",
-        "portfolioImage": "/portfolio/wordpress/portfolio_sobel.jpg",
+        "portfolioImage": "/portfolio/wordpress/portfolio_sobel_full.jpg",
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
@@ -1303,7 +1499,7 @@ export const portfolioDetailsData = [
         "id": 66,
         "slug": "beepec",
         "name": "Beepec",
-        "portfolioImage": "/portfolio/wordpress/portfolio_beepec.jpg",
+        "portfolioImage": "/portfolio/wordpress/portfolio_beepec_full.jpg",
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
@@ -1323,7 +1519,7 @@ export const portfolioDetailsData = [
         "id": 67,
         "slug": "source-bulk-foods-wordpress",
         "name": "The Source Bulk Foods",
-        "portfolioImage": "/portfolio/wordpress/portfolio_source_foods.jpg",
+        "portfolioImage": "/portfolio/wordpress/portfolio_source_foods_full.jpg",
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
@@ -1343,7 +1539,7 @@ export const portfolioDetailsData = [
         "id": 68,
         "slug": "easygold",
         "name": "EasyGold24",
-        "portfolioImage": "/portfolio/wordpress/portfolio_easygold.jpg",
+        "portfolioImage": "/portfolio/wordpress/portfolio_easygold_full.jpg",
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
@@ -1363,7 +1559,7 @@ export const portfolioDetailsData = [
         "id": 69,
         "slug": "meridian-pacific-properties",
         "name": "Meridian Pacific Properties",
-        "portfolioImage": "/portfolio/wordpress/portfolio_meridian.jpg",
+        "portfolioImage": "/portfolio/wordpress/portfolio_meridian_full.jpg",
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
@@ -1383,7 +1579,7 @@ export const portfolioDetailsData = [
         "id": 70,
         "slug": "the-penny",
         "name": "The Penny",
-        "portfolioImage": "/portfolio/wordpress/portfolio_penny.jpg",
+        "portfolioImage": "/portfolio/wordpress/portfolio_penny_full.jpg",
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
@@ -1403,7 +1599,7 @@ export const portfolioDetailsData = [
         "id": 71,
         "slug": "litehaus",
         "name": "Litehaus",
-        "portfolioImage": "/portfolio/wordpress/portfolio_litehaus.jpg",
+        "portfolioImage": "/portfolio/wordpress/portfolio_litehaus_full.jpg",
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
@@ -1423,7 +1619,7 @@ export const portfolioDetailsData = [
         "id": 72,
         "slug": "leebroom",
         "name": "LEE BROOM",
-        "portfolioImage": "/portfolio/bigcommerce/portfolio_leebroom.jpg",
+        "portfolioImage": "/portfolio/bigcommerce/portfolio_leebroom_full.jpg",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce + React + Node",
@@ -1443,7 +1639,7 @@ export const portfolioDetailsData = [
         "id": 73,
         "slug": "good-good-ganja",
         "name": "Good Good Ganja",
-        "portfolioImage": "/portfolio/bigcommerce/portfolio_good-good-ganja.png",
+        "portfolioImage": "/portfolio/bigcommerce/portfolio_good-good-ganja_full.jpg",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
@@ -1463,7 +1659,7 @@ export const portfolioDetailsData = [
         "id": 74,
         "slug": "color-matrics",
         "name": "Color Matrics",
-        "portfolioImage": "/portfolio/bigcommerce/portfolio_cs.png",
+        "portfolioImage": "/portfolio/bigcommerce/portfolio_cs_full.png",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
@@ -1483,7 +1679,7 @@ export const portfolioDetailsData = [
         "id": 75,
         "slug": "dane-apparel",
         "name": "Dane Apparel",
-        "portfolioImage": "/portfolio/bigcommerce/portfolio_dane-apparel.jpg",
+        "portfolioImage": "/portfolio/bigcommerce/portfolio_dane-apparel_full.jpg",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
@@ -1503,7 +1699,7 @@ export const portfolioDetailsData = [
         "id": 76,
         "slug": "caramel",
         "name": "Caramel",
-        "portfolioImage": "/portfolio/bigcommerce/portfolio_caramel.jpg",
+        "portfolioImage": "/portfolio/bigcommerce/portfolio_caramel_full.jpg",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
@@ -1523,7 +1719,7 @@ export const portfolioDetailsData = [
         "id": 77,
         "slug": "intermat",
         "name": "Intermat",
-        "portfolioImage": "/portfolio/bigcommerce/portfolio_intermat.png",
+        "portfolioImage": "/portfolio/bigcommerce/portfolio_intermat_full.png",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
@@ -1543,7 +1739,7 @@ export const portfolioDetailsData = [
         "id": 78,
         "slug": "locket-sisters",
         "name": "Locket Sisters",
-        "portfolioImage": "/portfolio/bigcommerce/portfolio_locket-sisters.jpg",
+        "portfolioImage": "/portfolio/bigcommerce/portfolio_locket-sisters-full.png",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
@@ -1563,7 +1759,7 @@ export const portfolioDetailsData = [
         "id": 79,
         "slug": "saveyourcapital",
         "name": "Save Your Capital",
-        "portfolioImage": "/portfolio/custom/portfolio_saveyourcapital.png",
+        "portfolioImage": "/portfolio/custom/portfolio_saveyourcapital_full.webp",
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "HTML, CSS & Js",
@@ -1583,7 +1779,7 @@ export const portfolioDetailsData = [
         "id": 80,
         "slug": "better-quest",
         "name": "Better Quest",
-        "portfolioImage": "/portfolio/web-design/portfolio_better_quest.jpg",
+        "portfolioImage": "/portfolio/web-design/portfolio_better_quest_full.jpg",
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "Web Design",
@@ -1603,7 +1799,7 @@ export const portfolioDetailsData = [
         "id": 81,
         "slug": "wedding-invitation",
         "name": "Practical Information for International Guest",
-        "portfolioImage": "/portfolio/web-design/portfolio_wedding_invitation.jpg",
+        "portfolioImage": "/portfolio/web-design/portfolio_wedding_invitation_full.jpg",
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "Web Design",
@@ -1623,7 +1819,7 @@ export const portfolioDetailsData = [
         "id": 82,
         "slug": "atopic-diary",
         "name": "Atopic Diary",
-        "portfolioImage": "/portfolio/web-design/portfolio_atopic_diary.jpg",
+        "portfolioImage": "/portfolio/web-design/portfolio_atopic_diary_full.jpg",
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "Web Design",
@@ -1643,7 +1839,7 @@ export const portfolioDetailsData = [
         "id": 83,
         "slug": "skin-dao",
         "name": "Skin Dao",
-        "portfolioImage": "/portfolio/web-design/portfolio_skin_dao.jpg",
+        "portfolioImage": "/portfolio/web-design/portfolio_skin_dao_full.jpg",
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "Web Design",
@@ -1663,7 +1859,7 @@ export const portfolioDetailsData = [
         "id": 84,
         "slug": "core",
         "name": "Core CRMS",
-        "portfolioImage": "/portfolio/web-design/portfolio_core.jpg",
+        "portfolioImage": "/portfolio/web-design/portfolio_core_full.jpg",
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "Web Design",
@@ -1683,7 +1879,7 @@ export const portfolioDetailsData = [
         "id": 85,
         "slug": "clean-steam-pros",
         "name": "Clean Steam Pros",
-        "portfolioImage": "/portfolio/other/portfolio_clean_steam_pros.jpg",
+        "portfolioImage": "/portfolio/other/portfolio_clean_steam_pros_full.jpg",
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Hubspot",
@@ -1703,7 +1899,7 @@ export const portfolioDetailsData = [
         "id": 86,
         "slug": "one",
         "name": "One",
-        "portfolioImage": "/portfolio/other/portfolio_one.jpg",
+        "portfolioImage": "/portfolio/other/portfolio_one_full.jpg",
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Hubspot",
@@ -1723,7 +1919,7 @@ export const portfolioDetailsData = [
         "id": 87,
         "slug": "aroconllc",
         "name": "Aroconllc",
-        "portfolioImage": "/portfolio/other/portfolio_aroconllc.jpg",
+        "portfolioImage": "/portfolio/other/portfolio_aroconllc_full.jpg",
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Hubspot",
@@ -1743,7 +1939,7 @@ export const portfolioDetailsData = [
         "id": 88,
         "slug": "intempt",
         "name": "Intempt",
-        "portfolioImage": "/portfolio/other/portfolio_intempt.jpg",
+        "portfolioImage": "/portfolio/other/portfolio_intempt_full.jpg",
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Hubspot",
@@ -1763,7 +1959,7 @@ export const portfolioDetailsData = [
         "id": 89,
         "slug": "automaximizer",
         "name": "Automaximizer",
-        "portfolioImage": "/portfolio/other/portfolio_automaximizer.jpg",
+        "portfolioImage": "/portfolio/other/portfolio_automaximizer_full.jpg",
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Magento",
@@ -1783,7 +1979,7 @@ export const portfolioDetailsData = [
         "id": 90,
         "slug": "rta-store",
         "name": "The RTA Store",
-        "portfolioImage": "/portfolio/other/portfolio_rta.jpg",
+        "portfolioImage": "/portfolio/other/portfolio_rta_full.jpg",
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Magento",
@@ -1803,7 +1999,7 @@ export const portfolioDetailsData = [
         "id": 91,
         "slug": "hunters-unite",
         "name": "Hunters Unite",
-        "portfolioImage": "/portfolio/other/portfolio_hunters_unite.jpg",
+        "portfolioImage": "/portfolio/other/portfolio_hunters_unite_full.jpg",
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Magento",

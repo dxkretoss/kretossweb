@@ -212,12 +212,12 @@ export default function PortfolioHero() {
                             </div>
 
                             {/* Controls / Dots */}
-                            <div className="absolute -bottom-10 sm:-bottom-14 left-1/2 -translate-x-1/2 flex gap-3">
+                            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
                                 {cards.map((_, idx) => (
                                     <button
                                         key={idx}
                                         onClick={() => setActiveIndex(idx)}
-                                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${activeIndex === idx ? 'bg-[#44c7f6] scale-125 shadow-[0_0_10px_#44c7f6]' : 'bg-white/20 hover:bg-white/50'}`}
+                                        className={`w-2 h-2 rounded-full transition-all duration-300 ${activeIndex === idx ? 'bg-white scale-125' : 'bg-white/20 hover:bg-white/50'}`}
                                     />
                                 ))}
                             </div>

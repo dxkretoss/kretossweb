@@ -4,8 +4,6 @@ export const portfolioData = {
                         "slug": "guestway",
                         "portfolioImage": "/portfolio/custom/Guestway.webp",
                         "category": "Custom web",
-                        "bgColor": "#8bb5e4",
-                        "rightsidebgColor": "#0d1a29",
                         "tags": [
                                 "Guestway",
                                 "Web"
@@ -22,8 +20,6 @@ export const portfolioData = {
                         "slug": "iiccrypto",
                         "portfolioImage": "/portfolio/custom/IIC-Metaverse.webp",
                         "category": "Custom web",
-                        "bgColor": "#956530",
-                        "rightsidebgColor": "#956530",
                         "tags": [
                                 "IIC Metaverse",
                                 "Web"
@@ -40,8 +36,6 @@ export const portfolioData = {
                         "slug": "nexthunt",
                         "portfolioImage": "/portfolio/custom/portfolio_nexthunt.webp",
                         "category": "Custom web",
-                        "bgColor": "#6c4ccb",
-                        "rightsidebgColor": "#854acd",
                         "tags": [
                                 "NextHunt",
                                 "Web"
@@ -58,8 +52,6 @@ export const portfolioData = {
                         "slug": "palzea-widget",
                         "portfolioImage": "/portfolio/custom/portfolio_palzea-widget.webp",
                         "category": "Custom web",
-                        "bgColor": "#131d3b",
-                        "rightsidebgColor": "#131d3b",
                         "tags": [
                                 "Palzea",
                                 "Web"
@@ -76,8 +68,6 @@ export const portfolioData = {
                         "slug": "dreamload",
                         "portfolioImage": "/portfolio/custom/portfolio_dreamload.webp",
                         "category": "Custom web",
-                        "bgColor": "#023d68",
-                        "rightsidebgColor": "#023d68",
                         "tags": [
                                 "Dreamload",
                                 "Web"
@@ -94,8 +84,6 @@ export const portfolioData = {
                         "slug": "phoenixfc",
                         "portfolioImage": "/portfolio/custom/portfolio_phoenix.webp",
                         "category": "Custom web",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "PhoenixFC",
                                 "Web"
@@ -112,8 +100,6 @@ export const portfolioData = {
                         "slug": "palzea",
                         "portfolioImage": "/portfolio/custom/portfolio_palzea.webp",
                         "category": "Custom web",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Palzea",
                                 "Web"
@@ -130,8 +116,6 @@ export const portfolioData = {
                         "slug": "fily",
                         "portfolioImage": "/portfolio/custom/portfolio_fily.webp",
                         "category": "Custom web",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Fily",
                                 "Web"
@@ -148,8 +132,6 @@ export const portfolioData = {
                         "slug": "stb",
                         "portfolioImage": "/portfolio/custom/portfolio_stb.webp",
                         "category": "Custom web",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "Student Travel Buddy",
                                 "Web"
@@ -166,8 +148,6 @@ export const portfolioData = {
                         "slug": "klubbrabatten",
                         "portfolioImage": "/portfolio/custom/portfolio_klubbrabatten.webp",
                         "category": "Custom web",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "Klubbrabatten",
                                 "Web"
@@ -184,8 +164,6 @@ export const portfolioData = {
                         "slug": "giveaways",
                         "portfolioImage": "/portfolio/custom/portfolio_giveaways.webp",
                         "category": "Custom web",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Giveaway",
                                 "Web"
@@ -202,8 +180,6 @@ export const portfolioData = {
                         "slug": "sarhachat",
                         "portfolioImage": "/portfolio/custom/portfolio_sarhachat.webp",
                         "category": "Custom web",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Sarhachat",
                                 "Web"
@@ -220,8 +196,6 @@ export const portfolioData = {
                         "slug": "wallstreets",
                         "portfolioImage": "/portfolio/custom/portfolio_wallstreet.webp",
                         "category": "Custom web",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "Wall Street",
                                 "Web"
@@ -238,8 +212,6 @@ export const portfolioData = {
                         "slug": "allbots",
                         "portfolioImage": "/portfolio/custom/portfolio_allbots.webp",
                         "category": "Custom web",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "Allbots",
                                 "Web"
@@ -256,8 +228,6 @@ export const portfolioData = {
                         "slug": "searchive",
                         "portfolioImage": "/portfolio/custom/portfolio_searchive.webp",
                         "category": "Custom web",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Searchive",
                                 "Web"
@@ -274,8 +244,6 @@ export const portfolioData = {
                         "slug": "coyna",
                         "portfolioImage": "/portfolio/custom/portfolio_coyna.webp",
                         "category": "Custom web",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Coyna",
                                 "Web"
@@ -292,8 +260,6 @@ export const portfolioData = {
                         "slug": "gujarat-tiles-info",
                         "portfolioImage": "/portfolio/custom/portfolio_gujarat_tiles_info.webp",
                         "category": "Custom web",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "Gujarat Tiles Info",
                                 "Web"
@@ -310,8 +276,6 @@ export const portfolioData = {
                         "slug": "implanstock",
                         "portfolioImage": "/portfolio/custom/portfolio_implantstock.webp",
                         "category": "Custom web",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "Implant Stock",
                                 "Web"
@@ -328,8 +292,6 @@ export const portfolioData = {
                         "slug": "locum-prime",
                         "portfolioImage": "/portfolio/custom/portfolio_locumprime.webp",
                         "category": "Custom web",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Locum Prime",
                                 "Web"
@@ -346,8 +308,6 @@ export const portfolioData = {
                         "slug": "trust-arthur-group",
                         "portfolioImage": "/portfolio/custom/portfolio_trust_arthur_group.webp",
                         "category": "Custom web",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Trust Arthur Group",
                                 "Web"
@@ -364,8 +324,6 @@ export const portfolioData = {
                         "slug": "taxley-custom",
                         "portfolioImage": "/portfolio/custom/portfolio_taxley.webp",
                         "category": "Custom web",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "Taxley",
                                 "Web"
@@ -384,8 +342,6 @@ export const portfolioData = {
                         "slug": "my100days",
                         "portfolioImage": "/portfolio/mobile-app/my-100-days/portfolio_md.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "My100Days",
                                 "Mobile App"
@@ -402,8 +358,6 @@ export const portfolioData = {
                         "slug": "trischedule",
                         "portfolioImage": "/portfolio/mobile-app/trischedule/portfolio_trischedule.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "TriSchedule",
                                 "Mobile App"
@@ -420,8 +374,6 @@ export const portfolioData = {
                         "slug": "wingman",
                         "portfolioImage": "/portfolio/mobile-app/wingman/wingman.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Wingman",
                                 "Mobile App"
@@ -438,8 +390,6 @@ export const portfolioData = {
                         "slug": "book-builder",
                         "portfolioImage": "/portfolio/mobile-app/bookbuilder/portfolio_bb.png",
                         "category": "Mobile app",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Book a Builder",
                                 "Mobile App"
@@ -456,8 +406,6 @@ export const portfolioData = {
                         "slug": "klubbrabatten-mob",
                         "portfolioImage": "/portfolio/mobile-app/Klubbrabatten/portfolio_klub.png",
                         "category": "Mobile app",
-                        "bgColor": "#6c4ccb",
-                        "rightsidebgColor": "#6c4ccb",
                         "tags": [
                                 "Klubbrabatten",
                                 "Mobile App"
@@ -474,8 +422,6 @@ export const portfolioData = {
                         "slug": "roamaly-app",
                         "portfolioImage": "/portfolio/mobile-app/roamaly/portfolio_roamaly.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#e74c3c",
-                        "rightsidebgColor": "#e74c3c",
                         "tags": [
                                 "Roamaly",
                                 "Mobile App"
@@ -492,8 +438,6 @@ export const portfolioData = {
                         "slug": "sion",
                         "portfolioImage": "/portfolio/mobile-app/sion/portfolio_sion.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#f39c12",
-                        "rightsidebgColor": "#f39c12",
                         "tags": [
                                 "Sion Reservations",
                                 "Mobile App"
@@ -510,8 +454,6 @@ export const portfolioData = {
                         "slug": "city2city",
                         "portfolioImage": "/portfolio/mobile-app/city2city/portfolio_city2city.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "City 2 City",
                                 "Mobile App"
@@ -528,8 +470,6 @@ export const portfolioData = {
                         "slug": "drawn",
                         "portfolioImage": "/portfolio/mobile-app/drawn/portfolio_drawn.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "Drawn",
                                 "Mobile App"
@@ -546,8 +486,6 @@ export const portfolioData = {
                         "slug": "somnexis",
                         "portfolioImage": "/portfolio/mobile-app/somnexis/portfolio_somnexis.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Somnexis",
                                 "Mobile App"
@@ -564,8 +502,6 @@ export const portfolioData = {
                         "slug": "traivend",
                         "portfolioImage": "/portfolio/mobile-app/traivend/portfolio_traivend.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Traivend",
                                 "Mobile App"
@@ -582,8 +518,6 @@ export const portfolioData = {
                         "slug": "offarat",
                         "portfolioImage": "/portfolio/mobile-app/offarat/portfolio_offarat.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#6c4ccb",
-                        "rightsidebgColor": "#6c4ccb",
                         "tags": [
                                 "Offarat",
                                 "Mobile App"
@@ -600,8 +534,6 @@ export const portfolioData = {
                         "slug": "taxley",
                         "portfolioImage": "/portfolio/mobile-app/taxley/portfolio_taxley.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#e74c3c",
-                        "rightsidebgColor": "#e74c3c",
                         "tags": [
                                 "Taxley",
                                 "Mobile App"
@@ -618,8 +550,6 @@ export const portfolioData = {
                         "slug": "kolderkiduniverse",
                         "portfolioImage": "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse.jpg",
                         "category": "Mobile app",
-                        "bgColor": "#f39c12",
-                        "rightsidebgColor": "#f39c12",
                         "tags": [
                                 "Kolder Kid Universe",
                                 "Mobile App"
@@ -638,8 +568,6 @@ export const portfolioData = {
                         "slug": "kates-real-food",
                         "portfolioImage": "/portfolio/shopify/portfolio_katesrealfood.webp",
                         "category": "Shopify",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "Kate's Real Food",
                                 "Shopify"
@@ -656,8 +584,6 @@ export const portfolioData = {
                         "slug": "ludic-life",
                         "portfolioImage": "/portfolio/shopify/portfolio_ludic-life.webp",
                         "category": "Shopify",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "Ludic Life",
                                 "Shopify"
@@ -674,8 +600,6 @@ export const portfolioData = {
                         "slug": "ludic-global",
                         "portfolioImage": "/portfolio/shopify/portfolio_ludic-global.webp",
                         "category": "Shopify",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Ludic Global",
                                 "Shopify"
@@ -692,8 +616,6 @@ export const portfolioData = {
                         "slug": "ludic-kitchen",
                         "portfolioImage": "/portfolio/shopify/portfolio_ludic-kitchen.webp",
                         "category": "Shopify",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Ludic Kitchen",
                                 "Shopify"
@@ -710,8 +632,6 @@ export const portfolioData = {
                         "slug": "almost-peaceful",
                         "portfolioImage": "/portfolio/shopify/portfolio_almost.webp",
                         "category": "Shopify",
-                        "bgColor": "#6c4ccb",
-                        "rightsidebgColor": "#6c4ccb",
                         "tags": [
                                 "Almost Peaceful",
                                 "Shopify"
@@ -728,8 +648,6 @@ export const portfolioData = {
                         "slug": "impetus-health",
                         "portfolioImage": "/portfolio/shopify/portfolio_impectus.webp",
                         "category": "Shopify",
-                        "bgColor": "#e74c3c",
-                        "rightsidebgColor": "#e74c3c",
                         "tags": [
                                 "Impetus Health",
                                 "Shopify"
@@ -746,8 +664,6 @@ export const portfolioData = {
                         "slug": "roamaly",
                         "portfolioImage": "/portfolio/shopify/portfolio_roamaly.webp",
                         "category": "Shopify",
-                        "bgColor": "#f39c12",
-                        "rightsidebgColor": "#f39c12",
                         "tags": [
                                 "Roamaly",
                                 "Shopify"
@@ -764,8 +680,6 @@ export const portfolioData = {
                         "slug": "kids-posters",
                         "portfolioImage": "/portfolio/shopify/portfolio_kidsPoster.webp",
                         "category": "Shopify",
-                        "bgColor": "#956530",
-                        "rightsidebgColor": "#956530",
                         "tags": [
                                 "Kids Posters",
                                 "Shopify"
@@ -782,8 +696,6 @@ export const portfolioData = {
                         "slug": "the-pawcan",
                         "portfolioImage": "/portfolio/shopify/portfolio_pawcan.webp",
                         "category": "Shopify",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "The Pawcan",
                                 "Shopify"
@@ -800,8 +712,6 @@ export const portfolioData = {
                         "slug": "recreation-beauty",
                         "portfolioImage": "/portfolio/shopify/portfolio_recreation.webp",
                         "category": "Shopify",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "Recreation Beauty",
                                 "Shopify"
@@ -818,8 +728,6 @@ export const portfolioData = {
                         "slug": "tango-swim",
                         "portfolioImage": "/portfolio/shopify/portfolio_tango.webp",
                         "category": "Shopify",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Tango Swim",
                                 "Shopify"
@@ -836,8 +744,6 @@ export const portfolioData = {
                         "slug": "tilit",
                         "portfolioImage": "/portfolio/shopify/portfolio_tilit.webp",
                         "category": "Shopify",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Tilit",
                                 "Shopify"
@@ -854,8 +760,6 @@ export const portfolioData = {
                         "slug": "honey-stinger",
                         "portfolioImage": "/portfolio/shopify/portfolio_honeyStinger.webp",
                         "category": "Shopify",
-                        "bgColor": "#6c4ccb",
-                        "rightsidebgColor": "#6c4ccb",
                         "tags": [
                                 "Honey Stinger",
                                 "Shopify"
@@ -872,8 +776,6 @@ export const portfolioData = {
                         "slug": "moanarose",
                         "portfolioImage": "/portfolio/shopify/portfolio_moanarose.webp",
                         "category": "Shopify",
-                        "bgColor": "#e74c3c",
-                        "rightsidebgColor": "#e74c3c",
                         "tags": [
                                 "Moanarose",
                                 "Shopify"
@@ -890,8 +792,6 @@ export const portfolioData = {
                         "slug": "prime-nails",
                         "portfolioImage": "/portfolio/shopify/portfolio_primeNails.webp",
                         "category": "Shopify",
-                        "bgColor": "#f39c12",
-                        "rightsidebgColor": "#f39c12",
                         "tags": [
                                 "Prime Nails",
                                 "Shopify"
@@ -908,8 +808,6 @@ export const portfolioData = {
                         "slug": "source-bulk-foods",
                         "portfolioImage": "/portfolio/shopify/portfolio_sourcebulkfoods.webp",
                         "category": "Shopify",
-                        "bgColor": "#956530",
-                        "rightsidebgColor": "#956530",
                         "tags": [
                                 "The Source Bulk Foods",
                                 "Shopify"
@@ -926,8 +824,6 @@ export const portfolioData = {
                         "slug": "beadspoint",
                         "portfolioImage": "/portfolio/shopify/portfolio_beadspoint.webp",
                         "category": "Shopify",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "Beadspoint",
                                 "Shopify"
@@ -944,8 +840,6 @@ export const portfolioData = {
                         "slug": "vacurect",
                         "portfolioImage": "/portfolio/shopify/portfolio_vacurect.webp",
                         "category": "Shopify",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "Vacurect",
                                 "Shopify"
@@ -962,8 +856,6 @@ export const portfolioData = {
                         "slug": "hydro-peptide",
                         "portfolioImage": "/portfolio/shopify/portfolio_hydroPeptide.webp",
                         "category": "Shopify",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Hydro Peptide",
                                 "Shopify"
@@ -980,8 +872,6 @@ export const portfolioData = {
                         "slug": "boxraw",
                         "portfolioImage": "/portfolio/shopify/portfolio_boxraw.webp",
                         "category": "Shopify",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Boxraw",
                                 "Shopify"
@@ -998,8 +888,6 @@ export const portfolioData = {
                         "slug": "ultimate-ears",
                         "portfolioImage": "/portfolio/shopify/portfolio_ultimateEars.webp",
                         "category": "Shopify",
-                        "bgColor": "#6c4ccb",
-                        "rightsidebgColor": "#6c4ccb",
                         "tags": [
                                 "Ultimate Ears",
                                 "Shopify"
@@ -1016,8 +904,6 @@ export const portfolioData = {
                         "slug": "ruumi-art",
                         "portfolioImage": "/portfolio/shopify/portfolio_ruumiArt.webp",
                         "category": "Shopify",
-                        "bgColor": "#e74c3c",
-                        "rightsidebgColor": "#e74c3c",
                         "tags": [
                                 "Ruumi Art",
                                 "Shopify"
@@ -1034,8 +920,6 @@ export const portfolioData = {
                         "slug": "ludic",
                         "portfolioImage": "/portfolio/shopify/portfolio_ludic.webp",
                         "category": "Shopify",
-                        "bgColor": "#f39c12",
-                        "rightsidebgColor": "#f39c12",
                         "tags": [
                                 "Ludic",
                                 "Shopify"
@@ -1052,8 +936,6 @@ export const portfolioData = {
                         "slug": "vegamour",
                         "portfolioImage": "/portfolio/shopify/portfolio_vegamour.webp",
                         "category": "Shopify",
-                        "bgColor": "#956530",
-                        "rightsidebgColor": "#956530",
                         "tags": [
                                 "Vegamour",
                                 "Shopify"
@@ -1070,8 +952,6 @@ export const portfolioData = {
                         "slug": "kretoss",
                         "portfolioImage": "/portfolio/shopify/portfolio_kretoss.webp",
                         "category": "Shopify",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "Kretoss",
                                 "Shopify"
@@ -1088,8 +968,6 @@ export const portfolioData = {
                         "slug": "vitality",
                         "portfolioImage": "/portfolio/shopify/portfolio_vitality.webp",
                         "category": "Shopify",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "Vitality",
                                 "Shopify"
@@ -1106,8 +984,6 @@ export const portfolioData = {
                         "slug": "anveshan-farm-technologies",
                         "portfolioImage": "/portfolio/shopify/portfolio_anveshan.webp",
                         "category": "Shopify",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Anveshan Farm Technologies",
                                 "Shopify"
@@ -1126,8 +1002,6 @@ export const portfolioData = {
                         "slug": "anthem",
                         "portfolioImage": "/portfolio/wordpress/portfolio_anthem.jpg",
                         "category": "Wordpress",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "Anthem Home Comfort",
                                 "Wordpress"
@@ -1144,8 +1018,6 @@ export const portfolioData = {
                         "slug": "freight-plus",
                         "portfolioImage": "/portfolio/wordpress/portfolio_freightplus.jpg",
                         "category": "Wordpress",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "Freight Plus",
                                 "Wordpress"
@@ -1162,8 +1034,6 @@ export const portfolioData = {
                         "slug": "sobel",
                         "portfolioImage": "/portfolio/wordpress/portfolio_sobel.jpg",
                         "category": "Wordpress",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Sobel",
                                 "Wordpress"
@@ -1180,8 +1050,6 @@ export const portfolioData = {
                         "slug": "beepec",
                         "portfolioImage": "/portfolio/wordpress/portfolio_beepec.jpg",
                         "category": "Wordpress",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Beepec",
                                 "Wordpress"
@@ -1198,8 +1066,6 @@ export const portfolioData = {
                         "slug": "source-bulk-foods-wordpress",
                         "portfolioImage": "/portfolio/wordpress/portfolio_source_foods.jpg",
                         "category": "Wordpress",
-                        "bgColor": "#6c4ccb",
-                        "rightsidebgColor": "#6c4ccb",
                         "tags": [
                                 "The Source Bulk Foods",
                                 "Wordpress"
@@ -1216,8 +1082,6 @@ export const portfolioData = {
                         "slug": "easygold",
                         "portfolioImage": "/portfolio/wordpress/portfolio_easygold.jpg",
                         "category": "Wordpress",
-                        "bgColor": "#e74c3c",
-                        "rightsidebgColor": "#e74c3c",
                         "tags": [
                                 "EasyGold24",
                                 "Wordpress"
@@ -1234,8 +1098,6 @@ export const portfolioData = {
                         "slug": "meridian-pacific-properties",
                         "portfolioImage": "/portfolio/wordpress/portfolio_meridian.jpg",
                         "category": "Wordpress",
-                        "bgColor": "#f39c12",
-                        "rightsidebgColor": "#f39c12",
                         "tags": [
                                 "Meridian Pacific Properties",
                                 "Wordpress"
@@ -1252,8 +1114,6 @@ export const portfolioData = {
                         "slug": "the-penny",
                         "portfolioImage": "/portfolio/wordpress/portfolio_penny.jpg",
                         "category": "Wordpress",
-                        "bgColor": "#956530",
-                        "rightsidebgColor": "#956530",
                         "tags": [
                                 "The Penny",
                                 "Wordpress"
@@ -1270,8 +1130,6 @@ export const portfolioData = {
                         "slug": "litehaus",
                         "portfolioImage": "/portfolio/wordpress/portfolio_litehaus.jpg",
                         "category": "Wordpress",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "Litehaus",
                                 "Wordpress"
@@ -1290,8 +1148,6 @@ export const portfolioData = {
                         "slug": "leebroom",
                         "portfolioImage": "/portfolio/bigcommerce/portfolio_leebroom.jpg",
                         "category": "Bigcommerce",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "LEE BROOM",
                                 "Bigcommerce"
@@ -1308,8 +1164,6 @@ export const portfolioData = {
                         "slug": "good-good-ganja",
                         "portfolioImage": "/portfolio/bigcommerce/portfolio_good-good-ganja.png",
                         "category": "Bigcommerce",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "Good Good Ganja",
                                 "Bigcommerce"
@@ -1326,8 +1180,6 @@ export const portfolioData = {
                         "slug": "color-matrics",
                         "portfolioImage": "/portfolio/bigcommerce/portfolio_cs.png",
                         "category": "Bigcommerce",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Color Matrics",
                                 "Bigcommerce"
@@ -1344,8 +1196,6 @@ export const portfolioData = {
                         "slug": "dane-apparel",
                         "portfolioImage": "/portfolio/bigcommerce/portfolio_dane-apparel.jpg",
                         "category": "Bigcommerce",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Dane Apparel",
                                 "Bigcommerce"
@@ -1362,8 +1212,6 @@ export const portfolioData = {
                         "slug": "caramel",
                         "portfolioImage": "/portfolio/bigcommerce/portfolio_caramel.jpg",
                         "category": "Bigcommerce",
-                        "bgColor": "#6c4ccb",
-                        "rightsidebgColor": "#6c4ccb",
                         "tags": [
                                 "Caramel",
                                 "Bigcommerce"
@@ -1380,8 +1228,6 @@ export const portfolioData = {
                         "slug": "intermat",
                         "portfolioImage": "/portfolio/bigcommerce/portfolio_intermat.png",
                         "category": "Bigcommerce",
-                        "bgColor": "#e74c3c",
-                        "rightsidebgColor": "#e74c3c",
                         "tags": [
                                 "Intermat",
                                 "Bigcommerce"
@@ -1398,8 +1244,6 @@ export const portfolioData = {
                         "slug": "locket-sisters",
                         "portfolioImage": "/portfolio/bigcommerce/portfolio_locket-sisters.jpg",
                         "category": "Bigcommerce",
-                        "bgColor": "#f39c12",
-                        "rightsidebgColor": "#f39c12",
                         "tags": [
                                 "Locket Sisters",
                                 "Bigcommerce"
@@ -1416,10 +1260,8 @@ export const portfolioData = {
         "web design": [
                 {
                         "slug": "saveyourcapital",
-                        "portfolioImage": "/portfolio/custom/portfolio_saveyourcapital.png",
+                        "portfolioImage": "/portfolio/custom/portfolio_saveyourcapital.webp",
                         "category": "web design",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "Save Your Capital",
                                 "Web Design"
@@ -1436,8 +1278,6 @@ export const portfolioData = {
                         "slug": "better-quest",
                         "portfolioImage": "/portfolio/web-design/portfolio_better_quest.jpg",
                         "category": "web design",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "Better Quest",
                                 "Web Design"
@@ -1454,8 +1294,6 @@ export const portfolioData = {
                         "slug": "wedding-invitation",
                         "portfolioImage": "/portfolio/web-design/portfolio_wedding_invitation.jpg",
                         "category": "web design",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Practical Information for International Guest",
                                 "Web Design"
@@ -1472,8 +1310,6 @@ export const portfolioData = {
                         "slug": "atopic-diary",
                         "portfolioImage": "/portfolio/web-design/portfolio_atopic_diary.jpg",
                         "category": "web design",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Atopic Diary",
                                 "Web Design"
@@ -1490,8 +1326,6 @@ export const portfolioData = {
                         "slug": "skin-dao",
                         "portfolioImage": "/portfolio/web-design/portfolio_skin_dao.jpg",
                         "category": "web design",
-                        "bgColor": "#6c4ccb",
-                        "rightsidebgColor": "#6c4ccb",
                         "tags": [
                                 "Skin Dao",
                                 "Web Design"
@@ -1508,8 +1342,6 @@ export const portfolioData = {
                         "slug": "core",
                         "portfolioImage": "/portfolio/web-design/portfolio_core.jpg",
                         "category": "web design",
-                        "bgColor": "#e74c3c",
-                        "rightsidebgColor": "#e74c3c",
                         "tags": [
                                 "Core CRMS",
                                 "Web Design"
@@ -1528,8 +1360,6 @@ export const portfolioData = {
                         "slug": "clean-steam-pros",
                         "portfolioImage": "/portfolio/other/portfolio_clean_steam_pros.jpg",
                         "category": "Other",
-                        "bgColor": "#44c7f6",
-                        "rightsidebgColor": "#44c7f6",
                         "tags": [
                                 "Clean Steam Pros",
                                 "Hubspot"
@@ -1546,8 +1376,6 @@ export const portfolioData = {
                         "slug": "one",
                         "portfolioImage": "/portfolio/other/portfolio_one.jpg",
                         "category": "Other",
-                        "bgColor": "#0037f0",
-                        "rightsidebgColor": "#0037f0",
                         "tags": [
                                 "One",
                                 "Hubspot"
@@ -1564,8 +1392,6 @@ export const portfolioData = {
                         "slug": "aroconllc",
                         "portfolioImage": "/portfolio/other/portfolio_aroconllc.jpg",
                         "category": "Other",
-                        "bgColor": "#111111",
-                        "rightsidebgColor": "#111111",
                         "tags": [
                                 "Aroconllc",
                                 "Hubspot"
@@ -1582,8 +1408,6 @@ export const portfolioData = {
                         "slug": "intempt",
                         "portfolioImage": "/portfolio/other/portfolio_intempt.jpg",
                         "category": "Other",
-                        "bgColor": "#222222",
-                        "rightsidebgColor": "#222222",
                         "tags": [
                                 "Intempt",
                                 "Hubspot"
@@ -1600,8 +1424,6 @@ export const portfolioData = {
                         "slug": "automaximizer",
                         "portfolioImage": "/portfolio/other/portfolio_automaximizer.jpg",
                         "category": "Other",
-                        "bgColor": "#6c4ccb",
-                        "rightsidebgColor": "#6c4ccb",
                         "tags": [
                                 "Automaximizer",
                                 "Magento"
@@ -1618,8 +1440,6 @@ export const portfolioData = {
                         "slug": "rta-store",
                         "portfolioImage": "/portfolio/other/portfolio_rta.jpg",
                         "category": "Other",
-                        "bgColor": "#e74c3c",
-                        "rightsidebgColor": "#e74c3c",
                         "tags": [
                                 "The RTA Store",
                                 "Magento"
@@ -1636,8 +1456,6 @@ export const portfolioData = {
                         "slug": "hunters-unite",
                         "portfolioImage": "/portfolio/other/portfolio_hunters_unite.jpg",
                         "category": "Other",
-                        "bgColor": "#f39c12",
-                        "rightsidebgColor": "#f39c12",
                         "tags": [
                                 "Hunters Unite",
                                 "Magento"

@@ -1,23 +1,89 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FastAverageColor } from 'fast-average-color';
 import { Link } from 'react-router-dom';
-import AnimatedButton from '../ui/AnimatedButton';
+import AnimatedButtonwithoutaero from '../ui/AnimatedButtonwithoutaero';
 import AnimatedButtonBorder from '../ui/AnimatedButtonBorder';
 import { portfolioData } from './portfolio';
 import Badge from '../ui/Badge';
+import {
+    FaReact, FaAngular, FaVuejs, FaNodeJs, FaPython,
+    FaLaravel, FaJava, FaSwift, FaApple, FaAws,
+    FaDigitalOcean, FaWordpress, FaShopify, FaMagento,
+    FaDrupal, FaJs, FaChartBar, FaChartLine, FaMicrosoft, FaDatabase,
+    FaHtml5, FaCss3Alt, FaCode, FaPhp, FaHubspot
+} from 'react-icons/fa';
+import {
+    SiNextdotjs, SiNestjs, SiFlutter, SiKotlin,
+    SiPandas, SiGooglecloud, SiBigcommerce,
+    SiSupabase, SiSolidity, SiMysql, SiCodeigniter, SiTensorflow
+} from 'react-icons/si';
+
+const getTechIcons = (techString) => {
+    if (!techString) return [<FaCode />];
+    const techMap = {
+        'angular': <FaAngular />,
+        'node.js': <FaNodeJs />,
+        'node js': <FaNodeJs />,
+        'html': <FaHtml5 />,
+        'css': <FaCss3Alt />,
+        'js': <FaJs />,
+        'javascript': <FaJs />,
+        'react.js': <FaReact />,
+        'reactjs': <FaReact />,
+        'react': <FaReact />,
+        'react native': <FaReact />,
+        'supabase': <SiSupabase />,
+        'blockchain': <SiSolidity />,
+        'python': <FaPython />,
+        'vue.js': <FaVuejs />,
+        'laravel': <FaLaravel />,
+        'ai': <FaChartLine />,
+        'bubble': <FaCode />,
+        'mysql': <SiMysql />,
+        'flutter': <SiFlutter />,
+        'ios swift': <FaSwift />,
+        'swift': <FaSwift />,
+        'shopify': <FaShopify />,
+        'codeigniter': <SiCodeigniter />,
+        'wordpress': <FaWordpress />,
+        'php': <FaPhp />,
+        'magento': <FaMagento />,
+        'bigcommerce': <SiBigcommerce />,
+        'hubspot': <FaHubspot />,
+    };
+
+    const techs = techString.split(/[\+,&]/).map(t => t.trim().toLowerCase());
+    const icons = techs.map(tech => techMap[tech] || <FaCode />);
+
+    const uniqueIcons = [];
+    const seen = new Set();
+    for (const icon of icons) {
+        if (!seen.has(icon.type)) {
+            seen.add(icon.type);
+            uniqueIcons.push(icon);
+        }
+    }
+    return uniqueIcons;
+};
 
 const PortfolioCard = ({ item }) => {
-    const [bgColor, setBgColor] = useState(item.bgColor || '#111111');
+    const [bgColor, setBgColor] = useState('#111111');
     const imgRef = useRef(null);
 
     useEffect(() => {
-        // Auto-detect color for all images, ignoring any hardcoded JSON colors
         if (imgRef.current) {
             const fac = new FastAverageColor();
 
             const extractColor = async () => {
                 try {
-                    const color = await fac.getColorAsync(imgRef.current);
+                    // Extract color only from the top-left 50x50 pixels to avoid the white mockups
+                    const color = await fac.getColorAsync(imgRef.current, {
+                        left: 10,
+                        top: 10,
+                        width: 50,
+                        height: 50,
+                        algorithm: 'dominant'
+                    });
                     setBgColor(color.hex);
                     // Store if it's light or dark for dynamic text colors
                     if (color.isDark) {
@@ -40,8 +106,8 @@ const PortfolioCard = ({ item }) => {
     }, [item.portfolioImage]);
 
     return (
-        <div className="border-1 border-[#C3C3C3] p-2 sm:p-4 w-full rounded-[15px] overflow-hidden">
-            <div className="flex flex-col lg:flex-row gap-3 rounded-[10px] p-2 sm:p-3 transition-colors duration-500" style={{ background: bgColor }}>
+        <div className="border-1 border-[#C3C3C3] p-2 sm:p-4 w-full rounded-[15px] overflow-hidden min-h-[400px] lg:min-h-[500px]">
+            <div className="flex flex-col lg:flex-row gap-3 rounded-[10px] p-2 sm:p-3 transition-colors duration-500 h-full" style={{ background: bgColor }}>
 
                 {/* Left Side - Image Panel */}
                 <div
@@ -61,13 +127,17 @@ const PortfolioCard = ({ item }) => {
                     style={{
                         background: `
                             repeating-linear-gradient(
-                                to right,
-                                transparent,
-                                transparent 12.5%,
-                                rgba(0, 0, 0, 0.15) 12.5%,
-                                rgba(0, 0, 0, 0.15) 25%
+                            to right,
+                            transparent,
+                            transparent 12.5%,
+                            rgba(255,255,255,0.05) 12.5%,
+                            rgba(255,255,255,0.05) 25%
                             ),
-                            linear-gradient(135deg, ${item.rightsidebgColor || '#111111'}aa 0%, #0a0a0a 100%)
+                            linear-gradient(
+                            135deg,
+                            ${bgColor} 0%,
+                            rgba(0,0,0,0.85) 100%
+                            )
                         `,
                     }}
                 >
@@ -107,12 +177,16 @@ const PortfolioCard = ({ item }) => {
                             style={{ background: bgColor }}
                         >
 
-                            <div className='flex gap-2'>
-                                <div className="project-author-image-box">
-                                    <img src={'./portfolio/icon.png'} loading="lazy" alt="Project Author" className="project-author-image" />
+                            <div className='flex gap-2 items-center'>
+                                <div className="flex items-center -space-x-2 mr-1">
+                                    {getTechIcons(item.techStack || item.category).map((IconElement, i) => (
+                                        <div key={i} className="w-8 h-8 rounded-full bg-[#111111] flex items-center justify-center border border-gray-600 shadow-sm relative text-white" style={{ zIndex: 10 - i }}>
+                                            {React.cloneElement(IconElement, { className: "w-4 h-4 object-contain" })}
+                                        </div>
+                                    ))}
                                 </div>
                                 {/* Tech Stack Pill */}
-                                <div className={`flex items-center gap-2 font-semibold text-base ${imgRef.current?.dataset?.isDark === 'true' ? 'text-white' : 'text-black'}`}>
+                                <div className={`flex items-center gap-2 font-semibold text-sm sm:text-base ${imgRef.current?.dataset?.isDark === 'true' ? 'text-white' : 'text-black'}`}>
                                     {item.techStack || item.category}
                                 </div>
                             </div>
@@ -150,9 +224,36 @@ const PortfolioCard = ({ item }) => {
 };
 
 export default function Portfolios() {
-    const [activeCategory, setActiveCategory] = useState("Custom web");
-    const [currentPage, setCurrentPage] = useState(1);
+    const [activeCategory, setActiveCategory] = useState(() => {
+        return localStorage.getItem('portfolioActiveCategory') || "Custom web";
+    });
+    const [visibleCount, setVisibleCount] = useState(5);
+
+    useEffect(() => {
+        localStorage.setItem('portfolioActiveCategory', activeCategory);
+    }, [activeCategory]);
+
     const itemsPerPage = 5;
+    const loadMoreRef = useRef(null);
+
+    useEffect(() => {
+        const currentPortfolios = portfolioData[activeCategory] || [];
+        if (visibleCount >= currentPortfolios.length) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                setVisibleCount(prev => prev + itemsPerPage);
+            }
+        }, { threshold: 0.1 });
+
+        if (loadMoreRef.current) {
+            observer.observe(loadMoreRef.current);
+        }
+
+        return () => {
+            if (loadMoreRef.current) observer.unobserve(loadMoreRef.current);
+        };
+    }, [visibleCount, activeCategory]);
     const sectionRef = useRef(null);
 
     const scrollToTop = () => {
@@ -178,8 +279,7 @@ export default function Portfolios() {
     ];
 
     const currentPortfolios = portfolioData[activeCategory] || [];
-    const totalPages = Math.ceil(currentPortfolios.length / itemsPerPage);
-    const currentItems = currentPortfolios.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+    const currentItems = currentPortfolios.slice(0, visibleCount);
 
     return (
         <section ref={sectionRef} className="py-10 lg:py-20 bg-[#0a0a0a] relative">
@@ -209,11 +309,11 @@ export default function Portfolios() {
                                 return;
                             }
                             setActiveCategory(category);
-                            setCurrentPage(1);
+                            setVisibleCount(5);
                         };
 
                         return isActive ? (
-                            <AnimatedButton
+                            <AnimatedButtonwithoutaero
                                 key={index}
                                 text={category.toUpperCase()}
                                 href={`#${category.replace(/\s+/g, '-').toLowerCase()}`}
@@ -245,44 +345,9 @@ export default function Portfolios() {
                     )}
                 </div>
 
-                {totalPages > 1 && (
-                    <div className="flex flex-wrap justify-center items-center gap-4 mt-12">
-                        <button
-                            onClick={() => {
-                                setCurrentPage(p => Math.max(1, p - 1));
-                                scrollToTop();
-                            }}
-                            disabled={currentPage === 1}
-                            className={`px-6 py-2.5 rounded-[10px] font-semibold transition-all duration-300 ${currentPage === 1 ? 'bg-white/10 !text-white/30 cursor-not-allowed' : 'bg-white !text-black hover:bg-gray-200'}`}
-                        >
-                            Previous
-                        </button>
-
-                        <div className="flex flex-wrap items-center gap-2">
-                            {[...Array(totalPages)].map((_, i) => (
-                                <button
-                                    key={i}
-                                    onClick={() => {
-                                        setCurrentPage(i + 1);
-                                        scrollToTop();
-                                    }}
-                                    className={`w-10 h-10 rounded-[10px] flex items-center justify-center font-bold transition-all duration-300 ${currentPage === i + 1 ? 'bg-[linear-gradient(to_right,#44c7f6,#0037f0)] !text-white shadow-lg shadow-[#0037f0]/20' : 'bg-white/5 !text-gray-400 hover:bg-white/10 hover:!text-white'}`}
-                                >
-                                    {i + 1}
-                                </button>
-                            ))}
-                        </div>
-
-                        <button
-                            onClick={() => {
-                                setCurrentPage(p => Math.min(totalPages, p + 1));
-                                scrollToTop();
-                            }}
-                            disabled={currentPage === totalPages}
-                            className={`px-6 py-2.5 rounded-[10px] font-semibold transition-all duration-300 ${currentPage === totalPages ? 'bg-white/10 !text-white/30 cursor-not-allowed' : 'bg-white !text-black hover:bg-gray-200'}`}
-                        >
-                            Next
-                        </button>
+                {visibleCount < currentPortfolios.length && (
+                    <div ref={loadMoreRef} className="flex justify-center items-center py-10 mt-8">
+                        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-t-2 border-white"></div>
                     </div>
                 )}
             </div>

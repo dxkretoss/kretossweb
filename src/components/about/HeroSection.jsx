@@ -260,7 +260,7 @@ export default function HeroSection() {
                                                     </div>
                                                 </div>
 
-                                                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                                                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed text-justify">
                                                     {card.desc}
                                                 </p>
                                             </div>
