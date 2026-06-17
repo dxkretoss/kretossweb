@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { portfolioDetailsData } from './portfolio/portfoliodetails';
+import { portfolioDetailsData } from '../data/portfoliodetails';
 import AnimatedButton from './ui/AnimatedButton';
 import CtaSection from './about/CTASection';
 

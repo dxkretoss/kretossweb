@@ -3,7 +3,7 @@ import { FastAverageColor } from 'fast-average-color';
 import { Link } from 'react-router-dom';
 import AnimatedButtonwithoutaero from '../ui/AnimatedButtonwithoutaero';
 import AnimatedButtonBorder from '../ui/AnimatedButtonBorder';
-import { portfolioData } from './portfolio';
+import { portfolioData } from '../../data/portfolio';
 import Badge from '../ui/Badge';
 import {
     FaReact, FaAngular, FaVuejs, FaNodeJs, FaPython,

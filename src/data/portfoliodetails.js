@@ -1,6 +1,5 @@
 export const portfolioDetailsData = [
     {
-        "id": 1,
         "slug": "guestway",
         "name": "Guestway",
         "portfolioImage": "/portfolio/custom/Guestway-full.webp",
@@ -20,27 +19,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 2,
-        "slug": "iiccrypto",
-        "name": "IIC Metaverse",
-        "portfolioImage": "/portfolio/custom/IIC-Metaverse-full.webp",
-        "category": "Custom web",
-        "timeline": "2-4 Months",
-        "techStack": "HTML + CSS + JS",
-        "link": "#",
-        "client": "IIC Metaverse",
-        "purpose": "Experience the future of web applications with IIC Metaverse. Engineered for high performance, scalability, and an intuitive user experience.",
-        "challenge": "The client needed a robust HTML + CSS + JS architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using HTML + CSS + JS, integrating advanced features to deliver optimal performance and engagement.",
-        "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
-        ]
-    },
-    {
-        "id": 3,
         "slug": "nexthunt",
         "name": "NextHunt",
         "portfolioImage": "/portfolio/custom/portfolio_nexthunt_full.webp",
@@ -60,7 +38,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 4,
         "slug": "palzea-widget",
         "name": "Palzea",
         "portfolioImage": "/portfolio/custom/portfolio_palzea-widget_full.webp",
@@ -80,7 +57,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 5,
         "slug": "dreamload",
         "name": "Dreamload",
         "portfolioImage": "/portfolio/custom/portfolio_dreamload_full.webp",
@@ -100,7 +76,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 6,
         "slug": "phoenixfc",
         "name": "PhoenixFC",
         "portfolioImage": "/portfolio/custom/portfolio_phoenix_full.webp",
@@ -120,7 +95,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 7,
         "slug": "palzea",
         "name": "Palzea",
         "portfolioImage": "/portfolio/custom/portfolio_palzea_full.webp",
@@ -140,7 +114,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 8,
         "slug": "fily",
         "name": "Fily",
         "portfolioImage": "/portfolio/custom/portfolio_fily_full.webp",
@@ -160,7 +133,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 9,
         "slug": "stb",
         "name": "Student Travel Buddy",
         "portfolioImage": "/portfolio/custom/portfolio_stb_full.webp",
@@ -180,7 +152,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 10,
         "slug": "klubbrabatten",
         "name": "Klubbrabatten",
         "portfolioImage": "/portfolio/custom/portfolio_klubbrabatten_full.webp",
@@ -200,7 +171,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 11,
         "slug": "giveaways",
         "name": "Giveaway",
         "portfolioImage": "/portfolio/custom/portfolio_giveaways_full.webp",
@@ -220,7 +190,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 12,
         "slug": "sarhachat",
         "name": "Sarhachat",
         "portfolioImage": "/portfolio/custom/portfolio_sarhachat_full.webp",
@@ -240,7 +209,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 13,
         "slug": "wallstreets",
         "name": "Wall Street",
         "portfolioImage": "/portfolio/custom/portfolio_wallstreet_full.webp",
@@ -260,7 +228,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 14,
         "slug": "allbots",
         "name": "Allbots",
         "portfolioImage": "/portfolio/custom/portfolio_allbots_full.webp",
@@ -280,7 +247,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 15,
         "slug": "searchive",
         "name": "Searchive",
         "portfolioImage": "/portfolio/custom/portfolio_searchive_full.webp",
@@ -300,7 +266,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 16,
         "slug": "coyna",
         "name": "Coyna",
         "portfolioImage": "/portfolio/custom/portfolio_coyna_full.webp",
@@ -320,7 +285,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 17,
         "slug": "gujarat-tiles-info",
         "name": "Gujarat Tiles Info",
         "portfolioImage": "/portfolio/custom/portfolio_gujarat_tiles_info_full.webp",
@@ -340,7 +304,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 18,
         "slug": "implanstock",
         "name": "Implant Stock",
         "portfolioImage": "/portfolio/custom/portfolio_implantstock_full.webp",
@@ -360,7 +323,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 19,
         "slug": "locum-prime",
         "name": "Locum Prime",
         "portfolioImage": "/portfolio/custom/portfolio_locumprime_full.webp",
@@ -380,7 +342,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 20,
         "slug": "trust-arthur-group",
         "name": "Trust Arthur Group",
         "portfolioImage": "/portfolio/custom/portfolio_trust_arthur_group_full.webp",
@@ -400,7 +361,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 21,
         "slug": "taxley-custom",
         "name": "Taxley",
         "portfolioImage": "/portfolio/custom/portfolio_taxley_full.webp",
@@ -420,7 +380,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 22,
         "slug": "my100days",
         "name": "My100Days",
         "portfolioImage": "/portfolio/mobile-app/my-100-days/portfolio_md.jpg",
@@ -439,14 +398,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/my-100-days/portfolio_md_1.png",
+            "/portfolio/mobile-app/my-100-days/portfolio_md_2.png",
+            "/portfolio/mobile-app/my-100-days/portfolio_md_3.png",
+            "/portfolio/mobile-app/my-100-days/portfolio_md_4.png",
+            "/portfolio/mobile-app/my-100-days/portfolio_md_5.png",
+            "/portfolio/mobile-app/my-100-days/portfolio_md_6.png",
+            "/portfolio/mobile-app/my-100-days/portfolio_md_7.png",
+            "/portfolio/mobile-app/my-100-days/portfolio_md_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -454,7 +413,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 23,
         "slug": "trischedule",
         "name": "TriSchedule",
         "portfolioImage": "/portfolio/mobile-app/trischedule/portfolio_trischedule.jpg",
@@ -488,7 +446,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 24,
         "slug": "wingman",
         "name": "Wingman",
         "portfolioImage": "/portfolio/mobile-app/wingman/wingman.jpg",
@@ -507,14 +464,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/wingman/portfolio_wn_1.png",
+            "/portfolio/mobile-app/wingman/portfolio_wn_2.png",
+            "/portfolio/mobile-app/wingman/portfolio_wn_3.png",
+            "/portfolio/mobile-app/wingman/portfolio_wn_4.png",
+            "/portfolio/mobile-app/wingman/portfolio_wn_5.png",
+            "/portfolio/mobile-app/wingman/portfolio_wn_6.png",
+            "/portfolio/mobile-app/wingman/portfolio_wn_7.png",
+            "/portfolio/mobile-app/wingman/portfolio_wn_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -522,7 +479,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 25,
         "slug": "book-builder",
         "name": "Book a Builder",
         "portfolioImage": "/portfolio/mobile-app/bookbuilder/portfolio_bb.png",
@@ -541,14 +497,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/bookbuilder/portfolio_bb_1.png",
+            "/portfolio/mobile-app/bookbuilder/portfolio_bb_2.png",
+            "/portfolio/mobile-app/bookbuilder/portfolio_bb_3.png",
+            "/portfolio/mobile-app/bookbuilder/portfolio_bb_4.png",
+            "/portfolio/mobile-app/bookbuilder/portfolio_bb_5.png",
+            "/portfolio/mobile-app/bookbuilder/portfolio_bb_6.png",
+            "/portfolio/mobile-app/bookbuilder/portfolio_bb_7.png",
+            "/portfolio/mobile-app/bookbuilder/portfolio_bb_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -556,7 +512,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 26,
         "slug": "klubbrabatten-mob",
         "name": "Klubbrabatten",
         "portfolioImage": "/portfolio/mobile-app/Klubbrabatten/portfolio_klub.png",
@@ -575,14 +530,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/Klubbrabatten/portfolio_klub_1.png",
+            "/portfolio/mobile-app/Klubbrabatten/portfolio_klub_2.png",
+            "/portfolio/mobile-app/Klubbrabatten/portfolio_klub_3.png",
+            "/portfolio/mobile-app/Klubbrabatten/portfolio_klub_4.png",
+            "/portfolio/mobile-app/Klubbrabatten/portfolio_klub_5.png",
+            "/portfolio/mobile-app/Klubbrabatten/portfolio_klub_6.png",
+            "/portfolio/mobile-app/Klubbrabatten/portfolio_klub_7.png",
+            "/portfolio/mobile-app/Klubbrabatten/portfolio_klub_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -590,7 +545,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 27,
         "slug": "roamaly-app",
         "name": "Roamaly",
         "portfolioImage": "/portfolio/mobile-app/roamaly/portfolio_roamaly.jpg",
@@ -609,14 +563,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/roamaly/portfolio_roamaly_1.png",
+            "/portfolio/mobile-app/roamaly/portfolio_roamaly_2.png",
+            "/portfolio/mobile-app/roamaly/portfolio_roamaly_3.png",
+            "/portfolio/mobile-app/roamaly/portfolio_roamaly_4.png",
+            "/portfolio/mobile-app/roamaly/portfolio_roamaly_5.png",
+            "/portfolio/mobile-app/roamaly/portfolio_roamaly_6.png",
+            "/portfolio/mobile-app/roamaly/portfolio_roamaly_7.png",
+            "/portfolio/mobile-app/roamaly/portfolio_roamaly_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -624,7 +578,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 28,
         "slug": "sion",
         "name": "Sion Reservations",
         "portfolioImage": "/portfolio/mobile-app/sion/portfolio_sion.jpg",
@@ -643,14 +596,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/sion/portfolio_sion_1.png",
+            "/portfolio/mobile-app/sion/portfolio_sion_2.png",
+            "/portfolio/mobile-app/sion/portfolio_sion_3.png",
+            "/portfolio/mobile-app/sion/portfolio_sion_4.png",
+            "/portfolio/mobile-app/sion/portfolio_sion_5.png",
+            "/portfolio/mobile-app/sion/portfolio_sion_6.png",
+            "/portfolio/mobile-app/sion/portfolio_sion_7.png",
+            "/portfolio/mobile-app/sion/portfolio_sion_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -658,7 +611,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 29,
         "slug": "city2city",
         "name": "City 2 City",
         "portfolioImage": "/portfolio/mobile-app/city2city/portfolio_city2city.jpg",
@@ -677,14 +629,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/city2city/portfolio_city2city_1.png",
+            "/portfolio/mobile-app/city2city/portfolio_city2city_2.png",
+            "/portfolio/mobile-app/city2city/portfolio_city2city_3.png",
+            "/portfolio/mobile-app/city2city/portfolio_city2city_4.png",
+            "/portfolio/mobile-app/city2city/portfolio_city2city_5.png",
+            "/portfolio/mobile-app/city2city/portfolio_city2city_6.png",
+            "/portfolio/mobile-app/city2city/portfolio_city2city_7.png",
+            "/portfolio/mobile-app/city2city/portfolio_city2city_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -692,7 +644,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 30,
         "slug": "drawn",
         "name": "Drawn",
         "portfolioImage": "/portfolio/mobile-app/drawn/portfolio_drawn.jpg",
@@ -711,14 +662,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/drawn/portfolio_drawn_1.png",
+            "/portfolio/mobile-app/drawn/portfolio_drawn_2.png",
+            "/portfolio/mobile-app/drawn/portfolio_drawn_3.png",
+            "/portfolio/mobile-app/drawn/portfolio_drawn_4.png",
+            "/portfolio/mobile-app/drawn/portfolio_drawn_5.png",
+            "/portfolio/mobile-app/drawn/portfolio_drawn_6.png",
+            "/portfolio/mobile-app/drawn/portfolio_drawn_7.png",
+            "/portfolio/mobile-app/drawn/portfolio_drawn_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -726,7 +677,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 31,
         "slug": "somnexis",
         "name": "Somnexis",
         "portfolioImage": "/portfolio/mobile-app/somnexis/portfolio_somnexis.jpg",
@@ -745,14 +695,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/somnexis/portfolio_somnexis_1.png",
+            "/portfolio/mobile-app/somnexis/portfolio_somnexis_2.png",
+            "/portfolio/mobile-app/somnexis/portfolio_somnexis_3.png",
+            "/portfolio/mobile-app/somnexis/portfolio_somnexis_4.png",
+            "/portfolio/mobile-app/somnexis/portfolio_somnexis_5.png",
+            "/portfolio/mobile-app/somnexis/portfolio_somnexis_6.png",
+            "/portfolio/mobile-app/somnexis/portfolio_somnexis_7.png",
+            "/portfolio/mobile-app/somnexis/portfolio_somnexis_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -760,7 +710,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 32,
         "slug": "traivend",
         "name": "Traivend",
         "portfolioImage": "/portfolio/mobile-app/traivend/portfolio_traivend.jpg",
@@ -779,14 +728,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/traivend/portfolio_traivend_1.png",
+            "/portfolio/mobile-app/traivend/portfolio_traivend_2.png",
+            "/portfolio/mobile-app/traivend/portfolio_traivend_3.png",
+            "/portfolio/mobile-app/traivend/portfolio_traivend_4.png",
+            "/portfolio/mobile-app/traivend/portfolio_traivend_5.png",
+            "/portfolio/mobile-app/traivend/portfolio_traivend_6.png",
+            "/portfolio/mobile-app/traivend/portfolio_traivend_7.png",
+            "/portfolio/mobile-app/traivend/portfolio_traivend_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -794,7 +743,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 33,
         "slug": "offarat",
         "name": "Offarat",
         "portfolioImage": "/portfolio/mobile-app/offarat/portfolio_offarat.jpg",
@@ -813,14 +761,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/offarat/portfolio_offarat_1.png",
+            "/portfolio/mobile-app/offarat/portfolio_offarat_2.png",
+            "/portfolio/mobile-app/offarat/portfolio_offarat_3.png",
+            "/portfolio/mobile-app/offarat/portfolio_offarat_4.png",
+            "/portfolio/mobile-app/offarat/portfolio_offarat_5.png",
+            "/portfolio/mobile-app/offarat/portfolio_offarat_6.png",
+            "/portfolio/mobile-app/offarat/portfolio_offarat_7.png",
+            "/portfolio/mobile-app/offarat/portfolio_offarat_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -828,7 +776,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 34,
         "slug": "taxley",
         "name": "Taxley",
         "portfolioImage": "/portfolio/mobile-app/taxley/portfolio_taxley.jpg",
@@ -862,7 +809,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 35,
         "slug": "kolderkiduniverse",
         "name": "Kolder Kid Universe",
         "portfolioImage": "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse.jpg",
@@ -881,14 +827,14 @@ export const portfolioDetailsData = [
             "Secure Infrastructure"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse_1.png",
+            "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse_2.png",
+            "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse_3.png",
+            "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse_4.png",
+            "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse_5.png",
+            "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse_6.png",
+            "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse_7.png",
+            "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
@@ -896,7 +842,6 @@ export const portfolioDetailsData = [
         }
     },
     {
-        "id": 36,
         "slug": "kates-real-food",
         "name": "Kate's Real Food",
         "portfolioImage": "/portfolio/shopify/portfolio_katesrealfood_full.webp",
@@ -916,7 +861,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 37,
         "slug": "ludic-life",
         "name": "Ludic Life",
         "portfolioImage": "/portfolio/shopify/portfolio_ludic-life-full.webp",
@@ -936,7 +880,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 38,
         "slug": "ludic-global",
         "name": "Ludic Global",
         "portfolioImage": "/portfolio/shopify/portfolio_ludic-global-full.webp",
@@ -956,7 +899,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 39,
         "slug": "ludic-kitchen",
         "name": "Ludic Kitchen",
         "portfolioImage": "/portfolio/shopify/portfolio_ludic-kitchen-full.webp",
@@ -976,7 +918,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 40,
         "slug": "almost-peaceful",
         "name": "Almost Peaceful",
         "portfolioImage": "/portfolio/shopify/portfolio_almost_full.webp",
@@ -996,7 +937,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 41,
         "slug": "impetus-health",
         "name": "Impetus Health",
         "portfolioImage": "/portfolio/shopify/portfolio_impectus_full.webp",
@@ -1016,7 +956,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 42,
         "slug": "roamaly",
         "name": "Roamaly",
         "portfolioImage": "/portfolio/shopify/portfolio_roamaly_full.webp",
@@ -1036,7 +975,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 43,
         "slug": "kids-posters",
         "name": "Kids Posters",
         "portfolioImage": "/portfolio/shopify/portfolio_kidsPoster_full.webp",
@@ -1056,7 +994,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 44,
         "slug": "the-pawcan",
         "name": "The Pawcan",
         "portfolioImage": "/portfolio/shopify/portfolio_pawcan_full.webp",
@@ -1076,7 +1013,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 45,
         "slug": "recreation-beauty",
         "name": "Recreation Beauty",
         "portfolioImage": "/portfolio/shopify/portfolio_recreation_full.webp",
@@ -1096,7 +1032,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 46,
         "slug": "tango-swim",
         "name": "Tango Swim",
         "portfolioImage": "/portfolio/shopify/portfolio_tango_full.webp",
@@ -1116,7 +1051,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 47,
         "slug": "tilit",
         "name": "Tilit",
         "portfolioImage": "/portfolio/shopify/portfolio_tilit_full.webp",
@@ -1136,7 +1070,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 48,
         "slug": "honey-stinger",
         "name": "Honey Stinger",
         "portfolioImage": "/portfolio/shopify/portfolio_honeyStinger_full.webp",
@@ -1156,7 +1089,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 49,
         "slug": "moanarose",
         "name": "Moanarose",
         "portfolioImage": "/portfolio/shopify/portfolio_moanarose_full.webp",
@@ -1176,7 +1108,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 50,
         "slug": "prime-nails",
         "name": "Prime Nails",
         "portfolioImage": "/portfolio/shopify/portfolio_primeNails_full.webp",
@@ -1196,7 +1127,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 51,
         "slug": "source-bulk-foods",
         "name": "The Source Bulk Foods",
         "portfolioImage": "/portfolio/shopify/portfolio_sourcebulkfoods_full.webp",
@@ -1216,7 +1146,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 52,
         "slug": "beadspoint",
         "name": "Beadspoint",
         "portfolioImage": "/portfolio/shopify/portfolio_beadspoint_full.webp",
@@ -1236,7 +1165,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 53,
         "slug": "vacurect",
         "name": "Vacurect",
         "portfolioImage": "/portfolio/shopify/portfolio_vacurect_full.webp",
@@ -1256,7 +1184,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 54,
         "slug": "hydro-peptide",
         "name": "Hydro Peptide",
         "portfolioImage": "/portfolio/shopify/portfolio_hydroPeptide_full.webp",
@@ -1276,7 +1203,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 55,
         "slug": "boxraw",
         "name": "Boxraw",
         "portfolioImage": "/portfolio/shopify/portfolio_boxraw_full.webp",
@@ -1296,7 +1222,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 56,
         "slug": "ultimate-ears",
         "name": "Ultimate Ears",
         "portfolioImage": "/portfolio/shopify/portfolio_ultimateEars_full.webp",
@@ -1316,7 +1241,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 57,
         "slug": "ruumi-art",
         "name": "Ruumi Art",
         "portfolioImage": "/portfolio/shopify/portfolio_ruumiArt_full.webp",
@@ -1336,7 +1260,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 58,
         "slug": "ludic",
         "name": "Ludic",
         "portfolioImage": "/portfolio/shopify/portfolio_ludic_full.webp",
@@ -1356,7 +1279,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 59,
         "slug": "vegamour",
         "name": "Vegamour",
         "portfolioImage": "/portfolio/shopify/portfolio_vegamour_full.webp",
@@ -1376,7 +1298,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 60,
         "slug": "kretoss",
         "name": "Kretoss",
         "portfolioImage": "/portfolio/shopify/portfolio_kretoss_full.webp",
@@ -1396,7 +1317,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 61,
         "slug": "vitality",
         "name": "Vitality",
         "portfolioImage": "/portfolio/shopify/portfolio_vitality_full.webp",
@@ -1416,7 +1336,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 62,
         "slug": "anveshan-farm-technologies",
         "name": "Anveshan Farm Technologies",
         "portfolioImage": "/portfolio/shopify/portfolio_anveshan_full.webp",
@@ -1436,7 +1355,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 63,
         "slug": "anthem",
         "name": "Anthem Home Comfort",
         "portfolioImage": "/portfolio/wordpress/portfolio_anthem_full.jpg",
@@ -1456,7 +1374,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 64,
         "slug": "freight-plus",
         "name": "Freight Plus",
         "portfolioImage": "/portfolio/wordpress/portfolio_freightplus_full.jpg",
@@ -1476,7 +1393,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 65,
         "slug": "sobel",
         "name": "Sobel",
         "portfolioImage": "/portfolio/wordpress/portfolio_sobel_full.jpg",
@@ -1496,7 +1412,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 66,
         "slug": "beepec",
         "name": "Beepec",
         "portfolioImage": "/portfolio/wordpress/portfolio_beepec_full.jpg",
@@ -1516,7 +1431,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 67,
         "slug": "source-bulk-foods-wordpress",
         "name": "The Source Bulk Foods",
         "portfolioImage": "/portfolio/wordpress/portfolio_source_foods_full.jpg",
@@ -1536,7 +1450,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 68,
         "slug": "easygold",
         "name": "EasyGold24",
         "portfolioImage": "/portfolio/wordpress/portfolio_easygold_full.jpg",
@@ -1556,7 +1469,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 69,
         "slug": "meridian-pacific-properties",
         "name": "Meridian Pacific Properties",
         "portfolioImage": "/portfolio/wordpress/portfolio_meridian_full.jpg",
@@ -1576,7 +1488,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 70,
         "slug": "the-penny",
         "name": "The Penny",
         "portfolioImage": "/portfolio/wordpress/portfolio_penny_full.jpg",
@@ -1596,7 +1507,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 71,
         "slug": "litehaus",
         "name": "Litehaus",
         "portfolioImage": "/portfolio/wordpress/portfolio_litehaus_full.jpg",
@@ -1616,7 +1526,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 72,
         "slug": "leebroom",
         "name": "LEE BROOM",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_leebroom_full.jpg",
@@ -1636,7 +1545,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 73,
         "slug": "good-good-ganja",
         "name": "Good Good Ganja",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_good-good-ganja_full.jpg",
@@ -1656,7 +1564,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 74,
         "slug": "color-matrics",
         "name": "Color Matrics",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_cs_full.png",
@@ -1676,7 +1583,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 75,
         "slug": "dane-apparel",
         "name": "Dane Apparel",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_dane-apparel_full.jpg",
@@ -1696,7 +1602,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 76,
         "slug": "caramel",
         "name": "Caramel",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_caramel_full.jpg",
@@ -1716,7 +1621,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 77,
         "slug": "intermat",
         "name": "Intermat",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_intermat_full.png",
@@ -1736,7 +1640,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 78,
         "slug": "locket-sisters",
         "name": "Locket Sisters",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_locket-sisters-full.png",
@@ -1756,7 +1659,25 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 79,
+        "slug": "iiccrypto",
+        "name": "IIC Metaverse",
+        "portfolioImage": "/portfolio/custom/IIC-Metaverse-full.webp",
+        "category": "web design",
+        "timeline": "2-4 Months",
+        "techStack": "HTML + CSS + JS",
+        "link": "#",
+        "client": "IIC Metaverse",
+        "purpose": "Experience the future of web applications with IIC Metaverse. Engineered for high performance, scalability, and an intuitive user experience.",
+        "challenge": "The client needed a robust HTML + CSS + JS architecture that could handle increasing traffic while maintaining a seamless user experience.",
+        "solution": "We engineered a customized platform using HTML + CSS + JS, integrating advanced features to deliver optimal performance and engagement.",
+        "keyFeatures": [
+            "Scalable Architecture",
+            "Responsive Design",
+            "High Performance",
+            "Secure Infrastructure"
+        ]
+    },
+    {
         "slug": "saveyourcapital",
         "name": "Save Your Capital",
         "portfolioImage": "/portfolio/custom/portfolio_saveyourcapital_full.webp",
@@ -1776,7 +1697,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 80,
         "slug": "better-quest",
         "name": "Better Quest",
         "portfolioImage": "/portfolio/web-design/portfolio_better_quest_full.jpg",
@@ -1796,7 +1716,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 81,
         "slug": "wedding-invitation",
         "name": "Practical Information for International Guest",
         "portfolioImage": "/portfolio/web-design/portfolio_wedding_invitation_full.jpg",
@@ -1816,7 +1735,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 82,
         "slug": "atopic-diary",
         "name": "Atopic Diary",
         "portfolioImage": "/portfolio/web-design/portfolio_atopic_diary_full.jpg",
@@ -1836,7 +1754,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 83,
         "slug": "skin-dao",
         "name": "Skin Dao",
         "portfolioImage": "/portfolio/web-design/portfolio_skin_dao_full.jpg",
@@ -1856,7 +1773,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 84,
         "slug": "core",
         "name": "Core CRMS",
         "portfolioImage": "/portfolio/web-design/portfolio_core_full.jpg",
@@ -1876,7 +1792,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 85,
         "slug": "clean-steam-pros",
         "name": "Clean Steam Pros",
         "portfolioImage": "/portfolio/other/portfolio_clean_steam_pros_full.jpg",
@@ -1896,7 +1811,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 86,
         "slug": "one",
         "name": "One",
         "portfolioImage": "/portfolio/other/portfolio_one_full.jpg",
@@ -1916,7 +1830,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 87,
         "slug": "aroconllc",
         "name": "Aroconllc",
         "portfolioImage": "/portfolio/other/portfolio_aroconllc_full.jpg",
@@ -1936,7 +1849,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 88,
         "slug": "intempt",
         "name": "Intempt",
         "portfolioImage": "/portfolio/other/portfolio_intempt_full.jpg",
@@ -1956,7 +1868,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 89,
         "slug": "automaximizer",
         "name": "Automaximizer",
         "portfolioImage": "/portfolio/other/portfolio_automaximizer_full.jpg",
@@ -1976,7 +1887,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 90,
         "slug": "rta-store",
         "name": "The RTA Store",
         "portfolioImage": "/portfolio/other/portfolio_rta_full.jpg",
@@ -1996,7 +1906,6 @@ export const portfolioDetailsData = [
         ]
     },
     {
-        "id": 91,
         "slug": "hunters-unite",
         "name": "Hunters Unite",
         "portfolioImage": "/portfolio/other/portfolio_hunters_unite_full.jpg",

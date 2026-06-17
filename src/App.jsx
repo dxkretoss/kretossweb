@@ -9,6 +9,7 @@ import PortfolioPage from './components/PortfolioPage';
 import PortfolioDetailsPage from './components/PortfolioDetailsPage';
 import CareerPage from './components/CareerPage';
 import JobDetailsPage from './components/JobDetailsPage';
+import JobApplicationPage from './components/JobApplicationPage';
 import NotFoundPage from './components/NotFoundPage';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
@@ -64,6 +65,7 @@ export default function App() {
                     <Route path="/portfolio/:slug" element={<PortfolioDetailsPage />} />
                     <Route path="/careers" element={<CareerPage />} />
                     <Route path="/careers/:slug" element={<JobDetailsPage />} />
+                    <Route path="/careers/:slug/apply" element={<JobApplicationPage />} />
                     <Route path="/contact" element={<ContactPage />} />
                     {/* Catch-all route for 404 Not Found */}
                     <Route path="*" element={<NotFoundPage />} />

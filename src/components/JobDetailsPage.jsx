@@ -172,15 +172,12 @@ export default function JobDetailsPage() {
                     <div className="lg:col-span-1 lg:sticky lg:top-32 w-full mt-6 lg:mt-0">
                         <div className="bg-[#111] text-white rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden group">
 
-                            {/* Subtle background glow effect */}
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-[#ff6b35] rounded-full blur-[60px] opacity-20 group-hover:opacity-30 transition-opacity duration-500 pointer-events-none"></div>
-
                             <h3 className="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 leading-snug">
                                 Build your future with us, together we grow
                             </h3>
 
                             <div className="mb-6 sm:mb-8">
-                                <AnimatedButton href="/contact" text="APPLY NOW" />
+                                <AnimatedButton href={`/careers/${slug}/apply`} text="APPLY NOW" />
                             </div>
 
                             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">

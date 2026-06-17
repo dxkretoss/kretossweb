@@ -18,23 +18,6 @@ export const portfolioData = {
                         "link": "/portfolios/guestway"
                 },
                 {
-                        "slug": "iiccrypto",
-                        "portfolioImage": "/portfolio/custom/IIC-Metaverse.webp",
-                        "category": "Custom web",
-                        "tags": [
-                                "IIC Metaverse",
-                                "Web"
-                        ],
-                        "title": "IIC Metaverse",
-                        "description": "Experience the future of web applications with IIC Metaverse. Engineered for high performance, scalability, and an intuitive user experience.",
-                        "timeline": "2-4 Months",
-                        "acquisition": "N/A",
-                        "country": "Brazil",
-                        "techStack": "HTML + CSS + JS",
-                        "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                        "link": "/portfolios/iiccrypto"
-                },
-                {
                         "slug": "nexthunt",
                         "portfolioImage": "/portfolio/custom/portfolio_nexthunt.webp",
                         "category": "Custom web",
@@ -1336,6 +1319,23 @@ export const portfolioData = {
                 }
         ],
         "web design": [
+                {
+                        "slug": "iiccrypto",
+                        "portfolioImage": "/portfolio/custom/IIC-Metaverse.webp",
+                        "category": "Custom web",
+                        "tags": [
+                                "IIC Metaverse",
+                                "Web"
+                        ],
+                        "title": "IIC Metaverse",
+                        "description": "Experience the future of web applications with IIC Metaverse. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "timeline": "2-4 Months",
+                        "acquisition": "N/A",
+                        "country": "Brazil",
+                        "techStack": "HTML + CSS + JS",
+                        "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                        "link": "/portfolios/iiccrypto"
+                },
                 {
                         "slug": "saveyourcapital",
                         "portfolioImage": "/portfolio/custom/portfolio_saveyourcapital.webp",
