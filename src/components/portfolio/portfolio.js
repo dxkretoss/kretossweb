@@ -12,6 +12,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Guestway. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Angular + Node.js",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/guestway"
@@ -28,6 +29,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with IIC Metaverse. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "HTML + CSS + JS",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/iiccrypto"
@@ -44,6 +46,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with NextHunt. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "React.js + Supabase",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/nexthunt"
@@ -60,6 +63,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Palzea. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "Blockchain + React.js + Node.js",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/palzea-widget"
@@ -76,6 +80,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Dreamload. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UAE",
                         "techStack": "ReactJS + Python",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/dreamload"
@@ -92,6 +97,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with PhoenixFC. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "USA",
                         "techStack": "ReactJS + Python",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/phoenixfc"
@@ -108,6 +114,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Palzea. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "Vue.js + Laravel",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/palzea"
@@ -124,6 +131,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Fily. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "USA",
                         "techStack": "ReactJS + Supabase",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/fily"
@@ -140,6 +148,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Student Travel Buddy. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "ReactJS + Node.js",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/stb"
@@ -156,6 +165,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Klubbrabatten. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "ReactJS + Supabase + Node.js",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/klubbrabatten"
@@ -172,6 +182,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Giveaway. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Laravel",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/giveaways"
@@ -188,6 +199,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Sarhachat. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "AI",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/sarhachat"
@@ -204,6 +216,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Wall Street. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "Angular & Laravel",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/wallstreets"
@@ -220,6 +233,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Allbots. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Bubble",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/allbots"
@@ -236,6 +250,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Searchive. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "ReactJS",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/searchive"
@@ -252,6 +267,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Coyna. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "Angular, JavaScript",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/coyna"
@@ -268,6 +284,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Gujarat Tiles Info. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Angular & Laravel",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/gujarat-tiles-info"
@@ -284,6 +301,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Implant Stock. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Laravel & React",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/implanstock"
@@ -300,6 +318,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Locum Prime. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Angular, Codeigniter",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/locum-prime"
@@ -316,6 +335,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Trust Arthur Group. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Python, ReactJS",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/trust-arthur-group"
@@ -332,6 +352,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Taxley. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "MySQL, Node JS, ReactJS",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/taxley-custom"
@@ -350,6 +371,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with My100Days. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "React Native",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/my100days"
@@ -366,6 +388,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with TriSchedule. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Flutter",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/trischedule"
@@ -382,6 +405,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with Wingman. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "iOS Swift ",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/wingman"
@@ -398,6 +422,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with Book a Builder. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "React Native",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/book-builder"
@@ -414,6 +439,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with Klubbrabatten. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Flutter",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/klubbrabatten-mob"
@@ -430,6 +456,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with Roamaly. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "React Native",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/roamaly-app"
@@ -446,6 +473,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with Sion Reservations. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Flutter",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/sion"
@@ -462,6 +490,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with City 2 City. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "USA",
                         "techStack": "Flutter, Node JS",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/city2city"
@@ -478,6 +507,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with Drawn. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Flutter",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/drawn"
@@ -494,6 +524,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with Somnexis. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Flutter",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/somnexis"
@@ -510,6 +541,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with Traivend. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "React Native",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/traivend"
@@ -526,6 +558,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with Offarat. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UAE",
                         "techStack": "Flutter",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/offarat"
@@ -542,6 +575,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with Taxley. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Flutter",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/taxley"
@@ -558,6 +592,7 @@ export const portfolioData = {
                         "description": "Experience the future of mobile applications with Kolder Kid Universe. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "USA",
                         "techStack": "React Native",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/kolderkiduniverse"
@@ -576,6 +611,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Kate's Real Food. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/kates-real-food"
@@ -592,6 +628,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Ludic Life. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/ludic-life"
@@ -608,6 +645,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Ludic Global. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/ludic-global"
@@ -624,6 +662,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Ludic Kitchen. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/ludic-kitchen"
@@ -640,6 +679,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Almost Peaceful. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UAE",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/almost-peaceful"
@@ -656,6 +696,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Impetus Health. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/impetus-health"
@@ -672,6 +713,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Roamaly. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "USA",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/roamaly"
@@ -688,6 +730,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Kids Posters. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/kids-posters"
@@ -704,6 +747,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with The Pawcan. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "USA",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/the-pawcan"
@@ -720,6 +764,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Recreation Beauty. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/recreation-beauty"
@@ -736,6 +781,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Tango Swim. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/tango-swim"
@@ -752,6 +798,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Tilit. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/tilit"
@@ -768,6 +815,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Honey Stinger. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/honey-stinger"
@@ -784,6 +832,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Moanarose. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/moanarose"
@@ -800,6 +849,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Prime Nails. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/prime-nails"
@@ -816,6 +866,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with The Source Bulk Foods. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/source-bulk-foods"
@@ -832,6 +883,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Beadspoint. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/beadspoint"
@@ -848,6 +900,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Vacurect. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/vacurect"
@@ -864,6 +917,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Hydro Peptide. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/hydro-peptide"
@@ -880,6 +934,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Boxraw. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/boxraw"
@@ -896,6 +951,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Ultimate Ears. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "USA",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/ultimate-ears"
@@ -912,6 +968,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Ruumi Art. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/ruumi-art"
@@ -928,6 +985,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Ludic. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/ludic"
@@ -944,6 +1002,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Vegamour. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UAE",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/vegamour"
@@ -960,6 +1019,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Kretoss. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/kretoss"
@@ -976,6 +1036,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Vitality. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/vitality"
@@ -992,6 +1053,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Anveshan Farm Technologies. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/anveshan-farm-technologies"
@@ -1010,6 +1072,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Anthem Home Comfort. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/anthem"
@@ -1026,6 +1089,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Freight Plus. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/freight-plus"
@@ -1042,6 +1106,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Sobel. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "USA",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/sobel"
@@ -1058,6 +1123,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Beepec. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/beepec"
@@ -1074,6 +1140,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with The Source Bulk Foods. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/source-bulk-foods-wordpress"
@@ -1090,6 +1157,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with EasyGold24. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/easygold"
@@ -1106,6 +1174,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Meridian Pacific Properties. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/meridian-pacific-properties"
@@ -1122,6 +1191,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with The Penny. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/the-penny"
@@ -1138,6 +1208,7 @@ export const portfolioData = {
                         "description": "Experience the future of web applications with Litehaus. Engineered for high performance, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/litehaus"
@@ -1156,6 +1227,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with LEE BROOM. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Bigcommerce + React + Node",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/leebroom"
@@ -1172,6 +1244,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Good Good Ganja. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Bigcommerce",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/good-good-ganja"
@@ -1188,6 +1261,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Color Matrics. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "USA",
                         "techStack": "Bigcommerce",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/color-matrics"
@@ -1204,6 +1278,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Dane Apparel. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Bigcommerce",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/dane-apparel"
@@ -1220,6 +1295,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Caramel. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "USA",
                         "techStack": "Bigcommerce",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/caramel"
@@ -1236,6 +1312,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Intermat. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Bigcommerce",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/intermat"
@@ -1252,6 +1329,7 @@ export const portfolioData = {
                         "description": "Experience the future of eCommerce with Locket Sisters. Engineered for high performance, scalability, and an intuitive shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "USA",
                         "techStack": "Bigcommerce",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/locket-sisters"
@@ -1270,6 +1348,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with Save Your Capital. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UAE",
                         "techStack": "HTML, CSS & Js",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
                         "link": "/portfolios/saveyourcapital"
@@ -1286,6 +1365,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with Better Quest. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Australia",
                         "techStack": "Web Design",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
                         "link": "/portfolios/better-quest"
@@ -1302,6 +1382,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with Practical Information for International Guest. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Web Design",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
                         "link": "/portfolios/wedding-invitation"
@@ -1318,6 +1399,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with Atopic Diary. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "Web Design",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
                         "link": "/portfolios/atopic-diary"
@@ -1334,6 +1416,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with Skin Dao. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Web Design",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
                         "link": "/portfolios/skin-dao"
@@ -1350,6 +1433,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with Core CRMS. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UK",
                         "techStack": "Web Design",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
                         "link": "/portfolios/core"
@@ -1368,6 +1452,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with Clean Steam Pros. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Hubspot",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/clean-steam-pros"
@@ -1384,6 +1469,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with One. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Hubspot",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/one"
@@ -1400,6 +1486,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with Aroconllc. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Germany",
                         "techStack": "Hubspot",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/aroconllc"
@@ -1416,6 +1503,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with Intempt. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Canada",
                         "techStack": "Hubspot",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/intempt"
@@ -1432,6 +1520,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with Automaximizer. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "UAE",
                         "techStack": "Magento",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg",
                         "link": "/portfolios/automaximizer"
@@ -1448,6 +1537,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with The RTA Store. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "Magento",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg",
                         "link": "/portfolios/rta-store"
@@ -1464,6 +1554,7 @@ export const portfolioData = {
                         "description": "Experience the future of digital presence with Hunters Unite. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
+                        "country": "Brazil",
                         "techStack": "Magento",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg",
                         "link": "/portfolios/hunters-unite"

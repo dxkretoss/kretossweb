@@ -5,7 +5,7 @@ import Badge from '../ui/Badge';
 const AnimatedWord = ({ text, isGradient }) => {
     const gradientClass = isGradient ? "bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text" : "";
     return (
-        <span className={`hero-word ${gradientClass}`} style={{ whiteSpace: 'pre-wrap', display: 'inline-block', opacity: 0, paddingRight: '0.1em', marginRight: '-0.1em', lineHeight: '120%' }}>
+        <span className={`hero-word ${gradientClass}`} style={{ whiteSpace: 'pre-wrap', display: 'inline-block', opacity: 0, paddingRight: '0.1em', marginRight: '-0.1em', }}>
             {text}
         </span>
     );
@@ -163,7 +163,7 @@ export default function CareerHero() {
                             <Badge variant='white'>Careers</Badge>
                         </div>
 
-                        <h1 className="banner-title text-[24px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 lg:mb-8">
+                        <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 lg:mb-8">
                             <AnimatedWord text="Unlock new " isGradient={false} />
                             <AnimatedWord text="career" isGradient={true} />
                             <AnimatedWord text="Opportunities with us" isGradient={false} />

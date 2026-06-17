@@ -5,7 +5,7 @@ import Badge from '../ui/Badge';
 const AnimatedWord = ({ text, isGradient }) => {
     const gradientClass = isGradient ? "bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text" : "";
     return (
-        <span className={`hero-word ${gradientClass}`} style={{ whiteSpace: 'pre-wrap', display: 'inline-block', opacity: 0, paddingRight: '0.1em', marginRight: '-0.1em', lineHeight: '120%' }}>
+        <span className={`hero-word ${gradientClass}`} style={{ whiteSpace: 'pre-wrap', display: 'inline-block', opacity: 0, paddingRight: '0.1em', marginRight: '-0.1em', }}>
             {text}
         </span>
     );
@@ -136,7 +136,7 @@ export default function PortfolioHero() {
                             <Badge variant='white'>Portfolio</Badge>
                         </div>
 
-                        <h1 className="banner-title text-[24px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 lg:mb-8">
+                        <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 lg:mb-8">
                             <AnimatedWord text="Check " isGradient={false} />
                             <AnimatedWord text="Out " isGradient={false} />
                             <AnimatedWord text="Our " isGradient={false} />
@@ -147,7 +147,7 @@ export default function PortfolioHero() {
                             <AnimatedWord text="Works" isGradient={false} />
                         </h1>
 
-                        <p className="banner-text text-gray-400 text-xs sm:text-sm leading-relaxed max-w-lg font-medium mb-8">
+                        <p className="banner-text text-base sm:text-xl text-gray-300 max-w-lg font-medium mb-8">
                             <AnimatedWord text="We specialize in innovative design and development solutions, tailored for impactful brand growth." isGradient={false} />
                         </p>
 
@@ -171,7 +171,7 @@ export default function PortfolioHero() {
 
                     {/* Right Content - Laptop Mockup */}
                     <div className="w-full lg:w-[50%] relative z-20 flex justify-center mt-12 lg:mt-0">
-                        <div className="hero-video-box relative w-full max-w-[600px] lg:mr-[-30px]">
+                        <div className="hero-video-box relative w-[86%] sm:w-[90%] lg:w-full max-w-[600px] lg:mr-[-30px] mx-auto">
                             {/* Background Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[linear-gradient(#44c7f6,#0037f0)] opacity-20 blur-[80px] -z-20 rounded-full pointer-events-none"></div>
 

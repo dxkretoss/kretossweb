@@ -44,7 +44,7 @@ export default function JobOpenings() {
         <section ref={sectionRef} className="py-10 lg:py-20 bg-[#fafcff] relative">
             <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-7xl relative z-10">
                 {/* Header */}
-                <div className="job-header flex flex-col items-center text-center mb-10 sm:mb-16">
+                <div className="job-header flex flex-col items-center text-center mb-8 sm:mb-16">
                     {/* Badge */}
                     <div className='mb-5'>
                         <Badge>We're Hiring</Badge>
@@ -90,7 +90,7 @@ export default function JobOpenings() {
                                 </div>
 
                                 {/* Description */}
-                                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-8 sm:mb-10">
+                                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-5 md:mb-10">
                                     {job.description}
                                 </p>
 

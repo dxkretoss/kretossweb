@@ -18,6 +18,20 @@ import {
     SiSupabase, SiSolidity, SiMysql, SiCodeigniter, SiTensorflow
 } from 'react-icons/si';
 
+const getCountryFlag = (country) => {
+    if (!country) return '';
+    const flags = {
+        'usa': '🇺🇸',
+        'uk': '🇬🇧',
+        'australia': '🇦🇺',
+        'germany': '🇩🇪',
+        'brazil': '🇧🇷',
+        'canada': '🇨🇦',
+        'uae': '🇦🇪'
+    };
+    return flags[country.toLowerCase()] || '🌍';
+};
+
 const getTechIcons = (techString) => {
     if (!techString) return [<FaCode />];
     const techMap = {
@@ -107,11 +121,11 @@ const PortfolioCard = ({ item }) => {
 
     return (
         <div className="border-1 border-[#C3C3C3] p-2 sm:p-4 w-full rounded-[15px] overflow-hidden min-h-[400px] lg:min-h-[500px]">
-            <div className="flex flex-col lg:flex-row gap-3 rounded-[10px] p-2 sm:p-3 transition-colors duration-500 h-full" style={{ background: bgColor }}>
+            <div className="flex flex-col xl:flex-row gap-3 rounded-[10px] p-2 sm:p-3 transition-colors duration-500 h-full" style={{ background: bgColor }}>
 
                 {/* Left Side - Image Panel */}
                 <div
-                    className="w-full lg:w-[60%] relative flex items-center justify-center self-stretch"
+                    className="w-full xl:w-[60%] relative flex items-center justify-center self-stretch"
                 >
                     <img
                         ref={imgRef}
@@ -123,7 +137,7 @@ const PortfolioCard = ({ item }) => {
 
                 {/* Right Side - Content Panel */}
                 <div
-                    className="w-full lg:w-[40%] rounded-[5px] p-6 sm:p-8 flex flex-col justify-between self-stretch relative overflow-hidden transition-colors duration-500"
+                    className="w-full xl:w-[40%] rounded-[5px] p-4 md:p-8 flex flex-col justify-between self-stretch relative overflow-hidden transition-colors duration-500"
                     style={{
                         background: `
                             repeating-linear-gradient(
@@ -145,17 +159,17 @@ const PortfolioCard = ({ item }) => {
                         {/* Tags */}
                         <div className="flex flex-wrap gap-3 mb-6">
                             {item.tags?.map((tag, idx) => (
-                                <span key={idx} className="bg-white/10 text-gray-300 text-xs md:text-sm px-4 py-1.5 rounded-md border border-[#FFFFFF1A]">
+                                <span key={idx} className={`${imgRef.current?.dataset?.isDark === 'false' ? 'bg-black/10 text-gray-800 border-black/20' : 'bg-white/10 text-gray-300 border-[#FFFFFF1A]'} text-xs md:text-sm px-4 py-1.5 rounded-md border`}>
                                     {tag}
                                 </span>
                             ))}
                         </div>
 
                         {/* Title & Description */}
-                        <h3 className="text-2xl sm:text-[32px] font-bold text-white mb-3 sm:mb-4 leading-tight">
+                        <h3 className={`text-2xl sm:text-[32px] font-bold ${imgRef.current?.dataset?.isDark === 'false' ? 'text-black' : 'text-white'} mb-3 sm:mb-4 leading-tight`}>
                             {item.title}
                         </h3>
-                        <p className="text-[#DADADA] text-sm sm:text-base md:text-[19px] mb-6 sm:mb-8 leading-relaxed">
+                        <p className={`${imgRef.current?.dataset?.isDark === 'false' ? 'text-gray-800' : 'text-[#DADADA]'} text-sm sm:text-base md:text-[19px] mb-6 sm:mb-8 leading-relaxed`}>
                             {item.description}
                         </p>
                     </div>
@@ -164,12 +178,14 @@ const PortfolioCard = ({ item }) => {
                     <div className="flex flex-col mt-auto pt-8">
                         <div className="flex flex-wrap justify-between gap-6 mb-8">
                             <div>
-                                <p className="text-[#DADADA] text-sm mb-1">Project timeline</p>
-                                <p className="text-white font-semibold text-lg">{item.timeline || 'N/A'}</p>
+                                <p className={`${imgRef.current?.dataset?.isDark === 'false' ? 'text-gray-800' : 'text-[#DADADA]'} text-sm mb-1`}>Project timeline</p>
+                                <p className={`${imgRef.current?.dataset?.isDark === 'false' ? 'text-black' : 'text-white'} font-semibold text-lg`}>{item.timeline || 'N/A'}</p>
                             </div>
                             <div>
-                                <p className="text-[#DADADA] text-sm mb-1">Customer Acquisition</p>
-                                <p className="text-white font-semibold text-lg">{item.acquisition || 'N/A'}</p>
+                                <p className={`${imgRef.current?.dataset?.isDark === 'false' ? 'text-gray-800' : 'text-[#DADADA]'} text-sm mb-1`}>Country</p>
+                                <p className={`${imgRef.current?.dataset?.isDark === 'false' ? 'text-black' : 'text-white'} font-semibold text-lg flex items-center gap-2`}>
+                                    {getCountryFlag(item.country)} {item.country || 'N/A'}
+                                </p>
                             </div>
                         </div>
 
@@ -186,7 +202,7 @@ const PortfolioCard = ({ item }) => {
                                     ))}
                                 </div>
                                 {/* Tech Stack Pill */}
-                                <div className={`flex items-center gap-2 font-semibold text-sm sm:text-base ${imgRef.current?.dataset?.isDark === 'true' ? 'text-white' : 'text-black'}`}>
+                                <div className={`hidden md:flex items-center gap-2 font-semibold text-sm sm:text-base ${imgRef.current?.dataset?.isDark === 'true' ? 'text-white' : 'text-black'}`}>
                                     {item.techStack || item.category}
                                 </div>
                             </div>
@@ -333,7 +349,7 @@ export default function Portfolios() {
                 </div>
 
                 {/* Portfolio Display Area */}
-                <div className="flex flex-col gap-12">
+                <div className="flex flex-col gap-6 lg:gap-12">
                     {currentItems.length > 0 ? (
                         currentItems.map((item, index) => (
                             <PortfolioCard key={index} item={item} />

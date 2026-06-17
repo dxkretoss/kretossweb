@@ -75,7 +75,7 @@ export default function TeamsFuture() {
             <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-[#0037f0]/20 to-transparent pointer-events-none"></div>
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-                <div className="section-header flex flex-col items-center text-center mb-16">
+                <div className="section-header flex flex-col items-center text-center mb-8 md:mb-16">
                     {/* Standardized Badge */}
 
 
@@ -95,7 +95,7 @@ export default function TeamsFuture() {
                     {features.map((feature, idx) => (
                         <div key={idx} className="feature-card">
                             <div
-                                className="relative p-6 sm:p-8 md:p-10 rounded-[24px] border border-white/[0.08] bg-[#121212] overflow-hidden h-full flex flex-col z-10 transition-transform duration-300 hover:-translate-y-1"
+                                className="relative p-6 sm:p-8 md:p-10 rounded-2xl border border-white/[0.08] bg-[#121212] overflow-hidden h-full flex flex-col z-10 transition-transform duration-300 hover:-translate-y-1"
                             >
                                 {/* Subtle gradient overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-b from-[#0e54f1]/5 to-transparent pointer-events-none"></div>

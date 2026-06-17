@@ -297,7 +297,7 @@ export default function About() {
                         <div className="about-right-box">
                             <div className="about-title-button" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'stretch' }}>
                                 <div className="about-block" style={{ flex: 1, minWidth: '300px' }}>
-                                    <div className="about-title-text" style={{ marginBottom: '20px' }}>
+                                    <div className="about-title-text homepage">
                                         <div className="about-slider _02" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
                                             <div className="about-slider-two _02"></div>
                                         </div>

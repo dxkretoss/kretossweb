@@ -4,6 +4,80 @@ import gsap from 'gsap';
 import { ArrowUpRight } from 'lucide-react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Badge from '../ui/Badge';
+import {
+    FaReact, FaAngular, FaVuejs, FaNodeJs, FaPython,
+    FaLaravel, FaJava, FaSwift, FaApple, FaAws,
+    FaDigitalOcean, FaWordpress, FaShopify, FaMagento,
+    FaDrupal, FaJs, FaChartBar, FaChartLine, FaMicrosoft, FaDatabase,
+    FaHtml5, FaCss3Alt, FaCode, FaPhp, FaHubspot
+} from 'react-icons/fa';
+import {
+    SiNextdotjs, SiNestjs, SiFlutter, SiKotlin,
+    SiPandas, SiGooglecloud, SiBigcommerce,
+    SiSupabase, SiSolidity, SiMysql, SiCodeigniter, SiTensorflow
+} from 'react-icons/si';
+
+const getCountryFlag = (country) => {
+    if (!country) return '';
+    const flags = {
+        'usa': '🇺🇸',
+        'uk': '🇬🇧',
+        'australia': '🇦🇺',
+        'germany': '🇩🇪',
+        'brazil': '🇧🇷',
+        'canada': '🇨🇦',
+        'uae': '🇦🇪'
+    };
+    return flags[country.toLowerCase()] || '🌍';
+};
+
+const getTechIcons = (techString) => {
+    if (!techString) return [<FaCode />];
+    const techMap = {
+        'angular': <FaAngular />,
+        'node.js': <FaNodeJs />,
+        'node js': <FaNodeJs />,
+        'html': <FaHtml5 />,
+        'css': <FaCss3Alt />,
+        'js': <FaJs />,
+        'javascript': <FaJs />,
+        'react.js': <FaReact />,
+        'reactjs': <FaReact />,
+        'react': <FaReact />,
+        'react native': <FaReact />,
+        'supabase': <SiSupabase />,
+        'blockchain': <SiSolidity />,
+        'python': <FaPython />,
+        'vue.js': <FaVuejs />,
+        'laravel': <FaLaravel />,
+        'ai': <FaChartLine />,
+        'bubble': <FaCode />,
+        'mysql': <SiMysql />,
+        'flutter': <SiFlutter />,
+        'ios swift': <FaSwift />,
+        'swift': <FaSwift />,
+        'shopify': <FaShopify />,
+        'codeigniter': <SiCodeigniter />,
+        'wordpress': <FaWordpress />,
+        'php': <FaPhp />,
+        'magento': <FaMagento />,
+        'bigcommerce': <SiBigcommerce />,
+        'hubspot': <FaHubspot />,
+    };
+
+    const techs = techString.split(/[\+,&|-]/).map(t => t.trim().toLowerCase());
+    const icons = techs.map(tech => techMap[tech] || <FaCode />);
+
+    const uniqueIcons = [];
+    const seen = new Set();
+    for (const icon of icons) {
+        if (!seen.has(icon.type)) {
+            seen.add(icon.type);
+            uniqueIcons.push(icon);
+        }
+    }
+    return uniqueIcons;
+};
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,7 +138,7 @@ const ProjectCard = ({
     title,
     description,
     timeline,
-    acquisition,
+    country,
     technology,
     techicon,
     thumbnailImg,
@@ -185,30 +259,48 @@ const ProjectCard = ({
                         <h3 className="project-number-title">{timeline}</h3>
                     </div>
                     <div className="project-number-box">
-                        <div className="project-number-text">Customer Acquisition</div>
-                        <h3 className="project-number-title">{acquisition}</h3>
+                        <div className="project-number-text">Country</div>
+                        <h3 className="project-number-title flex items-center gap-2">
+                            {getCountryFlag(country)} {country || 'N/A'}
+                        </h3>
                     </div>
                 </div>
                 <div className={authorWrapperClass}>
-                    <div className="project-author-box">
-                        <div className="project-author-image-box">
-                            <img src={techicon} loading="lazy" alt="Project Author" className="project-author-image" />
+                    <div className="project-author-box items-center">
+                        <div className="flex items-center -space-x-2 mr-2">
+                            {getTechIcons(technology).map((IconElement, i) => (
+                                <div key={i} className="w-8 h-8 rounded-full bg-[#111111] flex items-center justify-center border border-gray-600 shadow-sm relative text-white" style={{ zIndex: 10 - i }}>
+                                    {React.cloneElement(IconElement, { className: "w-4 h-4 object-contain" })}
+                                </div>
+                            ))}
                         </div>
                         <div className="project-title-designation">
-                            <h3 className="project-author-title">{technology}</h3>
-                            {/* <div className="project-author-text">{technology.role}</div> */}
+                            <h3 className="project-author-title mb-0">{technology}</h3>
                         </div>
                     </div>
 
                     <div>
-                        <Link to={`/project/${slug}`} className="flex items-center justify-center gap-2 px-6 py-3 border border-white/20 rounded-full text-white text-sm font-medium hover:scale-105 transition-all duration-300">
-                            View <ArrowUpRight size={18} />
+                        <Link to={linkUrl} className="flex items-center justify-center rounded text-black text-sm font-medium hover:scale-105 transition-all duration-300"
+                            style={{ backgroundColor: 'white' }}>
+                            <div className="px-4 py-4 flex items-center justify-center">
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 12 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 11L11 1M11 1H3.5M11 1V8.5"
+                                        stroke="currentColor"
+                                        strokeWidth="1.5"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                </svg>
+                            </div>
                         </Link>
                     </div>
-                    {/* <img
-                        src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c5_arrow-turn-forward.svg"
-                        loading="lazy" alt="Project Card Icon" className="project-card-icon"
-                    /> */}
                 </div>
             </div>
         </div>
@@ -260,71 +352,55 @@ export default function Projects() {
     const projectsList = [
         {
             id: "01",
-            slug: "drawn-dating-app",
-            tag: "Dating App",
-            title: "A stylish Mobile app store created for Drawn Dating App",
-            description: `The design is clean, user-friendly, and perfectly aligns with our brand vision. Everything was executed with attention to detail, and the functionality works seamlessly. The team was professional, responsive, and delivered the project on time. We couldn't be happier with the outcome-thank you for bringing our ideas to life!`,
-            timeline: "2.1 Months",
-            acquisition: "60%",
-            techicon: "/portfolio/icon.png",
-            technology: "Vue.js & Laravel",
-            thumbnailImg: "/portfolio/Drawn.png",
-            srcset: "/portfolio/Drawn.png 500w, /portfolio/Drawn.png 736w",
-            linkIcon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887c7_Group%202085664886.svg",
-            linkUrl: "https://dribbble.com/shots/26978225-AGENCE-modern-Modern-Creative-Agency-Landing-Page-webflow",
-            dataWId: "3f73e51d-3176-e96d-293b-9d441d9d29dd",
-            linkDataWId: "3f73e51d-3176-e96d-293b-9d441d9d2a10"
+            slug: "drawn",
+            tag: "Mobile App",
+            title: "Drawn",
+            description: "Experience the future of mobile applications with Drawn. Engineered for high performance, scalability, and an intuitive user experience.",
+            timeline: "2-4 Months",
+            country: "Germany",
+            technology: "Flutter",
+            thumbnailImg: "/portfolio/mobile-app/drawn/portfolio_drawn.jpg",
+            srcset: "/portfolio/mobile-app/drawn/portfolio_drawn.jpg 500w",
+            linkUrl: "/portfolio/drawn"
         },
         {
             id: "02",
             slug: "trischedule",
-            tag: "Workout app",
-            title: "Trischedule app",
-            description: "Kretoss delivered a sleek and powerful fitness scheduling app for TriSchedule, complete with seamless Apple Watch and Garmin integration. The performance, usability, and attention to detail were outstanding.",
-            timeline: "2.2 Months",
-            acquisition: "60%",
-            techicon: "/portfolio/icon.png",
+            tag: "Mobile App",
+            title: "TriSchedule",
+            description: "Experience the future of mobile applications with TriSchedule. Engineered for high performance, scalability, and an intuitive user experience.",
+            timeline: "2-4 Months",
+            country: "Canada",
             technology: "Flutter",
-            thumbnailImg: "/portfolio/Trischedule.png",
-            srcset: "/portfolio/Trischedule.png 500w, /portfolio/Trischedule.png 800w, /portfolio/Trischedule.png 1080w, /portfolio/Trischedule.png 1472w",
-            linkIcon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887dc_Group%202085664886.svg",
-            linkUrl: "https://dribbble.com/shots/26482298-Creative-Modern-Analytics-Admin-Dashboard",
-            dataWId: "3f73e51d-3176-e96d-293b-9d441d9d2a14",
-            linkDataWId: "60167cee-d76c-8340-045b-2fd9ca89e8c3"
+            thumbnailImg: "/portfolio/mobile-app/trischedule/portfolio_trischedule.jpg",
+            srcset: "/portfolio/mobile-app/trischedule/portfolio_trischedule.jpg 500w",
+            linkUrl: "/portfolio/trischedule"
         },
         {
             id: "03",
-            slug: "business-compliance",
-            tag: "Business Management",
-            title: "Simplify Business Compliance Management and Stay Ahead of Every Deadline",
-            description: "Track GST, TDS, Income Tax, and other compliance tasks in one unified platform. Stay organized, avoid penalties, and gain full visibility into what’s done, pending, and who’s responsible.",
-            timeline: "2.3 Months",
-            acquisition: "70%",
-            techicon: "/portfolio/icon.png",
+            slug: "fily",
+            tag: "Custom web",
+            title: "Fily",
+            description: "Experience the future of web applications with Fily. Engineered for high performance, scalability, and an intuitive user experience.",
+            timeline: "2-4 Months",
+            country: "USA",
             technology: "ReactJS + Supabase",
-            thumbnailImg: "/portfolio/fily.webp",
-            srcset: "/portfolio/fily.webp 500w, /portfolio/fily.webp 736w",
-            linkIcon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887e4_Group%202085664913.svg",
-            linkUrl: "https://dribbble.com/shots/27049558-Digital-Agency-Landing-Page-UI-Design",
-            dataWId: "3f73e51d-3176-e96d-293b-9d441d9d2a4b",
-            linkDataWId: "ba84ca82-d5ed-9a54-7f48-878593d3d333"
+            thumbnailImg: "/portfolio/custom/portfolio_fily.webp",
+            srcset: "/portfolio/custom/portfolio_fily.webp 500w",
+            linkUrl: "/portfolio/fily"
         },
         {
             id: "04",
-            slug: "delivery-service",
-            tag: "Crypto Currency",
-            title: "Delivery Service Projects",
-            description: "Palzea Widget Integration is a P2P crypto purchase widget that can be easily integrated into any website using a simple script or iframe link. Users can select a cryptocurrency, enter the amount in INR, and the widget automatically finds a merchant to complete the transaction securely. Once payment is confirmed, the crypto is transferred directly to the user.",
-            timeline: "2.1 Months",
-            acquisition: "60%",
-            techicon: "/portfolio/icon.png",
-            technology: "Blockchain - React.js - Node.js",
-            thumbnailImg: "/portfolio/palzea.webp",
-            srcset: "/portfolio/palzea.webp 500w, /portfolio/palzea.webp 736w",
-            linkIcon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887ef_Group%202085664886.svg",
-            linkUrl: "https://dribbble.com/shots/26016371--Consultify-Business-Agency-Template",
-            dataWId: "3f73e51d-3176-e96d-293b-9d441d9d2a82",
-            linkDataWId: "6cfef261-0bbb-8b17-da19-9da8b05e50ba"
+            slug: "palzea-widget",
+            tag: "Custom web",
+            title: "Palzea",
+            description: "Experience the future of web applications with Palzea. Engineered for high performance, scalability, and an intuitive user experience.",
+            timeline: "2-4 Months",
+            country: "UK",
+            technology: "Blockchain + React.js + Node.js",
+            thumbnailImg: "/portfolio/custom/portfolio_palzea-widget.webp",
+            srcset: "/portfolio/custom/portfolio_palzea-widget.webp 500w",
+            linkUrl: "/portfolio/palzea-widget"
         }
     ];
 
@@ -404,16 +480,13 @@ export default function Projects() {
                                         title={project.title}
                                         description={project.description}
                                         timeline={project.timeline}
-                                        acquisition={project.acquisition}
+                                        country={project.country}
                                         techicon={project.techicon}
                                         technology={project.technology}
                                         thumbnailImg={project.thumbnailImg}
                                         srcset={project.srcset}
-                                        linkIcon={project.linkIcon}
-                                        linkUrl={project.linkUrl}
-                                        dataWId={project.dataWId}
-                                        linkDataWId={project.linkDataWId}
                                         slug={project.slug}
+                                        linkUrl={project.linkUrl}
                                     />
                                 ))}
                             </div>

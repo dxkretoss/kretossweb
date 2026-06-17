@@ -81,7 +81,7 @@ export default function AwardsSection() {
                 {/* Left Side: Text and List */}
                 <div className="flex-1 w-full lg:max-w-[65%]">
                     {/* Header */}
-                    <div className="award-header flex flex-col items-center lg:items-start mb-8 text-left">
+                    <div className="award-header flex flex-col items-center lg:items-start mb-4 lg:mb-8 text-left">
 
                         <div className='mb-5'>
                             <Badge variant="blue">Awards</Badge>

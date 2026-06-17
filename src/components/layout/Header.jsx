@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useRef } from 'react';
+import React, { useState, useLayoutEffect, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Menu, X } from 'lucide-react';
 
@@ -149,6 +149,25 @@ export default function Header({ currentRoute }) {
         }
         setIsMenuOpen(false); // Close menu on navigation
     };
+
+    // Lock body scroll and stop Lenis smooth scrolling when mobile menu is open
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.documentElement.style.overflow = 'hidden';
+            document.body.style.overflow = 'hidden';
+            if (window.lenis) window.lenis.stop();
+        } else {
+            document.documentElement.style.overflow = '';
+            document.body.style.overflow = '';
+            if (window.lenis) window.lenis.start();
+        }
+        
+        return () => {
+            document.documentElement.style.overflow = '';
+            document.body.style.overflow = '';
+            if (window.lenis) window.lenis.start();
+        };
+    }, [isMenuOpen]);
 
     return (
         <>

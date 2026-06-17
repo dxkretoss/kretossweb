@@ -7,7 +7,7 @@ import {
     FaReact, FaAngular, FaVuejs, FaNodeJs, FaPython,
     FaLaravel, FaJava, FaSwift, FaApple, FaAws,
     FaDigitalOcean, FaWordpress, FaShopify, FaMagento,
-    FaDrupal, FaJs, FaChartBar, FaChartLine, FaMicrosoft, FaDatabase
+    FaDrupal, FaJs, FaChartBar, FaChartLine, FaMicrosoft, FaDatabase, FaCode
 } from 'react-icons/fa';
 import {
     SiNextdotjs, SiNestjs, SiFlutter, SiKotlin,
@@ -101,7 +101,34 @@ const servicesData = [
             { num: "05", name: "BigCommerce", Icon: SiBigcommerce },
         ]
     },
-
+    {
+        id: "07",
+        title: "Vibe Coding",
+        desc: "Fast-track product development using vibe-coding tools and scalable engineering practices.",
+        image: "/services/main_vibecoding.png",
+        icon: "/services/icon_vibecoding.png",
+        technologies: [
+            { num: "01", name: "AI", Icon: FaChartLine },
+            { num: "02", name: "Cursor", Icon: FaCode },
+            { num: "03", name: "Copilot", Icon: FaReact },
+            { num: "04", name: "Python", Icon: FaPython },
+            { num: "05", name: "Prompting", Icon: FaJs },
+        ]
+    },
+    {
+        id: "08",
+        title: "Python & ERP Development",
+        desc: "High-performance ERP and backend development using Python, Django, and Odoo.",
+        image: "/services/main_pythonerp.png",
+        icon: "/services/icon_pythonerp.png",
+        technologies: [
+            { num: "01", name: "Python", Icon: FaPython },
+            { num: "02", name: "Django", Icon: FaPython },
+            { num: "03", name: "Odoo", Icon: FaCode },
+            { num: "04", name: "PostgreSQL", Icon: FaDatabase },
+            { num: "05", name: "AWS", Icon: FaAws },
+        ]
+    }
 ];
 
 export default function ServicesList() {
@@ -204,33 +231,33 @@ export default function ServicesList() {
                 </div>
 
                 {/* Services List */}
-                <div className="flex flex-col gap-15 mt-10">
+                <div className="flex flex-col gap-8 md:gap-15 mt-10">
                     {servicesData.map((service, index) => {
                         const isEven = index % 2 !== 0;
 
                         return (
-                            <div key={service.id} className="service-row relative group flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+                            <div key={service.id} className="service-row relative group flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
 
                                 {/* Text Content Area */}
                                 <div className={`service-text-col w-full lg:w-1/2 flex flex-col items-start relative z-10 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                                     {/* Number & Title Area */}
-                                    <div className="flex flex-row items-end gap-4 sm:gap-6 mb-6 sm:mb-8">
-                                        <div className="text-5xl sm:text-6xl md:text-8xl font-black bg-gradient-to-br from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text leading-none drop-shadow-sm">
+                                    <div className="flex flex-row items-end gap-2 mb-3 lg:mb-6">
+                                        <div className="text-3xl md:text-5xl font-black bg-gradient-to-br from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text leading-none drop-shadow-sm">
                                             {service.id}
                                         </div>
-                                        <h3 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#111] tracking-tight leading-tight mb-1 sm:mb-2">
+                                        <h3 className="text-lg md:text-3xl uppercase font-bold text-[#111] tracking-tight leading-tight">
                                             {service.title}
                                         </h3>
                                     </div>
 
-                                    <p className="text-gray-600 text-base sm:text-lg md:text-xl leading-relaxed mb-8 sm:mb-10 max-w-lg">
+                                    <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-3 lg:mb-6 max-w-lg">
                                         {service.desc}
                                     </p>
 
                                     {/* Tech Pills */}
-                                    <div className="flex flex-wrap gap-2 sm:gap-3 mb-8 sm:mb-10">
+                                    <div className="flex flex-wrap gap-2 sm:gap-3 mb-3 lg:mb-6">
                                         {service.technologies.map((tech, i) => (
-                                            <span key={i} className="group flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-200 bg-white shadow-sm text-sm font-semibold text-gray-800 hover:border-[#0037f0] hover:text-[#0037f0] transition-colors duration-300 cursor-default">
+                                            <span key={i} className="group flex items-center gap-2 px-3 md:px-5 py-1 md:py-2.5 rounded-full border border-gray-200 bg-white shadow-sm text-[12px] lg:text-sm font-semibold text-gray-800 hover:border-[#0037f0] hover:text-[#0037f0] transition-colors duration-300 cursor-default">
                                                 {tech.Icon && <tech.Icon className="w-4 h-4 text-gray-600 group-hover:fill-[url(#service-tech-grad)] group-hover:text-transparent transition-all duration-300" />}
                                                 {tech.name}
                                             </span>

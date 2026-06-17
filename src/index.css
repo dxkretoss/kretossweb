@@ -34,6 +34,28 @@
   animation: marquee-vertical 15s linear infinite;
 }
 
+@keyframes auto-scroll-bg {
+  0% {
+    background-position: top;
+  }
+
+  5% {
+    background-position: top;
+  }
+
+  95% {
+    background-position: bottom;
+  }
+
+  100% {
+    background-position: bottom;
+  }
+}
+
+.animate-auto-scroll-bg {
+  animation: auto-scroll-bg 12s ease-in-out infinite alternate;
+}
+
 /* Global Dark Theme Settings */
 html,
 body {
@@ -2873,6 +2895,10 @@ body {
   color: var(--_color---theme-colors--background-color);
   flex-flow: column;
   display: flex;
+}
+
+.about-title-text.homepage {
+  margin-bottom: 20px;
 }
 
 .title {
@@ -8354,6 +8380,10 @@ body {
 
 @media screen and (max-width: 768px) {
 
+  .about-right-box {
+    margin-top: 0;
+  }
+
   .w-hidden-main,
   .w-hidden-medium {
     display: inherit !important;
@@ -8563,6 +8593,7 @@ body {
 
   .about-text {
     font-size: 16px;
+    margin-bottom: 0;
   }
 
   .about-title-button {
@@ -8692,8 +8723,8 @@ body {
   }
 
   .about-block {
-    grid-column-gap: 32px;
-    grid-row-gap: 32px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
   }
 
   .nav-link-text {
@@ -8819,6 +8850,10 @@ body {
 
   .hero-title-image-box {
     display: none;
+  }
+
+  .about-title-text.homepage {
+    margin-bottom: 0;
   }
 }
 
@@ -9540,7 +9575,9 @@ body {
 
   .testimonial-title.teams {
     font-size: 28px;
+    text-align: center;
   }
+
 
   .review-section-quote {
     width: 50px;
@@ -9640,18 +9677,32 @@ body {
   .nav-list.mobile-menu-open {
     display: flex !important;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 70px;
     left: 0;
-    width: 100%;
-    background: #000;
-    padding: 30px;
-    gap: 10px;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background: #0c0c0c;
+    padding: 30px 5vw;
+    gap: 15px;
     z-index: 999;
+    align-items: flex-start;
   }
 
   .menu-box {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .menu-link {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .menu-link-text {
+    font-size: 18px;
+    font-weight: 500;
   }
 }
 
