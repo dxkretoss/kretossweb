@@ -47,12 +47,18 @@ export default function JobApplicationPage() {
     };
 
     return (
-        <div className="min-h-screen bg-[#0a0a0a] py-10 md:py-20 relative font-sans">
+        <div className="min-h-screen bg-[#fafcff] py-10 md:py-20 relative font-sans overflow-hidden">
+            {/* Background Blobs */}
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                <div className="absolute top-[10%] right-[5%] w-[400px] h-[400px] bg-[#0e54f1]/10 rounded-full blur-[80px]"></div>
+                <div className="absolute bottom-[10%] left-[5%] w-[400px] h-[400px] bg-cyan-400/10 rounded-full blur-[80px]"></div>
+            </div>
+
             <div className="container mx-auto px-4 sm:px-6 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h1 className="text-3xl sm:text-4xl md:text-[42px] font-bold">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0]">Job Application</span> <span className="text-white">Form</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0]">Job Application</span> <span className="text-black">Form</span>
                     </h1>
                 </div>
 

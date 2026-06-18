@@ -76,10 +76,10 @@ export default function BuildWithUs() {
 
             // Staggered entrance for the bento boxes
             tl.fromTo(".bento-box",
-                { opacity: 0, y: 50 },
+                { opacity: 0, scale: 0.95 },
                 {
                     opacity: 1,
-                    y: 0,
+                    scale: 1,
                     duration: 0.8,
                     stagger: 0.15,
                     ease: "power3.out",

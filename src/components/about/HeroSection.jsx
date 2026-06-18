@@ -5,7 +5,7 @@ import Badge from '../ui/Badge';
 const AnimatedWord = ({ text, isGradient }) => {
     const gradientClass = isGradient ? "bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text" : "";
     return (
-        <span className={`hero-word ${gradientClass}`} style={{ whiteSpace: 'pre-wrap', display: 'inline-block', opacity: 0, paddingRight: '0.1em', marginRight: '-0.1em', }}>
+        <span className={`hero-word ${gradientClass}`} style={{ whiteSpace: 'pre-wrap', display: 'inline-block', opacity: 0, paddingRight: '0.1em', marginRight: '-0.1em', paddingBottom: '0.2em', marginBottom: '-0.2em' }}>
             {text}
         </span>
     );
@@ -131,7 +131,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section className="relative min-h-[calc(100dvh-100px)] flex items-center bg-[#0a0a0a] overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-24" ref={heroRef}>
+        <section className="relative min-h-[calc(100%-100px)] flex items-center bg-[#0a0a0a] overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-24" ref={heroRef}>
             {/* Dotted Grid SVG Background */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-60 ">
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">

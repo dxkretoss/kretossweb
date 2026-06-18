@@ -130,7 +130,7 @@ export default function ContactHero() {
     }, []);
 
     return (
-        <section className="relative min-h-[calc(100dvh-100px)] flex items-center bg-[#0a0a0a] overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-24" ref={heroRef}>
+        <section className="relative min-h-[calc(100%-100px)] flex items-center bg-[#0a0a0a] overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-24" ref={heroRef}>
             {/* Dotted Grid SVG Background */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-60 ">
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">

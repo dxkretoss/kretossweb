@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { portfolioDetailsData } from '../data/portfoliodetails';
 import AnimatedButton from './ui/AnimatedButton';
 import CtaSection from './about/CTASection';
+import { FaChevronRight } from 'react-icons/fa';
 
 export default function PortfolioDetailsPage() {
     const { slug } = useParams();
@@ -11,6 +12,7 @@ export default function PortfolioDetailsPage() {
     const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
     const [touchStart, setTouchStart] = useState(null);
     const [touchEnd, setTouchEnd] = useState(null);
+    const [desktopScrollMode, setDesktopScrollMode] = useState('auto');
 
     const minSwipeDistance = 50;
 
@@ -67,6 +69,14 @@ export default function PortfolioDetailsPage() {
         }
     }, [project]);
 
+    useEffect(() => {
+        if (!project?.mobileScreens) return;
+        const intervalId = setInterval(() => {
+            setCurrentScreenIndex((prev) => (prev + 1) % project.mobileScreens.length);
+        }, 5000);
+        return () => clearInterval(intervalId);
+    }, [project, currentScreenIndex]);
+
     if (!project) {
         return (
             <div className="min-h-screen flex items-center justify-center bg-[#0a0a0a]">
@@ -106,7 +116,9 @@ export default function PortfolioDetailsPage() {
                     <div className={`grid grid-cols-1 sm:grid-cols-2 ${isMobileLayout ? 'lg:grid-cols-2 gap-4' : 'lg:grid-cols-4 gap-6'}`}>
                         {project.keyFeatures.map((feature, idx) => (
                             <div key={idx} className={`bg-gradient-to-br from-[#161616] to-[#0a0a0a] border border-[#333] ${isMobileLayout ? 'p-5' : 'p-6'} rounded-2xl flex items-center gap-4 hover:-translate-y-1 hover:border-[#44c7f6]/50 transition-all duration-300`}>
-                                <div className="w-2.5 h-2.5 rounded-full bg-[#44c7f6] shadow-[0_0_10px_#44c7f6]"></div>
+                                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-[#44c7f6]/10 text-[#44c7f6] shrink-0 border border-[#44c7f6]/30 shadow-[0_0_10px_rgba(68,199,246,0.3)]">
+                                    <FaChevronRight className="w-3 h-3 ml-0.5" />
+                                </div>
                                 <span className={`text-gray-300 font-medium ${isMobileLayout ? 'text-sm' : 'text-sm md:text-base'}`}>{feature}</span>
                             </div>
                         ))}
@@ -115,6 +127,81 @@ export default function PortfolioDetailsPage() {
             )}
         </>
     );
+
+    const renderCaseStudy = () => {
+        if (!project.caseStudy) return null;
+        return (
+            <div className="pb-10 md:pb-10 pt-10 md:pt-10 border-t border-[#222] relative z-10 container mx-auto px-4 sm:px-6 max-w-[1400px]">
+                <div className="text-center mb-10 md:mb-16">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-sm md:text-base font-bold uppercase tracking-widest mb-3 block">In-Depth Review</span>
+                    <h2 className="text-3xl md:text-5xl font-bold text-white">Case Study</h2>
+                </div>
+
+                <div className="bg-[#111] rounded-3xl p-6 sm:p-10 md:p-16 border border-[#222]">
+                    {/* Overview */}
+                    <div className="mb-12 md:mb-20">
+                        <h3 className="text-white text-xl md:text-2xl font-bold mb-4">Overview</h3>
+                        <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
+                            {project.caseStudy.overview}
+                        </p>
+                    </div>
+
+                    {/* Process */}
+                    <div className="mb-12 md:mb-20">
+                        <h3 className="text-white text-xl md:text-2xl font-bold mb-8 md:mb-10">Our Approach</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                            {project.caseStudy.process.map((step, idx) => (
+                                <div key={idx} className="relative">
+                                    <div className="text-6xl md:text-8xl font-black text-[#1a1a1a] absolute -top-6 -left-4 z-0 pointer-events-none select-none transition-transform group-hover:-translate-y-2">
+                                        0{idx + 1}
+                                    </div>
+                                    <div className="relative z-10 pt-4">
+                                        <h4 className="text-white text-lg md:text-xl font-bold mb-3">{step.title}</h4>
+                                        <p className="text-gray-400 text-sm md:text-base leading-relaxed">{step.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Results & Testimonial */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+                        {/* Results */}
+                        <div>
+                            <h3 className="text-white text-xl md:text-2xl font-bold mb-6">The Impact</h3>
+                            <ul className="space-y-4 md:space-y-6">
+                                {project.caseStudy.results.map((res, idx) => (
+                                    <li key={idx} className="flex items-start gap-4">
+                                        <div className="flex items-center justify-center w-6 h-6 rounded-full bg-[#44c7f6]/10 text-[#44c7f6] shrink-0 mt-0.5 border border-[#44c7f6]/30 shadow-[0_0_10px_rgba(68,199,246,0.2)]">
+                                            <FaChevronRight className="w-3 h-3 ml-0.5" />
+                                        </div>
+                                        <span className="text-gray-300 text-base md:text-lg font-medium">{res}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Testimonial */}
+                        <div className="bg-gradient-to-br from-[#161616] to-[#0a0a0a] p-8 md:p-10 rounded-2xl border border-[#333] relative">
+                            <svg className="absolute top-6 left-6 w-12 h-12 text-[#222]" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" /></svg>
+                            <div className="relative z-10 pt-6">
+                                <p className="text-gray-300 italic text-lg leading-relaxed mb-8">"{project.caseStudy.testimonial.text}"</p>
+                                <div className="flex items-center gap-4">
+                                    <div className="w-12 h-12 rounded-full bg-[#333] flex items-center justify-center text-white font-bold text-xl uppercase">
+                                        {project.caseStudy.testimonial.author.charAt(0)}
+                                    </div>
+                                    <div>
+                                        <h4 className="text-white font-bold">{project.caseStudy.testimonial.author}</h4>
+                                        <p className="text-[#44c7f6] text-sm font-medium">{project.caseStudy.testimonial.position}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    };
 
     return (
         <>
@@ -150,8 +237,8 @@ export default function PortfolioDetailsPage() {
                         <div className="lg:w-1/2 mt-2 lg:mt-0">
                             <div className="grid grid-cols-2 h-full">
                                 <div className="flex flex-col justify-center gap-1 md:gap-2 pb-6 md:pb-8 lg:pr-8 border-b border-r border-white/10 pr-4">
-                                    <span className="text-gray-500 uppercase tracking-widest text-[10px] sm:text-xs font-bold">Client</span>
-                                    <span className="text-white text-sm sm:text-base md:text-lg font-semibold">{project.client}</span>
+                                    <span className="text-gray-500 uppercase tracking-widest text-[10px] sm:text-xs font-bold">Country</span>
+                                    <span className="text-white text-sm sm:text-base md:text-lg font-semibold">{project.country}</span>
                                 </div>
                                 <div className="flex flex-col justify-center gap-1 md:gap-2 pb-6 md:pb-8 pl-4 md:pl-6 lg:pl-8 border-b border-white/10">
                                     <span className="text-gray-500 uppercase tracking-widest text-[10px] sm:text-xs font-bold">Category</span>
@@ -163,7 +250,7 @@ export default function PortfolioDetailsPage() {
                                 </div>
                                 <div className="flex flex-col justify-center gap-1 md:gap-2 pt-6 md:pt-8 pl-4 md:pl-6 lg:pl-8">
                                     <span className="text-gray-500 uppercase tracking-widest text-[10px] sm:text-xs font-bold">Tech Stack</span>
-                                    <span className="text-[#44c7f6] text-sm sm:text-base md:text-lg font-bold">{project.techStack}</span>
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-sm sm:text-base md:text-lg font-bold">{project.techStack}</span>
                                 </div>
                             </div>
                         </div>
@@ -187,19 +274,38 @@ export default function PortfolioDetailsPage() {
                                         {/* Screen */}
                                         {project.mobileScreens ? (
                                             <div
-                                                className="w-full relative cursor-pointer group/screen select-none rounded-[16px] sm:rounded-[22px] overflow-hidden"
-                                                onClick={nextScreen}
+                                                className="w-full relative group/screen select-none rounded-[16px] sm:rounded-[22px] overflow-hidden"
                                                 onTouchStart={handleTouchStart}
                                                 onTouchMove={handleTouchMove}
                                                 onTouchEnd={handleTouchEnd}
                                             >
-                                                <img
-                                                    src={project.mobileScreens[currentScreenIndex]}
-                                                    alt={`Screen ${currentScreenIndex + 1}`}
-                                                    className="w-full h-auto block transition-opacity duration-300 pointer-events-none"
-                                                    draggable="false"
-                                                />
-                                                <div className="absolute inset-y-0 right-0 w-1/4 flex items-center justify-end pr-4 opacity-0 md:group-hover/screen:opacity-100 transition-opacity pointer-events-none z-40 hidden md:flex">
+                                                {/* Left/Right click areas */}
+                                                <div className="absolute inset-y-0 left-0 w-1/2 z-20 cursor-pointer" onClick={prevScreen}></div>
+                                                <div className="absolute inset-y-0 right-0 w-1/2 z-20 cursor-pointer" onClick={nextScreen}></div>
+
+                                                {/* Invisible placeholder for height */}
+                                                <img src={project.mobileScreens[0]} className="w-full h-auto block invisible pointer-events-none" alt="placeholder" />
+
+                                                {/* Fading Screens */}
+                                                {project.mobileScreens.map((src, index) => (
+                                                    <img
+                                                        key={index}
+                                                        src={src}
+                                                        alt={`Screen ${index + 1}`}
+                                                        className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out pointer-events-none ${index === currentScreenIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                                                        draggable="false"
+                                                    />
+                                                ))}
+
+                                                {/* Left Navigation Hint */}
+                                                <div className="absolute inset-y-0 left-0 w-1/4 flex items-center justify-start pl-4 opacity-0 md:group-hover/screen:opacity-100 transition-opacity pointer-events-none z-30 hidden md:flex">
+                                                    <div className="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white shadow-lg">
+                                                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" /></svg>
+                                                    </div>
+                                                </div>
+
+                                                {/* Right Navigation Hint */}
+                                                <div className="absolute inset-y-0 right-0 w-1/4 flex items-center justify-end pr-4 opacity-0 md:group-hover/screen:opacity-100 transition-opacity pointer-events-none z-30 hidden md:flex">
                                                     <div className="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white shadow-lg">
                                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" /></svg>
                                                     </div>
@@ -248,7 +354,8 @@ export default function PortfolioDetailsPage() {
                                         {/* Screen Content */}
                                         <div className="relative w-full h-full bg-[#121212] overflow-hidden rounded-sm">
                                             <div
-                                                className="w-full h-full bg-top animate-auto-scroll-bg md:animate-none md:hover:bg-bottom md:transition-[background-position] md:duration-[12s] ease-in-out cursor-pointer"
+                                                onClick={() => setDesktopScrollMode(prev => (prev === 'auto' || prev === 'playing') ? 'paused' : 'playing')}
+                                                className={`w-full h-full bg-top animate-auto-scroll-bg md:animate-none desktop-scroll-container desktop-scroll-mode-${desktopScrollMode} cursor-pointer`}
                                                 style={{
                                                     backgroundImage: `url(${project.portfolioImage})`,
                                                     backgroundSize: '100% auto',
@@ -274,13 +381,15 @@ export default function PortfolioDetailsPage() {
                                     />
                                 </div>
                             </div>
-
+                            {renderCaseStudy()}
                             {renderProjectContent(false)}
                         </>
                     )}
 
                 </div>
             </div>
+
+            {project.mobileScreens && renderCaseStudy()}
 
             <CtaSection />
         </>

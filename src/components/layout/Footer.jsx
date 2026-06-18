@@ -3,9 +3,10 @@ import AnimatedButton from '../ui/AnimatedButton';
 
 export default function Footer({ currentRoute }) {
     // Ticker configuration for infinite rolling track
-    const tickerItems = Array.from({ length: 8 }).map((_, idx) => ({
+    const technologies = ["Laravel", "Node.js", "React.js", "Python", "Flutter", "React Native", "UI/UX", "PHP", "Shopify"];
+    const tickerItems = technologies.map((tech) => ({
         icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288792_Group%202087325406.svg",
-        text: "Let’s Talk"
+        text: tech
     }));
 
     // Navigation and menu arrays

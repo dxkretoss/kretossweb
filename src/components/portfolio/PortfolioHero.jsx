@@ -5,7 +5,7 @@ import Badge from '../ui/Badge';
 const AnimatedWord = ({ text, isGradient }) => {
     const gradientClass = isGradient ? "bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text" : "";
     return (
-        <span className={`hero-word ${gradientClass}`} style={{ whiteSpace: 'pre-wrap', display: 'inline-block', opacity: 0, paddingRight: '0.1em', marginRight: '-0.1em', }}>
+        <span className={`hero-word ${gradientClass}`} style={{ whiteSpace: 'pre-wrap', display: 'inline-block', opacity: 0, paddingRight: '0.1em', marginRight: '-0.1em', paddingBottom: '0.2em', marginBottom: '-0.2em' }}>
             {text}
         </span>
     );
@@ -103,7 +103,7 @@ export default function PortfolioHero() {
     }, []);
 
     return (
-        <section className="relative min-h-[calc(100dvh-100px)] flex items-center bg-[#0a0a0a] overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-24" ref={heroRef}>
+        <section className="relative min-h-[calc(100%-100px)] flex items-center bg-[#0a0a0a] overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-24" ref={heroRef}>
             {/* Dotted Grid SVG Background */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-60 ">
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -137,13 +137,8 @@ export default function PortfolioHero() {
                         </div>
 
                         <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 lg:mb-8">
-                            <AnimatedWord text="Check " isGradient={false} />
-                            <AnimatedWord text="Out " isGradient={false} />
-                            <AnimatedWord text="Our " isGradient={false} />
-                            <AnimatedWord text="Best " isGradient={false} /><br />
-                            <AnimatedWord text="Design " isGradient={true} />
-                            <AnimatedWord text="& " isGradient={true} />
-                            <AnimatedWord text="Development " isGradient={true} /><br />
+                            <AnimatedWord text="Check Out Our Best" isGradient={false} /><br />
+                            <AnimatedWord text="Design & Development" isGradient={true} /><br />
                             <AnimatedWord text="Works" isGradient={false} />
                         </h1>
 

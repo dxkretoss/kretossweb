@@ -16,7 +16,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Guestway needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Guestway to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Angular + Node.js, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Guestway"
+            }
+        }
     },
     {
         "slug": "nexthunt",
@@ -35,7 +63,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "NextHunt needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at NextHunt to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing React.js + Supabase, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "NextHunt"
+            }
+        }
     },
     {
         "slug": "palzea-widget",
@@ -54,7 +110,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "Palzea needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Palzea to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Blockchain + React.js + Node.js, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Palzea"
+            }
+        }
     },
     {
         "slug": "dreamload",
@@ -73,7 +157,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UAE",
+        "caseStudy": {
+            "overview": "Dreamload needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Dreamload to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing ReactJS + Python, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Dreamload"
+            }
+        }
     },
     {
         "slug": "phoenixfc",
@@ -92,7 +204,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "USA",
+        "caseStudy": {
+            "overview": "PhoenixFC needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at PhoenixFC to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing ReactJS + Python, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "PhoenixFC"
+            }
+        }
     },
     {
         "slug": "palzea",
@@ -111,7 +251,35 @@ export const portfolioDetailsData = [
             "Live Community Chat",
             "Push Notifications",
             "Interactive Map Views"
-        ]
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "Palzea Networks needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Palzea Networks to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Vue.js + Laravel, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Palzea Networks"
+            }
+        }
     },
     {
         "slug": "fily",
@@ -130,7 +298,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "USA",
+        "caseStudy": {
+            "overview": "Fily needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Fily to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing ReactJS + Supabase, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Fily"
+            }
+        }
     },
     {
         "slug": "stb",
@@ -149,7 +345,35 @@ export const portfolioDetailsData = [
             "University ID Verification",
             "Split Payment Gateway",
             "AI Roommate Matching"
-        ]
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "STB Inc. needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at STB Inc. to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing ReactJS + Node.js, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "STB Inc."
+            }
+        }
     },
     {
         "slug": "klubbrabatten",
@@ -168,7 +392,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Klubbrabatten needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Klubbrabatten to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing ReactJS + Supabase + Node.js, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Klubbrabatten"
+            }
+        }
     },
     {
         "slug": "giveaways",
@@ -187,7 +439,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Giveaway needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Giveaway to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Laravel, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Giveaway"
+            }
+        }
     },
     {
         "slug": "sarhachat",
@@ -206,7 +486,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Sarhachat needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Sarhachat to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing AI, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Sarhachat"
+            }
+        }
     },
     {
         "slug": "wallstreets",
@@ -225,7 +533,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "Wall Street needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Wall Street to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Angular & Laravel, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Wall Street"
+            }
+        }
     },
     {
         "slug": "allbots",
@@ -244,7 +580,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Allbots needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Allbots to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Bubble, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Allbots"
+            }
+        }
     },
     {
         "slug": "searchive",
@@ -263,7 +627,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "Searchive needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Searchive to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing ReactJS, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Searchive"
+            }
+        }
     },
     {
         "slug": "coyna",
@@ -282,7 +674,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "Coyna needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Coyna to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Angular, JavaScript, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Coyna"
+            }
+        }
     },
     {
         "slug": "gujarat-tiles-info",
@@ -301,7 +721,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Gujarat Tiles Info needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Gujarat Tiles Info to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Angular & Laravel, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Gujarat Tiles Info"
+            }
+        }
     },
     {
         "slug": "implanstock",
@@ -320,7 +768,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Implant Stock needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Implant Stock to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Laravel & React, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Implant Stock"
+            }
+        }
     },
     {
         "slug": "locum-prime",
@@ -339,7 +815,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Locum Prime needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Locum Prime to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Angular, Codeigniter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Locum Prime"
+            }
+        }
     },
     {
         "slug": "trust-arthur-group",
@@ -358,7 +862,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Trust Arthur Group needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Trust Arthur Group to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Python, ReactJS, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Trust Arthur Group"
+            }
+        }
     },
     {
         "slug": "taxley-custom",
@@ -377,7 +909,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Taxley needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Taxley to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing MySQL, Node JS, ReactJS, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Taxley"
+            }
+        }
     },
     {
         "slug": "my100days",
@@ -410,6 +970,34 @@ export const portfolioDetailsData = [
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.my100days.app",
             "ios": "https://apps.apple.com/us/app/my100days/id6758403924"
+        },
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "My100Days needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at My100Days to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing React Native, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "My100Days"
+            }
         }
     },
     {
@@ -443,6 +1031,34 @@ export const portfolioDetailsData = [
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
             "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+        },
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "TriSchedule needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at TriSchedule to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "TriSchedule"
+            }
         }
     },
     {
@@ -475,6 +1091,34 @@ export const portfolioDetailsData = [
         ],
         "appLinks": {
             "ios": "https://apps.apple.com/app/wingman-cabin-chat/id6753678163"
+        },
+        "country": "UK",
+        "caseStudy": {
+            "overview": "Wingman needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Wingman to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing iOS Swift , ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Wingman"
+            }
         }
     },
     {
@@ -508,6 +1152,34 @@ export const portfolioDetailsData = [
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.bookabuilder",
             "ios": "https://apps.apple.com/us/app/bookabuilder/id1092089910"
+        },
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Book a Builder needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Book a Builder to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing React Native, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Book a Builder"
+            }
         }
     },
     {
@@ -541,6 +1213,34 @@ export const portfolioDetailsData = [
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=se.klubbrabatten.app&hl=en_US&gl=sv&pli=1",
             "ios": "https://apps.apple.com/se/app/klubbrabatten-st%C3%B6tta-spara/id6481658449"
+        },
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Klubbrabatten needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Klubbrabatten to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Klubbrabatten"
+            }
         }
     },
     {
@@ -574,6 +1274,34 @@ export const portfolioDetailsData = [
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.roamaly",
             "ios": "https://apps.apple.com/in/app/roamaly/id6747666088"
+        },
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Roamaly needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Roamaly to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing React Native, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Roamaly"
+            }
         }
     },
     {
@@ -606,6 +1334,34 @@ export const portfolioDetailsData = [
         ],
         "appLinks": {
             "ios": "https://apps.apple.com/us/app/sion-reservations/id6743756751"
+        },
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Sion Reservations needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Sion Reservations to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Sion Reservations"
+            }
         }
     },
     {
@@ -639,6 +1395,34 @@ export const portfolioDetailsData = [
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.city2city.app&hl=en",
             "ios": "https://apps.apple.com/us/app/city2city-rideshare/id6504011607"
+        },
+        "country": "USA",
+        "caseStudy": {
+            "overview": "City 2 City needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at City 2 City to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Flutter, Node JS, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "City 2 City"
+            }
         }
     },
     {
@@ -669,7 +1453,35 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/drawn/portfolio_drawn_7.png",
             "/portfolio/mobile-app/drawn/portfolio_drawn_8.png"
         ],
-        "appLinks": {}
+        "appLinks": {},
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Drawn needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Drawn to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Drawn"
+            }
+        }
     },
     {
         "slug": "somnexis",
@@ -701,6 +1513,34 @@ export const portfolioDetailsData = [
         ],
         "appLinks": {
             "ios": "https://apps.apple.com/us/app/somnexis/id6744433533"
+        },
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Somnexis needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Somnexis to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Somnexis"
+            }
         }
     },
     {
@@ -733,6 +1573,34 @@ export const portfolioDetailsData = [
         ],
         "appLinks": {
             "ios": "https://apps.apple.com/app/traivend/id6578453267"
+        },
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "Traivend needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Traivend to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing React Native, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Traivend"
+            }
         }
     },
     {
@@ -766,6 +1634,34 @@ export const portfolioDetailsData = [
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.offaratcustomer",
             "ios": "https://apps.apple.com/us/app/offarat/id6445883175"
+        },
+        "country": "UAE",
+        "caseStudy": {
+            "overview": "Offarat needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Offarat to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Offarat"
+            }
         }
     },
     {
@@ -799,6 +1695,34 @@ export const portfolioDetailsData = [
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=ch.kayosys.steuern",
             "ios": "https://apps.apple.com/in/app/taxley/id1262730875"
+        },
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Taxley needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Taxley to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Taxley"
+            }
         }
     },
     {
@@ -832,6 +1756,34 @@ export const portfolioDetailsData = [
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=com.kolderkiduniverse",
             "ios": "https://apps.apple.com/us/app/kolderkid-universe/id6743467223"
+        },
+        "country": "USA",
+        "caseStudy": {
+            "overview": "Kolder Kid Universe needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Kolder Kid Universe to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing React Native, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "4.9/5 average rating on App Stores",
+                "60% increase in daily active users",
+                "Seamless offline data synchronization"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Kolder Kid Universe"
+            }
         }
     },
     {
@@ -851,7 +1803,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "Kate's Real Food needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Kate's Real Food to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Kate's Real Food"
+            }
+        }
     },
     {
         "slug": "ludic-life",
@@ -870,7 +1850,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "Ludic Life needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Ludic Life to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Ludic Life"
+            }
+        }
     },
     {
         "slug": "ludic-global",
@@ -889,7 +1897,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Ludic Global needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Ludic Global to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Ludic Global"
+            }
+        }
     },
     {
         "slug": "ludic-kitchen",
@@ -908,7 +1944,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Ludic Kitchen needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Ludic Kitchen to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Ludic Kitchen"
+            }
+        }
     },
     {
         "slug": "almost-peaceful",
@@ -927,7 +1991,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UAE",
+        "caseStudy": {
+            "overview": "Almost Peaceful needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Almost Peaceful to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Almost Peaceful"
+            }
+        }
     },
     {
         "slug": "impetus-health",
@@ -946,7 +2038,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "Impetus Health needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Impetus Health to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Impetus Health"
+            }
+        }
     },
     {
         "slug": "roamaly",
@@ -965,7 +2085,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "USA",
+        "caseStudy": {
+            "overview": "Roamaly needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Roamaly to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Roamaly"
+            }
+        }
     },
     {
         "slug": "kids-posters",
@@ -984,7 +2132,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Kids Posters needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Kids Posters to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Kids Posters"
+            }
+        }
     },
     {
         "slug": "the-pawcan",
@@ -1003,7 +2179,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "USA",
+        "caseStudy": {
+            "overview": "The Pawcan needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at The Pawcan to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "The Pawcan"
+            }
+        }
     },
     {
         "slug": "recreation-beauty",
@@ -1022,7 +2226,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Recreation Beauty needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Recreation Beauty to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Recreation Beauty"
+            }
+        }
     },
     {
         "slug": "tango-swim",
@@ -1041,7 +2273,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "Tango Swim needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Tango Swim to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Tango Swim"
+            }
+        }
     },
     {
         "slug": "tilit",
@@ -1060,7 +2320,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Tilit needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Tilit to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Tilit"
+            }
+        }
     },
     {
         "slug": "honey-stinger",
@@ -1079,7 +2367,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "Honey Stinger needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Honey Stinger to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Honey Stinger"
+            }
+        }
     },
     {
         "slug": "moanarose",
@@ -1098,7 +2414,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Moanarose needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Moanarose to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Moanarose"
+            }
+        }
     },
     {
         "slug": "prime-nails",
@@ -1117,7 +2461,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Prime Nails needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Prime Nails to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Prime Nails"
+            }
+        }
     },
     {
         "slug": "source-bulk-foods",
@@ -1136,7 +2508,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "The Source Bulk Foods needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at The Source Bulk Foods to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "The Source Bulk Foods"
+            }
+        }
     },
     {
         "slug": "beadspoint",
@@ -1155,7 +2555,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "Beadspoint needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Beadspoint to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Beadspoint"
+            }
+        }
     },
     {
         "slug": "vacurect",
@@ -1174,7 +2602,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "Vacurect needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Vacurect to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Vacurect"
+            }
+        }
     },
     {
         "slug": "hydro-peptide",
@@ -1193,7 +2649,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Hydro Peptide needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Hydro Peptide to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Hydro Peptide"
+            }
+        }
     },
     {
         "slug": "boxraw",
@@ -1212,7 +2696,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Boxraw needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Boxraw to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Boxraw"
+            }
+        }
     },
     {
         "slug": "ultimate-ears",
@@ -1231,7 +2743,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "USA",
+        "caseStudy": {
+            "overview": "Ultimate Ears needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Ultimate Ears to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Ultimate Ears"
+            }
+        }
     },
     {
         "slug": "ruumi-art",
@@ -1250,7 +2790,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Ruumi Art needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Ruumi Art to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Ruumi Art"
+            }
+        }
     },
     {
         "slug": "ludic",
@@ -1269,7 +2837,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Ludic needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Ludic to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Ludic"
+            }
+        }
     },
     {
         "slug": "vegamour",
@@ -1288,7 +2884,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UAE",
+        "caseStudy": {
+            "overview": "Vegamour needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Vegamour to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Vegamour"
+            }
+        }
     },
     {
         "slug": "kretoss",
@@ -1307,7 +2931,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Kretoss needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Kretoss to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Kretoss"
+            }
+        }
     },
     {
         "slug": "vitality",
@@ -1326,7 +2978,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "Vitality needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Vitality to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Vitality"
+            }
+        }
     },
     {
         "slug": "anveshan-farm-technologies",
@@ -1345,7 +3025,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Anveshan Farm Technologies needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Anveshan Farm Technologies to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Anveshan Farm Technologies"
+            }
+        }
     },
     {
         "slug": "anthem",
@@ -1364,7 +3072,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "Anthem Home Comfort needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Anthem Home Comfort to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Anthem Home Comfort"
+            }
+        }
     },
     {
         "slug": "freight-plus",
@@ -1383,7 +3119,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Freight Plus needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Freight Plus to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Freight Plus"
+            }
+        }
     },
     {
         "slug": "sobel",
@@ -1402,7 +3166,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "USA",
+        "caseStudy": {
+            "overview": "Sobel needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Sobel to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Sobel"
+            }
+        }
     },
     {
         "slug": "beepec",
@@ -1421,7 +3213,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Beepec needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Beepec to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Beepec"
+            }
+        }
     },
     {
         "slug": "source-bulk-foods-wordpress",
@@ -1440,7 +3260,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "The Source Bulk Foods needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at The Source Bulk Foods to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "The Source Bulk Foods"
+            }
+        }
     },
     {
         "slug": "easygold",
@@ -1459,7 +3307,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "EasyGold24 needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at EasyGold24 to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "EasyGold24"
+            }
+        }
     },
     {
         "slug": "meridian-pacific-properties",
@@ -1478,7 +3354,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Meridian Pacific Properties needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Meridian Pacific Properties to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Meridian Pacific Properties"
+            }
+        }
     },
     {
         "slug": "the-penny",
@@ -1497,7 +3401,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "The Penny needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at The Penny to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "The Penny"
+            }
+        }
     },
     {
         "slug": "litehaus",
@@ -1516,7 +3448,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Litehaus needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Litehaus to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Litehaus"
+            }
+        }
     },
     {
         "slug": "leebroom",
@@ -1535,7 +3495,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "LEE BROOM needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at LEE BROOM to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Bigcommerce + React + Node, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "LEE BROOM"
+            }
+        }
     },
     {
         "slug": "good-good-ganja",
@@ -1554,7 +3542,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Good Good Ganja needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Good Good Ganja to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Bigcommerce, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Good Good Ganja"
+            }
+        }
     },
     {
         "slug": "color-matrics",
@@ -1573,7 +3589,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "USA",
+        "caseStudy": {
+            "overview": "Color Matrics needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Color Matrics to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Bigcommerce, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Color Matrics"
+            }
+        }
     },
     {
         "slug": "dane-apparel",
@@ -1592,7 +3636,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Dane Apparel needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Dane Apparel to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Bigcommerce, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Dane Apparel"
+            }
+        }
     },
     {
         "slug": "caramel",
@@ -1611,7 +3683,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "USA",
+        "caseStudy": {
+            "overview": "Caramel needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Caramel to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Bigcommerce, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Caramel"
+            }
+        }
     },
     {
         "slug": "intermat",
@@ -1630,7 +3730,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Intermat needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Intermat to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Bigcommerce, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Intermat"
+            }
+        }
     },
     {
         "slug": "locket-sisters",
@@ -1649,7 +3777,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "USA",
+        "caseStudy": {
+            "overview": "Locket Sisters needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Locket Sisters to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Bigcommerce, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "35% increase in conversion rate",
+                "Significantly reduced cart abandonment",
+                "Sub-second page load times for product pages"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Locket Sisters"
+            }
+        }
     },
     {
         "slug": "iiccrypto",
@@ -1668,7 +3824,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "IIC Metaverse needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at IIC Metaverse to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing HTML + CSS + JS, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "IIC Metaverse"
+            }
+        }
     },
     {
         "slug": "saveyourcapital",
@@ -1687,7 +3871,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UAE",
+        "caseStudy": {
+            "overview": "Save Your Capital needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Save Your Capital to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing HTML, CSS & Js, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Save Your Capital"
+            }
+        }
     },
     {
         "slug": "better-quest",
@@ -1706,7 +3918,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Australia",
+        "caseStudy": {
+            "overview": "Better Quest needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Better Quest to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Web Design, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Better Quest"
+            }
+        }
     },
     {
         "slug": "wedding-invitation",
@@ -1725,7 +3965,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Practical Information for International Guest needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Practical Information for International Guest to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Web Design, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Practical Information for International Guest"
+            }
+        }
     },
     {
         "slug": "atopic-diary",
@@ -1744,7 +4012,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "Atopic Diary needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Atopic Diary to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Web Design, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Atopic Diary"
+            }
+        }
     },
     {
         "slug": "skin-dao",
@@ -1763,7 +4059,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Skin Dao needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Skin Dao to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Web Design, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Skin Dao"
+            }
+        }
     },
     {
         "slug": "core",
@@ -1782,7 +4106,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "Core CRMS needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Core CRMS to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Web Design, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Core CRMS"
+            }
+        }
     },
     {
         "slug": "clean-steam-pros",
@@ -1801,7 +4153,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Clean Steam Pros needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Clean Steam Pros to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Hubspot, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Clean Steam Pros"
+            }
+        }
     },
     {
         "slug": "one",
@@ -1820,7 +4200,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "One needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at One to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Hubspot, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "One"
+            }
+        }
     },
     {
         "slug": "aroconllc",
@@ -1839,7 +4247,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Germany",
+        "caseStudy": {
+            "overview": "Aroconllc needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Aroconllc to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Hubspot, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Aroconllc"
+            }
+        }
     },
     {
         "slug": "intempt",
@@ -1858,7 +4294,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Canada",
+        "caseStudy": {
+            "overview": "Intempt needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Intempt to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Hubspot, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Intempt"
+            }
+        }
     },
     {
         "slug": "automaximizer",
@@ -1877,7 +4341,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "UAE",
+        "caseStudy": {
+            "overview": "Automaximizer needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Automaximizer to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Magento, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Automaximizer"
+            }
+        }
     },
     {
         "slug": "rta-store",
@@ -1896,7 +4388,35 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "The RTA Store needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at The RTA Store to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Magento, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "The RTA Store"
+            }
+        }
     },
     {
         "slug": "hunters-unite",
@@ -1915,6 +4435,34 @@ export const portfolioDetailsData = [
             "Responsive Design",
             "High Performance",
             "Secure Infrastructure"
-        ]
+        ],
+        "country": "Brazil",
+        "caseStudy": {
+            "overview": "Hunters Unite needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "process": [
+                {
+                    "title": "Discovery & Strategy",
+                    "description": "We collaborated closely with the stakeholders at Hunters Unite to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                },
+                {
+                    "title": "UI/UX Design",
+                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                },
+                {
+                    "title": "Development & Launch",
+                    "description": "We built a high-performance solution utilizing Magento, ensuring maximum reliability, security, and zero downtime during peak loads."
+                }
+            ],
+            "results": [
+                "40% reduction in data processing time",
+                "Zero downtime during peak traffic spikes",
+                "95% positive user feedback on the new interface"
+            ],
+            "testimonial": {
+                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "author": "Management Team",
+                "position": "Hunters Unite"
+            }
+        }
     }
 ];

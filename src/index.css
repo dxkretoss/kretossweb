@@ -56,6 +56,26 @@
   animation: auto-scroll-bg 12s ease-in-out infinite alternate;
 }
 
+@media (min-width: 768px) {
+  .desktop-scroll-container {
+    animation: auto-scroll-bg 25s ease-in-out infinite alternate !important;
+  }
+  
+  .desktop-scroll-mode-auto {
+    animation-play-state: paused !important;
+  }
+  .desktop-scroll-mode-auto:hover {
+    animation-play-state: running !important;
+  }
+  
+  .desktop-scroll-mode-playing {
+    animation-play-state: running !important;
+  }
+  
+  .desktop-scroll-mode-paused {
+    animation-play-state: paused !important;
+  }
+}
 /* Global Dark Theme Settings */
 html,
 body {

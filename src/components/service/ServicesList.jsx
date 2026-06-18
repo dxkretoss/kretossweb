@@ -239,9 +239,9 @@ export default function ServicesList() {
                             <div key={service.id} className="service-row relative group flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
 
                                 {/* Text Content Area */}
-                                <div className={`service-text-col w-full lg:w-1/2 flex flex-col items-start relative z-10 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
+                                <div className={`service-text-col w-full lg:w-7/12 flex flex-col items-start ${isEven ? 'lg:items-end lg:text-right' : 'lg:items-start lg:text-left'} relative z-10 ${isEven ? 'lg:order-2 lg:pl-8' : 'lg:order-1 lg:pr-8'}`}>
                                     {/* Number & Title Area */}
-                                    <div className="flex flex-row items-end gap-2 mb-3 lg:mb-6">
+                                    <div className={`flex flex-row items-end gap-2 mb-3 lg:mb-6 ${isEven ? 'lg:flex-row-reverse' : ''}`}>
                                         <div className="text-3xl md:text-5xl font-black bg-gradient-to-br from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text leading-none drop-shadow-sm">
                                             {service.id}
                                         </div>
@@ -250,12 +250,12 @@ export default function ServicesList() {
                                         </h3>
                                     </div>
 
-                                    <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-3 lg:mb-6 max-w-lg">
+                                    <p className={`text-gray-600 text-base md:text-lg leading-relaxed mb-3 lg:mb-6 max-w-lg ${isEven ? 'lg:text-right' : 'lg:text-left'}`}>
                                         {service.desc}
                                     </p>
 
                                     {/* Tech Pills */}
-                                    <div className="flex flex-wrap gap-2 sm:gap-3 mb-3 lg:mb-6">
+                                    <div className={`flex flex-wrap gap-2 sm:gap-3 mb-3 lg:mb-6 ${isEven ? 'lg:justify-end' : 'lg:justify-start'}`}>
                                         {service.technologies.map((tech, i) => (
                                             <span key={i} className="group flex items-center gap-2 px-3 md:px-5 py-1 md:py-2.5 rounded-full border border-gray-200 bg-white shadow-sm text-[12px] lg:text-sm font-semibold text-gray-800 hover:border-[#0037f0] hover:text-[#0037f0] transition-colors duration-300 cursor-default">
                                                 {tech.Icon && <tech.Icon className="w-4 h-4 text-gray-600 group-hover:fill-[url(#service-tech-grad)] group-hover:text-transparent transition-all duration-300" />}
@@ -264,16 +264,16 @@ export default function ServicesList() {
                                         ))}
                                     </div>
 
-                                    <AnimatedButton text="LEARN MORE" href="/contact" />
+                                    <AnimatedButton text="HIRE US!" href="/contact" />
                                 </div>
 
                                 {/* Image Area */}
-                                <div className={`service-img-col w-full lg:w-1/2 relative z-10 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
+                                <div className={`service-img-col w-full lg:w-5/12 relative z-10 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
 
                                     {/* Decorative background circle */}
                                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-[#0037f0]/5 to-transparent rounded-full -z-10 blur-2xl"></div>
 
-                                    <div className="relative w-full aspect-[4/3] rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white transform perspective-1000 group-hover:rotate-y-[-2deg] group-hover:rotate-x-[2deg] transition-transform duration-700 ease-out">
+                                    <div className="relative w-full aspect-[16/11] rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white transform perspective-1000 group-hover:rotate-y-[-2deg] group-hover:rotate-x-[2deg] transition-transform duration-700 ease-out">
                                         <img
                                             src={service.image}
                                             alt={service.title}

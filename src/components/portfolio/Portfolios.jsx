@@ -159,17 +159,17 @@ const PortfolioCard = ({ item }) => {
                         {/* Tags */}
                         <div className="flex flex-wrap gap-3 mb-6">
                             {item.tags?.map((tag, idx) => (
-                                <span key={idx} className={`${imgRef.current?.dataset?.isDark === 'false' ? 'bg-black/10 text-gray-800 border-black/20' : 'bg-white/10 text-gray-300 border-[#FFFFFF1A]'} text-xs md:text-sm px-4 py-1.5 rounded-md border`}>
+                                <span key={idx} className={`bg-white/10 text-gray-300 border-[#FFFFFF1A] text-xs md:text-sm px-4 py-1.5 rounded-md border`}>
                                     {tag}
                                 </span>
                             ))}
                         </div>
 
                         {/* Title & Description */}
-                        <h3 className={`text-2xl sm:text-[32px] font-bold ${imgRef.current?.dataset?.isDark === 'false' ? 'text-black' : 'text-white'} mb-3 sm:mb-4 leading-tight`}>
+                        <h3 className={`text-2xl sm:text-[32px] font-bold text-white mb-3 sm:mb-4 leading-tight`}>
                             {item.title}
                         </h3>
-                        <p className={`${imgRef.current?.dataset?.isDark === 'false' ? 'text-gray-800' : 'text-[#DADADA]'} text-sm sm:text-base md:text-[19px] mb-6 sm:mb-8 leading-relaxed`}>
+                        <p className={`text-[#DADADA] text-sm sm:text-base md:text-[19px] mb-6 sm:mb-8 leading-relaxed`}>
                             {item.description}
                         </p>
                     </div>
@@ -178,12 +178,12 @@ const PortfolioCard = ({ item }) => {
                     <div className="flex flex-col mt-auto pt-8">
                         <div className="flex flex-wrap justify-between gap-6 mb-8">
                             <div>
-                                <p className={`${imgRef.current?.dataset?.isDark === 'false' ? 'text-gray-800' : 'text-[#DADADA]'} text-sm mb-1`}>Project timeline</p>
-                                <p className={`${imgRef.current?.dataset?.isDark === 'false' ? 'text-black' : 'text-white'} font-semibold text-lg`}>{item.timeline || 'N/A'}</p>
+                                <p className={`text-[#DADADA] text-sm mb-1`}>Project timeline</p>
+                                <p className={`font-semibold text-lg text-white`}>{item.timeline || 'N/A'}</p>
                             </div>
                             <div>
-                                <p className={`${imgRef.current?.dataset?.isDark === 'false' ? 'text-gray-800' : 'text-[#DADADA]'} text-sm mb-1`}>Country</p>
-                                <p className={`${imgRef.current?.dataset?.isDark === 'false' ? 'text-black' : 'text-white'} font-semibold text-lg flex items-center gap-2`}>
+                                <p className={`text-[#DADADA] text-sm mb-1`}>Country</p>
+                                <p className={`font-semibold text-lg flex items-center gap-2 text-white`}>
                                     {getCountryFlag(item.country)} {item.country || 'N/A'}
                                 </p>
                             </div>
