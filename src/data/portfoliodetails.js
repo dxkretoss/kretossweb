@@ -6,7 +6,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Angular + Node.js",
-        "link": "#",
+        "link": "https://guestway.io/",
         "client": "Guestway",
         "purpose": "Experience the future of web applications with Guestway. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Angular + Node.js architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -25,7 +25,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "React.js + Supabase",
-        "link": "#",
+        "link": "https://career.nexthunt.co/",
         "client": "NextHunt",
         "purpose": "Experience the future of web applications with NextHunt. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust React.js + Supabase architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -44,7 +44,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Blockchain + React.js + Node.js",
-        "link": "#",
+        "link": "https://palzeaa-crypto-widget.netlify.app",
         "client": "Palzea",
         "purpose": "Experience the future of web applications with Palzea. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Blockchain + React.js + Node.js architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -63,7 +63,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "ReactJS + Python",
-        "link": "#",
+        "link": "https://dreamlod.com",
         "client": "Dreamload",
         "purpose": "Experience the future of web applications with Dreamload. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust ReactJS + Python architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -82,7 +82,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "ReactJS + Python",
-        "link": "#",
+        "link": "https://phoenixsclub.com",
         "client": "PhoenixFC",
         "purpose": "Experience the future of web applications with PhoenixFC. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust ReactJS + Python architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -101,7 +101,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "3.5 Months",
         "techStack": "Vue.js + Laravel",
-        "link": "https://p2p-stage.palzea.com/",
+        "link": "https://palzea.com",
         "client": "Palzea Networks",
         "purpose": "A next-generation social networking application designed for local community engagement and hyper-local event discovery.",
         "challenge": "Users felt disconnected from their immediate geographic communities and struggled to find organic, local events tailored to their niche interests in real-time.",
@@ -120,7 +120,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "ReactJS + Supabase",
-        "link": "#",
+        "link": "https://fily.in",
         "client": "Fily",
         "purpose": "Experience the future of web applications with Fily. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust ReactJS + Supabase architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -139,7 +139,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2.1 Months",
         "techStack": "ReactJS + Node.js",
-        "link": "#",
+        "link": "https://studenttravelbuddy.com/plan-my-trip",
         "client": "STB Inc.",
         "purpose": "A comprehensive platform connecting students for safe, budget-friendly travel and accommodation sharing worldwide.",
         "challenge": "The student travel market lacked a unified, trusted platform where verified students could seamlessly plan trips, split costs, and find reliable travel companions without compromising safety.",
@@ -158,7 +158,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "ReactJS + Supabase + Node.js",
-        "link": "#",
+        "link": "https://www.klubbrabatten.se",
         "client": "Klubbrabatten",
         "purpose": "Experience the future of web applications with Klubbrabatten. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust ReactJS + Supabase + Node.js architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -177,7 +177,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Laravel",
-        "link": "#",
+        "link": "https://stackedgiveaways.com/",
         "client": "Giveaway",
         "purpose": "Experience the future of web applications with Giveaway. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Laravel architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -196,7 +196,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "AI",
-        "link": "#",
+        "link": "https://sarhachat.com/",
         "client": "Sarhachat",
         "purpose": "Experience the future of web applications with Sarhachat. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust AI architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -215,7 +215,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Angular & Laravel",
-        "link": "#",
+        "link": "https://wallstreet.io/",
         "client": "Wall Street",
         "purpose": "Experience the future of web applications with Wall Street. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Angular & Laravel architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -234,7 +234,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Bubble",
-        "link": "#",
+        "link": "https://allbots.io/",
         "client": "Allbots",
         "purpose": "Experience the future of web applications with Allbots. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Bubble architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -253,7 +253,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "ReactJS",
-        "link": "#",
+        "link": "https://searchive.co.uk/",
         "client": "Searchive",
         "purpose": "Experience the future of web applications with Searchive. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust ReactJS architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -272,7 +272,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Angular, JavaScript",
-        "link": "#",
+        "link": "https://coyna.com/",
         "client": "Coyna",
         "purpose": "Experience the future of web applications with Coyna. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Angular, JavaScript architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -291,7 +291,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Angular & Laravel",
-        "link": "#",
+        "link": "https://www.gujarattilesinfo.com/",
         "client": "Gujarat Tiles Info",
         "purpose": "Experience the future of web applications with Gujarat Tiles Info. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Angular & Laravel architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -310,7 +310,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Laravel & React",
-        "link": "#",
+        "link": "https://implantstock.com/",
         "client": "Implant Stock",
         "purpose": "Experience the future of web applications with Implant Stock. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Laravel & React architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -329,7 +329,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Angular, Codeigniter",
-        "link": "#",
+        "link": "https://www.locumprime.co.uk/",
         "client": "Locum Prime",
         "purpose": "Experience the future of web applications with Locum Prime. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Angular, Codeigniter architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -348,7 +348,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "Python, ReactJS",
-        "link": "#",
+        "link": "https://www.trustarthurgroup.com/",
         "client": "Trust Arthur Group",
         "purpose": "Experience the future of web applications with Trust Arthur Group. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Python, ReactJS architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -367,7 +367,7 @@ export const portfolioDetailsData = [
         "category": "Custom web",
         "timeline": "2-4 Months",
         "techStack": "MySQL, Node JS, ReactJS",
-        "link": "#",
+        "link": "https://kunden.taxley-web.ch/",
         "client": "Taxley",
         "purpose": "Experience the future of web applications with Taxley. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust MySQL, Node JS, ReactJS architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -408,8 +408,8 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/my-100-days/portfolio_md_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "android": "https://play.google.com/store/apps/details?id=com.my100days.app",
+            "ios": "https://apps.apple.com/us/app/my100days/id6758403924"
         }
     },
     {
@@ -474,8 +474,7 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/wingman/portfolio_wn_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "ios": "https://apps.apple.com/app/wingman-cabin-chat/id6753678163"
         }
     },
     {
@@ -507,8 +506,8 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/bookbuilder/portfolio_bb_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "android": "https://play.google.com/store/apps/details?id=com.bookabuilder",
+            "ios": "https://apps.apple.com/us/app/bookabuilder/id1092089910"
         }
     },
     {
@@ -540,8 +539,8 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/Klubbrabatten/portfolio_klub_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "android": "https://play.google.com/store/apps/details?id=se.klubbrabatten.app&hl=en_US&gl=sv&pli=1",
+            "ios": "https://apps.apple.com/se/app/klubbrabatten-st%C3%B6tta-spara/id6481658449"
         }
     },
     {
@@ -573,8 +572,8 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/roamaly/portfolio_roamaly_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "android": "https://play.google.com/store/apps/details?id=com.roamaly",
+            "ios": "https://apps.apple.com/in/app/roamaly/id6747666088"
         }
     },
     {
@@ -606,8 +605,7 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/sion/portfolio_sion_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "ios": "https://apps.apple.com/us/app/sion-reservations/id6743756751"
         }
     },
     {
@@ -639,8 +637,8 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/city2city/portfolio_city2city_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "android": "https://play.google.com/store/apps/details?id=com.city2city.app&hl=en",
+            "ios": "https://apps.apple.com/us/app/city2city-rideshare/id6504011607"
         }
     },
     {
@@ -671,10 +669,7 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/drawn/portfolio_drawn_7.png",
             "/portfolio/mobile-app/drawn/portfolio_drawn_8.png"
         ],
-        "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
-        }
+        "appLinks": {}
     },
     {
         "slug": "somnexis",
@@ -705,8 +700,7 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/somnexis/portfolio_somnexis_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "ios": "https://apps.apple.com/us/app/somnexis/id6744433533"
         }
     },
     {
@@ -738,8 +732,7 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/traivend/portfolio_traivend_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "ios": "https://apps.apple.com/app/traivend/id6578453267"
         }
     },
     {
@@ -771,8 +764,8 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/offarat/portfolio_offarat_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "android": "https://play.google.com/store/apps/details?id=com.offaratcustomer",
+            "ios": "https://apps.apple.com/us/app/offarat/id6445883175"
         }
     },
     {
@@ -804,8 +797,8 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "android": "https://play.google.com/store/apps/details?id=ch.kayosys.steuern",
+            "ios": "https://apps.apple.com/in/app/taxley/id1262730875"
         }
     },
     {
@@ -837,8 +830,8 @@ export const portfolioDetailsData = [
             "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse_8.png"
         ],
         "appLinks": {
-            "android": "https://play.google.com/store/apps/details?id=com.triathloncal.app",
-            "ios": "https://apps.apple.com/us/app/trischedule/id6746213701"
+            "android": "https://play.google.com/store/apps/details?id=com.kolderkiduniverse",
+            "ios": "https://apps.apple.com/us/app/kolderkid-universe/id6743467223"
         }
     },
     {
@@ -848,7 +841,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://katesrealfood.com/",
         "client": "Kate's Real Food",
         "purpose": "Experience the future of eCommerce with Kate's Real Food. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -867,7 +860,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://ludic.life/",
         "client": "Ludic Life",
         "purpose": "Experience the future of eCommerce with Ludic Life. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -886,7 +879,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://ludic.global/",
         "client": "Ludic Global",
         "purpose": "Experience the future of eCommerce with Ludic Global. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -905,7 +898,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://kitchen.ludic.life/",
         "client": "Ludic Kitchen",
         "purpose": "Experience the future of eCommerce with Ludic Kitchen. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -924,7 +917,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://almostpeaceful.sg/",
         "client": "Almost Peaceful",
         "purpose": "Experience the future of eCommerce with Almost Peaceful. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -943,7 +936,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://impetushealth.in/",
         "client": "Impetus Health",
         "purpose": "Experience the future of eCommerce with Impetus Health. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -962,7 +955,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://roamaly.com/",
         "client": "Roamaly",
         "purpose": "Experience the future of eCommerce with Roamaly. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -981,7 +974,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://kidsposters.com.au/",
         "client": "Kids Posters",
         "purpose": "Experience the future of eCommerce with Kids Posters. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1000,7 +993,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://www.thepawcan.com/",
         "client": "The Pawcan",
         "purpose": "Experience the future of eCommerce with The Pawcan. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1019,7 +1012,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://recreationbeauty.com/",
         "client": "Recreation Beauty",
         "purpose": "Experience the future of eCommerce with Recreation Beauty. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1038,7 +1031,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://www.tangoswim.com.au/",
         "client": "Tango Swim",
         "purpose": "Experience the future of eCommerce with Tango Swim. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1057,7 +1050,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://www.tilitnyc.com/",
         "client": "Tilit",
         "purpose": "Experience the future of eCommerce with Tilit. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1076,7 +1069,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://honeystinger.com/",
         "client": "Honey Stinger",
         "purpose": "Experience the future of eCommerce with Honey Stinger. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1095,7 +1088,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://www.moanarose.com/",
         "client": "Moanarose",
         "purpose": "Experience the future of eCommerce with Moanarose. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1114,7 +1107,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://getprimenails.com/",
         "client": "Prime Nails",
         "purpose": "Experience the future of eCommerce with Prime Nails. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1133,7 +1126,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://thesourcebulkfoods.ie/",
         "client": "The Source Bulk Foods",
         "purpose": "Experience the future of eCommerce with The Source Bulk Foods. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1152,7 +1145,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://beadspoint.com/",
         "client": "Beadspoint",
         "purpose": "Experience the future of eCommerce with Beadspoint. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1171,7 +1164,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://www.vacurect-india.com/",
         "client": "Vacurect",
         "purpose": "Experience the future of eCommerce with Vacurect. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1190,7 +1183,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://hydropeptide.com/",
         "client": "Hydro Peptide",
         "purpose": "Experience the future of eCommerce with Hydro Peptide. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1209,7 +1202,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://boxraw.com/",
         "client": "Boxraw",
         "purpose": "Experience the future of eCommerce with Boxraw. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1228,7 +1221,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://www.revols.com/",
         "client": "Ultimate Ears",
         "purpose": "Experience the future of eCommerce with Ultimate Ears. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1247,7 +1240,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://www.ruumi.art/",
         "client": "Ruumi Art",
         "purpose": "Experience the future of eCommerce with Ruumi Art. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1266,7 +1259,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://ludic.life/",
         "client": "Ludic",
         "purpose": "Experience the future of eCommerce with Ludic. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1285,7 +1278,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://vegamour.com/",
         "client": "Vegamour",
         "purpose": "Experience the future of eCommerce with Vegamour. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1304,7 +1297,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://shopify.kretoss.com/",
         "client": "Kretoss",
         "purpose": "Experience the future of eCommerce with Kretoss. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1323,7 +1316,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://www.vitalityextracts.com/",
         "client": "Vitality",
         "purpose": "Experience the future of eCommerce with Vitality. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1342,7 +1335,7 @@ export const portfolioDetailsData = [
         "category": "Shopify",
         "timeline": "2-4 Months",
         "techStack": "Shopify",
-        "link": "#",
+        "link": "https://www.anveshan.farm/",
         "client": "Anveshan Farm Technologies",
         "purpose": "Experience the future of eCommerce with Anveshan Farm Technologies. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1361,7 +1354,7 @@ export const portfolioDetailsData = [
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
-        "link": "#",
+        "link": "https://anthemhomecomfort.com/",
         "client": "Anthem Home Comfort",
         "purpose": "Experience the future of web applications with Anthem Home Comfort. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1380,7 +1373,7 @@ export const portfolioDetailsData = [
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
-        "link": "#",
+        "link": "https://freightplus.io/",
         "client": "Freight Plus",
         "purpose": "Experience the future of web applications with Freight Plus. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1399,7 +1392,7 @@ export const portfolioDetailsData = [
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
-        "link": "#",
+        "link": "https://www.sobelconsult.com/",
         "client": "Sobel",
         "purpose": "Experience the future of web applications with Sobel. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1418,7 +1411,7 @@ export const portfolioDetailsData = [
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
-        "link": "#",
+        "link": "https://beepec.com/",
         "client": "Beepec",
         "purpose": "Experience the future of web applications with Beepec. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1437,7 +1430,7 @@ export const portfolioDetailsData = [
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
-        "link": "#",
+        "link": "https://thesourcebulkfoods.com.au/",
         "client": "The Source Bulk Foods",
         "purpose": "Experience the future of web applications with The Source Bulk Foods. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1456,7 +1449,7 @@ export const portfolioDetailsData = [
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
-        "link": "#",
+        "link": "https://easygold24.de/",
         "client": "EasyGold24",
         "purpose": "Experience the future of web applications with EasyGold24. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1475,7 +1468,7 @@ export const portfolioDetailsData = [
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
-        "link": "#",
+        "link": "https://meridianpacificproperties.com/",
         "client": "Meridian Pacific Properties",
         "purpose": "Experience the future of web applications with Meridian Pacific Properties. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1494,7 +1487,7 @@ export const portfolioDetailsData = [
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
-        "link": "#",
+        "link": "https://thepenny.ch/",
         "client": "The Penny",
         "purpose": "Experience the future of web applications with The Penny. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1513,7 +1506,7 @@ export const portfolioDetailsData = [
         "category": "Wordpress",
         "timeline": "2-4 Months",
         "techStack": "Wordpress",
-        "link": "#",
+        "link": "https://litehaus.co/",
         "client": "Litehaus",
         "purpose": "Experience the future of web applications with Litehaus. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1532,7 +1525,7 @@ export const portfolioDetailsData = [
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce + React + Node",
-        "link": "#",
+        "link": "https://leebroom.com/",
         "client": "LEE BROOM",
         "purpose": "Experience the future of eCommerce with LEE BROOM. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Bigcommerce + React + Node architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1551,7 +1544,7 @@ export const portfolioDetailsData = [
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
-        "link": "#",
+        "link": "https://goodgoodganjashop.com/",
         "client": "Good Good Ganja",
         "purpose": "Experience the future of eCommerce with Good Good Ganja. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1570,7 +1563,7 @@ export const portfolioDetailsData = [
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
-        "link": "#",
+        "link": "https://colormetrics.com",
         "client": "Color Matrics",
         "purpose": "Experience the future of eCommerce with Color Matrics. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1589,7 +1582,7 @@ export const portfolioDetailsData = [
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
-        "link": "#",
+        "link": "https://dane-apparel.com/",
         "client": "Dane Apparel",
         "purpose": "Experience the future of eCommerce with Dane Apparel. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1608,7 +1601,7 @@ export const portfolioDetailsData = [
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
-        "link": "#",
+        "link": "https://caramelcorn.com",
         "client": "Caramel",
         "purpose": "Experience the future of eCommerce with Caramel. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1627,7 +1620,7 @@ export const portfolioDetailsData = [
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
-        "link": "#",
+        "link": "https://intermat-corp.com/",
         "client": "Intermat",
         "purpose": "Experience the future of eCommerce with Intermat. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1646,7 +1639,7 @@ export const portfolioDetailsData = [
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
         "techStack": "Bigcommerce",
-        "link": "#",
+        "link": "https://thelocketsisters.com/",
         "client": "Locket Sisters",
         "purpose": "Experience the future of eCommerce with Locket Sisters. Engineered for high performance, scalability, and an intuitive shopping experience.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1665,7 +1658,7 @@ export const portfolioDetailsData = [
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "HTML + CSS + JS",
-        "link": "#",
+        "link": "https://iiccrypto.com/",
         "client": "IIC Metaverse",
         "purpose": "Experience the future of web applications with IIC Metaverse. Engineered for high performance, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust HTML + CSS + JS architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1684,7 +1677,7 @@ export const portfolioDetailsData = [
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "HTML, CSS & Js",
-        "link": "#",
+        "link": "https://saveyourcapital.co",
         "client": "Save Your Capital",
         "purpose": "Experience the future of digital presence with Save Your Capital. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust HTML, CSS & Js architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1703,7 +1696,7 @@ export const portfolioDetailsData = [
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "Web Design",
-        "link": "#",
+        "link": "https://kretoss.in/project/better-quest/home.html",
         "client": "Better Quest",
         "purpose": "Experience the future of digital presence with Better Quest. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1722,7 +1715,7 @@ export const portfolioDetailsData = [
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "Web Design",
-        "link": "#",
+        "link": "https://kretoss.in/project/wedding/",
         "client": "Practical Information for International Guest",
         "purpose": "Experience the future of digital presence with Practical Information for International Guest. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1741,7 +1734,7 @@ export const portfolioDetailsData = [
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "Web Design",
-        "link": "#",
+        "link": "https://kretoss.in/project/atopic-diary/",
         "client": "Atopic Diary",
         "purpose": "Experience the future of digital presence with Atopic Diary. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1760,7 +1753,7 @@ export const portfolioDetailsData = [
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "Web Design",
-        "link": "#",
+        "link": "https://skincare-adaa1.web.app/",
         "client": "Skin Dao",
         "purpose": "Experience the future of digital presence with Skin Dao. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1779,7 +1772,7 @@ export const portfolioDetailsData = [
         "category": "web design",
         "timeline": "2-4 Months",
         "techStack": "Web Design",
-        "link": "#",
+        "link": "https://kretoss.in/project/core_crms/",
         "client": "Core CRMS",
         "purpose": "Experience the future of digital presence with Core CRMS. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1798,7 +1791,7 @@ export const portfolioDetailsData = [
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Hubspot",
-        "link": "#",
+        "link": "https://cleansteampros.com/",
         "client": "Clean Steam Pros",
         "purpose": "Experience the future of digital presence with Clean Steam Pros. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1817,7 +1810,7 @@ export const portfolioDetailsData = [
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Hubspot",
-        "link": "#",
+        "link": "https://www.onefc.com/",
         "client": "One",
         "purpose": "Experience the future of digital presence with One. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1836,7 +1829,7 @@ export const portfolioDetailsData = [
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Hubspot",
-        "link": "#",
+        "link": "https://www.aroconllc.com/",
         "client": "Aroconllc",
         "purpose": "Experience the future of digital presence with Aroconllc. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1855,7 +1848,7 @@ export const portfolioDetailsData = [
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Hubspot",
-        "link": "#",
+        "link": "https://www.intempt.com/",
         "client": "Intempt",
         "purpose": "Experience the future of digital presence with Intempt. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1874,7 +1867,7 @@ export const portfolioDetailsData = [
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Magento",
-        "link": "#",
+        "link": "https://www.automaximizer.com/",
         "client": "Automaximizer",
         "purpose": "Experience the future of digital presence with Automaximizer. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Magento architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1893,7 +1886,7 @@ export const portfolioDetailsData = [
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Magento",
-        "link": "#",
+        "link": "https://www.thertastore.com/",
         "client": "The RTA Store",
         "purpose": "Experience the future of digital presence with The RTA Store. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Magento architecture that could handle increasing traffic while maintaining a seamless user experience.",
@@ -1912,7 +1905,7 @@ export const portfolioDetailsData = [
         "category": "Other",
         "timeline": "2-4 Months",
         "techStack": "Magento",
-        "link": "#",
+        "link": "https://wolverinegt.shop/",
         "client": "Hunters Unite",
         "purpose": "Experience the future of digital presence with Hunters Unite. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
         "challenge": "The client needed a robust Magento architecture that could handle increasing traffic while maintaining a seamless user experience.",
