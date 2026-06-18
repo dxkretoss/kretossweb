@@ -4,16 +4,19 @@ import Badge from '../ui/Badge';
 import AnimatedButton from '../ui/AnimatedButton';
 
 import { 
-  FaApple, FaAndroid, FaSwift, FaPython, FaNodeJs, FaPhp, FaCode, FaLaravel, 
+  FaApple, FaAndroid, FaSwift, FaPython, FaNodeJs, FaNode, FaPhp, FaCode, FaLaravel, 
   FaJava, FaAngular, FaReact, FaJs, FaVuejs, FaMicrosoft, FaGithub, FaDatabase,
   FaWordpress, FaMagento, FaShopify, FaDrupal, FaShoppingCart, FaAws, 
   FaDigitalOcean, FaServer, FaDocker 
 } from 'react-icons/fa';
 import { 
   SiKotlin, SiFlutter, SiSvelte, SiWoocommerce, SiGooglecloud, 
-  SiKubernetes, SiJenkins, SiMongodb, SiSqlite, SiMysql, SiMariadb, SiRedis
+  SiKubernetes, SiJenkins, SiMongodb, SiSqlite, SiMysql, SiMariadb, SiRedis, SiDotnet
 } from 'react-icons/si';
 import { GrOracle } from 'react-icons/gr';
+import { PiFileCSharp } from 'react-icons/pi';
+import { VscAzureDevops } from 'react-icons/vsc';
+import { DiOpenshift } from 'react-icons/di';
 
 const technologiesData = {
   "App Development": {
@@ -30,7 +33,7 @@ const technologiesData = {
   "Web Development": {
     description: "We create dynamic, high-performing websites and web applications tailored to your business needs. Our web solutions are built using the latest technologies to ensure security, scalability, and an excellent user experience.",
     items: [
-      { name: "NodeJS", Icon: FaNodeJs },
+      { name: "NodeJS", Icon: FaNode },
       { name: "PHP", Icon: FaPhp },
       { name: "Codeigniter", Icon: FaCode },
       { name: "Laravel", Icon: FaLaravel },
@@ -52,7 +55,7 @@ const technologiesData = {
   "Backend": {
     description: "Our backend development services ensure robust, secure, and scalable server-side applications. We build robust architectures that can handle high traffic and complex data processing.",
     items: [
-      { name: "NodeJS", Icon: FaNodeJs },
+      { name: "NodeJS", Icon: FaNode },
       { name: "Python", Icon: FaPython },
       { name: "Java", Icon: FaJava },
       { name: "Express JS", Icon: FaNodeJs },
@@ -63,9 +66,9 @@ const technologiesData = {
   "Microsoft": {
     description: "We leverage the power of the Microsoft ecosystem to build enterprise-grade applications. Our expertise spans across .NET frameworks, Azure cloud services, and Microsoft business solutions.",
     items: [
-      { name: "ASP.NET", Icon: FaMicrosoft },
-      { name: "C#", Icon: FaMicrosoft },
-      { name: "ASP.NET Core", Icon: FaMicrosoft },
+      { name: "ASP.NET", Icon: SiDotnet },
+      { name: "C#", Icon: PiFileCSharp },
+      { name: "ASP.NET Core", Icon: SiDotnet },
       { name: "GitHub", Icon: FaGithub },
       { name: "SQL", Icon: FaDatabase },
       { name: "Power Apps", Icon: FaMicrosoft },
@@ -87,7 +90,7 @@ const technologiesData = {
     items: [
       { name: "Amazon Web Services", Icon: FaAws },
       { name: "Google Cloud", Icon: SiGooglecloud },
-      { name: "Microsoft Azure", Icon: FaMicrosoft },
+      { name: "Microsoft Azure", Icon: VscAzureDevops },
       { name: "IBM Cloud", Icon: FaServer },
       { name: "Oracle Cloud", Icon: FaDatabase },
       { name: "DigitalOcean", Icon: FaDigitalOcean },
@@ -101,7 +104,7 @@ const technologiesData = {
       { name: "Chef", Icon: FaServer },
       { name: "Maven", Icon: FaCode },
       { name: "Docker", Icon: FaDocker },
-      { name: "OpenShift", Icon: FaServer },
+      { name: "OpenShift", Icon: DiOpenshift },
     ]
   },
   "Database": {
