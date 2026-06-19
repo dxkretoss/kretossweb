@@ -29,7 +29,8 @@ const servicesData = [
             { num: "03", name: "Vue.js", Icon: FaVuejs },
             { num: "04", name: "Next.js", Icon: SiNextdotjs },
             { num: "05", name: "Knockout JS", Icon: FaJs },
-        ]
+        ],
+        link: "/hire-us/hire-frontend-developer"
     },
 
     {
@@ -44,7 +45,8 @@ const servicesData = [
             { num: "03", name: "NestJS", Icon: SiNestjs },
             { num: "04", name: "Laravel", Icon: FaLaravel },
             { num: "05", name: "Java", Icon: FaJava },
-        ]
+        ],
+        link: "/hire-us/hire-backend-developer"
     },
     {
         id: "03",
@@ -58,7 +60,8 @@ const servicesData = [
             { num: "03", name: "Swift", Icon: FaSwift },
             { num: "04", name: "iOS", Icon: FaApple },
             { num: "05", name: "Kotlin", Icon: SiKotlin },
-        ]
+        ],
+        link: "/hire-us/hire-mobile-app-developer"
     },
     {
         id: "04",
@@ -71,7 +74,8 @@ const servicesData = [
             { num: "02", name: "Pandas", Icon: SiPandas },
             { num: "03", name: "Tableau", Icon: FaChartBar },
             { num: "04", name: "Power BI", Icon: FaChartLine }
-        ]
+        ],
+        link: "/hire-us/hire-data-analytics"
     },
     {
         id: "05",
@@ -85,7 +89,8 @@ const servicesData = [
             { num: "03", name: "Azure", Icon: FaMicrosoft },
             { num: "04", name: "Oracle Cloud", Icon: FaDatabase },
             { num: "05", name: "DigitalOcean", Icon: FaDigitalOcean },
-        ]
+        ],
+        link: "/hire-us/hire-cloud-infrastructure"
     },
     {
         id: "06",
@@ -99,7 +104,8 @@ const servicesData = [
             { num: "03", name: "Magento", Icon: FaMagento },
             { num: "04", name: "Drupal", Icon: FaDrupal },
             { num: "05", name: "BigCommerce", Icon: SiBigcommerce },
-        ]
+        ],
+        link: "/hire-us/hire-cms-developer"
     },
     {
         id: "07",
@@ -113,7 +119,8 @@ const servicesData = [
             { num: "03", name: "Copilot", Icon: FaReact },
             { num: "04", name: "Python", Icon: FaPython },
             { num: "05", name: "Prompting", Icon: FaJs },
-        ]
+        ],
+        link: "/hire-us/vibe-coding-developer"
     },
     {
         id: "08",
@@ -127,7 +134,8 @@ const servicesData = [
             { num: "03", name: "Odoo", Icon: FaCode },
             { num: "04", name: "PostgreSQL", Icon: FaDatabase },
             { num: "05", name: "AWS", Icon: FaAws },
-        ]
+        ],
+        link: "/hire-us/python-developer"
     }
 ];
 
@@ -264,7 +272,7 @@ export default function ServicesList() {
                                         ))}
                                     </div>
 
-                                    <AnimatedButton text="HIRE US!" href="/contact" />
+                                    <AnimatedButton text="HIRE US!" href={service.link || "/hire-us"} />
                                 </div>
 
                                 {/* Image Area */}

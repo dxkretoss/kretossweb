@@ -12,6 +12,7 @@ import JobDetailsPage from './components/JobDetailsPage';
 import JobApplicationPage from './components/JobApplicationPage';
 import NotFoundPage from './components/NotFoundPage';
 import HireUsDetailsPage from './components/HireUsDetailsPage';
+import HireUsPage from './components/HireUsPage';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 
@@ -64,6 +65,7 @@ export default function App() {
                     <Route path="/services" element={<ServicePage />} />
                     <Route path="/portfolio" element={<PortfolioPage />} />
                     <Route path="/portfolio/:slug" element={<PortfolioDetailsPage />} />
+                    <Route path="/hire-us" element={<HireUsPage />} />
                     <Route path="/hire-us/:roleSlug" element={<HireUsDetailsPage />} />
                     <Route path="/careers" element={<CareerPage />} />
                     <Route path="/careers/:slug" element={<JobDetailsPage />} />

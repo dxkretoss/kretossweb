@@ -24,7 +24,7 @@ const RatingBadge = () => {
             platform: "Clutch", score: "5.0", isScore: true, icon: <img src="/clutch.png" alt="Clutch" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} />
         },
         { platform: "Trustpilot", score: "4.7", isScore: true, icon: <img src="/trustpilot.png" alt="Trustpilot" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
-        { platform: "Sitejabber", score: "4.0", isScore: true, icon: <img src="/sitejabber.png" alt="Sitejabber" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
+        // { platform: "Sitejabber", score: "4.0", isScore: true, icon: <img src="/sitejabber.png" alt="Sitejabber" className="h-5 object-contain rating-icon" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> },
         { platform: "Global Clients", score: "952+", isScore: false, icon: <Globe color="#fff" size={24} className="single-review-star" style={{ transform: "scale(0)", transformOrigin: "center left" }} /> }
     ];
 

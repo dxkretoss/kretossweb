@@ -9,7 +9,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Guestway",
-                        "description": "Experience the future of web applications with Guestway. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A property management platform that simplifies tenant, booking, and property operations from a single dashboard.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -26,7 +26,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "NextHunt",
-                        "description": "Experience the future of web applications with NextHunt. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A smart hiring platform that helps candidates build professional resumes and enables businesses to find the right talent faster.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -39,11 +39,11 @@ export const portfolioData = {
                         "portfolioImage": "/portfolio/custom/portfolio_palzea-widget.webp",
                         "category": "Custom web",
                         "tags": [
-                                "Palzea",
+                                "Widget",
                                 "Web"
                         ],
-                        "title": "Palzea",
-                        "description": "Experience the future of web applications with Palzea. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "title": "Palzea Widget",
+                        "description": "A secure P2P crypto transfer solution that enables seamless digital asset transactions and wallet integrations.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -60,7 +60,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Dreamload",
-                        "description": "Experience the future of web applications with Dreamload. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "An AI-powered sports platform that enhances athlete performance, league management, and fan engagement through data-driven insights.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UAE",
@@ -77,7 +77,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "PhoenixFC",
-                        "description": "Experience the future of web applications with PhoenixFC. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "The official digital platform of Phoenix FC, showcasing club history, teams, matches, achievements, and community activities.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -94,7 +94,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Palzea",
-                        "description": "Experience the future of web applications with Palzea. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A modern cryptocurrency trading platform offering secure trading, portfolio management, and real-time market insights",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -111,7 +111,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Fily",
-                        "description": "Experience the future of web applications with Fily. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "An easy-to-use financial platform for managing GST, invoices, bills, and cash flow without accounting complexity.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -128,7 +128,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Student Travel Buddy",
-                        "description": "Experience the future of web applications with Student Travel Buddy. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A student-focused travel membership platform offering exclusive discounts, perks, and savings on travel experiences.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -145,7 +145,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Klubbrabatten",
-                        "description": "Experience the future of web applications with Klubbrabatten. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A digital coupon platform that provides exclusive discounts on restaurants, shopping, entertainment, and local services.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -162,7 +162,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Giveaway",
-                        "description": "Experience the future of web applications with Giveaway. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A campaign management platform that helps brands run giveaways, engage audiences, and increase customer participation.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -179,7 +179,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Sarhachat",
-                        "description": "Experience the future of web applications with Sarhachat. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "An AI-powered health assistant providing confidential guidance and reliable information on sexual and reproductive health.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -196,7 +196,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Wall Street",
-                        "description": "Experience the future of web applications with Wall Street. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A powerful trading platform that helps investors analyze markets, manage portfolios, and execute trades efficiently.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -213,7 +213,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Allbots",
-                        "description": "Experience the future of web applications with Allbots. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "An AI automation platform that streamlines business operations by automating repetitive tasks and workflows.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -230,7 +230,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Searchive",
-                        "description": "Experience the future of web applications with Searchive. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A recruitment platform designed to simplify candidate sourcing, screening, and hiring for growing organizations.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -247,7 +247,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Coyna",
-                        "description": "Experience the future of web applications with Coyna. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A financial empowerment platform that helps users manage, grow, and make smarter financial decisions with confidence.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -264,7 +264,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Gujarat Tiles Info",
-                        "description": "Experience the future of web applications with Gujarat Tiles Info. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A comprehensive ceramic industry directory connecting manufacturers, dealers, suppliers, exporters, importers, and service providers on one platform.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -281,7 +281,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Implant Stock",
-                        "description": "Experience the future of web applications with Implant Stock. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A smart inventory management platform that helps dental professionals track, organize, and manage implant stock efficiently online.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -298,7 +298,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Locum Prime",
-                        "description": "Experience the future of web applications with Locum Prime. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A dedicated pharmacy recruitment platform that connects qualified pharmacists with the best job opportunities across the industry.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -315,7 +315,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Trust Arthur Group",
-                        "description": "Experience the future of web applications with Trust Arthur Group. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A trusted investment management firm focused on creating, growing, and preserving wealth through transparent and client-focused financial solutions.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",

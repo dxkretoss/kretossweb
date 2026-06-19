@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import AnimatedButton from '../ui/AnimatedButton';
 
 export default function Footer({ currentRoute }) {
+    const [activeBadgeIdx, setActiveBadgeIdx] = useState(0);
+
     // Ticker configuration for infinite rolling track
     const technologies = ["Laravel", "Node.js", "React.js", "Python", "Flutter", "React Native", "UI/UX", "PHP", "Shopify"];
+
+    // Trust Badges Data
+    const trustBadges = [
+        { platform: "Google", logo: "https://cdn.worldvectorlogo.com/logos/google-icon-1.svg", rating: "4.9/5", reviews: "86 Client Reviews" },
+        { platform: "Clutch", logo: "/clutch.png", rating: "5/5", reviews: "34 Client Reviews" },
+        // { platform: "Smart Customer", logo: "https://cdn-icons-png.flaticon.com/512/4144/4144111.png", rating: "4.8/5", reviews: "28 Client Reviews" },
+        { platform: "Trustpilot", logo: "https://cdn.worldvectorlogo.com/logos/trustpilot-2.svg", rating: "4.7/5", reviews: "38 Client Reviews" },
+        { platform: "Global Clients", logo: "https://cdn-icons-png.flaticon.com/512/814/814513.png", rating: "952+", reviews: "Satisfied Clients" }
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveBadgeIdx((prev) => (prev + 1) % trustBadges.length);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, [trustBadges.length]);
+
     const tickerItems = technologies.map((tech) => ({
         icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288792_Group%202087325406.svg",
         text: tech
@@ -93,8 +112,10 @@ export default function Footer({ currentRoute }) {
                     ))}
                 </div>
 
+
+
                 {/* Footer Main Menu Area */}
-                <div className="footer-top-wrapper">
+                <div className="footer-top-wrapper pt-10">
                     <div className="w-layout-blockcontainer container w-container">
                         <div className="footer-top-box">
                             {/* Dynamic links columns */}
@@ -187,6 +208,57 @@ export default function Footer({ currentRoute }) {
                                                 </div>
                                             </a>
                                         ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Highly Rated - 4th Block */}
+                            <div className="footer-menu-box">
+                                <div className="footer-menu-block w-full flex flex-col">
+                                    <h3 className="footer-menu-title">Highly Rated</h3>
+
+                                    <div className="flex flex-col items-center w-full max-w-[240px]">
+                                        <div className="relative w-full h-[200px]">
+                                            {trustBadges.map((badge, idx) => (
+                                                <div
+                                                    key={idx}
+                                                    className={`absolute inset-0 transition-all duration-700 transform ${idx === activeBadgeIdx ? 'opacity-100 scale-100 translate-y-0 z-10' : 'opacity-0 scale-95 translate-y-4 z-0 pointer-events-none'}`}
+                                                >
+                                                    <div className="relative w-full h-full hover:scale-105 transition-all duration-300 cursor-pointer flex flex-col items-center justify-center group">
+
+                                                        {/* Logo */}
+                                                        <div className="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center mb-5 shrink-0 backdrop-blur-md">
+                                                            <img src={badge.logo} alt={badge.platform} className="h-6 w-6 object-contain" />
+                                                        </div>
+
+                                                        {/* Platform Name */}
+                                                        <h4 className="text-white font-bold text-base mb-1">{badge.platform}</h4>
+
+                                                        {/* Rating */}
+                                                        <div className="flex items-center gap-2 mb-2">
+                                                            <span className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0] leading-none">{badge.rating}</span>
+                                                        </div>
+
+                                                        {/* Stars */}
+                                                        <div className="flex gap-1 text-[#f59e0b] mb-4">
+                                                            {[...Array(5)].map((_, i) => (
+                                                                <svg key={i} className="w-4 h-4 drop-shadow-sm" fill="currentColor" viewBox="0 0 20 20">
+                                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                                </svg>
+                                                            ))}
+                                                        </div>
+
+                                                        {/* Reviews text */}
+                                                        <div className="text-[12px] font-bold text-[#44c7f6] uppercase tracking-widest">{badge.reviews}</div>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                        <div className="flex gap-2 justify-center mt-5">
+                                            {trustBadges.map((_, idx) => (
+                                                <div key={idx} className={`h-2 rounded-full transition-all duration-300 ${idx === activeBadgeIdx ? 'bg-gradient-to-r from-[#44c7f6] to-[#0037f0] w-6' : 'bg-[#222] w-2'}`}></div>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

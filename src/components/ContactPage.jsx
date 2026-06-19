@@ -28,7 +28,7 @@ const StarRating = ({ rating }) => {
 const REVIEWS_DATA = [
     { name: 'Google', rating: 4.9 },
     { name: 'Clutch', rating: 5.0 },
-    { name: 'Sitejabber', rating: 4.0 },
+    // { name: 'Sitejabber', rating: 4.0 },
     { name: 'Trustpilot', rating: 4.7 }
 ];
 

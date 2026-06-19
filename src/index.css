@@ -190,7 +190,7 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit;
+  /* color: inherit; */
   font: inherit;
   margin: 0;
 }
@@ -2192,7 +2192,7 @@ body {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: space-between;
   align-items: center;
@@ -2240,7 +2240,7 @@ body {
   font-size: 24px;
   line-height: var(--line-height--height-medium);
   font-weight: var(--font-weight--font-medium);
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 20px;
 }
 
@@ -2998,7 +2998,7 @@ body {
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
-  height: 56px;
+  height: 50px;
   text-decoration: none;
   display: inline-flex;
   position: relative;
@@ -6195,7 +6195,7 @@ body {
   .footer-top-box {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
   }
 
@@ -7095,8 +7095,8 @@ body {
   }
 
   .primary-button {
-    font-size: 18px;
-    height: 56px;
+    font-size: 16px;
+    height: 50px;
   }
 
   .button-back-text {

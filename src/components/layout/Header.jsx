@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, ArrowRight, ChevronRight } from 'lucide-react';
 import { hireUsData } from '../../data/hireus';
 
 // SplitText helper for dynamic GSAP SplitText word/letter class structures
@@ -120,7 +120,7 @@ export default function Header({ currentRoute }) {
     const megaMenuRef = useRef(null);
     let hideTimer = useRef(null);
 
-    const categories = ['Frontend', 'Backend', 'App Developer', 'Web Developer', 'Server', 'Vibe coding'];
+    const categories = ["App Developers", "Frontend Developers", "Backend Developers", "Web Developer"];
 
     const handleMegaMenuEnter = () => {
         if (hideTimer.current) clearTimeout(hideTimer.current);
@@ -130,7 +130,7 @@ export default function Header({ currentRoute }) {
     const handleMegaMenuLeave = () => {
         hideTimer.current = setTimeout(() => {
             setIsMegaMenuOpen(false);
-        }, 200); // slight delay to allow moving mouse to the dropdown
+        }, 300); // slight delay to allow moving mouse to the dropdown
     };
 
     // Dynamic navigation list array mapping all elements
@@ -170,9 +170,9 @@ export default function Header({ currentRoute }) {
         setIsMenuOpen(false); // Close menu on navigation
     };
 
-    // Lock body scroll and stop Lenis smooth scrolling when mobile menu is open
+    // Lock body scroll and stop Lenis smooth scrolling when mobile menu or mega menu is open
     useEffect(() => {
-        if (isMenuOpen) {
+        if (isMenuOpen || isMegaMenuOpen) {
             document.documentElement.style.overflow = 'hidden';
             document.body.style.overflow = 'hidden';
             if (window.lenis) window.lenis.stop();
@@ -187,7 +187,7 @@ export default function Header({ currentRoute }) {
             document.body.style.overflow = '';
             if (window.lenis) window.lenis.start();
         };
-    }, [isMenuOpen]);
+    }, [isMenuOpen, isMegaMenuOpen]);
 
     return (
         <>
@@ -234,46 +234,63 @@ export default function Header({ currentRoute }) {
                                             {link.isMegaMenuTrigger && (
                                                 <>
                                                     {/* Backdrop Overlay */}
-                                                    <div 
+                                                    <div
                                                         className={`fixed inset-0 top-[80px] lg:top-[90px] bg-black/60 backdrop-blur-sm z-40 transition-all duration-300 ${isMegaMenuOpen ? 'opacity-100 visible pointer-events-auto' : 'opacity-0 invisible pointer-events-none'}`}
                                                         onClick={() => setIsMegaMenuOpen(false)}
                                                     ></div>
-                                                    
+
                                                     <div
                                                         ref={megaMenuRef}
-                                                        className={`fixed top-[80px] lg:top-[90px] left-0 right-0 max-w-[95%] xl:max-w-[1400px] mx-auto bg-gradient-to-br from-[#0a111a]/95 to-[#05080c]/95 backdrop-blur-2xl border border-[#44c7f6]/20 rounded-xl pt-8 pb-10 shadow-[0_30px_80px_rgba(0,35,100,0.4)] transition-all duration-300 transform origin-top z-50 ${isMegaMenuOpen ? 'opacity-100 scale-100 visible pointer-events-auto mt-2' : 'opacity-0 scale-95 invisible pointer-events-none mt-0'}`}
+                                                        className={`fixed top-[80px] lg:top-[90px] bottom-[20px] lg:bottom-auto lg:max-h-[calc(100vh-100px)] left-0 right-0 max-w-[95%] xl:max-w-[1400px] mx-auto bg-[#fafcff] border border-blue-100 rounded-md pt-8 pb-8 shadow-[0_30px_80px_rgba(0,55,240,0.08)] transition-all duration-300 z-50 overflow-y-auto overflow-x-hidden overscroll-contain ${isMegaMenuOpen ? 'opacity-100 visible pointer-events-auto translate-y-2' : 'opacity-0 invisible pointer-events-none translate-y-0'}`}
                                                     >
-                                                    {/* Decorative subtle glow */}
-                                                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-[#44c7f6]/50 to-transparent"></div>
+                                                        {/* Transparent hover bridge to prevent menu from closing when crossing gap */}
+                                                        <div className="absolute -top-10 left-0 w-full h-10 bg-transparent"></div>
 
-                                                    <div className="container mx-auto px-8 md:px-12 relative z-10">
-                                                        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-x-12 gap-y-10">
-                                                            {categories.map(cat => {
-                                                                const categoryRoles = hireUsData.filter(r => r.category === cat);
-                                                                if (categoryRoles.length === 0) return null;
-                                                                return (
-                                                                    <div key={cat} className="flex flex-col">
-                                                                        <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600 text-[11px] font-black uppercase tracking-[0.25em] border-b border-[#44c7f6]/10 pb-3 mb-4">{cat}</h4>
-                                                                        <ul className="space-y-2">
-                                                                            {categoryRoles.map(role => (
-                                                                                <li key={role.slug}>
-                                                                                    <a href={`/hire-us/${role.slug}`} className="flex items-center gap-3 p-2 -ml-2 rounded-xl hover:bg-[#44c7f6]/5 border border-transparent hover:border-[#44c7f6]/20 transition-all duration-300 group relative overflow-hidden">
-                                                                                        {/* Hover highlight effect */}
-                                                                                        <div className="absolute inset-0 bg-gradient-to-r from-[#44c7f6]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                                        <div className="container mx-auto px-8 md:px-12 relative z-10">
+                                                            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-x-8 gap-y-10">
+                                                                {categories.map(cat => {
+                                                                    const categoryRoles = hireUsData.filter(r => r.category === cat);
+                                                                    if (categoryRoles.length === 0) return null;
+                                                                    return (
+                                                                        <div key={cat} className="flex flex-col">
+                                                                            <h4 className="text-[#0a1520]/80 text-[12px] font-black uppercase tracking-[0.2em] border-b border-[#0037f0]/10 pb-3 mb-5">{cat}</h4>
+                                                                            <ul className="space-y-2">
+                                                                                {categoryRoles.map(role => (
+                                                                                    <li key={role.slug}>
+                                                                                        <a href={`/hire-us/${role.slug}`} className="flex items-center gap-4 p-2.5 -ml-2.5 rounded-xl hover:bg-white border border-transparent hover:border-[#44c7f6]/15 hover:shadow-[0_4px_20px_-5px_rgba(68,199,246,0.15)] transition-all duration-300 group relative overflow-hidden pr-4">
+                                                                                            <div className="relative w-10 h-10 shrink-0 flex items-center justify-center bg-white rounded-xl border border-gray-100 group-hover:border-[#44c7f6]/40 group-hover:shadow-[0_0_15px_rgba(68,199,246,0.2)] transition-all duration-300 z-10">
+                                                                                                <img src={role.icon} alt="" className="w-5 h-5 opacity-75 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
+                                                                                            </div>
+                                                                                            <span className="relative whitespace-nowrap text-[#0a1520] font-bold text-[13.5px] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#0037f0] group-hover:to-[#44c7f6] transition-colors z-10 flex-1">{role.title.replace('Hire ', '')}</span>
+                                                                                            <ArrowRight className="w-4 h-4 text-[#0037f0] opacity-0 -translate-x-3 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 relative z-10 shrink-0" />
+                                                                                        </a>
+                                                                                    </li>
+                                                                                ))}
+                                                                            </ul>
+                                                                        </div>
+                                                                    );
+                                                                })}
+                                                            </div>
 
-                                                                                        <div className="relative w-9 h-9 shrink-0 flex items-center justify-center bg-[#0a1520] rounded-lg border border-[#112233] group-hover:border-[#44c7f6]/50 group-hover:shadow-[0_0_15px_rgba(68,199,246,0.3)] transition-all duration-300 z-10">
-                                                                                            <img src={role.icon} alt="" className="w-4 h-4 opacity-75 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
-                                                                                        </div>
-                                                                                        <span className="relative text-gray-300 font-medium text-[13px] md:text-sm group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#44c7f6] group-hover:to-[#0037f0] transition-colors z-10">{role.title.replace('Hire ', '')}</span>
-                                                                                    </a>
-                                                                                </li>
-                                                                            ))}
-                                                                        </ul>
-                                                                    </div>
-                                                                );
-                                                            })}
+                                                            {/* Bottom Section */}
+                                                            <div className="w-full h-[2px] bg-gradient-to-r from-[#0037f0] to-[#44c7f6] mt-10 mb-6 rounded-full opacity-80"></div>
+                                                            <div className="flex flex-wrap items-center justify-start gap-x-8 gap-y-4">
+                                                                {[
+                                                                    { text: "Hire Frontend Developer", href: "/hire-us/hire-frontend-developer" },
+                                                                    { text: "Hire Backend Developer", href: "/hire-us/hire-backend-developer" },
+                                                                    { text: "Hire Mobile APP Developer", href: "/hire-us/hire-mobile-app-developer" },
+                                                                    { text: "Hire Data Analytics", href: "/hire-us/hire-data-analytics" },
+                                                                    { text: "Hire Cloud Infrastructure", href: "/hire-us/hire-cloud-infrastructure" },
+                                                                    { text: "Hire CMS Developer", href: "/hire-us/hire-cms-developer" }
+                                                                ].map(link => (
+                                                                    <a key={link.text} href={link.href} className="group flex items-center gap-1 text-[13.5px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0037f0] to-[#44c7f6] hover:scale-105 transition-all duration-300">
+                                                                        <ChevronRight className="w-4 h-4 text-[#0037f0]" />
+                                                                        <span>{link.text}</span>
+                                                                        <ArrowRight className="w-4 h-4 text-[#44c7f6] opacity-0 -ml-2 group-hover:opacity-100 group-hover:ml-1 transition-all duration-300" />
+                                                                    </a>
+                                                                ))}
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                     </div>
                                                 </>
                                             )}
