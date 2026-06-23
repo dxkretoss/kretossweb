@@ -145,7 +145,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Klubbrabatten",
-                        "description": "A digital coupon platform that provides exclusive discounts on restaurants, shopping, entertainment, and local services.",
+                        "description": "A Swedish digital coupon platform offering exclusive discounts and deals from restaurants, retailers, and local businesses.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -332,7 +332,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Taxley",
-                        "description": "Experience the future of web applications with Taxley. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A tax and financial management platform that helps individuals and businesses manage taxes, compliance, and financial records with ease.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -351,7 +351,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "My100Days",
-                        "description": "Experience the future of mobile applications with My100Days. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "An AI-powered career assistant that guides professionals through job roles, responsibilities, and career challenges with personalized advice and insights.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -368,7 +368,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "TriSchedule",
-                        "description": "Experience the future of mobile applications with TriSchedule. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A health and performance tracking platform designed for athletes to monitor activities, training progress, fitness goals, and overall well-being.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -385,7 +385,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Wingman",
-                        "description": "Experience the future of mobile applications with Wingman. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "An offline messaging app built for air travel, allowing passengers to connect and chat via Bluetooth without requiring internet or Wi-Fi.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -402,7 +402,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Book a Builder",
-                        "description": "Experience the future of mobile applications with Book a Builder. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A service marketplace where homeowners can post renovation projects and receive bids from verified contractors to find the best match.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -419,7 +419,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Klubbrabatten",
-                        "description": "Experience the future of mobile applications with Klubbrabatten. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A Swedish digital coupon platform offering exclusive discounts and deals from restaurants, retailers, and local businesses.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -436,7 +436,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Roamaly",
-                        "description": "Experience the future of mobile applications with Roamaly. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A convenient eSIM marketplace that helps travelers purchase, activate, and manage mobile data plans worldwide.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -453,7 +453,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Sion Reservations",
-                        "description": "Experience the future of mobile applications with Sion Reservations. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "An event and club reservation platform that simplifies booking, ticket management, and guest experiences for venues and attendees.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -470,7 +470,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "City 2 City",
-                        "description": "Experience the future of mobile applications with City 2 City. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A ride-booking platform that connects travelers with drivers for convenient and affordable intercity transportation.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -487,7 +487,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Drawn",
-                        "description": "Experience the future of mobile applications with Drawn. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A modern dating platform designed to help people discover meaningful connections through engaging profiles and smart matching.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -504,7 +504,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Somnexis",
-                        "description": "Experience the future of mobile applications with Somnexis. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A digital Bible platform where users can read scripture, share reflections, and engage with a faith-driven community.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -521,7 +521,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Traivend",
-                        "description": "Experience the future of mobile applications with Traivend. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A crypto trading education platform that helps users learn market strategies, trading concepts, and investment fundamentals.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -538,7 +538,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Offarat",
-                        "description": "Experience the future of mobile applications with Offarat. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "An on-demand food delivery platform that connects customers with local restaurants for fast and convenient ordering.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UAE",
@@ -555,7 +555,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Taxley",
-                        "description": "Experience the future of mobile applications with Taxley. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A tax and financial management platform that helps individuals and businesses manage taxes, compliance, and financial records with ease.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -572,7 +572,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Kolder Kid Universe",
-                        "description": "Experience the future of mobile applications with Kolder Kid Universe. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A music streaming platform featuring songs, audio content, and interactive experiences designed for children and families.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -591,7 +591,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Kate's Real Food",
-                        "description": "Experience the future of eCommerce with Kate's Real Food. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "An eCommerce platform offering organic snack bars and healthy food products made with real, natural ingredients.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -608,7 +608,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Ludic Life",
-                        "description": "Experience the future of eCommerce with Ludic Life. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A premium lifestyle eCommerce platform offering comfortable, fashionable everyday clothing, casual footwear, and chappals.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -625,7 +625,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Ludic Global",
-                        "description": "Experience the future of eCommerce with Ludic Global. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A global fashion eCommerce marketplace featuring a curated collection of international apparel, trendy shoes, and stylish chappals.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -642,7 +642,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Ludic Kitchen",
-                        "description": "Experience the future of eCommerce with Ludic Kitchen. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A boutique eCommerce concept store specializing in functional culinary-lifestyle workwear, comfortable kitchen shoes, and lifestyle chappals.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -659,7 +659,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Almost Peaceful",
-                        "description": "Experience the future of eCommerce with Almost Peaceful. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A premium lifestyle brand offering handcrafted incense and wellness products designed to create calm and mindful experiences.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UAE",
@@ -676,7 +676,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Impetus Health",
-                        "description": "Experience the future of eCommerce with Impetus Health. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A healthcare eCommerce platform providing trusted wellness, nutrition, and healthcare products for healthier living.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -693,7 +693,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Roamaly",
-                        "description": "Experience the future of eCommerce with Roamaly. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A convenient eSIM marketplace that helps travelers purchase, activate, and manage mobile data plans worldwide.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -710,7 +710,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Kids Posters",
-                        "description": "Experience the future of eCommerce with Kids Posters. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "An online store offering educational and decorative posters designed to inspire creativity and learning for children.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -727,7 +727,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "The Pawcan",
-                        "description": "Experience the future of eCommerce with The Pawcan. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A pet-focused eCommerce platform offering premium products, accessories, and essentials for pet owners.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -744,7 +744,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Recreation Beauty",
-                        "description": "Experience the future of eCommerce with Recreation Beauty. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A beauty and skincare brand offering high-quality products designed to enhance self-care and confidence.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -761,7 +761,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Tango Swim",
-                        "description": "Experience the future of eCommerce with Tango Swim. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "An online swimwear store featuring stylish, comfortable, and premium swimwear collections for modern lifestyles.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -778,7 +778,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Tilit",
-                        "description": "Experience the future of eCommerce with Tilit. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A professional workwear platform providing high-quality apparel and gear for chefs, restaurants, and hospitality teams.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -795,7 +795,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Honey Stinger",
-                        "description": "Experience the future of eCommerce with Honey Stinger. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A sports nutrition brand offering energy snacks, gels, and supplements designed for athletes and active lifestyles.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -812,7 +812,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Moanarose",
-                        "description": "Experience the future of eCommerce with Moanarose. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A fashion eCommerce platform offering stylish clothing and accessories inspired by modern trends and individuality.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -829,7 +829,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Prime Nails",
-                        "description": "Experience the future of eCommerce with Prime Nails. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A beauty brand specializing in premium press-on nails and nail care products for salon-quality results at home.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -846,7 +846,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "The Source Bulk Foods",
-                        "description": "Experience the future of eCommerce with The Source Bulk Foods. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A sustainable grocery platform offering bulk food products, healthy ingredients, and eco-friendly shopping options.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -863,7 +863,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Beadspoint",
-                        "description": "Experience the future of eCommerce with Beadspoint. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "An online marketplace for beads, jewelry-making supplies, and crafting materials for creative professionals and hobbyists.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -880,7 +880,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Vacurect",
-                        "description": "Experience the future of eCommerce with Vacurect. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A healthcare platform providing innovative medical devices and solutions designed to improve men's health and wellness.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -897,7 +897,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Hydro Peptide",
-                        "description": "Experience the future of eCommerce with Hydro Peptide. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A premium skincare brand offering scientifically formulated products focused on skin health and anti-aging solutions.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -914,7 +914,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Boxraw",
-                        "description": "Experience the future of eCommerce with Boxraw. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A boxing lifestyle and performance brand providing apparel, equipment, and accessories for fighters and athletes.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -931,7 +931,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Ultimate Ears",
-                        "description": "Experience the future of eCommerce with Ultimate Ears. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "An audio technology platform offering premium custom-fit earphones and immersive listening experiences.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -948,7 +948,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Ruumi Art",
-                        "description": "Experience the future of eCommerce with Ruumi Art. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "An online art marketplace connecting artists and collectors through unique contemporary artwork and creative products.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -965,7 +965,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Ludic",
-                        "description": "Experience the future of eCommerce with Ludic. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A wellness-focused brand offering innovative products that help users improve sleep quality, recovery, and daily performance.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -982,7 +982,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Vegamour",
-                        "description": "Experience the future of eCommerce with Vegamour. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A clean beauty brand specializing in plant-based hair wellness products that support healthier, fuller-looking hair.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UAE",
@@ -999,7 +999,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Kretoss",
-                        "description": "Experience the future of eCommerce with Kretoss. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A modern eCommerce platform showcasing digital solutions, technology services, and innovative business products.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -1016,7 +1016,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Vitality",
-                        "description": "Experience the future of eCommerce with Vitality. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A wellness brand offering essential oils, natural supplements, and health-focused products for everyday well-being.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -1033,7 +1033,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Anveshan Farm Technologies",
-                        "description": "Experience the future of eCommerce with Anveshan Farm Technologies. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A farm-to-table eCommerce platform offering traditionally crafted, natural food products sourced directly from farmers.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -1052,7 +1052,7 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Anthem Home Comfort",
-                        "description": "Experience the future of web applications with Anthem Home Comfort. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A trusted HVAC services platform providing heating, cooling, air quality, and home comfort solutions. The company helps homeowners maintain efficient and comfortable living environments year-round.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -1069,7 +1069,7 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Freight Plus",
-                        "description": "Experience the future of web applications with Freight Plus. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "An AI-powered transportation management platform that helps businesses optimize logistics, reduce shipping costs, and gain real-time visibility across their supply chain operations.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -1086,7 +1086,7 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Sobel",
-                        "description": "Experience the future of web applications with Sobel. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A professional consulting firm delivering strategic advisory, accounting, tax, and business solutions that help organizations improve performance and achieve sustainable growth.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -1103,7 +1103,7 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Beepec",
-                        "description": "Experience the future of web applications with Beepec. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A digital procurement and business marketplace connecting companies with suppliers, products, and services to streamline purchasing and operational efficiency.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -1120,7 +1120,7 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "The Source Bulk Foods",
-                        "description": "Experience the future of web applications with The Source Bulk Foods. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A sustainable food marketplace offering bulk groceries, healthy ingredients, and eco-friendly products. The platform promotes waste-free shopping and healthier lifestyles.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -1137,7 +1137,7 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "EasyGold24",
-                        "description": "Experience the future of web applications with EasyGold24. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "An online precious metals platform that enables customers to securely buy, sell, and invest in gold, silver, and other valuable assets.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -1154,7 +1154,7 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Meridian Pacific Properties",
-                        "description": "Experience the future of web applications with Meridian Pacific Properties. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A real estate investment and property management platform focused on acquiring, developing, and managing high-quality residential and commercial properties.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -1171,7 +1171,7 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "The Penny",
-                        "description": "Experience the future of web applications with The Penny. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A premium hospitality and dining destination offering exceptional food, beverages, and memorable guest experiences in a sophisticated atmosphere.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -1188,7 +1188,7 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Litehaus",
-                        "description": "Experience the future of web applications with Litehaus. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "An innovative architecture and design studio specializing in modern residential and commercial spaces. The platform showcases creative design solutions that combine functionality, aesthetics, and sustainability.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -1207,7 +1207,7 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "LEE BROOM",
-                        "description": "Experience the future of eCommerce with LEE BROOM. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A luxury design and lighting brand showcasing award-winning furniture, lighting, and interior collections crafted for premium residential and commercial spaces.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -1224,7 +1224,7 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "Good Good Ganja",
-                        "description": "Experience the future of eCommerce with Good Good Ganja. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "An online cannabis marketplace offering premium cannabis products, edibles, concentrates, and accessories for adult consumers seeking quality and convenience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -1241,7 +1241,7 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "Color Matrics",
-                        "description": "Experience the future of eCommerce with Color Matrics. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A professional hair color brand offering innovative root touch-up and hair coloring solutions that deliver salon-quality results from the comfort of home.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -1258,7 +1258,7 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "Dane Apparel",
-                        "description": "Experience the future of eCommerce with Dane Apparel. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A modern fashion and apparel platform offering stylish, high-quality clothing designed for comfort, confidence, and everyday wear.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -1275,7 +1275,7 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "Caramel",
-                        "description": "Experience the future of eCommerce with Caramel. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A specialty snack brand offering handcrafted gourmet popcorn and sweet treats made with premium ingredients and unique flavors.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -1292,7 +1292,7 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "Intermat",
-                        "description": "Experience the future of eCommerce with Intermat. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "An industrial solutions company providing specialized materials, manufacturing support, and engineering services for commercial and industrial sectors.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -1309,7 +1309,7 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "Locket Sisters",
-                        "description": "Experience the future of eCommerce with Locket Sisters. Engineered for high performance, scalability, and an intuitive shopping experience.",
+                        "description": "A personalized jewelry brand creating meaningful lockets and keepsake accessories designed to celebrate memories, relationships, and special moments.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -1328,7 +1328,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "IIC Metaverse",
-                        "description": "Experience the future of web applications with IIC Metaverse. Engineered for high performance, scalability, and an intuitive user experience.",
+                        "description": "A blockchain-powered ecosystem that combines cryptocurrency, AI, and real-world assets to create a secure platform for trading, investing, and digital finance. It bridges innovative technology with practical real-world applications.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -1345,7 +1345,7 @@ export const portfolioData = {
                                 "Web Design"
                         ],
                         "title": "Save Your Capital",
-                        "description": "Experience the future of digital presence with Save Your Capital. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "A trading discipline platform designed for intraday and options traders. It helps users reduce emotional trading, prevent overtrading, and protect capital through smart rules, alerts, and risk management tools.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UAE",
@@ -1362,7 +1362,7 @@ export const portfolioData = {
                                 "Web Design"
                         ],
                         "title": "Better Quest",
-                        "description": "Experience the future of digital presence with Better Quest. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "A goal-driven personal development platform that helps users track progress, build productive habits, complete challenges, and stay accountable while achieving personal and professional goals.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -1379,7 +1379,7 @@ export const portfolioData = {
                                 "Web Design"
                         ],
                         "title": "Practical Information for International Guest",
-                        "description": "Experience the future of digital presence with Practical Information for International Guest. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "A digital wedding platform that allows couples to share event details, schedules, photo galleries, RSVPs, and memorable moments with family and friends in one place.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -1396,7 +1396,7 @@ export const portfolioData = {
                                 "Web Design"
                         ],
                         "title": "Atopic Diary",
-                        "description": "Experience the future of digital presence with Atopic Diary. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "A health tracking platform designed for individuals managing eczema and skin conditions. Users can monitor symptoms, track triggers, and gain insights to improve skin health.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -1413,7 +1413,7 @@ export const portfolioData = {
                                 "Web Design"
                         ],
                         "title": "Skin Dao",
-                        "description": "Experience the future of digital presence with Skin Dao. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "A personalized skincare platform that helps users understand their skin, discover suitable products, and follow customized skincare routines for healthier skin.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -1430,7 +1430,7 @@ export const portfolioData = {
                                 "Web Design"
                         ],
                         "title": "Core CRMS",
-                        "description": "Experience the future of digital presence with Core CRMS. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "A comprehensive customer relationship management system that helps businesses manage leads, sales pipelines, customer interactions, and team performance from a centralized dashboard.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -1449,7 +1449,7 @@ export const portfolioData = {
                                 "Hubspot"
                         ],
                         "title": "Clean Steam Pros",
-                        "description": "Experience the future of digital presence with Clean Steam Pros. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "A professional car detailing and steam-cleaning platform offering deep interior cleaning, paint correction, ceramic coating, and vehicle protection services. Designed to help car owners maintain showroom-quality results.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -1466,7 +1466,7 @@ export const portfolioData = {
                                 "Hubspot"
                         ],
                         "title": "One",
-                        "description": "Experience the future of digital presence with One. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "A global martial arts and combat sports platform featuring MMA, Muay Thai, kickboxing, and grappling events. Fans can watch live fights, follow athletes, and stay updated with the latest sports content and events.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -1483,7 +1483,7 @@ export const portfolioData = {
                                 "Hubspot"
                         ],
                         "title": "Aroconllc",
-                        "description": "Experience the future of digital presence with Aroconllc. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "A trusted roofing and exterior construction company providing roofing, siding, gutter, window, and storm damage solutions for residential and commercial properties.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -1500,7 +1500,7 @@ export const portfolioData = {
                                 "Hubspot"
                         ],
                         "title": "Intempt",
-                        "description": "Experience the future of digital presence with Intempt. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "A customer engagement and marketing automation platform that helps businesses create personalized digital experiences, increase conversions, and improve customer retention.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -1517,7 +1517,7 @@ export const portfolioData = {
                                 "Magento"
                         ],
                         "title": "Automaximizer",
-                        "description": "Experience the future of digital presence with Automaximizer. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "An automotive dealership growth platform designed to help dealers increase sales, improve customer acquisition, and maximize business performance through data-driven solutions.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UAE",
@@ -1534,7 +1534,7 @@ export const portfolioData = {
                                 "Magento"
                         ],
                         "title": "The RTA Store",
-                        "description": "Experience the future of digital presence with The RTA Store. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "An online marketplace specializing in ready-to-assemble cabinets and home improvement products, offering affordable and customizable solutions for kitchens and living spaces.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -1551,7 +1551,7 @@ export const portfolioData = {
                                 "Magento"
                         ],
                         "title": "Hunters Unite",
-                        "description": "Experience the future of digital presence with Hunters Unite. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+                        "description": "A performance automotive platform focused on high-quality vehicle upgrades, accessories, and solutions designed to enhance driving performance and style.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",

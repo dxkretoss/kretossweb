@@ -8,7 +8,7 @@ export const portfolioDetailsData = [
         "techStack": "Angular + Node.js",
         "link": "https://guestway.io/",
         "client": "Guestway",
-        "purpose": "Experience the future of web applications with Guestway. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A property management platform that simplifies tenant, booking, and property operations from a single dashboard.",
         "challenge": "The client needed a robust Angular + Node.js architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Angular + Node.js, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -55,7 +55,7 @@ export const portfolioDetailsData = [
         "techStack": "React.js + Supabase",
         "link": "https://career.nexthunt.co/",
         "client": "NextHunt",
-        "purpose": "Experience the future of web applications with NextHunt. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A smart hiring platform that helps candidates build professional resumes and enables businesses to find the right talent faster.",
         "challenge": "The client needed a robust React.js + Supabase architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using React.js + Supabase, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -102,7 +102,7 @@ export const portfolioDetailsData = [
         "techStack": "Blockchain + React.js + Node.js",
         "link": "https://palzeaa-crypto-widget.netlify.app",
         "client": "Palzea",
-        "purpose": "Experience the future of web applications with Palzea. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A secure P2P crypto transfer solution that enables seamless digital asset transactions and wallet integrations.",
         "challenge": "The client needed a robust Blockchain + React.js + Node.js architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Blockchain + React.js + Node.js, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -149,7 +149,7 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS + Python",
         "link": "https://dreamlod.com",
         "client": "Dreamload",
-        "purpose": "Experience the future of web applications with Dreamload. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "An AI-powered sports platform that enhances athlete performance, league management, and fan engagement through data-driven insights.",
         "challenge": "The client needed a robust ReactJS + Python architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using ReactJS + Python, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -196,7 +196,7 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS + Python",
         "link": "https://phoenixsclub.com",
         "client": "PhoenixFC",
-        "purpose": "Experience the future of web applications with PhoenixFC. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "The official digital platform of Phoenix FC, showcasing club history, teams, matches, achievements, and community activities.",
         "challenge": "The client needed a robust ReactJS + Python architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using ReactJS + Python, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -243,7 +243,7 @@ export const portfolioDetailsData = [
         "techStack": "Vue.js + Laravel",
         "link": "https://palzea.com",
         "client": "Palzea Networks",
-        "purpose": "A next-generation social networking application designed for local community engagement and hyper-local event discovery.",
+        "purpose": "A modern cryptocurrency trading platform offering secure trading, portfolio management, and real-time market insights",
         "challenge": "Users felt disconnected from their immediate geographic communities and struggled to find organic, local events tailored to their niche interests in real-time.",
         "solution": "We delivered a lightning-fast cross-platform mobile app using React Native, powered by Firebase's real-time database, enabling geolocation-based event discovery and instant community chat rooms.",
         "keyFeatures": [
@@ -290,7 +290,7 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS + Supabase",
         "link": "https://fily.in",
         "client": "Fily",
-        "purpose": "Experience the future of web applications with Fily. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "An easy-to-use financial platform for managing GST, invoices, bills, and cash flow without accounting complexity.",
         "challenge": "The client needed a robust ReactJS + Supabase architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using ReactJS + Supabase, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -337,7 +337,7 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS + Node.js",
         "link": "https://studenttravelbuddy.com/plan-my-trip",
         "client": "STB Inc.",
-        "purpose": "A comprehensive platform connecting students for safe, budget-friendly travel and accommodation sharing worldwide.",
+        "purpose": "A student-focused travel membership platform offering exclusive discounts, perks, and savings on travel experiences.",
         "challenge": "The student travel market lacked a unified, trusted platform where verified students could seamlessly plan trips, split costs, and find reliable travel companions without compromising safety.",
         "solution": "We engineered a highly scalable React & Node.js application featuring real-time chat, AI-driven roommate matching, secure identity verification, and split-payment integrations.",
         "keyFeatures": [
@@ -384,7 +384,7 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS + Supabase + Node.js",
         "link": "https://www.klubbrabatten.se",
         "client": "Klubbrabatten",
-        "purpose": "Experience the future of web applications with Klubbrabatten. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A Swedish digital coupon platform offering exclusive discounts and deals from restaurants, retailers, and local businesses.",
         "challenge": "The client needed a robust ReactJS + Supabase + Node.js architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using ReactJS + Supabase + Node.js, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -431,7 +431,7 @@ export const portfolioDetailsData = [
         "techStack": "Laravel",
         "link": "https://stackedgiveaways.com/",
         "client": "Giveaway",
-        "purpose": "Experience the future of web applications with Giveaway. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A campaign management platform that helps brands run giveaways, engage audiences, and increase customer participation.",
         "challenge": "The client needed a robust Laravel architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Laravel, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -478,7 +478,7 @@ export const portfolioDetailsData = [
         "techStack": "AI",
         "link": "https://sarhachat.com/",
         "client": "Sarhachat",
-        "purpose": "Experience the future of web applications with Sarhachat. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "An AI-powered health assistant providing confidential guidance and reliable information on sexual and reproductive health.",
         "challenge": "The client needed a robust AI architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using AI, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -525,7 +525,7 @@ export const portfolioDetailsData = [
         "techStack": "Angular & Laravel",
         "link": "https://wallstreet.io/",
         "client": "Wall Street",
-        "purpose": "Experience the future of web applications with Wall Street. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A powerful trading platform that helps investors analyze markets, manage portfolios, and execute trades efficiently.",
         "challenge": "The client needed a robust Angular & Laravel architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Angular & Laravel, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -572,7 +572,7 @@ export const portfolioDetailsData = [
         "techStack": "Bubble",
         "link": "https://allbots.io/",
         "client": "Allbots",
-        "purpose": "Experience the future of web applications with Allbots. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "An AI automation platform that streamlines business operations by automating repetitive tasks and workflows.",
         "challenge": "The client needed a robust Bubble architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Bubble, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -619,7 +619,7 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS",
         "link": "https://searchive.co.uk/",
         "client": "Searchive",
-        "purpose": "Experience the future of web applications with Searchive. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A recruitment platform designed to simplify candidate sourcing, screening, and hiring for growing organizations.",
         "challenge": "The client needed a robust ReactJS architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using ReactJS, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -666,7 +666,7 @@ export const portfolioDetailsData = [
         "techStack": "Angular, JavaScript",
         "link": "https://coyna.com/",
         "client": "Coyna",
-        "purpose": "Experience the future of web applications with Coyna. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A financial empowerment platform that helps users manage, grow, and make smarter financial decisions with confidence.",
         "challenge": "The client needed a robust Angular, JavaScript architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Angular, JavaScript, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -713,7 +713,7 @@ export const portfolioDetailsData = [
         "techStack": "Angular & Laravel",
         "link": "https://www.gujarattilesinfo.com/",
         "client": "Gujarat Tiles Info",
-        "purpose": "Experience the future of web applications with Gujarat Tiles Info. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A comprehensive ceramic industry directory connecting manufacturers, dealers, suppliers, exporters, importers, and service providers on one platform.",
         "challenge": "The client needed a robust Angular & Laravel architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Angular & Laravel, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -760,7 +760,7 @@ export const portfolioDetailsData = [
         "techStack": "Laravel & React",
         "link": "https://implantstock.com/",
         "client": "Implant Stock",
-        "purpose": "Experience the future of web applications with Implant Stock. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A smart inventory management platform that helps dental professionals track, organize, and manage implant stock efficiently online.",
         "challenge": "The client needed a robust Laravel & React architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Laravel & React, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -807,7 +807,7 @@ export const portfolioDetailsData = [
         "techStack": "Angular, Codeigniter",
         "link": "https://www.locumprime.co.uk/",
         "client": "Locum Prime",
-        "purpose": "Experience the future of web applications with Locum Prime. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A dedicated pharmacy recruitment platform that connects qualified pharmacists with the best job opportunities across the industry.",
         "challenge": "The client needed a robust Angular, Codeigniter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Angular, Codeigniter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -854,7 +854,7 @@ export const portfolioDetailsData = [
         "techStack": "Python, ReactJS",
         "link": "https://www.trustarthurgroup.com/",
         "client": "Trust Arthur Group",
-        "purpose": "Experience the future of web applications with Trust Arthur Group. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A trusted investment management firm focused on creating, growing, and preserving wealth through transparent and client-focused financial solutions.",
         "challenge": "The client needed a robust Python, ReactJS architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Python, ReactJS, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -901,7 +901,7 @@ export const portfolioDetailsData = [
         "techStack": "MySQL, Node JS, ReactJS",
         "link": "https://kunden.taxley-web.ch/",
         "client": "Taxley",
-        "purpose": "Experience the future of web applications with Taxley. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A tax and financial management platform that helps individuals and businesses manage taxes, compliance, and financial records with ease.",
         "challenge": "The client needed a robust MySQL, Node JS, ReactJS architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using MySQL, Node JS, ReactJS, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -948,7 +948,7 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "My100Days",
-        "purpose": "Experience the future of mobile applications with My100Days. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "An AI-powered career assistant that guides professionals through job roles, responsibilities, and career challenges with personalized advice and insights.",
         "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1009,7 +1009,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "TriSchedule",
-        "purpose": "Experience the future of mobile applications with TriSchedule. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A health and performance tracking platform designed for athletes to monitor activities, training progress, fitness goals, and overall well-being.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1070,7 +1070,7 @@ export const portfolioDetailsData = [
         "techStack": "iOS Swift ",
         "link": "#",
         "client": "Wingman",
-        "purpose": "Experience the future of mobile applications with Wingman. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "An offline messaging app built for air travel, allowing passengers to connect and chat via Bluetooth without requiring internet or Wi-Fi.",
         "challenge": "The client needed a robust iOS Swift  architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using iOS Swift , integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1130,7 +1130,7 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Book a Builder",
-        "purpose": "Experience the future of mobile applications with Book a Builder. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A service marketplace where homeowners can post renovation projects and receive bids from verified contractors to find the best match.",
         "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1191,7 +1191,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Klubbrabatten",
-        "purpose": "Experience the future of mobile applications with Klubbrabatten. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A Swedish digital coupon platform offering exclusive discounts and deals from restaurants, retailers, and local businesses.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1252,7 +1252,7 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Roamaly",
-        "purpose": "Experience the future of mobile applications with Roamaly. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A convenient eSIM marketplace that helps travelers purchase, activate, and manage mobile data plans worldwide.",
         "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1313,7 +1313,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Sion Reservations",
-        "purpose": "Experience the future of mobile applications with Sion Reservations. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "An event and club reservation platform that simplifies booking, ticket management, and guest experiences for venues and attendees.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1373,7 +1373,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter, Node JS",
         "link": "#",
         "client": "City 2 City",
-        "purpose": "Experience the future of mobile applications with City 2 City. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A ride-booking platform that connects travelers with drivers for convenient and affordable intercity transportation.",
         "challenge": "The client needed a robust Flutter, Node JS architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, Node JS, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1434,7 +1434,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Drawn",
-        "purpose": "Experience the future of mobile applications with Drawn. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A modern dating platform designed to help people discover meaningful connections through engaging profiles and smart matching.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1492,7 +1492,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Somnexis",
-        "purpose": "Experience the future of mobile applications with Somnexis. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A digital Bible platform where users can read scripture, share reflections, and engage with a faith-driven community.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1552,7 +1552,7 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Traivend",
-        "purpose": "Experience the future of mobile applications with Traivend. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A crypto trading education platform that helps users learn market strategies, trading concepts, and investment fundamentals.",
         "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1612,7 +1612,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Offarat",
-        "purpose": "Experience the future of mobile applications with Offarat. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "An on-demand food delivery platform that connects customers with local restaurants for fast and convenient ordering.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1673,7 +1673,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Taxley",
-        "purpose": "Experience the future of mobile applications with Taxley. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A tax and financial management platform that helps individuals and businesses manage taxes, compliance, and financial records with ease.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1734,7 +1734,7 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Kolder Kid Universe",
-        "purpose": "Experience the future of mobile applications with Kolder Kid Universe. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A music streaming platform featuring songs, audio content, and interactive experiences designed for children and families.",
         "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1795,7 +1795,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://katesrealfood.com/",
         "client": "Kate's Real Food",
-        "purpose": "Experience the future of eCommerce with Kate's Real Food. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "An eCommerce platform offering organic snack bars and healthy food products made with real, natural ingredients.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1842,7 +1842,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://ludic.life/",
         "client": "Ludic Life",
-        "purpose": "Experience the future of eCommerce with Ludic Life. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A premium lifestyle eCommerce platform offering comfortable, fashionable everyday clothing, casual footwear, and chappals.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1889,7 +1889,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://ludic.global/",
         "client": "Ludic Global",
-        "purpose": "Experience the future of eCommerce with Ludic Global. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A global fashion eCommerce marketplace featuring a curated collection of international apparel, trendy shoes, and stylish chappals.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1936,7 +1936,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://kitchen.ludic.life/",
         "client": "Ludic Kitchen",
-        "purpose": "Experience the future of eCommerce with Ludic Kitchen. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A boutique eCommerce concept store specializing in functional culinary-lifestyle workwear, comfortable kitchen shoes, and lifestyle chappals.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1983,7 +1983,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://almostpeaceful.sg/",
         "client": "Almost Peaceful",
-        "purpose": "Experience the future of eCommerce with Almost Peaceful. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A premium lifestyle brand offering handcrafted incense and wellness products designed to create calm and mindful experiences.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2030,7 +2030,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://impetushealth.in/",
         "client": "Impetus Health",
-        "purpose": "Experience the future of eCommerce with Impetus Health. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A healthcare eCommerce platform providing trusted wellness, nutrition, and healthcare products for healthier living.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2077,7 +2077,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://roamaly.com/",
         "client": "Roamaly",
-        "purpose": "Experience the future of eCommerce with Roamaly. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A convenient eSIM marketplace that helps travelers purchase, activate, and manage mobile data plans worldwide.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2124,7 +2124,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://kidsposters.com.au/",
         "client": "Kids Posters",
-        "purpose": "Experience the future of eCommerce with Kids Posters. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "An online store offering educational and decorative posters designed to inspire creativity and learning for children.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2171,7 +2171,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.thepawcan.com/",
         "client": "The Pawcan",
-        "purpose": "Experience the future of eCommerce with The Pawcan. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A pet-focused eCommerce platform offering premium products, accessories, and essentials for pet owners.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2218,7 +2218,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://recreationbeauty.com/",
         "client": "Recreation Beauty",
-        "purpose": "Experience the future of eCommerce with Recreation Beauty. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A beauty and skincare brand offering high-quality products designed to enhance self-care and confidence.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2265,7 +2265,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.tangoswim.com.au/",
         "client": "Tango Swim",
-        "purpose": "Experience the future of eCommerce with Tango Swim. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "An online swimwear store featuring stylish, comfortable, and premium swimwear collections for modern lifestyles.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2312,7 +2312,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.tilitnyc.com/",
         "client": "Tilit",
-        "purpose": "Experience the future of eCommerce with Tilit. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A professional workwear platform providing high-quality apparel and gear for chefs, restaurants, and hospitality teams.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2359,7 +2359,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://honeystinger.com/",
         "client": "Honey Stinger",
-        "purpose": "Experience the future of eCommerce with Honey Stinger. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A sports nutrition brand offering energy snacks, gels, and supplements designed for athletes and active lifestyles.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2406,7 +2406,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.moanarose.com/",
         "client": "Moanarose",
-        "purpose": "Experience the future of eCommerce with Moanarose. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A fashion eCommerce platform offering stylish clothing and accessories inspired by modern trends and individuality.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2453,7 +2453,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://getprimenails.com/",
         "client": "Prime Nails",
-        "purpose": "Experience the future of eCommerce with Prime Nails. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A beauty brand specializing in premium press-on nails and nail care products for salon-quality results at home.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2500,7 +2500,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://thesourcebulkfoods.ie/",
         "client": "The Source Bulk Foods",
-        "purpose": "Experience the future of eCommerce with The Source Bulk Foods. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A sustainable grocery platform offering bulk food products, healthy ingredients, and eco-friendly shopping options.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2547,7 +2547,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://beadspoint.com/",
         "client": "Beadspoint",
-        "purpose": "Experience the future of eCommerce with Beadspoint. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "An online marketplace for beads, jewelry-making supplies, and crafting materials for creative professionals and hobbyists.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2594,7 +2594,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.vacurect-india.com/",
         "client": "Vacurect",
-        "purpose": "Experience the future of eCommerce with Vacurect. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A healthcare platform providing innovative medical devices and solutions designed to improve men's health and wellness.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2641,7 +2641,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://hydropeptide.com/",
         "client": "Hydro Peptide",
-        "purpose": "Experience the future of eCommerce with Hydro Peptide. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A premium skincare brand offering scientifically formulated products focused on skin health and anti-aging solutions.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2688,7 +2688,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://boxraw.com/",
         "client": "Boxraw",
-        "purpose": "Experience the future of eCommerce with Boxraw. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A boxing lifestyle and performance brand providing apparel, equipment, and accessories for fighters and athletes.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2735,7 +2735,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.revols.com/",
         "client": "Ultimate Ears",
-        "purpose": "Experience the future of eCommerce with Ultimate Ears. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "An audio technology platform offering premium custom-fit earphones and immersive listening experiences.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2782,7 +2782,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.ruumi.art/",
         "client": "Ruumi Art",
-        "purpose": "Experience the future of eCommerce with Ruumi Art. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "An online art marketplace connecting artists and collectors through unique contemporary artwork and creative products.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2829,7 +2829,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://ludic.life/",
         "client": "Ludic",
-        "purpose": "Experience the future of eCommerce with Ludic. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A wellness-focused brand offering innovative products that help users improve sleep quality, recovery, and daily performance.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2876,7 +2876,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://vegamour.com/",
         "client": "Vegamour",
-        "purpose": "Experience the future of eCommerce with Vegamour. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A clean beauty brand specializing in plant-based hair wellness products that support healthier, fuller-looking hair.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2923,7 +2923,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://shopify.kretoss.com/",
         "client": "Kretoss",
-        "purpose": "Experience the future of eCommerce with Kretoss. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A modern eCommerce platform showcasing digital solutions, technology services, and innovative business products.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2970,7 +2970,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.vitalityextracts.com/",
         "client": "Vitality",
-        "purpose": "Experience the future of eCommerce with Vitality. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A wellness brand offering essential oils, natural supplements, and health-focused products for everyday well-being.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3017,7 +3017,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.anveshan.farm/",
         "client": "Anveshan Farm Technologies",
-        "purpose": "Experience the future of eCommerce with Anveshan Farm Technologies. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A farm-to-table eCommerce platform offering traditionally crafted, natural food products sourced directly from farmers.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3064,7 +3064,7 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://anthemhomecomfort.com/",
         "client": "Anthem Home Comfort",
-        "purpose": "Experience the future of web applications with Anthem Home Comfort. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A trusted HVAC services platform providing heating, cooling, air quality, and home comfort solutions. The company helps homeowners maintain efficient and comfortable living environments year-round.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3111,7 +3111,7 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://freightplus.io/",
         "client": "Freight Plus",
-        "purpose": "Experience the future of web applications with Freight Plus. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "An AI-powered transportation management platform that helps businesses optimize logistics, reduce shipping costs, and gain real-time visibility across their supply chain operations.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3158,7 +3158,7 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://www.sobelconsult.com/",
         "client": "Sobel",
-        "purpose": "Experience the future of web applications with Sobel. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A professional consulting firm delivering strategic advisory, accounting, tax, and business solutions that help organizations improve performance and achieve sustainable growth.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3205,7 +3205,7 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://beepec.com/",
         "client": "Beepec",
-        "purpose": "Experience the future of web applications with Beepec. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A digital procurement and business marketplace connecting companies with suppliers, products, and services to streamline purchasing and operational efficiency.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3252,7 +3252,7 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://thesourcebulkfoods.com.au/",
         "client": "The Source Bulk Foods",
-        "purpose": "Experience the future of web applications with The Source Bulk Foods. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A sustainable food marketplace offering bulk groceries, healthy ingredients, and eco-friendly products. The platform promotes waste-free shopping and healthier lifestyles.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3299,7 +3299,7 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://easygold24.de/",
         "client": "EasyGold24",
-        "purpose": "Experience the future of web applications with EasyGold24. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "An online precious metals platform that enables customers to securely buy, sell, and invest in gold, silver, and other valuable assets.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3346,7 +3346,7 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://meridianpacificproperties.com/",
         "client": "Meridian Pacific Properties",
-        "purpose": "Experience the future of web applications with Meridian Pacific Properties. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A real estate investment and property management platform focused on acquiring, developing, and managing high-quality residential and commercial properties.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3393,7 +3393,7 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://thepenny.ch/",
         "client": "The Penny",
-        "purpose": "Experience the future of web applications with The Penny. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A premium hospitality and dining destination offering exceptional food, beverages, and memorable guest experiences in a sophisticated atmosphere.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3440,7 +3440,7 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://litehaus.co/",
         "client": "Litehaus",
-        "purpose": "Experience the future of web applications with Litehaus. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "An innovative architecture and design studio specializing in modern residential and commercial spaces. The platform showcases creative design solutions that combine functionality, aesthetics, and sustainability.",
         "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3487,7 +3487,7 @@ export const portfolioDetailsData = [
         "techStack": "Bigcommerce + React + Node",
         "link": "https://leebroom.com/",
         "client": "LEE BROOM",
-        "purpose": "Experience the future of eCommerce with LEE BROOM. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A luxury design and lighting brand showcasing award-winning furniture, lighting, and interior collections crafted for premium residential and commercial spaces.",
         "challenge": "The client needed a robust Bigcommerce + React + Node architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Bigcommerce + React + Node, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3534,7 +3534,7 @@ export const portfolioDetailsData = [
         "techStack": "Bigcommerce",
         "link": "https://goodgoodganjashop.com/",
         "client": "Good Good Ganja",
-        "purpose": "Experience the future of eCommerce with Good Good Ganja. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "An online cannabis marketplace offering premium cannabis products, edibles, concentrates, and accessories for adult consumers seeking quality and convenience.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3581,7 +3581,7 @@ export const portfolioDetailsData = [
         "techStack": "Bigcommerce",
         "link": "https://colormetrics.com",
         "client": "Color Matrics",
-        "purpose": "Experience the future of eCommerce with Color Matrics. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A professional hair color brand offering innovative root touch-up and hair coloring solutions that deliver salon-quality results from the comfort of home.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3628,7 +3628,7 @@ export const portfolioDetailsData = [
         "techStack": "Bigcommerce",
         "link": "https://dane-apparel.com/",
         "client": "Dane Apparel",
-        "purpose": "Experience the future of eCommerce with Dane Apparel. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A modern fashion and apparel platform offering stylish, high-quality clothing designed for comfort, confidence, and everyday wear.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3675,7 +3675,7 @@ export const portfolioDetailsData = [
         "techStack": "Bigcommerce",
         "link": "https://caramelcorn.com",
         "client": "Caramel",
-        "purpose": "Experience the future of eCommerce with Caramel. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A specialty snack brand offering handcrafted gourmet popcorn and sweet treats made with premium ingredients and unique flavors.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3722,7 +3722,7 @@ export const portfolioDetailsData = [
         "techStack": "Bigcommerce",
         "link": "https://intermat-corp.com/",
         "client": "Intermat",
-        "purpose": "Experience the future of eCommerce with Intermat. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "An industrial solutions company providing specialized materials, manufacturing support, and engineering services for commercial and industrial sectors.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3769,7 +3769,7 @@ export const portfolioDetailsData = [
         "techStack": "Bigcommerce",
         "link": "https://thelocketsisters.com/",
         "client": "Locket Sisters",
-        "purpose": "Experience the future of eCommerce with Locket Sisters. Engineered for high performance, scalability, and an intuitive shopping experience.",
+        "purpose": "A personalized jewelry brand creating meaningful lockets and keepsake accessories designed to celebrate memories, relationships, and special moments.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3816,7 +3816,7 @@ export const portfolioDetailsData = [
         "techStack": "HTML + CSS + JS",
         "link": "https://iiccrypto.com/",
         "client": "IIC Metaverse",
-        "purpose": "Experience the future of web applications with IIC Metaverse. Engineered for high performance, scalability, and an intuitive user experience.",
+        "purpose": "A blockchain-powered ecosystem that combines cryptocurrency, AI, and real-world assets to create a secure platform for trading, investing, and digital finance. It bridges innovative technology with practical real-world applications.",
         "challenge": "The client needed a robust HTML + CSS + JS architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using HTML + CSS + JS, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3863,7 +3863,7 @@ export const portfolioDetailsData = [
         "techStack": "HTML, CSS & Js",
         "link": "https://saveyourcapital.co",
         "client": "Save Your Capital",
-        "purpose": "Experience the future of digital presence with Save Your Capital. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "A trading discipline platform designed for intraday and options traders. It helps users reduce emotional trading, prevent overtrading, and protect capital through smart rules, alerts, and risk management tools.",
         "challenge": "The client needed a robust HTML, CSS & Js architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using HTML, CSS & Js, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3910,7 +3910,7 @@ export const portfolioDetailsData = [
         "techStack": "Web Design",
         "link": "https://kretoss.in/project/better-quest/home.html",
         "client": "Better Quest",
-        "purpose": "Experience the future of digital presence with Better Quest. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "A goal-driven personal development platform that helps users track progress, build productive habits, complete challenges, and stay accountable while achieving personal and professional goals.",
         "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Web Design, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3957,7 +3957,7 @@ export const portfolioDetailsData = [
         "techStack": "Web Design",
         "link": "https://kretoss.in/project/wedding/",
         "client": "Practical Information for International Guest",
-        "purpose": "Experience the future of digital presence with Practical Information for International Guest. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "A digital wedding platform that allows couples to share event details, schedules, photo galleries, RSVPs, and memorable moments with family and friends in one place.",
         "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Web Design, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -4004,7 +4004,7 @@ export const portfolioDetailsData = [
         "techStack": "Web Design",
         "link": "https://kretoss.in/project/atopic-diary/",
         "client": "Atopic Diary",
-        "purpose": "Experience the future of digital presence with Atopic Diary. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "A health tracking platform designed for individuals managing eczema and skin conditions. Users can monitor symptoms, track triggers, and gain insights to improve skin health.",
         "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Web Design, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -4051,7 +4051,7 @@ export const portfolioDetailsData = [
         "techStack": "Web Design",
         "link": "https://skincare-adaa1.web.app/",
         "client": "Skin Dao",
-        "purpose": "Experience the future of digital presence with Skin Dao. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "A personalized skincare platform that helps users understand their skin, discover suitable products, and follow customized skincare routines for healthier skin.",
         "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Web Design, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -4098,7 +4098,7 @@ export const portfolioDetailsData = [
         "techStack": "Web Design",
         "link": "https://kretoss.in/project/core_crms/",
         "client": "Core CRMS",
-        "purpose": "Experience the future of digital presence with Core CRMS. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "A comprehensive customer relationship management system that helps businesses manage leads, sales pipelines, customer interactions, and team performance from a centralized dashboard.",
         "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Web Design, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -4145,7 +4145,7 @@ export const portfolioDetailsData = [
         "techStack": "Hubspot",
         "link": "https://cleansteampros.com/",
         "client": "Clean Steam Pros",
-        "purpose": "Experience the future of digital presence with Clean Steam Pros. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "A professional car detailing and steam-cleaning platform offering deep interior cleaning, paint correction, ceramic coating, and vehicle protection services. Designed to help car owners maintain showroom-quality results.",
         "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Hubspot, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -4192,7 +4192,7 @@ export const portfolioDetailsData = [
         "techStack": "Hubspot",
         "link": "https://www.onefc.com/",
         "client": "One",
-        "purpose": "Experience the future of digital presence with One. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "A global martial arts and combat sports platform featuring MMA, Muay Thai, kickboxing, and grappling events. Fans can watch live fights, follow athletes, and stay updated with the latest sports content and events.",
         "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Hubspot, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -4239,7 +4239,7 @@ export const portfolioDetailsData = [
         "techStack": "Hubspot",
         "link": "https://www.aroconllc.com/",
         "client": "Aroconllc",
-        "purpose": "Experience the future of digital presence with Aroconllc. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "A trusted roofing and exterior construction company providing roofing, siding, gutter, window, and storm damage solutions for residential and commercial properties.",
         "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Hubspot, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -4286,7 +4286,7 @@ export const portfolioDetailsData = [
         "techStack": "Hubspot",
         "link": "https://www.intempt.com/",
         "client": "Intempt",
-        "purpose": "Experience the future of digital presence with Intempt. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "A customer engagement and marketing automation platform that helps businesses create personalized digital experiences, increase conversions, and improve customer retention.",
         "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Hubspot, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -4333,7 +4333,7 @@ export const portfolioDetailsData = [
         "techStack": "Magento",
         "link": "https://www.automaximizer.com/",
         "client": "Automaximizer",
-        "purpose": "Experience the future of digital presence with Automaximizer. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "An automotive dealership growth platform designed to help dealers increase sales, improve customer acquisition, and maximize business performance through data-driven solutions.",
         "challenge": "The client needed a robust Magento architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Magento, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -4380,7 +4380,7 @@ export const portfolioDetailsData = [
         "techStack": "Magento",
         "link": "https://www.thertastore.com/",
         "client": "The RTA Store",
-        "purpose": "Experience the future of digital presence with The RTA Store. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "An online marketplace specializing in ready-to-assemble cabinets and home improvement products, offering affordable and customizable solutions for kitchens and living spaces.",
         "challenge": "The client needed a robust Magento architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Magento, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -4427,7 +4427,7 @@ export const portfolioDetailsData = [
         "techStack": "Magento",
         "link": "https://wolverinegt.shop/",
         "client": "Hunters Unite",
-        "purpose": "Experience the future of digital presence with Hunters Unite. Engineered for stunning aesthetics, scalability, and an intuitive user experience.",
+        "purpose": "A performance automotive platform focused on high-quality vehicle upgrades, accessories, and solutions designed to enhance driving performance and style.",
         "challenge": "The client needed a robust Magento architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Magento, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [

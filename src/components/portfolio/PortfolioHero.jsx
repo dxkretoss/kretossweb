@@ -103,7 +103,7 @@ export default function PortfolioHero() {
     }, []);
 
     return (
-        <section className="relative min-h-[calc(100%-100px)] flex items-center bg-[#0a0a0a] overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-24" ref={heroRef}>
+        <section className="relative min-h-[calc(100vh-100px)] flex items-center bg-[#0a0a0a] overflow-x-hidden pt-12 pb-24 lg:pt-20 lg:pb-24" ref={heroRef}>
             {/* Dotted Grid SVG Background */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-60 ">
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -166,7 +166,7 @@ export default function PortfolioHero() {
 
                     {/* Right Content - Laptop Mockup */}
                     <div className="w-full lg:w-[50%] relative z-20 flex justify-center mt-12 lg:mt-0">
-                        <div className="hero-video-box relative w-[86%] sm:w-[90%] lg:w-full max-w-[600px] lg:mr-[-30px] mx-auto">
+                        <div className="hero-video-box relative w-[86%] sm:w-[90%] lg:w-full max-w-[500px] lg:mr-0 mx-auto">
                             {/* Background Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[linear-gradient(#44c7f6,#0037f0)] opacity-20 blur-[80px] -z-20 rounded-full pointer-events-none"></div>
 
@@ -200,7 +200,7 @@ export default function PortfolioHero() {
                                 </div>
 
                                 {/* Laptop Base */}
-                                <div className="relative w-[114%] -left-[7%] h-3 sm:h-5 bg-[#222] rounded-b-xl sm:rounded-b-2xl shadow-[0_20px_40px_rgba(0,0,0,0.8)] z-10 flex justify-center">
+                                <div className="relative w-[110%] -left-[5%] h-3 sm:h-5 bg-[#222] rounded-b-xl sm:rounded-b-2xl shadow-[0_20px_40px_rgba(0,0,0,0.8)] z-10 flex justify-center">
                                     <div className="w-[20%] h-[40%] bg-[#111] rounded-b-md mx-auto mt-0"></div>
                                     <div className="absolute top-0 left-0 w-full h-[1px] bg-white/10"></div>
                                 </div>
