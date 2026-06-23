@@ -20,6 +20,28 @@
   animation: marquee 20s linear infinite;
 }
 
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.animate-shine {
+  animation: shine 3s linear infinite;
+  background-size: 200% auto;
+}
+
+.hover-gradient-text:hover {
+  background: linear-gradient(135deg, rgb(68, 199, 246), rgb(0, 55, 240));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 @keyframes marquee-vertical {
   0% {
     transform: translateY(0%);
@@ -192,7 +214,7 @@ select,
 textarea {
   /* color: inherit; */
   font: inherit;
-  margin: 0;
+  /* margin: 0; */
 }
 
 button {
@@ -530,7 +552,7 @@ button,
 [type="reset"] {
   cursor: pointer;
   -webkit-appearance: button;
-  border: 0;
+  /* border: 0; */
 }
 
 .w-form {
@@ -6540,8 +6562,8 @@ body {
 
   .footer-menu-block,
   .footer-menu-block.social-box {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .success-message {

@@ -159,7 +159,7 @@ const PortfolioCard = ({ item }) => {
                         {/* Tags */}
                         <div className="flex flex-wrap gap-3 mb-6">
                             {item.tags?.map((tag, idx) => (
-                                <span key={idx} className={`bg-white/10 text-gray-300 border-[#FFFFFF1A] text-xs md:text-sm px-4 py-1.5 rounded-md border`}>
+                                <span key={idx} className={`bg-white/10 text-white border-[#FFFFFF1A] text-xs md:text-sm px-4 py-1.5 rounded-[4px] border`}>
                                     {tag}
                                 </span>
                             ))}
@@ -169,7 +169,7 @@ const PortfolioCard = ({ item }) => {
                         <h3 className={`text-2xl sm:text-[32px] font-bold text-white mb-3 sm:mb-4 leading-tight`}>
                             {item.title}
                         </h3>
-                        <p className={`text-[#DADADA] text-sm sm:text-base md:text-[19px] mb-6 sm:mb-8 leading-relaxed`}>
+                        <p className={`text-white text-sm sm:text-base md:text-[19px] mb-6 sm:mb-8 leading-relaxed`}>
                             {item.description}
                         </p>
                     </div>

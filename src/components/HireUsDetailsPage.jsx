@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { FastAverageColor } from 'fast-average-color';
 import { hireUsData } from '../data/hireus';
 import { FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { ArrowRight } from 'lucide-react';
 
 export default function HireUsDetailsPage() {
     const { roleSlug } = useParams();
@@ -15,6 +16,9 @@ export default function HireUsDetailsPage() {
     const [activePortfolioIndex, setActivePortfolioIndex] = useState(0);
     const [showFeatures, setShowFeatures] = useState(false);
     const [isHourlyPricing, setIsHourlyPricing] = useState(false);
+    const [showAllPerfectFor, setShowAllPerfectFor] = useState(false);
+    const [requestType, setRequestType] = useState('project');
+    const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
     const imgRef = useRef(null);
     const [bgColor, setBgColor] = useState('#0f1115');
@@ -73,6 +77,15 @@ export default function HireUsDetailsPage() {
         }
     }, [role?.portfolio, activePortfolioIndex]);
 
+    useEffect(() => {
+        const images = role?.images || [];
+        if (!images || images.length <= 1) return;
+        const timer = setInterval(() => {
+            setCurrentImageIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
+        }, 5000);
+        return () => clearInterval(timer);
+    }, [role?.images]);
+
     if (!role) {
         return (
             <div className="min-h-screen flex items-center justify-center bg-[#fafcff]">
@@ -90,17 +103,93 @@ export default function HireUsDetailsPage() {
         "Source code included",
         "Revisions included"
     ];
+    const faqList = role.faqs || [
+        {
+            question: `Can you work on my existing Project?`,
+            answer: `Yes, absolutely! We can easily take over your existing codebase to fix bugs, refactor code, add new features, or perform performance optimizations. We will perform a brief initial code review to understand the current structure and ensure a smooth continuation.`
+        },
+        {
+            question: "Do you provide backend development as well?",
+            answer: "Yes, we offer full-stack development services. We can design databases (MongoDB, PostgreSQL, MySQL), build secure APIs (REST, GraphQL), and develop backend servers using Node.js, Python, or PHP to power your web applications."
+        },
+        {
+            question: "Can you integrate payment gateways into my app?",
+            answer: "Yes, we have extensive experience integrating major payment processors like Stripe, PayPal, Razorpay, Apple Pay, Google Pay, and custom merchant accounts with secure checkout flows and webhooks."
+        },
+        {
+            question: "Do you offer AI or advanced features?",
+            answer: "Yes, we can build custom AI integrations (OpenAI ChatGPT, Google Gemini APIs, Vector databases), real-time chat systems, push notifications, background tasks, maps, and subscription models."
+        },
+        {
+            question: "How do you handle source code ownership?",
+            answer: "Upon project completion and final payment, you will have 100% ownership of the source code. We also sign an NDA (Non-Disclosure Agreement) before starting to protect your intellectual property."
+        }
+    ];
+
+    const renderTechTerms = () => {
+        const title = (role.title || '').toLowerCase();
+
+        if (title.includes('android')) {
+            return (
+                <>
+                    Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>mobile applications</strong>, <strong>Android apps</strong>, and <strong>custom software</strong> tailored to their unique requirements.
+                </>
+            );
+        }
+        if (title.includes('ios') || title.includes('apple')) {
+            return (
+                <>
+                    Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>iOS applications</strong>, <strong>iPhone & iPad apps</strong>, and <strong>custom mobile software</strong> tailored to their unique requirements.
+                </>
+            );
+        }
+        if (title.includes('flutter') || title.includes('react native') || title.includes('mobile app')) {
+            return (
+                <>
+                    Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>cross-platform mobile apps</strong>, <strong>hybrid applications</strong>, and <strong>custom software</strong> tailored to their unique requirements.
+                </>
+            );
+        }
+        if (title.includes('shopify') || title.includes('magento') || title.includes('woocommerce') || title.includes('wordpress')) {
+            return (
+                <>
+                    Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>eCommerce stores</strong>, <strong>responsive websites</strong>, and <strong>custom CMS solutions</strong> tailored to their unique requirements.
+                </>
+            );
+        }
+        if (title.includes('laravel') || title.includes('php') || title.includes('node') || title.includes('python')) {
+            return (
+                <>
+                    Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>backend systems</strong>, <strong>secure APIs</strong>, and <strong>custom server software</strong> tailored to their unique requirements.
+                </>
+            );
+        }
+        return (
+            <>
+                Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>web applications</strong>, <strong>eCommerce platforms</strong>, and <strong>custom software</strong> tailored to their unique requirements.
+            </>
+        );
+    };
+
+    const getCleanTechName = () => {
+        const title = role.title || '';
+        let tech = title.replace(/^Hire\s+/i, '').replace(/\s+Developers?$/i, '').replace(/\s+Web\s+Developer$/i, '');
+        if (tech.toLowerCase() === 'ios app') {
+            tech = 'iOS';
+        }
+        return tech;
+    };
 
     return (
         <div className="bg-[#fafcff] min-h-screen py-8 md:py-12">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px] flex flex-col lg:flex-row gap-12">
+            <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-[1440px] flex flex-col lg:flex-row justify-evenly gap-12">
 
                 {/* Left Content Area */}
-                <div className="w-full lg:w-[65%]">
+                <div className="w-full lg:w-[60%]">
 
                     {/* Breadcrumbs */}
                     <div className="flex items-center gap-2 text-[13px] text-gray-500 font-medium mb-6">
-                        <Link to="/" className="hover:text-blue-600 transition-colors"><svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg></Link>
+                        <Link to="/" className="hover:text-blue-600 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" data-track-tag="home_icon"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m1.25 6.798 5.907-4.725a1.35 1.35 0 0 1 1.686 0l5.907 4.725M2.6 5.786v7.087c0 .746.604 1.35 1.35 1.35h8.1a1.35 1.35 0 0 0 1.35-1.35V5.786M8 9.468v1.717" vector-effect="non-scaling-stroke"></path></svg></Link>
                         {role.breadcrumbs?.map((crumb, idx) => (
                             <React.Fragment key={idx}>
                                 <span>&gt;</span>
@@ -114,44 +203,64 @@ export default function HireUsDetailsPage() {
                     </div>
 
                     {/* Gig Title */}
-                    <h1 className="text-3xl sm:text-[32px] leading-tight font-bold text-[#222325] mb-6">
+                    <h1 className="text-3xl sm:text-[28px] leading-tight font-semibold text-[#222325] mb-6 capitalize">
                         {role.gigTitle}
                     </h1>
 
                     {/* Seller Profile Bar */}
-                    <div className="flex items-center gap-4 mb-6">
-                        <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200 shrink-0">
-                            <img src={role.seller?.avatar} alt={role.seller?.name} className="w-full h-full object-cover" />
-                        </div>
-                        <div className="flex flex-col gap-1.5">
-                            <div className="flex items-center gap-2">
-                                <span className="font-bold text-[#222325] text-[15px]">{role.seller?.name}</span>
-                                <span className="text-gray-400 text-sm">|</span>
-                                <span className="text-gray-600 text-[14px]">{role.seller?.title}</span>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="w-15 h-15 rounded-full overflow-hidden bg-gray-200 shrink-0">
+                                <img src={role.seller?.avatar} alt={role.seller?.name} className="w-full h-full object-cover" />
                             </div>
-                            <div className="flex items-center gap-1.5">
-                                <div className="flex text-[#222325]">
-                                    <FaStar className="w-4 h-4" />
+                            <div className="flex flex-col gap-1">
+                                <div className="flex items-center gap-2">
+                                    <span className="font-bold text-[#222325] text-[15px]">{role.seller?.name}</span>
+                                    <span className="text-gray-400 text-sm">|</span>
+                                    <span className="text-gray-600 text-[14px]">{role.seller?.title}</span>
                                 </div>
-                                <span className="font-bold text-[#222325] text-[15px]">{role.seller?.rating}</span>
-                                <a href="#reviews" className="text-gray-500 text-[14px] underline cursor-pointer hover:text-blue-600">({role.seller?.reviews} reviews)</a>
+                                <div className="flex items-center gap-1.5">
+                                    <div className="flex text-[#ffb33e] gap-0.5">
+                                        {[...Array(5)].map((_, i) => (
+                                            <FaStar key={i} className="w-3.5 h-3.5" />
+                                        ))}
+                                    </div>
+                                    <span className="font-bold text-[#222325] text-[15px] ml-1">{role.seller?.rating}</span>
+                                    <a href="#reviews" className="text-gray-500 text-[14px] underline cursor-pointer hover:text-blue-600">({role.seller?.reviews} reviews)</a>
+                                </div>
                             </div>
                         </div>
+                        {role.seller?.ordersInQueue !== undefined && (
+                            <div className="flex items-center gap-2 px-3.5 py-1.5 bg-[#f4f6f9] border border-gray-100 rounded-full text-[#62646a] text-xs sm:text-[13px] font-semibold self-start sm:self-auto shadow-sm">
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                                </span>
+                                <span>{role.seller?.ordersInQueue} Project ongoing</span>
+                            </div>
+                        )}
                     </div>
 
                     {/* Image Slider */}
-                    <div className="mb-12 relative rounded-[4px] overflow-hidden group border border-gray-200 shadow-sm">
-                        <div className="relative h-[300px] sm:h-[400px] md:h-[450px]">
-                            <img src={images[currentImageIndex]} alt="Gig Thumbnail" className="w-full h-full object-cover" />
+                    <div className="mb-8 relative rounded-[4px] overflow-hidden group border border-[#efeff0]">
+                        <div className="relative h-[300px] sm:h-[400px] md:h-[500px] bg-[#f5f5f5]">
+                            {images.map((img, idx) => (
+                                <img
+                                    key={idx}
+                                    src={img}
+                                    alt={`Gig Thumbnail ${idx + 1}`}
+                                    className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out ${currentImageIndex === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                                />
+                            ))}
                         </div>
-                        <button onClick={() => setCurrentImageIndex(prev => prev === 0 ? images.length - 1 : prev - 1)} className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-gray-50">
+                        <button onClick={() => setCurrentImageIndex(prev => prev === 0 ? images.length - 1 : prev - 1)} className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-gray-800 opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-gray-50 z-20">
                             <FaChevronLeft className="w-4 h-4 -ml-0.5" />
                         </button>
-                        <button onClick={() => setCurrentImageIndex(prev => prev === images.length - 1 ? 0 : prev + 1)} className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-gray-50">
+                        <button onClick={() => setCurrentImageIndex(prev => prev === images.length - 1 ? 0 : prev + 1)} className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-gray-800 opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-gray-50 z-20">
                             <FaChevronRight className="w-4 h-4 -mr-0.5" />
                         </button>
                         {/* Mini Thumbnails */}
-                        <div className="flex justify-center gap-2 mt-4 absolute bottom-4 w-full">
+                        <div className="flex justify-center gap-2 mt-4 absolute bottom-4 w-full z-20">
                             {images.map((_, idx) => (
                                 <button key={idx} onClick={() => setCurrentImageIndex(idx)} className={`w-2 h-2 rounded-full transition-all ${currentImageIndex === idx ? 'bg-white w-4' : 'bg-white/50 hover:bg-white/80'}`}></button>
                             ))}
@@ -159,165 +268,128 @@ export default function HireUsDetailsPage() {
                     </div>
 
                     {/* About This Gig */}
-                    <div className="mb-12">
-                        <h2 className="text-[20px] font-bold text-[#222325] mb-6">About this gig</h2>
+                    <div className="mb-8">
+                        <h2 className="text-[20px] font-bold text-[#222325] mb-4">About This Service</h2>
                         <div className="text-[#62646a] text-[16px] leading-[1.7] space-y-4">
                             {!role.aboutGig?.intro2 && (
                                 <p className="font-semibold text-[#222325] bg-[#fff6cc] inline-block px-1">10+ Years Expert from Kretoss Technology!!</p>
                             )}
-                            <p>{role.aboutGig?.intro}</p>
-                            {role.aboutGig?.intro2 && <p>{role.aboutGig.intro2}</p>}
+                            {role.aboutGig?.intro && (
+                                <p dangerouslySetInnerHTML={{ __html: role.aboutGig.intro }} />
+                            )}
+                            {role.aboutGig?.intro2 && (
+                                <p dangerouslySetInnerHTML={{ __html: role.aboutGig.intro2 }} />
+                            )}
 
-                            <h4 className="font-bold text-[#222325] mt-6 mb-2">{role.aboutGig?.whatYouGetTitle || 'What You Get:'}</h4>
-                            <ul className="list-disc pl-5 space-y-2">
-                                {role.aboutGig?.whatYouGet?.map((point, i) => (
-                                    <li key={i}>{point}</li>
-                                ))}
-                            </ul>
-
-                            <h4 className="font-bold text-[#222325] mt-6 mb-2">{role.aboutGig?.whyChooseUsTitle || 'Why Choose Us:'}</h4>
-                            <ul className="list-disc pl-5 space-y-2">
-                                {role.aboutGig?.whyChooseUs?.map((point, i) => (
-                                    <li key={i}>{point}</li>
-                                ))}
-                            </ul>
-
-                            {role.aboutGig?.technologies && (
-                                <div className="mt-6">
-                                    <h4 className="font-bold text-[#222325] mb-2">{role.aboutGig.technologies.title}</h4>
-                                    <ul className="list-none space-y-1">
-                                        {role.aboutGig.technologies.list.map((tech, i) => (
-                                            <li key={i}><strong className="text-[#222325]">{tech.label}:</strong> {tech.value}</li>
+                            {/* Why Choose Us */}
+                            {role.aboutGig?.whyChooseUs && (
+                                <div className="pt-2">
+                                    <h4 className="font-bold text-[#222325] text-[16px] mb-2">{role.aboutGig?.whyChooseUsTitle || 'Why Choose Me?'}</h4>
+                                    <ul className="space-y-1.5 pl-4">
+                                        {role.aboutGig.whyChooseUs.map((point, i) => (
+                                            <li key={i} className="flex items-start gap-2 text-[15px] text-[#62646a]">
+                                                <span className="text-gray-400 mt-1 shrink-0 text-[12px]">•</span>
+                                                <span>{point}</span>
+                                            </li>
                                         ))}
                                     </ul>
                                 </div>
                             )}
 
-                            {role.aboutGig?.perfectFor && (
-                                <p className="mt-6"><strong className="text-[#222325]">Perfect For:</strong> {role.aboutGig.perfectFor}</p>
+                            {/* Services / What You Get */}
+                            {role.aboutGig?.whatYouGet && (
+                                <div className="pt-2">
+                                    <h4 className="font-bold text-[#222325] text-[16px] mb-2">{role.aboutGig?.whatYouGetTitle || 'Services:'}</h4>
+                                    <ul className="space-y-1.5 pl-4">
+                                        {role.aboutGig.whatYouGet.map((point, i) => (
+                                            <li key={i} className="flex items-start gap-2 text-[15px] text-[#62646a]">
+                                                <span className="text-gray-400 mt-1 shrink-0 text-[12px]">•</span>
+                                                <span>{point}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             )}
 
                             {role.aboutGig?.note && (
-                                <p className="mt-6 font-medium text-[#222325]">{role.aboutGig.note}</p>
+                                <p className="mt-4 text-[#62646a] text-[15px]">{role.aboutGig.note}</p>
                             )}
-
-                            <p className="mt-4">{role.aboutGig?.availability || "Ready to build a platform that generates real revenue? Let's create an experience that converts from day one!"}</p>
-                            <p className="mt-4 font-bold text-[#222325]">Message me first to discuss your specific needs!</p>
                         </div>
                     </div>
 
                     {/* Metadata Grid */}
-                    <div className="border-t border-b border-gray-200 py-6 mb-12">
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    {/* <div className="bg-[#0f0f0f] rounded-[8px] p-4 mb-8 shadow-lg">
+                        <h2 className="text-[20px] font-bold text-white mb-6 border-b border-gray-300 py-2">Tech Stack & Capabilities</h2>
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
                             {role.metadata?.platformType && (
                                 <div>
-                                    <h4 className="text-[#62646a] text-[15px] mb-2">Platform type</h4>
-                                    <p className="text-[#222325] font-medium text-[15px]">{role.metadata.platformType}</p>
+                                    <h4 className="text-[#a0aab2] uppercase tracking-wider text-[12px] font-bold mb-2">Platform type</h4>
+                                    <p className="text-white font-semibold text-[15px]">{role.metadata.platformType}</p>
                                 </div>
                             )}
                             {role.metadata?.programmingLanguage && (
                                 <div>
-                                    <h4 className="text-[#62646a] text-[15px] mb-2">Programming language</h4>
-                                    <p className="text-[#222325] font-medium text-[15px]">{role.metadata.programmingLanguage}</p>
+                                    <h4 className="text-[#a0aab2] uppercase tracking-wider text-[12px] font-bold mb-2">Programming language</h4>
+                                    <p className="text-white font-semibold text-[15px]">{role.metadata.programmingLanguage}</p>
                                 </div>
                             )}
                             {role.metadata?.websiteFeatures && (
                                 <div>
-                                    <h4 className="text-[#62646a] text-[15px] mb-2">Features / Purpose</h4>
-                                    <p className="text-[#222325] font-medium text-[15px]">{role.metadata.websiteFeatures}</p>
+                                    <h4 className="text-[#a0aab2] uppercase tracking-wider text-[12px] font-bold mb-2">Features / Purpose</h4>
+                                    <p className="text-white font-semibold text-[15px]">{role.metadata.websiteFeatures}</p>
                                 </div>
                             )}
                             {role.metadata?.expertise && (
                                 <div>
-                                    <h4 className="text-[#62646a] text-[15px] mb-2">Expertise</h4>
-                                    <p className="text-[#222325] font-medium text-[15px]">{role.metadata.expertise}</p>
+                                    <h4 className="text-[#a0aab2] uppercase tracking-wider text-[12px] font-bold mb-2">Expertise</h4>
+                                    <p className="text-white font-semibold text-[15px]">{role.metadata.expertise}</p>
                                 </div>
                             )}
                             {role.metadata?.frameworks && (
                                 <div>
-                                    <h4 className="text-[#62646a] text-[15px] mb-2">Frameworks</h4>
-                                    <p className="text-[#222325] font-medium text-[15px]">{role.metadata.frameworks}</p>
+                                    <h4 className="text-[#a0aab2] uppercase tracking-wider text-[12px] font-bold mb-2">Frameworks</h4>
+                                    <p className="text-white font-semibold text-[15px]">{role.metadata.frameworks}</p>
                                 </div>
                             )}
                             {role.metadata?.tools && (
                                 <div>
-                                    <h4 className="text-[#62646a] text-[15px] mb-2">Tools</h4>
-                                    <p className="text-[#222325] font-medium text-[15px]">{role.metadata.tools}</p>
-                                </div>
-                            )}
-                            {role.metadata?.plugins && (
-                                <div>
-                                    <h4 className="text-[#62646a] text-[15px] mb-2">Plugins / Core Tech</h4>
-                                    <div className="flex flex-wrap gap-1 mt-1">
-                                        {role.metadata.plugins.map((skill, i, arr) => (
-                                            <span key={i} className="text-[#222325] text-[15px] font-medium">{skill}{i < arr.length - 1 ? ', ' : ''}</span>
-                                        ))}
-                                    </div>
+                                    <h4 className="text-[#a0aab2] uppercase tracking-wider text-[12px] font-bold mb-2">Tools</h4>
+                                    <p className="text-white font-semibold text-[15px]">{role.metadata.tools}</p>
                                 </div>
                             )}
                         </div>
-                    </div>
+                        {role.metadata?.plugins && (
+                            <div className="mt-8 pt-6 border-t border-white/10">
+                                <h4 className="text-[#a0aab2] uppercase tracking-wider text-[12px] font-bold mb-3">Plugins / Core Tech</h4>
+                                <div className="flex flex-wrap gap-2">
+                                    {role.metadata.plugins.map((skill, i) => (
+                                        <span key={i} className="text-white text-[13px] font-semibold bg-white/10 px-3 py-1.5 rounded-md hover:bg-[#0037f0] hover:text-white transition-colors cursor-default border border-white/5">
+                                            {skill}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </div> */}
 
-                    {/* Reviews Section */}
-                    <div id="reviews" className="mb-12 scroll-mt-28">
-                        <h2 className="text-[20px] font-bold text-[#222325] mb-6">Reviews</h2>
-                        <div className="space-y-4">
-                            {role.reviews?.map((review) => (
-                                <div key={review.id} className="border border-gray-200 rounded-[8px] p-6 bg-white shadow-sm">
-                                    <div className="flex items-center gap-3 mb-4">
-                                        <div className="w-10 h-10 rounded-full bg-[#ffccb6] flex items-center justify-center text-[#222325] font-bold text-[16px]">
-                                            {review.name.charAt(0).toUpperCase()}
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-[#222325] text-[15px]">{review.name}</h4>
-                                            <div className="flex items-center gap-2 text-[13px] text-[#62646a]">
-                                                <img src={review.country === 'Singapore' ? "https://flagcdn.com/w20/sg.png" : "https://flagcdn.com/w20/us.png"} alt="Country" className="w-4 h-auto" />
-                                                <span>{review.country}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center gap-2 mb-3">
-                                        <div className="flex text-[#222325]">
-                                            {[...Array(Math.floor(review.rating))].map((_, i) => <FaStar key={i} className="w-3.5 h-3.5" />)}
-                                        </div>
-                                        <span className="font-bold text-[#222325] text-[14px]">{review.rating}</span>
-                                        <span className="text-gray-400 text-sm">|</span>
-                                        <span className="text-[#62646a] text-[14px]">{review.date}</span>
-                                    </div>
-                                    <p className="text-[#222325] text-[15px] leading-[1.6] mb-4">
-                                        {review.comment}
-                                    </p>
-                                    <div className="flex items-center gap-6 text-[#222325] text-[14px] font-medium border-t border-gray-100 pt-4">
-                                        <div>
-                                            <span className="text-[#62646a] block text-[13px] mb-0.5">Price</span>
-                                            {review.price}
-                                        </div>
-                                        <div className="w-px h-8 bg-gray-200"></div>
-                                        <div>
-                                            <span className="text-[#62646a] block text-[13px] mb-0.5">Duration</span>
-                                            {review.duration}
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
 
                     {/* Portfolio / Recent Work */}
-                    <div className="mb-12">
-                        <h2 className="text-[20px] font-bold text-[#222325] mb-6">My Portfolio</h2>
-                        {role.portfolio && role.portfolio.length > 0 && (
-                            <div className="border border-[#22252e] rounded-[12px] shadow-lg">
+                    {role.portfolio && role.portfolio.length > 0 && (
+                        <div className="mb-8">
+                            <h2 className="text-[20px] font-bold text-[#222325] mb-4">My Portfolio</h2>
+                            <div className="rounded-[8px] shadow-lg">
                                 {/* Featured View */}
-                                <div className="flex flex-col lg:flex-row  rounded-[8px] overflow-hidden border border-[#2a2d36] items-stretch">
-                                    <div className="w-full lg:w-[60%] relative flex items-center justify-center self-stretch">
-                                        <div className="w-full h-full bg-[#1a1d24]">
-                                            <img ref={imgRef} src={role.portfolio[activePortfolioIndex]?.image} alt={role.portfolio[activePortfolioIndex]?.title} className="w-full h-full object-cover" crossOrigin="anonymous" />
+                                <div className="flex flex-col xl:flex-row gap-3 rounded-[8px] p-2 transition-colors duration-500 h-full" style={{ background: bgColor }}>
+
+                                    <div className="flex flex-col lg:flex-row gap-2 rounded-[8px] overflow-hidden items-stretch">
+                                        <div className="w-full lg:w-[60%] relative flex items-center justify-center self-stretch">
+                                            <div className="w-full h-full bg-[#1a1d24]">
+                                                <img ref={imgRef} src={role.portfolio[activePortfolioIndex]?.image} alt={role.portfolio[activePortfolioIndex]?.title} className="w-full h-full object-cover" crossOrigin="anonymous" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="w-full lg:w-[40%]  p-6 md:p-8 flex flex-col justify-between self-stretch relative overflow-hidden transition-colors duration-500"
-                                        style={{
-                                            background: `
+                                        <div className="w-full lg:w-[40%]  p-4 flex flex-col justify-between self-stretch relative overflow-hidden transition-colors duration-500"
+                                            style={{
+                                                background: `
                                                 repeating-linear-gradient(
                                                 to right,
                                                 transparent,
@@ -331,47 +403,156 @@ export default function HireUsDetailsPage() {
                                                 rgba(0,0,0,0.85) 100%
                                                 )
                                             `,
-                                        }}
-                                    >
-                                        <div>
-                                            <p className="text-[#9ca3af] text-[15px] mb-2">From: {role.portfolio[activePortfolioIndex]?.date}</p>
-                                            <h3 className="text-[26px] font-bold text-white leading-tight mb-4">{role.portfolio[activePortfolioIndex]?.title}</h3>
-                                            <p className="text-[#9ca3af] text-[16px] leading-[1.6] mb-8">
-                                                {role.portfolio[activePortfolioIndex]?.description}
-                                            </p>
-                                        </div>
-
-                                        <div className="flex items-center gap-12">
+                                            }}
+                                        >
                                             <div>
-                                                <p className="text-[#9ca3af] text-[14px] mb-1 font-medium">Project cost</p>
-                                                <p className="font-bold text-white text-[16px]">{role.portfolio[activePortfolioIndex]?.cost}</p>
+                                                <span className="inline-block bg-white/10 text-white/90 text-[12px] rounded-[4px] px-2 py-0.5 mb-4 backdrop-blur-sm border border-white/10">From: {role.portfolio[activePortfolioIndex]?.date}</span>
+                                                <h3 className="text-[26px] font-bold text-white leading-tight mb-4">{role.portfolio[activePortfolioIndex]?.title}</h3>
+                                                <p className="text-white text-[14px] leading-[1.6] mb-8">
+                                                    {role.portfolio[activePortfolioIndex]?.description}
+                                                </p>
                                             </div>
-                                            <div>
-                                                <p className="text-[#9ca3af] text-[14px] mb-1 font-medium">Project duration</p>
-                                                <p className="font-bold text-white text-[16px]">{role.portfolio[activePortfolioIndex]?.duration}</p>
+
+                                            <div className="flex items-center gap-12">
+                                                <div>
+                                                    <p className="text-[#9ca3af] text-[14px] mb-1 font-medium">Project cost</p>
+                                                    <p className="font-bold text-white text-[16px]">{role.portfolio[activePortfolioIndex]?.cost}</p>
+                                                </div>
+                                                <div>
+                                                    <p className="text-[#9ca3af] text-[14px] mb-1 font-medium">Project duration</p>
+                                                    <p className="font-bold text-white text-[16px]">{role.portfolio[activePortfolioIndex]?.duration}</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        )}
 
-                        {/* Thumbnails */}
-                        <div className="flex flex-wrap gap-3 mt-4">
-                            {role.portfolio.map((item, idx) => (
-                                <button
-                                    key={idx}
-                                    onClick={() => setActivePortfolioIndex(idx)}
-                                    className={`rounded-[4px] overflow-hidden border-2 transition-all w-24 h-16 ${activePortfolioIndex === idx ? 'border-[#44c7f6]' : 'border-transparent opacity-50 hover:opacity-100'}`}
-                                >
-                                    <img src={item.image} alt="Thumbnail" className="w-full rounded-[4px] h-full object-cover" />
-                                </button>
+                            {/* Thumbnails */}
+                            <div className="flex flex-wrap gap-3 mt-4">
+                                {role.portfolio.map((item, idx) => (
+                                    <button
+                                        key={idx}
+                                        onClick={() => setActivePortfolioIndex(idx)}
+                                        className={`rounded-[4px] overflow-hidden border-2 transition-all w-24 h-16 ${activePortfolioIndex === idx ? 'border-[#44c7f6]' : 'border-transparent opacity-50 hover:opacity-100'}`}
+                                    >
+                                        <img src={item.image} alt="Thumbnail" className="w-full rounded-[4px] h-full object-cover" />
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
+
+
+                    {/* Reviews Section */}
+                    <div id="reviews" className="mb-8 scroll-mt-28">
+                        <div className="flex items-center justify-between mb-4 pb-4 border-b-2 border-gray-100">
+                            <h2 className="text-[20px] font-bold text-[#222325] m-0">Client Reviews</h2>
+                            <div className="flex items-center gap-2">
+                                <span className="font-bold text-[#222325] text-[16px]">{role.seller?.rating}</span>
+                                <div className="flex text-[#ffb33e]">
+                                    {[...Array(5)].map((_, i) => <FaStar key={i} className="w-4 h-4" />)}
+                                </div>
+                                <span className="text-gray-500 text-sm">({role.seller?.reviews})</span>
+                            </div>
+                        </div>
+                        <div className="space-y-5">
+                            {role.reviews?.map((review) => (
+                                <div key={review.id} className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                                    <div className="flex justify-between items-start mb-4">
+                                        <div className="flex items-center gap-4">
+                                            {review.avatar ? (
+                                                <img src={review.avatar} alt={review.name} className="w-12 h-12 rounded-full object-cover shadow-sm" />
+                                            ) : (
+                                                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#44c7f6] to-[#0037f0] flex items-center justify-center text-white font-bold text-[18px] shadow-sm">
+                                                    {review.name.charAt(0).toUpperCase()}
+                                                </div>
+                                            )}
+                                            <div>
+                                                <h4 className="font-bold text-[#222325] text-[15px] capitalize">{review.name}</h4>
+                                                <div className="flex items-center gap-2 text-[13px] text-gray-500 mt-0.5">
+                                                    <img src={review.country === 'Singapore' ? "https://flagcdn.com/w20/sg.png" : "https://flagcdn.com/w20/us.png"} alt="Country" className="w-4 h-auto shadow-sm" />
+                                                    <span>{review.country}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='flex  flex-col items-end'>
+                                            <div className="flex items-center gap-1.5 text-[#ffb33e]">
+                                                {[...Array(Math.floor(review.rating))].map((_, i) => <FaStar key={i} className="w-3.5 h-3.5" />)}
+                                                <span className="font-bold text-[#222325] text-[14px] ml-1">{review.rating}/5</span>
+                                            </div>
+
+                                            <span className="text-gray-400 text-[13px] font-medium hidden sm:flex items-center gap-1.5">
+                                                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                                {review.date}
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div className='border border-gray-200 mb-4' />
+                                    <p className="text-[#62646a] text-[15px] leading-[1.6]  italic">
+                                        "{review.comment}"
+                                    </p>
+                                    {/* <div className="flex items-center gap-6 text-[#222325] text-[14px] font-semibold border-t border-gray-100 pt-4">
+                                        <div>
+                                            <span className="text-gray-400 block text-[12px] uppercase tracking-wider font-bold mb-0.5">Price</span>
+                                            {review.price}
+                                        </div>
+                                        <div className="w-px h-8 bg-gray-200"></div>
+                                        <div>
+                                            <span className="text-gray-400 block text-[12px] uppercase tracking-wider font-bold mb-0.5">Duration</span>
+                                            {review.duration}
+                                        </div>
+                                    </div> */}
+                                </div>
                             ))}
                         </div>
                     </div>
 
+
+                    {/* FAQ Section */}
+                    <div className="mb-8 scroll-mt-28">
+                        <h2 className="text-[20px] font-bold text-[#222325] mb-4">FAQ</h2>
+                        <div>
+                            {faqList.map((faq, idx) => {
+                                const isOpen = openFaqIndex === idx;
+                                return (
+                                    <div
+                                        key={idx}
+                                        className="border-b border-gray-200"
+                                    >
+                                        <button
+                                            type="button"
+                                            onClick={() => setOpenFaqIndex(isOpen ? null : idx)}
+                                            className="w-full flex items-center justify-between text-left py-4 font-semibold text-[#404145]  transition-colors text-[16px]"
+                                            style={{ fontWeight: 600, fontSize: '16px' }}
+                                        >
+                                            <span>{faq.question}</span>
+                                            <svg
+                                                className={`w-4 h-4 text-gray-400 transition-transform duration-200 shrink-0 ml-4 ${isOpen ? 'rotate-180 text-[#0037f0]' : ''}`}
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke="currentColor"
+                                            >
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </button>
+                                        <div
+                                            className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[300px] pb-4' : 'max-h-0'}`}
+                                        >
+                                            <div className="text-[#62646a] text-[15px] leading-[1.6]">
+                                                {faq.answer}
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+
                     {/* Tags */}
-                    <div className="mb-12">
+                    <div className="mb-8">
                         <h2 className="text-[20px] font-bold text-[#222325] mb-4">Related tags</h2>
                         <div className="flex flex-wrap gap-3">
                             {(role.tags || []).map((tag, i) => (
@@ -383,219 +564,169 @@ export default function HireUsDetailsPage() {
                     </div>
 
                 </div>
+                <div className="w-full lg:w-[30%] relative">
+                    <div className="sticky top-5 flex flex-col gap-3">
 
-                {/* Right Sticky Pricing Widget */}
-                <div className="w-full lg:w-[35%] relative">
-                    <div className="sticky top-28 bg-white border border-[#e4e5e7] rounded-[4px] overflow-hidden shadow-sm">
-                        {isHourlyPricing ? (
-                            <div className="flex flex-col h-full">
-                                <div className="border-b border-[#e4e5e7] bg-[#fafafa] p-6 pb-4">
-                                    <h3 className="text-[20px] font-bold text-[#222325] mb-1">Hire Hourly</h3>
-                                    <div className="text-[28px] font-black text-[#222325]">${role.hourlyPrice || '25'}<span className="text-[16px] font-normal text-[#62646a]">/hr</span></div>
-                                </div>
-                                <div className="p-6">
-                                    <p className="text-[#62646a] text-[15px] leading-[1.6] mb-6">Hire a dedicated {role.title} on a flexible hourly basis. Perfect for ongoing projects, maintenance, or tasks that need continuous attention.</p>
-
-                                    <button
-                                        onClick={() => setIsModalOpen(true)}
-                                        className="w-full text-white py-3 px-4 rounded-[4px] transition-all duration-300 text-[16px] font-semibold flex items-center justify-center gap-2"
-                                        style={{ background: "linear-gradient(rgb(68, 199, 246), rgb(0, 55, 240))" }}
-                                    >
-                                        Hire Hourly
-                                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                                    </button>
-                                </div>
-
-                                <div className="border-t border-[#e4e5e7] p-4 text-center bg-[#fafafa] mt-auto">
-                                    <button
-                                        onClick={() => setIsHourlyPricing(false)}
-                                        className="w-full text-[#0037f0] font-bold text-[14px] hover:underline transition-all"
-                                    >
-                                        Back to Fixed Packages
-                                    </button>
-                                </div>
+                        {/* Box 1: Project-Based Developer (Fixed Cost / Contract) */}
+                        <div className="bg-white border border-gray-200 rounded-[8px] shadow-sm overflow-hidden flex flex-col">
+                            {/* Header Bar */}
+                            <div className="relative py-2.5 bg-gray-100 border-b border-gray-200 flex items-center justify-center px-12">
+                                <h3 className="font-bold text-[#222325] text-[14px] text-center">
+                                    Hire Project Based Developer
+                                </h3>
                             </div>
-                        ) : (
-                            <>
-                                {/* Tabs */}
-                                <div className="flex border-b border-[#e4e5e7]">
-                                    <button
-                                        onClick={() => setActiveTab('basic')}
-                                        className={`relative flex-1 py-4 text-[15px] font-bold transition-colors ${activeTab === 'basic' ? 'bg-white text-transparent bg-clip-text bg-gradient-to-r from-[rgb(68,199,246)] to-[rgb(0,55,240)]' : 'text-[#62646a] hover:text-[#222325] bg-[#fafafa]'}`}
-                                    >
-                                        Basic
-                                        {activeTab === 'basic' && <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-[rgb(68,199,246)] to-[rgb(0,55,240)]"></div>}
-                                    </button>
-                                    <button
-                                        onClick={() => setActiveTab('standard')}
-                                        className={`relative flex-1 py-4 text-[15px] font-bold transition-colors border-l border-r border-[#e4e5e7] ${activeTab === 'standard' ? 'bg-white text-transparent bg-clip-text bg-gradient-to-r from-[rgb(68,199,246)] to-[rgb(0,55,240)]' : 'text-[#62646a] hover:text-[#222325] bg-[#fafafa]'}`}
-                                    >
-                                        Standard
-                                        {activeTab === 'standard' && <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-[rgb(68,199,246)] to-[rgb(0,55,240)]"></div>}
-                                    </button>
-                                    <button
-                                        onClick={() => setActiveTab('premium')}
-                                        className={`relative flex-1 py-4 text-[15px] font-bold transition-colors ${activeTab === 'premium' ? 'bg-white text-transparent bg-clip-text bg-gradient-to-r from-[rgb(68,199,246)] to-[rgb(0,55,240)]' : 'text-[#62646a] hover:text-[#222325] bg-[#fafafa]'}`}
-                                    >
-                                        Premium
-                                        {activeTab === 'premium' && <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-[rgb(68,199,246)] to-[rgb(0,55,240)]"></div>}
-                                    </button>
-                                </div>
-
-                                {/* Tab Content */}
-                                <div className="p-6">
-                                    <div className="flex justify-between items-start mb-4">
-                                        <h3 className="text-[16px] font-bold text-[#222325]">{role.plans?.[activeTab]?.name || `${activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} Package`}</h3>
-                                        <span className="text-[20px] font-medium text-[#222325]">{role.plans?.[activeTab]?.price || '$199'}</span>
-                                    </div>
-                                    <p className="text-[#62646a] text-[15px] leading-[1.6] mb-4">
-                                        {role.plans?.[activeTab]?.description || `Get a fully functional ${role.title} application with complete features.`}
+                            <div className="p-5 bg-white flex flex-col flex-grow">
+                                <div className="mb-4 space-y-3">
+                                    <p className="text-[#404145] text-[14px] leading-[1.6]">
+                                        <strong className="text-[#222325] mr-1.5">{role.plans?.[activeTab]?.name || `${activeTab.toUpperCase()}`}</strong>
+                                        {renderTechTerms()}
                                     </p>
+                                </div>
 
-                                    <div className="flex items-center gap-4 text-[#222325] text-[14px] font-bold mb-5">
-                                        <div className="flex items-center gap-1.5">
-                                            <svg className="w-4 h-4 text-[#62646a]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                                            {role.plans?.[activeTab]?.deliveryTime || '14 Days Delivery'}
-                                        </div>
-                                        <div className="flex items-center gap-1.5">
-                                            <svg className="w-4 h-4 text-[#62646a]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
-                                            Unlimited Revisions
-                                        </div>
-                                    </div>
-                                    <div className="mb-6">
-                                        <button
-                                            onClick={() => setShowFeatures(!showFeatures)}
-                                            className="flex items-center justify-between w-full text-left font-bold text-[#62646a] text-[15px] mb-3"
-                                        >
-                                            What's Included
-                                            <svg className={`w-4 h-4 transition-transform ${showFeatures ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                                            </svg>
-                                        </button>
-                                        {showFeatures && (
-                                            <ul className="space-y-2 mt-2">
-                                                {featuresList.map((feature, idx) => (
-                                                    <li key={idx} className="flex items-start gap-2 text-[#62646a] text-[14px]">
-                                                        <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="url(#check-gradient)">
-                                                            <defs>
-                                                                <linearGradient id="check-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                                                    <stop offset="0%" stopColor="rgb(68, 199, 246)" />
-                                                                    <stop offset="100%" stopColor="rgb(0, 55, 240)" />
-                                                                </linearGradient>
-                                                            </defs>
-                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
-                                                        </svg>
-                                                        <span>{feature}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        )}
-                                    </div>
+                                {/* Continue Button */}
+                                <button
+                                    onClick={() => {
+                                        setRequestType('project');
+                                        setIsModalOpen(true);
+                                    }}
+                                    className="relative w-full bg-black hover:bg-neutral-900 text-white py-2.5 rounded-[4px] text-[14px] font-bold flex items-center justify-center transition-all shadow-sm group"
+                                >
+                                    Continue
+                                    <ArrowRight className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </button>
+                            </div>
 
-                                    <button
-                                        onClick={() => setIsModalOpen(true)}
-                                        className="w-full text-white py-3 px-4 rounded-[4px] transition-all duration-300 text-[16px] font-semibold flex items-center justify-center gap-2 border border-[#f8f8f8]"
-                                        style={{
-                                            background: "linear-gradient(rgb(68, 199, 246), rgb(0, 55, 240))",
-                                            fontSize: "16px",
-                                            fontWeight: 600,
-                                        }}
-                                    >
-                                        Continue
-                                        <svg
-                                            className="w-4 h-4"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth={2}
-                                                d="M9 5l7 7-7 7"
+                        </div>
+
+                        {/* Box 2: Hourly-Based Developer (Flexible Resource) */}
+                        <div className="bg-white border border-gray-200 rounded-[8px] shadow-sm overflow-hidden flex flex-col">
+                            {/* Header Bar */}
+                            <div className="relative py-2.5 bg-gray-100 border-b border-gray-200 flex items-center justify-center px-12">
+                                <h3 className="font-bold text-[#222325] text-[14px] text-center">
+                                    Hire Hourly / Flexible Developer
+                                </h3>
+                            </div>
+                            <div className="p-5 bg-white flex flex-col flex-grow">
+                                <div className="mb-4">
+                                    <div className="flex items-center gap-2.5 mb-3">
+                                        {role.seller?.avatar ? (
+                                            <img
+                                                src={role.seller.avatar}
+                                                alt={role.seller.name}
+                                                className="w-9 h-9 rounded-full object-cover shrink-0 border border-gray-200"
                                             />
-                                        </svg>
-                                    </button>
+                                        ) : (
+                                            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#44c7f6] to-[#0037f0] flex items-center justify-center text-white font-bold text-xs shrink-0 shadow-sm">
+                                                {role.seller?.name?.charAt(0).toUpperCase()}
+                                            </div>
+                                        )}
+                                        <h4 className="font-bold text-[#222325] text-[14px]">Need flexibility when hiring?</h4>
+                                    </div>
+                                    <p className="text-[#404145] text-[14px] leading-relaxed">
+                                        {`Hire dedicated ${getCleanTechName()} developers on an hourly, part-time, or full-time basis for development, maintenance, support, and feature enhancements.`}
+                                    </p>
+                                </div>
 
-                                </div>
-                                <div className="border-t border-[#e4e5e7] p-4 text-center bg-[#fafafa]">
-                                    <button
-                                        onClick={() => setIsHourlyPricing(true)}
-                                        className="text-[#62646a] hover:text-[#0037f0] font-bold text-[14px] transition-colors"
-                                    >
-                                        Want to hire dedicated developer hourly basis?
-                                    </button>
-                                </div>
-                            </>
-                        )}
+                                {/* Continue Button */}
+                                <button
+                                    onClick={() => {
+                                        setRequestType('hourly');
+                                        setIsModalOpen(true);
+                                    }}
+                                    className="relative w-full bg-black hover:bg-neutral-900 text-white py-2.5 rounded-[4px] text-[14px] font-bold flex items-center justify-center transition-all shadow-sm group"
+                                >
+                                    Continue
+                                    <ArrowRight className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </button>
+                            </div>
+
+                            {/* Guarantee Policy */}
+                            <div className="border-t border-gray-200 p-4 bg-gray-50/50 flex items-center justify-center gap-2">
+                                <svg className="w-4 h-4 text-gray-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                                <span className="text-[12px] text-gray-600 font-semibold text-center leading-normal">
+                                    If not satisfied with the work, get a full <a href="#" className='underline'>refund.</a>
+                                </span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
             </div>
 
             {/* Modal */}
-            {isModalOpen && (
-                <div className="fixed inset-0 bg-[#0a1520]/60 backdrop-blur-sm z-[9999] flex items-center justify-center p-4">
-                    <div className="bg-white border border-[#44c7f6]/20 rounded-[8px] w-full max-w-2xl p-6 md:p-8 relative max-h-[90vh] overflow-y-auto shadow-2xl">
-                        <button
-                            onClick={() => setIsModalOpen(false)}
-                            className="absolute top-6 right-6 text-gray-500 hover:text-[#0037f0] transition-colors"
-                        >
-                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
-                        </button>
+            {
+                isModalOpen && (
+                    <div className="fixed inset-0 bg-[#0a1520]/60 backdrop-blur-sm z-[9999] flex items-center justify-center p-4">
+                        <div className="bg-white border border-[#44c7f6]/20 rounded-[8px] w-full max-w-2xl p-6 md:p-8 relative max-h-[90vh] overflow-y-auto shadow-2xl">
+                            <button
+                                onClick={() => setIsModalOpen(false)}
+                                className="absolute top-6 right-6 text-gray-500 hover:text-[#0037f0] transition-colors"
+                            >
+                                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                            </button>
 
-                        <h2 className="text-3xl font-black text-[#222325] mb-2">Let's Discuss Your Project</h2>
-                        <p className="text-[#62646a] mb-8">Fill out the form below and we'll get back to you shortly.</p>
+                            <h2 className="text-3xl font-black text-[#222325] mb-2">
+                                {requestType === 'hourly' ? "Request Hourly Developer Offer" : "Request Project-Based Offer"}
+                            </h2>
+                            <p className="text-[#62646a] mb-8">
+                                {requestType === 'hourly'
+                                    ? "Fill out the form below to hire this developer on an hourly basis."
+                                    : "Fill out the form below to get a fixed-cost proposal for your project."}
+                            </p>
 
-                        <form onSubmit={handleFormSubmit} className="space-y-6">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label className="block text-sm font-bold text-[#62646a] mb-2">Name<span className="text-red-500 ml-1">*</span></label>
-                                    <input type="text" name="name" value={formData.name} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Name" />
+                            <form onSubmit={handleFormSubmit} className="space-y-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label className="block text-sm font-bold text-[#62646a] mb-2">Name<span className="text-red-500 ml-1">*</span></label>
+                                        <input type="text" name="name" value={formData.name} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Name" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-bold text-[#62646a] mb-2">Email<span className="text-red-500 ml-1">*</span></label>
+                                        <input type="email" name="email" value={formData.email} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Email" />
+                                    </div>
                                 </div>
-                                <div>
-                                    <label className="block text-sm font-bold text-[#62646a] mb-2">Email<span className="text-red-500 ml-1">*</span></label>
-                                    <input type="email" name="email" value={formData.email} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Email" />
-                                </div>
-                            </div>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label className="block text-sm font-bold text-[#62646a] mb-2">Phone<span className="text-red-500 ml-1">*</span></label>
-                                    <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Number" />
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label className="block text-sm font-bold text-[#62646a] mb-2">Phone<span className="text-red-500 ml-1">*</span></label>
+                                        <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Number" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-bold text-[#62646a] mb-2">Estimated Budget<span className="text-red-500 ml-1">*</span></label>
+                                        <select name="budget" value={formData.budget} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] focus:outline-none focus:border-[#1dbf73] transition-colors appearance-none">
+                                            <option value="" disabled className="text-gray-400">Select Budget Range</option>
+                                            <option value="<$5k">&lt;$5k</option>
+                                            <option value="$5k-$10k">$5k - $10k</option>
+                                            <option value="$10k-$25k">$10k - $25k</option>
+                                            <option value="$25k+">$25k+</option>
+                                        </select>
+                                    </div>
                                 </div>
+
                                 <div>
-                                    <label className="block text-sm font-bold text-[#62646a] mb-2">Estimated Budget<span className="text-red-500 ml-1">*</span></label>
-                                    <select name="budget" value={formData.budget} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] focus:outline-none focus:border-[#1dbf73] transition-colors appearance-none">
-                                        <option value="" disabled className="text-gray-400">Select Budget Range</option>
-                                        <option value="<$5k">&lt;$5k</option>
-                                        <option value="$5k-$10k">$5k - $10k</option>
-                                        <option value="$10k-$25k">$10k - $25k</option>
-                                        <option value="$25k+">$25k+</option>
-                                    </select>
+                                    <label className="block text-sm font-bold text-[#62646a] mb-2">Project Summary<span className="text-red-500 ml-1">*</span></label>
+                                    <textarea name="summary" value={formData.summary} onChange={handleInputChange} required rows="4" className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors resize-none" placeholder="Describe your project briefly..."></textarea>
                                 </div>
-                            </div>
 
-                            <div>
-                                <label className="block text-sm font-bold text-[#62646a] mb-2">Project Summary<span className="text-red-500 ml-1">*</span></label>
-                                <textarea name="summary" value={formData.summary} onChange={handleInputChange} required rows="4" className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors resize-none" placeholder="Describe your project briefly..."></textarea>
-                            </div>
-
-                            <div className="pt-4 flex justify-end">
-                                <button type="submit"
-                                    className="w-full text-white py-3 px-4 rounded-[4px] transition-all duration-300 text-[16px] font-semibold flex items-center justify-center gap-2 border border-[#f8f8f8]"
-                                    style={{
-                                        background: "linear-gradient(rgb(68, 199, 246), rgb(0, 55, 240))",
-                                        fontSize: "16px",
-                                        fontWeight: 600,
-                                    }}>
-                                    Submit Request
-                                </button>
-                            </div>
-                        </form>
+                                <div className="pt-4 flex justify-end">
+                                    <button type="submit"
+                                        className="w-full text-white py-3 px-4 rounded-[4px] transition-all duration-300 text-[16px] font-semibold flex items-center justify-center gap-2 border border-[#f8f8f8]"
+                                        style={{
+                                            background: "linear-gradient(rgb(68, 199, 246), rgb(0, 55, 240))",
+                                            fontSize: "16px",
+                                            fontWeight: 600,
+                                        }}>
+                                        Submit Request
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div>
-            )}
-        </div>
+                )
+            }
+        </div >
     );
 }

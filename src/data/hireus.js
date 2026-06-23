@@ -1,4 +1,3 @@
-// Static hireUsData containing explicit payloads for all technologies
 export const hireUsData = [
     {
         "slug": "hire-android-developers",
@@ -9,14 +8,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Android Developers"
         ],
-        "gigTitle": "I will do Android Developers development, redesign Android Developers application, custom mobile app design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Android App Developer",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 183,
             "ordersInQueue": 2,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -25,204 +24,202 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Looking for a reliable mobile app developer to turn your idea into a powerful app?",
-            "intro2": "With 4+ years of hands-on experience and 400+ successfully completed projects, I specialize in developing custom mobile app for both Android and iOS using Flutter, delivering fast performance, clean UI, and reliable functionality.\n\nI help startups, businesses, and entrepreneurs transform ideas into fully functional mobile apps built for real-world use. Whether youre launching a new product or need a custom app built from scratch, I provide end-to-end mobile app development support from planning and development to testing and launch.",
-            "whatYouGetTitle": "Industry I Served:",
+            "intro": "Looking for a <strong>professional mobile app developer</strong> who can deliver high-quality apps for both Android and iOS? At <strong>Kretoss Technology</strong>, we specialize in creating powerful, scalable, and user-friendly applications that help your business grow.",
+            "intro2": "Whether you need a social networking platform, an eCommerce store, or a finance and productivity app, we turn your ideas into reality.",
+            "whatYouGetTitle": "What We Offer",
             "whatYouGet": [
-                "Custom App",
-                "Real estate App",
-                "Food Delivery",
-                "E-commerce & Marketplace",
-                "Booking",
-                "Social Chat App",
-                "Business App",
-                "Travel & Tourism",
-                "Restaurant App",
-                "Social Media app",
-                "Custom Delivery",
-                "Health & Fitness"
+                "Custom App Development: Tailored solutions for startups and enterprises.",
+                "Cross-Platform Apps: Expert Flutter developer for Android and iOS.",
+                "Backend & API Integration: Seamless, secure, and performance-driven.",
+                "Specialized Apps: Social media apps, eCommerce, fintech, taxi booking, fitness, and more.",
+                "Ongoing Support: Updates, maintenance, and long-term reliability."
             ],
-            "whyChooseUsTitle": "Why Choose Me?",
+            "whyChooseUsTitle": "Why Choose Us?",
             "whyChooseUs": [
-                "Expert Mobile App Developer.",
-                "Clean, Scalable Code.",
-                "Clear communication and regular updates."
+                "Experienced iOS app developer and Android developer team.",
+                "100+ apps delivered across multiple industries.",
+                "Proven expertise in building scalable and secure mobile solutions.",
+                "Client-focused approach - your success is our top priority."
             ],
             "technologies": {
-                "title": "My Tech Toolbox:",
+                "title": "Android Technology Stack",
                 "list": [
                     {
-                        "label": "Frontend technology",
-                        "value": "Flutter, React Native, React.js, Next.js"
+                        "label": "Programming Languages",
+                        "value": "Kotlin, Java"
                     },
                     {
-                        "label": "Backend technology",
-                        "value": "Django/Node.js, Express.js, Python"
+                        "label": "Frameworks & SDKs",
+                        "value": "Android SDK, Jetpack, Retrofit, Room"
+                    },
+                    {
+                        "label": "Backend Integration",
+                        "value": "Node.js, Laravel, Python, Firebase"
                     },
                     {
                         "label": "Database",
-                        "value": "MongoDB, MySQL"
+                        "value": "SQLite, MySQL, MongoDB, Firebase Firestore"
                     }
                 ]
             },
-            "perfectFor": null,
-            "note": null,
-            "availability": "Ready to start your project? Message me now to place your order."
+            "perfectFor": [
+                "Startups",
+                "Enterprise Businesses",
+                "eCommerce Applications",
+                "Food Delivery Apps",
+                "Healthcare Platforms",
+                "FinTech Applications",
+                "Education Platforms",
+                "Travel Applications",
+                "Marketplace Platforms",
+                "On-Demand Service Apps"
+            ],
+            "note": "All Android applications are developed with scalability, performance, and security in mind while following Google's latest development standards.",
+            "availability": "Our Android developers are available for hourly, part-time, full-time, and dedicated team engagements with flexible timezone support."
         },
         "metadata": {
-            "platformType": "Hybrid",
-            "websiteFeatures": "Chat, Delivery, Restaurant, Taxi, Booking, Health & Fitness, Education, E-commerce, Sports, Trading",
-            "expertise": "Cross-browser/Device compatibility, Performance, Security, Design, Ads & monetization, Data storage, API integration",
-            "programmingLanguage": "Dart, JavaScript, Python, React Native",
-            "frameworks": "Flutter",
-            "tools": "Firebase",
-            "plugins": []
+            "platformType": "Native Android Applications",
+            "websiteFeatures": "Authentication, Push Notifications, GPS Tracking, Payments, Messaging, Booking Systems, Analytics, Social Login, Admin Panel, Real-Time Features",
+            "expertise": "Android Architecture, Performance Optimization, Security, API Integration, App Store Deployment, Maintenance & Support",
+            "programmingLanguage": "Kotlin, Java",
+            "frameworks": "Android SDK, Jetpack Compose, Retrofit, Room",
+            "tools": "Firebase, Android Studio, Google Maps API, Crashlytics",
+            "plugins": [
+                "Firebase",
+                "Google Analytics",
+                "Push Notifications",
+                "Payment Gateway",
+                "Social Login"
+            ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=32",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
-                "comment": "I'm genuinely impressed with the overall experience and the final result delivered. From the very beginning, the communication was clear, professional, and reassuring. The seller took the time to understand my business needs and translated them into a Android Developers solution that truly represents my brand.",
+                "comment": "Excellent Android development service. The team delivered a high-performance Android application with a clean user interface, smooth functionality, and excellent communication throughout the project. They understood our requirements perfectly and delivered beyond expectations.",
                 "price": "$1,000 - $2,500",
-                "duration": "7 days",
+                "duration": "12 days",
                 "helpful": {
-                    "yes": 12,
+                    "yes": 15,
                     "no": 0
                 }
             },
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=33",
                 "country": "United States",
-                "rating": 4.8,
+                "rating": 4.9,
                 "date": "1 month ago",
-                "comment": "He was very good at adding custom features to my Android Developers project. It took him a few days to get started, but once he did, he was very fast and eager to help. I reached back out and told him I would pay him more for extra features and he completed them perfectly.",
-                "price": "Up to $1,000",
-                "duration": "4 days",
+                "comment": "Very skilled Android developers. They implemented advanced features including push notifications, payment integration, and real-time functionality. The app performance is outstanding and the code quality was excellent.",
+                "price": "$2,500 - $5,000",
+                "duration": "18 days",
                 "helpful": {
-                    "yes": 5,
+                    "yes": 11,
                     "no": 1
                 }
             },
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=34",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
-                "comment": "Really impressed with the final result. The app looks clean, modern, and exactly what I needed to represent my coaching business. The process was smooth, and the seller handled everything professionally. Definitely worth the investment for top-tier Android Developers development.",
+                "comment": "The Android app exceeded our expectations. The UI is modern, the user experience is seamless, and the app performs flawlessly across multiple devices. Highly recommended for anyone looking to hire professional Android developers.",
                 "price": "$1,000 - $2,500",
-                "duration": "2 days",
+                "duration": "10 days",
                 "helpful": {
-                    "yes": 8,
+                    "yes": 9,
                     "no": 0
                 }
             }
         ],
-        "tags": [
-            "android developers",
-            "development",
-            "design",
-            "custom software"
-        ],
-        "portfolio": [
-            {
-                "image": "/portfolio/custom/portfolio_palzea-widget.webp",
-                "title": "Palzea Widget",
-                "date": "February 2025",
-                "description": "A secure P2P crypto transfer solution that enables seamless digital asset transactions and wallet integrations.",
-                "tags": [
-                    "Design Services",
-                    "+6"
-                ],
-                "cost": "$2500-$5000",
-                "duration": "3-6 months"
-            },
-            {
-                "image": "/portfolio/custom/portfolio_dreamload.webp",
-                "title": "Dreamload",
-                "date": "January 2025",
-                "description": "An AI-powered sports platform that enhances athlete performance, league management, and fan engagement through data-driven insights.",
-                "tags": [
-                    "E-Commerce",
-                    "+4"
-                ],
-                "cost": "$1500-$3000",
-                "duration": "1-3 months"
-            },
-            {
-                "image": "/portfolio/custom/portfolio_phoenix.webp",
-                "title": "PhoenixFC",
-                "date": "November 2024",
-                "description": "The official digital platform of Phoenix FC, showcasing club history, teams, matches, achievements, and community activities.",
-                "tags": [
-                    "Enterprise",
-                    "+8"
-                ],
-                "cost": "$5000-$10000",
-                "duration": "6+ months"
-            }
-        ],
         "skills": [
-            "Android Developers",
-            "Mobile Development",
-            "UI/UX Design",
-            "API Integration"
+            "Android Development",
+            "Kotlin",
+            "Java",
+            "Android SDK",
+            "Firebase",
+            "REST API Integration",
+            "Google Play Store",
+            "Mobile UI/UX Design",
+            "Push Notifications",
+            "SQLite"
+        ],
+        "tags": [
+            "hire android developers",
+            "android app development",
+            "android developer",
+            "kotlin developer",
+            "java developer",
+            "android application",
+            "native mobile app",
+            "google play store"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Android Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$299",
+                "name": "Android Starter",
+                "description": "Small Android application with core functionality and responsive user interface.",
+                "deliveryTime": "7 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Native Android Application",
+                    "Up to 5 Screens",
+                    "Basic UI Design",
+                    "API Integration",
+                    "Source Code Included"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Android Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$799",
+                "name": "Android Professional",
+                "description": "Complete Android application with custom design, integrations, and advanced features.",
+                "deliveryTime": "14 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom Android Development",
+                    "Advanced UI/UX",
+                    "Firebase Integration",
+                    "Push Notifications",
+                    "API Integrations",
+                    "Performance Optimization",
+                    "Source Code Included"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Android Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$1999",
+                "name": "Enterprise Android Solution",
+                "description": "Enterprise-grade Android application with scalable architecture and premium support.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
-                    "Priority Support"
+                    "Enterprise Architecture",
+                    "Advanced Security",
+                    "Complex Integrations",
+                    "Admin Dashboard",
+                    "Real-Time Features",
+                    "Priority Support",
+                    "Full Source Code Ownership"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire Android Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$30/hr",
+            "description": "Hire dedicated Android developers on an hourly, part-time, or full-time basis for development, maintenance, upgrades, and ongoing support.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Android Developer",
+                "Direct Communication",
+                "Flexible Hiring Model",
+                "Daily/Weekly Reporting",
+                "NDA Protection",
+                "Code Ownership",
+                "Agile Development",
+                "Timezone Overlap Support",
+                "Long-Term Maintenance",
+                "Priority Technical Support"
             ]
         }
     },
@@ -235,14 +232,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire IOS App Developers"
         ],
-        "gigTitle": "I will do IOS App Developers development, redesign IOS App Developers application, custom mobile app design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for iOS",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 136,
             "ordersInQueue": 8,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -251,38 +248,85 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built IOS App Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Looking to hire <strong>experienced iOS developers</strong> for your startup, enterprise application, or custom mobile solution? Our iOS developers build <strong>secure, scalable, and high-performance native iOS applications</strong> using <strong>Swift, Objective-C, and Apple's latest frameworks</strong>.",
+            "intro2": "With years of experience in the <strong>Apple ecosystem development</strong>, our team specializes in creating feature-rich mobile apps. From concept to deployment, we deliver <strong>intuitive user experiences, optimized performance, and scalable mobile architectures</strong> tailored to your business goals.",
+            "whatYouGetTitle": "iOS Development Services",
             "whatYouGet": [
-                "Custom IOS App Developers design & complete development",
-                "Professional mobile app with performance optimization",
-                "Cross-platform compatible with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Custom iOS App Development",
+                "Native iPad & iPhone Applications",
+                "Enterprise iOS Solutions",
+                "iOS UI/UX Design",
+                "App Modernization",
+                "Apple App Store Deployment",
+                "App Maintenance",
+                "API Integration",
+                "Push Notifications",
+                "Core Data & SQLite",
+                "In-App Purchases",
+                "Location-Based Services"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our iOS Developers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "Experienced iOS Development Team",
+                "Dedicated Full-Time Developers",
+                "Swift & Objective-C Expertise",
+                "Scalable Architecture",
+                "Agile Development Process",
+                "Transparent Communication",
+                "Daily & Weekly Progress Reports",
+                "Flexible Hiring Models"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "iOS Technology Stack",
+                "list": [
+                    {
+                        "label": "Programming Languages",
+                        "value": "Swift, Objective-C"
+                    },
+                    {
+                        "label": "Frameworks & SDKs",
+                        "value": "iOS SDK, SwiftUI, CocoaTouch, CoreData"
+                    },
+                    {
+                        "label": "Backend Integration",
+                        "value": "Node.js, Laravel, Python, Firebase"
+                    },
+                    {
+                        "label": "Database",
+                        "value": "SQLite, CoreData, Firebase Firestore"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "Startups",
+                "Enterprise Businesses",
+                "eCommerce Applications",
+                "Healthcare Platforms",
+                "FinTech Applications",
+                "On-Demand Service Apps"
+            ],
+            "note": "All iOS applications are developed following Apple's strict Human Interface Guidelines for App Store approval.",
+            "availability": "Our iOS developers are available for hourly, part-time, full-time, and dedicated team engagements with flexible timezone support."
         },
         "metadata": {
-            "platformType": "Mobile App (iOS/Android)",
-            "websiteFeatures": "Authentication, Database integration, Real-time updates, Admin panel, API integration",
+            "platformType": "Native iOS Applications",
+            "websiteFeatures": "Authentication, Push Notifications, GPS Tracking, Payments, Admin Panel, Real-Time Features",
+            "expertise": "iOS Architecture, Performance Optimization, App Store Deployment, Maintenance & Support",
+            "programmingLanguage": "Swift, Objective-C",
+            "frameworks": "iOS SDK, SwiftUI",
+            "tools": "Xcode, Firebase, TestFlight",
             "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
+                "Apple Pay",
+                "Push Notifications",
+                "Firebase",
+                "Google Analytics"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=35",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -297,6 +341,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=36",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -311,6 +356,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=37",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -324,10 +370,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "ios app developers",
-            "development",
-            "design",
-            "custom software"
+            "hire ios developer",
+            "ios app development",
+            "swift developer",
+            "iphone app",
+            "native ios"
         ],
         "portfolio": [
             {
@@ -368,62 +415,63 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "IOS App Developers",
-            "Mobile Development",
-            "UI/UX Design",
-            "API Integration"
+            "iOS Development",
+            "Swift",
+            "Objective-C",
+            "Xcode",
+            "SwiftUI",
+            "CoreData",
+            "REST API",
+            "App Store"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard IOS App Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$349",
+                "name": "iOS Starter",
+                "description": "Small iOS application with core functionality and responsive UI.",
+                "deliveryTime": "7 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Native iOS App",
+                    "Up to 5 Screens",
+                    "API Integration"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete IOS App Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$899",
+                "name": "iOS Professional",
+                "description": "Complete iOS app with custom design, integrations, and advanced features.",
+                "deliveryTime": "14 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom Development",
+                    "Firebase Integration",
+                    "Push Notifications",
+                    "API Integrations"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise IOS App Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$2199",
+                "name": "Enterprise iOS Solution",
+                "description": "Enterprise-grade iOS application with scalable architecture.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
-                    "Priority Support"
+                    "Enterprise Architecture",
+                    "Advanced Security",
+                    "Complex Integrations",
+                    "Admin Dashboard",
+                    "Source Code Ownership"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire IOS App Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$35/hr",
+            "description": "Hire dedicated iOS developers on an hourly or full-time basis for your Apple app ecosystem.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated iOS Developer",
+                "Direct Communication",
+                "Daily Reporting",
+                "NDA Protection",
+                "Code Ownership",
+                "Priority Support"
             ]
         }
     },
@@ -436,14 +484,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Flutter Developers"
         ],
-        "gigTitle": "I will do Flutter Developers development, redesign Flutter Developers application, custom mobile app design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Flutter",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 93,
             "ordersInQueue": 12,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -452,38 +500,79 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built Flutter Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Need a beautiful, natively compiled application for <strong>mobile, web, and desktop from a single codebase</strong>? Our <strong>Flutter developers</strong> build visually stunning and lightning-fast cross-platform apps that save you time and money.",
+            "intro2": "Our team leverages the power of <strong>Dart and Flutter's expansive widget library</strong> to craft applications with custom UI, smooth animations, and platform-specific features <strong>without the overhead of maintaining two separate native codebases</strong>.",
+            "whatYouGetTitle": "Flutter Development Services",
             "whatYouGet": [
-                "Custom Flutter Developers design & complete development",
-                "Professional mobile app with performance optimization",
-                "Cross-platform compatible with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Cross-Platform App Development",
+                "Custom UI/UX Design",
+                "Flutter Migration",
+                "API Integration",
+                "State Management (Provider/Riverpod/BLoC)",
+                "Firebase Integration",
+                "App Store & Play Store Deployment",
+                "Maintenance and Support"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our Flutter Developers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "Single Codebase for iOS & Android",
+                "Dart Experts",
+                "Cost-Effective Development",
+                "Fast Time to Market",
+                "Agile Methodology",
+                "100% Client Satisfaction",
+                "Post-Launch Support"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "Flutter Technology Stack",
+                "list": [
+                    {
+                        "label": "Programming Languages",
+                        "value": "Dart"
+                    },
+                    {
+                        "label": "Frameworks",
+                        "value": "Flutter SDK"
+                    },
+                    {
+                        "label": "State Management",
+                        "value": "Provider, Riverpod, BLoC, GetX"
+                    },
+                    {
+                        "label": "Backend Integration",
+                        "value": "Firebase, Node.js, Python"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "Startups looking for MVP",
+                "Small to Medium Enterprises",
+                "eCommerce",
+                "On-Demand Services",
+                "Social Networking Apps"
+            ],
+            "note": "Flutter provides near-native performance while cutting development costs by up to 40%.",
+            "availability": "Available for dedicated long-term projects or hourly consultations."
         },
         "metadata": {
-            "platformType": "Mobile App (iOS/Android)",
-            "websiteFeatures": "Authentication, Database integration, Real-time updates, Admin panel, API integration",
+            "platformType": "Cross-Platform Mobile Applications",
+            "websiteFeatures": "Authentication, Payments, Messaging, Booking Systems, Real-Time Features",
+            "expertise": "Flutter Architecture, Cross-Platform UI, State Management",
+            "programmingLanguage": "Dart",
+            "frameworks": "Flutter",
+            "tools": "Android Studio, VS Code, Firebase",
             "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
+                "Firebase",
+                "Google Maps",
+                "Stripe",
+                "AdMob"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=38",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -498,6 +587,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=39",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -512,6 +602,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=40",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -525,10 +616,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "flutter developers",
-            "development",
-            "design",
-            "custom software"
+            "hire flutter developer",
+            "flutter app development",
+            "cross platform app",
+            "dart developer",
+            "flutter UI"
         ],
         "portfolio": [
             {
@@ -569,62 +661,59 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Flutter Developers",
-            "Mobile Development",
-            "UI/UX Design",
-            "API Integration"
+            "Flutter",
+            "Dart",
+            "Cross-Platform",
+            "Mobile App Development",
+            "State Management",
+            "Firebase",
+            "REST API"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Flutter Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$299",
+                "name": "Flutter Starter",
+                "description": "Simple cross-platform app with up to 5 screens.",
+                "deliveryTime": "7 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "iOS & Android App",
+                    "Basic UI",
+                    "API Integration"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Flutter Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$749",
+                "name": "Flutter Pro",
+                "description": "Feature-rich cross-platform application with state management.",
+                "deliveryTime": "14 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom UI/UX",
+                    "Firebase Auth",
+                    "State Management",
+                    "Source Code"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Flutter Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$1899",
+                "name": "Enterprise Flutter",
+                "description": "Complex, scalable cross-platform application with admin panel.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Enterprise Scale",
+                    "Complex APIs",
+                    "Admin Dashboard",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
             "price": "$25/hr",
-            "description": "Hire a dedicated Hire Flutter Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "description": "Hire a dedicated Flutter developer on a flexible hourly basis.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Developer",
+                "Direct Communication",
+                "Code Ownership",
+                "Agile Process"
             ]
         }
     },
@@ -637,14 +726,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire React Native Developers"
         ],
-        "gigTitle": "I will do React Native Developers development, redesign React Native Developers application, custom mobile app design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for React Native",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 57,
             "ordersInQueue": 13,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -653,38 +742,76 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built React Native Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Build powerful mobile applications for <strong>both iOS and Android simultaneously</strong> using the world's most popular JavaScript framework. Our <strong>React Native developers</strong> create apps with <strong>native performance and intuitive user interfaces</strong>.",
+            "intro2": "By <strong>reusing code across platforms</strong>, we help you reduce time-to-market and development costs. We specialize in <strong>complex UI implementations, native module integration, and seamless API connectivity</strong>.",
+            "whatYouGetTitle": "React Native Services",
             "whatYouGet": [
-                "Custom React Native Developers design & complete development",
-                "Professional mobile app with performance optimization",
-                "Cross-platform compatible with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Cross-Platform Mobile App Development",
+                "Custom Component Development",
+                "Redux/MobX State Management",
+                "Native Module Integration",
+                "UI/UX Design",
+                "App Migration to React Native",
+                "Testing and QA",
+                "Store Deployment"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our React Native Developers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "JavaScript/TypeScript Experts",
+                "High Code Reusability",
+                "Fast Delivery",
+                "Agile Process",
+                "Continuous Integration",
+                "Excellent Communication"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "React Native Tech Stack",
+                "list": [
+                    {
+                        "label": "Programming Languages",
+                        "value": "JavaScript, TypeScript"
+                    },
+                    {
+                        "label": "Frameworks",
+                        "value": "React Native, Expo"
+                    },
+                    {
+                        "label": "State Management",
+                        "value": "Redux, Context API, Zustand"
+                    },
+                    {
+                        "label": "Backend",
+                        "value": "Node.js, Express, Firebase"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "SaaS Mobile Apps",
+                "eCommerce Applications",
+                "Social Platforms",
+                "Enterprise Apps"
+            ],
+            "note": "React Native powers some of the world's largest apps including Facebook, Instagram, and Tesla.",
+            "availability": "Our team is ready to jump into your project immediately on a part-time or full-time basis."
         },
         "metadata": {
-            "platformType": "Mobile App (iOS/Android)",
-            "websiteFeatures": "Authentication, Database integration, Real-time updates, Admin panel, API integration",
+            "platformType": "Cross-Platform Mobile Applications",
+            "websiteFeatures": "Authentication, Push Notifications, Device Hardware Access, GPS Tracking",
+            "expertise": "React Native Architecture, Performance Optimization, Native Bridges",
+            "programmingLanguage": "JavaScript, TypeScript",
+            "frameworks": "React Native, Expo",
+            "tools": "React Navigation, Firebase, Redux",
             "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
+                "Firebase",
+                "Push Notifications",
+                "Stripe"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=41",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -699,6 +826,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=42",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -713,6 +841,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=43",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -726,10 +855,10 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "react native developers",
-            "development",
-            "design",
-            "custom software"
+            "hire react native developer",
+            "react native app",
+            "cross platform mobile",
+            "javascript developer"
         ],
         "portfolio": [
             {
@@ -770,62 +899,59 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "React Native Developers",
+            "React Native",
+            "JavaScript",
+            "TypeScript",
+            "Redux",
             "Mobile Development",
-            "UI/UX Design",
-            "API Integration"
+            "Expo",
+            "REST API"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard React Native Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$299",
+                "name": "RN Starter",
+                "description": "Basic React Native app with UI and simple navigation.",
+                "deliveryTime": "7 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "iOS & Android App",
+                    "5 Screens",
+                    "API Integration"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete React Native Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$799",
+                "name": "RN Professional",
+                "description": "Advanced React Native app with complex state and features.",
+                "deliveryTime": "15 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom UI",
+                    "Redux State",
+                    "Push Notifications",
+                    "Source Code"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise React Native Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$1999",
+                "name": "RN Enterprise",
+                "description": "Large-scale React Native application with admin web panel.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Complex Architecture",
+                    "Native Modules",
+                    "Admin Dashboard",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire React Native Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$30/hr",
+            "description": "Hire dedicated React Native developers on an hourly basis.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Developer",
+                "Direct Communication",
+                "Agile Process",
+                "Code Ownership"
             ]
         }
     },
@@ -838,71 +964,64 @@ export const hireUsData = [
             "Hire Us",
             "Hire React JS Developers"
         ],
-        "gigTitle": "I will do React JS Developers development, redesign React JS Developers application, custom website design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for React JS Web Developer",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 219,
             "ordersInQueue": 4,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
-            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
+            "/Hireus/reactjs.png",
+            "/portfolio/custom/portfolio_nexthunt.webp",
+            "/portfolio/custom/portfolio_palzea-widget.webp",
+            "/portfolio/custom/portfolio_searchive.webp"
         ],
         "aboutGig": {
-            "intro": "Are you looking for a professional dashboard designer who can create a beautiful & functional web dashboard using HTML, CSS, Bootstrap, ReactJS, Next.js for your business, website, or app? If yes, you're in the right place!",
-            "intro2": "I am a skilled website and dashboard designer with over 8 years of experience in HTML, CSS, Bootstrap, ReactJS, Next.js.\nI will design a unique & intuitive dashboard using Charts, Graphs & other visual elements.\nAll my designs are fully responsive on all devices. I will work closely with you to ensure that it meets your exact requirements.",
-            "whatYouGetTitle": "Included Services",
-            "whatYouGet": [
-                "Fully Responsive Design",
-                "Latest Bootstrap Framework",
-                "Clean & Intuitive Dashboard",
-                "Well-Structured Code",
-                "Comprehensive Documentation",
-                "RTL Language Compatibility",
-                "Dark Mode Support",
-                "Landing page",
-                "Source Files Provided",
-                "Cross-Browser Compatible",
-                "SEO Friendly Code",
-                "Complete Control Panel",
-                "Extremely Fast Website"
-            ],
-            "whyChooseUsTitle": "Why Choose Me",
+            "intro": "Looking to hire <strong>experienced React JS developers</strong> for your startup, SaaS platform, enterprise application, or custom web solution? Our dedicated React developers build <strong>fast, scalable, responsive, and modern applications</strong> using the latest React ecosystem and industry best practices.",
+            "intro2": "With <strong>8+ years of frontend development experience</strong>, our React JS developers specialize in building high-performance web applications, SaaS platforms, enterprise dashboards, customer portals, admin panels, and eCommerce solutions. We focus on <strong>clean architecture, reusable components, performance optimization</strong>, and seamless user experiences to help businesses scale faster.",
+            "whyChooseUsTitle": "Why Choose Me?",
             "whyChooseUs": [
-                "Experienced Web Designer",
-                "100% Quality Guaranteed",
-                "100% Customer Satisfaction",
-                "Unlimited Revisions",
-                "User-Friendly Dashboard",
-                "On-Time Deliver"
+                "100% Client Satisfaction",
+                "Fast, Responsive Communication",
+                "Clean, Maintainable React Code",
+                "Professional, Reliable Service"
             ],
-            "perfectFor": null,
-            "note": "Note: If you are not satisfied with my service, I offer a full refund.",
-            "availability": "I am available up to 18 hours a day & typically respond to messages within 15 minutes."
+            "whatYouGetTitle": "Services:",
+            "whatYouGet": [
+                "React Web App Development (SaaS, Dashboards, Portals).",
+                "Redux & Context API State Management.",
+                "REST API & GraphQL Integration.",
+                "Custom UI/UX & Responsive Development.",
+                "Performance Optimization & Code Refactoring.",
+                "Authentication & Security (JWT, OAuth, Firebase).",
+                "Bug Fixes & Optimization.",
+                "Deployment Support (AWS, Vercel, Netlify, Docker)."
+            ]
         },
         "metadata": {
-            "platformType": "Saas",
-            "programmingLanguage": "HTML & CSS, JavaScript",
-            "websiteFeatures": "Marketing, Inventory, Analytics, Form, Events, Chat, Map, Gallery, Booking, Calendar",
+            "platformType": "Web Applications, SaaS Platforms, Enterprise Solutions",
+            "programmingLanguage": "JavaScript, TypeScript",
+            "websiteFeatures": "Authentication, User Management, Dashboard, Analytics, Reporting, Notifications, Payment Integration, API Integration, Admin Panel, CRM, ERP, Chat System",
             "plugins": [
-                "Security",
                 "Performance Optimization",
-                "SEO"
+                "SEO Optimization",
+                "Security Enhancement",
+                "Google Analytics",
+                "Third Party Integrations"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=44",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
-                "comment": "I'm genuinely impressed with the overall experience and the final result delivered. From the very beginning, the communication was clear, professional, and reassuring. The seller took the time to understand my business needs and translated them into a React JS Developers solution that truly represents my brand.",
+                "comment": "Outstanding React development service. The team built a fast, responsive, and scalable application that exceeded our expectations. Communication was excellent throughout the project and delivery was on time.",
                 "price": "$1,000 - $2,500",
                 "duration": "7 days",
                 "helpful": {
@@ -913,10 +1032,11 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=45",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
-                "comment": "He was very good at adding custom features to my React JS Developers project. It took him a few days to get started, but once he did, he was very fast and eager to help. I reached back out and told him I would pay him more for extra features and he completed them perfectly.",
+                "comment": "Great React developer with strong technical skills. Successfully integrated APIs, optimized performance, and delivered a clean codebase that our internal team could easily maintain.",
                 "price": "Up to $1,000",
                 "duration": "4 days",
                 "helpful": {
@@ -927,12 +1047,13 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=46",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
-                "comment": "Really impressed with the final result. The website looks clean, modern, and exactly what I needed to represent my coaching business. The process was smooth, and the seller handled everything professionally. Definitely worth the investment for top-tier React JS Developers development.",
+                "comment": "Excellent experience working with this team. They developed a custom React dashboard with modern UI, advanced reporting features, and smooth user interactions. Highly recommended.",
                 "price": "$1,000 - $2,500",
-                "duration": "2 days",
+                "duration": "12 days",
                 "helpful": {
                     "yes": 8,
                     "no": 0
@@ -940,19 +1061,23 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "react js developers",
-            "development",
-            "design",
-            "custom software"
+            "react js developer",
+            "hire react developer",
+            "frontend development",
+            "react application development",
+            "react dashboard development",
+            "next js development",
+            "saas development",
+            "custom web application"
         ],
         "portfolio": [
             {
                 "image": "/portfolio/custom/portfolio_palzea-widget.webp",
                 "title": "Palzea Widget",
                 "date": "February 2025",
-                "description": "A secure P2P crypto transfer solution that enables seamless digital asset transactions and wallet integrations.",
+                "description": "A secure crypto platform built with modern frontend technologies, offering seamless wallet integration, trading interfaces, and real-time market data visualization.",
                 "tags": [
-                    "Design Services",
+                    "React Development",
                     "+6"
                 ],
                 "cost": "$2500-$5000",
@@ -962,9 +1087,9 @@ export const hireUsData = [
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
                 "title": "Dreamload",
                 "date": "January 2025",
-                "description": "An AI-powered sports platform that enhances athlete performance, league management, and fan engagement through data-driven insights.",
+                "description": "An AI-powered sports platform featuring advanced dashboards, athlete management tools, analytics, and interactive user experiences.",
                 "tags": [
-                    "E-Commerce",
+                    "SaaS Platform",
                     "+4"
                 ],
                 "cost": "$1500-$3000",
@@ -974,7 +1099,7 @@ export const hireUsData = [
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
                 "title": "PhoenixFC",
                 "date": "November 2024",
-                "description": "The official digital platform of Phoenix FC, showcasing club history, teams, matches, achievements, and community activities.",
+                "description": "A professional sports club platform with dynamic content management, player profiles, event tracking, and responsive frontend architecture.",
                 "tags": [
                     "Enterprise",
                     "+8"
@@ -984,62 +1109,78 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "React JS Developers",
-            "Web Development",
-            "UI/UX Design",
-            "API Integration"
+            "React JS",
+            "Next.js",
+            "JavaScript",
+            "TypeScript",
+            "Redux",
+            "REST API",
+            "GraphQL",
+            "Tailwind CSS",
+            "Material UI",
+            "Frontend Development",
+            "Performance Optimization",
+            "Responsive Design"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard React JS Developers installation, essential features, up to 5 pages/screens, and basic styling.",
+                "price": "$299",
+                "name": "React Starter",
+                "description": "Small React application, landing page, frontend module, or dashboard interface development.",
                 "deliveryTime": "5 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Responsive React UI",
+                    "Up to 5 Screens",
+                    "API Integration",
+                    "Source Code Included",
+                    "Basic Documentation"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete React JS Developers application with custom design, API integrations, and performance optimization.",
+                "price": "$799",
+                "name": "React Professional",
+                "description": "Complete React application with custom design, API integrations, state management, and performance optimization.",
                 "deliveryTime": "10 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom React Development",
+                    "Advanced UI Components",
+                    "Multiple API Integrations",
+                    "Redux State Management",
+                    "Performance Optimization",
+                    "Source Code Included",
+                    "Support Included"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise React JS Developers solution, advanced architecture, admin panel, and premium support.",
+                "price": "$1999",
+                "name": "Enterprise React Solution",
+                "description": "Enterprise-grade React application with scalable architecture, advanced functionality, and long-term support.",
                 "deliveryTime": "21 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
-                    "Priority Support"
+                    "Enterprise Architecture",
+                    "Advanced Dashboard",
+                    "Complex API Integrations",
+                    "Authentication & Security",
+                    "Admin Panel Development",
+                    "Priority Support",
+                    "Full Source Code Ownership"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire React JS Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$30/hr",
+            "description": "Hire dedicated React JS developers on an hourly, part-time, or full-time basis for development, maintenance, support, and feature enhancements.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated React Developer",
+                "Direct Communication",
+                "Daily/Weekly Reporting",
+                "Flexible Hiring Model",
+                "Agile Development Process",
+                "Timezone Overlap Support",
+                "NDA Protection",
+                "Code Ownership",
+                "Ongoing Maintenance",
+                "Priority Technical Support"
             ]
         }
     },
@@ -1052,14 +1193,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Vue Js Developers"
         ],
-        "gigTitle": "I will do Vue Js Developers development, redesign Vue Js Developers application, custom website design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Vue.js Web Developer",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 53,
-            "ordersInQueue": 13,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "ordersInQueue": 8,
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -1068,51 +1209,75 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Are you looking for a professional dashboard designer who can create a beautiful & functional web dashboard using HTML, CSS, Bootstrap, ReactJS, Next.js for your business, website, or app? If yes, you're in the right place!",
-            "intro2": "I am a skilled website and dashboard designer with over 8 years of experience in HTML, CSS, Bootstrap, ReactJS, Next.js.\nI will design a unique & intuitive dashboard using Charts, Graphs & other visual elements.\nAll my designs are fully responsive on all devices. I will work closely with you to ensure that it meets your exact requirements.",
-            "whatYouGetTitle": "Included Services",
+            "intro": "Looking for a reliable <strong>VueJs, NuxtJs, NodeJs, ReactJs, NextJs, Supabase, Bootstrap and Javascript developer</strong> who can turn your ideas into a <strong>fast, scalable, and modern web application</strong>?",
+            "intro2": "With <strong>9+ years of professional experience</strong>, I specialize in building robust frontend solutions using <strong>VueJs, NuxtJs</strong>, and modern JavaScript frameworks.",
+            "whatYouGetTitle": "What I Can Do for You",
             "whatYouGet": [
-                "Fully Responsive Design",
-                "Latest Bootstrap Framework",
-                "Clean & Intuitive Dashboard",
-                "Well-Structured Code",
-                "Comprehensive Documentation",
-                "RTL Language Compatibility",
-                "Dark Mode Support",
-                "Landing page",
-                "Source Files Provided",
-                "Cross-Browser Compatible",
-                "SEO Friendly Code",
-                "Complete Control Panel",
-                "Extremely Fast Website"
+                "VueJs (Vue 2 / Vue 3) Development",
+                "NuxtJs (SSR / SSG) Applications",
+                "SPA & SEO-Friendly Web Apps",
+                "Vue Composition API & Options API",
+                "API Integration (REST / GraphQL)",
+                "State Management (Pinia / Vuex)",
+                "Fix Vue.js & Nuxt.js Bugs",
+                "Quasar and Vuetify expert",
+                "Convert Figma / XD / PSD to Vue UI",
+                "Performance Optimization & Clean Code",
+                "Responsive & Mobile-Friendly Design",
+                "Backend with NodeJs and Supabase"
             ],
-            "whyChooseUsTitle": "Why Choose Me",
+            "whyChooseUsTitle": "Why Choose Me?",
             "whyChooseUs": [
-                "Experienced Web Designer",
-                "100% Quality Guaranteed",
-                "100% Customer Satisfaction",
-                "Unlimited Revisions",
-                "User-Friendly Dashboard",
-                "On-Time Deliver"
+                "9+ Years of Real-World Experience",
+                "Clean, Maintainable & Scalable Code",
+                "Fast Communication & On-Time Delivery",
+                "100% Client Satisfaction Focus",
+                "Long-Term Support After Delivery"
             ],
-            "perfectFor": null,
-            "note": "Note: If you are not satisfied with my service, I offer a full refund.",
-            "availability": "I am available up to 18 hours a day & typically respond to messages within 15 minutes."
+            "technologies": {
+                "title": "Vue.js Technology Stack",
+                "list": [
+                    {
+                        "label": "Frontend",
+                        "value": "Vue.js, Nuxt.js, HTML & CSS"
+                    },
+                    {
+                        "label": "State Management",
+                        "value": "Vuex, Pinia"
+                    },
+                    {
+                        "label": "UI Frameworks",
+                        "value": "Vuetify, Tailwind CSS, Quasar"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "Interactive Dashboards",
+                "SaaS Platforms",
+                "Progressive Web Apps (PWAs)",
+                "eCommerce Sites"
+            ],
+            "note": "We focus on writing modular Vue components for maximum reusability and testing ease.",
+            "availability": "Flexible hiring models available: hourly, part-time, or full-time dedicated resources."
         },
         "metadata": {
-            "platformType": "Saas",
-            "programmingLanguage": "HTML & CSS, JavaScript",
-            "websiteFeatures": "Marketing, Inventory, Analytics, Form, Events, Chat, Map, Gallery, Booking, Calendar",
+            "platformType": "Web Applications, SPAs",
+            "websiteFeatures": "Real-time updates, Dashboards, Form Handling, Animations",
+            "expertise": "Frontend Architecture, SSR, Component Design",
+            "programmingLanguage": "JavaScript, TypeScript",
+            "frameworks": "Vue.js, Nuxt.js",
+            "tools": "Vite, Webpack",
             "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
+                "Vue Router",
+                "Pinia",
+                "Axios"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=47",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -1127,6 +1292,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=48",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -1141,6 +1307,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=49",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -1154,10 +1321,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "vue js developers",
-            "development",
-            "design",
-            "custom software"
+            "hire vue developer",
+            "vue js development",
+            "nuxt js",
+            "frontend developer",
+            "spa development"
         ],
         "portfolio": [
             {
@@ -1198,62 +1366,59 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Vue Js Developers",
-            "Web Development",
-            "UI/UX Design",
-            "API Integration"
+            "Vue.js",
+            "Nuxt.js",
+            "JavaScript",
+            "TypeScript",
+            "Pinia",
+            "Vuetify",
+            "Frontend Development"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Vue Js Developers installation, essential features, up to 5 pages/screens, and basic styling.",
+                "price": "$249",
+                "name": "Vue Starter",
+                "description": "Small Vue.js frontend application or component set.",
                 "deliveryTime": "5 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Responsive UI",
+                    "Vue Router Setup",
+                    "Basic API Integration"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Vue Js Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$699",
+                "name": "Vue Professional",
+                "description": "Complete Vue.js SPA with state management and custom design.",
+                "deliveryTime": "12 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom Components",
+                    "Pinia/Vuex",
+                    "Advanced API Logic",
+                    "Source Code"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Vue Js Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$1799",
+                "name": "Vue Enterprise",
+                "description": "Large-scale Nuxt.js SSR application optimized for SEO and speed.",
+                "deliveryTime": "25 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Nuxt.js SSR",
+                    "Enterprise Architecture",
+                    "Complex State",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
             "price": "$25/hr",
-            "description": "Hire a dedicated Hire Vue Js Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "description": "Hire dedicated Vue.js developers on demand.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Vue Expert",
+                "Direct Communication",
+                "Code Ownership",
+                "Agile"
             ]
         }
     },
@@ -1266,14 +1431,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire AngularJS Developers"
         ],
-        "gigTitle": "I will do AngularJS Developers development, redesign AngularJS Developers application, custom website design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for AngularJS",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 238,
             "ordersInQueue": 9,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -1282,51 +1447,77 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Are you looking for a professional dashboard designer who can create a beautiful & functional web dashboard using HTML, CSS, Bootstrap, ReactJS, Next.js for your business, website, or app? If yes, you're in the right place!",
-            "intro2": "I am a skilled website and dashboard designer with over 8 years of experience in HTML, CSS, Bootstrap, ReactJS, Next.js.\nI will design a unique & intuitive dashboard using Charts, Graphs & other visual elements.\nAll my designs are fully responsive on all devices. I will work closely with you to ensure that it meets your exact requirements.",
-            "whatYouGetTitle": "Included Services",
+            "intro": "We are <strong>Kretoss</strong>. We are an <strong>Experienced Team of Programmers</strong> in developing high-quality web applications & software.",
+            "intro2": "If you want to get a web application for your Company or business, we will develop it for you in the <strong>latest Angular Framework</strong>.",
+            "whatYouGetTitle": "What We Can Do for You",
             "whatYouGet": [
-                "Fully Responsive Design",
-                "Latest Bootstrap Framework",
-                "Clean & Intuitive Dashboard",
-                "Well-Structured Code",
-                "Comprehensive Documentation",
-                "RTL Language Compatibility",
-                "Dark Mode Support",
-                "Landing page",
-                "Source Files Provided",
-                "Cross-Browser Compatible",
-                "SEO Friendly Code",
-                "Complete Control Panel",
-                "Extremely Fast Website"
+                "Single Page Application",
+                "Multiple Pages Application",
+                "Progressive Web Application (PWA)",
+                "Android or iOS conversion using Angular Framework",
+                "Offline usability for Web Application.",
+                "Company Application",
+                "Business Application",
+                "Micro/Mini Desktop Tools & Applications using Web for Desktop Technologies"
             ],
-            "whyChooseUsTitle": "Why Choose Me",
+            "whyChooseUsTitle": "Why Choose Us?",
             "whyChooseUs": [
-                "Experienced Web Designer",
-                "100% Quality Guaranteed",
-                "100% Customer Satisfaction",
-                "Unlimited Revisions",
-                "User-Friendly Dashboard",
-                "On-Time Deliver"
+                "6+ years Experience",
+                "400+ Projects",
+                "260+ Happy Clients",
+                "100% Quality work",
+                "Fast Development",
+                "Low Cost",
+                "Friendly Relations",
+                "App/Software will be given with source code",
+                "Design will be changeable",
+                "Client Satisfaction",
+                "Commitment on Time"
             ],
-            "perfectFor": null,
-            "note": "Note: If you are not satisfied with my service, I offer a full refund.",
-            "availability": "I am available up to 18 hours a day & typically respond to messages within 15 minutes."
+            "technologies": {
+                "title": "Angular Technology Stack",
+                "list": [
+                    {
+                        "label": "Frontend",
+                        "value": "Angular, TypeScript, HTML & CSS"
+                    },
+                    {
+                        "label": "State Management",
+                        "value": "NgRx, RxJS"
+                    },
+                    {
+                        "label": "UI Frameworks",
+                        "value": "Angular Material, Tailwind CSS, Bootstrap"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "Enterprise Systems",
+                "Banking & Financial Apps",
+                "Healthcare Portals",
+                "Large Scale SaaS"
+            ],
+            "note": "Our Angular solutions are built with strict TypeScript configurations for maximum type safety and minimal runtime errors.",
+            "availability": "Dedicated Angular architects and developers available for long-term enterprise projects."
         },
         "metadata": {
-            "platformType": "Saas",
-            "programmingLanguage": "HTML & CSS, JavaScript",
-            "websiteFeatures": "Marketing, Inventory, Analytics, Form, Events, Chat, Map, Gallery, Booking, Calendar",
+            "platformType": "Enterprise Web Applications",
+            "websiteFeatures": "Complex Data Grids, Real-time Data, High Security, Dashboards",
+            "expertise": "Enterprise Architecture, RxJS, Performance Tuning",
+            "programmingLanguage": "TypeScript",
+            "frameworks": "Angular",
+            "tools": "Angular CLI, Webpack",
             "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
+                "NgRx",
+                "RxJS",
+                "Angular Material"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=50",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -1341,6 +1532,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=51",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -1355,6 +1547,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=52",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -1368,10 +1561,10 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "angularjs developers",
-            "development",
-            "design",
-            "custom software"
+            "hire angular developer",
+            "angular development",
+            "enterprise web app",
+            "typescript developer"
         ],
         "portfolio": [
             {
@@ -1412,62 +1605,58 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "AngularJS Developers",
-            "Web Development",
-            "UI/UX Design",
-            "API Integration"
+            "Angular",
+            "TypeScript",
+            "RxJS",
+            "NgRx",
+            "Enterprise Architecture",
+            "Frontend Development"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard AngularJS Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$349",
+                "name": "Angular Starter",
+                "description": "Basic Angular application with routing and module setup.",
+                "deliveryTime": "7 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Angular App",
+                    "Basic Routing",
+                    "API Integration"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete AngularJS Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$899",
+                "name": "Angular Professional",
+                "description": "Feature-rich Angular SPA with reactive programming and Material UI.",
+                "deliveryTime": "15 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Reactive Forms",
+                    "RxJS Implementation",
+                    "Angular Material",
+                    "Source Code"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise AngularJS Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$2299",
+                "name": "Angular Enterprise",
+                "description": "Large-scale enterprise Angular architecture with NgRx state management.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "NgRx State Management",
+                    "Complex Architecture",
+                    "Security Implementation",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire AngularJS Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$35/hr",
+            "description": "Hire dedicated Angular developers for complex enterprise projects.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Senior Angular Developer",
+                "Direct Communication",
+                "Agile Process",
+                "Code Ownership"
             ]
         }
     },
@@ -1480,14 +1669,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Laravel Developers"
         ],
-        "gigTitle": "I will do Laravel Developers development, redesign Laravel Developers application, custom website design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Laravel",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 114,
             "ordersInQueue": 13,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -1496,38 +1685,72 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built Laravel Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Looking for a <strong>full stack PHP Laravel developer</strong> for your web app development? You just found your expert PHP Laravel developer let's build something powerful!",
+            "intro2": "I am a senior PHP Laravel developer with <strong>6+ years of full stack web app development experience</strong>, delivering SaaS platforms, CRM/ERP systems, REST APIs, and complex business web apps worldwide.",
+            "whatYouGetTitle": "MY PHP LARAVEL DEVELOPMENT SERVICES",
             "whatYouGet": [
-                "Custom Laravel Developers design & complete development",
-                "Professional web application with performance optimization",
-                "Mobile-responsive interfaces with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Custom web app development & SaaS platforms",
+                "CRM, ERP & business management systems",
+                "REST API development & integrations (Stripe, PayPal, Twilio)",
+                "Database design, optimization & bug fixing",
+                "AI features & automation for full stack web apps"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "WHY CHOOSE THIS PHP LARAVEL DEVELOPER?",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "Expert full stack PHP Laravel developer Laravel 10/11 & clean code",
+                "Complete web app development: PHP backend, Vue.js/React frontend & MySQL",
+                "PHP developer for scalable, secure & high-performance web applications",
+                "Laravel developer with REST APIs, role-based auth & third-party integrations"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "Laravel Technology Stack",
+                "list": [
+                    {
+                        "label": "Backend",
+                        "value": "PHP, Laravel"
+                    },
+                    {
+                        "label": "Database",
+                        "value": "MySQL, PostgreSQL, Redis"
+                    },
+                    {
+                        "label": "Frontend Integration",
+                        "value": "Blade, Vue.js, Livewire, Tailwind CSS"
+                    },
+                    {
+                        "label": "Server/Deploy",
+                        "value": "AWS, DigitalOcean, Docker"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "SaaS Platforms",
+                "Custom CRMs",
+                "E-commerce Backend",
+                "B2B Portals",
+                "API Providers"
+            ],
+            "note": "We strictly follow Laravel coding standards and implement industry-best security practices (CSRF, XSS prevention).",
+            "availability": "Available for full-cycle development, module addition, or hourly consulting."
         },
         "metadata": {
-            "platformType": "Web Application, SaaS",
-            "websiteFeatures": "Authentication, Database integration, Real-time updates, Admin panel, API integration",
+            "platformType": "Backend Systems, APIs, Full-Stack Web Apps",
+            "websiteFeatures": "User Authentication, Billing/Payments, Admin Dashboards, API Endpoints, Data Processing",
+            "expertise": "Backend Architecture, Database Design, API Security, Performance Optimization",
+            "programmingLanguage": "PHP",
+            "frameworks": "Laravel, Livewire",
+            "tools": "Artisan, Composer, Docker",
             "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
+                "Laravel Sanctum",
+                "Stripe Cashier",
+                "Spatie Permissions"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=53",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -1542,6 +1765,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=54",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -1556,6 +1780,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=55",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -1569,10 +1794,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "laravel developers",
-            "development",
-            "design",
-            "custom software"
+            "hire laravel developer",
+            "php developer",
+            "backend development",
+            "laravel api",
+            "custom web app"
         ],
         "portfolio": [
             {
@@ -1613,62 +1839,61 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Laravel Developers",
-            "Web Development",
-            "UI/UX Design",
-            "API Integration"
+            "Laravel",
+            "PHP",
+            "MySQL",
+            "REST API",
+            "Backend Development",
+            "Database Design",
+            "Livewire",
+            "Vue.js"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Laravel Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$299",
+                "name": "Laravel Starter",
+                "description": "Small Laravel application or custom API development.",
+                "deliveryTime": "7 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Database Setup",
+                    "Basic Authentication",
+                    "CRUD Operations",
+                    "API Endpoints"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Laravel Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$799",
+                "name": "Laravel Professional",
+                "description": "Comprehensive Laravel web application with third-party integrations.",
+                "deliveryTime": "14 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom Business Logic",
+                    "Payment Integration",
+                    "Admin Panel",
+                    "Source Code"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Laravel Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$1999",
+                "name": "Enterprise Laravel",
+                "description": "Large-scale SaaS or ERP platform built on Laravel.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "SaaS Architecture",
+                    "Complex Database Design",
+                    "Advanced Security",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
             "price": "$25/hr",
-            "description": "Hire a dedicated Hire Laravel Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "description": "Hire dedicated Laravel developers on an hourly basis.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Backend Developer",
+                "Direct Communication",
+                "Agile Process",
+                "Code Ownership"
             ]
         }
     },
@@ -1681,14 +1906,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire PHP Developers"
         ],
-        "gigTitle": "I will do PHP Developers development, redesign PHP Developers application, custom website design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for PHP",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 176,
             "ordersInQueue": 15,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -1697,38 +1922,76 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built PHP Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Drive your digital presence with powerful, customized PHP solutions. Our expert <strong>PHP developers</strong> build <strong>fast, secure, and scalable backend systems</strong> and dynamic websites tailored to your specific business requirements.",
+            "intro2": "Whether you need a <strong>custom PHP application from scratch</strong>, maintenance for an existing legacy codebase, or <strong>powerful API integrations</strong>, our team delivers high-quality, heavily optimized code.",
+            "whatYouGetTitle": "PHP Development Services",
             "whatYouGet": [
-                "Custom PHP Developers design & complete development",
-                "Professional web application with performance optimization",
-                "Mobile-responsive interfaces with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Custom PHP Web Development",
+                "PHP Framework Development (CodeIgniter, Symfony)",
+                "API Development & Integration",
+                "Database Design (MySQL/PostgreSQL)",
+                "Legacy System Modernization",
+                "Custom CMS Development",
+                "Bug Fixing & Maintenance",
+                "E-commerce Solutions"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our PHP Developers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "Extensive PHP Experience",
+                "Secure Coding Practices",
+                "Optimized Database Queries",
+                "Agile Delivery Model",
+                "Transparent Communication",
+                "Long-term Support"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "PHP Technology Stack",
+                "list": [
+                    {
+                        "label": "Core Language",
+                        "value": "PHP 8+"
+                    },
+                    {
+                        "label": "Frameworks",
+                        "value": "Laravel, CodeIgniter, Symfony"
+                    },
+                    {
+                        "label": "Database",
+                        "value": "MySQL, PostgreSQL"
+                    },
+                    {
+                        "label": "Frontend",
+                        "value": "HTML, CSS, JavaScript, jQuery"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "Custom Web Applications",
+                "B2B Portals",
+                "Legacy System Updates",
+                "Custom APIs"
+            ],
+            "note": "All PHP code is written with modern standards (PSR), ensuring security, readability, and future scalability.",
+            "availability": "Ready to assist on an hourly, part-time, or full-time basis depending on your project needs."
         },
         "metadata": {
-            "platformType": "Web Application, SaaS",
-            "websiteFeatures": "Authentication, Database integration, Real-time updates, Admin panel, API integration",
+            "platformType": "Dynamic Websites, Web Applications",
+            "websiteFeatures": "User Management, Content Management, Custom Dashboards, E-commerce",
+            "expertise": "Backend Logic, Database Optimization, Server-side Scripting",
+            "programmingLanguage": "PHP",
+            "frameworks": "CodeIgniter, Symfony, Core PHP",
+            "tools": "Composer, Git, Docker",
             "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
+                "PDO",
+                "CURL",
+                "Memcached"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=56",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -1743,6 +2006,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=57",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -1757,6 +2021,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=58",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -1770,10 +2035,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "php developers",
-            "development",
-            "design",
-            "custom software"
+            "hire php developer",
+            "custom php development",
+            "backend developer",
+            "php framework",
+            "api integration"
         ],
         "portfolio": [
             {
@@ -1814,62 +2080,59 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "PHP Developers",
-            "Web Development",
-            "UI/UX Design",
-            "API Integration"
+            "PHP",
+            "MySQL",
+            "Backend Development",
+            "CodeIgniter",
+            "REST API",
+            "Database Design",
+            "Web Development"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard PHP Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$199",
+                "name": "PHP Starter",
+                "description": "Small custom PHP script or bug fixing for an existing application.",
+                "deliveryTime": "4 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Custom Script",
+                    "Database Connection",
+                    "Bug Fixing"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete PHP Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$699",
+                "name": "PHP Professional",
+                "description": "Mid-sized custom PHP web application with admin panel.",
+                "deliveryTime": "12 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom Web App",
+                    "Admin Dashboard",
+                    "API Integrations",
+                    "Source Code Included"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise PHP Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$1599",
+                "name": "Enterprise PHP",
+                "description": "Complex PHP system, custom CRM, or legacy code modernization.",
+                "deliveryTime": "25 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Complex Architecture",
+                    "Security Optimization",
+                    "Advanced Database",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire PHP Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$20/hr",
+            "description": "Hire a dedicated PHP developer on an hourly basis.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Developer",
+                "Direct Communication",
+                "Agile Process",
+                "Code Ownership"
             ]
         }
     },
@@ -1882,14 +2145,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Node.js Developers"
         ],
-        "gigTitle": "I will do Node.js Developers development, redesign Node.js Developers application, custom website design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Node.js",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 234,
             "ordersInQueue": 4,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -1898,38 +2161,78 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built Node.js Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Need a backend that handles thousands of concurrent connections with ease? Our <strong>Node.js developers</strong> build <strong>blazing-fast, highly scalable REST APIs</strong>, real-time applications, and microservices architectures.",
+            "intro2": "Leveraging the event-driven, non-blocking I/O model of Node.js, we create robust backend solutions using <strong>Express.js, NestJS, and WebSockets</strong> tailored for high-traffic environments.",
+            "whatYouGetTitle": "Node.js Development Services",
             "whatYouGet": [
-                "Custom Node.js Developers design & complete development",
-                "Professional web application with performance optimization",
-                "Mobile-responsive interfaces with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "RESTful API Development",
+                "GraphQL API Development",
+                "Real-Time Chat & Messaging Apps",
+                "Microservices Architecture",
+                "Serverless Architecture (AWS Lambda)",
+                "Payment Gateway Integration",
+                "Database Design (MongoDB/PostgreSQL)",
+                "Third-Party API Integration",
+                "Performance Optimization"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our Node.js Developers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "JavaScript/TypeScript Backend Experts",
+                "Experience with High-Traffic Systems",
+                "Focus on Security & Scalability",
+                "Clean & Modular Code",
+                "Agile Methodology",
+                "Continuous Deployment CI/CD"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "Node.js Technology Stack",
+                "list": [
+                    {
+                        "label": "Backend",
+                        "value": "Node.js, Express.js, NestJS"
+                    },
+                    {
+                        "label": "Database",
+                        "value": "MongoDB, PostgreSQL, Redis"
+                    },
+                    {
+                        "label": "Real-time",
+                        "value": "Socket.io, WebSockets"
+                    },
+                    {
+                        "label": "Cloud & DevOps",
+                        "value": "AWS, Docker, Kubernetes"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "Real-Time Applications",
+                "Streaming Platforms",
+                "Microservices",
+                "High-Traffic SaaS",
+                "IoT Backends"
+            ],
+            "note": "Our Node.js solutions are built using TypeScript for enhanced type safety and maintainability.",
+            "availability": "Available for dedicated full-cycle development, microservice extraction, or hourly API development."
         },
         "metadata": {
-            "platformType": "Web Application, SaaS",
-            "websiteFeatures": "Authentication, Database integration, Real-time updates, Admin panel, API integration",
+            "platformType": "Backend APIs, Real-time Servers, Microservices",
+            "websiteFeatures": "Real-time Chat, Live Notifications, Streaming, High-Concurrency Handling",
+            "expertise": "API Design, Microservices, Event-Driven Architecture, Performance Scaling",
+            "programmingLanguage": "JavaScript, TypeScript",
+            "frameworks": "Express.js, NestJS",
+            "tools": "Docker, AWS, PM2",
             "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
+                "Socket.io",
+                "Mongoose",
+                "Passport.js"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=59",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -1944,6 +2247,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=60",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -1958,6 +2262,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=61",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -1971,10 +2276,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "node.js developers",
-            "development",
-            "design",
-            "custom software"
+            "hire node js developer",
+            "node backend",
+            "express js",
+            "api development",
+            "real time app"
         ],
         "portfolio": [
             {
@@ -2015,62 +2321,61 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Node.js Developers",
-            "Web Development",
-            "UI/UX Design",
-            "API Integration"
+            "Node.js",
+            "Express.js",
+            "TypeScript",
+            "MongoDB",
+            "REST API",
+            "Microservices",
+            "Socket.io",
+            "Backend Development"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Node.js Developers installation, essential features, up to 5 pages/screens, and basic styling.",
+                "price": "$299",
+                "name": "Node.js Starter",
+                "description": "Basic Node.js REST API with CRUD operations and MongoDB connection.",
                 "deliveryTime": "5 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "REST API",
+                    "Database Setup",
+                    "Basic Auth",
+                    "Source Code"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Node.js Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$899",
+                "name": "Node.js Professional",
+                "description": "Advanced Node.js API with third-party integrations and real-time features.",
+                "deliveryTime": "14 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Advanced Endpoints",
+                    "Socket.io Integration",
+                    "Payment Gateway",
+                    "Source Code Included"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Node.js Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$2299",
+                "name": "Enterprise Node.js",
+                "description": "Microservices architecture or large-scale backend system with NestJS.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Microservices Setup",
+                    "NestJS Architecture",
+                    "Advanced Security",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire Node.js Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$30/hr",
+            "description": "Hire dedicated Node.js backend engineers.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Node.js Expert",
+                "Direct Communication",
+                "Agile Process",
+                "Code Ownership"
             ]
         }
     },
@@ -2083,14 +2388,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Shopify Developers"
         ],
-        "gigTitle": "I will do Shopify Developers store, redesign Shopify Developers website, Shopify Developers dropshipping website design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Shopify",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 131,
             "ordersInQueue": 9,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -2099,41 +2404,71 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built Shopify Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Launch and scale your online business with our expert <strong>Shopify development services</strong>. We build <strong>visually stunning, high-converting, and blazing-fast eCommerce stores</strong> that drive sales.",
+            "intro2": "From <strong>custom Liquid theme development</strong> to complex API integrations and <strong>Headless Shopify implementations</strong>, our developers ensure your store stands out in a crowded market.",
+            "whatYouGetTitle": "Shopify Development Services",
             "whatYouGet": [
-                "Custom Shopify Developers design & complete development",
-                "Professional web application with performance optimization",
-                "Mobile-responsive interfaces with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Custom Shopify Theme Development",
+                "Shopify Store Setup & Configuration",
+                "Headless Commerce (Hydrogen/Next.js)",
+                "Shopify App Configuration",
+                "Payment Gateway Integration",
+                "Store Migration to Shopify",
+                "Performance Optimization",
+                "SEO Optimization"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our Shopify Developers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "Certified Shopify Experts",
+                "Focus on Conversion Rate Optimization (CRO)",
+                "Responsive, Mobile-First Designs",
+                "Fast Page Load Speeds",
+                "Ongoing Maintenance & Support"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "Shopify Tech Stack",
+                "list": [
+                    {
+                        "label": "Core",
+                        "value": "Shopify, Liquid"
+                    },
+                    {
+                        "label": "Frontend",
+                        "value": "HTML, CSS, JavaScript, React (Headless)"
+                    },
+                    {
+                        "label": "Tools",
+                        "value": "Shopify CLI, Theme Kit"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "eCommerce Startups",
+                "Retail Brands transitioning online",
+                "DTC (Direct to Consumer) Brands",
+                "Dropshipping Businesses"
+            ],
+            "note": "We ensure all Shopify themes follow web accessibility and SEO best practices.",
+            "availability": "Available for new store builds, theme customization, or ongoing technical support."
         },
         "metadata": {
-            "platformType": "E-Commerce store",
-            "websiteFeatures": "Marketing, Payment, Social media, Customer support, Inventory, Video, Form, Events, Chat, Gallery",
+            "platformType": "eCommerce Store",
+            "websiteFeatures": "Shopping Cart, Checkout, Inventory Management, Customer Accounts",
+            "expertise": "eCommerce Architecture, Conversion Optimization, Liquid Development",
+            "programmingLanguage": "Liquid, JavaScript",
+            "frameworks": "Shopify",
+            "tools": "Shopify Admin, Google Analytics",
             "plugins": [
-                "Free Shipping Bar",
-                "Product Reviews",
-                "Product Filter & Search",
-                "Store Locator",
-                "PageSpeed Monitor",
-                "Smart SEO"
+                "Klaviyo",
+                "Yotpo",
+                "ReCharge"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=62",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -2148,6 +2483,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=63",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -2162,6 +2498,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=64",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -2175,10 +2512,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "shopify developers",
-            "ecommerce",
-            "design",
-            "custom software"
+            "hire shopify expert",
+            "shopify developer",
+            "ecommerce development",
+            "shopify theme",
+            "custom shopify"
         ],
         "portfolio": [
             {
@@ -2219,62 +2557,58 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Shopify Developers",
-            "Web Development",
-            "UI/UX Design",
-            "API Integration"
+            "Shopify",
+            "Liquid",
+            "eCommerce",
+            "Web Design",
+            "Frontend Development",
+            "SEO",
+            "CRO"
         ],
         "plans": {
             "basic": {
-                "price": "$295",
-                "name": "Basic Setup",
-                "description": "Standard Shopify Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$399",
+                "name": "Shopify Setup",
+                "description": "Basic Shopify store setup with premium theme customization.",
+                "deliveryTime": "7 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Store Setup",
+                    "Theme Customization",
+                    "Payment Setup"
                 ]
             },
             "standard": {
-                "price": "$695",
-                "name": "Standard Pro",
-                "description": "Complete Shopify Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$999",
+                "name": "Shopify Pro",
+                "description": "Custom Shopify store with unique design and app integrations.",
+                "deliveryTime": "15 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom Theme Design",
+                    "App Integrations",
+                    "Speed Optimization",
+                    "SEO Setup"
                 ]
             },
             "premium": {
-                "price": "$1,495",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Shopify Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$2499",
+                "name": "Shopify Advanced/Headless",
+                "description": "Headless Shopify or highly customized enterprise store.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Headless Architecture",
+                    "Custom Apps",
+                    "Complex Migrations",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire Shopify Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$30/hr",
+            "description": "Hire dedicated Shopify experts.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Developer",
+                "Direct Communication",
+                "Agile Process"
             ]
         }
     },
@@ -2287,14 +2621,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Magento 2 Developers"
         ],
-        "gigTitle": "I will do Magento 2 Developers store, redesign Magento 2 Developers website, Magento 2 Developers dropshipping website design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Magento 2",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 235,
             "ordersInQueue": 14,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -2303,41 +2637,71 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built Magento 2 Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Build a highly scalable, enterprise-grade eCommerce platform with <strong>Magento 2 (Adobe Commerce)</strong>. Our expert Magento developers craft <strong>robust online stores</strong> capable of handling massive product catalogs and high traffic volumes.",
+            "intro2": "Whether you need a custom theme, <strong>complex backend integrations (ERP/CRM)</strong>, or a seamless migration from Magento 1 or another platform, our certified developers ensure a flawless execution.",
+            "whatYouGetTitle": "Magento 2 Development Services",
             "whatYouGet": [
-                "Custom Magento 2 Developers design & complete development",
-                "Professional web application with performance optimization",
-                "Mobile-responsive interfaces with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Custom Magento 2 Theme Development",
+                "Magento 1 to Magento 2 Migration",
+                "Custom Extension Development",
+                "ERP/CRM/PIM Integrations",
+                "Performance & Speed Optimization",
+                "Headless Magento (PWA Studio)",
+                "B2B & B2C eCommerce Solutions",
+                "Ongoing Support & Maintenance"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our Magento Developers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "Certified Magento Experts",
+                "Enterprise eCommerce Experience",
+                "Focus on Site Speed & Conversion",
+                "Secure Coding Standards",
+                "Agile Project Management"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "Magento Tech Stack",
+                "list": [
+                    {
+                        "label": "Platform",
+                        "value": "Magento 2 Open Source, Adobe Commerce"
+                    },
+                    {
+                        "label": "Backend",
+                        "value": "PHP, MySQL, ElasticSearch/OpenSearch"
+                    },
+                    {
+                        "label": "Frontend",
+                        "value": "Knockout.js, RequireJS, HTML/CSS, React (PWA)"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "Enterprise eCommerce",
+                "B2B Wholesale Platforms",
+                "Multi-store Retailers",
+                "High-Volume Stores"
+            ],
+            "note": "We optimize Magento stores to achieve sub-second load times using Varnish caching and Redis.",
+            "availability": "Available for full store builds, migrations, or ongoing enterprise support."
         },
         "metadata": {
-            "platformType": "E-Commerce store",
-            "websiteFeatures": "Marketing, Payment, Social media, Customer support, Inventory, Video, Form, Events, Chat, Gallery",
+            "platformType": "Enterprise eCommerce",
+            "websiteFeatures": "Multi-Store Management, Advanced Catalog, B2B Features, Complex Pricing",
+            "expertise": "eCommerce Architecture, Performance Tuning, Systems Integration",
+            "programmingLanguage": "PHP, JavaScript",
+            "frameworks": "Magento 2",
+            "tools": "Composer, Git, Docker",
             "plugins": [
-                "Free Shipping Bar",
-                "Product Reviews",
-                "Product Filter & Search",
-                "Store Locator",
-                "PageSpeed Monitor",
-                "Smart SEO"
+                "Payment Gateways",
+                "Shipping Integrations",
+                "ERP Sync"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=65",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -2352,6 +2716,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=66",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -2366,6 +2731,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=67",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -2379,10 +2745,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "magento 2 developers",
-            "ecommerce",
-            "design",
-            "custom software"
+            "hire magento developer",
+            "magento 2 expert",
+            "adobe commerce",
+            "ecommerce development",
+            "magento migration"
         ],
         "portfolio": [
             {
@@ -2423,62 +2790,57 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Magento 2 Developers",
+            "Magento 2",
+            "PHP",
+            "eCommerce",
             "Web Development",
-            "UI/UX Design",
-            "API Integration"
+            "MySQL",
+            "Extension Development"
         ],
         "plans": {
             "basic": {
-                "price": "$295",
-                "name": "Basic Setup",
-                "description": "Standard Magento 2 Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$499",
+                "name": "Magento Setup",
+                "description": "Basic Magento 2 installation with a purchased theme setup.",
+                "deliveryTime": "10 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Store Setup",
+                    "Theme Installation",
+                    "Basic Configuration"
                 ]
             },
             "standard": {
-                "price": "$695",
-                "name": "Standard Pro",
-                "description": "Complete Magento 2 Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$1499",
+                "name": "Magento Custom",
+                "description": "Custom Magento theme development with essential integrations.",
+                "deliveryTime": "25 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom Theme",
+                    "Payment Integration",
+                    "Speed Optimization",
+                    "Source Code"
                 ]
             },
             "premium": {
-                "price": "$1,495",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Magento 2 Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$3499",
+                "name": "Enterprise Magento",
+                "description": "Complex B2B/B2C store with ERP integrations or headless PWA.",
+                "deliveryTime": "45 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Enterprise Architecture",
+                    "ERP/CRM Integration",
+                    "Custom Extensions",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire Magento 2 Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$40/hr",
+            "description": "Hire dedicated Magento 2 experts.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Certified Developer",
+                "Direct Communication",
+                "Agile Process"
             ]
         }
     },
@@ -2491,14 +2853,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire WooCommerce Developers"
         ],
-        "gigTitle": "I will do WooCommerce Developers store, redesign WooCommerce Developers website, WooCommerce Developers dropshipping website design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for WooCommerce",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 156,
             "ordersInQueue": 16,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -2507,41 +2869,70 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built WooCommerce Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Turn your WordPress website into a <strong>powerful sales machine</strong>. Our expert <strong>WooCommerce developers</strong> build fully customized, conversion-optimized online stores that are easy for you to manage.",
+            "intro2": "From physical products and digital downloads to <strong>complex subscription services and memberships</strong>, we tailor WooCommerce to fit your unique business model while ensuring <strong>blazing-fast performance</strong>.",
+            "whatYouGetTitle": "WooCommerce Services",
             "whatYouGet": [
-                "Custom WooCommerce Developers design & complete development",
-                "Professional web application with performance optimization",
-                "Mobile-responsive interfaces with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Custom WooCommerce Theme Design",
+                "WooCommerce Setup & Configuration",
+                "Custom Plugin/Extension Development",
+                "Payment Gateway Integration",
+                "Subscription & Membership Sites",
+                "Store Migration to WooCommerce",
+                "Speed & Security Optimization"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our WooCommerce Developers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "Deep WordPress/WooCommerce Expertise",
+                "Conversion Rate Optimization Focus",
+                "Clean, Fast-Loading Code",
+                "Secure Payment Implementations",
+                "Excellent Post-Launch Support"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "WooCommerce Tech Stack",
+                "list": [
+                    {
+                        "label": "Core",
+                        "value": "WordPress, WooCommerce, PHP"
+                    },
+                    {
+                        "label": "Frontend",
+                        "value": "HTML5, CSS3, JavaScript"
+                    },
+                    {
+                        "label": "Database",
+                        "value": "MySQL"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "Small to Medium eCommerce",
+                "Subscription Boxes",
+                "Digital Product Sales",
+                "Boutique Retailers"
+            ],
+            "note": "We ensure your store is fully optimized for mobile shoppers to maximize conversion rates.",
+            "availability": "Ready for full store development or hourly customization tasks."
         },
         "metadata": {
-            "platformType": "E-Commerce store",
-            "websiteFeatures": "Marketing, Payment, Social media, Customer support, Inventory, Video, Form, Events, Chat, Gallery",
+            "platformType": "eCommerce Store",
+            "websiteFeatures": "Shopping Cart, Product Variations, Subscriptions, Memberships",
+            "expertise": "eCommerce Design, Checkout Optimization, Plugin Development",
+            "programmingLanguage": "PHP, JavaScript",
+            "frameworks": "WordPress, WooCommerce",
+            "tools": "WP-CLI",
             "plugins": [
-                "Free Shipping Bar",
-                "Product Reviews",
-                "Product Filter & Search",
-                "Store Locator",
-                "PageSpeed Monitor",
-                "Smart SEO"
+                "Stripe",
+                "PayPal",
+                "WooCommerce Subscriptions"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=68",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -2556,6 +2947,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=69",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -2570,6 +2962,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=70",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -2583,10 +2976,10 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "woocommerce developers",
-            "ecommerce",
-            "design",
-            "custom software"
+            "hire woocommerce developer",
+            "woocommerce expert",
+            "wordpress ecommerce",
+            "custom online store"
         ],
         "portfolio": [
             {
@@ -2627,62 +3020,58 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "WooCommerce Developers",
-            "Web Development",
-            "UI/UX Design",
-            "API Integration"
+            "WooCommerce",
+            "WordPress",
+            "PHP",
+            "eCommerce",
+            "Web Design",
+            "CSS",
+            "Plugin Development"
         ],
         "plans": {
             "basic": {
-                "price": "$295",
-                "name": "Basic Setup",
-                "description": "Standard WooCommerce Developers installation, essential features, up to 5 pages/screens, and basic styling.",
+                "price": "$299",
+                "name": "WooCommerce Starter",
+                "description": "Basic WooCommerce setup on an existing WordPress site.",
                 "deliveryTime": "5 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Plugin Installation",
+                    "Basic Configuration",
+                    "Payment Setup"
                 ]
             },
             "standard": {
-                "price": "$695",
-                "name": "Standard Pro",
-                "description": "Complete WooCommerce Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$899",
+                "name": "WooCommerce Pro",
+                "description": "Complete custom eCommerce store with unique theme.",
+                "deliveryTime": "14 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom Theme",
+                    "Advanced Products",
+                    "Speed Optimization",
+                    "SEO Setup"
                 ]
             },
             "premium": {
-                "price": "$1,495",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise WooCommerce Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$1999",
+                "name": "WooCommerce Enterprise",
+                "description": "Complex store with subscriptions, memberships, or ERP sync.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Complex Logic",
+                    "Custom Plugins",
+                    "High Security",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
             "price": "$25/hr",
-            "description": "Hire a dedicated Hire WooCommerce Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "description": "Hire dedicated WooCommerce developers.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Developer",
+                "Direct Communication",
+                "Maintenance"
             ]
         }
     },
@@ -2695,14 +3084,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Wordpress Developers"
         ],
-        "gigTitle": "I will do Wordpress Developers development, redesign Wordpress Developers application, custom website design",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for WordPress",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 137,
             "ordersInQueue": 4,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -2711,40 +3100,72 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built Wordpress Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Build a powerful, scalable, and easy-to-manage web presence with the world's most popular CMS. Our expert <strong>WordPress developers</strong> craft custom websites that are <strong>secure, fast, and SEO-optimized</strong>.",
+            "intro2": "Whether you need a <strong>custom theme built from scratch</strong>, complex plugin development, or a <strong>headless WordPress setup using React/Next.js</strong>, we deliver high-quality code and beautiful designs.",
+            "whatYouGetTitle": "WordPress Development Services",
             "whatYouGet": [
-                "Custom Wordpress Developers design & complete development",
-                "Professional web application with performance optimization",
-                "Mobile-responsive interfaces with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Custom WordPress Theme Development",
+                "Custom Plugin Development",
+                "Headless WordPress",
+                "Figma to WordPress",
+                "WordPress Migration",
+                "Speed & Performance Optimization",
+                "Security Audits",
+                "Ongoing Maintenance"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our WordPress Developers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "10+ Years WordPress Experience",
+                "Clean, Unbloated Code",
+                "SEO & Performance Focused",
+                "Gutenberg Block Experts",
+                "Secure Implementations"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "WordPress Tech Stack",
+                "list": [
+                    {
+                        "label": "Core",
+                        "value": "WordPress, PHP"
+                    },
+                    {
+                        "label": "Frontend",
+                        "value": "HTML, CSS, JavaScript, React"
+                    },
+                    {
+                        "label": "Database",
+                        "value": "MySQL"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "Corporate Websites",
+                "News Publishers",
+                "Blogs",
+                "Portfolio Sites",
+                "B2B Lead Gen Sites"
+            ],
+            "note": "We avoid heavy page builders when possible to ensure maximum site speed and Google Core Web Vitals compliance.",
+            "availability": "Available for full website builds or hourly maintenance tasks."
         },
         "metadata": {
-            "platformType": "Web Application, SaaS",
-            "websiteFeatures": "Authentication, Database integration, Real-time updates, Admin panel, API integration",
+            "platformType": "CMS Website",
+            "websiteFeatures": "Content Management, Blogging, Portfolios, Custom Post Types",
+            "expertise": "Theme Development, Plugin Development, Server Optimization",
+            "programmingLanguage": "PHP, JavaScript",
+            "frameworks": "WordPress",
+            "tools": "WP-CLI, Local",
             "plugins": [
-                "Elementor",
-                "WooCommerce",
+                "ACF Pro",
                 "Yoast SEO",
-                "W3 Total Cache",
-                "Contact Form 7"
+                "Wordfence"
             ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=1",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -2759,6 +3180,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=2",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -2773,6 +3195,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=3",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -2786,10 +3209,10 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "wordpress developers",
-            "development",
-            "design",
-            "custom software"
+            "hire wordpress developer",
+            "wordpress expert",
+            "custom wordpress theme",
+            "cms development"
         ],
         "portfolio": [
             {
@@ -2830,62 +3253,58 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Wordpress Developers",
-            "Web Development",
-            "UI/UX Design",
-            "API Integration"
+            "WordPress",
+            "PHP",
+            "Custom Theme",
+            "Plugin Development",
+            "HTML/CSS",
+            "JavaScript",
+            "SEO"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Wordpress Developers installation, essential features, up to 5 pages/screens, and basic styling.",
+                "price": "$249",
+                "name": "WP Starter",
+                "description": "Professional WordPress setup and theme customization.",
                 "deliveryTime": "5 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "WordPress Setup",
+                    "Theme Customization",
+                    "Mobile Responsive"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Wordpress Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$799",
+                "name": "WP Custom",
+                "description": "Fully custom WordPress theme built from Figma/XD designs.",
+                "deliveryTime": "14 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom Theme",
+                    "ACF Integration",
+                    "Speed Optimization",
+                    "SEO Friendly"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Wordpress Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$1899",
+                "name": "WP Enterprise/Headless",
+                "description": "Complex WordPress portal or Headless Next.js architecture.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Headless Architecture",
+                    "Custom Plugins",
+                    "High Security",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
             "price": "$25/hr",
-            "description": "Hire a dedicated Hire Wordpress Developers developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "description": "Hire dedicated WordPress developers.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Developer",
+                "Direct Communication",
+                "Maintenance"
             ]
         }
     },
@@ -2898,14 +3317,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Frontend Developer"
         ],
-        "gigTitle": "I will do Frontend Developer development and consulting",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Frontend",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 183,
             "ordersInQueue": 2,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -2914,52 +3333,66 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Are you looking for a professional dashboard designer who can create a beautiful & functional web dashboard using HTML, CSS, Bootstrap, ReactJS, Next.js for your business, website, or app? If yes, you're in the right place!",
-            "intro2": "I am a skilled website and dashboard designer with over 8 years of experience in HTML, CSS, Bootstrap, ReactJS, Next.js.\nI will design a unique & intuitive dashboard using Charts, Graphs & other visual elements.\nAll my designs are fully responsive on all devices. I will work closely with you to ensure that it meets your exact requirements.",
-            "whatYouGetTitle": "Included Services",
+            "intro": "Transform your designs into <strong>pixel-perfect, highly interactive, and lightning-fast web experiences</strong>. Our <strong>frontend developers</strong> specialize in modern JavaScript frameworks and responsive design.",
+            "intro2": "We bridge the gap between design and technology, ensuring your web application not only looks beautiful but also delivers <strong>exceptional performance and accessibility across all devices</strong>.",
+            "whatYouGetTitle": "Frontend Development Services",
             "whatYouGet": [
-                "Fully Responsive Design",
-                "Latest Bootstrap Framework",
-                "Clean & Intuitive Dashboard",
-                "Well-Structured Code",
-                "Comprehensive Documentation",
-                "RTL Language Compatibility",
-                "Dark Mode Support",
-                "Landing page",
-                "Source Files Provided",
-                "Cross-Browser Compatible",
-                "SEO Friendly Code",
-                "Complete Control Panel",
-                "Extremely Fast Website"
+                "SPA Development (React, Vue, Angular)",
+                "Figma/AdobeXD to HTML/React",
+                "Responsive Web Design",
+                "Web Performance Optimization",
+                "Accessibility (a11y) Compliance",
+                "UI/UX Implementation",
+                "Micro-frontend Architecture"
             ],
-            "whyChooseUsTitle": "Why Choose Me",
+            "whyChooseUsTitle": "Why Hire Our Frontend Developers",
             "whyChooseUs": [
-                "Experienced Web Designer",
-                "100% Quality Guaranteed",
-                "100% Customer Satisfaction",
-                "Unlimited Revisions",
-                "User-Friendly Dashboard",
-                "On-Time Deliver"
+                "Masters of Modern JS Frameworks",
+                "Pixel-Perfect Implementation",
+                "Focus on Web Core Vitals",
+                "Cross-Browser Compatibility",
+                "Agile & Collaborative"
             ],
-            "perfectFor": null,
-            "note": "Note: If you are not satisfied with my service, I offer a full refund.",
-            "availability": "I am available up to 18 hours a day & typically respond to messages within 15 minutes."
+            "technologies": {
+                "title": "Frontend Tech Stack",
+                "list": [
+                    {
+                        "label": "Core",
+                        "value": "HTML5, CSS3, JavaScript (ES6+), TypeScript"
+                    },
+                    {
+                        "label": "Frameworks",
+                        "value": "React.js, Vue.js, Angular, Next.js"
+                    },
+                    {
+                        "label": "Styling",
+                        "value": "Tailwind CSS, SASS, Styled Components"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "SaaS Applications",
+                "Interactive Dashboards",
+                "Corporate Websites",
+                "Web Portals"
+            ],
+            "note": "We prioritize responsive design, ensuring a flawless experience on desktop, tablet, and mobile.",
+            "availability": "Flexible hiring: hourly, part-time, or full-time frontend resources."
         },
         "metadata": {
-            "platformType": "Saas",
-            "programmingLanguage": "HTML & CSS, JavaScript",
-            "websiteFeatures": "Marketing, Inventory, Analytics, Form, Events, Chat, Map, Gallery, Booking, Calendar",
-            "plugins": [
-                "React",
-                "Vue",
-                "Angular",
-                "Next.js"
-            ]
+            "platformType": "Web Interfaces, SPAs",
+            "websiteFeatures": "Interactive UI, Animations, Form Validation, Responsive Layouts",
+            "expertise": "UI Engineering, Performance, Accessibility",
+            "programmingLanguage": "JavaScript, TypeScript, HTML, CSS",
+            "frameworks": "React, Vue, Angular",
+            "tools": "Webpack, Vite, Figma",
+            "plugins": []
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=4",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -2974,6 +3407,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=5",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -2988,6 +3422,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=6",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -3001,10 +3436,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "android developers",
-            "development",
-            "design",
-            "custom software"
+            "hire frontend developer",
+            "ui developer",
+            "javascript developer",
+            "web design",
+            "spa development"
         ],
         "portfolio": [
             {
@@ -3045,62 +3481,58 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Android Developers",
-            "Mobile Development",
-            "UI/UX Design",
-            "API Integration"
+            "Frontend Development",
+            "React.js",
+            "Vue.js",
+            "JavaScript",
+            "TypeScript",
+            "Tailwind CSS",
+            "UI/UX"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Android Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$199",
+                "name": "UI Starter",
+                "description": "HTML/CSS/JS implementation of up to 3 simple pages.",
+                "deliveryTime": "4 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Responsive Design",
+                    "Clean Code",
+                    "Cross-Browser"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Android Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$699",
+                "name": "Frontend Pro",
+                "description": "SPA development (React/Vue) for a mid-sized application.",
+                "deliveryTime": "12 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
+                    "SPA Framework",
+                    "State Management",
                     "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Source Code"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Android Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$1799",
+                "name": "Enterprise UI",
+                "description": "Complex frontend architecture, micro-frontends, or heavy dashboards.",
+                "deliveryTime": "25 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Advanced Architecture",
+                    "Performance Tuning",
+                    "Complex Animations",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
             "price": "$25/hr",
-            "description": "Hire a dedicated Hire Frontend Developer developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "description": "Hire dedicated frontend developers.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated UI Engineer",
+                "Direct Communication",
+                "Agile Process"
             ]
         }
     },
@@ -3113,14 +3545,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Backend Developer"
         ],
-        "gigTitle": "I will do Backend Developer development and consulting",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Backend",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 183,
             "ordersInQueue": 2,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -3129,61 +3561,67 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "If you are facing any issues In your PHP | Laravel | Codeigniter | WordPress or if you want to create a new website then you are in the right place.",
-            "intro2": "As a professional web developer with 6+ years of experience in web development, I can build you a new web app from scratch by using the latest technology. Also, I can work on existing PHP | Laravel | Codeigniter | WordPress websites for things like",
-            "whatYouGetTitle": "Included Services",
+            "intro": "Build the invisible engine that powers your digital product. Our expert <strong>backend developers</strong> design <strong>secure, highly scalable, and lightning-fast server-side architectures</strong>, APIs, and databases.",
+            "intro2": "From complex microservices to robust monolithic applications, we choose the right technology stack (<strong>Node.js, Python, PHP, Java</strong>) to ensure your system can handle massive growth and data loads.",
+            "whatYouGetTitle": "Backend Development Services",
             "whatYouGet": [
-                "Install or migrate the script on your hosting",
-                "Convert your static web app into a dynamic web app",
-                "Add new features or improve the current website",
-                "Fix bugs from your existing site",
-                "Upgrade to the latest version",
-                "Integrate the application with an external API such as PayPal, Stripe",
-                "anything else! (Please message me with your issue)"
+                "REST & GraphQL API Development",
+                "Database Architecture & Optimization",
+                "Microservices Architecture",
+                "Serverless Computing",
+                "Third-Party API Integration",
+                "Security Audits & Implementation",
+                "Cloud Deployment (AWS/GCP)",
+                "Legacy System Migration"
+            ],
+            "whyChooseUsTitle": "Why Hire Our Backend Developers",
+            "whyChooseUs": [
+                "Language-Agnostic Experts",
+                "Focus on Scalability & Security",
+                "Optimized Database Queries",
+                "Clean Architecture",
+                "CI/CD Implementation"
             ],
             "technologies": {
-                "title": "Technologies that I use to build a custom site:",
+                "title": "Backend Tech Stack",
                 "list": [
                     {
-                        "label": "Frontend",
-                        "value": "HTML, CSS, JavaScript, React JS, Next JS, TypeScript, Redux, Tailwind CSS, Bootstrap, Material UI"
-                    },
-                    {
-                        "label": "Backend",
-                        "value": "Node JS, Express JS, PHP Laravel"
+                        "label": "Languages",
+                        "value": "Node.js, Python, PHP, Java, Go"
                     },
                     {
                         "label": "Databases",
-                        "value": "MySQL, MongoDB, PostgreSQL"
+                        "value": "PostgreSQL, MongoDB, MySQL, Redis"
+                    },
+                    {
+                        "label": "Cloud",
+                        "value": "AWS, Docker, Kubernetes"
                     }
                 ]
             },
-            "whyChooseUsTitle": "Why choose me?",
-            "whyChooseUs": [
-                "3+ years of experience as a web Developer",
-                "100% Satisfaction",
-                "No security risks",
-                "Easy to work",
-                "Quality Work"
+            "perfectFor": [
+                "Data-Heavy Applications",
+                "SaaS Platforms",
+                "Mobile App Backends",
+                "IoT Systems"
             ],
-            "perfectFor": null,
-            "note": "IMPORTANT*\nBefore you order this gig come to a discussion and let me know your exact requirement.",
-            "availability": null
+            "note": "We enforce strict security protocols to protect your data against modern cyber threats.",
+            "availability": "Dedicated backend engineers available for full-cycle development."
         },
         "metadata": {
-            "platformType": "Landing page",
-            "programmingLanguage": "HTML & CSS, JavaScript, PHP, Tailwind CSS, Vue.js",
-            "websiteFeatures": "Marketing, Payment, Social media, Customer support, Events, Membership, Calendar, Reviews, Landing page, Blog",
-            "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
-            ]
+            "platformType": "Servers, APIs, Databases",
+            "websiteFeatures": "Authentication, Data Processing, API Endpoints, Cloud Storage",
+            "expertise": "System Architecture, Database Design, Security, DevOps",
+            "programmingLanguage": "Python, JavaScript/Node.js, PHP, Java",
+            "frameworks": "Django, Express, Laravel, Spring Boot",
+            "tools": "Docker, AWS, Git",
+            "plugins": []
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=7",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -3198,6 +3636,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=8",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -3212,6 +3651,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=9",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -3225,10 +3665,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "android developers",
-            "development",
-            "design",
-            "custom software"
+            "hire backend developer",
+            "api development",
+            "database architect",
+            "server side development",
+            "cloud deployment"
         ],
         "portfolio": [
             {
@@ -3269,62 +3710,58 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Android Developers",
-            "Mobile Development",
-            "UI/UX Design",
-            "API Integration"
+            "Backend Development",
+            "Node.js",
+            "Python",
+            "Database Design",
+            "REST API",
+            "Microservices",
+            "Cloud Architect"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Android Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$299",
+                "name": "API Starter",
+                "description": "Basic backend setup with a database and simple REST API.",
+                "deliveryTime": "7 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Database Setup",
+                    "REST API",
+                    "Basic Authentication"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Android Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$899",
+                "name": "Backend Pro",
+                "description": "Comprehensive backend system with complex business logic.",
+                "deliveryTime": "15 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Complex Logic",
+                    "Third-Party APIs",
+                    "Security Hardening",
+                    "Source Code"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Android Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$2299",
+                "name": "Enterprise Architecture",
+                "description": "Highly scalable microservices architecture on cloud infrastructure.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Microservices",
+                    "Cloud Deployment",
+                    "Advanced Database",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire Backend Developer developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$30/hr",
+            "description": "Hire dedicated backend engineers.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Backend Expert",
+                "System Architecture",
+                "Agile Process"
             ]
         }
     },
@@ -3337,14 +3774,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Mobile APP Developer"
         ],
-        "gigTitle": "I will do Mobile APP Developer development and consulting",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Mobile App",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 183,
             "ordersInQueue": 2,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -3353,38 +3790,72 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built Android Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Transform your visionary idea into a <strong>market-ready mobile application</strong>. Our expert <strong>mobile app developers</strong> build high-performance, user-centric apps for iOS, Android, and cross-platform environments.",
+            "intro2": "We guide you through the <strong>entire mobile app lifecycle</strong>: from UI/UX design and prototyping to robust backend integration, strict testing, and successful App Store/Play Store launches.",
+            "whatYouGetTitle": "Mobile App Development Services",
             "whatYouGet": [
-                "Custom Android Developers design & complete development",
-                "Professional mobile app with performance optimization",
-                "Cross-platform compatible with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Native iOS App Development (Swift)",
+                "Native Android App Development (Kotlin)",
+                "Cross-Platform Apps (Flutter/React Native)",
+                "Mobile UI/UX Design",
+                "Backend API Development",
+                "App Store Optimization (ASO)",
+                "Maintenance and Support",
+                "App Migration & Modernization"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our Mobile App Developers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "Full-Stack Mobile Capabilities",
+                "Award-Winning UI/UX Designs",
+                "Agile & Transparent Process",
+                "Focus on App Performance",
+                "Experience Across Multiple Industries"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "Mobile Tech Stack",
+                "list": [
+                    {
+                        "label": "Native iOS",
+                        "value": "Swift, Objective-C"
+                    },
+                    {
+                        "label": "Native Android",
+                        "value": "Kotlin, Java"
+                    },
+                    {
+                        "label": "Cross-Platform",
+                        "value": "Flutter, React Native"
+                    },
+                    {
+                        "label": "Backend/Database",
+                        "value": "Firebase, Node.js, AWS"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "Startups",
+                "Enterprise Mobility",
+                "On-Demand Services",
+                "Health & Fitness",
+                "Social Networking"
+            ],
+            "note": "We help you choose the right technology (Native vs. Cross-Platform) based on your specific business goals and budget.",
+            "availability": "Dedicated mobile teams available for end-to-end product development."
         },
         "metadata": {
-            "platformType": "Mobile App (iOS/Android)",
-            "websiteFeatures": "Authentication, Database integration, Real-time updates, Admin panel, API integration",
-            "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
-            ]
+            "platformType": "Mobile Applications",
+            "websiteFeatures": "Push Notifications, In-App Purchases, GPS, Camera Integration, Offline Mode",
+            "expertise": "Mobile Architecture, UI/UX Design, App Store Deployment",
+            "programmingLanguage": "Swift, Kotlin, Dart, JavaScript",
+            "frameworks": "iOS SDK, Android SDK, Flutter, React Native",
+            "tools": "Xcode, Android Studio, Firebase",
+            "plugins": []
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=10",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -3399,6 +3870,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=11",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -3413,6 +3885,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=12",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -3426,10 +3899,10 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "android developers",
-            "development",
-            "design",
-            "custom software"
+            "hire mobile app developer",
+            "app development",
+            "custom mobile app",
+            "ios android developer"
         ],
         "portfolio": [
             {
@@ -3470,62 +3943,58 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Android Developers",
             "Mobile Development",
+            "iOS",
+            "Android",
+            "Flutter",
+            "React Native",
             "UI/UX Design",
-            "API Integration"
+            "Firebase"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Android Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$499",
+                "name": "MVP App",
+                "description": "Minimum Viable Product app to test your idea in the market.",
+                "deliveryTime": "14 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Basic UI Design",
+                    "Core Functionality",
+                    "Cross-Platform (Flutter)"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Android Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$1499",
+                "name": "Professional App",
+                "description": "Feature-rich mobile application with custom design and backend.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Custom UI/UX",
+                    "Backend API",
+                    "Push Notifications",
+                    "App Store Launch"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Android Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$3999",
+                "name": "Enterprise App",
+                "description": "Complex, highly secure application with advanced hardware integrations.",
+                "deliveryTime": "60 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Complex Architecture",
+                    "Advanced Security",
+                    "Admin Dashboard",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire Mobile APP Developer developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$30/hr",
+            "description": "Hire dedicated mobile developers.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Mobile Expert",
+                "Direct Communication",
+                "Agile Process"
             ]
         }
     },
@@ -3538,14 +4007,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Data Analytics"
         ],
-        "gigTitle": "I will do Data Analytics development and consulting",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Data Analytics",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 183,
             "ordersInQueue": 2,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -3554,38 +4023,67 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built Android Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Unlock the true potential of your business data. Our expert <strong>data analysts and engineers</strong> design robust data pipelines, <strong>interactive dashboards</strong>, and predictive models to drive informed decision-making.",
+            "intro2": "Stop guessing and start measuring. We specialize in aggregating data from disparate sources, cleaning it, and visualizing it using industry-leading tools like <strong>Tableau, Power BI, and Python</strong>.",
+            "whatYouGetTitle": "Data Analytics Services",
             "whatYouGet": [
-                "Custom Android Developers design & complete development",
-                "Professional mobile app with performance optimization",
-                "Cross-platform compatible with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Data Visualization & Dashboards",
+                "ETL Pipeline Development",
+                "Business Intelligence (BI) Solutions",
+                "Predictive Analytics & Forecasting",
+                "Data Cleansing & Transformation",
+                "Custom Reporting Solutions",
+                "A/B Testing Analysis",
+                "Customer Segmentation"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our Data Analysts",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "Deep Statistical Knowledge",
+                "Experts in BI Tools",
+                "Business-First Approach",
+                "Secure Data Handling",
+                "Clear & Actionable Insights"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "Data Analytics Stack",
+                "list": [
+                    {
+                        "label": "BI & Visualization",
+                        "value": "Tableau, Power BI, Looker"
+                    },
+                    {
+                        "label": "Languages",
+                        "value": "Python (Pandas, NumPy), R, SQL"
+                    },
+                    {
+                        "label": "Data Warehousing",
+                        "value": "Snowflake, Google BigQuery, AWS Redshift"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "eCommerce Optimization",
+                "Financial Forecasting",
+                "Marketing ROI Analysis",
+                "Operational Efficiency"
+            ],
+            "note": "We translate complex data sets into easy-to-understand visual stories for your stakeholders.",
+            "availability": "Available for one-off dashboard creation or ongoing analytical consulting."
         },
         "metadata": {
-            "platformType": "Mobile App (iOS/Android)",
-            "websiteFeatures": "Authentication, Database integration, Real-time updates, Admin panel, API integration",
-            "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
-            ]
+            "platformType": "Data Dashboards, BI Platforms",
+            "websiteFeatures": "Interactive Charts, Real-time Data Sync, Automated Reporting, Forecasting",
+            "expertise": "Data Modeling, ETL, Statistical Analysis, Visualization",
+            "programmingLanguage": "Python, SQL, R",
+            "frameworks": "Pandas, Scikit-learn",
+            "tools": "Tableau, Power BI, Jupyter",
+            "plugins": []
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=13",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -3600,6 +4098,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=14",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -3614,6 +4113,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=15",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -3627,10 +4127,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "android developers",
-            "development",
-            "design",
-            "custom software"
+            "hire data analyst",
+            "data analytics expert",
+            "business intelligence",
+            "tableau developer",
+            "data visualization"
         ],
         "portfolio": [
             {
@@ -3671,62 +4172,59 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Android Developers",
-            "Mobile Development",
-            "UI/UX Design",
-            "API Integration"
+            "Data Analytics",
+            "Python",
+            "SQL",
+            "Tableau",
+            "Power BI",
+            "Data Visualization",
+            "ETL",
+            "Machine Learning"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Android Developers installation, essential features, up to 5 pages/screens, and basic styling.",
+                "price": "$299",
+                "name": "Data Insights",
+                "description": "Clean a single dataset and create a static summary report.",
                 "deliveryTime": "5 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Data Cleaning",
+                    "Basic Analysis",
+                    "Summary Report"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Android Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$899",
+                "name": "Interactive Dashboard",
+                "description": "Connect your data source to a live, interactive BI dashboard.",
+                "deliveryTime": "14 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "ETL Process",
+                    "Interactive Dashboard",
+                    "KPI Tracking",
+                    "Documentation"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Android Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$2499",
+                "name": "Enterprise BI Setup",
+                "description": "Complete data warehouse setup with predictive analytics models.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Data Warehousing",
+                    "Predictive Modeling",
+                    "Multiple Dashboards",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire Data Analytics developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$35/hr",
+            "description": "Hire dedicated data analysts.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Data Analyst",
+                "Direct Communication",
+                "Agile Process"
             ]
         }
     },
@@ -3739,14 +4237,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire Cloud Infrastructure"
         ],
-        "gigTitle": "I will do Cloud Infrastructure development and consulting",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Cloud Infrastructure",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 183,
             "ordersInQueue": 2,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -3755,38 +4253,67 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built Android Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Future-proof your application with robust, scalable cloud architecture. Our <strong>DevOps and Cloud Infrastructure engineers</strong> specialize in designing, deploying, and managing <strong>highly available cloud environments</strong>.",
+            "intro2": "We help businesses <strong>migrate to the cloud, optimize existing cloud costs</strong>, and implement automated <strong>CI/CD pipelines</strong> to ensure rapid, secure, and reliable software delivery.",
+            "whatYouGetTitle": "Cloud Infrastructure Services",
             "whatYouGet": [
-                "Custom Android Developers design & complete development",
-                "Professional mobile app with performance optimization",
-                "Cross-platform compatible with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Cloud Architecture Design",
+                "AWS / GCP / Azure Migration",
+                "CI/CD Pipeline Automation",
+                "Infrastructure as Code (Terraform)",
+                "Docker & Kubernetes Orchestration",
+                "Serverless Computing Configuration",
+                "Cloud Security Audits",
+                "Cost Optimization & Monitoring"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our Cloud Engineers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "Certified AWS/GCP Professionals",
+                "Security-First Mindset",
+                "Focus on High Availability (99.99%)",
+                "Expertise in Cost Reduction",
+                "24/7 Monitoring Setup"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "Cloud & DevOps Stack",
+                "list": [
+                    {
+                        "label": "Cloud Providers",
+                        "value": "AWS, Google Cloud, Microsoft Azure"
+                    },
+                    {
+                        "label": "Containers & Orchestration",
+                        "value": "Docker, Kubernetes, ECS"
+                    },
+                    {
+                        "label": "CI/CD & IaC",
+                        "value": "Jenkins, GitHub Actions, Terraform, Ansible"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "SaaS Platforms",
+                "High-Traffic Websites",
+                "Enterprise Applications",
+                "Microservices Architectures"
+            ],
+            "note": "We implement Infrastructure as Code (IaC) to ensure your environments are reproducible and version-controlled.",
+            "availability": "Available for cloud migrations, infrastructure audits, or ongoing DevOps support."
         },
         "metadata": {
-            "platformType": "Mobile App (iOS/Android)",
-            "websiteFeatures": "Authentication, Database integration, Real-time updates, Admin panel, API integration",
-            "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
-            ]
+            "platformType": "Cloud Architecture, DevOps",
+            "websiteFeatures": "Auto-scaling, Load Balancing, Automated Backups, CI/CD",
+            "expertise": "Cloud Security, Kubernetes Orchestration, Cost Optimization",
+            "programmingLanguage": "Bash, Python, Go",
+            "frameworks": "Terraform, Ansible",
+            "tools": "AWS, Docker, Kubernetes",
+            "plugins": []
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=16",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -3801,6 +4328,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=17",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -3815,6 +4343,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=18",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -3828,10 +4357,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "android developers",
-            "development",
-            "design",
-            "custom software"
+            "hire cloud engineer",
+            "aws expert",
+            "devops engineer",
+            "cloud architecture",
+            "kubernetes setup"
         ],
         "portfolio": [
             {
@@ -3872,62 +4402,59 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Android Developers",
-            "Mobile Development",
-            "UI/UX Design",
-            "API Integration"
+            "Cloud Computing",
+            "AWS",
+            "DevOps",
+            "Docker",
+            "Kubernetes",
+            "Terraform",
+            "CI/CD",
+            "Linux"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Android Developers installation, essential features, up to 5 pages/screens, and basic styling.",
+                "price": "$399",
+                "name": "Cloud Audit",
+                "description": "Comprehensive audit of your current cloud setup for security and costs.",
                 "deliveryTime": "5 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "Security Audit",
+                    "Cost Analysis",
+                    "Optimization Report"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Android Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$999",
+                "name": "CI/CD Setup",
+                "description": "Containerize your app and set up an automated deployment pipeline.",
+                "deliveryTime": "14 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Dockerization",
+                    "CI/CD Pipeline",
+                    "Basic Monitoring",
+                    "Documentation"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Android Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$2999",
+                "name": "Enterprise Cloud",
+                "description": "Design and deploy a highly available, auto-scaling Kubernetes cluster.",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Kubernetes Setup",
+                    "Infrastructure as Code",
+                    "Advanced Security",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire Cloud Infrastructure developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$40/hr",
+            "description": "Hire dedicated Cloud/DevOps engineers.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Certified Cloud Engineer",
+                "Direct Communication",
+                "Agile Process"
             ]
         }
     },
@@ -3940,14 +4467,14 @@ export const hireUsData = [
             "Hire Us",
             "Hire CMS Developer"
         ],
-        "gigTitle": "I will do CMS Developer development and consulting",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for CMS",
         "seller": {
             "name": "Ankur Patel",
             "title": "Founder & CEO",
             "rating": 4.9,
             "reviews": 183,
             "ordersInQueue": 2,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
@@ -3956,38 +4483,66 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Transform your business into profit with a professionally built Android Developers solution that converts!",
-            "whatYouGetTitle": "What You Get:",
+            "intro": "Empower your marketing team with a <strong>lightning-fast, easy-to-use Content Management System</strong>. Our <strong>CMS developers</strong> build tailored web experiences using both traditional and modern Headless CMS platforms.",
+            "intro2": "Whether you need a visually stunning Webflow site, a robust WordPress portal, or a highly scalable <strong>Headless architecture using Contentful and Next.js</strong>, we deliver pixel-perfect results.",
+            "whatYouGetTitle": "CMS Development Services",
             "whatYouGet": [
-                "Custom Android Developers design & complete development",
-                "Professional mobile app with performance optimization",
-                "Cross-platform compatible with robust backend",
-                "SEO-optimized foundation for organic traffic",
-                "Premium architecture & essential integrations"
+                "Headless CMS Integration (Contentful, Sanity, Strapi)",
+                "Webflow Design & Development",
+                "Custom CMS Architecture",
+                "CMS Migration",
+                "Figma to CMS implementation",
+                "API Integration",
+                "SEO & Performance Tuning"
             ],
-            "whyChooseUsTitle": "Why Choose Us:",
+            "whyChooseUsTitle": "Why Hire Our CMS Developers",
             "whyChooseUs": [
-                "Decade of proven results since 2014",
-                "Conversion-focused application design",
-                "Complete development lifecycle process",
-                "Fast loading & optimized solutions",
-                "Post-launch support included"
+                "Headless Architecture Experts",
+                "Pixel-Perfect Design Implementation",
+                "Focus on Core Web Vitals",
+                "Training & Documentation Provided",
+                "Fast Turnaround Times"
             ],
-            "perfectFor": "New entrepreneurs, existing business owners needing redesign, anyone serious about building profitable digital products."
+            "technologies": {
+                "title": "CMS Tech Stack",
+                "list": [
+                    {
+                        "label": "Headless CMS",
+                        "value": "Contentful, Sanity, Strapi, Builder.io"
+                    },
+                    {
+                        "label": "Visual CMS",
+                        "value": "Webflow, WordPress"
+                    },
+                    {
+                        "label": "Frontend",
+                        "value": "Next.js, React, HTML/CSS"
+                    }
+                ]
+            },
+            "perfectFor": [
+                "Marketing Websites",
+                "Corporate Portals",
+                "Editorial & Publishing Sites",
+                "Omnichannel Content"
+            ],
+            "note": "Headless CMS architectures future-proof your content by separating the backend data from the frontend presentation.",
+            "availability": "Ready to build new CMS sites or migrate your existing content to a modern platform."
         },
         "metadata": {
-            "platformType": "Mobile App (iOS/Android)",
-            "websiteFeatures": "Authentication, Database integration, Real-time updates, Admin panel, API integration",
-            "plugins": [
-                "Security",
-                "Performance Optimization",
-                "SEO"
-            ]
+            "platformType": "Content Management Systems, Headless",
+            "websiteFeatures": "Dynamic Content, Visual Editors, Localization, Omnichannel Delivery",
+            "expertise": "Content Modeling, Frontend Integration, SEO Optimization",
+            "programmingLanguage": "JavaScript, TypeScript, PHP",
+            "frameworks": "Next.js, React",
+            "tools": "Contentful, Webflow, Strapi",
+            "plugins": []
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "makerdesign",
+                "avatar": "https://i.pravatar.cc/100?img=19",
                 "country": "Singapore",
                 "rating": 5,
                 "date": "1 month ago",
@@ -4002,6 +4557,7 @@ export const hireUsData = [
             {
                 "id": 2,
                 "name": "timer11",
+                "avatar": "https://i.pravatar.cc/100?img=20",
                 "country": "United States",
                 "rating": 4.8,
                 "date": "1 month ago",
@@ -4016,6 +4572,7 @@ export const hireUsData = [
             {
                 "id": 3,
                 "name": "doespinoal",
+                "avatar": "https://i.pravatar.cc/100?img=21",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 months ago",
@@ -4029,10 +4586,11 @@ export const hireUsData = [
             }
         ],
         "tags": [
-            "android developers",
-            "development",
-            "design",
-            "custom software"
+            "hire cms developer",
+            "headless cms",
+            "webflow expert",
+            "contentful developer",
+            "custom website"
         ],
         "portfolio": [
             {
@@ -4073,62 +4631,58 @@ export const hireUsData = [
             }
         ],
         "skills": [
-            "Android Developers",
-            "Mobile Development",
-            "UI/UX Design",
-            "API Integration"
+            "CMS Development",
+            "Webflow",
+            "Contentful",
+            "Headless CMS",
+            "Next.js",
+            "Web Design",
+            "SEO"
         ],
         "plans": {
             "basic": {
-                "price": "$195",
-                "name": "Basic Setup",
-                "description": "Standard Android Developers installation, essential features, up to 5 pages/screens, and basic styling.",
-                "deliveryTime": "5 Days Delivery",
+                "price": "$299",
+                "name": "CMS Starter",
+                "description": "Setup and configuration of a CMS with a premium template.",
+                "deliveryTime": "7 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Basic Styling",
-                    "Source code included"
+                    "CMS Setup",
+                    "Template Customization",
+                    "Mobile Responsive"
                 ]
             },
             "standard": {
-                "price": "$495",
-                "name": "Standard Pro",
-                "description": "Complete Android Developers application with custom design, API integrations, and performance optimization.",
-                "deliveryTime": "10 Days Delivery",
+                "price": "$999",
+                "name": "Custom Webflow",
+                "description": "Fully custom Webflow website developed from your Figma design.",
+                "deliveryTime": "15 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Custom Design",
-                    "API Integration",
-                    "Speed optimization",
-                    "Source code included",
-                    "Revisions included"
+                    "Pixel-Perfect Build",
+                    "CMS Collections",
+                    "Interactions/Animations",
+                    "SEO Setup"
                 ]
             },
             "premium": {
-                "price": "$995",
-                "name": "Premium Enterprise",
-                "description": "Full-scale enterprise Android Developers solution, advanced architecture, admin panel, and premium support.",
-                "deliveryTime": "21 Days Delivery",
+                "price": "$2499",
+                "name": "Headless Architecture",
+                "description": "Custom Next.js frontend integrated with a Headless CMS (Contentful/Sanity).",
+                "deliveryTime": "30 Days Delivery",
                 "features": [
-                    "Functional application",
-                    "Premium Custom Design",
-                    "Complex API Integration",
-                    "Speed optimization",
-                    "Admin Panel/Dashboard",
-                    "Source code included",
+                    "Next.js Frontend",
+                    "Content Modeling",
+                    "High Performance",
                     "Priority Support"
                 ]
             }
         },
         "hourly": {
-            "price": "$25/hr",
-            "description": "Hire a dedicated Hire CMS Developer developer on an hourly basis for flexible development, maintenance, and ongoing support.",
+            "price": "$30/hr",
+            "description": "Hire dedicated CMS developers.",
             "features": [
-                "Dedicated full-time/part-time developer",
-                "Direct communication",
-                "Flexible working hours",
-                "Daily/Weekly reporting",
-                "Source code ownership"
+                "Dedicated Developer",
+                "Direct Communication",
+                "Agile Process"
             ]
         }
     },
@@ -4142,14 +4696,14 @@ export const hireUsData = [
             "Hire Python Developer"
         ],
         "hourlyPrice": "35",
-        "gigTitle": "I will build scalable Python applications, REST APIs, and data engineering pipelines",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for Python",
         "seller": {
             "name": "Kretoss Tech",
             "title": "Expert Backend Team",
-            "rating": 5.0,
+            "rating": 5,
             "reviews": 210,
             "ordersInQueue": 4,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=80",
@@ -4158,60 +4712,89 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Looking for robust, scalable backend solutions built with Python?",
-            "intro2": "We specialize in building secure, high-performance web applications, APIs, and data processing pipelines using Python, Django, and FastAPI. Whether you need a simple script, complex backend infrastructure, or AI integrations, we deliver clean and maintainable code.",
-            "whatYouGetTitle": "Expertise Includes:",
+            "intro": "Leverage the sheer power and versatility of Python. Our expert <strong>Python developers</strong> build robust enterprise backends, perform complex data analysis, develop <strong>AI/ML models</strong>, and automate business processes.",
+            "intro2": "Whether you need a high-performance web application using <strong>Django/FastAPI</strong>, web scraping automation, or a sophisticated <strong>machine learning pipeline</strong>, we deliver clean, pythonic code.",
+            "whatYouGetTitle": "Python Development Services",
             "whatYouGet": [
-                "Custom Backend APIs",
-                "Django / FastAPI Web Apps",
-                "Data Scraping & Mining",
-                "Database Architecture",
-                "Machine Learning Scripts",
-                "Cloud Deployment (AWS/GCP)",
-                "ERP Integrations",
-                "Microservices"
+                "Web Development (Django, Flask, FastAPI)",
+                "Data Engineering & ETL Pipelines",
+                "Machine Learning & AI Integration",
+                "Web Scraping & Automation",
+                "RESTful & GraphQL APIs",
+                "Scripting and DevOps",
+                "System Integration"
             ],
-            "whyChooseUsTitle": "Why Choose Us?",
+            "whyChooseUsTitle": "Why Hire Our Python Developers",
             "whyChooseUs": [
-                "Experienced Python Developers.",
-                "Clean, PEP-8 Compliant Code.",
-                "Thoroughly tested and scalable architecture."
+                "Deep Python Expertise",
+                "Clean, PEP-8 Compliant Code",
+                "Experience with Complex Data",
+                "FastAPI & Django Masters",
+                "Agile & Transparent Workflow"
             ],
             "technologies": {
-                "title": "Tech Stack:",
+                "title": "Python Tech Stack",
                 "list": [
-                    { "label": "Frameworks", "value": "Django, FastAPI, Flask" },
-                    { "label": "Databases", "value": "PostgreSQL, MongoDB, Redis" },
-                    { "label": "Tools", "value": "Docker, Celery, Pandas" }
+                    {
+                        "label": "Core",
+                        "value": "Python 3.x"
+                    },
+                    {
+                        "label": "Web Frameworks",
+                        "value": "Django, FastAPI, Flask"
+                    },
+                    {
+                        "label": "Data Science",
+                        "value": "Pandas, NumPy, Scikit-Learn, TensorFlow"
+                    },
+                    {
+                        "label": "Database",
+                        "value": "PostgreSQL, MongoDB, Redis"
+                    }
                 ]
             },
-            "perfectFor": null,
-            "note": null,
-            "availability": "Ready to build your next Python project? Contact us today."
+            "perfectFor": [
+                "AI/ML Startups",
+                "Data Analytics Platforms",
+                "Enterprise Web Apps",
+                "Task Automation"
+            ],
+            "note": "We adhere strictly to Python's PEP-8 style guide to ensure code maintainability and readability.",
+            "availability": "Ready for complex data projects or full-stack web development."
         },
         "metadata": {
-            "platformType": "Web & Backend",
-            "websiteFeatures": "APIs, Web Scraping, Data Processing, ML Models, SaaS",
-            "expertise": "Performance, Security, Architecture, API integration",
-            "programmingLanguage": "Python, SQL",
-            "frameworks": "Django, FastAPI",
-            "tools": "Docker, AWS",
+            "platformType": "Web Backends, Data Pipelines, AI Models",
+            "websiteFeatures": "Data Processing, Machine Learning, Automation, API Servers",
+            "expertise": "Backend Engineering, Data Science, Scripting",
+            "programmingLanguage": "Python",
+            "frameworks": "Django, FastAPI, Flask",
+            "tools": "Jupyter, Docker, Celery",
             "plugins": []
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "techinnovator",
+                "avatar": "https://i.pravatar.cc/100?img=22",
                 "country": "United Kingdom",
                 "rating": 5,
                 "date": "1 week ago",
                 "comment": "Incredible backend architecture! The Python team delivered an ultra-fast REST API perfectly integrated with our database.",
                 "price": "$2,000 - $4,000",
                 "duration": "14 days",
-                "helpful": { "yes": 8, "no": 0 }
+                "helpful": {
+                    "yes": 8,
+                    "no": 0
+                }
             }
         ],
-        "tags": ["python", "django", "backend", "api", "data"],
+        "tags": [
+            "hire python developer",
+            "django developer",
+            "data science",
+            "fastapi development",
+            "python automation"
+        ],
         "portfolio": [
             {
                 "image": "/portfolio/custom/portfolio_palzea-widget.webp",
@@ -4250,44 +4833,65 @@ export const hireUsData = [
                 "duration": "6+ months"
             }
         ],
-        "skills": ["Python", "Django", "FastAPI", "PostgreSQL", "AWS"],
+        "skills": [
+            "Python",
+            "Django",
+            "FastAPI",
+            "Machine Learning",
+            "Data Engineering",
+            "Web Scraping",
+            "Backend Development"
+        ],
         "plans": {
             "basic": {
-                "price": "$295",
-                "name": "Basic Script",
-                "description": "Simple Python script, data scraping, or basic API endpoint.",
-                "deliveryTime": "3 Days Delivery",
-                "features": ["Functional script", "Source code included", "Basic instructions"]
+                "price": "$299",
+                "name": "Python Scripting",
+                "description": "Custom automation script, web scraper, or simple Flask API.",
+                "deliveryTime": "5 Days Delivery",
+                "features": [
+                    "Custom Script",
+                    "Data Extraction",
+                    "Source Code"
+                ]
             },
             "standard": {
-                "price": "$995",
-                "name": "Standard API",
-                "description": "Complete REST API or web app with database integration.",
-                "deliveryTime": "10 Days Delivery",
-                "features": ["Functional application", "API Integration", "Source code included", "Database setup"]
+                "price": "$899",
+                "name": "Django/FastAPI App",
+                "description": "Complete backend application using Django or FastAPI.",
+                "deliveryTime": "14 Days Delivery",
+                "features": [
+                    "Web Framework Setup",
+                    "Database Integration",
+                    "REST API",
+                    "Source Code"
+                ]
             },
             "premium": {
-                "price": "$2495",
-                "name": "Enterprise Backend",
-                "description": "Complex backend architecture, microservices, and high-performance optimizations.",
-                "deliveryTime": "20 Days Delivery",
-                "features": ["Complex API Integration", "Speed optimization", "Source code included", "Priority Support", "Dockerization"]
+                "price": "$2499",
+                "name": "AI/Data Enterprise",
+                "description": "Complex data pipeline or Machine Learning model integration.",
+                "deliveryTime": "30 Days Delivery",
+                "features": [
+                    "Complex Architecture",
+                    "Data Processing",
+                    "ML Integration",
+                    "Priority Support"
+                ]
             }
         },
         "hourly": {
             "price": "$35/hr",
-            "description": "Hire a dedicated Python developer on an hourly basis for flexible development and backend support.",
+            "description": "Hire dedicated Python engineers.",
             "features": [
-                "Dedicated Python expert",
-                "Direct communication",
-                "Flexible working hours",
-                "Code ownership"
+                "Dedicated Python Expert",
+                "Data Engineering",
+                "Agile Process"
             ]
         }
     },
     {
         "slug": "vibe-coding-developer",
-        "category": "Frontend Developers",
+        "category": "Hidden",
         "title": "Hire Vibe Coder",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
         "breadcrumbs": [
@@ -4295,14 +4899,14 @@ export const hireUsData = [
             "Hire Vibe Coder"
         ],
         "hourlyPrice": "40",
-        "gigTitle": "I will fast-track your app development using advanced Vibe Coding and AI tools",
+        "gigTitle": "Hire Dedicated Developer Or Fixed cost project for AI & Vibe Coding",
         "seller": {
             "name": "Kretoss AI Team",
             "title": "Vibe Coding Experts",
-            "rating": 5.0,
+            "rating": 5,
             "reviews": 85,
             "ordersInQueue": 1,
-            "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+            "avatar": "/grouppics/ankursir.png"
         },
         "images": [
             "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
@@ -4311,60 +4915,88 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Looking to ship your MVP at lightspeed?",
-            "intro2": "Vibe coding uses advanced AI workflows, Cursor, GitHub Copilot, and LLMs to drastically reduce development time. We help startups and entrepreneurs rapidly prototype, iterate, and launch products in record time without sacrificing code quality.",
-            "whatYouGetTitle": "Why Vibe Coding?",
+            "intro": "Step into the future of software development. Our <strong>'Vibe Coding' experts</strong> leverage advanced AI models (Copilot, Cursor, Claude, ChatGPT) to rapidly prototype, build, and refactor applications at unprecedented speeds.",
+            "intro2": "By combining human architectural expertise with <strong>AI-assisted code generation</strong>, we drastically reduce time-to-market and development costs while maintaining high quality and security standards.",
+            "whatYouGetTitle": "AI-Assisted Development Services",
             "whatYouGet": [
-                "Rapid Prototyping",
-                "MVP Development",
-                "AI-Assisted Coding",
-                "Automated Testing",
-                "Quick Refactoring",
-                "UI/UX Iteration",
-                "Next.js / React Apps",
-                "Full-Stack Deployment"
+                "Rapid MVP Prototyping",
+                "AI-Assisted Full Stack Development",
+                "Legacy Code Refactoring & Modernization",
+                "Automated Test Generation",
+                "AI Integration into Existing Apps",
+                "Custom LLM Wrappers & Prompts",
+                "Workflow Automation"
             ],
-            "whyChooseUsTitle": "Our Advantage:",
+            "whyChooseUsTitle": "Why Hire Our Vibe Coders",
             "whyChooseUs": [
-                "Expertise in AI prompting and Cursor.",
-                "10x Faster delivery times.",
-                "Agile, modern, scalable architectures."
+                "Masters of Prompt Engineering",
+                "10x Development Speed",
+                "Strong Architectural Foundation",
+                "Focus on Code Quality & Security",
+                "Agile & Adaptive Workflows"
             ],
             "technologies": {
-                "title": "Vibe Stack:",
+                "title": "AI Development Stack",
                 "list": [
-                    { "label": "AI Tools", "value": "Cursor, Copilot, ChatGPT, Claude" },
-                    { "label": "Frontend", "value": "React, Next.js, TailwindCSS" },
-                    { "label": "Backend", "value": "Node.js, Supabase, Firebase" }
+                    {
+                        "label": "AI Tools",
+                        "value": "Cursor IDE, GitHub Copilot, Claude 3.5 Sonnet, GPT-4o"
+                    },
+                    {
+                        "label": "Core Stack",
+                        "value": "Next.js, React, Node.js, Python"
+                    },
+                    {
+                        "label": "AI Integration",
+                        "value": "LangChain, OpenAI API, Anthropic API"
+                    }
                 ]
             },
-            "perfectFor": null,
-            "note": null,
-            "availability": "Ready to vibe code your next big idea? Message us now."
+            "perfectFor": [
+                "Startup MVPs",
+                "Rapid Prototyping",
+                "Internal Tools",
+                "Legacy Code Updates"
+            ],
+            "note": "While AI generates the boilerplate, our senior engineers review, secure, and optimize every line of code.",
+            "availability": "Available for rapid prototyping sprints or integrating AI features into your product."
         },
         "metadata": {
-            "platformType": "Web & Mobile App",
-            "websiteFeatures": "MVP, AI Integration, Rapid Prototyping, SaaS",
-            "expertise": "Speed, Iteration, Modern Stack",
-            "programmingLanguage": "JavaScript, TypeScript, Python",
-            "frameworks": "Next.js, React",
-            "tools": "Cursor, Vercel",
-            "plugins": []
+            "platformType": "AI-Assisted Web & Mobile Apps",
+            "websiteFeatures": "AI Chatbots, Automated Workflows, Rapid UI Generation, Smart Data Processing",
+            "expertise": "Prompt Engineering, Rapid Prototyping, AI API Integration",
+            "programmingLanguage": "JavaScript, Python, TypeScript",
+            "frameworks": "Next.js, React, FastAPI",
+            "tools": "Cursor, Copilot, LangChain",
+            "plugins": [
+                "OpenAI API",
+                "Anthropic API"
+            ]
         },
         "reviews": [
             {
                 "id": 1,
                 "name": "startupfounder",
+                "avatar": "https://i.pravatar.cc/100?img=23",
                 "country": "United States",
                 "rating": 5,
                 "date": "2 days ago",
                 "comment": "Unbelievable speed! They turned my idea into a working MVP in just a few days using vibe coding. The code was surprisingly clean.",
                 "price": "$1,000 - $3,000",
                 "duration": "5 days",
-                "helpful": { "yes": 15, "no": 0 }
+                "helpful": {
+                    "yes": 15,
+                    "no": 0
+                }
             }
         ],
-        "tags": ["vibe coding", "ai", "cursor", "mvp", "nextjs"],
+        "tags": [
+            "hire vibe coder",
+            "ai developer",
+            "cursor ide",
+            "rapid prototyping",
+            "llm integration"
+        ],
         "portfolio": [
             {
                 "image": "/portfolio/custom/portfolio_palzea-widget.webp",
@@ -4403,38 +5035,59 @@ export const hireUsData = [
                 "duration": "6+ months"
             }
         ],
-        "skills": ["Cursor", "AI Prompting", "Next.js", "TailwindCSS", "Supabase"],
+        "skills": [
+            "Prompt Engineering",
+            "Cursor IDE",
+            "Full Stack Development",
+            "AI Integration",
+            "Rapid Prototyping",
+            "Next.js",
+            "Python"
+        ],
         "plans": {
             "basic": {
-                "price": "$495",
-                "name": "Vibe Prototype",
-                "description": "Rapid interactive UI prototype for your app idea.",
-                "deliveryTime": "2 Days Delivery",
-                "features": ["Interactive Prototype", "Source code included", "Basic Styling"]
+                "price": "$299",
+                "name": "AI Prototype",
+                "description": "Rapid MVP or single-page app built using AI-assisted workflows.",
+                "deliveryTime": "3 Days Delivery",
+                "features": [
+                    "Rapid UI Development",
+                    "Basic Functionality",
+                    "Source Code"
+                ]
             },
             "standard": {
-                "price": "$1295",
-                "name": "Vibe MVP",
-                "description": "A fully functional Minimum Viable Product ready for launch.",
-                "deliveryTime": "7 Days Delivery",
-                "features": ["Functional application", "API Integration", "Source code included", "Database setup"]
+                "price": "$899",
+                "name": "AI Integration",
+                "description": "Integrate LLM capabilities (like a custom chatbot) into your app.",
+                "deliveryTime": "10 Days Delivery",
+                "features": [
+                    "OpenAI/Claude API",
+                    "Custom Prompts",
+                    "Frontend UI",
+                    "Source Code"
+                ]
             },
             "premium": {
-                "price": "$2995",
-                "name": "Vibe Scale",
-                "description": "Complex app with advanced AI features, auth, and production deployment.",
-                "deliveryTime": "14 Days Delivery",
-                "features": ["Complex Integration", "Speed optimization", "Source code included", "Production Ready", "Premium Support"]
+                "price": "$1999",
+                "name": "Full AI Application",
+                "description": "Complete SaaS application built rapidly with AI tools.",
+                "deliveryTime": "20 Days Delivery",
+                "features": [
+                    "Full Stack Architecture",
+                    "Database Setup",
+                    "Authentication",
+                    "Priority Support"
+                ]
             }
         },
         "hourly": {
-            "price": "$40/hr",
-            "description": "Hire a dedicated Vibe Coder on an hourly basis for lightning-fast iterations and updates.",
+            "price": "$35/hr",
+            "description": "Hire dedicated AI-assisted developers.",
             "features": [
-                "Dedicated Vibe Coder",
-                "Direct communication",
-                "Lightning-fast turnaround",
-                "Continuous deployment"
+                "Senior Engineer",
+                "10x Speed Workflow",
+                "Agile Process"
             ]
         }
     }

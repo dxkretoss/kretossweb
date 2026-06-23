@@ -9,11 +9,11 @@ export default function Footer({ currentRoute }) {
 
     // Trust Badges Data
     const trustBadges = [
-        { platform: "Google", logo: "https://cdn.worldvectorlogo.com/logos/google-icon-1.svg", rating: "4.9/5", reviews: "86 Client Reviews" },
-        { platform: "Clutch", logo: "/clutch.png", rating: "5/5", reviews: "34 Client Reviews" },
+        { platform: "Google", logo: "/Review/google.svg", rating: "4.9/5", reviews: "86 Client Reviews" },
+        { platform: "Clutch", logo: "/Review/cluth.png", rating: "5/5", reviews: "34 Client Reviews" },
         // { platform: "Smart Customer", logo: "https://cdn-icons-png.flaticon.com/512/4144/4144111.png", rating: "4.8/5", reviews: "28 Client Reviews" },
-        { platform: "Trustpilot", logo: "https://cdn.worldvectorlogo.com/logos/trustpilot-2.svg", rating: "4.7/5", reviews: "38 Client Reviews" },
-        { platform: "Global Clients", logo: "https://cdn-icons-png.flaticon.com/512/814/814513.png", rating: "952+", reviews: "Satisfied Clients" }
+        { platform: "Trustpilot", logo: "/Review/trustpilot.svg", rating: "4.7/5", reviews: "38 Client Reviews" },
+        { platform: "Global Clients", logo: "/Review/global.png", rating: "952+", reviews: "Satisfied Clients", hideStars: true }
     ];
 
     useEffect(() => {
@@ -217,7 +217,7 @@ export default function Footer({ currentRoute }) {
                                 <div className="footer-menu-block w-full flex flex-col">
                                     <h3 className="footer-menu-title">Highly Rated</h3>
 
-                                    <div className="flex flex-col items-center w-full max-w-[240px]">
+                                    <div className="flex flex-col items-center w-full max-w-full lg:max-w-[240px]">
                                         <div className="relative w-full h-[200px]">
                                             {trustBadges.map((badge, idx) => (
                                                 <div
@@ -240,13 +240,15 @@ export default function Footer({ currentRoute }) {
                                                         </div>
 
                                                         {/* Stars */}
-                                                        <div className="flex gap-1 text-[#f59e0b] mb-4">
-                                                            {[...Array(5)].map((_, i) => (
-                                                                <svg key={i} className="w-4 h-4 drop-shadow-sm" fill="currentColor" viewBox="0 0 20 20">
-                                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                                                </svg>
-                                                            ))}
-                                                        </div>
+                                                        {!badge.hideStars && (
+                                                            <div className="flex gap-1 text-[#f59e0b] mb-4">
+                                                                {[...Array(5)].map((_, i) => (
+                                                                    <svg key={i} className="w-4 h-4 drop-shadow-sm" fill="currentColor" viewBox="0 0 20 20">
+                                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                                    </svg>
+                                                                ))}
+                                                            </div>
+                                                        )}
 
                                                         {/* Reviews text */}
                                                         <div className="text-[12px] font-bold text-[#44c7f6] uppercase tracking-widest">{badge.reviews}</div>

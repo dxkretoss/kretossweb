@@ -59,10 +59,10 @@ export default function TeamSection() {
 
     return (
         <section className="w-full bg-[#fafcff] text-black py-10 lg:py-20 relative overflow-hidden" ref={sectionRef}>
-            <div className="container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-center relative z-10">
 
                 {/* Left Content */}
-                <div className="team-left-content lg:col-span-6 flex flex-col items-center sm:items-start text-center sm:text-left">
+                <div className="team-left-content flex flex-col items-center sm:items-start text-center sm:text-left">
 
 
                     <div className='mb-5'>
@@ -88,7 +88,7 @@ export default function TeamSection() {
                 </div>
 
                 {/* Right Content - Cards Grid */}
-                <div className="team-grid lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-0 lg:mt-0">
+                <div className="team-grid grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-0 lg:mt-0">
                     {teamMembersTop.map((member, idx) => (
                         <a
                             key={idx}
