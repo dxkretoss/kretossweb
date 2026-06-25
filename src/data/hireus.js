@@ -221,7 +221,63 @@ export const hireUsData = [
                 "Long-Term Maintenance",
                 "Priority Technical Support"
             ]
-        }
+        },
+        "portfolio": [
+            {
+                "image": "/portfolio/custom/portfolio_palzea-widget.webp",
+                "title": "Palzea Widget",
+                "date": "February 2025",
+                "description": "A secure P2P crypto transfer solution that enables seamless digital asset transactions and wallet integrations.",
+                "tags": [
+                    "Design Services",
+                    "+6"
+                ],
+                "cost": "$2500-$5000",
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_dreamload.webp",
+                "title": "Dreamload",
+                "date": "January 2025",
+                "description": "An AI-powered sports platform that enhances athlete performance, league management, and fan engagement through data-driven insights.",
+                "tags": [
+                    "E-Commerce",
+                    "+4"
+                ],
+                "cost": "$1500-$3000",
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_phoenix.webp",
+                "title": "PhoenixFC",
+                "date": "November 2024",
+                "description": "The official digital platform of Phoenix FC, showcasing club history, teams, matches, achievements, and community activities.",
+                "tags": [
+                    "Enterprise",
+                    "+8"
+                ],
+                "cost": "$5000-$10000",
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
+            }
+        ]
     },
     {
         "slug": "hire-ios-app-developers",
@@ -387,7 +443,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -399,7 +461,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -411,7 +479,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -633,7 +707,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -645,7 +725,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -657,7 +743,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -871,7 +963,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -883,7 +981,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -895,7 +999,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -982,7 +1092,7 @@ export const hireUsData = [
         "aboutGig": {
             "intro": "Looking to hire <strong>experienced React JS developers</strong> for your startup, SaaS platform, enterprise application, or custom web solution? Our dedicated React developers build <strong>fast, scalable, responsive, and modern applications</strong> using the latest React ecosystem and industry best practices.",
             "intro2": "With <strong>8+ years of frontend development experience</strong>, our React JS developers specialize in building high-performance web applications, SaaS platforms, enterprise dashboards, customer portals, admin panels, and eCommerce solutions. We focus on <strong>clean architecture, reusable components, performance optimization</strong>, and seamless user experiences to help businesses scale faster.",
-            "whyChooseUsTitle": "Why Choose Me?",
+            "whyChooseUsTitle": "Why Choose Kretoss Technology?",
             "whyChooseUs": [
                 "100% Client Satisfaction",
                 "Fast, Responsive Communication",
@@ -1081,7 +1191,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -1093,7 +1209,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -1105,7 +1227,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -1209,9 +1337,9 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Looking for a reliable <strong>VueJs, NuxtJs, NodeJs, ReactJs, NextJs, Supabase, Bootstrap and Javascript developer</strong> who can turn your ideas into a <strong>fast, scalable, and modern web application</strong>?",
-            "intro2": "With <strong>9+ years of professional experience</strong>, I specialize in building robust frontend solutions using <strong>VueJs, NuxtJs</strong>, and modern JavaScript frameworks.",
-            "whatYouGetTitle": "What I Can Do for You",
+            "intro": "Looking for a reliable <strong>VueJs, NuxtJs, NodeJs, ReactJs, NextJs, Supabase, Bootstrap and Javascript development team</strong> that can turn your ideas into a <strong>fast, scalable, and modern web application</strong>?",
+            "intro2": "With <strong>9+ years of professional experience</strong>, we specialize in building robust frontend solutions using <strong>VueJs, NuxtJs</strong>, and modern JavaScript frameworks.",
+            "whatYouGetTitle": "What We Can Do for You",
             "whatYouGet": [
                 "VueJs (Vue 2 / Vue 3) Development",
                 "NuxtJs (SSR / SSG) Applications",
@@ -1226,7 +1354,7 @@ export const hireUsData = [
                 "Responsive & Mobile-Friendly Design",
                 "Backend with NodeJs and Supabase"
             ],
-            "whyChooseUsTitle": "Why Choose Me?",
+            "whyChooseUsTitle": "Why Choose Kretoss Technology?",
             "whyChooseUs": [
                 "9+ Years of Real-World Experience",
                 "Clean, Maintainable & Scalable Code",
@@ -1338,7 +1466,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -1350,7 +1484,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -1362,7 +1502,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -1577,7 +1723,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -1589,7 +1741,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -1601,7 +1759,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -1685,9 +1849,9 @@ export const hireUsData = [
             "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
         ],
         "aboutGig": {
-            "intro": "Looking for a <strong>full stack PHP Laravel developer</strong> for your web app development? You just found your expert PHP Laravel developer let's build something powerful!",
-            "intro2": "I am a senior PHP Laravel developer with <strong>6+ years of full stack web app development experience</strong>, delivering SaaS platforms, CRM/ERP systems, REST APIs, and complex business web apps worldwide.",
-            "whatYouGetTitle": "MY PHP LARAVEL DEVELOPMENT SERVICES",
+            "intro": "Looking for <strong>full stack PHP Laravel development services</strong> for your web app? At <strong>Kretoss Technology</strong>, we build powerful, high-performance web applications.",
+            "intro2": "We are a team of senior PHP Laravel developers with <strong>6+ years of experience</strong> in full stack development, delivering SaaS platforms, CRM/ERP systems, REST APIs, and complex business web apps worldwide.",
+            "whatYouGetTitle": "OUR PHP LARAVEL DEVELOPMENT SERVICES",
             "whatYouGet": [
                 "Custom web app development & SaaS platforms",
                 "CRM, ERP & business management systems",
@@ -1695,12 +1859,12 @@ export const hireUsData = [
                 "Database design, optimization & bug fixing",
                 "AI features & automation for full stack web apps"
             ],
-            "whyChooseUsTitle": "WHY CHOOSE THIS PHP LARAVEL DEVELOPER?",
+            "whyChooseUsTitle": "WHY CHOOSE KRETOSS TECHNOLOGY?",
             "whyChooseUs": [
-                "Expert full stack PHP Laravel developer Laravel 10/11 & clean code",
+                "Expert full stack Laravel development team using Laravel 10/11 & clean code standards",
                 "Complete web app development: PHP backend, Vue.js/React frontend & MySQL",
-                "PHP developer for scalable, secure & high-performance web applications",
-                "Laravel developer with REST APIs, role-based auth & third-party integrations"
+                "Scalable, secure & high-performance web applications built by seasoned professionals",
+                "Robust APIs, role-based auth, and seamless third-party integrations"
             ],
             "technologies": {
                 "title": "Laravel Technology Stack",
@@ -1811,7 +1975,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -1823,7 +1993,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -1835,7 +2011,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -2052,7 +2234,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -2064,7 +2252,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -2076,7 +2270,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -2293,7 +2493,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -2305,7 +2511,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -2317,7 +2529,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -2529,7 +2747,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -2541,7 +2765,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -2553,7 +2783,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -2762,7 +2998,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -2774,7 +3016,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -2786,7 +3034,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -2992,7 +3246,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -3004,7 +3264,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -3016,7 +3282,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -3225,7 +3497,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -3237,7 +3515,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -3249,7 +3533,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -3453,7 +3743,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -3465,7 +3761,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -3477,7 +3779,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -3682,7 +3990,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -3694,7 +4008,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -3706,7 +4026,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -3915,7 +4241,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -3927,7 +4259,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -3939,7 +4277,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -4144,7 +4488,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -4156,7 +4506,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -4168,7 +4524,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -4374,7 +4736,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -4386,7 +4754,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -4398,7 +4772,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -4603,7 +4983,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -4615,7 +5001,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -4627,7 +5019,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -4806,7 +5204,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -4818,7 +5222,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -4830,7 +5240,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [
@@ -5008,7 +5424,13 @@ export const hireUsData = [
                     "+6"
                 ],
                 "cost": "$2500-$5000",
-                "duration": "3-6 months"
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "Blockchain + React.js + Node.js",
+                "category": "Custom web",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
             },
             {
                 "image": "/portfolio/custom/portfolio_dreamload.webp",
@@ -5020,7 +5442,13 @@ export const hireUsData = [
                     "+4"
                 ],
                 "cost": "$1500-$3000",
-                "duration": "1-3 months"
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
             },
             {
                 "image": "/portfolio/custom/portfolio_phoenix.webp",
@@ -5032,7 +5460,13 @@ export const hireUsData = [
                     "+8"
                 ],
                 "cost": "$5000-$10000",
-                "duration": "6+ months"
+                "duration": "6+ months",
+                "timeline": "2-4 Months",
+                "country": "USA",
+                "techStack": "ReactJS + Python",
+                "category": "Custom web",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
             }
         ],
         "skills": [

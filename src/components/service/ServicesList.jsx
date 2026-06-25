@@ -215,7 +215,7 @@ export default function ServicesList() {
     }, []);
 
     return (
-        <section className="bg-[#fafcff] py-10 lg:py-20 px-4 sm:px-6 lg:px-12 overflow-hidden relative" ref={containerRef}>
+        <section className="bg-[#fafcff] py-10 lg:py-20 overflow-hidden relative" ref={containerRef}>
             {/* SVG Definitions for Gradient Icons */}
             <svg width="0" height="0" className="absolute">
                 <defs>
@@ -226,7 +226,7 @@ export default function ServicesList() {
                 </defs>
             </svg>
 
-            <div className="container mx-auto max-w-7xl relative z-10">
+            <div className="container mx-auto w-layout-blockcontainer container-full-width relative z-10">
                 {/* Section Title */}
                 <div className="text-center mb-8 lg:mb-16 service-list-title flex flex-col items-center">
                     <div className='mb-5'>

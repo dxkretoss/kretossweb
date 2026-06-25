@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import AnimatedButton from '../ui/AnimatedButton';
 
 export default function Footer({ currentRoute }) {
@@ -218,47 +219,53 @@ export default function Footer({ currentRoute }) {
                                     <h3 className="footer-menu-title">Highly Rated</h3>
 
                                     <div className="flex flex-col items-center w-full max-w-full lg:max-w-[240px]">
-                                        <div className="relative w-full h-[200px]">
-                                            {trustBadges.map((badge, idx) => (
-                                                <div
-                                                    key={idx}
-                                                    className={`absolute inset-0 transition-all duration-700 transform ${idx === activeBadgeIdx ? 'opacity-100 scale-100 translate-y-0 z-10' : 'opacity-0 scale-95 translate-y-4 z-0 pointer-events-none'}`}
+                                        <div className="relative w-full h-[200px] flex items-center justify-center">
+                                            <AnimatePresence mode="wait">
+                                                <motion.div
+                                                    key={activeBadgeIdx}
+                                                    initial={{ opacity: 0, y: 15, scale: 0.95 }}
+                                                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                                                    exit={{ opacity: 0, y: -15, scale: 0.95 }}
+                                                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                                                    className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer group"
                                                 >
-                                                    <div className="relative w-full h-full hover:scale-105 transition-all duration-300 cursor-pointer flex flex-col items-center justify-center group">
-
-                                                        {/* Logo */}
-                                                        <div className="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center mb-5 shrink-0 backdrop-blur-md">
-                                                            <img src={badge.logo} alt={badge.platform} className="h-6 w-6 object-contain" />
-                                                        </div>
-
-                                                        {/* Platform Name */}
-                                                        <h4 className="text-white font-bold text-base mb-1">{badge.platform}</h4>
-
-                                                        {/* Rating */}
-                                                        <div className="flex items-center gap-2 mb-2">
-                                                            <span className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0] leading-none">{badge.rating}</span>
-                                                        </div>
-
-                                                        {/* Stars */}
-                                                        {!badge.hideStars && (
-                                                            <div className="flex gap-1 text-[#f59e0b] mb-4">
-                                                                {[...Array(5)].map((_, i) => (
-                                                                    <svg key={i} className="w-4 h-4 drop-shadow-sm" fill="currentColor" viewBox="0 0 20 20">
-                                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                                                    </svg>
-                                                                ))}
-                                                            </div>
-                                                        )}
-
-                                                        {/* Reviews text */}
-                                                        <div className="text-[12px] font-bold text-[#44c7f6] uppercase tracking-widest">{badge.reviews}</div>
+                                                    {/* Logo */}
+                                                    <div className="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center mb-5 shrink-0 backdrop-blur-md group-hover:scale-110 transition-transform duration-300">
+                                                        <img src={trustBadges[activeBadgeIdx].logo} alt={trustBadges[activeBadgeIdx].platform} className="h-6 w-6 object-contain" />
                                                     </div>
-                                                </div>
-                                            ))}
+
+                                                    {/* Platform Name */}
+                                                    <h4 className="text-white font-bold text-base mb-1">{trustBadges[activeBadgeIdx].platform}</h4>
+
+                                                    {/* Rating */}
+                                                    <div className="flex items-center gap-2 mb-2">
+                                                        <span className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0] leading-none">{trustBadges[activeBadgeIdx].rating}</span>
+                                                    </div>
+
+                                                    {/* Stars */}
+                                                    {!trustBadges[activeBadgeIdx].hideStars && (
+                                                        <div className="flex gap-1 text-[#f59e0b] mb-4">
+                                                            {[...Array(5)].map((_, i) => (
+                                                                <svg key={i} className="w-4 h-4 drop-shadow-sm" fill="currentColor" viewBox="0 0 20 20">
+                                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                                </svg>
+                                                            ))}
+                                                        </div>
+                                                    )}
+
+                                                    {/* Reviews text */}
+                                                    <div className="text-[12px] font-bold text-[#44c7f6] uppercase tracking-widest">{trustBadges[activeBadgeIdx].reviews}</div>
+                                                </motion.div>
+                                            </AnimatePresence>
                                         </div>
                                         <div className="flex gap-2 justify-center mt-5">
                                             {trustBadges.map((_, idx) => (
-                                                <div key={idx} className={`h-2 rounded-full transition-all duration-300 ${idx === activeBadgeIdx ? 'bg-gradient-to-r from-[#44c7f6] to-[#0037f0] w-6' : 'bg-[#222] w-2'}`}></div>
+                                                <button 
+                                                    key={idx} 
+                                                    onClick={() => setActiveBadgeIdx(idx)}
+                                                    className={`h-2 rounded-full transition-all duration-300 outline-none ${idx === activeBadgeIdx ? 'bg-gradient-to-r from-[#44c7f6] to-[#0037f0] w-6' : 'bg-[#222] hover:bg-[#333] w-2'}`}
+                                                    aria-label={`Show badge ${idx + 1}`}
+                                                ></button>
                                             ))}
                                         </div>
                                     </div>

@@ -74,16 +74,14 @@
   }
 }
 
-.animate-auto-scroll-bg {
-  animation: auto-scroll-bg 12s ease-in-out infinite alternate;
+.desktop-scroll-container {
+  background-position: top center;
+  transition: background-position 10s ease-in-out !important;
 }
 
 @media (min-width: 768px) {
-  .desktop-scroll-container {
-    animation: auto-scroll-bg 25s ease-in-out infinite alternate !important;
-  }
-
   .desktop-scroll-mode-auto {
+    animation: auto-scroll-bg 32s ease-in-out infinite alternate !important;
     animation-play-state: paused !important;
   }
 
@@ -92,10 +90,12 @@
   }
 
   .desktop-scroll-mode-playing {
+    animation: auto-scroll-bg 32s ease-in-out infinite alternate !important;
     animation-play-state: running !important;
   }
 
   .desktop-scroll-mode-paused {
+    animation: auto-scroll-bg 32s ease-in-out infinite alternate !important;
     animation-play-state: paused !important;
   }
 }
@@ -180,6 +180,23 @@ template {
   display: none;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom Hire Button Styles to ensure hover works flawlessly */
+.hire-btn-custom {
+  background-color: #f4f7ff;
+  color: #0037f0;
+  border: 1px solid rgba(0, 55, 240, 0.2);
+}
+
+.hire-btn-custom:hover {
+  background-color: #0037f0;
+  color: white;
+}
+
+/* Base styles to fix input backgrounds in dark mode and default borders */
 a {
   background-color: #0000;
 }
@@ -213,8 +230,15 @@ optgroup,
 select,
 textarea {
   /* color: inherit; */
-  font: inherit;
+  /* font: inherit; */
   /* margin: 0; */
+}
+
+textarea::placeholder,
+select::placeholder,
+optgroup::placeholder,
+input::placeholder {
+  font-size: 14px;
 }
 
 button {
@@ -2758,7 +2782,7 @@ body {
 
 .author-designation {
   color: #5f5e5e;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .product {
@@ -6283,7 +6307,7 @@ body {
   }
 
   .contact-label {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .contact-call-box {
@@ -6327,12 +6351,12 @@ body {
   }
 
   .author-title {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .author-designation {
     color: #5b5656;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .product-single-slider._01 {
@@ -6359,7 +6383,7 @@ body {
 
   .button-front-text,
   .button-back-text {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .counter-text {
@@ -6815,7 +6839,7 @@ body {
   }
 
   .author-title {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .product-single-slider._01 {
@@ -7214,10 +7238,10 @@ body {
     font-size: 16px;
   }
 
-  .container-full-width {
+  /* .container-full-width {
     justify-content: center;
     display: flex;
-  }
+  } */
 
   .header-content-wrapper {
     width: 100%;

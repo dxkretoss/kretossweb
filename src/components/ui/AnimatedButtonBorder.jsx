@@ -40,7 +40,7 @@ const SplitText = ({ text, startIndex = 1 }) => {
 };
 
 
-export default function AnimatedButtonBorder({ href = "#Contact", text = "LET'S TALK", onClick, className = "", target }) {
+export default function AnimatedButtonBorder({ href = "#Contact", text = "LET'S TALK", onClick, className = "", target, backTextColor = "#ffffff" }) {
     const buttonRef = useRef(null);
 
     useLayoutEffect(() => {
@@ -54,7 +54,7 @@ export default function AnimatedButtonBorder({ href = "#Contact", text = "LET'S 
             const backArrow = button.querySelector(".button-back-arrow");
 
             // Initial setup: push back text down
-            gsap.set(backLetters, { yPercent: 100, color: "#ffffff" });
+            gsap.set(backLetters, { yPercent: 100, color: backTextColor });
 
             button.addEventListener("mouseenter", () => {
                 gsap.killTweensOf([frontLetters, backLetters, frontArrow, backArrow]);

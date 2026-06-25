@@ -2,8 +2,83 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { FastAverageColor } from 'fast-average-color';
 import { hireUsData } from '../data/hireus';
-import { FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import {
+    FaStar, FaChevronLeft, FaChevronRight,
+    FaReact, FaAngular, FaVuejs, FaNodeJs, FaPython,
+    FaLaravel, FaJava, FaSwift, FaApple, FaAws,
+    FaDigitalOcean, FaWordpress, FaShopify, FaMagento,
+    FaDrupal, FaJs, FaChartBar, FaChartLine, FaMicrosoft, FaDatabase,
+    FaHtml5, FaCss3Alt, FaCode, FaPhp, FaHubspot
+} from 'react-icons/fa';
+import {
+    SiNextdotjs, SiNestjs, SiFlutter, SiKotlin,
+    SiPandas, SiGooglecloud, SiBigcommerce,
+    SiSupabase, SiSolidity, SiMysql, SiCodeigniter, SiTensorflow
+} from 'react-icons/si';
 import { ArrowRight } from 'lucide-react';
+
+const getCountryFlag = (country) => {
+    if (!country) return '';
+    const flags = {
+        'usa': '🇺🇸',
+        'uk': '🇬🇧',
+        'australia': '🇦🇺',
+        'germany': '🇩🇪',
+        'brazil': '🇧🇷',
+        'canada': '🇨🇦',
+        'uae': '🇦🇪'
+    };
+    return flags[country.toLowerCase()] || '🌍';
+};
+
+const getTechIcons = (techString) => {
+    if (!techString) return [<FaCode />];
+    const techMap = {
+        'angular': <FaAngular />,
+        'node.js': <FaNodeJs />,
+        'node js': <FaNodeJs />,
+        'html': <FaHtml5 />,
+        'css': <FaCss3Alt />,
+        'js': <FaJs />,
+        'javascript': <FaJs />,
+        'react.js': <FaReact />,
+        'reactjs': <FaReact />,
+        'react': <FaReact />,
+        'react native': <FaReact />,
+        'supabase': <SiSupabase />,
+        'blockchain': <SiSolidity />,
+        'python': <FaPython />,
+        'vue.js': <FaVuejs />,
+        'laravel': <FaLaravel />,
+        'ai': <FaChartLine />,
+        'bubble': <FaCode />,
+        'mysql': <SiMysql />,
+        'flutter': <SiFlutter />,
+        'ios swift': <FaSwift />,
+        'swift': <FaSwift />,
+        'shopify': <FaShopify />,
+        'codeigniter': <SiCodeigniter />,
+        'wordpress': <FaWordpress />,
+        'php': <FaPhp />,
+        'magento': <FaMagento />,
+        'bigcommerce': <SiBigcommerce />,
+        'hubspot': <FaHubspot />,
+    };
+
+    const techs = techString.split(/[\+,&|-]/).map(t => t.trim().toLowerCase());
+    const icons = techs.map(tech => techMap[tech] || <FaCode />);
+
+    const uniqueIcons = [];
+    const seen = new Set();
+    for (const icon of icons) {
+        if (!seen.has(icon.type)) {
+            seen.add(icon.type);
+            uniqueIcons.push(icon);
+        }
+    }
+    return uniqueIcons;
+};
+
 
 export default function HireUsDetailsPage() {
     const { roleSlug } = useParams();
@@ -131,44 +206,60 @@ export default function HireUsDetailsPage() {
 
         if (title.includes('android')) {
             return (
-                <>
-                    Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>mobile applications</strong>, <strong>Android apps</strong>, and <strong>custom software</strong> tailored to their unique requirements.
-                </>
+                <div className="space-y-3">
+                    <p>Get skilled developers who are fully focused on your project from start to finish.</p>
+                    <p>We help businesses build <strong>mobile applications</strong>, <strong>Android apps</strong>, and <strong>custom software</strong> tailored to their unique requirements.</p>
+                </div>
             );
         }
         if (title.includes('ios') || title.includes('apple')) {
             return (
-                <>
-                    Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>iOS applications</strong>, <strong>iPhone & iPad apps</strong>, and <strong>custom mobile software</strong> tailored to their unique requirements.
-                </>
+                <div className="space-y-3">
+                    <p>Get skilled developers who are fully focused on your project from start to finish.</p>
+                    <p>We help businesses build <strong>iOS applications</strong>, <strong>iPhone & iPad apps</strong>, and <strong>custom mobile software</strong> tailored to their unique requirements.</p>
+                </div>
             );
         }
         if (title.includes('flutter') || title.includes('react native') || title.includes('mobile app')) {
             return (
-                <>
-                    Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>cross-platform mobile apps</strong>, <strong>hybrid applications</strong>, and <strong>custom software</strong> tailored to their unique requirements.
-                </>
+                <div className="space-y-3">
+                    <p>Get skilled developers who are fully focused on your project from start to finish.</p>
+                    <p>We help businesses build <strong>cross-platform mobile apps</strong>, <strong>hybrid applications</strong>, and <strong>custom software</strong> tailored to their unique requirements.</p>
+                </div>
             );
         }
         if (title.includes('shopify') || title.includes('magento') || title.includes('woocommerce') || title.includes('wordpress')) {
             return (
-                <>
-                    Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>eCommerce stores</strong>, <strong>responsive websites</strong>, and <strong>custom CMS solutions</strong> tailored to their unique requirements.
-                </>
+                <div className="space-y-3">
+                    <p>Get skilled developers who are fully focused on your project from start to finish.</p>
+                    <p>We help businesses build <strong>eCommerce stores</strong>, <strong>responsive websites</strong>, and <strong>custom CMS solutions</strong> tailored to their unique requirements.</p>
+                </div>
             );
         }
         if (title.includes('laravel') || title.includes('php') || title.includes('node') || title.includes('python')) {
             return (
-                <>
-                    Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>backend systems</strong>, <strong>secure APIs</strong>, and <strong>custom server software</strong> tailored to their unique requirements.
-                </>
+                <div className="space-y-3">
+                    <p>Get skilled developers who are fully focused on your project from start to finish.</p>
+                    <p>We help businesses build <strong>backend systems</strong>, <strong>secure APIs</strong>, and <strong>custom server software</strong> tailored to their unique requirements.</p>
+                </div>
             );
         }
         return (
-            <>
-                Get skilled developers who are fully focused on your project from start to finish. We help businesses build <strong>web applications</strong>, <strong>eCommerce platforms</strong>, and <strong>custom software</strong> tailored to their unique requirements.
-            </>
+            <div className="space-y-3">
+                <p>Get skilled developers who are fully focused on your project from start to finish.</p>
+                <p>We help businesses build <strong>web applications</strong>, <strong>eCommerce platforms</strong>, and <strong>custom software</strong> tailored to their unique requirements.</p>
+            </div>
         );
+    };
+
+    const getDeveloperTitle = () => {
+        const title = role.title || '';
+        let devTitle = title.replace(/^Hire\s+/i, '');
+        devTitle = devTitle.replace(/Developers$/i, 'Developer');
+        if (devTitle.toLowerCase().includes('react js')) {
+            devTitle = 'ReactJs Developer';
+        }
+        return devTitle;
     };
 
     const getCleanTechName = () => {
@@ -241,8 +332,132 @@ export default function HireUsDetailsPage() {
                         )}
                     </div>
 
+                    {role.portfolio && role.portfolio.length > 0 && (() => {
+                        const project = role.portfolio[activePortfolioIndex];
+
+                        return (
+                            <div className="mb-8">
+                                <h2 className="text-[20px] font-bold text-[#222325] mb-4 border-b border-gray-200 pb-2">Our Portfolio</h2>
+                                <div className="rounded-[8px] shadow-lg">
+                                    {/* Featured View */}
+                                    <div className="flex flex-col xl:flex-row gap-3 rounded-[8px] p-2 transition-colors duration-500 h-full" style={{ background: bgColor }}>
+
+                                        <div className="flex flex-col lg:flex-row gap-2 rounded-[8px] overflow-hidden items-stretch w-full">
+                                            <div className="w-full lg:w-[60%] relative flex items-center justify-center self-stretch">
+                                                <div className="w-full h-full bg-[#1a1d24]">
+                                                    <img ref={imgRef} src={project.image} alt={project.title} className="w-full h-full object-contain" crossOrigin="anonymous" />
+                                                </div>
+                                            </div>
+                                            <div className="w-full lg:w-[40%] p-4 flex flex-col justify-between self-stretch relative overflow-hidden transition-colors duration-500"
+                                                style={{
+                                                    background: `
+                                                    repeating-linear-gradient(
+                                                    to right,
+                                                    transparent,
+                                                    transparent 12.5%,
+                                                    rgba(255,255,255,0.05) 12.5%,
+                                                    rgba(255,255,255,0.05) 25%
+                                                    ),
+                                                    linear-gradient(
+                                                    135deg,
+                                                    ${bgColor} 0%,
+                                                    rgba(0,0,0,0.85) 100%
+                                                    )
+                                                `,
+                                                }}
+                                            >
+                                                <div>
+                                                    <span className="inline-block bg-white/10 text-white/90 text-[12px] rounded-[4px] px-2 py-0.5 mb-4 backdrop-blur-sm border border-white/10">From: {project.date}</span>
+                                                    <h3 className="text-[22px] font-bold text-white leading-tight mb-2">{project.title}</h3>
+                                                    <p className="text-white text-[14px] leading-[1.6]">
+                                                        {project.description}
+                                                    </p>
+                                                </div>
+
+                                                {/* Stats & Actions */}
+                                                <div className="flex flex-col mt-auto pt-8">
+                                                    <div className="flex flex-wrap justify-between gap-6 mb-4">
+                                                        <div>
+                                                            <p className={`text-[#DADADA] text-sm mb-1`}>Project timeline</p>
+                                                            <p className={`font-semibold text-base text-white`}>{project.timeline || 'N/A'}</p>
+                                                        </div>
+                                                        <div>
+                                                            <p className={`text-[#DADADA] text-sm mb-1`}>Country</p>
+                                                            <p className={`font-semibold text-base flex items-center gap-2 text-white`}>
+                                                                {getCountryFlag(project.country)} {project.country || 'N/A'}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="flex flex-wrap items-center justify-between gap-4 p-3 rounded-[5px] transition-colors duration-500"
+                                                        style={{ background: bgColor }}
+                                                    >
+
+                                                        <div className='flex gap-2 items-center'>
+                                                            <div className="flex items-center -space-x-2 mr-1">
+                                                                {getTechIcons(project.techStack || project.category).map((IconElement, i) => (
+                                                                    <div key={i} className="w-8 h-8 rounded-full bg-[#111111] flex items-center justify-center border border-gray-600 shadow-sm relative text-white" style={{ zIndex: 10 - i }}>
+                                                                        {React.cloneElement(IconElement, { className: "w-4 h-4 object-contain" })}
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+                                                            {/* Tech Stack Pill */}
+                                                            {/* <div className={`hidden md:flex items-center gap-2 font-semibold text-sm sm:text-base ${imgRef.current?.dataset?.isDark === 'true' ? 'text-white' : 'text-black'}`}>
+                                                                {project.techStack || project.category}
+                                                            </div> */}
+                                                        </div>
+
+                                                        {/* View Project Button */}
+                                                        {project.slug ? (
+                                                            <Link
+                                                                to={`/portfolio/${project.slug}`}
+                                                                className="flex items-center rounded overflow-hidden transition-colors hover:opacity-80"
+                                                                style={{ color: imgRef.current?.dataset?.isDark === 'true' ? "#000" : "#fff", backgroundColor: imgRef.current?.dataset?.isDark === 'true' ? 'white' : '#111' }}
+                                                            >
+                                                                <div className="px-3 py-3 flex items-center justify-center">
+                                                                    <svg
+                                                                        width="12"
+                                                                        height="12"
+                                                                        viewBox="0 0 12 12"
+                                                                        fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                    >
+                                                                        <path
+                                                                            d="M1 11L11 1M11 1H3.5M11 1V8.5"
+                                                                            stroke="currentColor"
+                                                                            strokeWidth="1.5"
+                                                                            strokeLinecap="round"
+                                                                            strokeLinejoin="round"
+                                                                        />
+                                                                    </svg>
+                                                                </div>
+                                                            </Link>
+                                                        ) : null}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Thumbnails */}
+                                <div className="flex flex-wrap gap-3 mt-4">
+                                    {role.portfolio.map((item, idx) => (
+                                        <button
+                                            key={idx}
+                                            onClick={() => setActivePortfolioIndex(idx)}
+                                            className={`rounded-[4px] overflow-hidden border-2 transition-all w-24 h-16 ${activePortfolioIndex === idx ? 'border-[#44c7f6]' : 'border-transparent opacity-50 hover:opacity-100'}`}
+                                        >
+                                            <img src={item.image} alt="Thumbnail" className="w-full rounded-[4px] h-full object-cover" />
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        );
+                    })()}
+
                     {/* Image Slider */}
-                    <div className="mb-8 relative rounded-[4px] overflow-hidden group border border-[#efeff0]">
+                    {/* <div className="mb-8 relative rounded-[4px] overflow-hidden group border border-[#efeff0]">
                         <div className="relative h-[300px] sm:h-[400px] md:h-[500px] bg-[#f5f5f5]">
                             {images.map((img, idx) => (
                                 <img
@@ -259,13 +474,12 @@ export default function HireUsDetailsPage() {
                         <button onClick={() => setCurrentImageIndex(prev => prev === images.length - 1 ? 0 : prev + 1)} className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-gray-800 opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-gray-50 z-20">
                             <FaChevronRight className="w-4 h-4 -mr-0.5" />
                         </button>
-                        {/* Mini Thumbnails */}
                         <div className="flex justify-center gap-2 mt-4 absolute bottom-4 w-full z-20">
                             {images.map((_, idx) => (
                                 <button key={idx} onClick={() => setCurrentImageIndex(idx)} className={`w-2 h-2 rounded-full transition-all ${currentImageIndex === idx ? 'bg-white w-4' : 'bg-white/50 hover:bg-white/80'}`}></button>
                             ))}
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* About This Gig */}
                     <div className="mb-8">
@@ -371,78 +585,6 @@ export default function HireUsDetailsPage() {
                             </div>
                         )}
                     </div> */}
-
-
-                    {/* Portfolio / Recent Work */}
-                    {role.portfolio && role.portfolio.length > 0 && (
-                        <div className="mb-8">
-                            <h2 className="text-[20px] font-bold text-[#222325] mb-4">My Portfolio</h2>
-                            <div className="rounded-[8px] shadow-lg">
-                                {/* Featured View */}
-                                <div className="flex flex-col xl:flex-row gap-3 rounded-[8px] p-2 transition-colors duration-500 h-full" style={{ background: bgColor }}>
-
-                                    <div className="flex flex-col lg:flex-row gap-2 rounded-[8px] overflow-hidden items-stretch">
-                                        <div className="w-full lg:w-[60%] relative flex items-center justify-center self-stretch">
-                                            <div className="w-full h-full bg-[#1a1d24]">
-                                                <img ref={imgRef} src={role.portfolio[activePortfolioIndex]?.image} alt={role.portfolio[activePortfolioIndex]?.title} className="w-full h-full object-cover" crossOrigin="anonymous" />
-                                            </div>
-                                        </div>
-                                        <div className="w-full lg:w-[40%]  p-4 flex flex-col justify-between self-stretch relative overflow-hidden transition-colors duration-500"
-                                            style={{
-                                                background: `
-                                                repeating-linear-gradient(
-                                                to right,
-                                                transparent,
-                                                transparent 12.5%,
-                                                rgba(255,255,255,0.05) 12.5%,
-                                                rgba(255,255,255,0.05) 25%
-                                                ),
-                                                linear-gradient(
-                                                135deg,
-                                                ${bgColor} 0%,
-                                                rgba(0,0,0,0.85) 100%
-                                                )
-                                            `,
-                                            }}
-                                        >
-                                            <div>
-                                                <span className="inline-block bg-white/10 text-white/90 text-[12px] rounded-[4px] px-2 py-0.5 mb-4 backdrop-blur-sm border border-white/10">From: {role.portfolio[activePortfolioIndex]?.date}</span>
-                                                <h3 className="text-[26px] font-bold text-white leading-tight mb-4">{role.portfolio[activePortfolioIndex]?.title}</h3>
-                                                <p className="text-white text-[14px] leading-[1.6] mb-8">
-                                                    {role.portfolio[activePortfolioIndex]?.description}
-                                                </p>
-                                            </div>
-
-                                            <div className="flex items-center gap-12">
-                                                <div>
-                                                    <p className="text-[#9ca3af] text-[14px] mb-1 font-medium">Project cost</p>
-                                                    <p className="font-bold text-white text-[16px]">{role.portfolio[activePortfolioIndex]?.cost}</p>
-                                                </div>
-                                                <div>
-                                                    <p className="text-[#9ca3af] text-[14px] mb-1 font-medium">Project duration</p>
-                                                    <p className="font-bold text-white text-[16px]">{role.portfolio[activePortfolioIndex]?.duration}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Thumbnails */}
-                            <div className="flex flex-wrap gap-3 mt-4">
-                                {role.portfolio.map((item, idx) => (
-                                    <button
-                                        key={idx}
-                                        onClick={() => setActivePortfolioIndex(idx)}
-                                        className={`rounded-[4px] overflow-hidden border-2 transition-all w-24 h-16 ${activePortfolioIndex === idx ? 'border-[#44c7f6]' : 'border-transparent opacity-50 hover:opacity-100'}`}
-                                    >
-                                        <img src={item.image} alt="Thumbnail" className="w-full rounded-[4px] h-full object-cover" />
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
-                    )}
-
 
 
                     {/* Reviews Section */}
@@ -570,9 +712,9 @@ export default function HireUsDetailsPage() {
                         {/* Box 1: Project-Based Developer (Fixed Cost / Contract) */}
                         <div className="bg-white border border-gray-200 rounded-[8px] shadow-sm overflow-hidden flex flex-col">
                             {/* Header Bar */}
-                            <div className="relative py-2.5 bg-gray-100 border-b border-gray-200 flex items-center justify-center px-12">
+                            <div className="relative py-1.5 bg-gray-100 border-b border-gray-200 flex items-center justify-center px-12">
                                 <h3 className="font-bold text-[#222325] text-[14px] text-center">
-                                    Hire Project Based Developer
+                                    Hire Fixed Cost Project Developer
                                 </h3>
                             </div>
                             <div className="p-5 bg-white flex flex-col flex-grow">
@@ -589,9 +731,10 @@ export default function HireUsDetailsPage() {
                                         setRequestType('project');
                                         setIsModalOpen(true);
                                     }}
-                                    className="relative w-full bg-black hover:bg-neutral-900 text-white py-2.5 rounded-[4px] text-[14px] font-bold flex items-center justify-center transition-all shadow-sm group"
+                                    className="relative h-[40px] w-full bg-black hover:bg-neutral-900 text-white py-2.5 rounded-[4px] text-[14px] font-bold flex items-center justify-center transition-all shadow-sm group"
+                                    style={{ fontSize: '14px' }}
                                 >
-                                    Continue
+                                    Contact us
                                     <ArrowRight className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
                             </div>
@@ -601,9 +744,9 @@ export default function HireUsDetailsPage() {
                         {/* Box 2: Hourly-Based Developer (Flexible Resource) */}
                         <div className="bg-white border border-gray-200 rounded-[8px] shadow-sm overflow-hidden flex flex-col">
                             {/* Header Bar */}
-                            <div className="relative py-2.5 bg-gray-100 border-b border-gray-200 flex items-center justify-center px-12">
+                            <div className="relative py-1.5 bg-gray-100 border-b border-gray-200 flex items-center justify-center px-12">
                                 <h3 className="font-bold text-[#222325] text-[14px] text-center">
-                                    Hire Hourly / Flexible Developer
+                                    Hire Hourly Basis / Flexible Developer
                                 </h3>
                             </div>
                             <div className="p-5 bg-white flex flex-col flex-grow">
@@ -623,7 +766,7 @@ export default function HireUsDetailsPage() {
                                         <h4 className="font-bold text-[#222325] text-[14px]">Need flexibility when hiring?</h4>
                                     </div>
                                     <p className="text-[#404145] text-[14px] leading-relaxed">
-                                        {`Hire dedicated ${getCleanTechName()} developers on an hourly, part-time, or full-time basis for development, maintenance, support, and feature enhancements.`}
+                                        {`Hire dedicated ${getCleanTechName()} developers on an hourly basis, part-time, or full-time basis for development, maintenance, support, and feature enhancements.`}
                                     </p>
                                 </div>
 
@@ -633,19 +776,20 @@ export default function HireUsDetailsPage() {
                                         setRequestType('hourly');
                                         setIsModalOpen(true);
                                     }}
-                                    className="relative w-full bg-black hover:bg-neutral-900 text-white py-2.5 rounded-[4px] text-[14px] font-bold flex items-center justify-center transition-all shadow-sm group"
+                                    className="relative h-[40px] w-full bg-black hover:bg-neutral-900 text-white py-2.5 rounded-[4px] text-[14px] font-bold flex items-center justify-center transition-all shadow-sm group"
+                                    style={{ fontSize: '14px' }}
                                 >
-                                    Continue
+                                    Get Quote
                                     <ArrowRight className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
                             </div>
 
                             {/* Guarantee Policy */}
-                            <div className="border-t border-gray-200 p-4 bg-gray-50/50 flex items-center justify-center gap-2">
+                            <div className="border-t border-gray-200 p-2 bg-gray-50/50 flex items-center justify-center gap-2">
                                 <svg className="w-4 h-4 text-gray-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                 </svg>
-                                <span className="text-[12px] text-gray-600 font-semibold text-center leading-normal">
+                                <span className="text-[12px] text-gray-600 font-medium text-center leading-normal">
                                     If not satisfied with the work, get a full <a href="#" className='underline'>refund.</a>
                                 </span>
                             </div>
@@ -668,47 +812,46 @@ export default function HireUsDetailsPage() {
                                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
                             </button>
 
-                            <h2 className="text-3xl font-black text-[#222325] mb-2">
+                            <h2 className="text-[24px] font-semibold text-[#222325] mb-2">
                                 {requestType === 'hourly' ? "Request Hourly Developer Offer" : "Request Project-Based Offer"}
                             </h2>
-                            <p className="text-[#62646a] mb-8">
+                            <p className="text-[#62646a] text-[14px] mb-8">
                                 {requestType === 'hourly'
                                     ? "Fill out the form below to hire this developer on an hourly basis."
                                     : "Fill out the form below to get a fixed-cost proposal for your project."}
                             </p>
-
                             <form onSubmit={handleFormSubmit} className="space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label className="block text-sm font-bold text-[#62646a] mb-2">Name<span className="text-red-500 ml-1">*</span></label>
-                                        <input type="text" name="name" value={formData.name} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Name" />
+                                        <input type="text" name="name" value={formData.name} onChange={handleInputChange} required className="w-full h-[40px] bg-white border border-[#e4e5e7] rounded-[4px] px-3 text-[#222325] text-sm placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Name" style={{ fontSize: '14px', height: '40px' }} />
                                     </div>
                                     <div>
                                         <label className="block text-sm font-bold text-[#62646a] mb-2">Email<span className="text-red-500 ml-1">*</span></label>
-                                        <input type="email" name="email" value={formData.email} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Email" />
+                                        <input type="email" name="email" value={formData.email} onChange={handleInputChange} required className="w-full h-[40px] bg-white border border-[#e4e5e7] rounded-[4px] px-3 text-[#222325] text-sm placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Email" style={{ fontSize: '14px', height: '40px' }} />
                                     </div>
                                 </div>
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label className="block text-sm font-bold text-[#62646a] mb-2">Phone<span className="text-red-500 ml-1">*</span></label>
-                                        <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Number" />
+                                        <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} required className="w-full h-[40px] bg-white border border-[#e4e5e7] rounded-[4px] px-3 text-[#222325] text-sm placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors" placeholder="Enter Your Number" style={{ fontSize: '14px', height: '40px' }} />
                                     </div>
                                     <div>
                                         <label className="block text-sm font-bold text-[#62646a] mb-2">Estimated Budget<span className="text-red-500 ml-1">*</span></label>
-                                        <select name="budget" value={formData.budget} onChange={handleInputChange} required className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] focus:outline-none focus:border-[#1dbf73] transition-colors appearance-none">
-                                            <option value="" disabled className="text-gray-400">Select Budget Range</option>
-                                            <option value="<$5k">&lt;$5k</option>
-                                            <option value="$5k-$10k">$5k - $10k</option>
-                                            <option value="$10k-$25k">$10k - $25k</option>
-                                            <option value="$25k+">$25k+</option>
+                                        <select name="budget" value={formData.budget} onChange={handleInputChange} required className={`w-full h-[40px] bg-white border border-[#e4e5e7] rounded-[4px] px-3 text-sm focus:outline-none focus:border-[#1dbf73] transition-colors appearance-none ${formData.budget ? 'text-[#222325]' : 'text-gray-400'}`} style={{ fontSize: '14px', height: '40px' }}>
+                                            <option value="" disabled className="text-gray-400 text-sm" style={{ fontSize: '14px' }}>Select Budget Range</option>
+                                            <option value="<$5k" className="text-[#222325] text-sm" style={{ fontSize: '14px' }}>&lt;$5k</option>
+                                            <option value="$5k-$10k" className="text-[#222325] text-sm" style={{ fontSize: '14px' }}>$5k - $10k</option>
+                                            <option value="$10k-$25k" className="text-[#222325] text-sm" style={{ fontSize: '14px' }}>$10k - $25k</option>
+                                            <option value="$25k+" className="text-[#222325] text-sm" style={{ fontSize: '14px' }}>$25k+</option>
                                         </select>
                                     </div>
                                 </div>
 
                                 <div>
                                     <label className="block text-sm font-bold text-[#62646a] mb-2">Project Summary<span className="text-red-500 ml-1">*</span></label>
-                                    <textarea name="summary" value={formData.summary} onChange={handleInputChange} required rows="4" className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-4 py-3 text-[#222325] placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors resize-none" placeholder="Describe your project briefly..."></textarea>
+                                    <textarea name="summary" value={formData.summary} onChange={handleInputChange} required rows="4" className="w-full bg-white border border-[#e4e5e7] rounded-[4px] px-3 py-2 text-[#222325] text-sm placeholder-gray-400 focus:outline-none focus:border-[#1dbf73] transition-colors resize-none" placeholder="Describe your project briefly..." style={{ fontSize: '14px' }}></textarea>
                                 </div>
 
                                 <div className="pt-4 flex justify-end">

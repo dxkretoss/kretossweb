@@ -244,7 +244,7 @@ const ProjectCard = ({ project, id }) => {
                 <div className="flex flex-col xl:flex-row gap-3 rounded-[10px] p-2 sm:p-3 transition-colors duration-500 h-full" style={{ background: bgColor }}>
 
                     {/* Left Side - Image Panel */}
-                    <div className="w-full xl:w-[60%] relative flex items-center justify-center self-stretch">
+                    <div className="w-full xl:w-[65%] relative flex items-center justify-center self-stretch">
                         <img
                             ref={imgRef}
                             src={project.portfolioImage}
@@ -255,7 +255,7 @@ const ProjectCard = ({ project, id }) => {
 
                     {/* Right Side - Content Panel */}
                     <div
-                        className="w-full xl:w-[40%] rounded-[5px] p-4 md:p-8 flex flex-col justify-between self-stretch relative overflow-hidden transition-colors duration-500"
+                        className="w-full xl:w-[35%] rounded-[5px] p-4 md:p-8 flex flex-col justify-between self-stretch relative overflow-hidden transition-colors duration-500"
                         style={{
                             background: `
                                 repeating-linear-gradient(
@@ -287,7 +287,7 @@ const ProjectCard = ({ project, id }) => {
                             <h3 className={`text-2xl sm:text-[32px] font-bold text-white mb-3 sm:mb-4 leading-tight`}>
                                 {project.title}
                             </h3>
-                            <p className={`text-white text-sm sm:text-base md:text-[19px] mb-6 sm:mb-8 leading-relaxed`}>
+                            <p className={`text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>
                                 {project.description}
                             </p>
                         </div>
@@ -321,7 +321,9 @@ const ProjectCard = ({ project, id }) => {
                                     </div>
                                     {/* Tech Stack Pill */}
                                     <div className={`hidden md:flex items-center gap-2 font-semibold text-sm sm:text-base ${imgRef.current?.dataset?.isDark === 'true' ? 'text-white' : 'text-black'}`}>
-                                        {project.techStack || project.category}
+                                        {(project.techStack || project.category || '').length > 20
+                                            ? `${(project.techStack || project.category || '').slice(0, 20)}...`
+                                            : (project.techStack || project.category || '')}
                                     </div>
                                 </div>
 
@@ -331,10 +333,10 @@ const ProjectCard = ({ project, id }) => {
                                     className="flex items-center rounded overflow-hidden transition-colors hover:opacity-80"
                                     style={{ color: imgRef.current?.dataset?.isDark === 'true' ? "#000" : "#fff", backgroundColor: imgRef.current?.dataset?.isDark === 'true' ? 'white' : '#111' }}
                                 >
-                                    <div className="px-4 py-4 flex items-center justify-center">
+                                    <div className="p-3 flex items-center justify-center">
                                         <svg
-                                            width="16"
-                                            height="16"
+                                            width="14"
+                                            height="14"
                                             viewBox="0 0 12 12"
                                             fill="none"
                                             xmlns="http://www.w3.org/2000/svg"

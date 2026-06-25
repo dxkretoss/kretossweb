@@ -1,4 +1,4 @@
-export const portfolioDetailsData = [
+module.exports = [
     {
         "slug": "guestway",
         "name": "Guestway",
@@ -44,10 +44,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Guestway"
             }
-        },
-        "hireResources": {
-            "label": "Hire Angular Developers",
-            "link": "/hire-us/hire-angular-developers"
         }
     },
     {
@@ -100,12 +96,13 @@ export const portfolioDetailsData = [
             ],
             "testimonial": {
                 "text": "Kretoss turned our vision into a platform that genuinely changes how people find jobs. The AI matching is scarily accurate and the auto-apply feature alone saves our users hours every single week. The privacy architecture they built gave us the confidence to market to employed professionals without any hesitation.",
-                "author": "John",
-                "position": "CEO of Nexthunt",
+                "author": "Product Team",
+                "position": "NextHunt",
                 "image": "https://i.pravatar.cc/150?img=11"
             }
         }
     },
+
     {
         "slug": "palzea-widget",
         "name": "Palzea",
@@ -151,10 +148,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Palzea"
             }
-        },
-        "hireResources": {
-            "label": "Hire React.js Developers",
-            "link": "/hire-us/hire-react-js-developers"
         }
     },
     {
@@ -202,10 +195,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Dreamload"
             }
-        },
-        "hireResources": {
-            "label": "Hire React.js Developers",
-            "link": "/hire-us/hire-react-js-developers"
         }
     },
     {
@@ -253,10 +242,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "PhoenixFC"
             }
-        },
-        "hireResources": {
-            "label": "Hire React.js Developers",
-            "link": "/hire-us/hire-react-js-developers"
         }
     },
     {
@@ -304,10 +289,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Palzea Networks"
             }
-        },
-        "hireResources": {
-            "label": "Hire Vue.js Developers",
-            "link": "/hire-us/hire-vue-js-developers"
         }
     },
     {
@@ -355,10 +336,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Fily"
             }
-        },
-        "hireResources": {
-            "label": "Hire React.js Developers",
-            "link": "/hire-us/hire-react-js-developers"
         }
     },
     {
@@ -406,10 +383,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "STB Inc."
             }
-        },
-        "hireResources": {
-            "label": "Hire React.js Developers",
-            "link": "/hire-us/hire-react-js-developers"
         }
     },
     {
@@ -457,10 +430,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Klubbrabatten"
             }
-        },
-        "hireResources": {
-            "label": "Hire React.js Developers",
-            "link": "/hire-us/hire-react-js-developers"
         }
     },
     {
@@ -508,10 +477,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Giveaway"
             }
-        },
-        "hireResources": {
-            "label": "Hire Laravel Developers",
-            "link": "/hire-us/hire-laravel-developers"
         }
     },
     {
@@ -606,10 +571,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Wall Street"
             }
-        },
-        "hireResources": {
-            "label": "Hire Angular Developers",
-            "link": "/hire-us/hire-angular-developers"
         }
     },
     {
@@ -704,10 +665,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Searchive"
             }
-        },
-        "hireResources": {
-            "label": "Hire React.js Developers",
-            "link": "/hire-us/hire-react-js-developers"
         }
     },
     {
@@ -755,10 +712,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Coyna"
             }
-        },
-        "hireResources": {
-            "label": "Hire Angular Developers",
-            "link": "/hire-us/hire-angular-developers"
         }
     },
     {
@@ -806,10 +759,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Gujarat Tiles Info"
             }
-        },
-        "hireResources": {
-            "label": "Hire Angular Developers",
-            "link": "/hire-us/hire-angular-developers"
         }
     },
     {
@@ -857,10 +806,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Implant Stock"
             }
-        },
-        "hireResources": {
-            "label": "Hire React.js Developers",
-            "link": "/hire-us/hire-react-js-developers"
         }
     },
     {
@@ -908,10 +853,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Locum Prime"
             }
-        },
-        "hireResources": {
-            "label": "Hire Angular Developers",
-            "link": "/hire-us/hire-angular-developers"
         }
     },
     {
@@ -959,10 +900,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Trust Arthur Group"
             }
-        },
-        "hireResources": {
-            "label": "Hire Python Developers",
-            "link": "/hire-us/hire-python-developers"
         }
     },
     {
@@ -1010,10 +947,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Taxley"
             }
-        },
-        "hireResources": {
-            "label": "Hire Node.js Developers",
-            "link": "/hire-us/hire-node-js-developers"
         }
     },
     {
@@ -1075,10 +1008,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "My100Days"
             }
-        },
-        "hireResources": {
-            "label": "Hire React Native Developers",
-            "link": "/hire-us/hire-react-native-developers"
         }
     },
     {
@@ -1140,10 +1069,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "TriSchedule"
             }
-        },
-        "hireResources": {
-            "label": "Hire Flutter Developers",
-            "link": "/hire-us/hire-flutter-developers"
         }
     },
     {
@@ -1204,10 +1129,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Wingman"
             }
-        },
-        "hireResources": {
-            "label": "Hire iOS Developers",
-            "link": "/hire-us/hire-ios-developers"
         }
     },
     {
@@ -1269,10 +1190,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Book a Builder"
             }
-        },
-        "hireResources": {
-            "label": "Hire React Native Developers",
-            "link": "/hire-us/hire-react-native-developers"
         }
     },
     {
@@ -1334,10 +1251,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Klubbrabatten"
             }
-        },
-        "hireResources": {
-            "label": "Hire Flutter Developers",
-            "link": "/hire-us/hire-flutter-developers"
         }
     },
     {
@@ -1399,10 +1312,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Roamaly"
             }
-        },
-        "hireResources": {
-            "label": "Hire React Native Developers",
-            "link": "/hire-us/hire-react-native-developers"
         }
     },
     {
@@ -1463,10 +1372,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Sion Reservations"
             }
-        },
-        "hireResources": {
-            "label": "Hire Flutter Developers",
-            "link": "/hire-us/hire-flutter-developers"
         }
     },
     {
@@ -1528,10 +1433,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "City 2 City"
             }
-        },
-        "hireResources": {
-            "label": "Hire Flutter Developers",
-            "link": "/hire-us/hire-flutter-developers"
         }
     },
     {
@@ -1590,10 +1491,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Drawn"
             }
-        },
-        "hireResources": {
-            "label": "Hire Flutter Developers",
-            "link": "/hire-us/hire-flutter-developers"
         }
     },
     {
@@ -1654,10 +1551,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Somnexis"
             }
-        },
-        "hireResources": {
-            "label": "Hire Flutter Developers",
-            "link": "/hire-us/hire-flutter-developers"
         }
     },
     {
@@ -1718,10 +1611,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Traivend"
             }
-        },
-        "hireResources": {
-            "label": "Hire React Native Developers",
-            "link": "/hire-us/hire-react-native-developers"
         }
     },
     {
@@ -1783,10 +1672,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Offarat"
             }
-        },
-        "hireResources": {
-            "label": "Hire Flutter Developers",
-            "link": "/hire-us/hire-flutter-developers"
         }
     },
     {
@@ -1848,10 +1733,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Taxley"
             }
-        },
-        "hireResources": {
-            "label": "Hire Flutter Developers",
-            "link": "/hire-us/hire-flutter-developers"
         }
     },
     {
@@ -1913,10 +1794,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Kolder Kid Universe"
             }
-        },
-        "hireResources": {
-            "label": "Hire React Native Developers",
-            "link": "/hire-us/hire-react-native-developers"
         }
     },
     {
@@ -3233,10 +3110,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Anthem Home Comfort"
             }
-        },
-        "hireResources": {
-            "label": "Hire WordPress Developers",
-            "link": "/hire-us/hire-wordpress-developers"
         }
     },
     {
@@ -3284,10 +3157,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Freight Plus"
             }
-        },
-        "hireResources": {
-            "label": "Hire WordPress Developers",
-            "link": "/hire-us/hire-wordpress-developers"
         }
     },
     {
@@ -3335,10 +3204,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Sobel"
             }
-        },
-        "hireResources": {
-            "label": "Hire WordPress Developers",
-            "link": "/hire-us/hire-wordpress-developers"
         }
     },
     {
@@ -3386,10 +3251,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Beepec"
             }
-        },
-        "hireResources": {
-            "label": "Hire WordPress Developers",
-            "link": "/hire-us/hire-wordpress-developers"
         }
     },
     {
@@ -3437,10 +3298,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "The Source Bulk Foods"
             }
-        },
-        "hireResources": {
-            "label": "Hire WordPress Developers",
-            "link": "/hire-us/hire-wordpress-developers"
         }
     },
     {
@@ -3488,10 +3345,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "EasyGold24"
             }
-        },
-        "hireResources": {
-            "label": "Hire WordPress Developers",
-            "link": "/hire-us/hire-wordpress-developers"
         }
     },
     {
@@ -3539,10 +3392,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Meridian Pacific Properties"
             }
-        },
-        "hireResources": {
-            "label": "Hire WordPress Developers",
-            "link": "/hire-us/hire-wordpress-developers"
         }
     },
     {
@@ -3590,10 +3439,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "The Penny"
             }
-        },
-        "hireResources": {
-            "label": "Hire WordPress Developers",
-            "link": "/hire-us/hire-wordpress-developers"
         }
     },
     {
@@ -3641,10 +3486,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Litehaus"
             }
-        },
-        "hireResources": {
-            "label": "Hire WordPress Developers",
-            "link": "/hire-us/hire-wordpress-developers"
         }
     },
     {
@@ -3692,10 +3533,6 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "LEE BROOM"
             }
-        },
-        "hireResources": {
-            "label": "Hire React.js Developers",
-            "link": "/hire-us/hire-react-js-developers"
         }
     },
     {

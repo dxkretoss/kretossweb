@@ -129,7 +129,7 @@ export default function ContactPage() {
                                         LET'S WORK TOGETHER
                                     </button>
 
-                                    <p className="text-white text-center sm:text-start text-[16px] md:text-[20px] mt-1">
+                                    <p className="text-white text-center sm:text-start text-[16px] md:text-[18px] mt-1">
                                         Not in the mood to submit the form? <a href="https://calendly.com" target="_blank" rel="noreferrer" className="text-[#44c7f6] font-medium hover:underline">Book A Call Directly</a>
                                     </p>
                                 </form>
@@ -140,9 +140,9 @@ export default function ContactPage() {
                         {/* Right: Contact Details (User's Text) Perfectly Styled */}
                         <div className="w-full lg:w-[42%] flex flex-col mt-5 md:mt-0">
 
-                            <div className='flex flex-col gap-6 lg:gap-12'>
+                            <div className='flex flex-col gap-6'>
                                 {/* Header Area */}
-                                <div className="flex flex-col items-start gap-3 sm:gap-4">
+                                <div className="flex flex-col items-start gap-2">
 
                                     <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold text-[#0a0a0a] leading-[1.1] tracking-tight">
                                         Have questions?
@@ -166,7 +166,7 @@ export default function ContactPage() {
                                             </div>
                                             <h4 className="text-base font-bold text-gray-900 tracking-wide">Call Us</h4>
                                         </div>
-                                        <p className="text-gray-600 font-medium text-base sm:text-lg ml-0 sm:ml-13">(+91) 63534-23473</p>
+                                        <p className="text-gray-600 font-medium text-base ml-0 sm:ml-13">(+91) 63534-23473</p>
                                     </div>
 
                                     {/* Email */}

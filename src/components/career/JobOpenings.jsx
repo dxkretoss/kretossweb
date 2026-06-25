@@ -42,7 +42,7 @@ export default function JobOpenings() {
 
     return (
         <section ref={sectionRef} className="py-10 lg:py-20 bg-[#fafcff] relative">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-7xl relative z-10">
+            <div className="container mx-auto w-layout-blockcontainer container-full-width relative z-10">
                 {/* Header */}
                 <div className="job-header flex flex-col items-center text-center mb-8 sm:mb-16">
                     {/* Badge */}

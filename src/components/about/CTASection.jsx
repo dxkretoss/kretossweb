@@ -28,7 +28,7 @@ export default function CtaSection() {
     }, []);
 
     return (
-        <section className="w-full bg-[#0c0c0c] text-white py-20 lg:py-32 px-4 sm:px-6 lg:px-12 relative overflow-hidden" ref={sectionRef}>
+        <section className="w-full bg-[#0c0c0c] text-white py-20 px-4 sm:px-6 lg:px-12 relative overflow-hidden" ref={sectionRef}>
             {/* Background Glow */}
             <div className="absolute bottom-[-100px] left-1/2 -translate-x-1/2 w-full max-w-4xl h-[300px] bg-[#0037f0] opacity-40 blur-[100px] rounded-full pointer-events-none z-0"></div>
 
@@ -38,7 +38,7 @@ export default function CtaSection() {
             </div>
 
             <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center text-center cta-content">
-                <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold tracking-tight mb-4 sm:mb-6 uppercase text-white leading-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold tracking-tight mb-4 uppercase text-white leading-tight">
                     Ready to start a project?
                 </h2>
                 <p className="text-gray-400 text-sm sm:text-base mb-8 sm:mb-10 tracking-wide max-w-[280px] sm:max-w-none mx-auto">

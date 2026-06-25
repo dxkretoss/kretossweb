@@ -117,7 +117,7 @@ export default function BuildWithUs() {
                 <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[50%] bg-cyan-400/5 rounded-full blur-[120px]"></div>
             </div>
 
-            <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-7xl relative z-10">
+            <div className="container mx-auto w-layout-blockcontainer container-full-width relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-12 lg:mb-16 flex flex-col items-center">
                     <Badge variant='blue'>Build with us!</Badge>

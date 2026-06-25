@@ -74,7 +74,7 @@ export default function TeamsFuture() {
             {/* Background ambient glow matching the dark theme */}
             <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-[#0037f0]/20 to-transparent pointer-events-none"></div>
 
-            <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+            <div className="container mx-auto w-layout-blockcontainer container-full-width relative z-10">
                 <div className="section-header flex flex-col items-center text-center mb-8 md:mb-16">
                     {/* Standardized Badge */}
 

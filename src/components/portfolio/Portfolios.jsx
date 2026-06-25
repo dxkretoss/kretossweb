@@ -169,7 +169,7 @@ const PortfolioCard = ({ item }) => {
                         <h3 className={`text-2xl sm:text-[32px] font-bold text-white mb-3 sm:mb-4 leading-tight`}>
                             {item.title}
                         </h3>
-                        <p className={`text-white text-sm sm:text-base md:text-[19px] mb-6 sm:mb-8 leading-relaxed`}>
+                        <p className={`text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>
                             {item.description}
                         </p>
                     </div>
@@ -203,7 +203,11 @@ const PortfolioCard = ({ item }) => {
                                 </div>
                                 {/* Tech Stack Pill */}
                                 <div className={`hidden md:flex items-center gap-2 font-semibold text-sm sm:text-base ${imgRef.current?.dataset?.isDark === 'true' ? 'text-white' : 'text-black'}`}>
-                                    {item.techStack || item.category}
+                                    {/* {item.techStack || item.category} */}
+
+                                    {(item.techStack || item.category || '').length > 25
+                                        ? `${(item.techStack || item.category || '').slice(0, 25)}...`
+                                        : (item.techStack || item.category || '')}
                                 </div>
                             </div>
 
@@ -213,10 +217,10 @@ const PortfolioCard = ({ item }) => {
                                 className="flex items-center rounded overflow-hidden transition-colors hover:opacity-80"
                                 style={{ color: imgRef.current?.dataset?.isDark === 'true' ? "#000" : "#fff", backgroundColor: imgRef.current?.dataset?.isDark === 'true' ? 'white' : '#111' }}
                             >
-                                <div className="px-4 py-4 flex items-center justify-center">
+                                <div className="p-3 flex items-center justify-center">
                                     <svg
-                                        width="16"
-                                        height="16"
+                                        width="14"
+                                        height="14"
                                         viewBox="0 0 12 12"
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -302,7 +306,7 @@ export default function Portfolios() {
             {/* Stable anchor for smooth scrolling */}
             <div id="portfolio-scroll-anchor" className="absolute top-0 left-0 w-full" />
 
-            <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-[1400px]">
+            <div className="container mx-auto w-layout-blockcontainer container-full-width">
                 <div className="flex flex-col items-center mb-8">
 
 

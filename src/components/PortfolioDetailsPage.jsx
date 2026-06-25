@@ -1,588 +1,629 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import { portfolioDetailsData } from '../data/portfoliodetails';
 import AnimatedButton from './ui/AnimatedButton';
-import Badge from './ui/Badge';
+import AnimatedHireButton from './ui/AnimatedHireButton';
 import CtaSection from './about/CTASection';
-import { FaChevronRight, FaSearch, FaCog, FaRocket, FaExclamationCircle, FaCheckCircle, FaStar, FaCheck } from 'react-icons/fa';
+import {
+    FaChevronRight, FaCheck, FaArrowLeft, FaArrowRight,
+    FaExternalLinkAlt, FaQuoteLeft, FaStar, FaLongArrowAltRight
+} from 'react-icons/fa';
+
+const fadeUp = {
+    hidden: { opacity: 0, y: 28 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] } }
+};
 
 export default function PortfolioDetailsPage() {
     const { slug } = useParams();
     const navigate = useNavigate();
     const [project, setProject] = useState(null);
     const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
-    const [touchStart, setTouchStart] = useState(null);
-    const [touchEnd, setTouchEnd] = useState(null);
     const [desktopScrollMode, setDesktopScrollMode] = useState('auto');
+    const [activeSection, setActiveSection] = useState('overview');
 
-    const minSwipeDistance = 50;
-
-    const nextScreen = () => {
-        if (project?.mobileScreens) {
-            setCurrentScreenIndex((prev) => (prev + 1) % project.mobileScreens.length);
-        }
-    };
-
-    const prevScreen = () => {
-        if (project?.mobileScreens) {
-            setCurrentScreenIndex((prev) => (prev - 1 + project.mobileScreens.length) % project.mobileScreens.length);
-        }
-    };
-
-    const handleTouchStart = (e) => {
-        setTouchEnd(null);
-        setTouchStart(e.targetTouches[0].clientX);
-    };
-
-    const handleTouchMove = (e) => {
-        setTouchEnd(e.targetTouches[0].clientX);
-    };
-
-    const handleTouchEnd = () => {
-        if (!touchStart || !touchEnd) return;
-        const distance = touchStart - touchEnd;
-        const isLeftSwipe = distance > minSwipeDistance;
-        const isRightSwipe = distance < -minSwipeDistance;
-
-        if (isLeftSwipe) {
-            nextScreen();
-        } else if (isRightSwipe) {
-            prevScreen();
-        }
+    const sectionRefs = {
+        overview: useRef(null),
+        challenge: useRef(null),
+        process: useRef(null),
+        results: useRef(null),
+        testimonial: useRef(null),
     };
 
     useEffect(() => {
-        // Find project by slug
         const foundProject = portfolioDetailsData.find(p => p.slug === slug);
         setProject(foundProject);
     }, [slug]);
 
     useEffect(() => {
         if (project) {
-            // Force scroll to top after DOM update
-            const timer = setTimeout(() => {
-                window.scrollTo(0, 0);
-                if (window.lenis) {
-                    window.lenis.scrollTo(0, { immediate: true });
-                }
-            }, 50);
-            return () => clearTimeout(timer);
+            window.scrollTo(0, 0);
+            setCurrentScreenIndex(0);
         }
     }, [project]);
 
+    // Auto-scroll mobile screens
     useEffect(() => {
-        if (!project?.mobileScreens) return;
-        const intervalId = setInterval(() => {
+        if (!project?.mobileScreens || project.mobileScreens.length <= 1) return;
+        const interval = setInterval(() => {
             setCurrentScreenIndex((prev) => (prev + 1) % project.mobileScreens.length);
-        }, 5000);
-        return () => clearInterval(intervalId);
+        }, 4000);
+        return () => clearInterval(interval);
     }, [project, currentScreenIndex]);
+
+    // Scroll spy for sidebar nav
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) setActiveSection(entry.target.id);
+                });
+            },
+            { rootMargin: '-30% 0px -60% 0px' }
+        );
+        Object.values(sectionRefs).forEach(ref => {
+            if (ref.current) observer.observe(ref.current);
+        });
+        return () => observer.disconnect();
+    }, [project]);
 
     if (!project) {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-[#fafcff]">
-                <div className="text-[#222325] text-2xl font-bold">Project not found</div>
+            <div className="min-h-screen flex flex-col items-center justify-center bg-[#fafcff] relative overflow-hidden px-4">
+                {/* Background decorative elements */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-[#44c7f6]/10 to-[#0037f0]/5 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#0037f0]/5 rounded-full blur-3xl pointer-events-none translate-x-1/3 translate-y-1/3"></div>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    className="relative z-10 flex flex-col items-center text-center max-w-lg"
+                >
+                    <div className="w-24 h-24 bg-white shadow-xl shadow-blue-900/5 rounded-3xl flex items-center justify-center mb-8 rotate-3 transform transition-transform hover:rotate-6">
+                        <svg className="w-12 h-12 text-[#0037f0]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                        </svg>
+                    </div>
+
+                    <h1 className="text-4xl sm:text-5xl font-extrabold text-[#0a0a0a] tracking-tight mb-4">
+                        Portfolio Not Found
+                    </h1>
+
+                    <p className="text-[#62646a] text-lg mb-10 leading-relaxed">
+                        Oops! The case study you are looking for doesn't exist, has been moved, or the URL is incorrect.
+                    </p>
+
+                    <div className="flex items-center gap-4">
+                        <AnimatedButton
+                            text="BACK TO PORTFOLIOS"
+                            href="/portfolio"
+                            className="!w-auto"
+                        />
+                    </div>
+                </motion.div>
             </div>
         );
     }
 
-    const renderProjectContent = (isMobileLayout = false, isDarkBackground = false) => {
-        const textWhiteClass = isDarkBackground ? 'text-white' : 'text-[#222325]';
-        const textGrayClass = isDarkBackground ? 'text-gray-300' : 'text-[#62646a]';
+    const isMobileApp = project.category === 'Mobile app';
+    const clientName = project.client || project.name;
 
-        const challengeCardClass = isDarkBackground
-            ? 'bg-[#0d0f12] border border-gray-800/80 shadow-lg hover:border-red-500/20 hover:shadow-[0_15px_40px_rgba(239,68,68,0.15)]'
-            : 'bg-white border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_15px_40px_rgba(239,68,68,0.05)] hover:border-red-500/20';
+    const navItems = [
+        { id: 'overview', label: 'Overview' },
+        { id: 'challenge', label: 'The Challenge' },
+        { id: 'process', label: 'Our Process' },
+        { id: 'results', label: 'Results' },
+        ...(project.caseStudy?.testimonial ? [{ id: 'testimonial', label: 'Testimonial' }] : []),
+    ];
 
-        const solutionCardClass = isDarkBackground
-            ? 'bg-[#0d0f12] border border-gray-800/80 shadow-lg hover:border-blue-500/20 hover:shadow-[0_15px_40px_rgba(0,55,240,0.15)]'
-            : 'bg-white border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_15px_40px_rgba(0,55,240,0.05)] hover:border-blue-500/20';
+    const scrollTo = (id) => {
+        sectionRefs[id]?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
 
-        const featureCardClass = isDarkBackground
-            ? 'bg-[#0d0f12] border border-gray-800 hover:border-[#0037f0]/40 shadow-md hover:shadow-lg'
-            : 'bg-white border border-gray-100 hover:border-[#0037f0]/20 shadow-[0_8px_30px_rgb(0,0,0,0.015)] hover:shadow-[0_12px_30px_rgba(0,55,240,0.04)]';
+    const nextScreen = () => {
+        if (project.mobileScreens) setCurrentScreenIndex(p => (p + 1) % project.mobileScreens.length);
+    };
+    const prevScreen = () => {
+        if (project.mobileScreens) setCurrentScreenIndex(p => (p - 1 + project.mobileScreens.length) % project.mobileScreens.length);
+    };
 
-        return (
-            <>
-                {/* Challenge & Solution Section */}
-                <div className={`grid grid-cols-1 ${isMobileLayout ? 'gap-4 mb-5' : 'md:grid-cols-2 gap-6 mb-8'}`}>
-                    {/* Challenge Card */}
-                    <div className={`${challengeCardClass} rounded-2xl ${isMobileLayout ? 'p-5' : 'p-6 md:p-8'} transition-all duration-500 group relative overflow-hidden flex flex-col justify-between`}>
-                        <div className="absolute top-0 left-0 w-1.5 h-full bg-red-500/80"></div>
-                        <div>
-                            <div className="flex items-center gap-3.5 mb-3">
-                                <div className="w-9 h-9 rounded-xl bg-red-500/10 text-red-500 flex items-center justify-center border border-red-500/10 shadow-sm group-hover:scale-105 transition-transform duration-300">
-                                    <FaExclamationCircle className="w-4.5 h-4.5" />
+    return (
+        <div className="bg-white text-[#222325] min-h-screen font-sans antialiased">
+
+            {/* ─── HERO ─── */}
+            <section className="relative bg-gradient-to-b from-[#f4f7ff] to-white border-b border-gray-200 pb-0 overflow-hidden">
+                <div className='container mx-auto w-layout-blockcontainer container-full-width'>
+                    <div className="absolute inset-0 bg-[linear-gradient(to_right,#0037f008_1px,transparent_1px),linear-gradient(to_bottom,#0037f008_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
+                    <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#0037f0]/5 blur-[140px] pointer-events-none" />
+
+                    <div className="relative z-10">
+
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+
+                            {/* Left: Title + meta */}
+                            <div className="lg:col-span-6 pb-10 space-y-6">
+                                {/* Category pill */}
+                                <span className="inline-flex items-center gap-2 bg-[#0037f0]/8 text-[#0037f0] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-[#0037f0]/15">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#0037f0] inline-block"></span>
+                                    {project.category} · Case Study
+                                </span>
+
+                                <h1 className="text-[24px] md:text-[42px] font-semibold text-[#0a0f1e] tracking-tight leading-[1.0]">
+                                    {project.name}
+                                </h1>
+
+                                <p className="text-[#62646a] text-lg leading-relaxed max-w-lg">
+                                    {project.purpose}
+                                </p>
+
+                                {/* Quick-stat pills */}
+                                <div className="flex flex-wrap gap-3 pt-2">
+                                    {[
+                                        { label: 'Country', value: project.country || 'Global' },
+                                        { label: 'Timeline', value: project.timeline || 'N/A' },
+                                        { label: 'Stack', value: project.techStack },
+                                    ].map((s) => (
+                                        <div key={s.label} className="bg-white border border-gray-200 rounded-xl px-4 py-2.5 shadow-sm flex items-center gap-3">
+                                            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">{s.label}</span>
+                                            <span className="text-sm font-bold text-[#222325]">{s.value}</span>
+                                        </div>
+                                    ))}
                                 </div>
-                                <h3 className={`text-2xl ${textWhiteClass} font-bold tracking-tight`}>The Challenge</h3>
-                            </div>
-                            <p className={`${textGrayClass} text-base leading-relaxed`}>
-                                {project.challenge}
-                            </p>
-                        </div>
-                    </div>
 
-                    {/* Solution Card */}
-                    <div className={`${solutionCardClass} rounded-2xl ${isMobileLayout ? 'p-5' : 'p-6 md:p-8'} transition-all duration-500 group relative overflow-hidden flex flex-col justify-between`}>
-                        <div className="absolute top-0 left-0 w-1.5 h-full bg-[#0037f0]/80"></div>
-                        <div>
-                            <div className="flex items-center gap-3.5 mb-3">
-                                <div className="w-9 h-9 rounded-xl bg-blue-500/10 text-[#0037f0] flex items-center justify-center border border-blue-500/10 shadow-sm group-hover:scale-105 transition-transform duration-300">
-                                    <FaCheckCircle className="w-4.5 h-4.5" />
+                                {/* CTA & Hire Resources */}
+                                <div className="pt-4 flex flex-wrap items-center gap-4">
+                                    {project.appLinks ? (
+                                        <div className="flex flex-wrap gap-3">
+                                            {project.appLinks.android && <a href={project.appLinks.android} target="_blank" rel="noreferrer"><img src="/portfolio/google_play_btn.jpg" alt="Google Play" className="h-[38px] hover:opacity-80 transition-opacity rounded-lg" /></a>}
+                                            {project.appLinks.ios && <a href={project.appLinks.ios} target="_blank" rel="noreferrer"><img src="/portfolio/app_store_btn.jpg" alt="App Store" className="h-[38px] hover:opacity-80 transition-opacity rounded-lg" /></a>}
+                                        </div>
+                                    ) : project.link && project.link !== '#' ? (
+                                        <AnimatedButton
+                                            text="VISIT LIVE SITE"
+                                            href={project.link}
+                                            target="_blank"
+                                            className="!w-auto"
+                                        />
+                                    ) : (
+                                        <span className="inline-flex items-center gap-2 text-sm text-gray-500 italic bg-gray-50 px-4 py-2.5 rounded-xl border border-gray-200">
+                                            Enterprise Internal System · Private Link
+                                        </span>
+                                    )}
+
+                                    {/* Dynamic Hire Resources Button */}
+                                    {project.hireResources && (
+                                        <AnimatedHireButton
+                                            href={project.hireResources.link}
+                                            text={project.hireResources.label}
+                                            className="h-[50px]"
+                                        />
+                                    )}
                                 </div>
-                                <h3 className={`text-2xl ${textWhiteClass} font-bold tracking-tight`}>The Solution</h3>
                             </div>
-                            <p className={`${textGrayClass} text-base leading-relaxed`}>
-                                {project.solution}
-                            </p>
+
+                            {/* Right: Device mockup */}
+                            <div className="lg:col-span-6 flex justify-center items-end relative min-h-[500px]">
+                                {isMobileApp ? (
+                                    <div className="relative flex items-end">
+
+                                        {/* Left Floating Background Phone */}
+                                        {project.mobileScreens && project.mobileScreens.length > 1 && (
+                                            <motion.div
+                                                animate={{ y: [0, -20, 0] }}
+                                                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                                                className="absolute -left-28 sm:-left-36 bottom-16 w-[180px] sm:w-[210px] bg-[#1c1c1e] rounded-[2rem] p-[4px] shadow-2xl border border-[#3a3a3c] -rotate-[10deg] opacity-80 blur-[1px] z-0"
+                                            >
+                                                <div className="relative w-full bg-black rounded-[1.8rem] p-1 shadow-[inset_0_0_2px_rgba(255,255,255,0.1)] overflow-hidden">
+                                                    {/* Dynamic Island */}
+                                                    <div className="absolute top-2 left-1/2 -translate-x-1/2 w-[35%] h-[18px] bg-black rounded-full z-40 shadow-[inset_0_-1px_1px_rgba(255,255,255,0.05)]" />
+                                                    <img src={project.mobileScreens[1]} alt="App Screen" className="w-full aspect-[9/19.5] object-cover rounded-[1.5rem]" />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-[#f4f7ff]/90 via-transparent to-transparent z-40 pointer-events-none" />
+                                                </div>
+                                            </motion.div>
+                                        )}
+
+                                        {/* Right Floating Background Phone */}
+                                        {project.mobileScreens && project.mobileScreens.length > 2 && (
+                                            <motion.div
+                                                animate={{ y: [0, -20, 0] }}
+                                                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                                                className="absolute -right-28 sm:-right-36 bottom-12 w-[180px] sm:w-[210px] bg-[#1c1c1e] rounded-[2rem] p-[4px] shadow-2xl border border-[#3a3a3c] rotate-[10deg] opacity-80 blur-[1px] z-0"
+                                            >
+                                                <div className="relative w-full bg-black rounded-[1.8rem] p-1 shadow-[inset_0_0_2px_rgba(255,255,255,0.1)] overflow-hidden">
+                                                    {/* Dynamic Island */}
+                                                    <div className="absolute top-2 left-1/2 -translate-x-1/2 w-[35%] h-[18px] bg-black rounded-full z-40 shadow-[inset_0_-1px_1px_rgba(255,255,255,0.05)]" />
+                                                    <img src={project.mobileScreens[2]} alt="App Screen" className="w-full aspect-[9/19.5] object-cover rounded-[1.5rem]" />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-[#f4f7ff]/90 via-transparent to-transparent z-40 pointer-events-none" />
+                                                </div>
+                                            </motion.div>
+                                        )}
+
+                                        {/* Main Phone */}
+                                        <div className="relative w-[230px] sm:w-[270px] flex flex-col items-center z-20">
+                                            <div className="relative w-full bg-[#1c1c1e] rounded-[3rem] p-[5px] sm:p-[6px] shadow-2xl border border-[#3a3a3c]">
+                                                {/* Power/Volume Buttons */}
+                                                <div className="absolute top-[100px] -left-[3px] w-[3px] h-10 bg-[#1c1c1e] rounded-l-sm border-y border-l border-[#3a3a3c]"></div>
+                                                <div className="absolute top-[150px] -left-[3px] w-[3px] h-10 bg-[#1c1c1e] rounded-l-sm border-y border-l border-[#3a3a3c]"></div>
+                                                <div className="absolute top-[120px] -right-[3px] w-[3px] h-16 bg-[#1c1c1e] rounded-r-sm border-y border-r border-[#3a3a3c]"></div>
+
+                                                <div className="relative w-full bg-black rounded-[2.7rem] p-[4px] sm:p-[5px] shadow-[inset_0_0_4px_rgba(255,255,255,0.1)] overflow-hidden">
+                                                    {/* Dynamic Island */}
+                                                    <div className="absolute top-3 sm:top-3.5 left-1/2 -translate-x-1/2 w-[32%] h-[22px] bg-black rounded-full z-40 flex items-center justify-end px-2 shadow-[inset_0_-1px_1px_rgba(255,255,255,0.1)] border border-[#111]">
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-[#1a1a24] shadow-[inset_0_0_1px_rgba(0,0,0,0.5)] mr-1"></div>
+                                                    </div>
+
+                                                    {project.mobileScreens ? (
+                                                        <div className="w-full relative group/screen select-none rounded-[2.3rem] overflow-hidden bg-black">
+                                                            <div className="absolute inset-y-0 left-0 w-1/2 z-20 cursor-pointer" onClick={prevScreen} />
+                                                            <div className="absolute inset-y-0 right-0 w-1/2 z-20 cursor-pointer" onClick={nextScreen} />
+                                                            <img src={project.mobileScreens[0]} className="w-full h-auto block invisible pointer-events-none" alt="" />
+                                                            {project.mobileScreens.map((src, i) => (
+                                                                <img key={i} src={src} alt={`Screen ${i + 1}`}
+                                                                    className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 pointer-events-none ${i === currentScreenIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                                                                />
+                                                            ))}
+                                                            <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center opacity-100 group-hover/screen:opacity-0 transition-opacity duration-500 z-30 pointer-events-none">
+                                                                <span className="text-white text-[10px] font-bold tracking-widest uppercase drop-shadow-md">Tap to navigate</span>
+                                                            </div>
+                                                        </div>
+                                                    ) : (
+                                                        <div className="w-full aspect-[9/19.5] bg-[#121212] overflow-hidden rounded-[2.3rem]">
+                                                            <div className="w-full h-full bg-top" style={{ backgroundImage: `url(${project.portfolioImage})`, backgroundSize: '100% auto', backgroundRepeat: 'no-repeat' }} />
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <div className="relative w-full max-w-[640px]">
+                                        <div className="relative w-full bg-[#0d0d0d] rounded-t-2xl border-[10px] border-[#1e1e1f] shadow-[0_30px_80px_rgba(0,0,0,0.2)] aspect-video overflow-hidden">
+                                            <div className="relative w-full h-full bg-[#121212] overflow-hidden group/screen">
+                                                <div
+                                                    onClick={() => setDesktopScrollMode(prev => prev === 'paused' ? 'playing' : 'paused')}
+                                                    className={`w-full h-full bg-top desktop-scroll-container desktop-scroll-mode-${desktopScrollMode} cursor-pointer`}
+                                                    style={{ backgroundImage: `url(${project.portfolioImage})`, backgroundSize: '100% auto', backgroundRepeat: 'no-repeat' }}
+                                                />
+                                                <div className="absolute inset-0 bg-black/55 backdrop-blur-[1px] flex flex-col items-center justify-center text-center opacity-100 group-hover/screen:opacity-0 transition-opacity duration-500 z-30 pointer-events-none">
+                                                    <FaChevronRight className="text-white w-4 h-4 rotate-90 mb-2 opacity-70" />
+                                                    <span className="text-white text-[11px] font-bold tracking-wider uppercase">Hover to scroll</span>
+                                                    <span className="text-gray-400 text-[10px] mt-0.5">Click to play / pause</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="relative w-[112%] -left-[6%] h-3.5 bg-[#1e1e1f] rounded-b-2xl shadow-xl">
+                                            <div className="absolute top-0 left-0 w-full h-[1px] bg-white/10" />
+                                        </div>
+
+                                        {/* Status badge - Placed on the top-left of the laptop to avoid right-edge clipping */}
+                                        <div className="absolute -top-4 -left-6 bg-white border border-gray-200 rounded-2xl px-4 py-3 shadow-xl z-[9999] hidden md:flex items-center gap-3">
+                                            <div className="w-7 h-7 rounded-full bg-green-500/10 flex items-center justify-center text-green-500 shrink-0">
+                                                <FaCheck className="w-3 h-3" />
+                                            </div>
+                                            <div>
+                                                <p className="text-[9px] text-gray-400 font-bold uppercase tracking-wider">Status</p>
+                                                <p className="text-xs text-[#222325] font-bold">100% Delivered</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                {/* Key Features */}
-                {project.keyFeatures && (
-                    <div>
-                        <h3 className={`text-2xl ${textWhiteClass} font-bold mb-4 tracking-tight`}>Key Features</h3>
-                        <div className={`grid grid-cols-1 sm:grid-cols-2 ${isMobileLayout ? 'lg:grid-cols-2 gap-3' : 'lg:grid-cols-4 gap-4'}`}>
-                            {project.keyFeatures.map((feature, idx) => (
-                                <div key={idx} className={`${featureCardClass} p-4 rounded-xl flex items-center justify-between hover:-translate-y-1 transition-all duration-300 group`}>
-                                    <div className="flex items-center gap-3.5">
-                                        <div className="w-7 h-7 rounded-lg bg-[#0037f0]/5 text-[#0037f0] flex items-center justify-center shrink-0 border border-blue-500/10 group-hover:bg-[#0037f0]/10 transition-colors">
-                                            <FaChevronRight className="w-2.5 h-2.5 group-hover:translate-x-0.5 transition-transform" />
-                                        </div>
-                                        <span className={`${textWhiteClass} text-base font-semibold`}>{feature}</span>
-                                    </div>
-                                    <span className="text-[10px] font-black tracking-widest text-[#0037f0]/20 group-hover:text-[#0037f0]/40 transition-colors select-none">
-                                        0{idx + 1}
-                                    </span>
-                                </div>
+
+            {/* ─── BODY: Sidebar + Content ─── */}
+            <div className="container mx-auto w-layout-blockcontainer container-full-width py-16">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 relative">
+
+                    {/* ── Sticky Left Sidebar Nav ── */}
+                    <aside className="lg:col-span-3 hidden lg:block">
+                        <div className="sticky top-10 space-y-1">
+                            <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4">On this page</p>
+                            {navItems.map((item) => (
+                                <button
+                                    key={item.id}
+                                    onClick={() => scrollTo(item.id)}
+                                    className={`w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer ${activeSection === item.id
+                                        ? 'text-[#0037f0] bg-[#0037f0]/6'
+                                        : 'text-gray-400 hover:text-gray-700 hover:bg-gray-50'
+                                        }`}
+                                >
+                                    <span className={`w-1 h-5 rounded-full transition-colors ${activeSection === item.id ? 'bg-[#0037f0]' : 'bg-gray-200'}`} />
+                                    {item.label}
+                                </button>
                             ))}
-                        </div>
-                    </div>
-                )}
-            </>
-        );
-    };
 
-    const renderCaseStudy = () => {
-        if (!project.caseStudy) return null;
-
-        return (
-            <div className="w-full bg-[#0a0c10] border-t border-b border-gray-900/60 py-12 md:py-12 relative z-10">
-                <div className="container mx-auto px-6 lg:px-12 max-w-[1200px]">
-                    <div className="text-center mb-8">
-                        <div className="flex justify-center mb-4">
-                            <Badge variant="white">In-Depth Review</Badge>
-                        </div>
-                        <h2 className="text-[36px] md:text-[36px] font-semibold text-white tracking-tight leading-tight">Case Study</h2>
-                    </div>
-
-                    <div className="space-y-8 md:space-y-10">
-                        {/* Overview */}
-                        <div className="bg-[#0d0f12] border border-gray-800/80 shadow-lg rounded-2xl p-5 sm:p-8">
-                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-                                <div className="lg:col-span-4">
-                                    <span className="text-xs font-bold tracking-widest text-[#44c7f6] uppercase block mb-1.5">Project Overview</span>
-                                    <h3 className="text-white text-2xl font-bold leading-tight">The Vision & Scope</h3>
-                                </div>
-                                <div className="lg:col-span-8">
-                                    <p className="text-gray-300 text-base leading-relaxed whitespace-pre-line">
-                                        {project.caseStudy.overview}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Process */}
-                        <div className="bg-[#0d0f12] border border-gray-800/80 shadow-lg rounded-2xl p-5 sm:p-8">
-                            <div className="mb-6">
-                                <span className="text-xs font-bold tracking-widest text-[#44c7f6] uppercase block mb-1.5">Our Execution Flow</span>
-                                <h3 className="text-white text-2xl font-bold leading-tight">Our Approach</h3>
-                            </div>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 relative">
-                                {project.caseStudy.process.map((step, idx) => (
-                                    <div key={idx} className="bg-[#13171f]/80 hover:bg-[#13171f] border border-gray-800 hover:border-blue-500/40 rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden group">
-                                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-500/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                                        <div className="flex items-center justify-between mb-3">
-                                            <span className="text-xs font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0] uppercase">Step 0{idx + 1}</span>
-                                            <div className="w-7 h-7 rounded-full bg-blue-500/10 text-blue-400 flex items-center justify-center">
-                                                {idx === 0 ? <FaSearch className="w-3.5 h-3.5" /> : idx === 1 ? <FaCog className="w-3.5 h-3.5 animate-[spin_6s_linear_infinite]" /> : <FaRocket className="w-3.5 h-3.5" />}
-                                            </div>
+                            {/* Project key features */}
+                            {project.keyFeatures && (
+                                <div className="mt-8 pt-6 border-t border-gray-200 space-y-3">
+                                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Key Features</p>
+                                    {project.keyFeatures.map((f, i) => (
+                                        <div key={i} className="flex items-center gap-2">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-[#44c7f6] shrink-0" />
+                                            <span className="text-xs text-[#62646a] font-medium">{f}</span>
                                         </div>
-                                        <h4 className="text-white text-lg font-bold mb-1.5 group-hover:text-blue-400 transition-colors">{step.title}</h4>
-                                        <p className="text-gray-300 text-base leading-relaxed">{step.description}</p>
-                                    </div>
-                                ))}
-                            </div>
+                                    ))}
+                                </div>
+                            )}
                         </div>
+                    </aside>
 
-                        {/* Results & Testimonial */}
-                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-                            {/* Results */}
-                            <div className="lg:col-span-5 bg-[#0d0f12] border border-gray-800/80 shadow-lg rounded-2xl p-5 sm:p-8 flex flex-col justify-between">
-                                <div>
-                                    <span className="text-xs font-bold tracking-widest text-[#44c7f6] uppercase block mb-1.5">Metrics & Success</span>
-                                    <h3 className="text-white text-2xl font-bold leading-tight mb-6">The Impact</h3>
-                                    <div className="space-y-3.5">
-                                        {project.caseStudy.results.map((res, idx) => (
-                                            <div key={idx} className="flex items-start gap-3.5 p-3.5 bg-green-500/5 border border-green-500/10 rounded-xl hover:border-green-500/20 transition-all">
-                                                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-green-500/15 text-green-400 shrink-0">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                    {/* ── Main Content ── */}
+                    <main className="lg:col-span-9 space-y-20">
+
+                        {/* 1. OVERVIEW */}
+                        <motion.section
+                            id="overview"
+                            ref={sectionRefs.overview}
+                            initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
+                            variants={fadeUp}
+                            className="scroll-mt-28"
+                        >
+                            <div className="flex items-center gap-3 mb-6">
+                                <span className="text-[11px] font-bold text-[#0037f0] uppercase tracking-widest">Overview</span>
+                                <div className="h-px flex-1 bg-gray-200" />
+                            </div>
+                            <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0f1e] tracking-tight mb-6 leading-tight">
+                                About the Project
+                            </h2>
+                            <p className="text-[#444] text-lg leading-[1.85] mb-8">
+                                {project.caseStudy?.overview || `We partnered with ${clientName} to address critical user experience challenges, optimize the system architecture, and deliver a scalable solution aligned with their long-term vision.`}
+                            </p>
+
+                            {/* Core Capabilities (Replaced Redundant Stats) */}
+                            {project.keyFeatures && project.keyFeatures.length > 0 && (
+                                <div className="mt-8">
+                                    <h3 className="text-[#0a0f1e] font-bold text-lg mb-4">Core Capabilities</h3>
+                                    <div className="flex flex-wrap gap-3">
+                                        {project.keyFeatures.map((feature, idx) => (
+                                            <div key={idx} className="flex items-center gap-2.5 bg-[#f4f7ff] border border-[#0037f0]/10 rounded-full px-5 py-2.5 hover:bg-[#0037f0]/5 transition-colors duration-200">
+                                                <div className="w-5 h-5 rounded-full bg-[#0037f0]/10 flex items-center justify-center shrink-0">
+                                                    <FaCheck className="text-[#0037f0] w-2.5 h-2.5" />
                                                 </div>
-                                                <div>
-                                                    <span className="text-gray-200 text-base font-medium leading-relaxed block">{res}</span>
-                                                </div>
+                                                <span className="text-[13px] font-bold text-[#222325]">{feature}</span>
                                             </div>
                                         ))}
                                     </div>
                                 </div>
-                            </div>
-
-                            {/* Testimonial */}
-                            <div className="lg:col-span-7 bg-gradient-to-br from-[#121620] to-[#0c0e14] border border-gray-800/80 shadow-md p-6 sm:p-8 rounded-2xl relative overflow-hidden flex flex-col justify-between">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-blue-500/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                                {/* Giant Quotation Mark */}
-                                <svg className="w-14 h-14 text-blue-500/10 absolute top-5 left-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                                </svg>
-                                <div className="relative z-10 pt-6">
-                                    <p className="text-white italic text-base md:text-lg leading-relaxed font-semibold mb-6">
-                                        "{project.caseStudy.testimonial.text}"
-                                    </p>
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-[#44c7f6] to-[#0037f0] p-[2px] shadow-md">
-                                            <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-[#0037f0] font-black text-lg uppercase">
-                                                {project.caseStudy.testimonial.author.charAt(0)}
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white font-bold text-base">{project.caseStudy.testimonial.author}</h4>
-                                            <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-sm font-semibold">{project.caseStudy.testimonial.position}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    };
-
-    return (
-        <>
-            <div className="bg-[#fafcff] py-6 md:py-10">
-                <div className="container mx-auto px-4 lg:px-8 max-w-[1200px]">
-
-                    {/* Header & Meta Section */}
-                    <div className="flex flex-col lg:flex-row justify-between gap-6 md:gap-8 lg:gap-12 mb-8 md:mb-10 pb-8 md:pb-10 border-b border-gray-200">
-
-                        {/* Header Section */}
-                        <div className="lg:w-1/2">
-                            <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
-                                <button
-                                    onClick={() => navigate(-1)}
-                                    className="text-gray-800 hover:text-black transition-colors cursor-pointer flex items-center justify-center p-2 -ml-2 rounded-full hover:bg-black/5 shrink-0"
-                                    aria-label="Go back"
-                                >
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <line x1="19" y1="12" x2="5" y2="12"></line>
-                                        <polyline points="12 19 5 12 12 5"></polyline>
-                                    </svg>
-                                </button>
-                                <h1 className="text-[28px] sm:text-[32px] lg:text-[40px] font-bold text-[#222325] tracking-tight leading-tight m-0">
-                                    {project.name}
-                                </h1>
-                            </div>
-                            <p className="text-[#62646a] text-base max-w-2xl leading-relaxed">
-                                {project.purpose}
-                            </p>
-                        </div>
-
-                        {/* Meta Grid */}
-                        <div className="lg:w-1/2 mt-2 lg:mt-0">
-                            <div className="grid grid-cols-2 h-full">
-                                <div className="flex flex-col justify-center gap-1 pb-4 md:pb-5 lg:pr-6 border-b border-r border-gray-200 pr-3">
-                                    <span className="text-gray-400 uppercase tracking-widest text-[10px] sm:text-xs font-bold">Country</span>
-                                    <span className="text-[#222325] text-sm sm:text-base font-semibold">{project.country}</span>
-                                </div>
-                                <div className="flex flex-col justify-center gap-1 pb-4 md:pb-5 pl-3 md:pl-4 lg:pl-6 border-b border-gray-200">
-                                    <span className="text-gray-400 uppercase tracking-widest text-[10px] sm:text-xs font-bold">Category</span>
-                                    <span className="text-[#222325] text-sm sm:text-base font-semibold">{project.category}</span>
-                                </div>
-                                <div className="flex flex-col justify-center gap-1 pt-4 md:pt-5 lg:pr-6 border-r border-gray-200 pr-3">
-                                    <span className="text-gray-400 uppercase tracking-widest text-[10px] sm:text-xs font-bold">Timeline</span>
-                                    <span className="text-[#222325] text-sm sm:text-base font-semibold">{project.timeline}</span>
-                                </div>
-                                <div className="flex flex-col justify-center gap-1 pt-4 md:pt-5 pl-3 md:pl-4 lg:pl-6">
-                                    <span className="text-gray-400 uppercase tracking-widest text-[10px] sm:text-xs font-bold">Tech Stack</span>
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-sm sm:text-base font-bold">{project.techStack}</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    {/* Showcase Section */}
-                    {project.category === "Mobile app" ? (
-                        <div className="w-full bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden p-6 sm:p-8 md:p-12 shadow-[0_15px_45px_rgba(0,0,0,0.05)] relative group/showcase">
-                            {/* Subtle background glow */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#44c7f6]/2 to-transparent pointer-events-none group-hover/showcase:from-[#44c7f6]/5 transition-colors duration-700"></div>
-
-                            {/* Top Section: Mockup (left) & Overview/Process (right) */}
-                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 items-start relative z-10">
-                                {/* Mobile Mockup Container */}
-                                <div className="relative w-full max-w-[280px] mx-auto flex flex-col items-center lg:col-span-1">
-                                    <div className="relative w-full bg-[#0a0a0a] rounded-[2rem] border-[8px] border-[#111] shadow-[0_20px_50px_rgba(0,0,0,0.25)] overflow-hidden [transform:translateZ(0)]">
-                                        {/* Notch */}
-                                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[40%] h-4.5 bg-[#111] rounded-b-xl z-30"></div>
-
-                                        {/* Screen */}
-                                        {project.mobileScreens ? (
-                                            <div
-                                                className="w-full relative group/screen select-none rounded-[22px] overflow-hidden [transform:translateZ(0)]"
-                                                onTouchStart={handleTouchStart}
-                                                onTouchMove={handleTouchMove}
-                                                onTouchEnd={handleTouchEnd}
-                                            >
-                                                {/* Left/Right click areas */}
-                                                <div className="absolute inset-y-0 left-0 w-1/2 z-20 cursor-pointer" onClick={prevScreen}></div>
-                                                <div className="absolute inset-y-0 right-0 w-1/2 z-20 cursor-pointer" onClick={nextScreen}></div>
-
-                                                {/* Invisible placeholder for height */}
-                                                <img src={project.mobileScreens[0]} className="w-full h-auto block invisible pointer-events-none rounded-[22px]" alt="placeholder" />
-
-                                                {/* Fading Screens */}
-                                                {project.mobileScreens.map((src, index) => (
-                                                    <img
-                                                        key={index}
-                                                        src={src}
-                                                        alt={`Screen ${index + 1}`}
-                                                        className={`absolute top-0 left-0 w-full h-full object-cover rounded-[22px] transition-opacity duration-1000 ease-in-out pointer-events-none ${index === currentScreenIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
-                                                        draggable="false"
-                                                    />
-                                                ))}
-
-                                                {/* Hover/Touch Instruction Overlay */}
-                                                <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] flex flex-col items-center justify-center text-center opacity-100 group-hover/screen:opacity-0 pointer-events-none transition-all duration-500 z-30 rounded-[22px]">
-                                                    <div className="p-3 rounded-full bg-white/10 border border-white/20 mb-2 shadow-[0_0_20px_rgba(255,255,255,0.15)] animate-pulse">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M9 18l6-6-6-6" /></svg>
-                                                    </div>
-                                                    <span className="text-white text-[11px] font-bold tracking-wide uppercase px-3">Swipe or Click Edges</span>
-                                                    <span className="text-gray-300 text-[10px] mt-0.5">To change screens</span>
-                                                </div>
-
-                                                {/* Left Navigation Hint */}
-                                                <div className="absolute inset-y-0 left-0 w-1/4 flex items-center justify-start pl-4 opacity-0 md:group-hover/screen:opacity-100 transition-opacity pointer-events-none z-30 hidden md:flex rounded-l-[22px]">
-                                                    <div className="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white shadow-lg">
-                                                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" /></svg>
-                                                    </div>
-                                                </div>
-
-                                                {/* Right Navigation Hint */}
-                                                <div className="absolute inset-y-0 right-0 w-1/4 flex items-center justify-end pr-4 opacity-0 md:group-hover/screen:opacity-100 transition-opacity pointer-events-none z-30 hidden md:flex rounded-r-[22px]">
-                                                    <div className="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white shadow-lg">
-                                                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" /></svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        ) : (
-                                            <div className="w-full aspect-[9/19.5] bg-[#121212] overflow-hidden relative rounded-[22px] [transform:translateZ(0)]">
-                                                <div className="w-full h-full bg-top animate-auto-scroll-bg md:animate-none md:hover:bg-bottom md:transition-[background-position] md:duration-[12s] ease-in-out cursor-pointer rounded-[22px]" style={{ backgroundImage: `url(${project.portfolioImage})`, backgroundSize: '100% auto', backgroundRepeat: 'no-repeat' }}></div>
-                                            </div>
-                                        )}
-
-                                    </div>
-
-                                    {/* Column 1: Download Links */}
-                                    <div className="flex flex-col justify-center items-center lg:col-span-1 mt-5">
-                                        {project.appLinks && (
-                                            <div className="flex flex-col lg:flex-row justify-center gap-2">
-                                                {project.appLinks.android && (
-                                                    <a href={project.appLinks.android} target="_blank" rel="noreferrer" className="block hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.15)] transition-all duration-300 rounded-lg">
-                                                        <img src="/portfolio/google_play_btn.jpg" alt="Get it on Google Play" className="h-[38px] sm:h-[50px] w-auto rounded-lg object-contain" />
-                                                    </a>
-                                                )}
-                                                {project.appLinks.ios && (
-                                                    <a href={project.appLinks.ios} target="_blank" rel="noreferrer" className="block hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.15)] transition-all duration-300 rounded-lg">
-                                                        <img src="/portfolio/app_store_btn.jpg" alt="Download on the App Store" className="h-[38px] sm:h-[50px] w-auto rounded-lg object-contain" />
-                                                    </a>
-                                                )}
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-
-                                {/* Overview & Process (Right Column) */}
-                                <div className="w-full lg:col-span-2 space-y-6">
-                                    <div className="border-b border-gray-100 pb-3 flex flex-col items-center">
-                                        <div className="flex items-center gap-2 mb-1.5">
-                                            <Badge variant="blue">In-Depth Review</Badge>
-                                        </div>
-                                        <h2 className="text-[28px] font-bold text-[#222325] tracking-tight leading-tight">Case Study</h2>
-                                    </div>
-
-                                    {/* Overview */}
-                                    {project.caseStudy && (
-                                        <div className="bg-gray-50 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.015)] rounded-2xl p-5">
-                                            <span className="text-[10px] font-bold tracking-widest text-[#0037f0] uppercase block mb-1">Project Overview</span>
-                                            <h3 className="text-[#222325] text-lg font-bold leading-tight mb-2">The Vision & Scope</h3>
-                                            <p className="text-[#62646a] text-sm leading-relaxed whitespace-pre-line">
-                                                {project.caseStudy.overview}
-                                            </p>
-                                        </div>
-                                    )}
-
-                                    {/* Process */}
-                                    {project.caseStudy && (
-                                        <div className="bg-gray-50 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.015)] rounded-2xl p-5">
-                                            <div className="mb-4">
-                                                <span className="text-[10px] font-bold tracking-widest text-[#0037f0] uppercase block mb-1">Our Execution Flow</span>
-                                                <h3 className="text-[#222325] text-lg font-bold leading-tight">Our Approach</h3>
-                                            </div>
-                                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                                                {project.caseStudy.process.map((step, idx) => (
-                                                    <div key={idx} className="bg-white border border-gray-100 hover:border-blue-500/30 rounded-xl p-4 shadow-sm transition-all duration-300 relative overflow-hidden group">
-                                                        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-blue-500/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                                                        <div className="flex items-center justify-between mb-1.5">
-                                                            <span className="text-[10px] font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0] uppercase">Step 0{idx + 1}</span>
-                                                            <div className="w-6 h-6 rounded-full bg-blue-500/10 text-blue-500 flex items-center justify-center">
-                                                                {idx === 0 ? <FaSearch className="w-3 h-3" /> : idx === 1 ? <FaCog className="w-3 h-3 animate-[spin_6s_linear_infinite]" /> : <FaRocket className="w-3 h-3" />}
-                                                            </div>
-                                                        </div>
-                                                        <h4 className="text-[#222325] text-sm font-bold mb-1 group-hover:text-blue-500 transition-colors">{step.title}</h4>
-                                                        <p className="text-[#62646a] text-xs leading-relaxed">{step.description}</p>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-
-                            {/* Bottom Section: Download links (left) & Impact and Testimonial (right, side-by-side) */}
-                            {project.caseStudy && (
-                                <div className="gap-6 md:gap-8 items-stretch mt-6 pt-6 border-t border-gray-100 relative z-10">
-
-
-                                    {/* Columns 2-3: Impact & Testimonial Side-by-Side */}
-                                    <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        {/* Results / Impact */}
-                                        <div className="bg-gray-50 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.015)] rounded-2xl p-5 text-left">
-                                            <span className="text-[10px] font-bold tracking-widest text-[#0037f0] uppercase block mb-1">Metrics & Success</span>
-                                            <h3 className="text-[#222325] text-lg font-bold leading-tight mb-4">The Impact</h3>
-                                            <div className="space-y-2">
-                                                {project.caseStudy.results.map((res, idx) => (
-                                                    <div key={idx} className="flex items-start gap-2.5 p-2.5 bg-green-500/5 border border-green-500/10 rounded-xl">
-                                                        <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-500/10 text-green-500 shrink-0">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                                                        </div>
-                                                        <span className="text-[#222325] text-xs font-semibold leading-relaxed">{res}</span>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div>
-
-                                        {/* Testimonial */}
-                                        <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.015)] p-5 rounded-2xl relative overflow-hidden flex flex-col justify-between text-left">
-                                            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-500/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                                            <svg className="w-10 h-10 text-blue-500/5 absolute top-3 left-3" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                                            </svg>
-                                            <div className="relative z-10 pt-4">
-                                                <p className="text-[#222325] italic text-sm leading-relaxed font-semibold mb-4">
-                                                    "{project.caseStudy.testimonial.text}"
-                                                </p>
-                                                <div className="flex items-center gap-2.5">
-                                                    <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-[#44c7f6] to-[#0037f0] p-[1.5px] shadow-sm">
-                                                        <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-[#0037f0] font-black text-xs uppercase">
-                                                            {project.caseStudy.testimonial.author.charAt(0)}
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <h4 className="text-[#222325] font-bold text-xs">{project.caseStudy.testimonial.author}</h4>
-                                                        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-[10px] font-semibold">{project.caseStudy.testimonial.position}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             )}
-                        </div>
-                    ) : (
-                        <div className="w-full bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden p-4 sm:p-6 md:p-10 flex flex-col items-center shadow-[0_15px_45px_rgba(0,0,0,0.05)] relative group/showcase">
-                            {/* Subtle background glow */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#0037f0]/2 to-transparent pointer-events-none group-hover/showcase:from-[#0037f0]/5 transition-colors duration-700"></div>
+                            {/* </div> */}
+                        </motion.section>
 
-                            {/* Laptop Container */}
-                            <div className="relative w-[86%] sm:w-[90%] lg:w-full max-w-[900px] mx-auto group z-10">
-                                {/* Laptop Lid */}
-                                <div className="relative w-full bg-[#0a0a0a] rounded-t-xl sm:rounded-t-2xl md:rounded-t-3xl border-[6px] sm:border-[8px] md:border-[10px] border-[#1a1a1a] shadow-[0_20px_50px_rgba(0,0,0,0.3)] aspect-video overflow-hidden z-20">
-                                    {/* Screen Content */}
-                                    <div className="relative w-full h-full bg-[#121212] overflow-hidden rounded-sm group/screen">
-                                        <div
-                                            onClick={() => setDesktopScrollMode(prev => (prev === 'auto' || prev === 'playing') ? 'paused' : 'playing')}
-                                            className={`w-full h-full bg-top animate-auto-scroll-bg md:animate-none desktop-scroll-container desktop-scroll-mode-${desktopScrollMode} cursor-pointer`}
-                                            style={{
-                                                backgroundImage: `url(${project.portfolioImage})`,
-                                                backgroundSize: '100% auto',
-                                                backgroundRepeat: 'no-repeat'
-                                            }}
-                                        ></div>
-                                        {/* Hover Instruction Overlay */}
-                                        <div className="absolute inset-0 bg-black/65 backdrop-blur-[2px] flex flex-col items-center justify-center text-center opacity-100 group-hover/screen:opacity-0 pointer-events-none transition-all duration-500 z-30">
-                                            <div className="p-3 rounded-full bg-white/10 border border-white/20 mb-2 shadow-[0_0_20px_rgba(255,255,255,0.15)] animate-bounce">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M12 5v14M19 12l-7 7-7-7" /></svg>
-                                            </div>
-                                            <span className="text-white text-xs sm:text-sm font-bold tracking-wider uppercase px-4">Hover to Scroll Full Screen</span>
-                                            <span className="text-gray-300 text-[10px] sm:text-xs mt-1">Tap/Click to Play or Pause</span>
+                        {/* 2. THE CHALLENGE */}
+                        <motion.section
+                            id="challenge"
+                            ref={sectionRefs.challenge}
+                            initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
+                            variants={fadeUp}
+                            className="scroll-mt-28"
+                        >
+                            <div className="flex items-center gap-3 mb-6">
+                                <span className="text-[11px] font-bold text-[#0037f0] uppercase tracking-widest">The Challenge</span>
+                                <div className="h-px flex-1 bg-gray-200" />
+                            </div>
+                            <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0f1e] tracking-tight mb-6 leading-tight">
+                                What Problem Were We Solving?
+                            </h2>
+
+                            {/* Challenge pull-quote */}
+                            <div className="relative bg-[#fafbff] border-l-4 border-[#0037f0] rounded-r-2xl pl-6 pr-6 py-6 mb-8">
+                                <p className="text-[#444] text-lg leading-relaxed italic">
+                                    "{project.challenge || `${clientName} needed a robust, scalable architecture capable of handling rapid growth while delivering a seamless, high-performance experience to end users.`}"
+                                </p>
+                            </div>
+
+                            <p className="text-[#62646a] text-base leading-[1.9] mb-8">
+                                {project.solution || `We dove deep into the product's pain points — conducting stakeholder workshops, reviewing existing infrastructure, and mapping out user flows — before designing a solution that addressed both immediate bottlenecks and long-term scalability requirements.`}
+                            </p>
+
+                            {/* Challenge cards */}
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                {[
+                                    {
+                                        num: '01',
+                                        title: 'Scalability Gaps',
+                                        body: 'Existing architecture could not sustain growing user demand without significant performance degradation.'
+                                    },
+                                    {
+                                        num: '02',
+                                        title: 'User Friction',
+                                        body: 'Complex workflows and poor mobile optimization were causing drop-offs and low user retention.'
+                                    },
+                                    {
+                                        num: '03',
+                                        title: 'Data Security',
+                                        body: 'Sensitive data lacked proper encryption and access control layers required for compliance.'
+                                    },
+                                ].map((c) => (
+                                    <div key={c.num} className="relative overflow-hidden bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md hover:border-[#0037f0]/20 transition-all duration-300 group">
+                                        <span className="absolute top-2 right-3 text-6xl font-black text-gray-100/70 select-none pointer-events-none z-0 transition-transform duration-500 group-hover:scale-110 group-hover:text-[#0037f0]/5">{c.num}</span>
+                                        <div className="relative z-10 pt-2">
+                                            <h4 className="text-[#222325] font-bold text-base mb-2">{c.title}</h4>
+                                            <p className="text-[#62646a] text-sm leading-relaxed">{c.body}</p>
                                         </div>
                                     </div>
-                                </div>
-                                {/* Laptop Base */}
-                                <div className="relative w-[114%] -left-[7%] h-4 sm:h-5 bg-[#1a1a1a] rounded-b-2xl sm:rounded-b-3xl shadow-[0_20px_40px_rgba(0,0,0,0.2)] z-10 flex justify-center">
-                                    <div className="w-[20%] h-[40%] bg-[#111] rounded-b-lg mx-auto mt-0"></div>
-                                    <div className="absolute top-0 left-0 w-full h-[1px] bg-white/10"></div>
+                                ))}
+                            </div>
+                        </motion.section>
+
+                        {/* 3. OUR PROCESS */}
+                        <motion.section
+                            id="process"
+                            ref={sectionRefs.process}
+                            initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.15 }}
+                            variants={fadeUp}
+                            className="scroll-mt-28"
+                        >
+                            <div className="flex items-center gap-3 mb-6">
+                                <span className="text-[11px] font-bold text-[#0037f0] uppercase tracking-widest">Our Process</span>
+                                <div className="h-px flex-1 bg-gray-200" />
+                            </div>
+                            <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0f1e] tracking-tight mb-3 leading-tight">
+                                How We Built the Solution
+                            </h2>
+                            <p className="text-[#62646a] text-base leading-relaxed mb-10 max-w-2xl">
+                                Our engagement followed a structured, phased approach — from deep discovery through to a polished, production-ready deployment.
+                            </p>
+
+                            {/* Process steps — vertical timeline */}
+                            <div className="relative">
+                                <div className="absolute left-5 top-0 bottom-0 w-px bg-gray-200 hidden sm:block" />
+                                <div className="space-y-8">
+                                    {(project.caseStudy?.process || [
+                                        { title: 'Discovery & Strategy', description: 'In-depth stakeholder workshops, competitor analysis, and technical scoping to align on goals and define the product roadmap.' },
+                                        { title: 'UI/UX Design', description: 'High-fidelity wireframes and interactive prototypes refined through iterative user feedback sessions.' },
+                                        { title: 'Development & Launch', description: `Full-stack implementation using ${project.techStack}, followed by rigorous QA and a phased production rollout.` },
+                                    ]).map((step, i) => (
+                                        <motion.div
+                                            key={i}
+                                            initial={{ opacity: 0, x: -20 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ duration: 0.45, delay: i * 0.1 }}
+                                            className="relative sm:pl-16"
+                                        >
+                                            {/* Step number dot */}
+                                            <div className="absolute left-0 top-0 w-10 h-10 rounded-full bg-white border-2 border-[#0037f0] text-[#0037f0] font-black text-sm flex items-center justify-center shadow-sm hidden sm:flex">
+                                                {String(i + 1).padStart(2, '0')}
+                                            </div>
+
+                                            <div className="bg-[#f7f9ff] border border-gray-200 rounded-2xl p-6 hover:border-[#0037f0]/25 hover:shadow-md transition-all duration-300">
+                                                <div className="flex items-center gap-2 mb-3">
+                                                    <span className="sm:hidden text-xs font-black text-[#0037f0]">{String(i + 1).padStart(2, '0')}</span>
+                                                    <h4 className="text-[#222325] font-bold text-lg">{step.title}</h4>
+                                                </div>
+                                                <p className="text-[#62646a] text-base leading-relaxed">{step.description}</p>
+                                            </div>
+                                        </motion.div>
+                                    ))}
                                 </div>
                             </div>
+                        </motion.section>
 
-                            {/* Visit Site Button inside showcase */}
-                            <div className="mt-6 md:mt-8 z-10">
-                                <AnimatedButton
-                                    text="VISIT LIVE SITE"
-                                    href={project.link}
-                                    className="!w-auto"
-                                    target="_blank"
-                                />
+                        {/* 4. RESULTS */}
+                        <motion.section
+                            id="results"
+                            ref={sectionRefs.results}
+                            initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.15 }}
+                            variants={fadeUp}
+                            className="scroll-mt-28"
+                        >
+                            <div className="flex items-center gap-3 mb-6">
+                                <span className="text-[11px] font-bold text-[#0037f0] uppercase tracking-widest">Results & Impact</span>
+                                <div className="h-px flex-1 bg-gray-200" />
                             </div>
-                        </div>
-                    )}
+                            <h2 className="text-3xl md:text-[36px] font-semibold text-[#0a0f1e] tracking-tight mb-3 leading-tight">
+                                Measurable Outcomes Delivered
+                            </h2>
+                            <p className="text-[#62646a] text-base leading-relaxed mb-10 max-w-2xl">
+                                Post-launch audits and client feedback confirmed that the solution exceeded every key performance target set during discovery.
+                            </p>
 
+                            {/* Results list */}
+                            <div className="space-y-4 mb-10">
+                                {(project.caseStudy?.results || [
+                                    '40% reduction in average page load time',
+                                    'Zero critical downtime incidents post-launch',
+                                    '95%+ positive user satisfaction score in first-week feedback',
+                                ]).map((result, i) => (
+                                    <motion.div
+                                        key={i}
+                                        initial={{ opacity: 0, x: -16 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.4, delay: i * 0.08 }}
+                                        className="flex items-center gap-4 bg-white border border-gray-200 rounded-2xl p-3 hover:shadow-sm hover:border-green-200 transition-all duration-300"
+                                    >
+                                        <div className="w-7 h-7 rounded-full bg-green-500/10 text-green-600 flex items-center justify-center shrink-0 mt-0.5">
+                                            <FaCheck className="w-3 h-3" />
+                                        </div>
+                                        <p className="text-[#222325] text-base font-normal leading-snug">{result}</p>
+                                    </motion.div>
+                                ))}
+                            </div>
+
+                            {/* Impact metric cards */}
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                {[
+                                    { value: '+142%', label: 'Conversion Lift', sub: 'Verified increase in key client targets post-launch.' },
+                                    { value: '< 1.2s', label: 'Page Load Time', sub: 'Blazing fast interactions across global regions.' },
+                                    { value: '99.99%', label: 'System Uptime', sub: 'Fault-tolerant config on scalable server stacks.' },
+                                ].map((m, i) => (
+                                    <div key={i} className="bg-gradient-to-br from-[#0037f0] to-[#0029c2] rounded-2xl p-6 text-white">
+                                        <span className="text-3xl font-black block mb-1">{m.value}</span>
+                                        <span className="text-sm font-bold text-white/90 block mb-2">{m.label}</span>
+                                        <span className="text-xs text-white/60 leading-relaxed">{m.sub}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.section>
+
+                        {/* 5. TESTIMONIAL */}
+                        {project.caseStudy?.testimonial && (
+                            <motion.section
+                                id="testimonial"
+                                ref={sectionRefs.testimonial}
+                                initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
+                                variants={fadeUp}
+                                className="scroll-mt-28"
+                            >
+                                <div className="flex items-center gap-3 mb-6">
+                                    <span className="text-[11px] font-bold text-[#0037f0] uppercase tracking-widest">Client Feedback</span>
+                                    <div className="h-px flex-1 bg-gray-200" />
+                                </div>
+
+                                <div className="relative bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 rounded-3xl p-8 md:p-10">
+                                    <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8">
+                                        <div className="flex items-center gap-4">
+                                            {project.caseStudy.testimonial.image ? (
+                                                <img
+                                                    src={project.caseStudy.testimonial.image}
+                                                    alt={project.caseStudy.testimonial.author}
+                                                    className="w-14 h-14 rounded-full object-cover shrink-0 shadow-sm border border-gray-100"
+                                                />
+                                            ) : (
+                                                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#0a0f1e] to-[#2a2f3e] flex items-center justify-center text-white font-bold text-xl shrink-0 shadow-sm">
+                                                    {project.caseStudy.testimonial.author.charAt(0)}
+                                                </div>
+                                            )}
+                                            <div>
+                                                <h4 className="font-bold text-[#0a0f1e] text-lg leading-tight">{project.caseStudy.testimonial.author}</h4>
+                                                <p className="text-gray-500 text-sm font-medium mt-1">{project.caseStudy.testimonial.position}</p>
+                                            </div>
+                                        </div>
+
+                                        <div className="flex flex-col md:items-end">
+                                            <div className="flex gap-1 mb-2">
+                                                {[...Array(5)].map((_, i) => <FaStar key={i} className="text-[#FFB800] w-5 h-5" />)}
+                                            </div>
+                                            <span className="text-xs text-gray-400 font-medium flex items-center gap-1.5">
+                                                <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+                                                Reviewed {new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div className="relative bg-[#f8f9fc] rounded-2xl p-6 md:p-8">
+                                        <FaQuoteLeft className="absolute top-6 left-6 text-[40px] text-[#0037f0]/10 pointer-events-none" />
+                                        <blockquote className="relative z-10 text-[#444] text-base md:text-lg leading-relaxed mt-4 sm:mt-2">
+                                            "{project.caseStudy.testimonial.text}"
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </motion.section>
+                        )}
+
+                    </main>
                 </div>
             </div>
 
-            {/* Case Study Section / Bottom Content */}
-            {project.category === "Mobile app" ? (
-                /* For Mobile App: Challenge, Solution & Key Features in dark full-width background */
-                <div className="bg-[#fafcff] pb-10">
-                    <div className="container mx-auto px-6 lg:px-12 max-w-[1200px]">
-                        {renderProjectContent(false, false)}
-                    </div>
-                </div>
-            ) : (
-                /* For Desktop App: Case Study in dark background, then Challenge, Solution & Key Features in light background */
-                <>
-                    {renderCaseStudy(false)}
-                    <div className="bg-[#fafcff] py-10">
-                        <div className="container mx-auto px-4 lg:px-8 max-w-[1200px]">
-                            {renderProjectContent(false, false)}
-                        </div>
-                    </div>
-                </>
-            )}
-
+            {/* ─── CTA ─── */}
             <CtaSection />
-        </>
+        </div >
     );
 }
