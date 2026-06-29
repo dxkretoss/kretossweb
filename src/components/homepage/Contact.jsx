@@ -241,13 +241,6 @@ export default function Contact() {
                                                 </div>
                                             </div>
                                         </form>
-
-                                        <div className="success-message w-form-done" tabIndex="-1" role="region" aria-label="Email Form success">
-                                            <div className="contact-success-text">Thank you! Your submission has been received!</div>
-                                        </div>
-                                        <div className="error-message w-form-fail" tabIndex="-1" role="region" aria-label="Email Form failure">
-                                            <div>Oops! Something went wrong while submitting the form.</div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

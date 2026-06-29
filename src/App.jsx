@@ -34,10 +34,10 @@ export default function App() {
         const lenis = new Lenis({
             lerp: 0.07, // Lower lerp means smoother, longer inertia
             smoothWheel: true,
-            wheelMultiplier: 0.7,
+            wheelMultiplier: 0.8,
             touchMultiplier: 1.5,
         });
-        
+
         // Expose globally for route change resets
         window.lenis = lenis;
 

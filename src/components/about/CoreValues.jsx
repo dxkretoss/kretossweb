@@ -96,7 +96,7 @@ export default function CoreValues() {
 
     return (
         <section ref={sectionRef} className="w-full bg-[#0c0c0c] text-white py-10 lg:py-20 relative overflow-hidden">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center relative z-10">
+            <div className="container w-layout-blockcontainer container-full-width mx-auto flex flex-col items-center relative z-10">
 
                 {/* Header */}
                 <div className="flex flex-col items-center mb-8 lg:mb-16 text-center">

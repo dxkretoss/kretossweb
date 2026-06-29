@@ -176,8 +176,8 @@ export default function PortfolioDetailsPage() {
                                 <div className="pt-4 flex flex-wrap items-center gap-4">
                                     {project.appLinks ? (
                                         <div className="flex flex-wrap gap-3">
-                                            {project.appLinks.android && <a href={project.appLinks.android} target="_blank" rel="noreferrer"><img src="/portfolio/google_play_btn.jpg" alt="Google Play" className="h-[38px] hover:opacity-80 transition-opacity rounded-lg" /></a>}
-                                            {project.appLinks.ios && <a href={project.appLinks.ios} target="_blank" rel="noreferrer"><img src="/portfolio/app_store_btn.jpg" alt="App Store" className="h-[38px] hover:opacity-80 transition-opacity rounded-lg" /></a>}
+                                            {project.appLinks.android && <a href={project.appLinks.android} target="_blank" rel="noreferrer"><img src="/portfolio/google_play_btn.jpg" alt="Google Play" className="h-[48px] hover:opacity-80 transition-opacity rounded-md" /></a>}
+                                            {project.appLinks.ios && <a href={project.appLinks.ios} target="_blank" rel="noreferrer"><img src="/portfolio/app_store_btn.jpg" alt="App Store" className="h-[48px] hover:opacity-80 transition-opacity rounded-md" /></a>}
                                         </div>
                                     ) : project.link && project.link !== '#' ? (
                                         <AnimatedButton
@@ -204,7 +204,7 @@ export default function PortfolioDetailsPage() {
                             </div>
 
                             {/* Right: Device mockup */}
-                            <div className="lg:col-span-6 flex justify-center items-end relative min-h-[500px]">
+                            <div className="lg:col-span-6 flex justify-center items-end relative min-h-[500px] pt-15">
                                 {isMobileApp ? (
                                     <div className="relative flex items-end">
 

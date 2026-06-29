@@ -98,11 +98,14 @@ export default function AnimatedHireButton({ href = "#", text = "HIRE DEVELOPERS
                     </div>
                 </div>
             </div>
-
-            {/* Simple SVG Arrow that slightly nudges right on hover */}
-            {/* <svg className="hire-arrow-icon w-3.5 h-3.5 flex-shrink-0 mr-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5" style={{ position: 'relative' }}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg> */}
+            <div className="button-dot-box">
+                <div className="button-dot" style={{ backgroundColor: '#0037f0' }}></div>
+                <div className="button-dot" style={{ backgroundColor: '#0037f0' }}></div>
+            </div>
+            <div className="button-dot-box right-box">
+                <div className="button-dot" style={{ backgroundColor: '#0037f0' }}></div>
+                <div className="button-dot" style={{ backgroundColor: '#0037f0' }}></div>
+            </div>
         </a>
     );
 }

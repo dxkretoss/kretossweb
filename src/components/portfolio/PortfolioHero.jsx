@@ -165,8 +165,8 @@ export default function PortfolioHero() {
                     </div>
 
                     {/* Right Content - Laptop Mockup */}
-                    <div className="w-full lg:w-[50%] relative z-20 flex justify-center mt-12 lg:mt-0">
-                        <div className="hero-video-box relative w-[86%] sm:w-[90%] lg:w-full max-w-[500px] lg:mr-0 mx-auto">
+                    <div className="w-full lg:w-[40%] relative z-20 flex justify-center mt-12 lg:mt-0">
+                        <div className="hero-video-box relative w-[86%] sm:w-[90%] lg:w-full max-w-[500px] mx-auto">
                             {/* Background Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[linear-gradient(#44c7f6,#0037f0)] opacity-20 blur-[80px] -z-20 rounded-full pointer-events-none"></div>
 

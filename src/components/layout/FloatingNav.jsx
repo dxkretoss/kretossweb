@@ -99,7 +99,7 @@ export default function FloatingNav() {
                             onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
                             className={`flex items-center gap-1 text-base font-medium transition-colors whitespace-nowrap ${location.pathname.includes('/hire-us') ? 'text-[#44c7f6]' : 'text-gray-300 hover:text-white'}`}
                         >
-                            <span className="text-transparent bg-clip-text bg-[linear-gradient(110deg,#44c7f6,45%,#ffffff,55%,#0037f0)] animate-shine">Hire Us!</span>
+                            <span className="text-transparent bg-clip-text  bg-[linear-gradient(110deg,#3eb9f5,45%,#ffffff,55%,#3eb9f5)] animate-shine">Hire Us!</span>
                             <ChevronDown className={`w-4 h-4 text-[#44c7f6] transition-transform duration-300 ${isMegaMenuOpen ? "rotate-180" : ""}`} />
                         </button>
                     </div>

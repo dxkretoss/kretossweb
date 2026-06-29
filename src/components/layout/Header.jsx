@@ -218,7 +218,7 @@ export default function Header({ currentRoute }) {
                                                     onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
                                                     className={`menu-link w-inline-block !flex !flex-row !items-center !gap-1.5 ${link.current ? "w--current" : ""} ${link.highlight ? "font-medium transition-all duration-300" : ""}`}
                                                 >
-                                                    <div className={`menu-txt m-0 p-0 leading-none ${link.highlight ? "text-transparent bg-clip-text bg-[linear-gradient(110deg,#44c7f6,45%,#ffffff,55%,#0037f0)] animate-shine" : ""}`}>{link.text}</div>
+                                                    <div className={`menu-txt m-0 p-0 leading-none ${link.highlight ? "text-transparent bg-clip-text bg-[linear-gradient(110deg,#3eb9f5,45%,#ffffff,55%,#3eb9f5)] animate-shine" : ""}`}>{link.text}</div>
                                                     <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${link.highlight ? "text-[#44c7f6]" : ""} ${isMegaMenuOpen ? "rotate-180" : ""}`} />
                                                 </button>
                                             ) : (

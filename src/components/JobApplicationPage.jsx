@@ -47,7 +47,7 @@ export default function JobApplicationPage() {
     };
 
     return (
-        <div className="min-h-screen bg-[#fafcff] py-10 md:py-20 relative font-sans overflow-hidden">
+        <div className="bg-[#fafcff] py-10 md:py-20 relative font-sans overflow-hidden">
             {/* Background Blobs */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute top-[10%] right-[5%] w-[400px] h-[400px] bg-[#0e54f1]/10 rounded-full blur-[80px]"></div>
