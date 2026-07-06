@@ -141,7 +141,7 @@ export default function AwardsSection() {
                             <div className="absolute inset-0 bg-gradient-to-tr from-[#0037f0]/20 to-transparent mix-blend-overlay"></div>
 
                             {/* Badge */}
-                            <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/20 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <div className="absolute bottom-10 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/20 transform translate-y-4 transition-all duration-500">
                                 <p className="text-sm font-semibold text-gray-900 mb-1">Global Recognition</p>
                                 <p className="text-xs text-gray-500">Celebrating excellence in digital design and architecture.</p>
                             </div>

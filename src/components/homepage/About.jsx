@@ -1,8 +1,9 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
 import Badge from '../ui/Badge';
+import { Volume2, VolumeX } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,6 +41,11 @@ export default function About() {
     const aboutRef = useRef(null);
 
     const videoRef = useRef(null);
+    const [isMuted, setIsMuted] = useState(true);
+
+    const toggleMute = () => {
+        setIsMuted(!isMuted);
+    };
 
     // Statistics counters
     const statisticsCounters = [
@@ -286,54 +292,93 @@ export default function About() {
     return (
         <>
             <section ref={aboutRef} id="About" className="about">
-                <div className="w-layout-blockcontainer container w-container">
-                    <div className="about-content-wrapper">
+                <div className="container-full-width w-layout-blockcontainer container w-container">
+                    <div className="about-content-wrapper" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'space-between' }}>
                         <div className="about-left-box">
                             <div className="about-slider" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
                                 <div className="about-slider-two"></div>
                             </div>
                             <Badge variant='blue'>About Kretoss</Badge>
                         </div>
-                        <div className="about-right-box">
-                            <div className="about-title-button" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'stretch' }}>
-                                <div className="about-block" style={{ flex: 1, minWidth: '300px' }}>
-                                    <div className="about-title-text homepage">
-                                        <div className="about-slider _02" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
-                                            <div className="about-slider-two _02"></div>
-                                        </div>
-                                        <h2 className="about-section-title">
-                                            Crafting Scalable, Secure, & Smart Digital Experiences
-                                        </h2>
-                                    </div>
-                                    <div className="about-text">Trusted by global clients, Kretoss Technology is your technology partner for mobile apps, websites, and digital solutions affordable, reliable, and tailored to your business needs. With over 12 years of experience, we deliver scalable, high-quality solutions that drive real business growth.</div>
+                        <div className="about-center-box" style={{ flex: 1, minWidth: '300px' }}>
+                            <div className="about-title-text homepage">
+                                <div className="about-slider _02" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
+                                    <div className="about-slider-two _02"></div>
+                                </div>
+                                <h2 className="about-section-title">
+                                    Crafting Scalable, Secure, & Smart Digital Experiences
+                                </h2>
+                            </div>
+                            <div className="about-text">Trusted by global clients, Kretoss Technology is your technology partner for mobile apps, websites, and digital solutions affordable, reliable, and tailored to your business needs. With over 12 years of experience, we deliver scalable, high-quality solutions that drive real business growth.</div>
 
-                                    <div className="about-button">
-                                        <AnimatedButton href="/about" text="MORE ABOUT US" ></AnimatedButton>
-                                    </div>
-                                    <div className="about-counter">
-                                        {statisticsCounters.map((counter, idx) => (
-                                            <CounterBox
-                                                key={idx}
-                                                columns={counter.columns}
-                                                suffix={counter.suffix}
-                                                label={counter.label}
-                                                hasLine={counter.hasLine}
-                                                rightOneClass={counter.rightOneClass}
-                                            />
-                                        ))}
-                                    </div>
-                                </div>
-                                <div className="about-block-right">
-                                    <video
-                                        ref={videoRef}
-                                        muted
-                                        loop
-                                        playsInline
-                                        className="about-video"
-                                        style={{ width: '100%', height: '100%', minHeight: '480px', objectFit: 'cover', borderRadius: '16px' }}
-                                        src="https://www.pexels.com/download/video/8814502/"
+                            <div className="about-button">
+                                <AnimatedButton href="/about" text="MORE ABOUT US" ></AnimatedButton>
+                            </div>
+                            <div className="about-counter">
+                                {statisticsCounters.map((counter, idx) => (
+                                    <CounterBox
+                                        key={idx}
+                                        columns={counter.columns}
+                                        suffix={counter.suffix}
+                                        label={counter.label}
+                                        hasLine={counter.hasLine}
+                                        rightOneClass={counter.rightOneClass}
                                     />
+                                ))}
+                            </div>
+                        </div>
+                        <div className="about-right-box">
+                            <video
+                                ref={videoRef}
+                                muted={isMuted}
+                                loop
+                                playsInline
+                                onClick={toggleMute}
+                                className="about-video cursor-pointer"
+                                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+                                src="/aboutus-potrait.mp4"
+                            />
+                            <div
+                                style={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '100%',
+                                    height: '100%',
+                                    backgroundColor: 'rgba(0, 0, 0, 0.45)',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    pointerEvents: 'none',
+                                    zIndex: 10,
+                                    transition: 'opacity 0.3s',
+                                    opacity: isMuted ? 1 : 0
+                                }}
+                            >
+                                <div style={{
+                                    width: '64px',
+                                    height: '64px',
+                                    borderRadius: '50%',
+                                    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                                    backdropFilter: 'blur(8px)',
+                                    WebkitBackdropFilter: 'blur(8px)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    border: '1px solid rgba(255, 255, 255, 0.3)',
+                                    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                                    marginBottom: '8px'
+                                }}>
+                                    <VolumeX color="white" size={32} />
                                 </div>
+                                <span style={{
+                                    color: 'white',
+                                    fontWeight: '600',
+                                    fontSize: '16px'
+                                }}>
+                                    Tap to unmute
+                                </span>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FastAverageColor } from 'fast-average-color';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import AnimatedButtonwithoutaero from '../ui/AnimatedButtonwithoutaero';
 import AnimatedButtonBorder from '../ui/AnimatedButtonBorder';
 import { portfolioData } from '../../data/portfolio';
@@ -22,12 +22,21 @@ const getCountryFlag = (country) => {
     if (!country) return '';
     const flags = {
         'usa': '🇺🇸',
+        'united states': '🇺🇸',
         'uk': '🇬🇧',
+        'united kingdom': '🇬🇧',
         'australia': '🇦🇺',
         'germany': '🇩🇪',
         'brazil': '🇧🇷',
         'canada': '🇨🇦',
-        'uae': '🇦🇪'
+        'uae': '🇦🇪',
+        'india': '🇮🇳',
+        'singapore': '🇸🇬',
+        'switzerland': '🇨🇭',
+        'portugal': '🇵🇹',
+        'vietnam': '🇻🇳',
+        'indonesia': '🇮🇩',
+        'sweden': '🇸🇪'
     };
     return flags[country.toLowerCase()] || '🌍';
 };
@@ -202,7 +211,7 @@ const PortfolioCard = ({ item }) => {
                                     ))}
                                 </div>
                                 {/* Tech Stack Pill */}
-                                <div className={`hidden md:flex items-center gap-2 font-semibold text-sm sm:text-base ${imgRef.current?.dataset?.isDark === 'true' ? 'text-white' : 'text-black'}`}>
+                                <div className={`hidden md:flex items-center gap-2 font-semibold text-sm sm:text-base text-white`}>
                                     {/* {item.techStack || item.category} */}
 
                                     {(item.techStack || item.category || '').length > 25
@@ -215,7 +224,7 @@ const PortfolioCard = ({ item }) => {
                             <Link
                                 to={`/portfolio/${item.slug}`}
                                 className="flex items-center rounded overflow-hidden transition-colors hover:opacity-80"
-                                style={{ color: imgRef.current?.dataset?.isDark === 'true' ? "#000" : "#fff", backgroundColor: imgRef.current?.dataset?.isDark === 'true' ? 'white' : '#111' }}
+                                style={{ color: 'black', backgroundColor: 'white' }}
                             >
                                 <div className="p-3 flex items-center justify-center">
                                     <svg
@@ -244,14 +253,42 @@ const PortfolioCard = ({ item }) => {
 };
 
 export default function Portfolios() {
+    const categories = [
+        "Custom web",
+        "Mobile app",
+        "Shopify",
+        "Wordpress",
+        "Bigcommerce",
+        "web design",
+        "ui/ux",
+        "Other"
+    ];
+
+    const location = useLocation();
+    const navigate = useNavigate();
+
     const [activeCategory, setActiveCategory] = useState(() => {
+        const query = location.search.replace('?', '');
+        if (query) {
+            const matched = categories.find(c => c.replace(/\s+/g, '-').toLowerCase() === query.toLowerCase());
+            if (matched) return matched;
+        }
         return localStorage.getItem('portfolioActiveCategory') || "Custom web";
     });
-    const [visibleCount, setVisibleCount] = useState(5);
+    const [visibleCount, setVisibleCount] = useState(() => {
+        const savedCount = sessionStorage.getItem('portfolioVisibleCount');
+        return savedCount ? parseInt(savedCount, 10) : 5;
+    });
+
+    useEffect(() => {
+        sessionStorage.setItem('portfolioVisibleCount', visibleCount);
+    }, [visibleCount]);
 
     useEffect(() => {
         localStorage.setItem('portfolioActiveCategory', activeCategory);
-    }, [activeCategory]);
+        const urlKey = activeCategory.replace(/\s+/g, '-').toLowerCase();
+        navigate(`?${urlKey}`, { replace: true });
+    }, [activeCategory, navigate]);
 
     const itemsPerPage = 5;
     const loadMoreRef = useRef(null);
@@ -286,17 +323,6 @@ export default function Portfolios() {
             }
         }, 100);
     };
-
-    const categories = [
-        "Custom web",
-        "Mobile app",
-        "Shopify",
-        "Wordpress",
-        "Bigcommerce",
-        "web design",
-        "ui/ux",
-        "Other"
-    ];
 
     const currentPortfolios = portfolioData[activeCategory] || [];
     const currentItems = currentPortfolios.slice(0, visibleCount);

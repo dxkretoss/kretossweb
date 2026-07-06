@@ -11,13 +11,13 @@ const CounterBox = ({ columns, suffix, label, valueClass, labelClass }) => {
                 {columns.map((col, colIdx) => (
                     <div key={colIdx} className={`counter-digit-column ${col.direction === 'up' ? 'scroll-up' : 'scroll-down'} flex flex-col shrink-0`}>
                         {col.digits.map((d, i) => (
-                            <h4 key={i} className={`counter-box-title  h-[44px] lg:h-[54px] flex items-center justify-center font-black text-4xl lg:text-[42px] leading-none shrink-0 ${valueClass}`}>
+                            <h4 key={i} className={`counter-box-title h-[44px] lg:h-[54px] flex items-center justify-center font-black text-2xl lg:text-3xl leading-none shrink-0 ${valueClass}`}>
                                 {d}
                             </h4>
                         ))}
                     </div>
                 ))}
-                <h4 className={`counter-box-title  h-[44px] lg:h-[54px] flex items-center font-black text-4xl lg:text-[42px] leading-none shrink-0 ${valueClass}`}>{suffix}</h4>
+                <h4 className={`counter-box-title h-[44px] lg:h-[54px] flex items-center font-black text-2xl lg:text-3xl leading-none shrink-0 ${valueClass}`}>{suffix}</h4>
             </div>
             <p className={labelClass}>{label}</p>
         </div>
@@ -124,105 +124,104 @@ export default function BuildWithUs() {
                 </div>
 
                 {/* Bento Grid Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-6">
 
-                    {/* Main Hero Box - Spans 2 cols & 2 rows */}
-                    <div className="bento-box lg:col-span-2 lg:row-span-2 bg-white rounded-2xl p-8 md:p-12 shadow-xl shadow-gray-200/50 border border-gray-100 relative overflow-hidden group flex flex-col justify-center">
-                        <div className="relative z-10">
-                            <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold text-[#111] leading-[1.1] mb-4 tracking-tight">
-                                Be part of something <br className="hidden sm:block" />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0e54f1] to-cyan-500">
-                                    extraordinary.
-                                </span>
-                            </h2>
-                            <p className="text-gray-500 text-base sm:text-lg max-w-xl leading-relaxed mb-4">
-                                Joining our team means being part of a dynamic group of professionals dedicated to shaping the future with innovative tech.
-                            </p>
-                            <div className="inline-block">
-                                <AnimatedButton href="/career" text="MORE ABOUT US" />
+                    {/* Left Column */}
+                    <div className="flex flex-col gap-6">
+                        {/* Main Hero Box */}
+                        <div className="bento-box bg-white rounded-2xl p-8 shadow-xl shadow-gray-200/50 border border-gray-100 relative overflow-hidden group flex flex-col justify-center h-full">
+                            <div className="relative z-10">
+                                <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold text-[#111] leading-[1.1] mb-4 tracking-tight">
+                                    Be part of something <br className="hidden sm:block" />
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0e54f1] to-cyan-500">
+                                        extraordinary.
+                                    </span>
+                                </h2>
+                                <p className="text-gray-500 text-base sm:text-lg max-w-xl leading-relaxed mb-4">
+                                    Joining our team means being part of a dynamic group of professionals dedicated to shaping the future with innovative tech.
+                                </p>
+                                <div className="inline-block">
+                                    <AnimatedButton href="/career" text="MORE ABOUT US" />
+                                </div>
                             </div>
+                            <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-gradient-to-br from-[#0e54f1]/10 to-cyan-400/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700 ease-out"></div>
                         </div>
-                        <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-gradient-to-br from-[#0e54f1]/10 to-cyan-400/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700 ease-out"></div>
-                    </div>
 
-                    {/* Perks Box - Spans 2 cols, 1 row */}
-                    <div className="bento-box lg:col-span-2 lg:row-span-1 bg-gradient-to-br from-[#0e54f1] to-[#0a3eb5] rounded-2xl p-8 shadow-xl text-white flex flex-col justify-center transform transition-transform hover:-translate-y-1 duration-300">
-                        <h4 className="font-bold text-2xl mb-6">Perks & Benefits</h4>
-                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            {[
-                                "Collaborative Work Environment",
-                                "Career Growth Opportunities",
-                                "Work-Life Balance",
-                                "Competitive Compensation"
-                            ].map((item, idx) => (
-                                <li key={idx} className="flex items-start gap-3 font-medium text-white/90">
-                                    <svg className="w-6 h-6 text-cyan-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <span className="text-[15px] leading-tight mt-1">{item}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Image Box - Spans 2 cols, 2 rows (Full Height on right side) */}
-                    <div className="bento-box lg:col-span-2 lg:row-span-2 rounded-2xl overflow-hidden shadow-xl relative group min-h-[300px]">
-                        <img
-                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-                            alt="Team Collaboration"
-                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div className="absolute bottom-6 left-6 right-6">
-                            <div>
-                                <p className="text-cyan-400 text-[11px] font-bold tracking-wider uppercase mb-1">Our Culture</p>
-                                <h4 className="text-white text-xl font-bold">Driven by Innovation</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Left Side Stats (Single Line) - Spans 2 cols under Hero */}
-                    <div className="lg:col-span-2 flex flex-col justify-center">
-                        <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-gray-200/80 py-4 lg:py-8 w-full bg-white/50 backdrop-blur-sm rounded-2xl shadow-sm border border-white/40">
-                            <div className="flex flex-col items-center px-2 lg:px-4 group cursor-pointer hover:scale-105 transition-transform duration-300">
+                        {/* Stats Box */}
+                        <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-gray-200/80 py-4 lg:py-6 w-full bg-white/50 backdrop-blur-sm rounded-2xl shadow-sm border border-white/40">
+                            <div className="flex flex-col items-center px-2 lg:px-3 group cursor-pointer hover:scale-105 transition-transform duration-300">
                                 <CounterBox
                                     columns={stats.countries.columns}
                                     suffix={stats.countries.suffix}
-                                    label={stats.countries.label}
-                                    valueClass="text-[#111]"
+                                    label="Countries Served"
                                     labelClass="text-gray-500 text-[12px] lg:text-[13px] mt-1"
                                 />
                             </div>
-                            <div className="flex flex-col items-center px-2 lg:px-4 group cursor-pointer hover:scale-105 transition-transform duration-300">
+                            <div className="flex flex-col items-center px-2 lg:px-3 group cursor-pointer hover:scale-105 transition-transform duration-300">
                                 <CounterBox
                                     columns={stats.impact.columns}
                                     suffix={stats.impact.suffix}
-                                    label={stats.impact.label}
-                                    valueClass="text-[#111]"
+                                    label="Transformative Impact"
                                     labelClass="text-gray-500 text-[12px] lg:text-[13px] mt-1"
                                 />
                             </div>
-                            <div className="flex flex-col items-center px-2 lg:px-4 group cursor-pointer hover:scale-105 transition-transform duration-300">
+                            <div className="flex flex-col items-center px-2 lg:px-3 group cursor-pointer hover:scale-105 transition-transform duration-300">
                                 <CounterBox
                                     columns={stats.awards.columns}
                                     suffix={stats.awards.suffix}
-                                    label={stats.awards.label}
-                                    valueClass="text-[#111]"
+                                    label="Award Winning"
                                     labelClass="text-gray-500 text-[12px] lg:text-[13px] mt-1"
                                 />
                             </div>
-                            <div className="flex flex-col items-center px-2 lg:px-4 group cursor-pointer hover:scale-105 transition-transform duration-300 border-r-0">
+                            <div className="flex flex-col items-center px-2 lg:px-3 group cursor-pointer hover:scale-105 transition-transform duration-300 border-r-0">
                                 <CounterBox
                                     columns={stats.projects.columns}
                                     suffix={stats.projects.suffix}
-                                    label={stats.projects.label}
-                                    valueClass="text-[#111]"
+                                    label="Projects Delivered"
                                     labelClass="text-gray-500 text-[12px] lg:text-[13px] mt-1"
                                 />
                             </div>
                         </div>
                     </div>
 
+                    {/* Right Column */}
+                    <div className="flex flex-col gap-6">
+                        {/* Perks Box */}
+                        <div className="bento-box bg-gradient-to-br from-[#f8faff] via-white to-[#f0f4ff] rounded-2xl p-8 shadow-xl shadow-gray-200/50 border border-[#e6eeff] flex flex-col justify-center transform transition-transform hover:-translate-y-1 duration-300">
+                            <h4 className="font-bold text-2xl text-[#111] mb-6">Perks & Benefits</h4>
+                            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                {[
+                                    "Collaborative Work Environment",
+                                    "Career Growth Opportunities",
+                                    "Work-Life Balance",
+                                    "Competitive Compensation"
+                                ].map((item, idx) => (
+                                    <li key={idx} className="flex items-start gap-3 font-medium text-gray-600">
+                                        <svg className="w-6 h-6 text-slate-800 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <span className="text-[15px] leading-tight mt-1">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Image Box */}
+                        <div className="bento-box rounded-2xl overflow-hidden shadow-xl relative group flex-grow min-h-[200px]">
+                            <img
+                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                                alt="Team Collaboration"
+                                className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                            <div className="absolute bottom-6 left-6 right-6">
+                                <div>
+                                    <p className="text-cyan-400 text-[11px] font-bold tracking-wider uppercase mb-1">Our Culture</p>
+                                    <h4 className="text-white text-xl font-bold">Driven by Innovation</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

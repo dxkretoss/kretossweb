@@ -6,7 +6,7 @@ import { hireUsData } from '../../data/hireus';
 import MegaMenu from './MegaMenu';
 
 // SplitText helper for dynamic GSAP SplitText word/letter class structures
-const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
+export const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
     const words = text.split(" ");
     let globalLetterIdx = startIndex;
 
@@ -56,7 +56,7 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 };
 
 // Reusable BookCallButton to encapsulate the dynamic B-o-o-k a C-a-l-l letters and styling
-const BookCallButton = ({ href = "https://calendly.com/ankur-k-kretoss/30min" }) => {
+export const BookCallButton = ({ href = "https://calendly.com/ankur-k-kretoss/30min" }) => {
     const buttonRef = useRef(null);
 
     useLayoutEffect(() => {

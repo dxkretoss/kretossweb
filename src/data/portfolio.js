@@ -9,7 +9,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Guestway",
-                        "description": "A property management platform that simplifies tenant, booking, and property operations from a single dashboard.",
+                        "description": "Guestway is an AI-powered guest experience platform built for hotels, aparthotels, and short-term rental operators. Rather than replacing an existing Property Management System (PMS), it integrates with it to centralize guest communication, automate operations, streamline staff coordination, and deliver exceptional guest experiences from booking to checkout.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -26,7 +26,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "NextHunt",
-                        "description": "A smart hiring platform that helps candidates build professional resumes and enables businesses to find the right talent faster.",
+                        "description": "NextHunt is an AI-powered career platform that automates the entire job search process. Instead of spending hours searching and applying manually, users receive personalized job matches, AI-tailored resumes, automated applications, and privacy-first career management while remaining completely invisible to their current employer.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -43,7 +43,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Palzea Widget",
-                        "description": "A secure P2P crypto transfer solution that enables seamless digital asset transactions and wallet integrations.",
+                        "description": "Palzea is a secure peer-to-peer cryptocurrency trading platform that enables users to buy and sell digital assets directly with one another. The platform simplifies crypto transactions through real-time trading, integrated wallets, escrow protection, and an intuitive interface designed for both beginners and experienced traders.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -60,7 +60,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Dreamload",
-                        "description": "An AI-powered sports platform that enhances athlete performance, league management, and fan engagement through data-driven insights.",
+                        "description": "Dreamlod is an AI-powered sports intelligence platform designed for sports clubs, academies, leagues, coaches, and athletes. The platform centralizes athlete management, performance analytics, league operations, team collaboration, and AI-driven insights, enabling organizations to make smarter decisions while delivering a modern digital sports experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UAE",
@@ -77,7 +77,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "PhoenixFC",
-                        "description": "The official digital platform of Phoenix FC, showcasing club history, teams, matches, achievements, and community activities.",
+                        "description": "Phoenix FC is the official digital platform for a professional football club, bringing together match information, player statistics, ticket booking, club news, league standings, and fan engagement in one modern web experience. The platform strengthens the connection between the club and its supporters while simplifying content management for administrators.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -94,7 +94,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Palzea",
-                        "description": "A modern cryptocurrency trading platform offering secure trading, portfolio management, and real-time market insights",
+                        "description": "Palzea is a next-generation cryptocurrency exchange that enables users to securely buy, sell, trade, stake, and manage digital assets from a single platform. Designed for both beginners and experienced traders, it combines advanced trading tools, multi-chain wallet support, P2P trading, portfolio management, and enterprise-grade security into one seamless ecosystem.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -111,10 +111,10 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Fily",
-                        "description": "An easy-to-use financial platform for managing GST, invoices, bills, and cash flow without accounting complexity.",
+                        "description": "Fily is an AI-powered business assistant built for Indian businesses, freelancers, and startups. The platform simplifies GST compliance, invoicing, bill management, tax reminders, expense tracking, and financial monitoring from a single intuitive dashboard, helping business owners stay compliant without accounting complexity.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "USA",
+                        "country": "India",
                         "techStack": "ReactJS + Supabase",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/fily"
@@ -128,7 +128,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Student Travel Buddy",
-                        "description": "A student-focused travel membership platform offering exclusive discounts, perks, and savings on travel experiences.",
+                        "description": "Student Travel Buddy is a travel planning platform built specifically for international students. It simplifies the entire travel journey by helping students plan customized trips, compare destinations, organize transportation and accommodation, access travel support services, and receive expert guidance from one centralized platform.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -145,10 +145,10 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Klubbrabatten",
-                        "description": "A Swedish digital coupon platform offering exclusive discounts and deals from restaurants, retailers, and local businesses.",
+                        "description": "Klubbrabatten is a digital membership and fundraising platform that connects sports clubs, schools, associations, businesses, and consumers through exclusive discounts and member benefits. The platform enables organizations to raise funds while providing members with access to local and national offers through a seamless digital experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Canada",
+                        "country": "Germany",
                         "techStack": "ReactJS + Supabase + Node.js",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/klubbrabatten"
@@ -179,7 +179,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Sarhachat",
-                        "description": "An AI-powered health assistant providing confidential guidance and reliable information on sexual and reproductive health.",
+                        "description": "SarhaChat is an AI-powered health assistant that provides confidential, evidence-based guidance on sexual and reproductive health. The platform empowers users to ask sensitive health questions in a safe, private, and judgment-free environment while improving access to trusted educational resources and support.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -196,10 +196,10 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Wall Street",
-                        "description": "A powerful trading platform that helps investors analyze markets, manage portfolios, and execute trades efficiently.",
+                        "description": "WallStreet.io is an advanced stock and options trading platform that empowers traders with real-time market data, powerful backtesting tools, intelligent screeners, strategy validation, and educational resources. The platform helps investors research, test, and execute data-driven trading strategies with greater confidence.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "UK",
+                        "country": "USA",
                         "techStack": "Angular & Laravel",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/wallstreets"
@@ -213,10 +213,10 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Allbots",
-                        "description": "An AI automation platform that streamlines business operations by automating repetitive tasks and workflows.",
+                        "description": "AllBots is an AI Voice Agent platform that helps businesses automate inbound phone calls, customer support, appointment scheduling, lead qualification, and operational workflows. Built for industries including healthcare, legal, real estate, automotive, hospitality, finance, and education, the platform enables organizations to deliver intelligent 24/7 customer interactions while reducing operational costs.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Canada",
+                        "country": "USA",
                         "techStack": "Bubble",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/allbots"
@@ -247,10 +247,10 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Coyna",
-                        "description": "A financial empowerment platform that helps users manage, grow, and make smarter financial decisions with confidence.",
+                        "description": "Coyna is an AI and blockchain-powered financial accounting platform that helps businesses automate accounting, payments, expense management, and financial reporting. By combining private blockchain technology with artificial intelligence, the platform delivers secure, transparent, and real-time financial operations for organizations of all sizes.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Brazil",
+                        "country": "USA",
                         "techStack": "Angular, JavaScript",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/coyna"
@@ -264,10 +264,10 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Gujarat Tiles Info",
-                        "description": "A comprehensive ceramic industry directory connecting manufacturers, dealers, suppliers, exporters, importers, and service providers on one platform.",
+                        "description": "Gujarat Tiles Info is a comprehensive B2B digital platform for the ceramic and tile industry, connecting manufacturers, exporters, dealers, suppliers, machinery providers, architects, transporters, and buyers through one centralized marketplace. The platform simplifies business discovery, promotes industry networking, and provides access to product catalogs, company listings, and industry news.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Canada",
+                        "country": "India",
                         "techStack": "Angular & Laravel",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/gujarat-tiles-info"
@@ -281,10 +281,10 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Implant Stock",
-                        "description": "A smart inventory management platform that helps dental professionals track, organize, and manage implant stock efficiently online.",
+                        "description": "ImplantStock is a cloud-based inventory management platform built specifically for dental implant clinics and healthcare professionals. The platform helps practices efficiently manage implant inventory, monitor stock levels, track expiration dates, organize suppliers, and streamline purchasing decisions while reducing waste and improving operational efficiency.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Canada",
+                        "country": "Australia",
                         "techStack": "Laravel & React",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/implanstock"
@@ -298,10 +298,10 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Locum Prime",
-                        "description": "A dedicated pharmacy recruitment platform that connects qualified pharmacists with the best job opportunities across the industry.",
+                        "description": "Locum Prime is a digital pharmacy workforce management and recruitment platform that connects pharmacies with qualified locum pharmacists across the United Kingdom. The platform simplifies shift posting, pharmacist availability, booking management, compliance, and recruitment, enabling pharmacies to fill staffing gaps quickly while helping pharmacists find flexible work opportunities.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Germany",
+                        "country": "United Kingdom",
                         "techStack": "Angular, Codeigniter",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/locum-prime"
@@ -315,10 +315,10 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Trust Arthur Group",
-                        "description": "A trusted investment management firm focused on creating, growing, and preserving wealth through transparent and client-focused financial solutions.",
+                        "description": "Trust Arthur Group is a digital investment and wealth management platform that helps individuals, families, and businesses access professional financial advisory services, portfolio management, alternative investment opportunities, and long-term wealth planning through a secure and modern online experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Australia",
+                        "country": "United Kingdom",
                         "techStack": "Python, ReactJS",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/trust-arthur-group"
@@ -332,10 +332,10 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "Taxley",
-                        "description": "A tax and financial management platform that helps individuals and businesses manage taxes, compliance, and financial records with ease.",
+                        "description": "Taxley is a digital tax management platform that simplifies Swiss tax filing for individuals through secure document uploads, automated tax preparation workflows, expert-assisted reviews, and online communication. The platform transforms complex tax processes into a fast, transparent, and entirely digital experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Germany",
+                        "country": "Canada",
                         "techStack": "MySQL, Node JS, ReactJS",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/taxley-custom"
@@ -439,7 +439,7 @@ export const portfolioData = {
                         "description": "A convenient eSIM marketplace that helps travelers purchase, activate, and manage mobile data plans worldwide.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Germany",
+                        "country": "United Kingdom",
                         "techStack": "React Native",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                         "link": "/portfolios/roamaly-app"
@@ -591,10 +591,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Kate's Real Food",
-                        "description": "An eCommerce platform offering organic snack bars and healthy food products made with real, natural ingredients.",
+                        "description": "Kate's Real Food is a premium Shopify-powered eCommerce platform that showcases handcrafted organic energy bars made with real ingredients. The online store delivers an engaging shopping experience with product subscriptions, curated bundles, wholesale information, store locator functionality, and a brand-focused customer journey designed to drive long-term customer loyalty.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "UK",
+                        "country": "USA",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/kates-real-food"
@@ -608,10 +608,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Ludic Life",
-                        "description": "A premium lifestyle eCommerce platform offering comfortable, fashionable everyday clothing, casual footwear, and chappals.",
+                        "description": "Ludic Life is a premium Shopify-powered lifestyle brand specializing in ultra-comfortable flip-flops, slides, and everyday footwear inspired by Brazilian design. The platform combines modern eCommerce experiences with compelling brand storytelling, product innovation, and seamless shopping journeys to build long-term customer loyalty.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Brazil",
+                        "country": "India",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/ludic-life"
@@ -625,10 +625,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Ludic Global",
-                        "description": "A global fashion eCommerce marketplace featuring a curated collection of international apparel, trendy shoes, and stylish chappals.",
+                        "description": "Ludic Global is the international B2B and wholesale platform for the Ludic footwear brand, connecting distributors, retailers, and business partners worldwide. Built on Shopify, the platform showcases premium product collections, wholesale opportunities, and global brand expansion while providing a professional digital experience for prospective partners.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Canada",
+                        "country": "India",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/ludic-global"
@@ -645,7 +645,7 @@ export const portfolioData = {
                         "description": "A boutique eCommerce concept store specializing in functional culinary-lifestyle workwear, comfortable kitchen shoes, and lifestyle chappals.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Canada",
+                        "country": "India",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/ludic-kitchen"
@@ -659,10 +659,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Almost Peaceful",
-                        "description": "A premium lifestyle brand offering handcrafted incense and wellness products designed to create calm and mindful experiences.",
+                        "description": "Almost Peaceful is a Shopify-powered relationship education platform that helps couples strengthen communication, build healthier relationships, and prepare for long-term marriage through interactive workshops, relationship coaching, corporate wellness programs, and educational products. The platform combines digital experiences with science-backed relationship methodologies to make personal growth more accessible and engaging.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "UAE",
+                        "country": "Singapore",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/almost-peaceful"
@@ -676,10 +676,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Impetus Health",
-                        "description": "A healthcare eCommerce platform providing trusted wellness, nutrition, and healthcare products for healthier living.",
+                        "description": "Impetus is a Shopify-powered sports and fitness brand offering premium workout accessories, performance apparel, recovery gear, sports supports, bottles, shakers, and training essentials. The platform delivers a modern direct-to-consumer shopping experience designed for athletes, gym enthusiasts, and active lifestyles.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Brazil",
+                        "country": "India",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/impetus-health"
@@ -693,10 +693,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Roamaly",
-                        "description": "A convenient eSIM marketplace that helps travelers purchase, activate, and manage mobile data plans worldwide.",
+                        "description": "Roamaly is a Shopify-powered travel connectivity platform that enables travelers to purchase, activate, and manage eSIM plans for more than 200 countries and regions. The platform simplifies international mobile connectivity through instant digital activation, flexible data plans, and a seamless purchasing experience, eliminating expensive roaming charges and physical SIM card replacements.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "USA",
+                        "country": "United Kingdom",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/roamaly"
@@ -710,10 +710,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Kids Posters",
-                        "description": "An online store offering educational and decorative posters designed to inspire creativity and learning for children.",
+                        "description": "A Shopify-powered eCommerce store offering beautifully illustrated kids' posters, framed prints, wall stickers, wallpapers, height charts, and personalized room décor designed to inspire creativity and brighten children's spaces.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Germany",
+                        "country": "Australia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/kids-posters"
@@ -727,7 +727,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "The Pawcan",
-                        "description": "A pet-focused eCommerce platform offering premium products, accessories, and essentials for pet owners.",
+                        "description": "A Shopify-powered eCommerce brand offering an innovative pet waste disposal solution designed to eliminate odors, improve convenience, and help pet owners maintain cleaner outdoor spaces.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -744,10 +744,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Recreation Beauty",
-                        "description": "A beauty and skincare brand offering high-quality products designed to enhance self-care and confidence.",
+                        "description": "A premium Australian fragrance brand offering clean, vegan perfumes, perfume oils, and botanical beauty products crafted with sustainable ingredients and inspired by the lifestyle of Bondi Beach.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Germany",
+                        "country": "Australia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/recreation-beauty"
@@ -761,10 +761,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Tango Swim",
-                        "description": "An online swimwear store featuring stylish, comfortable, and premium swimwear collections for modern lifestyles.",
+                        "description": "A premium Australian Shopify swimwear brand offering sustainable bikinis, one-piece swimsuits, and resort wear designed to empower confident women through bold, fashion-forward designs and exceptional quality.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Brazil",
+                        "country": "Australia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/tango-swim"
@@ -778,10 +778,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Tilit",
-                        "description": "A professional workwear platform providing high-quality apparel and gear for chefs, restaurants, and hospitality teams.",
+                        "description": "A premium Shopify-powered hospitality workwear brand offering chef coats, aprons, uniforms, and professional apparel designed for chefs, restaurants, hotels, cafés, and hospitality teams.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Australia",
+                        "country": "USA",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/tilit"
@@ -795,10 +795,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Honey Stinger",
-                        "description": "A sports nutrition brand offering energy snacks, gels, and supplements designed for athletes and active lifestyles.",
+                        "description": "A premium Shopify-powered sports nutrition brand offering energy waffles, gels, chews, bars, and performance fuel designed to help athletes prepare, perform, and recover during training and competition.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Brazil",
+                        "country": "USA",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/honey-stinger"
@@ -812,10 +812,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Moanarose",
-                        "description": "A fashion eCommerce platform offering stylish clothing and accessories inspired by modern trends and individuality.",
+                        "description": "A Shopify-powered women's fashion brand offering premium activewear, resort wear, and lifestyle clothing inspired by tropical living, effortless style, and everyday comfort.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Australia",
+                        "country": "Indonesia",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/moanarose"
@@ -829,10 +829,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Prime Nails",
-                        "description": "A beauty brand specializing in premium press-on nails and nail care products for salon-quality results at home.",
+                        "description": "A Shopify-powered beauty brand offering premium press-on nails with trend-forward designs that deliver salon-quality manicures in minutes from the comfort of home.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Australia",
+                        "country": "USA",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/prime-nails"
@@ -846,7 +846,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "The Source Bulk Foods",
-                        "description": "A sustainable grocery platform offering bulk food products, healthy ingredients, and eco-friendly shopping options.",
+                        "description": "A Shopify-powered zero-waste grocery store offering bulk wholefoods, organic ingredients, healthy snacks, pantry essentials, and sustainable household products that promote environmentally conscious shopping.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -863,10 +863,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Beadspoint",
-                        "description": "An online marketplace for beads, jewelry-making supplies, and crafting materials for creative professionals and hobbyists.",
+                        "description": "A Shopify-powered jewelry supply store offering premium diamonds, fine gemstones, gold and sterling silver findings, chains, charms, pendants, and jewelry-making components for professional jewelers, designers, retailers, and wholesalers.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "UK",
+                        "country": "USA",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/beadspoint"
@@ -880,10 +880,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Vacurect",
-                        "description": "A healthcare platform providing innovative medical devices and solutions designed to improve men's health and wellness.",
+                        "description": "A Shopify-powered men's health brand offering FDA-approved vacuum erection devices and accessories designed to provide a safe, non-invasive, and drug-free solution for erectile dysfunction while ensuring complete privacy and customer confidence.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "UK",
+                        "country": "India",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/vacurect"
@@ -897,10 +897,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Hydro Peptide",
-                        "description": "A premium skincare brand offering scientifically formulated products focused on skin health and anti-aging solutions.",
+                        "description": "A premium Shopify-powered skincare brand offering clinically formulated, peptide-based products designed to improve skin health, hydration, and visible signs of aging through science-backed ingredients and professional-grade skincare.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Canada",
+                        "country": "USA",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/hydro-peptide"
@@ -914,10 +914,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Boxraw",
-                        "description": "A boxing lifestyle and performance brand providing apparel, equipment, and accessories for fighters and athletes.",
+                        "description": "A Shopify-powered premium boxing apparel and performance brand offering boxing-specific clothing, footwear, accessories, and training essentials designed for amateur and professional fighters worldwide.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Australia",
+                        "country": "United Kingdom",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/boxraw"
@@ -948,7 +948,7 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Ruumi Art",
-                        "description": "An online art marketplace connecting artists and collectors through unique contemporary artwork and creative products.",
+                        "description": "A Shopify-powered online art gallery offering premium art prints, framed artwork, and curated collections from talented artists for homes, offices, hospitality spaces, and commercial interiors.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -965,10 +965,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Ludic",
-                        "description": "A wellness-focused brand offering innovative products that help users improve sleep quality, recovery, and daily performance.",
+                        "description": "A Shopify-powered premium footwear and lifestyle brand offering sneakers, loafers, sliders, flip-flops, and everyday essentials that combine contemporary design, comfort, and affordability for modern consumers.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Germany",
+                        "country": "India",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/ludic"
@@ -982,10 +982,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Vegamour",
-                        "description": "A clean beauty brand specializing in plant-based hair wellness products that support healthier, fuller-looking hair.",
+                        "description": "A Shopify-powered premium hair wellness brand offering clinically tested, plant-based hair growth, scalp care, lash, brow, and wellness products designed to support healthier, fuller-looking hair through clean, vegan ingredients.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "UAE",
+                        "country": "USA",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/vegamour"
@@ -999,10 +999,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Kretoss",
-                        "description": "A modern eCommerce platform showcasing digital solutions, technology services, and innovative business products.",
+                        "description": "A dedicated Shopify agency website showcasing enterprise Shopify development, Shopify Plus solutions, store migrations, performance optimization, CRO, and ongoing support services for D2C, B2B, and wholesale businesses.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Australia",
+                        "country": "India",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/kretoss"
@@ -1016,10 +1016,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Vitality",
-                        "description": "A wellness brand offering essential oils, natural supplements, and health-focused products for everyday well-being.",
+                        "description": "A Shopify-powered wellness and aromatherapy brand offering premium essential oils, diffuser blends, carrier oils, skincare, and natural self-care products designed to support everyday health, relaxation, and holistic well-being.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "UK",
+                        "country": "USA",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/vitality"
@@ -1033,10 +1033,10 @@ export const portfolioData = {
                                 "Shopify"
                         ],
                         "title": "Anveshan Farm Technologies",
-                        "description": "A farm-to-table eCommerce platform offering traditionally crafted, natural food products sourced directly from farmers.",
+                        "description": "A Shopify-powered farm-to-home food brand offering wood-pressed oils, A2 desi ghee, raw honey, stone-ground spices, natural sweeteners, and traditionally crafted pantry essentials sourced directly from trusted Indian farmers.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Australia",
+                        "country": "India",
                         "techStack": "Shopify",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolios/anveshan-farm-technologies"
@@ -1052,10 +1052,10 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Anthem Home Comfort",
-                        "description": "A trusted HVAC services platform providing heating, cooling, air quality, and home comfort solutions. The company helps homeowners maintain efficient and comfortable living environments year-round.",
+                        "description": "A professional HVAC services website built to help homeowners easily explore heating, cooling, indoor air quality, and preventative maintenance solutions while providing a seamless experience for requesting service appointments.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Brazil",
+                        "country": "United States",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/anthem"
@@ -1069,10 +1069,10 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Freight Plus",
-                        "description": "An AI-powered transportation management platform that helps businesses optimize logistics, reduce shipping costs, and gain real-time visibility across their supply chain operations.",
+                        "description": "An AI-native managed transportation platform helping middle-market businesses streamline freight operations through intelligent logistics technology, real-time shipment visibility, carrier management, and data-driven supply chain optimization.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Germany",
+                        "country": "United States",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/freight-plus"
@@ -1086,10 +1086,10 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Sobel",
-                        "description": "A professional consulting firm delivering strategic advisory, accounting, tax, and business solutions that help organizations improve performance and achieve sustainable growth.",
+                        "description": "A global regulatory consulting platform helping medical device, cosmetic, and in vitro diagnostics (IVD) companies navigate compliance, market access, and regulatory requirements across the USA, Canada, Brazil, and Europe.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "USA",
+                        "country": "Brazil",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/sobel"
@@ -1103,10 +1103,10 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Beepec",
-                        "description": "A digital procurement and business marketplace connecting companies with suppliers, products, and services to streamline purchasing and operational efficiency.",
+                        "description": "A professional real estate media platform offering photo editing, virtual staging, video editing, floor plans, and visual enhancement services that help photographers, agents, and property marketers create high-converting property listings.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Australia",
+                        "country": "Vietnam",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/beepec"
@@ -1120,10 +1120,10 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "The Source Bulk Foods",
-                        "description": "A sustainable food marketplace offering bulk groceries, healthy ingredients, and eco-friendly products. The platform promotes waste-free shopping and healthier lifestyles.",
+                        "description": "A leading Australian wholefoods retailer offering bulk pantry essentials, organic groceries, health foods, snacks, herbs, spices, and eco-friendly products through a sustainable online shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Brazil",
+                        "country": "Australia",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/source-bulk-foods-wordpress"
@@ -1137,10 +1137,10 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "EasyGold24",
-                        "description": "An online precious metals platform that enables customers to securely buy, sell, and invest in gold, silver, and other valuable assets.",
+                        "description": "A trusted German precious metals investment platform offering physical gold, silver, platinum, and palladium products, secure storage solutions, and precious metal savings plans for long-term wealth preservation.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "UK",
+                        "country": "Germany",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/easygold"
@@ -1154,10 +1154,10 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Meridian Pacific Properties",
-                        "description": "A real estate investment and property management platform focused on acquiring, developing, and managing high-quality residential and commercial properties.",
+                        "description": "A California-based real estate development and investment company specializing in build-to-rent communities, residential development, land acquisition, investment partnerships, and long-term property management solutions.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Australia",
+                        "country": "United States",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/meridian-pacific-properties"
@@ -1171,10 +1171,10 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "The Penny",
-                        "description": "A premium hospitality and dining destination offering exceptional food, beverages, and memorable guest experiences in a sophisticated atmosphere.",
+                        "description": "A welcoming British pub in the heart of Aarau, Switzerland, offering authentic British and Irish drinks, international food, live sports, private events, and table reservations through a modern digital experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "UK",
+                        "country": "Switzerland",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/the-penny"
@@ -1188,10 +1188,10 @@ export const portfolioData = {
                                 "Wordpress"
                         ],
                         "title": "Litehaus",
-                        "description": "An innovative architecture and design studio specializing in modern residential and commercial spaces. The platform showcases creative design solutions that combine functionality, aesthetics, and sustainability.",
+                        "description": "An AI-powered construction marketplace that connects homeowners, developers, architects, builders, and financing partners to simplify residential construction through verified professionals, modular building solutions, and intelligent project planning.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Germany",
+                        "country": "Portugal",
                         "techStack": "Wordpress",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
                         "link": "/portfolios/litehaus"
@@ -1207,10 +1207,10 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "LEE BROOM",
-                        "description": "A luxury design and lighting brand showcasing award-winning furniture, lighting, and interior collections crafted for premium residential and commercial spaces.",
+                        "description": "LEE BROOM is an internationally recognized luxury lighting and furniture brand that offers designer collections through a premium BigCommerce storefront. The platform combines elegant product presentation, global shopping experiences, editorial storytelling, and seamless ecommerce functionality for residential, commercial, and interior design customers.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Germany",
+                        "country": "United Kingdom",
                         "techStack": "Bigcommerce + React + Node",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/leebroom"
@@ -1224,10 +1224,10 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "Good Good Ganja",
-                        "description": "An online cannabis marketplace offering premium cannabis products, edibles, concentrates, and accessories for adult consumers seeking quality and convenience.",
+                        "description": "Good Good Ganja is a premium online cannabis dispensary offering curated flower, concentrates, edibles, vapes, subscription boxes, branded merchandise, and wholesale products through a modern BigCommerce storefront designed for a seamless shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
-                        "country": "Canada",
+                        "country": "United States",
                         "techStack": "Bigcommerce",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolios/good-good-ganja"
@@ -1241,7 +1241,7 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "Color Matrics",
-                        "description": "A professional hair color brand offering innovative root touch-up and hair coloring solutions that deliver salon-quality results from the comfort of home.",
+                        "description": "ColorMetrics is a premium beauty brand offering innovative salon-quality hair color solutions for at-home use. Its BigCommerce storefront showcases patented root touch-up products, color care essentials, and a seamless ecommerce experience designed for modern consumers.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -1275,7 +1275,7 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "Caramel",
-                        "description": "A specialty snack brand offering handcrafted gourmet popcorn and sweet treats made with premium ingredients and unique flavors.",
+                        "description": "Caramel is a premium gourmet popcorn brand offering handcrafted small-batch popcorn, seasonal collections, gift boxes, corporate gifts, and wholesale ordering through a modern BigCommerce storefront designed for a seamless online shopping experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -1309,7 +1309,7 @@ export const portfolioData = {
                                 "Bigcommerce"
                         ],
                         "title": "Locket Sisters",
-                        "description": "A personalized jewelry brand creating meaningful lockets and keepsake accessories designed to celebrate memories, relationships, and special moments.",
+                        "description": "The Locket Sisters is a personalized jewelry brand offering beautifully crafted lockets, necklaces, charms, bracelets, and meaningful keepsake gifts. Its BigCommerce storefront delivers a premium shopping experience with product personalization, elegant collections, and seamless online purchasing.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -1328,7 +1328,7 @@ export const portfolioData = {
                                 "Web"
                         ],
                         "title": "IIC Metaverse",
-                        "description": "A blockchain-powered ecosystem that combines cryptocurrency, AI, and real-world assets to create a secure platform for trading, investing, and digital finance. It bridges innovative technology with practical real-world applications.",
+                        "description": "Designed and developed a modern Web3 corporate website for IIC Metaverse, showcasing its blockchain ecosystem, AI-driven technologies, token economy, and real-world asset vision. The website delivers a premium digital experience with responsive layouts, engaging interactions, and clear communication of the platform's mission for investors, partners, and the broader crypto community.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -1345,7 +1345,7 @@ export const portfolioData = {
                                 "Web Design"
                         ],
                         "title": "Save Your Capital",
-                        "description": "A trading discipline platform designed for intraday and options traders. It helps users reduce emotional trading, prevent overtrading, and protect capital through smart rules, alerts, and risk management tools.",
+                        "description": "Designed and developed a modern landing website for Save Your Capital, a trading discipline platform built for intraday and options traders. The website showcases smart risk management tools, discipline tracking, broker connectivity, and behavioral insights through a high-performance, responsive, and conversion-focused user experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UAE",
@@ -1362,7 +1362,7 @@ export const portfolioData = {
                                 "Web Design"
                         ],
                         "title": "Better Quest",
-                        "description": "A goal-driven personal development platform that helps users track progress, build productive habits, complete challenges, and stay accountable while achieving personal and professional goals.",
+                        "description": "Designed and developed an immersive promotional website for Better Quest, a health-focused gamification platform that encourages users to build healthier lifestyles through engaging gameplay. The website showcases how real-world activities such as walking, healthy eating, meditation, hydration, and sleep are transformed into in-game rewards while highlighting the platform's privacy-first approach, research initiatives, and digital health ecosystem.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Australia",
@@ -1375,11 +1375,11 @@ export const portfolioData = {
                         "portfolioImage": "/portfolio/web-design/portfolio_wedding_invitation.jpg",
                         "category": "web design",
                         "tags": [
-                                "Practical Information for International Guest",
+                                "Wedding",
                                 "Web Design"
                         ],
                         "title": "Practical Information for International Guest",
-                        "description": "A digital wedding platform that allows couples to share event details, schedules, photo galleries, RSVPs, and memorable moments with family and friends in one place.",
+                        "description": "Designed and developed an elegant wedding information website that helps international guests access everything they need for the celebration in one place. The website presents the couple's story, wedding timeline, venue details, accommodations, dress code, RSVP information, and travel guidance through a beautifully crafted, responsive, and user-friendly experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -1396,7 +1396,7 @@ export const portfolioData = {
                                 "Web Design"
                         ],
                         "title": "Atopic Diary",
-                        "description": "A health tracking platform designed for individuals managing eczema and skin conditions. Users can monitor symptoms, track triggers, and gain insights to improve skin health.",
+                        "description": "Designed and developed a modern healthcare website for Atopic Diary, a privacy-first digital health platform that empowers individuals living with Atopic Dermatitis to track symptoms, monitor skin health, securely own their medical data, and contribute to life-changing research. The website combines a clean medical interface with engaging storytelling to build trust among patients, researchers, and healthcare organizations.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -1413,7 +1413,7 @@ export const portfolioData = {
                                 "Web Design"
                         ],
                         "title": "Skin Dao",
-                        "description": "A personalized skincare platform that helps users understand their skin, discover suitable products, and follow customized skincare routines for healthier skin.",
+                        "description": "Designed and developed a modern healthcare web experience for Skin DAO, a digital skincare platform focused on helping users better understand and manage their skin health. The website presents personalized skincare journeys, educational content, privacy-focused experiences, and intuitive user interactions through a clean, responsive, and visually engaging interface.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -1430,7 +1430,7 @@ export const portfolioData = {
                                 "Web Design"
                         ],
                         "title": "Core CRMS",
-                        "description": "A comprehensive customer relationship management system that helps businesses manage leads, sales pipelines, customer interactions, and team performance from a centralized dashboard.",
+                        "description": "Designed and developed a modern SaaS website for Core CRMS, an inventory management and business operations platform that helps companies streamline inventory, products, vendors, customers, sales, and reporting through a centralized dashboard. The website combines clean UI, intuitive navigation, and conversion-focused layouts to effectively showcase the platform's capabilities and pricing.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -1449,7 +1449,7 @@ export const portfolioData = {
                                 "Hubspot"
                         ],
                         "title": "Clean Steam Pros",
-                        "description": "A professional car detailing and steam-cleaning platform offering deep interior cleaning, paint correction, ceramic coating, and vehicle protection services. Designed to help car owners maintain showroom-quality results.",
+                        "description": "Clean Steam Pros is a premium HubSpot-powered website built for a professional mobile car detailing company specializing in steam cleaning, paint correction, ceramic coating, and long-term vehicle protection. The platform focuses on educating visitors about the company's unique Clean • Steam • Protect methodology while driving appointment bookings through a highly optimized customer journey.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -1466,7 +1466,7 @@ export const portfolioData = {
                                 "Hubspot"
                         ],
                         "title": "One",
-                        "description": "A global martial arts and combat sports platform featuring MMA, Muay Thai, kickboxing, and grappling events. Fans can watch live fights, follow athletes, and stay updated with the latest sports content and events.",
+                        "description": "ONE Championship is the world's largest martial arts organization, delivering premium digital experiences for millions of fans worldwide. The platform brings together live events, athlete profiles, fight results, exclusive videos, ticket sales, memberships, and martial arts news through a fast, content-rich website optimized for global audiences.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -1483,7 +1483,7 @@ export const portfolioData = {
                                 "Hubspot"
                         ],
                         "title": "Aroconllc",
-                        "description": "A trusted roofing and exterior construction company providing roofing, siding, gutter, window, and storm damage solutions for residential and commercial properties.",
+                        "description": "AROCON Roofing & Construction is a professional HubSpot-powered website built for a leading Mid-Atlantic exterior remodeling company specializing in residential and commercial roofing, gutters, siding, windows, skylights, and maintenance plans. The platform helps homeowners easily request inspections, explore services, learn about warranties, and connect with certified roofing experts through a conversion-focused digital experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -1500,7 +1500,7 @@ export const portfolioData = {
                                 "Hubspot"
                         ],
                         "title": "Intempt",
-                        "description": "A customer engagement and marketing automation platform that helps businesses create personalized digital experiences, increase conversions, and improve customer retention.",
+                        "description": "Intempt is an AI-powered Growth Operating System (GrowthOS) that unifies customer data, analytics, lifecycle automation, personalization, experimentation, and AI-driven sales execution into a single platform. Designed for modern SaaS and eCommerce businesses, it enables marketing, sales, and product teams to collaborate through real-time customer intelligence and automated growth workflows.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -1517,7 +1517,7 @@ export const portfolioData = {
                                 "Magento"
                         ],
                         "title": "Automaximizer",
-                        "description": "An automotive dealership growth platform designed to help dealers increase sales, improve customer acquisition, and maximize business performance through data-driven solutions.",
+                        "description": "AutoMaximizer is a Magento-powered automotive eCommerce platform offering thousands of premium accessories and aftermarket products for cars, trucks, SUVs, motorcycles, RVs, and off-road vehicles. The platform provides a seamless shopping experience with categorized products, vehicle customization solutions, secure checkout, and responsive browsing across all devices.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UAE",
@@ -1534,7 +1534,7 @@ export const portfolioData = {
                                 "Magento"
                         ],
                         "title": "The RTA Store",
-                        "description": "An online marketplace specializing in ready-to-assemble cabinets and home improvement products, offering affordable and customizable solutions for kitchens and living spaces.",
+                        "description": "The RTA Store is a Magento-powered eCommerce platform specializing in Ready-to-Assemble (RTA) kitchen cabinets, bathroom vanities, custom cabinetry, countertops, cabinet accessories, and professional kitchen design services. The platform provides homeowners, contractors, and designers with an intuitive online shopping experience, helping customers design and purchase high-quality cabinetry solutions for residential remodeling projects.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",

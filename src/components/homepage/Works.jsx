@@ -271,7 +271,7 @@ export default function Works() {
                 </div>
                 <div className="step-block">
                     <div className="step-block-data">
-                        <div className="w-layout-blockcontainer container w-container">
+                        <div className="container-full-width w-layout-blockcontainer container w-container">
                             <div className="step-content-wrapper">
                                 <div className="project-title-area work-title"
                                     style={{ "willChange": "transform", "transformStyle": "preserve-3d" }}>

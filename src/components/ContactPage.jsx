@@ -66,8 +66,8 @@ export default function ContactPage() {
 
             {/* Contact Section Wrapper */}
 
-            <section className="py-10 lg:py-20 contact relative">
-                <div className="container">
+            <section className="contact relative">
+                <div className="container-full-width w-layout-blockcontainer container">
                     <div className='contact-content-wrapper flex flex-col lg:flex-row gap-12 lg:gap-12 items-start'>
                         <div className="w-full lg:w-[55%]">
                             {/* Left: Dark Form matching screenshot */}
@@ -123,7 +123,7 @@ export default function ContactPage() {
                                     {/* Submit Button */}
                                     <button
                                         type="submit"
-                                        className="mt-3 w-full py-3 rounded-md text-white font-bold  uppercase hover:shadow-lg hover:shadow-[#0037f0]/20 hover:opacity-90 transition-all duration-300"
+                                        className="h-[44px] flex justify-center items-center mt-3 w-full py-3 rounded-md text-white font-bold  uppercase hover:shadow-lg hover:shadow-[#0037f0]/20 hover:opacity-90 transition-all duration-300"
                                         style={{ background: 'linear-gradient(#44c7f6,#0037f0)', border: '1px solid #f8f8f8', fontSize: '16px', fontWeight: '600' }}
                                     >
                                         LET'S WORK TOGETHER

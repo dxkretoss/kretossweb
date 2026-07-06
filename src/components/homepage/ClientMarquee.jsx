@@ -11,7 +11,7 @@ const ClientMarquee = () => {
 
     return (
         <section className="client-marquee py-6 w-full overflow-hidden border-y border-gray-100" style={{ background: "#fafcff" }}>
-            <div className="container mx-auto px-4 lg:px-8 max-w-[1620px]">
+            <div className="container-full-width w-layout-blockcontainer container w-container">
                 <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
 
                     {/* Left Side: Avatar & Clients Text */}

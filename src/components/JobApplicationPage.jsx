@@ -210,7 +210,7 @@ export default function JobApplicationPage() {
                         <div className="pt-4">
                             <button
                                 type="submit"
-                                className="mt-3 w-full py-3 rounded-md text-white font-bold  uppercase hover:shadow-lg hover:shadow-[#0037f0]/20 hover:opacity-90 transition-all duration-300"
+                                className="h-[44px] flex justify-center items-center  mt-3 w-full py-3 rounded-md text-white font-bold  uppercase hover:shadow-lg hover:shadow-[#0037f0]/20 hover:opacity-90 transition-all duration-300"
                                 style={{ background: 'linear-gradient(#44c7f6,#0037f0)', border: '1px solid #f8f8f8', fontSize: '16px', fontWeight: '600' }}
 
                             >

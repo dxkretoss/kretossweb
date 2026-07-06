@@ -21,12 +21,21 @@ const getCountryFlag = (country) => {
     if (!country) return '';
     const flags = {
         'usa': '🇺🇸',
+        'united states': '🇺🇸',
         'uk': '🇬🇧',
+        'united kingdom': '🇬🇧',
         'australia': '🇦🇺',
         'germany': '🇩🇪',
         'brazil': '🇧🇷',
         'canada': '🇨🇦',
-        'uae': '🇦🇪'
+        'uae': '🇦🇪',
+        'india': '🇮🇳',
+        'singapore': '🇸🇬',
+        'switzerland': '🇨🇭',
+        'portugal': '🇵🇹',
+        'vietnam': '🇻🇳',
+        'indonesia': '🇮🇩',
+        'sweden': '🇸🇪'
     };
     return flags[country.toLowerCase()] || '🌍';
 };
@@ -139,7 +148,7 @@ const ProjectCard = ({ project, id }) => {
 
     // Dynamic top offset to recreate the staggered sticky stacking (20px, 40px, 60px...)
     const topOffset = parseInt(id, 10) * 20;
-    const itemClass = "w-full sticky origin-top [transform:perspective(2000px)] h-full flex flex-col";
+    const itemClass = "w-full md:sticky origin-top [transform:perspective(2000px)] h-full flex flex-col";
 
     const [bgColor, setBgColor] = useState('#111111');
     const imgRef = useRef(null);
@@ -320,7 +329,7 @@ const ProjectCard = ({ project, id }) => {
                                         ))}
                                     </div>
                                     {/* Tech Stack Pill */}
-                                    <div className={`hidden md:flex items-center gap-2 font-semibold text-sm sm:text-base ${imgRef.current?.dataset?.isDark === 'true' ? 'text-white' : 'text-black'}`}>
+                                    <div className={`hidden md:flex items-center gap-2 font-semibold text-sm sm:text-base text-white`}>
                                         {(project.techStack || project.category || '').length > 20
                                             ? `${(project.techStack || project.category || '').slice(0, 20)}...`
                                             : (project.techStack || project.category || '')}
@@ -331,7 +340,7 @@ const ProjectCard = ({ project, id }) => {
                                 <Link
                                     to={project.link || `/portfolio/${project.slug}`}
                                     className="flex items-center rounded overflow-hidden transition-colors hover:opacity-80"
-                                    style={{ color: imgRef.current?.dataset?.isDark === 'true' ? "#000" : "#fff", backgroundColor: imgRef.current?.dataset?.isDark === 'true' ? 'white' : '#111' }}
+                                    style={{ color: 'black', backgroundColor: 'white' }}
                                 >
                                     <div className="p-3 flex items-center justify-center">
                                         <svg
@@ -373,7 +382,7 @@ export default function Projects() {
                 "Web"
             ],
             "title": "NextHunt",
-            "description": "A smart hiring platform that helps candidates build professional resumes and enables businesses to find the right talent faster.",
+            "description": "NextHunt is an AI-powered career platform that automates the entire job search process. Instead of spending hours searching and applying manually, users receive personalized job matches, AI-tailored resumes, automated applications, and privacy-first career management while remaining completely invisible to their current employer.",
             "timeline": "2-4 Months",
             "acquisition": "N/A",
             "country": "Germany",
@@ -391,7 +400,7 @@ export default function Projects() {
                 "Web"
             ],
             "title": "Palzea Widget",
-            "description": "A secure P2P crypto transfer solution that enables seamless digital asset transactions and wallet integrations.",
+            "description": "Palzea is a secure peer-to-peer cryptocurrency trading platform that enables users to buy and sell digital assets directly with one another. The platform simplifies crypto transactions through real-time trading, integrated wallets, escrow protection, and an intuitive interface designed for both beginners and experienced traders.",
             "timeline": "2-4 Months",
             "acquisition": "N/A",
             "country": "UK",
@@ -409,7 +418,7 @@ export default function Projects() {
                 "Web"
             ],
             "title": "Fily",
-            "description": "An easy-to-use financial platform for managing GST, invoices, bills, and cash flow without accounting complexity.",
+            "description": "Fily is an AI-powered business assistant built for Indian businesses, freelancers, and startups. The platform simplifies GST compliance, invoicing, bill management, tax reminders, expense tracking, and financial monitoring from a single intuitive dashboard, helping business owners stay compliant without accounting complexity.",
             "timeline": "2-4 Months",
             "acquisition": "N/A",
             "country": "USA",
@@ -427,7 +436,7 @@ export default function Projects() {
                 "Web"
             ],
             "title": "Klubbrabatten",
-            "description": "A digital coupon platform that provides exclusive discounts on restaurants, shopping, entertainment, and local services.",
+            "description": "Klubbrabatten is a digital membership and fundraising platform that connects sports clubs, schools, associations, businesses, and consumers through exclusive discounts and member benefits. The platform enables organizations to raise funds while providing members with access to local and national offers through a seamless digital experience.",
             "timeline": "2-4 Months",
             "acquisition": "N/A",
             "country": "Canada",
@@ -471,7 +480,7 @@ export default function Projects() {
     return (
         <>
             <section ref={projectsRef} id="Projects" className="project pb-20">
-                <div className="w-layout-blockcontainer container w-container mx-auto px-4 max-w-[1400px]">
+                <div className="w-layout-blockcontainer container-full-width  container w-container">
                     <div className="project-content-wrapper">
                         <div className="home-project-title _02 flex flex-col items-center mb-12">
 

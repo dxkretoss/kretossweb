@@ -21,12 +21,21 @@ const getCountryFlag = (country) => {
     if (!country) return '';
     const flags = {
         'usa': '🇺🇸',
+        'united states': '🇺🇸',
         'uk': '🇬🇧',
+        'united kingdom': '🇬🇧',
         'australia': '🇦🇺',
         'germany': '🇩🇪',
         'brazil': '🇧🇷',
         'canada': '🇨🇦',
-        'uae': '🇦🇪'
+        'uae': '🇦🇪',
+        'india': '🇮🇳',
+        'singapore': '🇸🇬',
+        'switzerland': '🇨🇭',
+        'portugal': '🇵🇹',
+        'vietnam': '🇻🇳',
+        'indonesia': '🇮🇩',
+        'sweden': '🇸🇪'
     };
     return flags[country.toLowerCase()] || '🌍';
 };
@@ -412,7 +421,7 @@ export default function HireUsDetailsPage() {
                                                             <Link
                                                                 to={`/portfolio/${project.slug}`}
                                                                 className="flex items-center rounded overflow-hidden transition-colors hover:opacity-80"
-                                                                style={{ color: imgRef.current?.dataset?.isDark === 'true' ? "#000" : "#fff", backgroundColor: imgRef.current?.dataset?.isDark === 'true' ? 'white' : '#111' }}
+                                                                style={{ color: 'black', backgroundColor: 'white' }}
                                                             >
                                                                 <div className="px-3 py-3 flex items-center justify-center">
                                                                     <svg

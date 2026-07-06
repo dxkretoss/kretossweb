@@ -3,14 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Badge from '../ui/Badge';
 import AnimatedButton from '../ui/AnimatedButton';
 
-import { 
-  FaApple, FaAndroid, FaSwift, FaPython, FaNodeJs, FaNode, FaPhp, FaCode, FaLaravel, 
+import {
+  FaApple, FaAndroid, FaSwift, FaPython, FaNodeJs, FaNode, FaPhp, FaCode, FaLaravel,
   FaJava, FaAngular, FaReact, FaJs, FaVuejs, FaMicrosoft, FaGithub, FaDatabase,
-  FaWordpress, FaMagento, FaShopify, FaDrupal, FaShoppingCart, FaAws, 
-  FaDigitalOcean, FaServer, FaDocker 
+  FaWordpress, FaMagento, FaShopify, FaDrupal, FaShoppingCart, FaAws,
+  FaDigitalOcean, FaServer, FaDocker
 } from 'react-icons/fa';
-import { 
-  SiKotlin, SiFlutter, SiSvelte, SiWoocommerce, SiGooglecloud, 
+import {
+  SiKotlin, SiFlutter, SiSvelte, SiWoocommerce, SiGooglecloud,
   SiKubernetes, SiJenkins, SiMongodb, SiSqlite, SiMysql, SiMariadb, SiRedis, SiDotnet
 } from 'react-icons/si';
 import { GrOracle } from 'react-icons/gr';
@@ -136,14 +136,14 @@ export default function Technologies() {
           </linearGradient>
         </defs>
       </svg>
-      
+
       {/* Subtle Background Glows for modern look */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-[100px]"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-sky-100/40 rounded-full blur-[100px]"></div>
       </div>
 
-      <div className="w-layout-blockcontainer container w-container relative z-10">
+      <div className="container-full-width w-layout-blockcontainer container w-container relative z-10">
 
         <div className='flex justify-center mb-5'>
           <Badge variant='blue'>Technologies</Badge>
@@ -200,7 +200,7 @@ export default function Technologies() {
         </motion.div>
 
         {/* Content Area */}
-        <div className="min-h-[400px]">
+        <div className="">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
@@ -226,19 +226,19 @@ export default function Technologies() {
 
               {/* Right Side: Grid */}
               <div className="w-full lg:w-7/12">
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 lg:gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 lg:gap-4">
                   {technologiesData[activeTab].items.map((item, idx) => (
                     <div
                       key={item.name}
-                      className="group relative bg-white border border-gray-100 rounded-2xl p-6 flex flex-col items-center justify-center hover:border-blue-200 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.08)] transition-all duration-300 aspect-square sm:aspect-[4/3] cursor-default overflow-hidden"
+                      className="group relative bg-white border border-gray-100 rounded-2xl p-4 sm:p-5 flex flex-col items-center justify-center hover:border-blue-200 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.08)] transition-all duration-300 h-28 sm:h-32 cursor-default overflow-hidden"
                     >
                       {/* Hover subtle background gradient */}
                       <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                      <div className="h-14 sm:h-16 flex items-center justify-center mb-4 relative z-10 transform group-hover:scale-110 group-hover:-translate-y-1 transition-transform duration-300">
-                        {item.Icon && <item.Icon className="w-12 h-12 text-[#475569] group-hover:fill-[url(#tech-grad)] group-hover:text-transparent transition-all duration-300" />}
+                      <div className="h-10 sm:h-12 flex items-center justify-center mb-2 sm:mb-3 relative z-10 transform group-hover:scale-110 group-hover:-translate-y-1 transition-transform duration-300">
+                        {item.Icon && <item.Icon className="w-9 h-9 sm:w-10 sm:h-10 text-[#475569] group-hover:fill-[url(#tech-grad)] group-hover:text-transparent transition-all duration-300" />}
                       </div>
-                      <span className="text-gray-700 font-semibold text-sm text-center relative z-10 group-hover:text-[#005a87] transition-colors duration-300">
+                      <span className="text-gray-700 font-semibold text-xs sm:text-sm text-center relative z-10 group-hover:text-[#005a87] transition-colors duration-300">
                         {item.name}
                       </span>
                     </div>

@@ -117,7 +117,7 @@ export default function Footer({ currentRoute }) {
 
                 {/* Footer Main Menu Area */}
                 <div className="footer-top-wrapper pt-10">
-                    <div className="w-layout-blockcontainer container w-container">
+                    <div className="container-full-width w-layout-blockcontainer container w-container">
                         <div className="footer-top-box">
                             {/* Dynamic links columns */}
                             {footerMenus.map((menu, idx) => (
@@ -260,8 +260,8 @@ export default function Footer({ currentRoute }) {
                                         </div>
                                         <div className="flex gap-2 justify-center mt-5">
                                             {trustBadges.map((_, idx) => (
-                                                <button 
-                                                    key={idx} 
+                                                <button
+                                                    key={idx}
                                                     onClick={() => setActiveBadgeIdx(idx)}
                                                     className={`h-2 rounded-full transition-all duration-300 outline-none ${idx === activeBadgeIdx ? 'bg-gradient-to-r from-[#44c7f6] to-[#0037f0] w-6' : 'bg-[#222] hover:bg-[#333] w-2'}`}
                                                     aria-label={`Show badge ${idx + 1}`}

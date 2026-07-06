@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, ArrowRight, ChevronRight } from 'lucide-react';
 import { hireUsData } from '../../data/hireus';
 import MegaMenu from './MegaMenu';
+import { BookCallButton } from './Header';
 
 export default function FloatingNav() {
     const [isVisible, setIsVisible] = useState(false);
@@ -62,17 +63,17 @@ export default function FloatingNav() {
 
     return (
         <div
-            className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-[100] w-max transition-all duration-500 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
-                }`}
+            className={`fixed bottom-8 left-0 right-0 w-full z-[100] transition-all duration-500 ease-in-out pointer-events-none flex items-center justify-center ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
         >
-            <div className="relative w-max mx-auto z-[60]">
+            {/* Screen Centered Menu */}
+            <div className="relative w-max z-[60] pointer-events-auto">
                 {/* 4 Corner White Dots */}
                 <div className="absolute top-2 left-2 w-[4px] h-[4px] bg-white rounded-sm z-10"></div>
                 <div className="absolute top-2 right-2 w-[4px] h-[4px] bg-white rounded-sm z-10"></div>
                 <div className="absolute bottom-2 left-2 w-[4px] h-[4px] bg-white rounded-sm z-10"></div>
                 <div className="absolute bottom-2 right-2 w-[4px] h-[4px] bg-white rounded-sm z-10"></div>
 
-                <div className="bg-[#0c0c0c]/90 backdrop-blur-lg border border-white/10 rounded-md px-8 py-3 flex flex-row flex-nowrap items-center justify-center space-x-6 shadow-2xl overflow-x-visible no-scrollbar">
+                <div className="h-[44px] bg-[#0c0c0c]/90 backdrop-blur-lg border border-white/10 rounded-md px-8 py-3 flex flex-row flex-nowrap items-center justify-center space-x-6 shadow-2xl overflow-x-visible no-scrollbar">
                     <Link to="/" className={getLinkClass('/')}>
                         Home
                     </Link>
@@ -114,6 +115,17 @@ export default function FloatingNav() {
                 onMouseEnter={handleMegaMenuEnter}
                 onMouseLeave={handleMegaMenuLeave}
             />
+
+            {/* Button inside max-w overlay */ }
+    <div className="absolute inset-0 w-full h-full flex items-center pointer-events-none">
+        <div className="w-layout-blockcontainer container-full-width w-container mx-auto relative w-full h-full flex items-center">
+            <div className="absolute right-0 lg:right-5 pointer-events-auto flex items-center">
+                <div className="scale-75 origin-right sm:scale-90 md:scale-100">
+                    <BookCallButton />
+                </div>
+            </div>
         </div>
+    </div>
+        </div >
     );
 }

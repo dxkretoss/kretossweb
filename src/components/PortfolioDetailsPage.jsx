@@ -7,7 +7,8 @@ import AnimatedHireButton from './ui/AnimatedHireButton';
 import CtaSection from './about/CTASection';
 import {
     FaChevronRight, FaCheck, FaArrowLeft, FaArrowRight,
-    FaExternalLinkAlt, FaQuoteLeft, FaStar, FaLongArrowAltRight
+    FaExternalLinkAlt, FaQuoteLeft, FaStar, FaLongArrowAltRight,
+    FaGlobe, FaClock, FaCode
 } from 'react-icons/fa';
 
 const fadeUp = {
@@ -133,7 +134,7 @@ export default function PortfolioDetailsPage() {
         <div className="bg-white text-[#222325] min-h-screen font-sans antialiased">
 
             {/* ─── HERO ─── */}
-            <section className="relative bg-gradient-to-b from-[#f4f7ff] to-white border-b border-gray-200 pb-0 overflow-hidden">
+            <section className="relative bg-gradient-to-b from-[#f4f7ff] to-white border-b border-gray-200 pb-0 pt-20 overflow-hidden">
                 <div className='container mx-auto w-layout-blockcontainer container-full-width'>
                     <div className="absolute inset-0 bg-[linear-gradient(to_right,#0037f008_1px,transparent_1px),linear-gradient(to_bottom,#0037f008_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
                     <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#0037f0]/5 blur-[140px] pointer-events-none" />
@@ -145,8 +146,8 @@ export default function PortfolioDetailsPage() {
                             {/* Left: Title + meta */}
                             <div className="lg:col-span-6 pb-10 space-y-6">
                                 {/* Category pill */}
-                                <span className="inline-flex items-center gap-2 bg-[#0037f0]/8 text-[#0037f0] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-[#0037f0]/15">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-[#0037f0] inline-block"></span>
+                                <span className="inline-flex items-center gap-2 text-slate-800 text-[10px] font-bold uppercase tracking-widest px-3 rounded-full border border-[#0037f0]/15">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-slate-800 inline-block"></span>
                                     {project.category} · Case Study
                                 </span>
 
@@ -154,19 +155,22 @@ export default function PortfolioDetailsPage() {
                                     {project.name}
                                 </h1>
 
-                                <p className="text-[#62646a] text-lg leading-relaxed max-w-lg">
-                                    {project.purpose}
+                                <p className="text-[#62646a] text-lg leading-relaxed">
+                                    {project.description}
                                 </p>
 
                                 {/* Quick-stat pills */}
                                 <div className="flex flex-wrap gap-3 pt-2">
                                     {[
-                                        { label: 'Country', value: project.country || 'Global' },
-                                        { label: 'Timeline', value: project.timeline || 'N/A' },
-                                        { label: 'Stack', value: project.techStack },
+                                        { label: 'Country', value: project.country || 'Global', icon: FaGlobe },
+                                        { label: 'Timeline', value: project.timeline || 'N/A', icon: FaClock },
+                                        { label: 'Stack', value: project.techStack, icon: FaCode },
                                     ].map((s) => (
-                                        <div key={s.label} className="bg-white border border-gray-200 rounded-xl px-4 py-2.5 shadow-sm flex items-center gap-3">
-                                            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">{s.label}</span>
+                                        <div key={s.label} className="bg-white border border-gray-200 rounded-xl px-4 py-2.5 shadow-sm flex items-center gap-2">
+                                            <span className="flex items-center text-[10px] font-bold text-gray-400 uppercase tracking-wider">
+                                                <s.icon className="text-[14px]" />
+                                                {/* {s.label} */}
+                                            </span>
                                             <span className="text-sm font-bold text-[#222325]">{s.value}</span>
                                         </div>
                                     ))}
@@ -176,8 +180,8 @@ export default function PortfolioDetailsPage() {
                                 <div className="pt-4 flex flex-wrap items-center gap-4">
                                     {project.appLinks ? (
                                         <div className="flex flex-wrap gap-3">
-                                            {project.appLinks.android && <a href={project.appLinks.android} target="_blank" rel="noreferrer"><img src="/portfolio/google_play_btn.jpg" alt="Google Play" className="h-[48px] hover:opacity-80 transition-opacity rounded-md" /></a>}
-                                            {project.appLinks.ios && <a href={project.appLinks.ios} target="_blank" rel="noreferrer"><img src="/portfolio/app_store_btn.jpg" alt="App Store" className="h-[48px] hover:opacity-80 transition-opacity rounded-md" /></a>}
+                                            {project.appLinks.android && <a href={project.appLinks.android} target="_blank" rel="noreferrer"><img src="/portfolio/google_play_btn.jpg" alt="Google Play" className="h-[44px] hover:opacity-80 transition-opacity rounded-md" /></a>}
+                                            {project.appLinks.ios && <a href={project.appLinks.ios} target="_blank" rel="noreferrer"><img src="/portfolio/app_store_btn.jpg" alt="App Store" className="h-[44px] hover:opacity-80 transition-opacity rounded-md" /></a>}
                                         </div>
                                     ) : project.link && project.link !== '#' ? (
                                         <AnimatedButton
@@ -197,7 +201,7 @@ export default function PortfolioDetailsPage() {
                                         <AnimatedHireButton
                                             href={project.hireResources.link}
                                             text={project.hireResources.label}
-                                            className="h-[50px]"
+                                            className="h-[44px]"
                                         />
                                     )}
                                 </div>
@@ -278,7 +282,7 @@ export default function PortfolioDetailsPage() {
                                         </div>
                                     </div>
                                 ) : (
-                                    <div className="relative w-full max-w-[640px]">
+                                    <div className="relative w-[88%] max-w-[600px] mx-auto lg:ml-auto lg:mr-2 xl:mr-4">
                                         <div className="relative w-full bg-[#0d0d0d] rounded-t-2xl border-[10px] border-[#1e1e1f] shadow-[0_30px_80px_rgba(0,0,0,0.2)] aspect-video overflow-hidden">
                                             <div className="relative w-full h-full bg-[#121212] overflow-hidden group/screen">
                                                 <div
@@ -329,11 +333,11 @@ export default function PortfolioDetailsPage() {
                                     key={item.id}
                                     onClick={() => scrollTo(item.id)}
                                     className={`w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer ${activeSection === item.id
-                                        ? 'text-[#0037f0] bg-[#0037f0]/6'
+                                        ? 'text-slate-900 bg-slate-100'
                                         : 'text-gray-400 hover:text-gray-700 hover:bg-gray-50'
                                         }`}
                                 >
-                                    <span className={`w-1 h-5 rounded-full transition-colors ${activeSection === item.id ? 'bg-[#0037f0]' : 'bg-gray-200'}`} />
+                                    <span className={`w-1 h-5 rounded-full transition-colors ${activeSection === item.id ? 'bg-slate-900' : 'bg-gray-200'}`} />
                                     {item.label}
                                 </button>
                             ))}
@@ -344,7 +348,7 @@ export default function PortfolioDetailsPage() {
                                     <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Key Features</p>
                                     {project.keyFeatures.map((f, i) => (
                                         <div key={i} className="flex items-center gap-2">
-                                            <span className="w-1.5 h-1.5 rounded-full bg-[#44c7f6] shrink-0" />
+                                            <span className="w-1.5 h-1.5 rounded-full bg-slate-500 shrink-0" />
                                             <span className="text-xs text-[#62646a] font-medium">{f}</span>
                                         </div>
                                     ))}
@@ -365,7 +369,7 @@ export default function PortfolioDetailsPage() {
                             className="scroll-mt-28"
                         >
                             <div className="flex items-center gap-3 mb-6">
-                                <span className="text-[11px] font-bold text-[#0037f0] uppercase tracking-widest">Overview</span>
+                                <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest">Overview</span>
                                 <div className="h-px flex-1 bg-gray-200" />
                             </div>
                             <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0f1e] tracking-tight mb-6 leading-tight">
@@ -376,14 +380,14 @@ export default function PortfolioDetailsPage() {
                             </p>
 
                             {/* Core Capabilities (Replaced Redundant Stats) */}
-                            {project.keyFeatures && project.keyFeatures.length > 0 && (
+                            {project.caseStudy?.coreCapabilities && project.caseStudy.coreCapabilities.length > 0 && (
                                 <div className="mt-8">
                                     <h3 className="text-[#0a0f1e] font-bold text-lg mb-4">Core Capabilities</h3>
                                     <div className="flex flex-wrap gap-3">
-                                        {project.keyFeatures.map((feature, idx) => (
-                                            <div key={idx} className="flex items-center gap-2.5 bg-[#f4f7ff] border border-[#0037f0]/10 rounded-full px-5 py-2.5 hover:bg-[#0037f0]/5 transition-colors duration-200">
+                                        {project.caseStudy.coreCapabilities.map((feature, idx) => (
+                                            <div key={idx} className="flex items-center gap-2.5  border border-[#0037f0]/10 rounded-full px-2 py-1 hover:bg-[#0037f0]/5 transition-colors duration-200">
                                                 <div className="w-5 h-5 rounded-full bg-[#0037f0]/10 flex items-center justify-center shrink-0">
-                                                    <FaCheck className="text-[#0037f0] w-2.5 h-2.5" />
+                                                    <FaCheck className="text-slate-800 w-2.5 h-2.5" />
                                                 </div>
                                                 <span className="text-[13px] font-bold text-[#222325]">{feature}</span>
                                             </div>
@@ -403,7 +407,7 @@ export default function PortfolioDetailsPage() {
                             className="scroll-mt-28"
                         >
                             <div className="flex items-center gap-3 mb-6">
-                                <span className="text-[11px] font-bold text-[#0037f0] uppercase tracking-widest">The Challenge</span>
+                                <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest">The Challenge</span>
                                 <div className="h-px flex-1 bg-gray-200" />
                             </div>
                             <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0f1e] tracking-tight mb-6 leading-tight">
@@ -411,7 +415,7 @@ export default function PortfolioDetailsPage() {
                             </h2>
 
                             {/* Challenge pull-quote */}
-                            <div className="relative bg-[#fafbff] border-l-4 border-[#0037f0] rounded-r-2xl pl-6 pr-6 py-6 mb-8">
+                            <div className="relative bg-[#fafbff] border-l-4 border-slate-700 rounded-r-2xl pl-6 pr-6 py-6 mb-8">
                                 <p className="text-[#444] text-lg leading-relaxed italic">
                                     "{project.challenge || `${clientName} needed a robust, scalable architecture capable of handling rapid growth while delivering a seamless, high-performance experience to end users.`}"
                                 </p>
@@ -460,7 +464,7 @@ export default function PortfolioDetailsPage() {
                             className="scroll-mt-28"
                         >
                             <div className="flex items-center gap-3 mb-6">
-                                <span className="text-[11px] font-bold text-[#0037f0] uppercase tracking-widest">Our Process</span>
+                                <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest">Our Process</span>
                                 <div className="h-px flex-1 bg-gray-200" />
                             </div>
                             <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0f1e] tracking-tight mb-3 leading-tight">
@@ -488,7 +492,7 @@ export default function PortfolioDetailsPage() {
                                             className="relative sm:pl-16"
                                         >
                                             {/* Step number dot */}
-                                            <div className="absolute left-0 top-0 w-10 h-10 rounded-full bg-white border-2 border-[#0037f0] text-[#0037f0] font-black text-sm flex items-center justify-center shadow-sm hidden sm:flex">
+                                            <div className="absolute left-0 top-0 w-10 h-10 rounded-full bg-white border-2 border-slate-200 text-slate-900 font-black text-sm flex items-center justify-center shadow-sm hidden sm:flex">
                                                 {String(i + 1).padStart(2, '0')}
                                             </div>
 
@@ -514,7 +518,7 @@ export default function PortfolioDetailsPage() {
                             className="scroll-mt-28"
                         >
                             <div className="flex items-center gap-3 mb-6">
-                                <span className="text-[11px] font-bold text-[#0037f0] uppercase tracking-widest">Results & Impact</span>
+                                <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest">Results & Impact</span>
                                 <div className="h-px flex-1 bg-gray-200" />
                             </div>
                             <h2 className="text-3xl md:text-[36px] font-semibold text-[#0a0f1e] tracking-tight mb-3 leading-tight">
@@ -525,7 +529,7 @@ export default function PortfolioDetailsPage() {
                             </p>
 
                             {/* Results list */}
-                            <div className="space-y-4 mb-10">
+                            <div className="mb-10 grid grid-cols-2 gap-x-4 gap-y-4">
                                 {(project.caseStudy?.results || [
                                     '40% reduction in average page load time',
                                     'Zero critical downtime incidents post-launch',
@@ -539,7 +543,7 @@ export default function PortfolioDetailsPage() {
                                         transition={{ duration: 0.4, delay: i * 0.08 }}
                                         className="flex items-center gap-4 bg-white border border-gray-200 rounded-2xl p-3 hover:shadow-sm hover:border-green-200 transition-all duration-300"
                                     >
-                                        <div className="w-7 h-7 rounded-full bg-green-500/10 text-green-600 flex items-center justify-center shrink-0 mt-0.5">
+                                        <div className="w-7 h-7 rounded-full bg-slate-500/10 text-slate-800 flex items-center justify-center shrink-0 mt-0.5">
                                             <FaCheck className="w-3 h-3" />
                                         </div>
                                         <p className="text-[#222325] text-base font-normal leading-snug">{result}</p>
@@ -554,10 +558,10 @@ export default function PortfolioDetailsPage() {
                                     { value: '< 1.2s', label: 'Page Load Time', sub: 'Blazing fast interactions across global regions.' },
                                     { value: '99.99%', label: 'System Uptime', sub: 'Fault-tolerant config on scalable server stacks.' },
                                 ].map((m, i) => (
-                                    <div key={i} className="bg-gradient-to-br from-[#0037f0] to-[#0029c2] rounded-2xl p-6 text-white">
-                                        <span className="text-3xl font-black block mb-1">{m.value}</span>
-                                        <span className="text-sm font-bold text-white/90 block mb-2">{m.label}</span>
-                                        <span className="text-xs text-white/60 leading-relaxed">{m.sub}</span>
+                                    <div key={i} className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-slate-300 hover:shadow-sm transition-all duration-300">
+                                        <span className="text-3xl font-black text-slate-900 block mb-1">{m.value}</span>
+                                        <span className="text-sm font-bold text-slate-700 block mb-2">{m.label}</span>
+                                        <span className="text-xs text-slate-500 leading-relaxed">{m.sub}</span>
                                     </div>
                                 ))}
                             </div>
@@ -573,7 +577,7 @@ export default function PortfolioDetailsPage() {
                                 className="scroll-mt-28"
                             >
                                 <div className="flex items-center gap-3 mb-6">
-                                    <span className="text-[11px] font-bold text-[#0037f0] uppercase tracking-widest">Client Feedback</span>
+                                    <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest">Client Feedback</span>
                                     <div className="h-px flex-1 bg-gray-200" />
                                 </div>
 

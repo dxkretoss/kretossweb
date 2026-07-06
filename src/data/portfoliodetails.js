@@ -1,4 +1,7 @@
 export const portfolioDetailsData = [
+
+    // customweb
+
     {
         "slug": "guestway",
         "name": "Guestway",
@@ -8,45 +11,64 @@ export const portfolioDetailsData = [
         "techStack": "Angular + Node.js",
         "link": "https://guestway.io/",
         "client": "Guestway",
-        "purpose": "A property management platform that simplifies tenant, booking, and property operations from a single dashboard.",
-        "challenge": "The client needed a robust Angular + Node.js architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Angular + Node.js, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Guestway is an AI-powered guest experience platform built for hotels, aparthotels, and short-term rental operators. Rather than replacing an existing Property Management System (PMS), it integrates with it to centralize guest communication, automate operations, streamline staff coordination, and deliver exceptional guest experiences from booking to checkout.",
+        "challenge": "Hospitality operators were managing multiple disconnected tools for guest messaging, reservations, cleaning schedules, smart locks, reviews, and daily operations. Constantly switching between platforms increased response times, created operational inefficiencies, and made it difficult to deliver consistent guest experiences while scaling their business.",
+        "solution": "We developed a scalable enterprise platform using Angular and Node.js that integrates seamlessly with existing PMS solutions. The platform unifies guest communication, operational workflows, AI-powered automations, housekeeping management, smart device integrations, and review management into one centralized dashboard, enabling hospitality teams to automate repetitive work while maintaining a personal guest experience.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "AI-Powered Unified Inbox",
+            "Multi-Property Calendar",
+            "Automated Guest Messaging",
+            "Cleaning & Housekeeping Management",
+            "Smart Lock & Access Management",
+            "Guest Mobile App",
+            "Review Management Center",
+            "Workflow Automations",
+            "Real-Time Team Collaboration",
+            "PMS & OTA Integrations"
         ],
         "country": "Australia",
         "caseStudy": {
-            "overview": "Guestway needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Guestway partnered with us to build an intelligent hospitality operations platform capable of simplifying day-to-day property management without replacing existing PMS systems. The objective was to create a modern AI-powered layer that connects reservations, guest communication, housekeeping, smart access, reviews, and operational workflows into one seamless experience. By focusing on automation, scalability, and user-friendly design, we helped transform fragmented hospitality operations into a single, efficient platform that allows property managers to spend less time on repetitive tasks and more time delivering exceptional guest experiences.",
+            "coreCapabilities": [
+                "AI Guest Communication",
+                "Unified Hospitality Dashboard",
+                "Property Operations Automation",
+                "Smart Lock Integration",
+                "Housekeeping Workflow Management",
+                "Multi-Channel Messaging",
+                "Review & Reputation Management",
+                "Scalable Cloud Architecture"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Guestway to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Hospitality Workflow Analysis",
+                    "description": "We collaborated with the Guestway team to understand how hotels and short-term rental operators manage daily operations. Through extensive workflow mapping, we identified inefficiencies caused by disconnected systems for messaging, cleaning, reviews, reservations, and staff coordination. This research helped define an architecture centered around automation, integration, and operational simplicity."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & AI Automation",
+                    "description": "Using Angular and Node.js, we developed a scalable platform that brings together every critical hospitality workflow into a single dashboard. We implemented AI-assisted guest communication, automated messaging, centralized reservation management, housekeeping scheduling, smart lock integrations, guest applications, and operational automations that significantly reduce manual effort while improving response times."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Angular + Node.js, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Integration, Performance & Scalability",
+                    "description": "The platform was engineered to integrate seamlessly with leading Property Management Systems, online travel agencies, messaging channels, and IoT devices without disrupting existing workflows. We optimized performance for large property portfolios, ensuring reliable synchronization, secure data handling, and a responsive user experience capable of supporting hospitality businesses as they continue to grow."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a centralized hospitality operations platform that replaces multiple disconnected tools with a single workflow.",
+                "Automated repetitive guest communication and operational tasks through intelligent workflows.",
+                "Enabled seamless integration with existing PMS platforms, smart locks, and hospitality systems.",
+                "Simplified housekeeping, reservation management, and staff coordination from one dashboard.",
+                "Designed a scalable architecture capable of supporting growing hotel groups and property management companies.",
+                "Improved operational efficiency while enhancing the overall guest experience."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered exactly what we envisioned—a modern platform that simplifies hospitality operations without disrupting existing systems. Their team understood both the technical challenges and the operational realities of the industry, resulting in a product that's scalable, intuitive, and built for long-term growth.",
                 "author": "Management Team",
                 "position": "Guestway"
             }
         },
         "hireResources": {
-            "label": "Hire Angular Developers",
+            "label": "Hire Angular Developer",
             "link": "/hire-us/hire-angular-developers"
         }
     },
@@ -58,50 +80,65 @@ export const portfolioDetailsData = [
         "timeline": "3 Months",
         "techStack": "React.js + Supabase",
         "hireResources": {
-            "label": "Hire React.js Developers",
+            "label": "Hire React.js Developer",
             "link": "/hire-us/hire-react-js-developers"
         },
         "link": "https://career.nexthunt.co/",
         "client": "NextHunt",
-        "purpose": "An AI-powered job search platform that automates applications, matches candidates to roles, optimizes resumes, and manages recruiter communications — all while keeping job searches completely discreet.",
-        "challenge": "Professionals actively looking for better career opportunities faced a fragmented, time-consuming process — manually scanning job boards, tailoring resumes for every role, and following up with dozens of recruiters, all while trying not to jeopardize their current employment.",
-        "solution": "We engineered a full-stack AI platform using React.js and Supabase that centralizes the entire job search lifecycle — from intelligent role matching and one-click auto-applications to ATS-optimized resume generation and privacy-first stealth mode browsing.",
+        "description": "NextHunt is an AI-powered career platform that automates the entire job search process. Instead of spending hours searching and applying manually, users receive personalized job matches, AI-tailored resumes, automated applications, and privacy-first career management while remaining completely invisible to their current employer.",
+        "challenge": "Modern professionals often avoid searching for new opportunities because the process is repetitive, time-consuming, and risky. Applying across multiple job portals, customizing resumes for every position, managing recruiter communication, and protecting their identity from employers creates significant friction throughout the job search journey.",
+        "solution": "We built a scalable AI-powered web platform using React.js and Supabase that automates job discovery, resume optimization, application submission, recruiter communication, and privacy protection. The platform acts as a personal AI career assistant, allowing users to focus on interview preparation while the system manages the entire application pipeline.",
         "keyFeatures": [
-            "AI Job Matching Engine",
-            "Automated Application Submission",
-            "ATS Resume Optimizer",
-            "Recruiter Communication Manager",
-            "Stealth / Privacy Mode",
-            "Career Goal Profiling"
+            "AI Job Discovery & Smart Matching",
+            "Automatic Job Applications",
+            "AI Resume Personalization",
+            "Interview Scheduling Assistant",
+            "Stealth Job Search Mode",
+            "Burner Recruiter Email",
+            "Profile Cloaking",
+            "Privacy & Security Layer",
+            "Career Dashboard",
+            "Application Tracking"
         ],
         "country": "Germany",
         "caseStudy": {
-            "overview": "NextHunt came to us with a mission: make job hunting feel less like a second full-time job. Millions of professionals are quietly looking for better opportunities while employed — yet they're forced to manually search, apply, and follow up across dozens of platforms every week. We partnered with NextHunt to build an intelligent, automated platform that handles every step of the job search process using AI — from identifying the right roles to submitting applications and managing recruiter conversations, all while keeping the user's search completely private.",
+            "overview": "NextHunt approached us with a vision to completely reinvent how professionals search for jobs. Traditional job hunting requires users to browse multiple websites, manually tailor resumes, submit repetitive applications, and constantly follow up with recruiters. We designed and developed an AI-first platform that works as a personal career agent—discovering the best opportunities, customizing resumes, automatically applying to suitable positions, and managing recruiter interactions while keeping every activity completely private from the user's current employer. The result is a seamless career platform that transforms a stressful, time-consuming process into an automated experience.",
+            "coreCapabilities": [
+                "AI-Powered Job Matching",
+                "Automated Application Engine",
+                "Dynamic Resume Optimization",
+                "Stealth Career Management",
+                "Recruiter Communication Workflow",
+                "Supabase Row-Level Security",
+                "Real-time User Dashboard",
+                "Scalable Authentication & Data Management"
+            ],
             "process": [
                 {
-                    "title": "Discovery & AI Strategy",
-                    "description": "We conducted in-depth discovery workshops with the NextHunt founding team to map out the full job seeker journey — from passive browsing to active applications. We identified three core pain points: role-fit discovery, repetitive manual applications, and fear of employer visibility. This informed our decision to architect an AI-first platform with a privacy layer built at the infrastructure level, not added as an afterthought."
+                    "title": "Product Discovery & User Experience",
+                    "description": "We worked closely with the NextHunt team to understand the real pain points experienced by professionals searching for better opportunities while remaining employed. The platform was designed around a simple objective: eliminate repetitive tasks while maintaining complete privacy. We mapped the entire user journey—from onboarding and profile creation to AI recommendations, automated applications, recruiter responses, and interview scheduling."
                 },
                 {
-                    "title": "Intelligent Matching & Resume Engine",
-                    "description": "We built a multi-dimensional AI matching engine that ingests a user's skills, experience, salary expectations, and career goals to surface highly relevant job opportunities in real time. Alongside this, we developed an ATS-aware resume optimizer that dynamically tailors the user's resume content, keyword density, and formatting to each specific job description — dramatically increasing the chances of passing automated screening filters."
+                    "title": "AI Automation & Career Intelligence",
+                    "description": "We developed an intelligent job discovery system that evaluates user skills, experience, preferred roles, salary expectations, and location to recommend highly relevant opportunities. The platform automatically personalizes resumes for each application using AI, helping candidates improve ATS compatibility while significantly reducing manual effort. An automation engine handles application submissions and continuously tracks progress from one centralized dashboard."
                 },
                 {
-                    "title": "Automation Layer & Privacy Infrastructure",
-                    "description": "The most technically complex challenge was building the auto-application pipeline — a system that submits applications to multiple job boards and company portals on behalf of users without triggering bot-detection. We also implemented a stealth mode at the data layer via Supabase row-level security policies, ensuring that no employer-facing data, browsing history, or application activity could ever be traced back to the user's current employer. The recruiter communication manager auto-generates professional, personalized follow-up messages and interview scheduling responses."
+                    "title": "Privacy-First Architecture & Platform Development",
+                    "description": "Privacy became a core part of the product architecture rather than an optional feature. Using Supabase Row-Level Security, secure authentication, and encrypted data management, we ensured every user's information remains isolated and protected. Additional stealth features—including recruiter-only communication channels, interview management, profile visibility controls, and secure application tracking—allow professionals to explore new opportunities confidently without exposing their job search."
                 }
             ],
             "results": [
-                "3x more interview callbacks compared to manual job searching",
-                "Average of 47 automated applications submitted per user per week",
-                "68% of users reported landing interviews within 30 days of signup",
-                "Zero privacy incidents — employer-side detection rate at 0%",
-                "Resume match score improved by an average of 62% after AI optimization"
+                "Delivered a fully automated AI-powered career platform from discovery to deployment.",
+                "Reduced manual job application effort by automating repetitive workflows.",
+                "Centralized job discovery, resume optimization, applications, and recruiter communication into a single platform.",
+                "Implemented enterprise-grade privacy architecture using Supabase Row-Level Security.",
+                "Built a scalable React.js application capable of supporting future AI and automation enhancements.",
+                "Created an intuitive user experience that simplifies the complete job search lifecycle."
             ],
             "testimonial": {
-                "text": "Kretoss turned our vision into a platform that genuinely changes how people find jobs. The AI matching is scarily accurate and the auto-apply feature alone saves our users hours every single week. The privacy architecture they built gave us the confidence to market to employed professionals without any hesitation.",
+                "text": "The Kretoss team successfully transformed our vision into a modern AI-powered career platform. They didn't just build features—they understood the entire job search journey and delivered a product that feels intelligent, secure, and incredibly easy to use. Their technical expertise and attention to user experience made NextHunt exactly the platform we envisioned.",
                 "author": "John",
-                "position": "CEO of Nexthunt",
+                "position": "CEO, NextHunt",
                 "image": "https://i.pravatar.cc/150?img=11"
             }
         }
@@ -115,45 +152,64 @@ export const portfolioDetailsData = [
         "techStack": "Blockchain + React.js + Node.js",
         "link": "https://palzeaa-crypto-widget.netlify.app",
         "client": "Palzea",
-        "purpose": "A secure P2P crypto transfer solution that enables seamless digital asset transactions and wallet integrations.",
-        "challenge": "The client needed a robust Blockchain + React.js + Node.js architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Blockchain + React.js + Node.js, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Palzea is a secure peer-to-peer cryptocurrency trading platform that enables users to buy and sell digital assets directly with one another. The platform simplifies crypto transactions through real-time trading, integrated wallets, escrow protection, and an intuitive interface designed for both beginners and experienced traders.",
+        "challenge": "Building a trusted P2P trading ecosystem requires much more than a marketplace. The client needed a platform capable of handling secure blockchain transactions, real-time trade updates, wallet management, dispute handling, and high user traffic while delivering a smooth and responsive trading experience.",
+        "solution": "We developed a scalable blockchain-powered platform using React.js and Node.js that streamlines the complete P2P trading lifecycle. From secure wallet integration and order management to escrow-based transactions and live trade tracking, the platform delivers a fast, secure, and user-friendly crypto trading experience.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "P2P Buy & Sell Marketplace",
+            "Blockchain Wallet Integration",
+            "Secure Escrow Trading",
+            "Real-Time Trade Management",
+            "Live Market Pricing",
+            "Transaction History",
+            "Responsive Trading Dashboard",
+            "User Verification & Security",
+            "Order Management",
+            "High-Performance Architecture"
         ],
         "country": "UK",
         "caseStudy": {
-            "overview": "Palzea needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Palzea partnered with us to build a modern peer-to-peer cryptocurrency trading platform focused on security, speed, and user trust. The goal was to create an intuitive ecosystem where users could trade digital assets directly without unnecessary complexity. We designed and developed a scalable blockchain-enabled application that combines secure wallet connectivity, escrow-protected transactions, real-time trading workflows, and a responsive user experience into one unified platform. The result is a reliable P2P marketplace that simplifies crypto trading while maintaining enterprise-grade performance and security.",
+            "coreCapabilities": [
+                "P2P Trading Platform",
+                "Blockchain Integration",
+                "Escrow Transaction Management",
+                "React.js Trading Dashboard",
+                "Real-Time Order Processing",
+                "Wallet Connectivity",
+                "Secure Authentication",
+                "Scalable Backend Infrastructure"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Palzea to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Product Discovery & Trading Workflow Design",
+                    "description": "We worked closely with the Palzea team to understand how users interact within a peer-to-peer cryptocurrency marketplace. We mapped the complete trading lifecycle—from wallet connection and order creation to transaction completion and settlement—while identifying opportunities to improve security, transparency, and user experience."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & Blockchain Integration",
+                    "description": "Using React.js and Node.js, we developed a modern trading platform capable of managing real-time orders, secure wallet interactions, escrow workflows, and transaction monitoring. The frontend was optimized for speed and usability, while the backend was engineered to handle concurrent trading activities with reliability and scalability."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Blockchain + React.js + Node.js, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Security & Scalability",
+                    "description": "Security and performance were central to the platform architecture. We implemented secure authentication, optimized API communication, responsive trading interfaces, and scalable backend services capable of supporting increasing trading volumes. The platform was designed to provide consistent performance while maintaining the trust required for financial transactions."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a secure blockchain-powered P2P cryptocurrency trading platform.",
+                "Unified wallet management, trading, and transaction history within a single user dashboard.",
+                "Simplified peer-to-peer trading through intuitive order creation and management workflows.",
+                "Built a scalable React.js and Node.js architecture capable of supporting future platform growth.",
+                "Optimized application performance for fast trading interactions and responsive user experience.",
+                "Implemented enterprise-grade security practices for user authentication and transaction handling."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss successfully transformed our vision into a modern cryptocurrency trading platform. Their team delivered a secure, scalable solution with an intuitive user experience that makes peer-to-peer trading simple while maintaining the reliability expected from a blockchain-based application.",
                 "author": "Management Team",
                 "position": "Palzea"
             }
         },
         "hireResources": {
-            "label": "Hire React.js Developers",
+            "label": "Hire React.js Developer",
             "link": "/hire-us/hire-react-js-developers"
         }
     },
@@ -166,45 +222,64 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS + Python",
         "link": "https://dreamlod.com",
         "client": "Dreamload",
-        "purpose": "An AI-powered sports platform that enhances athlete performance, league management, and fan engagement through data-driven insights.",
-        "challenge": "The client needed a robust ReactJS + Python architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using ReactJS + Python, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Dreamlod is an AI-powered sports intelligence platform designed for sports clubs, academies, leagues, coaches, and athletes. The platform centralizes athlete management, performance analytics, league operations, team collaboration, and AI-driven insights, enabling organizations to make smarter decisions while delivering a modern digital sports experience.",
+        "challenge": "Sports organizations often rely on multiple disconnected systems to manage athletes, competitions, performance tracking, scheduling, and communication. This creates operational inefficiencies, limits access to meaningful performance data, and makes it difficult for coaches and management teams to make informed decisions quickly.",
+        "solution": "We developed a scalable sports intelligence platform using ReactJS and Python that unifies athlete management, AI-powered analytics, league administration, team communication, and operational workflows into one centralized ecosystem. The platform enables organizations to automate routine processes while leveraging data-driven insights to improve athletic performance and operational efficiency.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "AI Sports Intelligence",
+            "Athlete Performance Analytics",
+            "Team & Player Management",
+            "League & Tournament Management",
+            "Coach Dashboard",
+            "Training & Performance Tracking",
+            "Real-Time Statistics",
+            "Role-Based User Management",
+            "Responsive Web Platform",
+            "Scalable Cloud Architecture"
         ],
         "country": "UAE",
         "caseStudy": {
-            "overview": "Dreamload needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Dreamlod partnered with us to build a next-generation sports intelligence platform capable of transforming how sports organizations manage athletes, competitions, and performance data. The vision was to replace fragmented workflows with a centralized AI-powered ecosystem that enables coaches, clubs, academies, and leagues to make faster, data-driven decisions. By combining modern web technologies with intelligent analytics, we created a scalable platform that simplifies daily operations while helping athletes and organizations continuously improve performance.",
+            "coreCapabilities": [
+                "AI Performance Analytics",
+                "Sports Management Platform",
+                "Athlete & Team Management",
+                "League Administration",
+                "Training Performance Tracking",
+                "Coach & Management Dashboard",
+                "Role-Based Access Control",
+                "Scalable ReactJS & Python Architecture"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Dreamload to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Sports Workflow Analysis",
+                    "description": "We collaborated closely with the Dreamlod team to understand the operational challenges faced by clubs, academies, coaches, and league administrators. By mapping athlete lifecycles, competition management, training workflows, and reporting requirements, we designed a platform focused on automation, usability, and actionable performance insights."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & AI Intelligence",
+                    "description": "Using ReactJS for the frontend and Python for backend services, we developed a highly interactive platform capable of managing athletes, teams, leagues, schedules, and performance data from one centralized dashboard. AI-powered analytics were integrated to help organizations monitor athlete development, evaluate performance trends, and support informed coaching decisions."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing ReactJS + Python, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Optimization, Scalability & User Experience",
+                    "description": "The platform was engineered for high performance, responsive design, and long-term scalability. We optimized dashboard performance, implemented secure authentication and role-based permissions, and ensured the application could support growing sports organizations, multiple competitions, and expanding datasets without compromising user experience."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a centralized AI-powered sports management platform for clubs, academies, and leagues.",
+                "Unified athlete management, league operations, and performance analytics into a single dashboard.",
+                "Reduced manual administrative work through workflow automation and centralized data management.",
+                "Enabled coaches and management teams to make data-driven decisions using AI-powered insights.",
+                "Built a scalable ReactJS and Python architecture capable of supporting organizational growth.",
+                "Created an intuitive user experience that simplifies sports operations across multiple user roles."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Working with Kretoss was an outstanding experience. Their team understood both the operational and technical challenges of sports management and delivered a modern platform that combines AI, analytics, and intuitive workflows into one seamless solution. The result has exceeded our expectations and provides a strong foundation for our future growth.",
                 "author": "Management Team",
-                "position": "Dreamload"
+                "position": "Dreamlod"
             }
         },
         "hireResources": {
-            "label": "Hire React.js Developers",
+            "label": "Hire React.js Developer",
             "link": "/hire-us/hire-react-js-developers"
         }
     },
@@ -217,45 +292,64 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS + Python",
         "link": "https://phoenixsclub.com",
         "client": "PhoenixFC",
-        "purpose": "The official digital platform of Phoenix FC, showcasing club history, teams, matches, achievements, and community activities.",
-        "challenge": "The client needed a robust ReactJS + Python architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using ReactJS + Python, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Phoenix FC is the official digital platform for a professional football club, bringing together match information, player statistics, ticket booking, club news, league standings, and fan engagement in one modern web experience. The platform strengthens the connection between the club and its supporters while simplifying content management for administrators.",
+        "challenge": "The club required a modern digital platform capable of handling match-day traffic, live fixture updates, player information, ticket promotions, and fan engagement without compromising performance. Existing workflows made it difficult to keep supporters informed while efficiently managing club content across multiple sections.",
+        "solution": "We designed and developed a high-performance web platform using ReactJS and Python that centralizes club operations, match schedules, player profiles, league standings, news publishing, ticket promotions, and fan interactions. The solution provides an engaging experience for supporters while giving club administrators complete control through an easy-to-manage content ecosystem.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Match Schedule & Fixtures",
+            "League Standings",
+            "Player Profiles & Statistics",
+            "Club News Management",
+            "Online Ticket Promotion",
+            "Fan Engagement Features",
+            "Responsive Match Dashboard",
+            "Media Gallery",
+            "Role-Based Content Management",
+            "Scalable Cloud Architecture"
         ],
         "country": "USA",
         "caseStudy": {
-            "overview": "PhoenixFC needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Phoenix FC partnered with us to build a modern digital platform that represents the club both on and off the field. The objective was to create a centralized ecosystem where supporters could stay connected through live fixtures, player statistics, league standings, club announcements, and ticket information while giving administrators an efficient way to manage content. We delivered a fast, responsive, and scalable web platform that enhances the overall fan experience and strengthens the club's digital presence.",
+            "coreCapabilities": [
+                "Football Club Management Platform",
+                "Match & Fixture Management",
+                "Player Statistics Dashboard",
+                "League Standings",
+                "News & Media Publishing",
+                "Fan Engagement Experience",
+                "Ticket Promotion",
+                "ReactJS & Python Architecture"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at PhoenixFC to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Digital Strategy",
+                    "description": "We collaborated with the Phoenix FC team to understand how supporters interact with club content throughout the season. By analyzing match-day workflows, player information, news publishing, and ticket promotions, we designed a digital platform focused on improving fan engagement while simplifying administrative operations."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & User Experience",
+                    "description": "Using ReactJS and Python, we developed a responsive web platform that centralizes fixtures, league standings, player profiles, match statistics, club news, galleries, and ticket information. The interface was designed to provide quick access to important updates while maintaining a modern and engaging user experience across desktop and mobile devices."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing ReactJS + Python, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance Optimization & Scalability",
+                    "description": "The platform was optimized for speed, reliability, and future growth. We implemented a scalable backend architecture capable of handling increased traffic during match days, optimized content delivery for media-rich pages, and ensured smooth navigation throughout the entire supporter journey."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a centralized digital platform for football club operations and fan engagement.",
+                "Unified fixtures, player statistics, standings, news, and ticket information into a single user experience.",
+                "Improved supporter engagement through an intuitive and mobile-friendly interface.",
+                "Built a scalable ReactJS and Python architecture capable of handling high match-day traffic.",
+                "Simplified club content management with an organized and efficient publishing workflow.",
+                "Strengthened the club's digital identity with a modern, high-performance web platform."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a modern platform that perfectly reflects our club's identity. The website is fast, intuitive, and gives our supporters everything they need—from match information and player statistics to club news and ticket updates. Their team understood our vision and translated it into a professional digital experience.",
                 "author": "Management Team",
-                "position": "PhoenixFC"
+                "position": "Phoenix FC"
             }
         },
         "hireResources": {
-            "label": "Hire React.js Developers",
+            "label": "Hire React.js Developer",
             "link": "/hire-us/hire-react-js-developers"
         }
     },
@@ -268,45 +362,66 @@ export const portfolioDetailsData = [
         "techStack": "Vue.js + Laravel",
         "link": "https://palzea.com",
         "client": "Palzea Networks",
-        "purpose": "A modern cryptocurrency trading platform offering secure trading, portfolio management, and real-time market insights",
-        "challenge": "Users felt disconnected from their immediate geographic communities and struggled to find organic, local events tailored to their niche interests in real-time.",
-        "solution": "We delivered a lightning-fast cross-platform mobile app using React Native, powered by Firebase's real-time database, enabling geolocation-based event discovery and instant community chat rooms.",
+        "description": "Palzea is a next-generation cryptocurrency exchange that enables users to securely buy, sell, trade, stake, and manage digital assets from a single platform. Designed for both beginners and experienced traders, it combines advanced trading tools, multi-chain wallet support, P2P trading, portfolio management, and enterprise-grade security into one seamless ecosystem.",
+        "challenge": "Building a modern cryptocurrency exchange requires balancing security, scalability, performance, and usability. The client needed a platform capable of supporting multiple trading products, real-time market data, secure wallet management, KYC workflows, and high transaction volumes while delivering an intuitive experience for users across desktop and mobile devices.",
+        "solution": "We engineered a scalable exchange platform using Vue.js and Laravel that unifies spot trading, P2P markets, staking, portfolio management, multi-chain wallets, and account security within a single application. The platform was optimized for speed, reliability, and future expansion, enabling users to manage their entire crypto journey from one dashboard.",
         "keyFeatures": [
-            "Geolocation Tracking",
-            "Live Community Chat",
-            "Push Notifications",
-            "Interactive Map Views"
+            "Spot Cryptocurrency Trading",
+            "P2P Trading with Escrow",
+            "Earn & Staking Products",
+            "Launchpad for Token Sales",
+            "Multi-Chain Wallet Management",
+            "Real-Time Market Data",
+            "Portfolio Dashboard",
+            "KYC & Identity Verification",
+            "Two-Factor Authentication (2FA)",
+            "Credit Card & Fiat On-Ramp Support",
+            "Responsive Trading Interface",
+            "Advanced Security & Risk Monitoring"
         ],
         "country": "UK",
         "caseStudy": {
-            "overview": "Palzea Networks needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Palzea Networks partnered with us to build a modern cryptocurrency exchange capable of delivering a secure, fast, and intuitive trading experience. The objective was to create an all-in-one digital asset platform where users could trade cryptocurrencies, participate in P2P markets, manage multi-chain wallets, stake assets, and monitor their portfolios without relying on multiple services. We developed a scalable exchange ecosystem that combines enterprise-grade security, real-time market infrastructure, and a highly responsive user experience, providing a strong foundation for long-term platform growth.",
+            "coreCapabilities": [
+                "Cryptocurrency Exchange Development",
+                "Spot & P2P Trading",
+                "Multi-Chain Wallet Integration",
+                "Portfolio Management",
+                "Earn & Staking Platform",
+                "Launchpad Infrastructure",
+                "KYC & Account Verification",
+                "Vue.js & Laravel Enterprise Architecture"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Palzea Networks to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Product Discovery & Exchange Architecture",
+                    "description": "We collaborated with the Palzea team to understand the requirements of a modern cryptocurrency exchange. Together we mapped complete user journeys covering onboarding, KYC verification, wallet management, trading, staking, portfolio tracking, and security. This discovery phase helped establish a scalable architecture capable of supporting multiple trading products while maintaining a consistent user experience."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & Trading Infrastructure",
+                    "description": "Using Vue.js and Laravel, we built a feature-rich exchange platform with real-time market data, spot trading, peer-to-peer trading, staking products, launchpad participation, and multi-chain wallet support. The frontend was designed for speed and usability, while the backend was optimized for secure transaction processing, account management, and scalable API services."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Vue.js + Laravel, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Security, Performance & Scalability",
+                    "description": "Security was integrated throughout the platform with two-factor authentication, KYC verification workflows, session management, risk monitoring, and protected transaction flows. We optimized the application for high-performance trading, responsive interfaces, and scalable infrastructure capable of supporting increasing users, assets, and transaction volumes without compromising reliability."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a full-featured cryptocurrency exchange supporting multiple digital asset services.",
+                "Unified spot trading, P2P trading, staking, launchpad participation, and portfolio management within a single platform.",
+                "Implemented enterprise-grade security with KYC workflows, two-factor authentication, and account protection.",
+                "Built a scalable Vue.js and Laravel architecture capable of supporting future products and market expansion.",
+                "Created a responsive trading experience optimized for desktop and mobile users.",
+                "Established a secure foundation for long-term growth in the digital asset ecosystem."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a cryptocurrency platform that combines performance, security, and an exceptional user experience. Their team understood the complexities of exchange development and built a scalable ecosystem that supports everything from trading and staking to wallet management and portfolio tracking. The result is a modern platform ready to grow with our business.",
                 "author": "Management Team",
                 "position": "Palzea Networks"
             }
         },
         "hireResources": {
-            "label": "Hire Vue.js Developers",
+            "label": "Hire Vue.js Developer",
             "link": "/hire-us/hire-vue-js-developers"
         }
     },
@@ -319,45 +434,64 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS + Supabase",
         "link": "https://fily.in",
         "client": "Fily",
-        "purpose": "An easy-to-use financial platform for managing GST, invoices, bills, and cash flow without accounting complexity.",
-        "challenge": "The client needed a robust ReactJS + Supabase architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using ReactJS + Supabase, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Fily is an AI-powered business assistant built for Indian businesses, freelancers, and startups. The platform simplifies GST compliance, invoicing, bill management, tax reminders, expense tracking, and financial monitoring from a single intuitive dashboard, helping business owners stay compliant without accounting complexity.",
+        "challenge": "Small businesses often manage GST, invoices, expenses, tax deadlines, and banking information across multiple disconnected tools. Manual processes increase the risk of missed compliance deadlines, financial errors, and unnecessary administrative work, making it difficult for business owners to focus on growth.",
+        "solution": "We developed a modern financial operations platform using ReactJS and Supabase that centralizes invoicing, GST compliance, expense management, bill scanning, financial reminders, and business insights into one seamless experience. The platform automates repetitive administrative tasks while providing business owners with complete visibility over their finances.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "GST Compliance Management",
+            "Smart Invoice Generation",
+            "Bill & Receipt Scanner",
+            "Tax & Compliance Reminders",
+            "Expense Tracking",
+            "Business Dashboard",
+            "Bank Balance Monitoring",
+            "AI Business Assistant",
+            "Secure Cloud Storage",
+            "Responsive Web Application"
         ],
-        "country": "USA",
+        "country": "India",
         "caseStudy": {
-            "overview": "Fily needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Fily partnered with us to build an intelligent business management platform that removes the complexity from everyday financial operations. The goal was to provide entrepreneurs, startups, and small businesses with a single solution for managing GST, invoices, expenses, compliance deadlines, and financial records without requiring accounting expertise. We designed and developed a scalable platform that combines automation, intuitive workflows, and modern user experience to help businesses save time, reduce manual work, and stay financially organized.",
+            "coreCapabilities": [
+                "GST Compliance Platform",
+                "Invoice & Billing Management",
+                "Expense & Receipt Tracking",
+                "Tax Reminder Automation",
+                "Business Financial Dashboard",
+                "AI Business Assistant",
+                "Supabase Backend Architecture",
+                "ReactJS Frontend Development"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Fily to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Business Workflow Analysis",
+                    "description": "We collaborated with the Fily team to understand the daily challenges faced by Indian business owners. By analyzing invoicing, GST filing, expense tracking, compliance management, and financial reporting workflows, we identified opportunities to reduce repetitive tasks through automation and intelligent user experiences."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & Financial Automation",
+                    "description": "Using ReactJS and Supabase, we built a cloud-based platform that centralizes invoice generation, bill management, GST tracking, tax reminders, expense monitoring, and business financial insights. The interface was designed to make complex financial operations simple enough for non-accounting users while remaining powerful enough for growing businesses."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing ReactJS + Supabase, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Security & Scalability",
+                    "description": "We optimized the application for speed, responsive performance, and secure cloud data management. Supabase authentication and database services provided a scalable backend capable of supporting growing businesses while ensuring financial information remained protected and easily accessible across devices."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a centralized financial management platform tailored for Indian businesses.",
+                "Unified GST compliance, invoicing, expense tracking, and tax reminders into one application.",
+                "Reduced manual administrative work through automated business workflows.",
+                "Built a scalable ReactJS and Supabase architecture capable of supporting future financial services.",
+                "Created an intuitive user experience that simplifies business finance for non-accounting users.",
+                "Established a secure cloud platform for managing critical financial and compliance data."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss helped us transform our vision into a practical business platform that genuinely simplifies financial management for entrepreneurs. Their team focused on usability, performance, and scalability, delivering a product that's intuitive, reliable, and built to grow alongside our users.",
                 "author": "Management Team",
                 "position": "Fily"
             }
         },
         "hireResources": {
-            "label": "Hire React.js Developers",
+            "label": "Hire React.js Developer",
             "link": "/hire-us/hire-react-js-developers"
         }
     },
@@ -370,45 +504,64 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS + Node.js",
         "link": "https://studenttravelbuddy.com/plan-my-trip",
         "client": "STB Inc.",
-        "purpose": "A student-focused travel membership platform offering exclusive discounts, perks, and savings on travel experiences.",
-        "challenge": "The student travel market lacked a unified, trusted platform where verified students could seamlessly plan trips, split costs, and find reliable travel companions without compromising safety.",
-        "solution": "We engineered a highly scalable React & Node.js application featuring real-time chat, AI-driven roommate matching, secure identity verification, and split-payment integrations.",
+        "description": "Student Travel Buddy is a travel planning platform built specifically for international students. It simplifies the entire travel journey by helping students plan customized trips, compare destinations, organize transportation and accommodation, access travel support services, and receive expert guidance from one centralized platform.",
+        "challenge": "Planning domestic and international travel can be overwhelming for students who are unfamiliar with destinations, visa requirements, transportation options, budgeting, and accommodation. Managing these tasks across multiple websites creates confusion, increases planning time, and often leads to unnecessary expenses.",
+        "solution": "We developed a modern travel planning platform using ReactJS and Node.js that enables students to plan personalized trips through an intuitive digital experience. The platform centralizes trip planning, itinerary management, travel consultation requests, destination discovery, accommodation recommendations, transportation planning, and student-focused travel services within one seamless application.",
         "keyFeatures": [
-            "Real-time Chat & Notifications",
-            "University ID Verification",
-            "Split Payment Gateway",
-            "AI Roommate Matching"
+            "Personalized Trip Planning",
+            "Travel Consultation Requests",
+            "Destination Discovery",
+            "Accommodation Recommendations",
+            "Transportation Planning",
+            "Visa & Travel Guidance",
+            "Budget-Friendly Travel Options",
+            "Responsive Booking Experience",
+            "Student-Centric Dashboard",
+            "Scalable Cloud Architecture"
         ],
         "country": "UK",
         "caseStudy": {
-            "overview": "STB Inc. needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Student Travel Buddy partnered with us to create a digital platform that simplifies travel planning for international students. The objective was to eliminate the complexity of organizing trips by providing a centralized solution where students could discover destinations, receive personalized travel guidance, plan itineraries, and connect with travel experts. We delivered a modern, responsive platform that combines intuitive user experience with scalable backend architecture, making travel planning faster, more organized, and significantly less stressful for students studying abroad.",
+            "coreCapabilities": [
+                "Student Travel Planning",
+                "Personalized Itinerary Management",
+                "Travel Consultation Platform",
+                "Destination Discovery",
+                "Accommodation & Transportation Planning",
+                "Visa Guidance Workflows",
+                "Responsive ReactJS Application",
+                "Scalable Node.js Backend"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at STB Inc. to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Student Journey Analysis",
+                    "description": "We worked closely with the Student Travel Buddy team to understand the unique travel challenges faced by international students. Through user journey mapping, we identified common pain points around destination research, budgeting, transportation, accommodation, and travel documentation, allowing us to design a platform tailored specifically to student needs."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & User Experience",
+                    "description": "Using ReactJS and Node.js, we developed a modern travel planning platform that allows students to explore destinations, submit trip planning requests, receive personalized travel recommendations, and organize every stage of their journey through one intuitive interface. The application emphasizes simplicity, accessibility, and mobile responsiveness to support users wherever they are."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing ReactJS + Node.js, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Scalability & Future Growth",
+                    "description": "The platform was engineered with scalability and long-term growth in mind. We optimized application performance, implemented secure backend services, and designed a modular architecture capable of supporting additional travel services, booking integrations, payment systems, and personalized recommendation engines as the platform continues to evolve."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a centralized travel planning platform designed specifically for international students.",
+                "Simplified trip planning by bringing destinations, accommodation, transportation, and travel guidance into one experience.",
+                "Created an intuitive and mobile-friendly interface that improves the overall travel planning journey.",
+                "Built a scalable ReactJS and Node.js architecture capable of supporting future travel services and integrations.",
+                "Reduced manual coordination through streamlined travel request and itinerary workflows.",
+                "Established a strong digital foundation for expanding student travel services globally."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss transformed our vision into a modern travel platform that genuinely simplifies how students plan their journeys. Their team focused on creating an intuitive experience while building a scalable foundation that allows us to continuously expand our travel services with confidence.",
                 "author": "Management Team",
                 "position": "STB Inc."
             }
         },
         "hireResources": {
-            "label": "Hire React.js Developers",
+            "label": "Hire React.js Developer",
             "link": "/hire-us/hire-react-js-developers"
         }
     },
@@ -421,45 +574,64 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS + Supabase + Node.js",
         "link": "https://www.klubbrabatten.se",
         "client": "Klubbrabatten",
-        "purpose": "A Swedish digital coupon platform offering exclusive discounts and deals from restaurants, retailers, and local businesses.",
-        "challenge": "The client needed a robust ReactJS + Supabase + Node.js architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using ReactJS + Supabase + Node.js, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Klubbrabatten is a digital membership and fundraising platform that connects sports clubs, schools, associations, businesses, and consumers through exclusive discounts and member benefits. The platform enables organizations to raise funds while providing members with access to local and national offers through a seamless digital experience.",
+        "challenge": "Traditional fundraising methods require significant manual effort and often provide limited long-term value for members. At the same time, businesses need an effective way to reach local customers with measurable promotions. The client required a scalable digital platform capable of managing memberships, discount offers, business partnerships, and organization-specific fundraising campaigns while delivering a simple user experience.",
+        "solution": "We developed a scalable membership platform using ReactJS, Supabase, and Node.js that centralizes digital memberships, fundraising campaigns, partner offers, user management, and business promotions into one ecosystem. The platform enables organizations to generate recurring revenue while members enjoy easy access to exclusive discounts from participating businesses.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Digital Membership Cards",
+            "Exclusive Discount Marketplace",
+            "Organization Fundraising Portal",
+            "Business Partner Management",
+            "Location-Based Offers",
+            "Offer Redemption System",
+            "Member Dashboard",
+            "Campaign Management",
+            "Responsive Mobile Experience",
+            "Secure Cloud Infrastructure"
         ],
-        "country": "Canada",
+        "country": "Sweden",
         "caseStudy": {
-            "overview": "Klubbrabatten needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Klubbrabatten partnered with us to modernize its digital fundraising and membership ecosystem. The vision was to replace traditional coupon booklets with a scalable digital platform that benefits organizations, businesses, and members alike. We designed and developed a responsive web application that allows clubs and associations to generate fundraising revenue while providing members with instant access to exclusive discounts from local and national partners. The result is a streamlined platform that simplifies membership management, strengthens business partnerships, and creates lasting value for every stakeholder.",
+            "coreCapabilities": [
+                "Digital Membership Platform",
+                "Fundraising Management",
+                "Discount & Offer Marketplace",
+                "Business Partner Portal",
+                "Campaign Management",
+                "Supabase Cloud Infrastructure",
+                "ReactJS Frontend Development",
+                "Scalable Node.js Backend"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Klubbrabatten to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Fundraising Workflow Analysis",
+                    "description": "We worked closely with the Klubbrabatten team to understand how organizations manage fundraising activities and how members interact with discount offers. Through workflow analysis, we identified opportunities to digitize memberships, simplify campaign management, and improve collaboration between organizations and partner businesses."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & Membership Experience",
+                    "description": "Using ReactJS, Supabase, and Node.js, we developed a centralized platform for managing digital memberships, fundraising campaigns, business partnerships, and discount offers. The application provides members with an intuitive experience for discovering and redeeming offers while giving organizations powerful tools to manage fundraising activities efficiently."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing ReactJS + Supabase + Node.js, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Scalability, Performance & Security",
+                    "description": "The platform was designed with long-term scalability in mind. We implemented secure authentication, cloud-based data management, responsive interfaces, and optimized performance to support thousands of members, organizations, and partner businesses while ensuring reliable access across all devices."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a modern digital membership and fundraising platform for organizations across Sweden.",
+                "Unified memberships, fundraising campaigns, and discount offers into a single cloud-based ecosystem.",
+                "Simplified offer discovery and redemption through an intuitive digital user experience.",
+                "Created a scalable ReactJS, Supabase, and Node.js architecture capable of supporting continued platform growth.",
+                "Improved operational efficiency for organizations through centralized campaign and membership management.",
+                "Established a secure foundation for expanding partnerships with businesses and community organizations."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss helped us transform a traditional fundraising concept into a modern digital platform. Their team delivered a scalable solution that makes membership management, fundraising, and partner collaboration significantly easier while providing an outstanding experience for our users.",
                 "author": "Management Team",
                 "position": "Klubbrabatten"
             }
         },
         "hireResources": {
-            "label": "Hire React.js Developers",
+            "label": "Hire React.js Developer",
             "link": "/hire-us/hire-react-js-developers"
         }
     },
@@ -472,7 +644,7 @@ export const portfolioDetailsData = [
         "techStack": "Laravel",
         "link": "https://stackedgiveaways.com/",
         "client": "Giveaway",
-        "purpose": "A campaign management platform that helps brands run giveaways, engage audiences, and increase customer participation.",
+        "description": "A campaign management platform that helps brands run giveaways, engage audiences, and increase customer participation.",
         "challenge": "The client needed a robust Laravel architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Laravel, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -510,7 +682,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire Laravel Developers",
+            "label": "Hire Laravel Developer",
             "link": "/hire-us/hire-laravel-developers"
         }
     },
@@ -523,41 +695,60 @@ export const portfolioDetailsData = [
         "techStack": "AI",
         "link": "https://sarhachat.com/",
         "client": "Sarhachat",
-        "purpose": "An AI-powered health assistant providing confidential guidance and reliable information on sexual and reproductive health.",
-        "challenge": "The client needed a robust AI architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using AI, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "SarhaChat is an AI-powered health assistant that provides confidential, evidence-based guidance on sexual and reproductive health. The platform empowers users to ask sensitive health questions in a safe, private, and judgment-free environment while improving access to trusted educational resources and support.",
+        "challenge": "Many people hesitate to seek professional advice on sexual and reproductive health due to privacy concerns, social stigma, or limited access to reliable healthcare resources. The client needed an intelligent AI platform capable of delivering accurate, accessible, and confidential health information while maintaining user trust and supporting high volumes of conversations.",
+        "solution": "We developed a scalable AI-powered conversational platform that enables users to receive instant educational guidance on sexual and reproductive health through a natural chat experience. The solution combines intelligent conversational AI, secure infrastructure, responsive design, and privacy-first principles to create a trusted digital health assistant available anytime.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "AI Health Assistant",
+            "Confidential Conversations",
+            "Evidence-Based Health Information",
+            "Natural Language Processing",
+            "Privacy-First Experience",
+            "24/7 AI Support",
+            "Educational Health Resources",
+            "Responsive Cross-Device Experience",
+            "Secure User Sessions",
+            "Scalable AI Infrastructure"
         ],
         "country": "Australia",
         "caseStudy": {
-            "overview": "Sarhachat needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "SarhaChat partnered with us to build a secure AI-powered health assistant that makes reliable sexual and reproductive health information more accessible to everyone. The objective was to create a platform where users could ask sensitive questions anonymously and receive trustworthy, evidence-based responses without fear of judgment. We designed and developed a modern conversational experience that combines AI intelligence, user privacy, and healthcare education to improve access to essential health information through an intuitive digital platform.",
+            "coreCapabilities": [
+                "AI Conversational Assistant",
+                "Healthcare Information Platform",
+                "Natural Language Understanding",
+                "Privacy-First Architecture",
+                "Educational Content Delivery",
+                "Scalable AI Infrastructure",
+                "Responsive Web Experience",
+                "Secure Session Management"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Sarhachat to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Healthcare Research",
+                    "description": "We worked closely with the SarhaChat team to understand the challenges people face when seeking sexual and reproductive health information. By researching user behavior, privacy expectations, and healthcare communication workflows, we designed a platform focused on accessibility, confidentiality, and responsible AI interactions."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "AI Conversation Design & Platform Development",
+                    "description": "We developed an AI-powered conversational experience capable of understanding natural language questions and providing educational, evidence-based health information in a clear and empathetic manner. The interface was designed to make sensitive conversations feel safe, approachable, and easy to navigate across desktop and mobile devices."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing AI, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Privacy, Performance & Scalability",
+                    "description": "User trust was at the core of the platform architecture. We implemented secure session management, optimized conversational performance, and built a scalable infrastructure capable of supporting increasing numbers of users while maintaining fast response times and a consistent user experience."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a secure AI-powered health assistant focused on confidential user interactions.",
+                "Created an accessible platform for evidence-based sexual and reproductive health education.",
+                "Designed a privacy-first conversational experience that encourages users to seek trusted health information.",
+                "Built a scalable AI infrastructure capable of supporting growing user engagement.",
+                "Optimized the platform for responsive performance across desktop and mobile devices.",
+                "Established a strong digital foundation for expanding AI-powered healthcare services."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss helped transform our vision into a secure and intuitive AI health platform. Their team understood the importance of privacy, accessibility, and user trust, delivering a conversational experience that makes reliable health information available whenever people need it most.",
                 "author": "Management Team",
-                "position": "Sarhachat"
+                "position": "SarhaChat"
             }
         }
     },
@@ -570,45 +761,66 @@ export const portfolioDetailsData = [
         "techStack": "Angular & Laravel",
         "link": "https://wallstreet.io/",
         "client": "Wall Street",
-        "purpose": "A powerful trading platform that helps investors analyze markets, manage portfolios, and execute trades efficiently.",
-        "challenge": "The client needed a robust Angular & Laravel architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Angular & Laravel, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "WallStreet.io is an advanced stock and options trading platform that empowers traders with real-time market data, powerful backtesting tools, intelligent screeners, strategy validation, and educational resources. The platform helps investors research, test, and execute data-driven trading strategies with greater confidence.",
+        "challenge": "Retail traders often rely on opinions, fragmented market data, and untested strategies when making investment decisions. The client required a scalable platform capable of combining real-time market analysis, historical strategy validation, educational resources, and community collaboration into one seamless trading ecosystem while maintaining exceptional performance.",
+        "solution": "We developed a modern trading intelligence platform using Angular and Laravel that centralizes market analysis, strategy backtesting, live charting, stock screeners, alerts, educational content, and community collaboration. The platform enables traders to validate ideas with historical market data before executing real-world trades, helping them make more informed investment decisions.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Real-Time Stock Charts",
+            "Strategy Backtesting Engine",
+            "Advanced Stock Screeners",
+            "Technical Analysis Tools",
+            "Trading Alerts & Watchlists",
+            "Seasonality Analysis",
+            "Community Strategy Sharing",
+            "Live Trading Sessions",
+            "Trading Education Library",
+            "Portfolio Monitoring",
+            "Responsive Trading Dashboard",
+            "Scalable Cloud Infrastructure"
         ],
-        "country": "UK",
+        "country": "USA",
         "caseStudy": {
-            "overview": "Wall Street needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "WallStreet.io partnered with us to build a comprehensive trading intelligence platform that helps traders replace guesswork with data-driven decision making. The goal was to create a unified ecosystem where investors could research market opportunities, validate trading strategies using historical data, monitor live markets, participate in educational programs, and collaborate with an active trading community. We delivered a high-performance platform that combines institutional-grade analytical tools with an intuitive user experience, enabling traders of all experience levels to build greater confidence in their trading decisions. ",
+            "coreCapabilities": [
+                "Strategy Backtesting Platform",
+                "Real-Time Market Analytics",
+                "Advanced Stock Screeners",
+                "Technical Charting",
+                "Trading Strategy Library",
+                "Community Collaboration",
+                "Educational Trading Platform",
+                "Angular & Laravel Enterprise Architecture"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Wall Street to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Trading Workflow Analysis",
+                    "description": "We collaborated closely with the WallStreet.io team to understand how traders research opportunities, test ideas, monitor market conditions, and continuously improve their strategies. Through extensive workflow analysis, we identified the need for a platform that combines real-time data, historical validation, educational content, and collaborative trading into one streamlined experience."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & Market Intelligence",
+                    "description": "Using Angular and Laravel, we developed a feature-rich trading platform featuring real-time charting, advanced stock screeners, technical indicators, strategy backtesting, watchlists, market alerts, and educational resources. The platform enables users to transform market observations into measurable, backtested strategies while simplifying complex trading workflows through an intuitive interface."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Angular & Laravel, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Scalability & Reliability",
+                    "description": "The platform was engineered for speed, scalability, and continuous market activity. We optimized real-time data processing, responsive dashboards, secure user authentication, and backend performance to ensure traders receive reliable market insights while supporting growing user communities, educational content, and expanding analytical capabilities."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a comprehensive trading intelligence platform for stock and options traders.",
+                "Unified real-time charting, strategy backtesting, market screeners, and educational resources within one ecosystem.",
+                "Enabled traders to validate investment strategies using historical market data before executing live trades.",
+                "Built a scalable Angular and Laravel architecture capable of supporting growing trading communities and expanding analytical tools.",
+                "Created a responsive user experience optimized for active market monitoring across desktop and mobile devices.",
+                "Established a flexible foundation for future AI-powered analytics, advanced trading research, and community-driven strategy development."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss successfully transformed our vision into a powerful trading intelligence platform. Their team understood the complexity of financial markets and delivered a fast, scalable solution that combines advanced analytical tools with an exceptional user experience. The result is a platform that helps traders make smarter, more confident decisions every day.",
                 "author": "Management Team",
-                "position": "Wall Street"
+                "position": "WallStreet.io"
             }
         },
         "hireResources": {
-            "label": "Hire Angular Developers",
+            "label": "Hire Angular Developer",
             "link": "/hire-us/hire-angular-developers"
         }
     },
@@ -621,41 +833,62 @@ export const portfolioDetailsData = [
         "techStack": "Bubble",
         "link": "https://allbots.io/",
         "client": "Allbots",
-        "purpose": "An AI automation platform that streamlines business operations by automating repetitive tasks and workflows.",
-        "challenge": "The client needed a robust Bubble architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Bubble, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "AllBots is an AI Voice Agent platform that helps businesses automate inbound phone calls, customer support, appointment scheduling, lead qualification, and operational workflows. Built for industries including healthcare, legal, real estate, automotive, hospitality, finance, and education, the platform enables organizations to deliver intelligent 24/7 customer interactions while reducing operational costs.",
+        "challenge": "Businesses across multiple industries were losing valuable leads due to missed calls, limited office hours, and manual customer support processes. The client needed a scalable AI platform capable of handling high call volumes, qualifying leads, scheduling appointments, integrating with existing business systems, and maintaining natural human-like conversations across different industries.",
+        "solution": "We developed a scalable AI Voice Agent platform using Bubble that enables businesses to deploy industry-specific conversational AI assistants without complex development. The platform automates inbound calls, lead qualification, appointment booking, CRM synchronization, workflow automation, and customer support while providing analytics and centralized management through an intuitive dashboard.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "AI Voice Agents",
+            "24/7 Call Automation",
+            "Appointment Scheduling",
+            "Lead Qualification",
+            "CRM & Calendar Integrations",
+            "Natural Language Conversations",
+            "Industry-Specific AI Agents",
+            "Call Analytics Dashboard",
+            "Workflow Automation",
+            "Multi-Language Support",
+            "Enterprise Security",
+            "Scalable No-Code Platform"
         ],
-        "country": "Canada",
+        "country": "USA",
         "caseStudy": {
-            "overview": "Allbots needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "AllBots partnered with us to build a next-generation AI Voice Agent platform that enables businesses to automate customer conversations without sacrificing quality or personalization. The vision was to replace missed calls, repetitive administrative work, and fragmented communication systems with intelligent voice assistants capable of handling customer inquiries around the clock. We delivered a scalable no-code platform that combines conversational AI, workflow automation, CRM integrations, scheduling, and business analytics into a single ecosystem that helps organizations improve customer experience while significantly increasing operational efficiency.",
+            "coreCapabilities": [
+                "AI Voice Agent Platform",
+                "Conversational AI Automation",
+                "Lead Qualification",
+                "Appointment Scheduling",
+                "CRM & Business System Integration",
+                "Industry-Specific AI Solutions",
+                "Workflow Automation",
+                "Bubble No-Code Development"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Allbots to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Business Workflow Analysis",
+                    "description": "We collaborated closely with the AllBots team to understand how businesses manage inbound calls, customer support, appointment scheduling, and lead generation. By mapping industry-specific workflows across healthcare, legal, real estate, hospitality, automotive, and financial services, we designed a flexible AI platform capable of adapting to different business requirements."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "AI Voice Platform Development",
+                    "description": "Using Bubble, we developed a scalable AI platform that enables organizations to deploy intelligent voice agents for customer support, appointment booking, lead qualification, FAQ handling, and workflow automation. The platform integrates seamlessly with CRM systems, calendars, scheduling software, and business applications while providing administrators with centralized management and analytics."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Bubble, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Scalability, Integrations & Performance",
+                    "description": "The platform was engineered to support high call volumes, enterprise integrations, and continuous business growth. We optimized conversational performance, implemented secure business workflows, and built a modular architecture that allows organizations to deploy industry-specific AI agents while maintaining excellent reliability, security, and user experience."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a scalable AI Voice Agent platform serving multiple industries from a single ecosystem.",
+                "Automated customer calls, appointment scheduling, lead qualification, and support workflows.",
+                "Enabled seamless CRM, scheduling, and business system integrations for streamlined operations.",
+                "Built a flexible Bubble architecture capable of supporting new industries and AI agent templates.",
+                "Created an intuitive dashboard for managing AI agents, customer interactions, and business analytics.",
+                "Established a strong technical foundation for expanding enterprise AI automation services."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss helped us transform our vision into a scalable AI Voice Agent platform that businesses can deploy quickly and confidently. Their team understood both the technical complexity of conversational AI and the operational needs of modern businesses, delivering a solution that's reliable, intuitive, and built for long-term growth.",
                 "author": "Management Team",
-                "position": "Allbots"
+                "position": "AllBots"
             }
         }
     },
@@ -668,7 +901,7 @@ export const portfolioDetailsData = [
         "techStack": "ReactJS",
         "link": "https://searchive.co.uk/",
         "client": "Searchive",
-        "purpose": "A recruitment platform designed to simplify candidate sourcing, screening, and hiring for growing organizations.",
+        "description": "A recruitment platform designed to simplify candidate sourcing, screening, and hiring for growing organizations.",
         "challenge": "The client needed a robust ReactJS architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using ReactJS, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -706,7 +939,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire React.js Developers",
+            "label": "Hire React.js Developer",
             "link": "/hire-us/hire-react-js-developers"
         }
     },
@@ -719,45 +952,66 @@ export const portfolioDetailsData = [
         "techStack": "Angular, JavaScript",
         "link": "https://coyna.com/",
         "client": "Coyna",
-        "purpose": "A financial empowerment platform that helps users manage, grow, and make smarter financial decisions with confidence.",
-        "challenge": "The client needed a robust Angular, JavaScript architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Angular, JavaScript, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Coyna is an AI and blockchain-powered financial accounting platform that helps businesses automate accounting, payments, expense management, and financial reporting. By combining private blockchain technology with artificial intelligence, the platform delivers secure, transparent, and real-time financial operations for organizations of all sizes.",
+        "challenge": "Modern businesses often rely on disconnected accounting systems, manual bookkeeping, and time-consuming reconciliation processes that increase operational costs and the risk of financial errors. The client needed a scalable platform capable of automating accounting workflows, enabling secure financial record management, supporting real-time transactions, and maintaining compliance with international accounting standards.",
+        "solution": "We developed an intelligent financial accounting platform using Angular and JavaScript that combines AI-powered automation with private blockchain technology. The platform streamlines bookkeeping, accounts payable and receivable, expense management, bank reconciliation, financial reporting, and secure payment workflows through one centralized business dashboard.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Private Blockchain Ledger",
+            "AI Accounting Automation",
+            "Real-Time Financial Transactions",
+            "Expense Management",
+            "Accounts Payable & Receivable",
+            "Bank Reconciliation",
+            "Financial Reporting & Analytics",
+            "Shared Ledger Collaboration",
+            "Secure Payment Processing",
+            "Compliance-Ready Architecture",
+            "Responsive Business Dashboard",
+            "Scalable Enterprise Platform"
         ],
-        "country": "Brazil",
+        "country": "USA",
         "caseStudy": {
-            "overview": "Coyna needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Coyna partnered with us to build a next-generation financial accounting platform capable of modernizing how businesses manage financial operations. The objective was to replace fragmented accounting processes with a secure ecosystem powered by artificial intelligence and private blockchain technology. We delivered a scalable platform that automates financial workflows, provides real-time visibility into business performance, strengthens financial transparency, and simplifies accounting for organizations ranging from startups to enterprise businesses.",
+            "coreCapabilities": [
+                "AI Financial Automation",
+                "Private Blockchain Accounting",
+                "Expense Management",
+                "Accounts Payable & Receivable",
+                "Bank Reconciliation",
+                "Financial Reporting & Analytics",
+                "Real-Time Payment Infrastructure",
+                "Angular Enterprise Application"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Coyna to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Financial Workflow Analysis",
+                    "description": "We collaborated with the Coyna team to understand traditional accounting workflows, payment operations, reconciliation challenges, and compliance requirements. Through detailed business analysis, we identified opportunities to automate repetitive accounting processes while improving financial transparency and operational efficiency."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & Intelligent Automation",
+                    "description": "Using Angular and JavaScript, we developed a comprehensive accounting platform that centralizes expense management, accounts payable and receivable, bank reconciliation, financial reporting, and payment processing. AI-driven automation reduces manual bookkeeping while private blockchain technology provides secure, transparent, and tamper-resistant financial records."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Angular, JavaScript, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Security, Performance & Enterprise Scalability",
+                    "description": "The platform was engineered for enterprise-grade performance, secure financial data management, and long-term scalability. We optimized transaction processing, responsive dashboards, secure authentication, and blockchain-based record management to ensure businesses can confidently manage increasing financial operations while maintaining regulatory compliance."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered an AI-powered financial accounting platform built on private blockchain technology.",
+                "Unified accounting, payments, expense management, reconciliation, and reporting into a centralized business ecosystem.",
+                "Reduced manual accounting work through intelligent workflow automation.",
+                "Created a secure shared-ledger architecture that improves transparency and financial record integrity.",
+                "Built a scalable Angular-based platform capable of supporting growing business operations.",
+                "Established a future-ready foundation for expanding AI-powered financial services and enterprise integrations."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss helped us transform an ambitious vision into a powerful financial accounting platform. Their team combined technical expertise with a deep understanding of financial workflows to deliver a secure, scalable solution that simplifies accounting while leveraging the benefits of AI and blockchain technology.",
                 "author": "Management Team",
                 "position": "Coyna"
             }
         },
         "hireResources": {
-            "label": "Hire Angular Developers",
+            "label": "Hire Angular Developer",
             "link": "/hire-us/hire-angular-developers"
         }
     },
@@ -770,45 +1024,64 @@ export const portfolioDetailsData = [
         "techStack": "Angular & Laravel",
         "link": "https://www.gujarattilesinfo.com/",
         "client": "Gujarat Tiles Info",
-        "purpose": "A comprehensive ceramic industry directory connecting manufacturers, dealers, suppliers, exporters, importers, and service providers on one platform.",
-        "challenge": "The client needed a robust Angular & Laravel architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Angular & Laravel, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Gujarat Tiles Info is a comprehensive B2B digital platform for the ceramic and tile industry, connecting manufacturers, exporters, dealers, suppliers, machinery providers, architects, transporters, and buyers through one centralized marketplace. The platform simplifies business discovery, promotes industry networking, and provides access to product catalogs, company listings, and industry news.",
+        "challenge": "The ceramic industry relies on a large network of manufacturers, distributors, exporters, suppliers, and service providers, yet business information is often fragmented across multiple sources. The client needed a scalable platform capable of centralizing company directories, product showcases, industry news, exhibitions, and business networking while delivering fast search, reliable performance, and an intuitive user experience.",
+        "solution": "We developed a scalable B2B marketplace and industry directory using Angular and Laravel that centralizes business listings, product catalogs, supplier discovery, exhibitions, news, and networking opportunities into one digital ecosystem. The platform enables businesses to increase visibility, generate qualified leads, and build stronger connections across the ceramic industry.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Business Directory",
+            "Manufacturer & Exporter Listings",
+            "Product Catalog Management",
+            "Industry News & Updates",
+            "Trade Exhibition Listings",
+            "Advanced Business Search",
+            "Lead Generation Platform",
+            "Company Profile Management",
+            "Responsive Marketplace Experience",
+            "Scalable Cloud Architecture"
         ],
-        "country": "Canada",
+        "country": "India",
         "caseStudy": {
-            "overview": "Gujarat Tiles Info needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Gujarat Tiles Info partnered with us to build a digital platform that serves as the central business hub for the ceramic and tile industry. The objective was to create a unified ecosystem where manufacturers, exporters, suppliers, dealers, architects, and buyers could easily discover businesses, explore products, stay informed about industry developments, and establish valuable commercial relationships. We developed a scalable web platform that combines business networking, product discovery, and industry information into a single, user-friendly experience that supports long-term industry growth.",
+            "coreCapabilities": [
+                "B2B Industry Marketplace",
+                "Business Directory Platform",
+                "Product Catalog Management",
+                "Lead Generation",
+                "Industry News Publishing",
+                "Trade Exhibition Management",
+                "Angular Frontend Development",
+                "Laravel Enterprise Backend"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Gujarat Tiles Info to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Industry Research",
+                    "description": "We collaborated closely with the Gujarat Tiles Info team to understand how manufacturers, exporters, suppliers, dealers, and buyers interact within the ceramic industry. Through business workflow analysis, we identified opportunities to centralize fragmented information into a single platform that improves business discovery, networking, and lead generation."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Marketplace Development & Business Experience",
+                    "description": "Using Angular and Laravel, we developed a comprehensive B2B platform featuring company directories, product catalogs, exhibition listings, industry news, business profiles, and advanced search functionality. The interface was designed to simplify navigation while helping businesses showcase their products and connect with potential customers more effectively."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Angular & Laravel, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Scalability & Growth",
+                    "description": "The platform was engineered to support thousands of business listings, product records, and daily visitors while maintaining fast search performance and responsive user experiences. We optimized backend architecture, content management workflows, and scalable infrastructure to support the platform's continued expansion as the ceramic industry grows."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a centralized B2B marketplace for the ceramic and tile industry.",
+                "Unified manufacturers, exporters, dealers, suppliers, and buyers within one digital ecosystem.",
+                "Simplified business discovery through searchable company directories and product catalogs.",
+                "Created a scalable Angular and Laravel architecture capable of supporting continued industry growth.",
+                "Improved business visibility through structured company profiles and product showcases.",
+                "Established a strong digital foundation for industry networking, exhibitions, and commercial opportunities."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss helped us build a platform that has become a valuable digital resource for the ceramic industry. Their team understood the complexity of our business ecosystem and delivered a scalable solution that connects companies, promotes products, and supports meaningful business growth across the industry.",
                 "author": "Management Team",
                 "position": "Gujarat Tiles Info"
             }
         },
         "hireResources": {
-            "label": "Hire Angular Developers",
+            "label": "Hire Angular Developer",
             "link": "/hire-us/hire-angular-developers"
         }
     },
@@ -821,45 +1094,64 @@ export const portfolioDetailsData = [
         "techStack": "Laravel & React",
         "link": "https://implantstock.com/",
         "client": "Implant Stock",
-        "purpose": "A smart inventory management platform that helps dental professionals track, organize, and manage implant stock efficiently online.",
-        "challenge": "The client needed a robust Laravel & React architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Laravel & React, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "ImplantStock is a cloud-based inventory management platform built specifically for dental implant clinics and healthcare professionals. The platform helps practices efficiently manage implant inventory, monitor stock levels, track expiration dates, organize suppliers, and streamline purchasing decisions while reducing waste and improving operational efficiency.",
+        "challenge": "Dental clinics often manage high-value implant inventory manually or across disconnected systems, making it difficult to monitor stock availability, expiration dates, supplier information, and purchasing requirements. These inefficiencies can lead to inventory shortages, expired products, unnecessary costs, and operational delays during patient treatments.",
+        "solution": "We developed a specialized inventory management platform using Laravel and React that centralizes implant stock management, supplier records, inventory tracking, expiration monitoring, purchasing workflows, and reporting within one secure cloud-based application. The platform provides dental practices with complete visibility over their inventory while simplifying day-to-day operational management.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Dental Implant Inventory Management",
+            "Real-Time Stock Tracking",
+            "Expiry Date Monitoring",
+            "Supplier Management",
+            "Purchase Order Management",
+            "Multi-Location Inventory",
+            "Inventory Reports & Analytics",
+            "Barcode & Item Organization",
+            "Responsive Dashboard",
+            "Secure Cloud Infrastructure"
         ],
-        "country": "Canada",
+        "country": "Australia",
         "caseStudy": {
-            "overview": "Implant Stock needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "ImplantStock partnered with us to build a modern inventory management platform designed exclusively for dental implant practices. The objective was to replace manual inventory processes with a centralized cloud solution that provides real-time visibility into implant stock, supplier relationships, purchasing activities, and product expiration timelines. We delivered a scalable application that simplifies inventory management, reduces operational risk, and helps dental clinics maintain the right products at the right time while improving overall practice efficiency.",
+            "coreCapabilities": [
+                "Dental Inventory Management",
+                "Implant Stock Tracking",
+                "Expiry Management",
+                "Supplier Management",
+                "Purchase Workflow Automation",
+                "Inventory Analytics",
+                "React Frontend Development",
+                "Laravel Enterprise Backend"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Implant Stock to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Clinical Workflow Analysis",
+                    "description": "We collaborated closely with the ImplantStock team to understand how dental clinics manage implant inventory, supplier relationships, purchasing processes, and treatment preparation. By mapping clinical workflows, we identified opportunities to reduce manual administration while improving inventory visibility and operational accuracy."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & Inventory Automation",
+                    "description": "Using Laravel and React, we developed a centralized inventory management platform that enables clinics to monitor stock levels, manage suppliers, track implant expiration dates, organize purchasing workflows, and generate operational reports. The intuitive interface simplifies inventory management for dental teams while supporting efficient day-to-day operations."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Laravel & React, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Security & Scalability",
+                    "description": "The platform was engineered for secure healthcare operations, responsive performance, and long-term scalability. We optimized inventory processing, cloud-based data management, and user authentication while ensuring the architecture can support growing dental practices, multiple clinic locations, and expanding product inventories."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a specialized inventory management platform built specifically for dental implant practices.",
+                "Centralized inventory tracking, supplier management, purchasing workflows, and expiration monitoring into one cloud-based application.",
+                "Reduced manual inventory administration through digital stock management workflows.",
+                "Created a scalable Laravel and React architecture capable of supporting multi-location dental organizations.",
+                "Improved inventory visibility through real-time stock monitoring and reporting dashboards.",
+                "Established a secure digital foundation for efficient healthcare inventory management."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss understood the operational challenges faced by modern dental practices and delivered an inventory management platform that is intuitive, reliable, and built around real clinical workflows. Their solution has simplified inventory management while giving us greater visibility and confidence in our day-to-day operations.",
                 "author": "Management Team",
                 "position": "Implant Stock"
             }
         },
         "hireResources": {
-            "label": "Hire React.js Developers",
+            "label": "Hire React.js Developer",
             "link": "/hire-us/hire-react-js-developers"
         }
     },
@@ -869,48 +1161,67 @@ export const portfolioDetailsData = [
         "portfolioImage": "/portfolio/custom/portfolio_locumprime_full.webp",
         "category": "Custom web",
         "timeline": "2-4 Months",
-        "techStack": "Angular, Codeigniter",
+        "techStack": "Angular, CodeIgniter",
         "link": "https://www.locumprime.co.uk/",
         "client": "Locum Prime",
-        "purpose": "A dedicated pharmacy recruitment platform that connects qualified pharmacists with the best job opportunities across the industry.",
-        "challenge": "The client needed a robust Angular, Codeigniter architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Angular, Codeigniter, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Locum Prime is a digital pharmacy workforce management and recruitment platform that connects pharmacies with qualified locum pharmacists across the United Kingdom. The platform simplifies shift posting, pharmacist availability, booking management, compliance, and recruitment, enabling pharmacies to fill staffing gaps quickly while helping pharmacists find flexible work opportunities.",
+        "challenge": "Pharmacies often struggle to find qualified locum pharmacists at short notice, while pharmacists spend significant time searching across multiple recruitment channels for suitable shifts. The client required a centralized platform capable of managing shift postings, candidate matching, bookings, compliance, and communication while delivering a seamless experience for both pharmacies and healthcare professionals.",
+        "solution": "We developed a scalable recruitment and workforce management platform using Angular and CodeIgniter that streamlines the complete locum hiring lifecycle. The platform centralizes pharmacist profiles, shift management, bookings, availability tracking, compliance workflows, and communication into one efficient ecosystem, reducing manual administration for both pharmacies and locum professionals.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Locum Pharmacist Marketplace",
+            "Shift Posting & Management",
+            "Real-Time Availability Tracking",
+            "Smart Candidate Matching",
+            "Online Booking Management",
+            "Professional Profile Management",
+            "Compliance & Credential Tracking",
+            "Recruitment Dashboard",
+            "Responsive Mobile Experience",
+            "Secure Workforce Management"
         ],
-        "country": "Germany",
+        "country": "United Kingdom",
         "caseStudy": {
-            "overview": "Locum Prime needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Locum Prime partnered with us to modernize the pharmacy recruitment process by creating a digital workforce management platform for pharmacies and locum pharmacists. The objective was to eliminate fragmented recruitment processes and enable pharmacies to quickly fill staffing requirements while providing pharmacists with easy access to verified job opportunities. We delivered a scalable platform that combines recruitment, shift scheduling, availability management, compliance, and booking workflows into one intuitive solution, improving operational efficiency across the healthcare staffing ecosystem.",
+            "coreCapabilities": [
+                "Healthcare Recruitment Platform",
+                "Locum Workforce Management",
+                "Shift Scheduling",
+                "Candidate Matching",
+                "Booking & Availability Management",
+                "Compliance Tracking",
+                "Angular Frontend Development",
+                "CodeIgniter Backend Architecture"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Locum Prime to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Healthcare Recruitment Analysis",
+                    "description": "We collaborated closely with the Locum Prime team to understand the recruitment challenges faced by pharmacies and locum pharmacists. Through workflow analysis, we identified opportunities to simplify shift management, improve candidate discovery, automate booking processes, and reduce administrative overhead throughout the recruitment lifecycle."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & Workforce Automation",
+                    "description": "Using Angular and CodeIgniter, we developed a centralized workforce platform where pharmacies can post shifts, review pharmacist profiles, manage bookings, and monitor staffing requirements. Locum pharmacists can maintain professional profiles, update availability, discover suitable opportunities, and manage bookings through an intuitive and responsive interface."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Angular, Codeigniter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Security & Scalability",
+                    "description": "The platform was engineered to support growing numbers of pharmacies, healthcare professionals, and recruitment activities. We optimized application performance, implemented secure authentication, streamlined compliance workflows, and built a scalable architecture capable of supporting future workforce management features and healthcare integrations."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a centralized recruitment and workforce management platform for the pharmacy sector.",
+                "Unified shift management, pharmacist availability, bookings, and recruitment workflows into one application.",
+                "Simplified staffing operations for pharmacies through digital workforce management tools.",
+                "Built a scalable Angular and CodeIgniter architecture capable of supporting continued platform growth.",
+                "Improved the experience for pharmacists with streamlined job discovery and booking management.",
+                "Established a secure digital foundation for modern healthcare recruitment and staffing operations."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a platform that modernized the way we connect pharmacies with qualified locum pharmacists. Their team understood both the operational and technical challenges of healthcare recruitment, creating a scalable solution that improves efficiency for employers and healthcare professionals alike.",
                 "author": "Management Team",
                 "position": "Locum Prime"
             }
         },
         "hireResources": {
-            "label": "Hire Angular Developers",
+            "label": "Hire Angular Developer",
             "link": "/hire-us/hire-angular-developers"
         }
     },
@@ -923,45 +1234,64 @@ export const portfolioDetailsData = [
         "techStack": "Python, ReactJS",
         "link": "https://www.trustarthurgroup.com/",
         "client": "Trust Arthur Group",
-        "purpose": "A trusted investment management firm focused on creating, growing, and preserving wealth through transparent and client-focused financial solutions.",
-        "challenge": "The client needed a robust Python, ReactJS architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Python, ReactJS, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Trust Arthur Group is a digital investment and wealth management platform that helps individuals, families, and businesses access professional financial advisory services, portfolio management, alternative investment opportunities, and long-term wealth planning through a secure and modern online experience.",
+        "challenge": "Investment firms require digital platforms that establish credibility while simplifying client engagement, portfolio presentation, and financial service discovery. The client needed a scalable solution capable of showcasing investment services, communicating financial expertise, supporting client interactions, and maintaining enterprise-grade security and performance across a growing global audience.",
+        "solution": "We developed a modern financial services platform using Python and ReactJS that centralizes investment solutions, wealth management services, business information, and client engagement into one intuitive digital experience. The platform delivers a professional user interface, optimized performance, secure architecture, and flexible content management to support long-term business growth.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Investment Services Showcase",
+            "Wealth Management Platform",
+            "Alternative Investment Solutions",
+            "Portfolio Management Information",
+            "Financial Advisory Services",
+            "Responsive Client Experience",
+            "Secure Contact & Inquiry System",
+            "Content Management",
+            "Performance-Optimized Architecture",
+            "Scalable Enterprise Platform"
         ],
-        "country": "Australia",
+        "country": "United Kingdom",
         "caseStudy": {
-            "overview": "Trust Arthur Group needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Trust Arthur Group partnered with us to create a modern digital platform that reflects the professionalism, trust, and long-term vision of its investment advisory business. The objective was to provide potential clients with a seamless experience for exploring investment services, understanding wealth management strategies, and connecting with financial experts. We delivered a scalable web platform that combines elegant design, responsive performance, and secure architecture to strengthen the firm's digital presence while supporting future business growth.",
+            "coreCapabilities": [
+                "Financial Services Platform",
+                "Investment Management Website",
+                "Wealth Advisory Experience",
+                "Portfolio Information Management",
+                "Client Inquiry Management",
+                "Secure Enterprise Architecture",
+                "ReactJS Frontend Development",
+                "Python Backend Services"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Trust Arthur Group to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Financial Services Analysis",
+                    "description": "We worked closely with the Trust Arthur Group team to understand their investment philosophy, client engagement process, and service portfolio. By analyzing user journeys and financial service requirements, we designed a platform focused on building trust, improving accessibility, and presenting complex financial information in a clear and engaging way."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & User Experience",
+                    "description": "Using ReactJS and Python, we developed a responsive financial services platform that showcases investment solutions, wealth management offerings, and company expertise through an intuitive user interface. The application was designed to provide prospective clients with easy access to information while supporting efficient content management and business growth."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Python, ReactJS, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Security & Scalability",
+                    "description": "The platform was engineered with enterprise-grade performance, security, and scalability in mind. We optimized page performance, implemented secure inquiry workflows, and built a flexible architecture capable of supporting future service expansion, multilingual content, and increased visitor traffic without compromising user experience."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a modern digital platform for investment and wealth management services.",
+                "Improved the presentation of financial solutions through a responsive and intuitive user experience.",
+                "Centralized investment information, advisory services, and client engagement into one scalable platform.",
+                "Built a secure Python and ReactJS architecture capable of supporting future business growth.",
+                "Strengthened the company's online credibility through a professional digital presence.",
+                "Established a flexible foundation for expanding financial services and client communication."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a platform that perfectly reflects our values of professionalism, trust, and long-term client relationships. Their team combined technical excellence with thoughtful user experience design, creating a scalable digital solution that supports our continued growth in the financial services industry.",
                 "author": "Management Team",
                 "position": "Trust Arthur Group"
             }
         },
         "hireResources": {
-            "label": "Hire Python Developers",
+            "label": "Hire Python Developer",
             "link": "/hire-us/hire-python-developers"
         }
     },
@@ -974,48 +1304,70 @@ export const portfolioDetailsData = [
         "techStack": "MySQL, Node JS, ReactJS",
         "link": "https://kunden.taxley-web.ch/",
         "client": "Taxley",
-        "purpose": "A tax and financial management platform that helps individuals and businesses manage taxes, compliance, and financial records with ease.",
-        "challenge": "The client needed a robust MySQL, Node JS, ReactJS architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using MySQL, Node JS, ReactJS, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Taxley is a digital tax management platform that simplifies Swiss tax filing for individuals through secure document uploads, automated tax preparation workflows, expert-assisted reviews, and online communication. The platform transforms complex tax processes into a fast, transparent, and entirely digital experience.",
+        "challenge": "Preparing tax returns is often time-consuming and requires collecting documents, completing complex forms, and communicating with tax professionals through fragmented channels. The client required a secure digital platform capable of managing customer onboarding, document collection, tax processing, expert collaboration, and status tracking while delivering a seamless user experience.",
+        "solution": "We developed a cloud-based tax management platform using ReactJS, Node.js, and MySQL that digitizes the complete tax filing journey. Users can securely upload documents, communicate with tax experts, monitor application progress, and receive completed tax returns through a centralized client portal, significantly reducing manual administrative work.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Digital Tax Filing Portal",
+            "Secure Document Upload",
+            "Client Dashboard",
+            "Tax Expert Chat",
+            "Document Management",
+            "Application Status Tracking",
+            "Workflow Automation",
+            "Secure Authentication",
+            "Responsive User Experience",
+            "Scalable Cloud Infrastructure"
         ],
-        "country": "Germany",
+        "country": "Switzerland",
         "caseStudy": {
-            "overview": "Taxley needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Custom web solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Taxley partnered with us to build a modern digital platform that simplifies tax preparation for individuals across Switzerland. The objective was to replace traditional paper-based tax filing with an intuitive online experience where users can securely upload documents, communicate directly with tax professionals, monitor progress, and receive completed tax returns without unnecessary paperwork. We delivered a scalable platform that combines secure document management, workflow automation, and expert collaboration into one seamless digital ecosystem.",
+            "coreCapabilities": [
+                "Digital Tax Filing Platform",
+                "Secure Client Portal",
+                "Document Management",
+                "Tax Workflow Automation",
+                "Expert Communication",
+                "Status Tracking",
+                "ReactJS Frontend",
+                "Node.js & MySQL Backend"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Taxley to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Tax Workflow Analysis",
+                    "description": "We collaborated closely with the Taxley team to understand how clients prepare tax returns, submit documents, communicate with advisors, and track filing progress. This analysis helped us design a streamlined digital workflow that minimizes manual effort while improving transparency throughout the tax preparation process."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Platform Development & User Experience",
+                    "description": "Using ReactJS, Node.js, and MySQL, we developed a secure customer portal where users can upload tax documents, manage personal information, communicate with tax professionals through integrated messaging, and monitor every stage of their tax return. The interface was designed to simplify even the most complex tax workflows for everyday users."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing MySQL, Node JS, ReactJS, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Security, Automation & Scalability",
+                    "description": "The platform was engineered with security and scalability as core priorities. We implemented secure authentication, encrypted document handling, workflow automation, and responsive performance to support growing numbers of users while ensuring confidential financial information remains protected throughout the entire tax filing process."
                 }
             ],
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a fully digital tax preparation platform for Swiss taxpayers.",
+                "Centralized document uploads, client communication, and tax filing workflows into one secure portal.",
+                "Reduced manual administrative effort through workflow automation and digital document management.",
+                "Built a scalable ReactJS, Node.js, and MySQL architecture capable of supporting future service expansion.",
+                "Improved transparency by providing users with real-time application status tracking and expert communication.",
+                "Established a secure digital foundation for modern tax advisory and client management services."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss helped us modernize the tax filing experience through a secure and intuitive digital platform. Their team understood both the technical and operational requirements of tax preparation, delivering a solution that simplifies client communication, document management, and workflow automation while maintaining the highest standards of reliability and security.",
                 "author": "Management Team",
                 "position": "Taxley"
             }
         },
         "hireResources": {
-            "label": "Hire Node.js Developers",
+            "label": "Hire Node.js Developer",
             "link": "/hire-us/hire-node-js-developers"
         }
     },
+
+
+    //mobile app
     {
         "slug": "my100days",
         "name": "My100Days",
@@ -1025,7 +1377,7 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "My100Days",
-        "purpose": "An AI-powered career assistant that guides professionals through job roles, responsibilities, and career challenges with personalized advice and insights.",
+        "description": "An AI-powered career assistant that guides professionals through job roles, responsibilities, and career challenges with personalized advice and insights.",
         "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1077,7 +1429,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire React Native Developers",
+            "label": "Hire React Native Developer",
             "link": "/hire-us/hire-react-native-developers"
         }
     },
@@ -1090,7 +1442,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "TriSchedule",
-        "purpose": "A health and performance tracking platform designed for athletes to monitor activities, training progress, fitness goals, and overall well-being.",
+        "description": "A health and performance tracking platform designed for athletes to monitor activities, training progress, fitness goals, and overall well-being.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1142,7 +1494,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire Flutter Developers",
+            "label": "Hire Flutter Developer",
             "link": "/hire-us/hire-flutter-developers"
         }
     },
@@ -1155,7 +1507,7 @@ export const portfolioDetailsData = [
         "techStack": "iOS Swift ",
         "link": "#",
         "client": "Wingman",
-        "purpose": "An offline messaging app built for air travel, allowing passengers to connect and chat via Bluetooth without requiring internet or Wi-Fi.",
+        "description": "An offline messaging app built for air travel, allowing passengers to connect and chat via Bluetooth without requiring internet or Wi-Fi.",
         "challenge": "The client needed a robust iOS Swift  architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using iOS Swift , integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1206,7 +1558,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire iOS Developers",
+            "label": "Hire iOS Developer",
             "link": "/hire-us/hire-ios-developers"
         }
     },
@@ -1219,7 +1571,7 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Book a Builder",
-        "purpose": "A service marketplace where homeowners can post renovation projects and receive bids from verified contractors to find the best match.",
+        "description": "A service marketplace where homeowners can post renovation projects and receive bids from verified contractors to find the best match.",
         "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1271,7 +1623,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire React Native Developers",
+            "label": "Hire React Native Developer",
             "link": "/hire-us/hire-react-native-developers"
         }
     },
@@ -1284,7 +1636,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Klubbrabatten",
-        "purpose": "A Swedish digital coupon platform offering exclusive discounts and deals from restaurants, retailers, and local businesses.",
+        "description": "A Swedish digital coupon platform offering exclusive discounts and deals from restaurants, retailers, and local businesses.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1336,7 +1688,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire Flutter Developers",
+            "label": "Hire Flutter Developer",
             "link": "/hire-us/hire-flutter-developers"
         }
     },
@@ -1349,7 +1701,7 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Roamaly",
-        "purpose": "A convenient eSIM marketplace that helps travelers purchase, activate, and manage mobile data plans worldwide.",
+        "description": "A convenient eSIM marketplace that helps travelers purchase, activate, and manage mobile data plans worldwide.",
         "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1401,7 +1753,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire React Native Developers",
+            "label": "Hire React Native Developer",
             "link": "/hire-us/hire-react-native-developers"
         }
     },
@@ -1414,7 +1766,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Sion Reservations",
-        "purpose": "An event and club reservation platform that simplifies booking, ticket management, and guest experiences for venues and attendees.",
+        "description": "An event and club reservation platform that simplifies booking, ticket management, and guest experiences for venues and attendees.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1465,7 +1817,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire Flutter Developers",
+            "label": "Hire Flutter Developer",
             "link": "/hire-us/hire-flutter-developers"
         }
     },
@@ -1478,7 +1830,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter, Node JS",
         "link": "#",
         "client": "City 2 City",
-        "purpose": "A ride-booking platform that connects travelers with drivers for convenient and affordable intercity transportation.",
+        "description": "A ride-booking platform that connects travelers with drivers for convenient and affordable intercity transportation.",
         "challenge": "The client needed a robust Flutter, Node JS architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, Node JS, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1530,7 +1882,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire Flutter Developers",
+            "label": "Hire Flutter Developer",
             "link": "/hire-us/hire-flutter-developers"
         }
     },
@@ -1543,7 +1895,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Drawn",
-        "purpose": "A modern dating platform designed to help people discover meaningful connections through engaging profiles and smart matching.",
+        "description": "A modern dating platform designed to help people discover meaningful connections through engaging profiles and smart matching.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1592,7 +1944,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire Flutter Developers",
+            "label": "Hire Flutter Developer",
             "link": "/hire-us/hire-flutter-developers"
         }
     },
@@ -1605,7 +1957,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Somnexis",
-        "purpose": "A digital Bible platform where users can read scripture, share reflections, and engage with a faith-driven community.",
+        "description": "A digital Bible platform where users can read scripture, share reflections, and engage with a faith-driven community.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1656,7 +2008,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire Flutter Developers",
+            "label": "Hire Flutter Developer",
             "link": "/hire-us/hire-flutter-developers"
         }
     },
@@ -1669,7 +2021,7 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Traivend",
-        "purpose": "A crypto trading education platform that helps users learn market strategies, trading concepts, and investment fundamentals.",
+        "description": "A crypto trading education platform that helps users learn market strategies, trading concepts, and investment fundamentals.",
         "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1720,7 +2072,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire React Native Developers",
+            "label": "Hire React Native Developer",
             "link": "/hire-us/hire-react-native-developers"
         }
     },
@@ -1733,7 +2085,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Offarat",
-        "purpose": "An on-demand food delivery platform that connects customers with local restaurants for fast and convenient ordering.",
+        "description": "An on-demand food delivery platform that connects customers with local restaurants for fast and convenient ordering.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1785,7 +2137,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire Flutter Developers",
+            "label": "Hire Flutter Developer",
             "link": "/hire-us/hire-flutter-developers"
         }
     },
@@ -1798,7 +2150,7 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Taxley",
-        "purpose": "A tax and financial management platform that helps individuals and businesses manage taxes, compliance, and financial records with ease.",
+        "description": "A tax and financial management platform that helps individuals and businesses manage taxes, compliance, and financial records with ease.",
         "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1850,7 +2202,7 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire Flutter Developers",
+            "label": "Hire Flutter Developer",
             "link": "/hire-us/hire-flutter-developers"
         }
     },
@@ -1863,7 +2215,7 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Kolder Kid Universe",
-        "purpose": "A music streaming platform featuring songs, audio content, and interactive experiences designed for children and families.",
+        "description": "A music streaming platform featuring songs, audio content, and interactive experiences designed for children and families.",
         "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -1915,10 +2267,12 @@ export const portfolioDetailsData = [
             }
         },
         "hireResources": {
-            "label": "Hire React Native Developers",
+            "label": "Hire React Native Developer",
             "link": "/hire-us/hire-react-native-developers"
         }
     },
+
+    // Shopify
     {
         "slug": "kates-real-food",
         "name": "Kate's Real Food",
@@ -1928,44 +2282,68 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://katesrealfood.com/",
         "client": "Kate's Real Food",
-        "purpose": "An eCommerce platform offering organic snack bars and healthy food products made with real, natural ingredients.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Kate's Real Food is a premium Shopify-powered eCommerce platform that showcases handcrafted organic energy bars made with real ingredients. The online store delivers an engaging shopping experience with product subscriptions, curated bundles, wholesale information, store locator functionality, and a brand-focused customer journey designed to drive long-term customer loyalty.",
+        "challenge": "As the brand continued to grow, it required a high-performance Shopify storefront capable of handling increasing traffic, promoting multiple product collections, supporting subscription purchases, and delivering a seamless shopping experience across desktop and mobile devices. The platform also needed to effectively communicate the brand's story while optimizing conversions and repeat purchases.",
+        "solution": "We developed a modern Shopify storefront focused on performance, scalability, and conversion optimization. The platform streamlines product discovery, subscriptions, bundle purchases, wholesale inquiries, and customer engagement while delivering a visually rich shopping experience that reflects the brand's commitment to organic nutrition and premium quality.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Product Subscription System",
+            "Bundle & Multi-Pack Offers",
+            "Responsive Shopping Experience",
+            "Store Locator",
+            "Wholesale Information Portal",
+            "Optimized Product Discovery",
+            "Secure Shopify Checkout",
+            "Performance-Optimized Theme",
+            "Scalable eCommerce Architecture"
         ],
-        "country": "UK",
+        "country": "USA",
         "caseStudy": {
-            "overview": "Kate's Real Food needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Kate's Real Food partnered with us to create a modern Shopify experience that reflects the authenticity and premium quality of its organic snack products. The goal was to provide customers with a fast, engaging shopping journey while making it easier to discover products, subscribe for recurring deliveries, purchase bundles, and learn the story behind the brand. We delivered a scalable Shopify solution that combines exceptional user experience, high-performance storefront optimization, and conversion-focused design to support long-term business growth.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Subscription Commerce",
+                "Bundle & Product Merchandising",
+                "Conversion Optimization",
+                "Performance Optimization",
+                "Responsive Storefront Design",
+                "Brand Experience Development",
+                "Scalable Shopify Architecture"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Kate's Real Food to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & eCommerce Strategy",
+                    "description": "We worked closely with the Kate's Real Food team to understand customer purchasing behavior, subscription journeys, product merchandising strategies, and brand storytelling objectives. This discovery process allowed us to design an experience focused on increasing engagement, simplifying purchasing decisions, and encouraging repeat orders."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Shopify Storefront Development",
+                    "description": "Using Shopify, we developed a responsive storefront that highlights featured products, subscription options, curated bundles, wholesale information, and store locator functionality. The user experience was carefully optimized to make product discovery intuitive while maintaining a visually engaging interface aligned with the brand's natural and premium identity."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Scalability & Conversion Optimization",
+                    "description": "The storefront was engineered for speed, reliability, and long-term growth. We optimized page performance, mobile responsiveness, navigation, checkout experience, and product presentation while ensuring the platform can easily support seasonal campaigns, new product launches, subscription growth, and increasing customer traffic."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Delivered a premium Shopify storefront that strengthens the brand's online presence.",
+                "Simplified product discovery through intuitive navigation, subscriptions, and bundle purchasing experiences.",
+                "Created a responsive shopping experience optimized for desktop and mobile customers.",
+                "Built a scalable Shopify architecture capable of supporting future product launches and business growth.",
+                "Enhanced customer engagement through brand storytelling and optimized product merchandising.",
+                "Established a conversion-focused eCommerce foundation for long-term customer retention."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a Shopify experience that perfectly represents our brand and makes shopping simple for our customers. Their team combined thoughtful design with technical expertise to create a fast, scalable storefront that supports our growth while staying true to the values behind Kate's Real Food.",
                 "author": "Management Team",
                 "position": "Kate's Real Food"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "ludic-life",
         "name": "Ludic Life",
@@ -1975,44 +2353,68 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://ludic.life/",
         "client": "Ludic Life",
-        "purpose": "A premium lifestyle eCommerce platform offering comfortable, fashionable everyday clothing, casual footwear, and chappals.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Ludic Life is a premium Shopify-powered lifestyle brand specializing in ultra-comfortable flip-flops, slides, and everyday footwear inspired by Brazilian design. The platform combines modern eCommerce experiences with compelling brand storytelling, product innovation, and seamless shopping journeys to build long-term customer loyalty.",
+        "challenge": "As a fast-growing direct-to-consumer footwear brand, Ludic Life required a high-performance Shopify storefront capable of showcasing premium products, supporting seasonal campaigns, handling increasing traffic, and delivering a frictionless shopping experience across desktop and mobile devices. The platform also needed to communicate the brand's focus on comfort, quality, and lifestyle while maximizing conversions.",
+        "solution": "We developed a custom Shopify storefront focused on speed, scalability, and conversion optimization. The platform streamlines product discovery, collection browsing, promotional campaigns, secure checkout, and customer engagement while providing a premium shopping experience that reflects the brand's identity and supports long-term growth.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Collection & Product Merchandising",
+            "Responsive Mobile Shopping",
+            "Product Variant Management",
+            "Promotional Landing Pages",
+            "Bundle & Offer Management",
+            "Secure Shopify Checkout",
+            "Brand Storytelling Experience",
+            "Performance Optimization",
+            "Scalable eCommerce Architecture"
         ],
-        "country": "Brazil",
+        "country": "India",
         "caseStudy": {
-            "overview": "Ludic Life needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Ludic Life partnered with us to create a premium Shopify experience that reflects the brand's commitment to comfort, quality, and modern lifestyle. The objective was to deliver a visually engaging storefront that helps customers easily discover products, explore collections, and complete purchases through a fast and intuitive shopping journey. We built a scalable eCommerce platform that combines high-performance storefront optimization, thoughtful user experience, and conversion-focused design to support the brand's continued growth in the direct-to-consumer market.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "eCommerce UX Design",
+                "Product Merchandising",
+                "Conversion Optimization",
+                "Performance Optimization",
+                "Mobile Commerce",
+                "Brand Experience Development",
+                "Scalable Shopify Architecture"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Ludic Life to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & eCommerce Strategy",
+                    "description": "We collaborated with the Ludic Life team to understand customer purchasing behavior, product merchandising priorities, and brand positioning. Through detailed UX research, we designed a shopping experience that highlights premium products, simplifies navigation, and encourages higher customer engagement throughout the buying journey."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Shopify Storefront Development",
+                    "description": "Using Shopify, we developed a responsive storefront featuring optimized product collections, promotional campaigns, product detail pages, bundle offers, and streamlined checkout experiences. The interface was crafted to reflect the brand's premium identity while making shopping fast, intuitive, and enjoyable across all devices."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Scalability & Growth",
+                    "description": "The storefront was engineered for high performance, responsive design, and future scalability. We optimized loading speeds, mobile responsiveness, product browsing, and checkout workflows while ensuring the platform could support seasonal promotions, new product launches, increasing customer traffic, and continued business expansion."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Delivered a premium Shopify storefront tailored for a direct-to-consumer lifestyle brand.",
+                "Improved product discovery through intuitive navigation, optimized collections, and conversion-focused merchandising.",
+                "Created a responsive shopping experience optimized for desktop and mobile customers.",
+                "Built a scalable Shopify architecture capable of supporting future product launches and marketing campaigns.",
+                "Strengthened brand identity through modern design and engaging storytelling throughout the customer journey.",
+                "Established a high-performance eCommerce foundation for long-term customer acquisition and retention."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a Shopify experience that truly reflects our brand and our commitment to premium customer experiences. Their team combined thoughtful design, technical expertise, and eCommerce best practices to create a storefront that's fast, scalable, and built to support our continued growth.",
                 "author": "Management Team",
                 "position": "Ludic Life"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "ludic-global",
         "name": "Ludic Global",
@@ -2022,44 +2424,68 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://ludic.global/",
         "client": "Ludic Global",
-        "purpose": "A global fashion eCommerce marketplace featuring a curated collection of international apparel, trendy shoes, and stylish chappals.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Ludic Global is the international B2B and wholesale platform for the Ludic footwear brand, connecting distributors, retailers, and business partners worldwide. Built on Shopify, the platform showcases premium product collections, wholesale opportunities, and global brand expansion while providing a professional digital experience for prospective partners.",
+        "challenge": "As the brand expanded into international markets, it required a scalable digital platform capable of supporting global distributors, wholesale inquiries, product catalog management, and business partnerships. The challenge was to create a premium B2B experience that effectively communicates the brand's identity while simplifying international partner engagement.",
+        "solution": "We developed a custom Shopify platform focused on international wholesale operations, product presentation, and partner acquisition. The solution delivers a modern user experience that enables retailers and distributors to explore collections, submit partnership inquiries, and engage with the brand through a responsive, performance-optimized website designed for global business growth.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Wholesale Product Catalog",
+            "Distributor Inquiry System",
+            "Global Partner Onboarding",
+            "Responsive Shopify Storefront",
+            "Product Collection Showcase",
+            "Business Contact Management",
+            "Brand Storytelling",
+            "Performance Optimization",
+            "Scalable Shopify Architecture",
+            "International Market Experience"
         ],
-        "country": "Canada",
+        "country": "India",
         "caseStudy": {
-            "overview": "Ludic Global needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Ludic Global partnered with us to build a digital platform that supports the brand's international expansion strategy. Rather than serving as a traditional consumer storefront, the objective was to create a professional B2B experience where distributors, retailers, and wholesale partners could discover the brand, explore product collections, and initiate business relationships. We delivered a scalable Shopify platform that combines premium design, high-performance architecture, and intuitive navigation to strengthen the brand's presence across global markets.",
+            "coreCapabilities": [
+                "B2B Shopify Development",
+                "Wholesale Portal",
+                "International Brand Platform",
+                "Distributor Management",
+                "Product Catalog Experience",
+                "Performance Optimization",
+                "Responsive Shopify Development",
+                "Scalable eCommerce Architecture"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Ludic Global to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Global Commerce Strategy",
+                    "description": "We worked closely with the Ludic Global team to understand their international expansion goals, distributor onboarding process, and wholesale business model. Through stakeholder workshops, we designed a platform focused on strengthening brand credibility, simplifying partner acquisition, and showcasing products for global markets."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Shopify Development & Wholesale Experience",
+                    "description": "Using Shopify, we developed a responsive B2B storefront that highlights product collections, wholesale opportunities, brand values, and partnership information. The platform was designed to provide distributors and retailers with an intuitive browsing experience while streamlining inquiry submissions and business engagement."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Scalability & International Growth",
+                    "description": "The platform was optimized for global accessibility, fast loading speeds, and future scalability. We implemented responsive layouts, optimized content delivery, and built a flexible Shopify architecture capable of supporting additional markets, product launches, multilingual content, and expanding international distribution networks."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Delivered a premium Shopify platform supporting international wholesale and distributor operations.",
+                "Simplified global partner acquisition through an intuitive B2B user experience.",
+                "Created a centralized product showcase for retailers and international distributors.",
+                "Built a scalable Shopify architecture capable of supporting future market expansion and new product collections.",
+                "Strengthened the brand's international digital presence through modern design and optimized performance.",
+                "Established a strong technical foundation for continued global business growth."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a professional digital platform that supports our international growth strategy. Their team understood the unique requirements of wholesale commerce and created a scalable Shopify solution that effectively showcases our brand while making it easier for distributors and retail partners to connect with us worldwide.",
                 "author": "Management Team",
                 "position": "Ludic Global"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "ludic-kitchen",
         "name": "Ludic Kitchen",
@@ -2069,7 +2495,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://kitchen.ludic.life/",
         "client": "Ludic Kitchen",
-        "purpose": "A boutique eCommerce concept store specializing in functional culinary-lifestyle workwear, comfortable kitchen shoes, and lifestyle chappals.",
+        "description": "A boutique eCommerce concept store specializing in functional culinary-lifestyle workwear, comfortable kitchen shoes, and lifestyle chappals.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2078,7 +2504,7 @@ export const portfolioDetailsData = [
             "High Performance",
             "Secure Infrastructure"
         ],
-        "country": "Canada",
+        "country": "India",
         "caseStudy": {
             "overview": "Ludic Kitchen needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
             "process": [
@@ -2105,8 +2531,13 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Ludic Kitchen"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "almost-peaceful",
         "name": "Almost Peaceful",
@@ -2116,44 +2547,68 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://almostpeaceful.sg/",
         "client": "Almost Peaceful",
-        "purpose": "A premium lifestyle brand offering handcrafted incense and wellness products designed to create calm and mindful experiences.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Almost Peaceful is a Shopify-powered relationship education platform that helps couples strengthen communication, build healthier relationships, and prepare for long-term marriage through interactive workshops, relationship coaching, corporate wellness programs, and educational products. The platform combines digital experiences with science-backed relationship methodologies to make personal growth more accessible and engaging.",
+        "challenge": "The client required more than a traditional marketing website. They needed a scalable Shopify platform capable of promoting workshops, managing program registrations, showcasing coaching services, selling relationship-focused products, and communicating complex educational content through an intuitive user experience. The platform also had to build trust while encouraging visitors to take the first step toward improving their relationships.",
+        "solution": "We developed a custom Shopify platform that seamlessly combines service booking, educational content, workshop promotion, product merchandising, and conversion-focused landing pages. The solution enables visitors to discover relationship programs, purchase educational products, register for workshops, and connect with coaches through a responsive, high-performance digital experience.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Workshop Registration",
+            "Relationship Coaching Pages",
+            "Corporate Wellness Programs",
+            "Digital Product Sales",
+            "Custom Landing Pages",
+            "Educational Blog",
+            "Service Booking Experience",
+            "Responsive Shopify Storefront",
+            "Performance Optimization",
+            "Scalable Content Management"
         ],
-        "country": "UAE",
+        "country": "Singapore",
         "caseStudy": {
-            "overview": "Almost Peaceful needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Almost Peaceful partnered with us to build a digital platform that reflects its mission of helping couples build stronger, healthier relationships. Rather than creating a conventional Shopify storefront, the objective was to develop a service-driven platform that combines educational content, workshop registrations, coaching services, and physical products within one cohesive experience. We delivered a modern Shopify solution that makes it easy for visitors to explore relationship programs, register for workshops, purchase educational resources, and engage with the brand through an intuitive and conversion-focused customer journey.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Workshop Registration System",
+                "Service-Based eCommerce",
+                "Landing Page Development",
+                "Educational Content Platform",
+                "Product Merchandising",
+                "Conversion Optimization",
+                "Responsive Shopify Architecture"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Almost Peaceful to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Customer Journey Research",
+                    "description": "We worked closely with the Almost Peaceful team to understand how couples discover relationship resources, evaluate coaching programs, and register for workshops. By mapping the complete customer journey, we designed a platform that builds trust through educational content while guiding visitors toward consultations, workshop registrations, and product purchases."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Shopify Experience Development",
+                    "description": "Using Shopify, we developed a service-oriented platform that combines workshop registration, coaching information, product merchandising, educational blogs, and corporate wellness programs within a unified experience. Every page was optimized to clearly communicate the value of each service while simplifying navigation and encouraging user engagement."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Scalability & Growth",
+                    "description": "The platform was optimized for speed, mobile responsiveness, and future scalability. We created flexible content structures, conversion-focused landing pages, and a scalable Shopify architecture capable of supporting new workshops, coaching programs, digital resources, and future product launches without compromising performance."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Delivered a modern Shopify platform that combines education, coaching, workshops, and eCommerce within one seamless experience.",
+                "Simplified workshop registrations and service discovery through intuitive navigation and conversion-focused landing pages.",
+                "Created a responsive digital experience optimized for couples exploring relationship programs across all devices.",
+                "Built a scalable Shopify architecture capable of supporting future workshops, coaching services, and educational resources.",
+                "Strengthened brand credibility through premium design, educational storytelling, and structured content presentation.",
+                "Established a long-term digital foundation for expanding relationship education and wellness programs."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss understood that our platform was about transforming lives, not simply selling services. They created a beautiful Shopify experience that communicates our mission, simplifies workshop registrations, and makes it easy for couples to engage with our programs. The result perfectly reflects the values of Almost Peaceful.",
                 "author": "Management Team",
                 "position": "Almost Peaceful"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "impetus-health",
         "name": "Impetus Health",
@@ -2163,44 +2618,68 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://impetushealth.in/",
         "client": "Impetus Health",
-        "purpose": "A healthcare eCommerce platform providing trusted wellness, nutrition, and healthcare products for healthier living.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Impetus is a Shopify-powered sports and fitness brand offering premium workout accessories, performance apparel, recovery gear, sports supports, bottles, shakers, and training essentials. The platform delivers a modern direct-to-consumer shopping experience designed for athletes, gym enthusiasts, and active lifestyles.",
+        "challenge": "The client required a scalable Shopify storefront capable of showcasing a growing catalog of fitness accessories and activewear while maintaining fast performance during promotional campaigns and seasonal sales. The platform also needed to communicate product quality, improve product discovery, and provide a seamless shopping experience across desktop and mobile devices.",
+        "solution": "We developed a custom Shopify storefront focused on performance, product merchandising, and conversion optimization. The solution enables customers to easily browse categories, discover best-selling fitness products, purchase bundle offers, and complete secure checkouts through an intuitive and responsive shopping experience.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Sports & Fitness Product Catalog",
+            "Performance Apparel Collections",
+            "Bundle & Combo Offers",
+            "Product Reviews",
+            "Responsive Shopping Experience",
+            "Secure Shopify Checkout",
+            "Performance Optimization",
+            "Product Search & Filtering",
+            "Scalable eCommerce Architecture"
         ],
-        "country": "Brazil",
+        "country": "India",
         "caseStudy": {
-            "overview": "Impetus Health needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Impetus partnered with us to build a modern Shopify storefront that reflects the brand's commitment to helping athletes perform at their best. The objective was to create a high-performance eCommerce platform capable of showcasing fitness accessories, activewear, recovery products, and training essentials while delivering a seamless shopping experience across every device. We developed a scalable Shopify solution that combines modern product merchandising, optimized navigation, and conversion-focused design to support the brand's continued growth in the sports and fitness market.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Fitness eCommerce",
+                "Product Merchandising",
+                "Collection Management",
+                "Bundle & Combo Promotions",
+                "Performance Optimization",
+                "Responsive Storefront",
+                "Conversion Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Impetus Health to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & eCommerce Planning",
+                    "description": "We worked closely with the Impetus team to understand their product categories, customer purchasing behavior, and merchandising strategy. By analyzing the shopping journey, we designed a storefront that makes it easy for customers to discover accessories, apparel, recovery products, and promotional bundle offers."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Shopify Storefront Development",
+                    "description": "Using Shopify, we built a responsive storefront featuring organized product collections, advanced filtering, promotional sections, product reviews, and secure checkout. The interface was designed to highlight product benefits while providing customers with a fast and intuitive shopping experience."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Scalability",
+                    "description": "The storefront was optimized for speed, responsiveness, and future business growth. We improved navigation, mobile usability, collection organization, and page performance while creating a scalable Shopify architecture capable of supporting new product launches, marketing campaigns, and increasing customer traffic."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Delivered a modern Shopify storefront tailored for a sports and fitness brand.",
+                "Simplified product discovery through organized collections, category navigation, and search functionality.",
+                "Created a responsive shopping experience optimized for athletes and fitness enthusiasts across all devices.",
+                "Built a scalable Shopify architecture capable of supporting future product launches and promotional campaigns.",
+                "Improved product merchandising through dedicated collections, combo offers, and best-seller sections.",
+                "Established a high-performance eCommerce platform that supports long-term brand growth."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss helped us build an eCommerce platform that reflects the quality and performance of our products. Their team delivered a fast, scalable Shopify experience that makes it easy for customers to explore our collections and shop with confidence.",
                 "author": "Management Team",
                 "position": "Impetus Health"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "roamaly",
         "name": "Roamaly",
@@ -2210,44 +2689,68 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://roamaly.com/",
         "client": "Roamaly",
-        "purpose": "A convenient eSIM marketplace that helps travelers purchase, activate, and manage mobile data plans worldwide.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Roamaly is a Shopify-powered travel connectivity platform that enables travelers to purchase, activate, and manage eSIM plans for more than 200 countries and regions. The platform simplifies international mobile connectivity through instant digital activation, flexible data plans, and a seamless purchasing experience, eliminating expensive roaming charges and physical SIM card replacements.",
+        "challenge": "International travelers often face expensive roaming fees, confusing mobile plans, and complicated SIM card replacements when visiting multiple countries. Roamaly required a high-performance Shopify platform capable of educating users about eSIM technology, simplifying plan selection, supporting destination-based purchasing, and delivering a frictionless checkout experience for a global customer base.",
+        "solution": "We developed a conversion-focused Shopify storefront that combines destination-based browsing, eSIM plan discovery, educational content, responsive design, and streamlined purchasing into one intuitive experience. The platform enables customers to quickly compare plans, understand device compatibility, purchase digital eSIMs, and stay connected worldwide with minimal setup.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Destination-Based eSIM Marketplace",
+            "Local, Regional & Global Data Plans",
+            "Interactive Plan Discovery",
+            "Device Compatibility Guide",
+            "Responsive Shopify Storefront",
+            "Secure Digital Checkout",
+            "Travel-Focused Landing Pages",
+            "Educational FAQ & Setup Guides",
+            "Performance Optimization",
+            "Scalable Global eCommerce Architecture"
         ],
-        "country": "USA",
+        "country": "United Kingdom",
         "caseStudy": {
-            "overview": "Roamaly needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Roamaly partnered with us to build a modern Shopify platform that simplifies how travelers stay connected around the world. The objective was to create an intuitive digital experience where customers could quickly find destination-specific eSIM plans, understand device compatibility, purchase data packages, and activate their connectivity before or during travel. We delivered a scalable Shopify solution that combines educational content, conversion-focused design, and high-performance architecture to support a growing international customer base.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Digital Product Commerce",
+                "Travel eCommerce Experience",
+                "Destination-Based Product Catalog",
+                "Conversion Optimization",
+                "Performance Optimization",
+                "Responsive Storefront Development",
+                "Scalable Shopify Architecture"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Roamaly to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Traveler Experience Research",
+                    "description": "We collaborated with the Roamaly team to understand how travelers research connectivity options before international trips. By mapping the customer journey, we designed an experience that reduces confusion around eSIM technology while helping users quickly identify the most suitable plan based on destination, coverage, and travel duration."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Shopify Experience Development",
+                    "description": "Using Shopify, we developed a modern storefront featuring destination-specific plans, regional and global packages, educational content, device compatibility information, and streamlined purchasing flows. The interface was optimized to make digital products easy to understand while reducing friction throughout the buying process."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance, Scalability & Global Commerce",
+                    "description": "The platform was engineered for fast performance, responsive mobile experiences, and future international expansion. We optimized navigation, page loading, digital product organization, and scalable storefront architecture to support growing traffic, additional destinations, and future product offerings."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Delivered a modern Shopify platform for selling digital travel connectivity products worldwide.",
+                "Simplified eSIM plan discovery through destination-based navigation and intuitive purchasing flows.",
+                "Created a responsive shopping experience optimized for travelers across desktop and mobile devices.",
+                "Built a scalable Shopify architecture capable of supporting expanding global coverage and digital products.",
+                "Improved customer education through structured guides, FAQs, and device compatibility resources.",
+                "Established a high-performance eCommerce foundation for long-term international growth."
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a Shopify experience that makes purchasing travel connectivity simple and intuitive. Their team created a scalable platform that clearly communicates our products while helping travelers quickly find the right eSIM plan for their destination.",
                 "author": "Management Team",
                 "position": "Roamaly"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "kids-posters",
         "name": "Kids Posters",
@@ -2257,44 +2760,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://kidsposters.com.au/",
         "client": "Kids Posters",
-        "purpose": "An online store offering educational and decorative posters designed to inspire creativity and learning for children.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered eCommerce store offering beautifully illustrated kids' posters, framed prints, wall stickers, wallpapers, height charts, and personalized room décor designed to inspire creativity and brighten children's spaces.",
+        "challenge": "The client required a modern Shopify storefront capable of showcasing hundreds of children's décor products while delivering an intuitive shopping experience, product personalization, smooth category navigation, and a mobile-first design that encourages conversions.",
+        "solution": "We developed a customized Shopify storefront with organized product collections, streamlined navigation, responsive layouts, optimized product pages, and a seamless purchasing experience. The solution highlights the brand's unique artwork while making it easy for parents to discover, personalize, and purchase products.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Product Personalization",
+            "Collection-Based Navigation",
+            "Mobile Responsive Design",
+            "Fast Shopping Experience",
+            "Secure Checkout"
         ],
-        "country": "Germany",
+        "country": "Australia",
         "caseStudy": {
-            "overview": "Kids Posters needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Kids Posters is an Australian eCommerce brand specializing in premium wall décor for children's rooms. The objective was to build a visually engaging Shopify experience that showcases original artwork, simplifies product discovery, and provides customers with a smooth purchasing journey across desktop and mobile devices.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Kids Décor eCommerce",
+                "Product Personalization",
+                "Collection Management",
+                "Visual Product Merchandising",
+                "Custom Product Pages",
+                "Responsive Storefront",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Kids Posters to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Store Planning",
+                    "description": "We analyzed the product catalog, customer journey, and category structure to organize posters, wall stickers, wallpapers, height charts, and personalized products into an intuitive shopping experience."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Shopify Store Development",
+                    "description": "We built a responsive Shopify storefront with clean product pages, optimized collections, easy navigation, personalization support, and a streamlined checkout process to improve usability and conversions."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Launch",
+                    "description": "Before launch, we optimized the store for speed, mobile responsiveness, and overall shopping performance, ensuring customers could browse collections and complete purchases quickly across all devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Improved product discovery with organized collections",
+                "Enhanced mobile shopping experience",
+                "Faster page loading across the storefront",
+                "Simplified customer journey from browsing to checkout",
+                "Professional and scalable Shopify eCommerce platform"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify store perfectly represents our brand and makes it much easier for customers to browse our collections and purchase personalized products. The shopping experience feels modern, fast, and intuitive.",
                 "author": "Management Team",
                 "position": "Kids Posters"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "the-pawcan",
         "name": "The Pawcan",
@@ -2304,44 +2826,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.thepawcan.com/",
         "client": "The Pawcan",
-        "purpose": "A pet-focused eCommerce platform offering premium products, accessories, and essentials for pet owners.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered eCommerce brand offering an innovative pet waste disposal solution designed to eliminate odors, improve convenience, and help pet owners maintain cleaner outdoor spaces.",
+        "challenge": "The client needed a premium Shopify storefront that clearly communicated the value of a unique pet hygiene product while building customer trust, educating visitors, and creating a seamless path from product discovery to checkout.",
+        "solution": "We developed a custom Shopify storefront focused on product storytelling, clean visual design, mobile-first shopping, optimized product pages, and a frictionless checkout experience. The platform highlights the product's unique benefits while providing a fast and intuitive purchasing journey.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Product-Focused Landing Pages",
+            "Mobile Responsive Design",
+            "Optimized Shopping Experience",
+            "Secure Shopify Checkout",
+            "Performance Optimization"
         ],
         "country": "USA",
         "caseStudy": {
-            "overview": "The Pawcan needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "The Pawcan is an innovative pet care brand offering a modern solution for pet waste disposal. The objective was to build a Shopify store that effectively showcases the product's unique value, educates customers through compelling visuals and messaging, and delivers a seamless shopping experience across all devices.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Pet Care eCommerce",
+                "Product Storytelling",
+                "Landing Page Optimization",
+                "Product Merchandising",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at The Pawcan to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We analyzed the customer journey, product positioning, and purchasing behavior to create a storefront focused on educating visitors, highlighting key product benefits, and building confidence before purchase."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Shopify Store Development",
+                    "description": "Our team developed a responsive Shopify experience with engaging product pages, intuitive navigation, optimized content sections, and a streamlined purchasing flow that keeps the product as the center of attention."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Optimization & Launch",
+                    "description": "Before launch, we optimized the store for speed, mobile usability, SEO fundamentals, and checkout performance to ensure a smooth shopping experience and long-term scalability."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Clear product-focused shopping experience",
+                "Improved customer engagement through product storytelling",
+                "Optimized mobile browsing and purchasing",
+                "Fast-loading Shopify storefront",
+                "Scalable eCommerce platform for future product expansion"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The Shopify store perfectly communicates our product's value while providing a smooth and professional shopping experience. The final result reflects our brand and makes it easier for customers to understand, trust, and purchase our solution.",
                 "author": "Management Team",
                 "position": "The Pawcan"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "recreation-beauty",
         "name": "Recreation Beauty",
@@ -2351,44 +2892,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://recreationbeauty.com/",
         "client": "Recreation Beauty",
-        "purpose": "A beauty and skincare brand offering high-quality products designed to enhance self-care and confidence.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A premium Australian fragrance brand offering clean, vegan perfumes, perfume oils, and botanical beauty products crafted with sustainable ingredients and inspired by the lifestyle of Bondi Beach.",
+        "challenge": "The client required a premium Shopify storefront that reflected the luxury identity of the brand while making it easy for customers to discover fragrances, explore scent collections, and confidently purchase products online across all devices.",
+        "solution": "We developed a custom Shopify experience focused on elegant product presentation, immersive brand storytelling, optimized collection pages, mobile-first shopping, and a streamlined checkout process. The storefront highlights the brand's clean beauty philosophy while delivering a fast and intuitive shopping journey.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Luxury Brand Experience",
+            "Fragrance Collection Navigation",
+            "Mobile Responsive Design",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
-        "country": "Germany",
+        "country": "Australia",
         "caseStudy": {
-            "overview": "Recreation Beauty needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Recreation Beauty is an award-winning Australian fragrance house creating clean, vegan, and cruelty-free perfumes inspired by Bondi Beach. The goal was to build a premium Shopify store that communicates the brand's unique identity, showcases fragrance collections through beautiful visual storytelling, and provides customers with a seamless shopping experience from discovery to checkout.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Luxury Beauty eCommerce",
+                "Fragrance Collection Management",
+                "Visual Product Merchandising",
+                "Brand Storytelling",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Recreation Beauty to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Brand Discovery & UX Strategy",
+                    "description": "We analyzed the brand identity, fragrance collections, and customer journey to design a shopping experience that highlights luxury, sustainability, and the emotional connection behind every fragrance."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team built a responsive Shopify storefront featuring elegant product pages, organized fragrance collections, intuitive navigation, optimized product discovery, and a smooth purchasing flow across desktop and mobile devices."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image performance, SEO fundamentals, and checkout usability to ensure a premium shopping experience that supports future business growth."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Premium luxury shopping experience",
+                "Improved fragrance collection discovery",
+                "Optimized mobile shopping journey",
+                "Fast-loading Shopify storefront",
+                "Scalable eCommerce platform for future product launches"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify experience beautifully represents our brand and makes exploring our fragrance collections effortless. The store feels premium, performs smoothly, and provides exactly the shopping experience we envisioned for our customers.",
                 "author": "Management Team",
                 "position": "Recreation Beauty"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "tango-swim",
         "name": "Tango Swim",
@@ -2398,44 +2958,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.tangoswim.com.au/",
         "client": "Tango Swim",
-        "purpose": "An online swimwear store featuring stylish, comfortable, and premium swimwear collections for modern lifestyles.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A premium Australian Shopify swimwear brand offering sustainable bikinis, one-piece swimsuits, and resort wear designed to empower confident women through bold, fashion-forward designs and exceptional quality.",
+        "challenge": "The client needed a premium Shopify storefront that captured the brand's luxury identity while making it easy for customers to browse collections, discover the perfect fit, and enjoy a seamless shopping experience across desktop and mobile devices.",
+        "solution": "We developed a custom Shopify storefront focused on immersive brand storytelling, elegant product presentation, intuitive collection navigation, mobile-first shopping, and a streamlined checkout experience. The result is a visually engaging online store that reflects the brand's premium positioning while optimizing performance and usability.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Luxury Fashion Experience",
+            "Collection-Based Product Navigation",
+            "Mobile Responsive Design",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
-        "country": "Brazil",
+        "country": "Australia",
         "caseStudy": {
-            "overview": "Tango Swim needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Tango Swim is an Australian luxury swimwear brand dedicated to creating sustainable, fashion-forward swimwear that empowers women to feel confident in their own skin. The goal was to build a premium Shopify experience that showcases the brand's collections through high-quality visuals, compelling storytelling, and an effortless shopping journey that reflects its modern lifestyle identity.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Luxury Swimwear eCommerce",
+                "Collection Management",
+                "Visual Product Merchandising",
+                "Sustainable Fashion Experience",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Tango Swim to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Brand Discovery & UX Strategy",
+                    "description": "We studied the brand's identity, target audience, and customer journey to design a shopping experience that highlights premium swimwear collections, sustainability, and the confidence-driven lifestyle behind the brand."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring visually rich product pages, organized swimwear collections, intuitive filtering, optimized navigation, and a smooth purchasing flow across all devices."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image delivery, SEO fundamentals, and checkout usability to ensure customers enjoy a fast, premium shopping experience while supporting future product launches."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Premium luxury shopping experience",
+                "Improved collection discovery and navigation",
+                "Optimized mobile shopping journey",
+                "Fast-loading Shopify storefront",
+                "Scalable eCommerce platform for future collections"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify store perfectly represents our brand and delivers the premium shopping experience we envisioned. The design, performance, and user journey make it effortless for customers to discover our collections and shop with confidence.",
                 "author": "Management Team",
                 "position": "Tango Swim"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "tilit",
         "name": "Tilit",
@@ -2445,44 +3024,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.tilitnyc.com/",
         "client": "Tilit",
-        "purpose": "A professional workwear platform providing high-quality apparel and gear for chefs, restaurants, and hospitality teams.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A premium Shopify-powered hospitality workwear brand offering chef coats, aprons, uniforms, and professional apparel designed for chefs, restaurants, hotels, cafés, and hospitality teams.",
+        "challenge": "The client needed a premium Shopify storefront that could showcase an extensive range of professional workwear while supporting both individual customers and wholesale hospitality businesses. The experience needed to reflect the brand's craftsmanship, simplify product discovery, and provide an effortless shopping journey across all devices.",
+        "solution": "We developed a custom Shopify storefront focused on clean navigation, premium product presentation, responsive design, optimized collection pages, and a streamlined purchasing experience. The platform effectively highlights the brand's workwear collections while supporting both retail and business customers.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Wholesale-Friendly Shopping Experience",
+            "Collection-Based Product Navigation",
+            "Mobile Responsive Design",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
-        "country": "Australia",
+        "country": "USA",
         "caseStudy": {
-            "overview": "Tilit needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "TILIT is a New York-based hospitality workwear brand creating premium uniforms for chefs, restaurants, hotels, cafés, and hospitality professionals. The objective was to build a modern Shopify experience that reflects the brand's craftsmanship, showcases its extensive product catalog, and provides a seamless shopping journey for both individual professionals and hospitality teams.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Hospitality Workwear eCommerce",
+                "Wholesale & Team Ordering",
+                "Collection Management",
+                "Visual Product Merchandising",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Tilit to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & UX Strategy",
+                    "description": "We analyzed the customer journey, product categories, and wholesale requirements to create an intuitive shopping experience that allows hospitality professionals to quickly discover the right uniforms and accessories."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team built a responsive Shopify storefront featuring organized collections, detailed product pages, intuitive navigation, wholesale-friendly browsing, and an optimized purchasing flow that delivers a premium customer experience."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Launch",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image delivery, SEO fundamentals, and checkout usability to ensure a fast, reliable, and scalable eCommerce experience across desktop and mobile devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Professional shopping experience for hospitality teams",
+                "Improved product discovery through organized collections",
+                "Optimized mobile browsing and purchasing",
+                "Fast-loading Shopify storefront",
+                "Scalable platform supporting both retail and wholesale growth"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify store perfectly reflects our brand and makes it easy for hospitality professionals to explore our collections and place orders. The experience is modern, fast, and aligns with the quality of our products.",
                 "author": "Management Team",
                 "position": "Tilit"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "honey-stinger",
         "name": "Honey Stinger",
@@ -2492,44 +3090,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://honeystinger.com/",
         "client": "Honey Stinger",
-        "purpose": "A sports nutrition brand offering energy snacks, gels, and supplements designed for athletes and active lifestyles.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A premium Shopify-powered sports nutrition brand offering energy waffles, gels, chews, bars, and performance fuel designed to help athletes prepare, perform, and recover during training and competition.",
+        "challenge": "The client needed a high-performance Shopify storefront capable of showcasing a broad range of sports nutrition products while supporting subscriptions, product discovery, and a seamless shopping experience for athletes across desktop and mobile devices.",
+        "solution": "We developed a custom Shopify storefront focused on performance, intuitive product categorization, subscription-ready shopping, responsive design, and an optimized checkout experience. The platform effectively communicates the brand's performance-focused identity while making it easy for customers to discover and purchase the right nutrition products.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Subscription-Ready Shopping",
+            "Performance Product Navigation",
+            "Mobile Responsive Design",
+            "Optimized Shopping Experience",
+            "Secure Shopify Checkout"
         ],
-        "country": "Brazil",
+        "country": "USA",
         "caseStudy": {
-            "overview": "Honey Stinger needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Honey Stinger is a leading U.S. sports nutrition brand trusted by thousands of professional and collegiate teams. The objective was to build a fast, modern Shopify experience that highlights the brand's extensive performance nutrition catalog, simplifies product discovery, and provides athletes with a seamless purchasing journey across all devices.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Sports Nutrition eCommerce",
+                "Subscription Integration",
+                "Product Merchandising",
+                "Collection Management",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Honey Stinger to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Customer Journey",
+                    "description": "We analyzed the purchasing journey of endurance athletes, product categories, and subscription requirements to create a storefront that makes it easy to browse, compare, and select the right performance fuel."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront with organized collections, detailed product pages, subscription-friendly purchasing, intuitive navigation, and a streamlined checkout process optimized for both new and returning customers."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, product imagery, SEO fundamentals, and checkout performance to deliver a fast, reliable shopping experience capable of supporting future product launches and growing customer demand."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Improved product discovery across nutrition categories",
+                "Optimized shopping experience for athletes",
+                "Fast-loading Shopify storefront",
+                "Seamless mobile purchasing experience",
+                "Scalable eCommerce platform supporting subscriptions and future product expansion"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify experience perfectly represents our brand and makes it simple for athletes to find the right products and complete their purchases. The storefront is fast, intuitive, and aligns with the performance standards our customers expect.",
                 "author": "Management Team",
                 "position": "Honey Stinger"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "moanarose",
         "name": "Moanarose",
@@ -2539,44 +3156,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.moanarose.com/",
         "client": "Moanarose",
-        "purpose": "A fashion eCommerce platform offering stylish clothing and accessories inspired by modern trends and individuality.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered women's fashion brand offering premium activewear, resort wear, and lifestyle clothing inspired by tropical living, effortless style, and everyday comfort.",
+        "challenge": "The client required a premium Shopify storefront that reflected the brand's elegant identity while making it easy for customers to explore seasonal collections, discover new arrivals, and enjoy a seamless shopping experience across desktop and mobile devices.",
+        "solution": "We developed a custom Shopify storefront focused on immersive visual storytelling, elegant collection pages, intuitive navigation, responsive design, and an optimized checkout experience. The platform highlights the brand's premium lifestyle aesthetic while delivering a smooth and engaging customer journey.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Fashion Collection Navigation",
+            "Mobile Responsive Design",
+            "Premium Brand Experience",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
-        "country": "Australia",
+        "country": "Indonesia",
         "caseStudy": {
-            "overview": "Moanarose needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Moanarose is a Bali-based women's fashion brand creating premium activewear, resort wear, and lifestyle apparel inspired by tropical living. The objective was to build a visually engaging Shopify experience that showcases new collections through premium imagery, strengthens the brand identity, and provides customers with a seamless shopping journey from product discovery to checkout.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Fashion eCommerce",
+                "Collection Management",
+                "Visual Product Merchandising",
+                "Lifestyle Brand Storytelling",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Moanarose to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Brand Discovery & UX Strategy",
+                    "description": "We analyzed the brand identity, customer journey, and product collections to create a shopping experience that reflects the relaxed luxury of the Moanarose lifestyle while making product discovery simple and intuitive."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring beautifully organized collections, detailed product pages, intuitive navigation, mobile-first layouts, and a streamlined purchasing experience designed for modern fashion shoppers."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image performance, SEO fundamentals, and checkout usability to ensure a fast, reliable, and premium shopping experience across all devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Premium fashion shopping experience",
+                "Improved collection discovery and navigation",
+                "Optimized mobile purchasing journey",
+                "Fast-loading Shopify storefront",
+                "Scalable eCommerce platform for future seasonal collections"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The Shopify store perfectly captures our brand identity and delivers the premium shopping experience we envisioned. Customers can easily browse our collections, and the entire experience feels modern, elegant, and effortless.",
                 "author": "Management Team",
                 "position": "Moanarose"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "prime-nails",
         "name": "Prime Nails",
@@ -2586,44 +3222,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://getprimenails.com/",
         "client": "Prime Nails",
-        "purpose": "A beauty brand specializing in premium press-on nails and nail care products for salon-quality results at home.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered beauty brand offering premium press-on nails with trend-forward designs that deliver salon-quality manicures in minutes from the comfort of home.",
+        "challenge": "The client needed a modern Shopify storefront that could showcase an expanding collection of press-on nail designs while creating a visually engaging shopping experience. The store also needed to simplify product discovery, highlight new arrivals and bundles, and provide a seamless mobile-first purchasing journey.",
+        "solution": "We developed a custom Shopify storefront focused on premium product presentation, intuitive collection navigation, responsive design, optimized product pages, and a frictionless checkout experience. The result is a fast, visually appealing eCommerce platform that helps customers easily browse, compare, and purchase their favorite nail styles.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Trend-Based Product Collections",
+            "Bundle Shopping Experience",
+            "Mobile Responsive Design",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
-        "country": "Australia",
+        "country": "USA",
         "caseStudy": {
-            "overview": "Prime Nails needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Prime Nails is a beauty brand focused on making salon-quality manicures accessible through premium press-on nails. The goal was to build a Shopify experience that reflects the brand's modern aesthetic, showcases new collections effectively, and provides customers with a smooth shopping journey from product discovery to checkout.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Beauty eCommerce",
+                "Press-On Nail Collections",
+                "Product Merchandising",
+                "Bundle & Combo Promotions",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Prime Nails to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Brand Discovery & UX Strategy",
+                    "description": "We evaluated the customer journey, product catalog, and shopping behavior to create an intuitive storefront that highlights trending nail collections, featured products, and bundle offers while keeping navigation simple and engaging."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring organized product collections, visually rich product pages, quick product discovery, optimized mobile layouts, and a streamlined purchasing experience tailored for beauty shoppers."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image delivery, SEO fundamentals, and checkout performance to ensure a fast, reliable, and enjoyable shopping experience across all devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Modern and engaging beauty shopping experience",
+                "Improved product discovery through organized collections",
+                "Optimized mobile shopping journey",
+                "Fast-loading Shopify storefront",
+                "Scalable platform for future product launches and seasonal collections"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify store perfectly reflects our brand and makes shopping for press-on nails simple, enjoyable, and visually engaging. The customer experience is smooth from browsing to checkout, and the final result aligns perfectly with our vision.",
                 "author": "Management Team",
                 "position": "Prime Nails"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "source-bulk-foods",
         "name": "The Source Bulk Foods",
@@ -2633,44 +3288,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://thesourcebulkfoods.ie/",
         "client": "The Source Bulk Foods",
-        "purpose": "A sustainable grocery platform offering bulk food products, healthy ingredients, and eco-friendly shopping options.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered zero-waste grocery store offering bulk wholefoods, organic ingredients, healthy snacks, pantry essentials, and sustainable household products that promote environmentally conscious shopping.",
+        "challenge": "The client needed a modern Shopify storefront capable of showcasing a large catalog of bulk food and eco-friendly products while making it easy for customers to browse categories, purchase flexible quantities, and enjoy a seamless online shopping experience across all devices.",
+        "solution": "We developed a custom Shopify storefront focused on organized product categories, intuitive navigation, responsive design, optimized product pages, and a streamlined checkout experience. The platform reflects the brand's sustainability mission while making online bulk shopping simple, fast, and convenient.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Large Product Catalog Management",
+            "Collection-Based Navigation",
+            "Mobile Responsive Design",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
-        "country": "Australia",
+        "country": "Ireland",
         "caseStudy": {
-            "overview": "The Source Bulk Foods needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "The Source Bulk Foods Ireland is a leading zero-waste grocery retailer offering hundreds of bulk food products, organic ingredients, healthy snacks, and sustainable lifestyle essentials. The objective was to build a Shopify experience that reflects the brand's commitment to sustainability while providing customers with an intuitive and efficient online shopping journey.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Bulk Grocery eCommerce",
+                "Large Product Catalog",
+                "Sustainable Shopping Experience",
+                "Collection Management",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at The Source Bulk Foods to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Shopping Experience Strategy",
+                    "description": "We analyzed the product catalog, customer shopping behavior, and sustainability-focused buying journey to organize hundreds of products into easy-to-navigate collections that simplify product discovery."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring structured product categories, detailed product pages, intuitive navigation, optimized search experience, and a streamlined purchasing flow designed for both new and returning customers."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image performance, SEO fundamentals, and checkout usability to deliver a fast and reliable shopping experience across desktop and mobile devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Improved product discovery across hundreds of bulk food products",
+                "Optimized shopping experience for desktop and mobile users",
+                "Fast-loading Shopify storefront",
+                "Simplified customer journey from browsing to checkout",
+                "Scalable eCommerce platform supporting future product expansion"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify store perfectly represents our sustainability mission while making it easy for customers to browse our extensive product range and shop online. The experience is clean, intuitive, and performs exceptionally well.",
                 "author": "Management Team",
                 "position": "The Source Bulk Foods"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "beadspoint",
         "name": "Beadspoint",
@@ -2680,44 +3354,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://beadspoint.com/",
         "client": "Beadspoint",
-        "purpose": "An online marketplace for beads, jewelry-making supplies, and crafting materials for creative professionals and hobbyists.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered jewelry supply store offering premium diamonds, fine gemstones, gold and sterling silver findings, chains, charms, pendants, and jewelry-making components for professional jewelers, designers, retailers, and wholesalers.",
+        "challenge": "The client required a robust Shopify storefront capable of organizing thousands of jewelry components across multiple precious metal and gemstone categories. The platform needed to simplify product discovery, support professional buyers, and deliver a seamless shopping experience for both retail and wholesale customers.",
+        "solution": "We developed a custom Shopify storefront featuring structured product collections, intuitive category navigation, responsive layouts, optimized product pages, and a streamlined checkout experience. The platform enables customers to quickly browse an extensive catalog while maintaining a premium shopping experience across all devices.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Large Jewelry Catalog Management",
+            "Collection-Based Product Navigation",
+            "Wholesale-Friendly Shopping Experience",
+            "Mobile Responsive Design",
+            "Secure Shopify Checkout"
         ],
-        "country": "UK",
+        "country": "USA",
         "caseStudy": {
-            "overview": "Beadspoint needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Beadspoint is a leading jewelry supply manufacturer and distributor serving jewelry professionals since 1996. The goal was to create a Shopify experience capable of showcasing an extensive inventory of diamonds, gemstones, precious metal findings, chains, and jewelry components while providing customers with a fast, intuitive, and professional shopping journey.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Jewelry Supply eCommerce",
+                "Wholesale B2B Commerce",
+                "Large Product Catalog",
+                "Collection Management",
+                "Product Merchandising",
+                "Responsive Storefront",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Beadspoint to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Catalog Strategy",
+                    "description": "We analyzed the extensive product catalog and customer purchasing journey to organize thousands of jewelry components into structured collections that simplify browsing for designers, manufacturers, retailers, and wholesalers."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront with detailed product pages, organized collections, intuitive navigation, optimized search experience, and a streamlined purchasing flow designed for both retail and wholesale customers."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, product imagery, SEO fundamentals, and checkout performance to deliver a fast and reliable shopping experience across desktop and mobile devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Improved navigation across a large jewelry product catalog",
+                "Enhanced shopping experience for retail and wholesale customers",
+                "Optimized mobile browsing and purchasing",
+                "Fast-loading Shopify storefront",
+                "Scalable eCommerce platform supporting future product expansion"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify store makes it easy for our customers to browse thousands of jewelry components while maintaining the premium experience our brand is known for. The storefront is fast, organized, and perfectly supports both retail and wholesale buyers.",
                 "author": "Management Team",
                 "position": "Beadspoint"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "vacurect",
         "name": "Vacurect",
@@ -2727,44 +3420,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.vacurect-india.com/",
         "client": "Vacurect",
-        "purpose": "A healthcare platform providing innovative medical devices and solutions designed to improve men's health and wellness.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered men's health brand offering FDA-approved vacuum erection devices and accessories designed to provide a safe, non-invasive, and drug-free solution for erectile dysfunction while ensuring complete privacy and customer confidence.",
+        "challenge": "The client required a secure Shopify storefront capable of presenting sensitive healthcare products in a trustworthy and educational manner. The platform needed to explain complex medical information, build customer confidence, protect user privacy, and provide a seamless purchasing experience across desktop and mobile devices.",
+        "solution": "We developed a custom Shopify storefront focused on product education, intuitive navigation, responsive design, optimized product pages, and a streamlined checkout process. The platform balances informative healthcare content with a discreet shopping experience, making it easy for customers to understand the product and purchase with confidence.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Educational Product Pages",
+            "Privacy-Focused Shopping Experience",
+            "Mobile Responsive Design",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
-        "country": "UK",
+        "country": "India",
         "caseStudy": {
-            "overview": "Vacurect needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Vacurect India offers FDA-approved vacuum erection devices that provide a safe, non-invasive solution for men experiencing erectile dysfunction. The objective was to build a professional Shopify experience that educates customers, establishes trust through clear product information, and delivers a discreet, user-friendly shopping journey while maintaining a premium healthcare brand identity.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Healthcare eCommerce",
+                "Medical Product Education",
+                "Privacy-Focused Shopping",
+                "Trust & Credibility Design",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Vacurect to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Customer Experience Strategy",
+                    "description": "We analyzed the customer journey for healthcare products to create an experience that prioritizes education, privacy, trust, and easy access to detailed product information before purchase."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring structured product pages, educational content sections, intuitive navigation, optimized product discovery, and a streamlined purchasing flow that supports a confidential shopping experience."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, SEO fundamentals, image delivery, and checkout usability to ensure customers enjoy a fast, reliable, and secure shopping experience across all devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Professional and trustworthy healthcare shopping experience",
+                "Improved product education through structured content",
+                "Optimized mobile browsing and purchasing",
+                "Fast-loading Shopify storefront",
+                "Scalable eCommerce platform supporting future healthcare products"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify store presents our products in a professional and trustworthy way while making it easy for customers to learn about our solutions and shop with complete confidence and privacy. The experience perfectly reflects our brand values.",
                 "author": "Management Team",
                 "position": "Vacurect"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "hydro-peptide",
         "name": "Hydro Peptide",
@@ -2774,44 +3486,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://hydropeptide.com/",
         "client": "Hydro Peptide",
-        "purpose": "A premium skincare brand offering scientifically formulated products focused on skin health and anti-aging solutions.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A premium Shopify-powered skincare brand offering clinically formulated, peptide-based products designed to improve skin health, hydration, and visible signs of aging through science-backed ingredients and professional-grade skincare.",
+        "challenge": "The client required a premium Shopify storefront that could effectively communicate the science behind its skincare products while organizing an extensive catalog of cleansers, serums, moisturizers, masks, and treatment solutions. The experience needed to educate customers, simplify product discovery, and deliver a seamless shopping journey across all devices.",
+        "solution": "We developed a custom Shopify storefront focused on premium brand storytelling, educational product pages, intuitive collection navigation, responsive design, and an optimized checkout experience. The platform highlights HydroPeptide's science-driven skincare philosophy while making it easy for customers to discover products tailored to their skincare concerns.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Science-Driven Product Pages",
+            "Collection-Based Product Navigation",
+            "Mobile Responsive Design",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
-        "country": "Canada",
+        "country": "USA",
         "caseStudy": {
-            "overview": "Hydro Peptide needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "HydroPeptide is a professional skincare brand known for combining advanced peptide technology with clinically proven ingredients to deliver high-performance skincare solutions. The objective was to build a premium Shopify experience that educates customers, showcases comprehensive skincare collections, and creates a seamless purchasing journey while reinforcing the brand's scientific credibility.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Professional Skincare eCommerce",
+                "Science-Driven Product Education",
+                "Skin Concern-Based Navigation",
+                "Visual Product Merchandising",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Hydro Peptide to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Brand Discovery & Customer Experience Strategy",
+                    "description": "We analyzed the customer journey, skincare routines, and product categories to create a shopping experience that helps customers easily discover products based on their skin concerns while highlighting the brand's scientific approach."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring organized skincare collections, detailed educational product pages, intuitive navigation, mobile-first layouts, and a streamlined purchasing experience that supports both new and returning customers."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image delivery, SEO fundamentals, and checkout usability to ensure a fast, reliable, and premium shopping experience across desktop and mobile devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Premium skincare shopping experience",
+                "Improved product discovery through organized collections",
+                "Enhanced customer education with detailed product information",
+                "Optimized mobile shopping journey",
+                "Scalable Shopify platform supporting future product launches"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify storefront beautifully represents our brand while making it easier for customers to explore our skincare collections and understand the science behind our products. The shopping experience is elegant, intuitive, and perfectly aligned with our premium positioning.",
                 "author": "Management Team",
                 "position": "Hydro Peptide"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "boxraw",
         "name": "Boxraw",
@@ -2821,44 +3552,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://boxraw.com/",
         "client": "Boxraw",
-        "purpose": "A boxing lifestyle and performance brand providing apparel, equipment, and accessories for fighters and athletes.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered premium boxing apparel and performance brand offering boxing-specific clothing, footwear, accessories, and training essentials designed for amateur and professional fighters worldwide.",
+        "challenge": "The client needed a premium Shopify storefront capable of showcasing a diverse range of performance apparel, footwear, and boxing accessories while delivering an immersive brand experience. The platform also needed to support global customers, simplify product discovery, and maintain a seamless shopping journey across desktop and mobile devices.",
+        "solution": "We developed a custom Shopify storefront focused on premium product presentation, collection-based navigation, responsive design, optimized product pages, and a streamlined checkout experience. The platform highlights BOXRAW's athlete-first philosophy while providing customers with an intuitive and high-performance shopping experience.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Performance Apparel Collections",
+            "Collection-Based Product Navigation",
+            "Mobile Responsive Design",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
-        "country": "Australia",
+        "country": "United Kingdom",
         "caseStudy": {
-            "overview": "Boxraw needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "BOXRAW is a premium boxing lifestyle and performance brand dedicated to creating apparel and equipment specifically designed for fighters. The objective was to build a Shopify experience that reflects the brand's strong identity, showcases extensive product collections, and delivers a fast, engaging shopping journey for athletes and boxing enthusiasts around the world.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Sports Apparel eCommerce",
+                "Boxing Equipment Marketplace",
+                "Collection Management",
+                "Visual Product Merchandising",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Boxraw to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Brand Discovery & Customer Journey",
+                    "description": "We analyzed the boxing community, customer purchasing behavior, and product catalog to create a shopping experience that highlights performance apparel, training essentials, and new collections while strengthening the brand's athlete-focused identity."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring organized product collections, visually rich product pages, intuitive navigation, optimized search, and a streamlined purchasing experience tailored for boxing athletes and fitness enthusiasts."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image delivery, SEO fundamentals, and checkout usability to ensure a fast, reliable, and premium shopping experience across desktop and mobile devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Premium shopping experience for boxing athletes",
+                "Improved product discovery through organized collections",
+                "Optimized mobile shopping journey",
+                "Fast-loading Shopify storefront",
+                "Scalable eCommerce platform supporting global product launches"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify storefront captures our brand identity perfectly and provides a premium shopping experience for fighters around the world. The design, performance, and customer journey align seamlessly with the quality and purpose of our products.",
                 "author": "Management Team",
                 "position": "Boxraw"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "ultimate-ears",
         "name": "Ultimate Ears",
@@ -2868,7 +3618,7 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.revols.com/",
         "client": "Ultimate Ears",
-        "purpose": "An audio technology platform offering premium custom-fit earphones and immersive listening experiences.",
+        "description": "An audio technology platform offering premium custom-fit earphones and immersive listening experiences.",
         "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -2904,8 +3654,13 @@ export const portfolioDetailsData = [
                 "author": "Management Team",
                 "position": "Ultimate Ears"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "ruumi-art",
         "name": "Ruumi Art",
@@ -2915,44 +3670,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.ruumi.art/",
         "client": "Ruumi Art",
-        "purpose": "An online art marketplace connecting artists and collectors through unique contemporary artwork and creative products.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered online art gallery offering premium art prints, framed artwork, and curated collections from talented artists for homes, offices, hospitality spaces, and commercial interiors.",
+        "challenge": "The client needed a premium Shopify storefront capable of showcasing artwork from multiple artists while delivering a visually immersive browsing experience. The platform also needed to simplify artwork discovery through curated collections, artist profiles, and intuitive navigation while maintaining a seamless shopping experience across all devices.",
+        "solution": "We developed a custom Shopify storefront focused on elegant artwork presentation, collection-based navigation, responsive layouts, optimized product pages, and a streamlined checkout experience. The platform reflects Ruümi Art's premium brand identity while making it easy for customers to discover and purchase artwork for residential and commercial spaces.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Artist-Based Collections",
+            "Curated Artwork Navigation",
+            "Mobile Responsive Design",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
         "country": "Australia",
         "caseStudy": {
-            "overview": "Ruumi Art needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Ruümi Art is a curated online art gallery bringing together premium artwork from multiple artists for residential and commercial interiors. The objective was to create a visually engaging Shopify experience that showcases curated collections, highlights individual artists, and provides customers with a seamless journey from artwork discovery to purchase.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Online Art Gallery",
+                "Artist Collection Management",
+                "Curated Artwork Merchandising",
+                "Interior Décor eCommerce",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Ruumi Art to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Gallery Strategy",
+                    "description": "We analyzed the artwork catalog, artist collections, and customer journey to create a gallery experience that makes browsing paintings, prints, and featured collections simple, inspiring, and intuitive."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring artist-based collections, detailed artwork pages, intuitive navigation, optimized search functionality, and a streamlined purchasing experience designed for art collectors, homeowners, and interior designers."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, high-resolution image delivery, responsive layouts, SEO fundamentals, and checkout usability to ensure customers enjoy a fast, premium shopping experience across desktop and mobile devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Premium online gallery experience",
+                "Improved artwork discovery through curated collections",
+                "Enhanced artist visibility with dedicated collection pages",
+                "Optimized mobile browsing and purchasing",
+                "Scalable Shopify platform supporting future artists and artwork collections"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The Shopify store beautifully reflects our vision of making premium art accessible online. Customers can easily explore curated collections, discover talented artists, and enjoy a seamless shopping experience that truly represents our brand.",
                 "author": "Management Team",
                 "position": "Ruumi Art"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "ludic",
         "name": "Ludic",
@@ -2962,44 +3736,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://ludic.life/",
         "client": "Ludic",
-        "purpose": "A wellness-focused brand offering innovative products that help users improve sleep quality, recovery, and daily performance.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered premium footwear and lifestyle brand offering sneakers, loafers, sliders, flip-flops, and everyday essentials that combine contemporary design, comfort, and affordability for modern consumers.",
+        "challenge": "The client needed a visually engaging Shopify storefront capable of showcasing multiple footwear collections while delivering a premium shopping experience. The platform needed to simplify product discovery, highlight new launches, support mobile shoppers, and provide a seamless purchasing journey across all devices.",
+        "solution": "We developed a custom Shopify storefront focused on premium product presentation, collection-based navigation, responsive design, optimized product pages, and a streamlined checkout experience. The platform effectively showcases the brand's modern identity while making it easy for customers to browse and purchase footwear collections.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Footwear Collection Navigation",
+            "Mobile Responsive Design",
+            "Premium Brand Experience",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
-        "country": "Germany",
+        "country": "India",
         "caseStudy": {
-            "overview": "Ludic needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "LUDIC is a modern footwear and lifestyle brand focused on creating stylish, comfortable, and affordable footwear for everyday wear. The objective was to build a premium Shopify experience that showcases the brand's collections through engaging visuals, simplifies product discovery, and delivers a seamless shopping journey from browsing to checkout.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Footwear & Lifestyle eCommerce",
+                "Collection Management",
+                "Visual Product Merchandising",
+                "Lifestyle Brand Storytelling",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Ludic to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Brand Discovery & UX Strategy",
+                    "description": "We analyzed the brand identity, target audience, and product catalog to create an intuitive shopping experience that highlights new collections, trending styles, and seasonal launches while reinforcing the brand's youthful personality."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring organized footwear collections, detailed product pages, intuitive navigation, mobile-first layouts, and a streamlined purchasing experience optimized for fashion-focused shoppers."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image delivery, SEO fundamentals, and checkout usability to ensure a fast, reliable, and premium shopping experience across desktop and mobile devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Premium footwear shopping experience",
+                "Improved product discovery through organized collections",
+                "Optimized mobile shopping journey",
+                "Fast-loading Shopify storefront",
+                "Scalable eCommerce platform supporting future product launches"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify storefront perfectly reflects our brand identity and delivers the premium shopping experience we wanted for our customers. The product presentation, navigation, and overall performance make exploring our collections effortless.",
                 "author": "Management Team",
                 "position": "Ludic"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "vegamour",
         "name": "Vegamour",
@@ -3009,44 +3802,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://vegamour.com/",
         "client": "Vegamour",
-        "purpose": "A clean beauty brand specializing in plant-based hair wellness products that support healthier, fuller-looking hair.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered premium hair wellness brand offering clinically tested, plant-based hair growth, scalp care, lash, brow, and wellness products designed to support healthier, fuller-looking hair through clean, vegan ingredients.",
+        "challenge": "The client needed a premium Shopify storefront capable of showcasing a diverse range of hair wellness products while educating customers about personalized routines, clinically tested ingredients, and subscription options. The platform also needed to create a seamless shopping experience across desktop and mobile devices while reinforcing the brand's science-backed credibility.",
+        "solution": "We developed a custom Shopify storefront focused on premium product storytelling, educational content, collection-based navigation, responsive design, optimized product pages, and a frictionless checkout experience. The platform makes it easy for customers to discover products based on their hair concerns while supporting subscriptions and long-term customer engagement.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Hair Care Collection Navigation",
+            "Educational Product Pages",
+            "Subscription-Ready Shopping",
+            "Mobile Responsive Design",
+            "Secure Shopify Checkout"
         ],
-        "country": "UAE",
+        "country": "USA",
         "caseStudy": {
-            "overview": "Vegamour needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Vegamour is a leading hair wellness brand dedicated to helping people achieve healthier, fuller-looking hair through clean, vegan, and clinically tested formulations. The objective was to create a premium Shopify experience that educates customers, showcases personalized hair care solutions, and delivers a seamless shopping journey while reinforcing the brand's science-driven identity.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Hair Wellness eCommerce",
+                "Subscription Integration",
+                "Personalized Product Discovery",
+                "Science-Driven Product Education",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Vegamour to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Brand Discovery & Customer Journey",
+                    "description": "We analyzed the customer journey, product categories, and educational content to create an intuitive shopping experience that helps customers discover personalized hair wellness solutions based on their individual needs."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring organized product collections, detailed educational product pages, intuitive navigation, subscription-ready purchasing, and a streamlined checkout experience optimized for both new and returning customers."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image delivery, SEO fundamentals, and checkout usability to deliver a fast, premium shopping experience across desktop and mobile devices while supporting future product launches."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Premium hair wellness shopping experience",
+                "Improved product discovery through organized collections",
+                "Enhanced customer education with science-backed product information",
+                "Optimized mobile shopping and subscription experience",
+                "Scalable Shopify platform supporting future product launches"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify storefront beautifully communicates our brand and makes it easy for customers to discover the right hair wellness solutions. The experience is intuitive, educational, and perfectly reflects the premium quality of our products.",
                 "author": "Management Team",
                 "position": "Vegamour"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "kretoss",
         "name": "Kretoss",
@@ -3056,44 +3868,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://shopify.kretoss.com/",
         "client": "Kretoss",
-        "purpose": "A modern eCommerce platform showcasing digital solutions, technology services, and innovative business products.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A dedicated Shopify agency website showcasing enterprise Shopify development, Shopify Plus solutions, store migrations, performance optimization, CRO, and ongoing support services for D2C, B2B, and wholesale businesses.",
+        "challenge": "The objective was to create a high-converting Shopify agency website that clearly communicates Kretoss' expertise, showcases successful client projects, builds trust through testimonials and achievements, and encourages businesses to book consultations. The platform also needed to present multiple service offerings while maintaining a fast, modern, and responsive user experience.",
+        "solution": "We developed a custom Shopify website focused on service-based lead generation through compelling content, premium UI, structured service pages, client success stories, responsive layouts, and optimized conversion paths. The platform effectively communicates the company's capabilities while making it easy for potential clients to explore services and submit project inquiries.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Agency Website",
+            "Service-Focused Landing Pages",
+            "Portfolio & Case Study Showcase",
+            "Lead Generation & Consultation Forms",
+            "Mobile Responsive Design",
+            "Performance Optimization"
         ],
-        "country": "Australia",
+        "country": "India",
         "caseStudy": {
-            "overview": "Kretoss needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Kretoss Technology is a Shopify development agency specializing in Shopify Plus development, store migrations, performance optimization, CRO, and long-term Shopify support. The objective was to create a professional digital presence that establishes credibility, showcases successful client projects, highlights technical expertise, and converts visitors into qualified business leads.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Shopify Plus Solutions",
+                "Headless Commerce",
+                "Store Migration & Upgrade",
+                "B2B & D2C eCommerce",
+                "Conversion Optimization",
+                "Performance Optimization",
+                "Ongoing Shopify Retainer Services"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Kretoss to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Service Strategy",
+                    "description": "We analyzed the target audience, service offerings, and customer acquisition journey to organize development services, migration solutions, maintenance plans, and Shopify expertise into a clear and conversion-focused website structure."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Website Development",
+                    "description": "Our team developed a responsive Shopify website featuring dedicated service pages, portfolio showcases, client testimonials, partner highlights, consultation forms, and intuitive navigation designed to maximize lead generation and user engagement."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Conversion Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, SEO fundamentals, conversion-focused call-to-actions, and overall usability to ensure businesses can easily explore services and connect with the Kretoss team."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Professional agency website showcasing Shopify expertise",
+                "Improved presentation of services and client portfolio",
+                "Optimized lead generation through clear conversion paths",
+                "Fast-loading and mobile-friendly user experience",
+                "Scalable platform supporting future services, case studies, and business growth"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Our new Shopify website clearly communicates our expertise, showcases our work, and provides a seamless experience for businesses looking for a trusted Shopify development partner. It has become a strong foundation for our digital presence and lead generation efforts.",
                 "author": "Management Team",
                 "position": "Kretoss"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "vitality",
         "name": "Vitality",
@@ -3103,44 +3934,63 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.vitalityextracts.com/",
         "client": "Vitality",
-        "purpose": "A wellness brand offering essential oils, natural supplements, and health-focused products for everyday well-being.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered wellness and aromatherapy brand offering premium essential oils, diffuser blends, carrier oils, skincare, and natural self-care products designed to support everyday health, relaxation, and holistic well-being.",
+        "challenge": "The client needed a premium Shopify storefront capable of showcasing an extensive range of wellness and aromatherapy products while educating customers about essential oils, blends, and self-care routines. The platform also needed to simplify product discovery, support subscriptions, and deliver a seamless shopping experience across desktop and mobile devices.",
+        "solution": "We developed a custom Shopify storefront focused on educational product content, organized wellness collections, responsive design, subscription-ready shopping, and a streamlined checkout experience. The platform highlights the brand's natural wellness philosophy while making it easy for customers to discover products tailored to their lifestyle and wellness goals.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Wellness Collection Navigation",
+            "Educational Product Pages",
+            "Subscription-Ready Shopping",
+            "Mobile Responsive Design",
+            "Secure Shopify Checkout"
         ],
-        "country": "UK",
+        "country": "USA",
         "caseStudy": {
-            "overview": "Vitality needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Vitality Extracts is a premium wellness brand dedicated to helping customers incorporate natural aromatherapy and self-care into their daily lives through high-quality essential oils, skincare, and wellness products. The objective was to build a Shopify experience that educates customers, showcases an extensive product catalog, and delivers a seamless shopping journey while reinforcing the brand's commitment to clean, natural living.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Wellness & Aromatherapy eCommerce",
+                "Subscription Integration",
+                "Educational Product Experience",
+                "Collection Management",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Vitality to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Customer Journey",
+                    "description": "We analyzed customer shopping behavior, wellness product categories, and educational content to create an intuitive shopping experience that helps customers discover products based on their self-care goals and wellness routines."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring organized product collections, educational product pages, intuitive navigation, subscription-friendly purchasing, and a streamlined checkout experience optimized for both new and returning customers."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image delivery, SEO fundamentals, and checkout usability to provide a fast, reliable, and premium shopping experience across desktop and mobile devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Premium wellness shopping experience",
+                "Improved product discovery through organized collections",
+                "Enhanced customer education with detailed product information",
+                "Optimized mobile shopping and subscription experience",
+                "Scalable Shopify platform supporting future product launches"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify storefront beautifully represents our brand and makes it easy for customers to explore our wellness collections and discover products that fit their lifestyle. The experience is intuitive, educational, and perfectly reflects our commitment to natural self-care.",
                 "author": "Management Team",
                 "position": "Vitality"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
     {
         "slug": "anveshan-farm-technologies",
         "name": "Anveshan Farm Technologies",
@@ -3150,44 +4000,64 @@ export const portfolioDetailsData = [
         "techStack": "Shopify",
         "link": "https://www.anveshan.farm/",
         "client": "Anveshan Farm Technologies",
-        "purpose": "A farm-to-table eCommerce platform offering traditionally crafted, natural food products sourced directly from farmers.",
-        "challenge": "The client needed a robust Shopify architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Shopify, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A Shopify-powered farm-to-home food brand offering wood-pressed oils, A2 desi ghee, raw honey, stone-ground spices, natural sweeteners, and traditionally crafted pantry essentials sourced directly from trusted Indian farmers.",
+        "challenge": "The client needed a premium Shopify storefront capable of presenting a wide range of natural food products while communicating the brand's commitment to purity, traceability, and traditional production methods. The platform also needed to educate customers, simplify product discovery, and deliver a seamless shopping experience across desktop and mobile devices.",
+        "solution": "We developed a custom Shopify storefront focused on premium product storytelling, educational content, organized product collections, responsive design, and a streamlined checkout experience. The platform highlights the brand's farm-to-home philosophy while making it easy for customers to explore and purchase natural food products with confidence.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Shopify Storefront",
+            "Farm-to-Home Product Collections",
+            "Educational Product Pages",
+            "Mobile Responsive Design",
+            "Performance Optimization",
+            "Secure Shopify Checkout"
         ],
-        "country": "Australia",
+        "country": "India",
         "caseStudy": {
-            "overview": "Anveshan Farm Technologies needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Shopify solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Anveshan Farm Technologies is a premium farm-to-home food brand dedicated to bringing traditionally crafted, chemical-free food products directly from trusted Indian farmers to consumers. The objective was to build a Shopify experience that communicates the brand's commitment to purity, authenticity, and traceability while providing customers with a seamless online shopping journey.",
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Farm-to-Home Food eCommerce",
+                "Traceable Product Experience",
+                "Collection Management",
+                "Educational Product Storytelling",
+                "Responsive Storefront",
+                "Conversion Optimization",
+                "Performance Optimization"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Anveshan Farm Technologies to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Customer Experience Strategy",
+                    "description": "We analyzed the customer journey, product categories, and brand values to create a shopping experience that highlights traditional food preparation methods, ethical sourcing, and the origin of every product while making navigation simple and intuitive."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Custom Shopify Development",
+                    "description": "Our team developed a responsive Shopify storefront featuring organized product collections, detailed product pages, educational content, intuitive navigation, and a streamlined purchasing experience optimized for customers seeking natural and healthy food products."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Shopify, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance & Store Optimization",
+                    "description": "Before launch, we optimized page speed, responsive layouts, image delivery, SEO fundamentals, and checkout usability to ensure a fast, reliable, and premium shopping experience across desktop and mobile devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Premium farm-to-home shopping experience",
+                "Improved product discovery through organized collections",
+                "Enhanced customer trust with educational product content",
+                "Optimized mobile shopping journey",
+                "Scalable Shopify platform supporting future product launches"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new Shopify storefront beautifully represents our commitment to purity and traditional food craftsmanship. Customers can easily explore our products, understand our sourcing philosophy, and enjoy a seamless shopping experience that reflects the quality of our brand.",
                 "author": "Management Team",
                 "position": "Anveshan Farm Technologies"
             }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
         }
     },
+
+    // wordpress
     {
         "slug": "anthem",
         "name": "Anthem Home Comfort",
@@ -3197,48 +4067,69 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://anthemhomecomfort.com/",
         "client": "Anthem Home Comfort",
-        "purpose": "A trusted HVAC services platform providing heating, cooling, air quality, and home comfort solutions. The company helps homeowners maintain efficient and comfortable living environments year-round.",
-        "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A professional HVAC services website built to help homeowners easily explore heating, cooling, indoor air quality, and preventative maintenance solutions while providing a seamless experience for requesting service appointments.",
+        "challenge": "Anthem Home Comfort needed a modern WordPress website that effectively showcased its HVAC services, generated more qualified leads, built customer trust, and delivered an intuitive experience across desktop and mobile devices.",
+        "solution": "We developed a fully customized WordPress website featuring a clean service-focused design, responsive layouts, SEO-friendly architecture, fast performance, and an easy-to-manage content management system for ongoing business growth.",
         "keyFeatures": [
-            "Scalable Architecture",
+            "Service Request Forms",
             "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "SEO Optimized Structure",
+            "Service Area Pages",
+            "Blog Management",
+            "Customer Testimonials",
+            "Membership Promotion",
+            "Fast Performance"
         ],
-        "country": "Brazil",
+        "country": "United States",
         "caseStudy": {
-            "overview": "Anthem Home Comfort needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Anthem Home Comfort required a professional online presence that reflected the quality of its HVAC services while making it simple for homeowners to request installations, repairs, and maintenance. We created a scalable WordPress solution focused on lead generation, user experience, local SEO, and long-term content management.",
+
+            "coreCapabilities": [
+                "Custom WordPress Development",
+                "HVAC Services Website",
+                "Online Service Booking",
+                "Heating & Cooling Solutions",
+                "Indoor Air Quality Services",
+                "Local SEO Optimization",
+                "Responsive Website Design",
+                "Performance Optimization"
+            ],
+
             "process": [
                 {
                     "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Anthem Home Comfort to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "description": "We analyzed the client's HVAC services, customer journey, and local market to create an information architecture focused on improving customer engagement and increasing service inquiries."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Designed a clean, professional interface with intuitive navigation, clear service categories, trust-building elements, and mobile-first layouts to deliver a seamless browsing experience."
                 },
                 {
                     "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "description": "Built a responsive, SEO-friendly WordPress website optimized for speed, security, and easy content management while ensuring consistent performance across all devices."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Professional online presence for HVAC services",
+                "Improved visibility of heating and cooling solutions",
+                "Simplified customer appointment requests",
+                "Responsive experience across all devices",
+                "SEO-ready website structure for long-term growth"
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "The new website perfectly represents our business and makes it much easier for customers to explore our services and request appointments. The experience is fast, professional, and easy to manage.",
                 "author": "Management Team",
                 "position": "Anthem Home Comfort"
             }
         },
         "hireResources": {
-            "label": "Hire WordPress Developers",
+            "label": "Hire WordPress Developer",
             "link": "/hire-us/hire-wordpress-developers"
         }
     },
+
     {
         "slug": "freight-plus",
         "name": "Freight Plus",
@@ -3248,48 +4139,69 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://freightplus.io/",
         "client": "Freight Plus",
-        "purpose": "An AI-powered transportation management platform that helps businesses optimize logistics, reduce shipping costs, and gain real-time visibility across their supply chain operations.",
-        "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "An AI-native managed transportation platform helping middle-market businesses streamline freight operations through intelligent logistics technology, real-time shipment visibility, carrier management, and data-driven supply chain optimization.",
+        "challenge": "Freight Plus required a modern WordPress website capable of communicating complex logistics and AI-powered transportation solutions in a clear, engaging way while generating qualified enterprise leads and reinforcing its technology-driven brand.",
+        "solution": "We built a custom WordPress website featuring a modern enterprise design, responsive user experience, SEO-optimized architecture, high-performance pages, and scalable content management to showcase Freight Plus' managed transportation platform and logistics expertise.",
         "keyFeatures": [
-            "Scalable Architecture",
+            "Service Showcase",
             "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "SEO Optimized Structure",
+            "Lead Generation Forms",
+            "Technology Platform Pages",
+            "Resource & Blog Management",
+            "Performance Optimization",
+            "Content Management"
         ],
-        "country": "Germany",
+        "country": "United States",
         "caseStudy": {
-            "overview": "Freight Plus needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Freight Plus needed a professional digital platform that effectively communicates its AI-native managed transportation services, proprietary technology, and logistics expertise. We delivered a scalable WordPress solution focused on lead generation, enterprise credibility, intuitive navigation, and long-term content management.",
+
+            "coreCapabilities": [
+                "Custom WordPress Development",
+                "Managed Transportation Platform",
+                "AI-Powered Logistics Solutions",
+                "Supply Chain Service Pages",
+                "Freight Technology Showcase",
+                "Lead Generation Optimization",
+                "Responsive Website Design",
+                "Performance Optimization"
+            ],
+
             "process": [
                 {
                     "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Freight Plus to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "description": "We analyzed Freight Plus' transportation services, AI-powered platform, customer journey, and business goals to create an intuitive information architecture that simplifies complex logistics solutions."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Designed a clean enterprise-grade interface highlighting managed transportation, AI technology, shipment visibility, analytics, and customer value while maintaining a seamless browsing experience across all devices."
                 },
                 {
                     "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "description": "Developed a responsive, SEO-friendly WordPress website optimized for speed, scalability, security, and easy content management, ensuring long-term flexibility and reliable performance."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Professional digital presence for managed transportation services",
+                "Clear presentation of AI-powered logistics solutions",
+                "Improved lead generation through optimized user journeys",
+                "Responsive experience across desktop, tablet, and mobile devices",
+                "SEO-ready website structure supporting long-term organic growth"
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a modern website that clearly communicates our transportation services and technology platform. The result is a fast, professional experience that supports our brand and business growth.",
                 "author": "Management Team",
                 "position": "Freight Plus"
             }
         },
         "hireResources": {
-            "label": "Hire WordPress Developers",
+            "label": "Hire WordPress Developer",
             "link": "/hire-us/hire-wordpress-developers"
         }
     },
+
     {
         "slug": "sobel",
         "name": "Sobel",
@@ -3299,48 +4211,69 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://www.sobelconsult.com/",
         "client": "Sobel",
-        "purpose": "A professional consulting firm delivering strategic advisory, accounting, tax, and business solutions that help organizations improve performance and achieve sustainable growth.",
-        "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A global regulatory consulting platform helping medical device, cosmetic, and in vitro diagnostics (IVD) companies navigate compliance, market access, and regulatory requirements across the USA, Canada, Brazil, and Europe.",
+        "challenge": "Sobel required a modern WordPress website capable of presenting complex regulatory consulting services in a clear, professional manner while establishing credibility, generating qualified business inquiries, and supporting content-driven SEO growth.",
+        "solution": "We developed a fully customized WordPress website featuring a modern corporate design, structured service pages, responsive layouts, SEO-friendly architecture, optimized performance, and an easy-to-manage CMS to support Sobel's expanding regulatory consulting services.",
         "keyFeatures": [
-            "Scalable Architecture",
+            "Service Showcase",
             "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "SEO Optimized Structure",
+            "Lead Generation Forms",
+            "Resource & Blog Management",
+            "Multi-Market Service Pages",
+            "Performance Optimization",
+            "Content Management"
         ],
-        "country": "USA",
+        "country": "Brazil",
         "caseStudy": {
-            "overview": "Sobel needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Sobel needed a professional digital platform that clearly communicates its regulatory consulting expertise across multiple industries and international markets. We built a scalable WordPress solution focused on simplifying complex regulatory information, improving lead generation, and providing an intuitive experience for businesses seeking compliance support.",
+
+            "coreCapabilities": [
+                "Custom WordPress Development",
+                "Regulatory Consulting Website",
+                "Medical Device Compliance",
+                "Cosmetics Regulatory Services",
+                "IVD Regulatory Solutions",
+                "Global Market Access Pages",
+                "Responsive Website Design",
+                "Performance Optimization"
+            ],
+
             "process": [
                 {
                     "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Sobel to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "description": "We analyzed Sobel's regulatory consulting services, international markets, and customer journey to organize complex compliance information into a structured and easy-to-navigate website."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Designed a clean corporate interface highlighting regulatory services, market expertise, educational resources, and consultation opportunities while ensuring a seamless user experience across all devices."
                 },
                 {
                     "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "description": "Built a responsive WordPress website optimized for speed, SEO, security, and long-term scalability with an intuitive content management system for publishing regulatory updates and industry insights."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Professional digital presence for global regulatory consulting",
+                "Improved presentation of medical device, cosmetics, and IVD services",
+                "Simplified customer inquiry and consultation process",
+                "Responsive experience across desktop, tablet, and mobile devices",
+                "SEO-ready architecture supporting long-term content growth"
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a modern website that clearly represents our regulatory expertise and makes it easier for businesses to understand our services and connect with our team.",
                 "author": "Management Team",
-                "position": "Sobel"
+                "position": "Sobel Consultancy"
             }
         },
         "hireResources": {
-            "label": "Hire WordPress Developers",
+            "label": "Hire WordPress Developer",
             "link": "/hire-us/hire-wordpress-developers"
         }
     },
+
     {
         "slug": "beepec",
         "name": "Beepec",
@@ -3350,48 +4283,69 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://beepec.com/",
         "client": "Beepec",
-        "purpose": "A digital procurement and business marketplace connecting companies with suppliers, products, and services to streamline purchasing and operational efficiency.",
-        "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A professional real estate media platform offering photo editing, virtual staging, video editing, floor plans, and visual enhancement services that help photographers, agents, and property marketers create high-converting property listings.",
+        "challenge": "Beepec needed a modern WordPress website capable of showcasing its wide range of real estate media services, demonstrating visual quality through portfolio examples, simplifying customer orders, and supporting business growth with a professional online presence.",
+        "solution": "We developed a custom WordPress website with a clean service-focused design, responsive layouts, portfolio galleries, SEO-friendly architecture, optimized performance, and an intuitive content management system that allows the Beepec team to manage services, resources, and customer content with ease.",
         "keyFeatures": [
-            "Scalable Architecture",
+            "Service Showcase",
+            "Portfolio Gallery",
             "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "SEO Optimized Structure",
+            "Lead Generation Forms",
+            "Blog & Resources",
+            "Performance Optimization",
+            "Content Management"
         ],
-        "country": "Australia",
+        "country": "Vietnam",
         "caseStudy": {
-            "overview": "Beepec needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Beepec required a professional digital platform to showcase its real estate photo editing and visual marketing services while making it easy for photographers and real estate professionals to explore services, view portfolio examples, and submit editing requests. We delivered a scalable WordPress solution focused on lead generation, user experience, and long-term business growth.",
+
+            "coreCapabilities": [
+                "Custom WordPress Development",
+                "Real Estate Media Website",
+                "Photo Editing Services",
+                "Virtual Staging Solutions",
+                "Video Editing Showcase",
+                "Portfolio Management",
+                "Responsive Website Design",
+                "Performance Optimization"
+            ],
+
             "process": [
                 {
                     "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Beepec to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "description": "We analyzed Beepec's real estate media services, customer journey, and service workflow to create a structured website that clearly presents every editing solution while encouraging customer inquiries."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Designed a modern interface featuring service pages, before-and-after portfolio galleries, strong call-to-actions, and intuitive navigation to help visitors quickly understand Beepec's expertise."
                 },
                 {
                     "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "description": "Built a responsive WordPress website optimized for speed, SEO, security, and content management, ensuring smooth performance across desktop, tablet, and mobile devices."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Professional online presence for real estate media services",
+                "Improved visibility of photo editing and virtual staging solutions",
+                "Simplified customer inquiry and service discovery",
+                "Responsive experience across all devices",
+                "SEO-ready website structure supporting long-term organic growth"
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a modern website that showcases our services professionally and makes it easy for customers to explore our portfolio and connect with our team. The platform is fast, intuitive, and easy to manage.",
                 "author": "Management Team",
                 "position": "Beepec"
             }
         },
         "hireResources": {
-            "label": "Hire WordPress Developers",
+            "label": "Hire WordPress Developer",
             "link": "/hire-us/hire-wordpress-developers"
         }
     },
+
     {
         "slug": "source-bulk-foods-wordpress",
         "name": "The Source Bulk Foods",
@@ -3401,48 +4355,69 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://thesourcebulkfoods.com.au/",
         "client": "The Source Bulk Foods",
-        "purpose": "A sustainable food marketplace offering bulk groceries, healthy ingredients, and eco-friendly products. The platform promotes waste-free shopping and healthier lifestyles.",
-        "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A leading Australian wholefoods retailer offering bulk pantry essentials, organic groceries, health foods, snacks, herbs, spices, and eco-friendly products through a sustainable online shopping experience.",
+        "challenge": "The Source Bulk Foods required a modern WordPress website that could showcase an extensive product range, communicate its sustainability mission, improve online shopping experiences, and support continued growth with scalable content management.",
+        "solution": "We developed a fully customized WordPress website featuring an intuitive shopping experience, responsive design, SEO-friendly architecture, optimized performance, and an easy-to-manage CMS that effectively highlights products, recipes, sustainability initiatives, and store information.",
         "keyFeatures": [
-            "Scalable Architecture",
+            "Product Showcase",
             "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "SEO Optimized Structure",
+            "Store Locator",
+            "Recipe & Blog Management",
+            "Sustainability Content",
+            "Performance Optimization",
+            "Content Management"
         ],
-        "country": "Brazil",
+        "country": "Australia",
         "caseStudy": {
-            "overview": "The Source Bulk Foods needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "The Source Bulk Foods needed a professional digital platform that reflects its commitment to healthy living and sustainable shopping while making it easy for customers to discover products, explore recipes, locate nearby stores, and shop online. We built a scalable WordPress solution focused on user experience, content management, and long-term digital growth.",
+
+            "coreCapabilities": [
+                "Custom WordPress Development",
+                "Healthy Food Retail Website",
+                "Bulk Grocery Showcase",
+                "Sustainable Shopping Platform",
+                "Recipe & Content Management",
+                "Store Locator Integration",
+                "Responsive Website Design",
+                "Performance Optimization"
+            ],
+
             "process": [
                 {
                     "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at The Source Bulk Foods to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "description": "We analyzed the brand's product categories, sustainability initiatives, customer journey, and retail operations to create an intuitive website structure that improves product discovery and user engagement."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Designed a clean, nature-inspired interface featuring organized product categories, recipes, sustainability content, and store information while delivering a seamless shopping experience across all devices."
                 },
                 {
                     "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "description": "Built a responsive WordPress website optimized for speed, SEO, scalability, and long-term content management, ensuring reliable performance and easy administration."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Professional digital presence for sustainable retail",
+                "Improved visibility of products and healthy food categories",
+                "Simplified product discovery and online shopping journey",
+                "Responsive experience across desktop, tablet, and mobile devices",
+                "SEO-ready architecture supporting long-term organic growth"
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a modern website that perfectly represents our brand and sustainability mission. The platform provides an intuitive experience for customers while making content management simple for our team.",
                 "author": "Management Team",
                 "position": "The Source Bulk Foods"
             }
         },
         "hireResources": {
-            "label": "Hire WordPress Developers",
+            "label": "Hire WordPress Developer",
             "link": "/hire-us/hire-wordpress-developers"
         }
     },
+
     {
         "slug": "easygold",
         "name": "EasyGold24",
@@ -3452,48 +4427,69 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://easygold24.de/",
         "client": "EasyGold24",
-        "purpose": "An online precious metals platform that enables customers to securely buy, sell, and invest in gold, silver, and other valuable assets.",
-        "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A trusted German precious metals investment platform offering physical gold, silver, platinum, and palladium products, secure storage solutions, and precious metal savings plans for long-term wealth preservation.",
+        "challenge": "EasyGold24 required a professional WordPress website capable of presenting complex investment products in a simple, trustworthy manner while promoting secure precious metal purchases, educating investors, and generating qualified customer inquiries.",
+        "solution": "We developed a custom WordPress website with a modern financial-focused design, responsive layouts, SEO-friendly architecture, optimized performance, and an intuitive content management system that showcases investment products, storage services, and educational resources.",
         "keyFeatures": [
-            "Scalable Architecture",
+            "Investment Product Showcase",
             "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "SEO Optimized Structure",
+            "Savings Plan Pages",
+            "Educational Content",
+            "Lead Generation Forms",
+            "Performance Optimization",
+            "Content Management"
         ],
-        "country": "UK",
+        "country": "Germany",
         "caseStudy": {
-            "overview": "EasyGold24 needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "EasyGold24 needed a secure and professional digital platform that builds trust with investors while showcasing its precious metals investment services. We created a scalable WordPress solution focused on product presentation, customer education, lead generation, and long-term content management.",
+
+            "coreCapabilities": [
+                "Custom WordPress Development",
+                "Precious Metals Platform",
+                "Gold Investment Solutions",
+                "Savings Plan Showcase",
+                "Secure Storage Services",
+                "Financial Product Pages",
+                "Responsive Website Design",
+                "Performance Optimization"
+            ],
+
             "process": [
                 {
                     "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at EasyGold24 to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "description": "We analyzed EasyGold24's investment services, customer journey, and product offerings to build a website structure that simplifies precious metal investing and strengthens customer confidence."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Designed a clean financial interface with structured investment product pages, educational content, strong trust signals, and intuitive navigation to improve user engagement across all devices."
                 },
                 {
                     "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "description": "Built a responsive WordPress website optimized for speed, SEO, security, and long-term scalability while providing an easy-to-manage CMS for updating products, market insights, and investment resources."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Professional digital presence for precious metals investing",
+                "Improved visibility of gold, silver, platinum, and palladium products",
+                "Simplified customer journey for investment inquiries",
+                "Responsive experience across desktop, tablet, and mobile devices",
+                "SEO-ready architecture supporting long-term organic growth"
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a professional website that clearly communicates our investment services while providing a modern and trustworthy experience for our customers. The platform is fast, scalable, and easy for our team to manage.",
                 "author": "Management Team",
                 "position": "EasyGold24"
             }
         },
         "hireResources": {
-            "label": "Hire WordPress Developers",
+            "label": "Hire WordPress Developer",
             "link": "/hire-us/hire-wordpress-developers"
         }
     },
+
     {
         "slug": "meridian-pacific-properties",
         "name": "Meridian Pacific Properties",
@@ -3503,48 +4499,69 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://meridianpacificproperties.com/",
         "client": "Meridian Pacific Properties",
-        "purpose": "A real estate investment and property management platform focused on acquiring, developing, and managing high-quality residential and commercial properties.",
-        "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A California-based real estate development and investment company specializing in build-to-rent communities, residential development, land acquisition, investment partnerships, and long-term property management solutions.",
+        "challenge": "Meridian Pacific Properties required a modern WordPress website that effectively communicates its real estate development expertise, showcases investment opportunities and communities, builds investor confidence, and provides a professional digital presence for prospective partners and clients.",
+        "solution": "We developed a custom WordPress website featuring a modern corporate design, responsive layouts, SEO-friendly architecture, optimized performance, and an intuitive content management system to showcase communities, investment services, and company expertise.",
         "keyFeatures": [
-            "Scalable Architecture",
+            "Project Showcase",
             "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "SEO Optimized Structure",
+            "Investment Pages",
+            "Community Listings",
+            "Lead Generation Forms",
+            "Performance Optimization",
+            "Content Management"
         ],
-        "country": "Australia",
+        "country": "United States",
         "caseStudy": {
-            "overview": "Meridian Pacific Properties needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Meridian Pacific Properties needed a professional digital platform that reflects its leadership in build-to-rent communities and residential development while making it easy for investors, partners, and prospective residents to explore projects and learn about the company's expertise. We built a scalable WordPress solution focused on credibility, user experience, and long-term business growth.",
+
+            "coreCapabilities": [
+                "Custom WordPress Development",
+                "Real Estate Development Website",
+                "Build-to-Rent Communities",
+                "Investment Property Showcase",
+                "Land Development Pages",
+                "Lead Generation Optimization",
+                "Responsive Website Design",
+                "Performance Optimization"
+            ],
+
             "process": [
                 {
                     "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Meridian Pacific Properties to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "description": "We analyzed Meridian Pacific Properties' development projects, investment services, and customer journey to create a website structure that clearly communicates the company's expertise while supporting business development."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Designed a modern corporate interface highlighting residential communities, development projects, investment opportunities, and company achievements with intuitive navigation across all devices."
                 },
                 {
                     "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "description": "Built a responsive WordPress website optimized for speed, SEO, scalability, and long-term content management, enabling the team to easily manage projects, news, and company information."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Professional digital presence for real estate development",
+                "Improved presentation of residential communities and investment services",
+                "Simplified lead generation for investors and partners",
+                "Responsive experience across desktop, tablet, and mobile devices",
+                "SEO-ready website architecture supporting long-term business growth"
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a modern website that reflects our brand and development expertise while making it easy for investors and partners to explore our projects. The platform is professional, fast, and simple to manage.",
                 "author": "Management Team",
                 "position": "Meridian Pacific Properties"
             }
         },
         "hireResources": {
-            "label": "Hire WordPress Developers",
+            "label": "Hire WordPress Developer",
             "link": "/hire-us/hire-wordpress-developers"
         }
     },
+
     {
         "slug": "the-penny",
         "name": "The Penny",
@@ -3554,48 +4571,69 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://thepenny.ch/",
         "client": "The Penny",
-        "purpose": "A premium hospitality and dining destination offering exceptional food, beverages, and memorable guest experiences in a sophisticated atmosphere.",
-        "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "A welcoming British pub in the heart of Aarau, Switzerland, offering authentic British and Irish drinks, international food, live sports, private events, and table reservations through a modern digital experience.",
+        "challenge": "The Penny needed a modern WordPress website that reflected its welcoming pub atmosphere while making it easy for customers to explore menus, reserve tables, discover upcoming events, and stay informed about live sports broadcasts.",
+        "solution": "We developed a custom WordPress website featuring a modern hospitality-focused design, responsive layouts, menu pages, online booking integration, SEO-friendly architecture, and an intuitive content management system for managing events and promotions.",
         "keyFeatures": [
-            "Scalable Architecture",
+            "Food & Drinks Menu",
+            "Table Reservation",
+            "Event Management",
+            "Sports Schedule",
             "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "SEO Optimized Structure",
+            "Performance Optimization",
+            "Content Management"
         ],
-        "country": "UK",
+        "country": "Switzerland",
         "caseStudy": {
-            "overview": "The Penny needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "The Penny required a professional online presence that captures its unique British pub experience while helping customers discover menus, reserve tables, watch live sporting events, and organize private gatherings. We built a scalable WordPress solution focused on customer engagement, usability, and long-term content management.",
+
+            "coreCapabilities": [
+                "Custom WordPress Development",
+                "Restaurant & Pub Website",
+                "Food & Drinks Menu",
+                "Table Reservation System",
+                "Events & Live Sports",
+                "Hospitality Content Management",
+                "Responsive Website Design",
+                "Performance Optimization"
+            ],
+
             "process": [
                 {
                     "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at The Penny to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "description": "We analyzed The Penny's hospitality offerings, customer journey, menus, events, and live sports experience to create a website structure that encourages reservations and customer engagement."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Designed a warm, modern interface featuring food and drinks menus, event information, sports schedules, and clear booking options while maintaining a seamless experience across all devices."
                 },
                 {
                     "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "description": "Built a responsive WordPress website optimized for speed, SEO, security, and long-term scalability with an easy-to-manage CMS for updating menus, promotions, and events."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Professional online presence for a hospitality business",
+                "Improved visibility of menus, events, and live sports",
+                "Simplified table reservation and customer inquiries",
+                "Responsive experience across desktop, tablet, and mobile devices",
+                "SEO-ready architecture supporting long-term business growth"
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a website that perfectly represents our pub and makes it easy for guests to explore our menus, reserve tables, and stay updated on events. The platform is fast, modern, and easy for our team to manage.",
                 "author": "Management Team",
                 "position": "The Penny"
             }
         },
         "hireResources": {
-            "label": "Hire WordPress Developers",
+            "label": "Hire WordPress Developer",
             "link": "/hire-us/hire-wordpress-developers"
         }
     },
+
     {
         "slug": "litehaus",
         "name": "Litehaus",
@@ -3605,193 +4643,268 @@ export const portfolioDetailsData = [
         "techStack": "Wordpress",
         "link": "https://litehaus.co/",
         "client": "Litehaus",
-        "purpose": "An innovative architecture and design studio specializing in modern residential and commercial spaces. The platform showcases creative design solutions that combine functionality, aesthetics, and sustainability.",
-        "challenge": "The client needed a robust Wordpress architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Wordpress, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "An AI-powered construction marketplace that connects homeowners, developers, architects, builders, and financing partners to simplify residential construction through verified professionals, modular building solutions, and intelligent project planning.",
+        "challenge": "Litehaus needed a modern WordPress website capable of communicating complex construction services, AI-powered planning tools, modular building solutions, and financing options while establishing trust with homeowners and property developers across multiple markets.",
+        "solution": "We developed a fully customized WordPress website featuring modern UX, responsive layouts, SEO-optimized architecture, scalable content management, and high-performance pages that clearly present Litehaus' construction marketplace and AI-powered services.",
         "keyFeatures": [
-            "Scalable Architecture",
+            "AI Construction Platform",
+            "Builder Marketplace",
             "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "SEO Optimized Structure",
+            "Property Catalogue",
+            "Construction Resources",
+            "Performance Optimization",
+            "Content Management"
         ],
-        "country": "Germany",
+        "country": "Portugal",
         "caseStudy": {
-            "overview": "Litehaus needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Wordpress solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Litehaus required a professional digital platform that simplifies the home-building journey by connecting users with verified builders, architects, financing partners, and construction technologies. We delivered a scalable WordPress solution focused on user education, lead generation, and showcasing AI-powered construction services through an intuitive digital experience.",
+
+            "coreCapabilities": [
+                "Custom WordPress Development",
+                "AI Construction Marketplace",
+                "Modular Building Platform",
+                "Builder & Architect Directory",
+                "Construction Cost Planning",
+                "Property Catalogue Management",
+                "Responsive Website Design",
+                "Performance Optimization"
+            ],
+
             "process": [
                 {
                     "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Litehaus to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "description": "We analyzed Litehaus' construction marketplace, AI-powered planning workflow, financing services, and customer journey to create an intuitive information architecture that simplifies complex construction decisions."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Designed a modern interface highlighting modular construction methods, verified builders, financing options, property catalogues, and educational resources while maintaining a seamless experience across all devices."
                 },
                 {
                     "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Wordpress, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "description": "Built a responsive WordPress website optimized for speed, SEO, scalability, and long-term content management, allowing the Litehaus team to easily manage services, articles, construction models, and marketplace content."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Professional digital presence for AI-powered construction services",
+                "Improved visibility of modular building solutions",
+                "Simplified customer journey for home construction planning",
+                "Responsive experience across desktop, tablet, and mobile devices",
+                "SEO-ready architecture supporting long-term organic growth"
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a modern website that clearly communicates our construction marketplace and AI-powered services. The platform provides an intuitive experience for customers while making content management simple for our team.",
                 "author": "Management Team",
                 "position": "Litehaus"
             }
         },
         "hireResources": {
-            "label": "Hire WordPress Developers",
+            "label": "Hire WordPress Developer",
             "link": "/hire-us/hire-wordpress-developers"
         }
     },
+
+
+    // Bigcommerce
     {
         "slug": "leebroom",
         "name": "LEE BROOM",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_leebroom_full.jpg",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
-        "techStack": "Bigcommerce + React + Node",
+        "techStack": "BigCommerce",
         "link": "https://leebroom.com/",
         "client": "LEE BROOM",
-        "purpose": "A luxury design and lighting brand showcasing award-winning furniture, lighting, and interior collections crafted for premium residential and commercial spaces.",
-        "challenge": "The client needed a robust Bigcommerce + React + Node architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Bigcommerce + React + Node, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "LEE BROOM is an internationally recognized luxury lighting and furniture brand that offers designer collections through a premium BigCommerce storefront. The platform combines elegant product presentation, global shopping experiences, editorial storytelling, and seamless ecommerce functionality for residential, commercial, and interior design customers.",
+        "challenge": "Create a premium ecommerce experience that reflects the brand's luxury identity while supporting international storefronts, rich product storytelling, high-quality imagery, smooth shopping journeys, and scalable catalog management without compromising website performance.",
+        "solution": "We delivered a refined BigCommerce solution focused on premium UX, responsive shopping experiences, optimized product pages, streamlined navigation, multi-region commerce, and performance optimization to support a global luxury retail audience.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Luxury Ecommerce Experience",
+            "Global Storefront Support",
+            "Premium Product Catalog",
+            "Responsive Shopping Journey",
+            "Advanced Product Filtering",
+            "Editorial Content Integration",
+            "Secure Checkout",
+            "Performance Optimization"
         ],
-        "country": "Germany",
+        "country": "United Kingdom",
         "caseStudy": {
-            "overview": "LEE BROOM needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "LEE BROOM is one of the world's leading luxury lighting and furniture brands, serving customers across multiple international markets. The objective was to create an ecommerce experience that showcases premium craftsmanship while making it effortless for customers, architects, designers, and homeowners to discover, explore, and purchase designer collections online.",
+            "coreCapabilities": [
+                "BigCommerce Development",
+                "Custom Theme Development",
+                "Luxury Ecommerce UX",
+                "Responsive Storefront",
+                "Performance Optimization",
+                "Ongoing Store Support"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at LEE BROOM to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Commerce Strategy",
+                    "description": "We analyzed the luxury buying journey, product organization, international audiences, and content requirements to build an ecommerce experience aligned with the Lee Broom brand."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Luxury Store Experience",
+                    "description": "The storefront was structured around premium visuals, curated collections, intuitive navigation, and immersive product pages that emphasize craftsmanship, materials, and design excellence."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Bigcommerce + React + Node, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "BigCommerce Development & Optimization",
+                    "description": "We optimized the BigCommerce implementation for performance, responsive shopping, secure checkout, scalable catalog management, and a seamless experience across desktop, tablet, and mobile devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Premium luxury shopping experience",
+                "Improved product discovery across collections",
+                "Faster page loading and browsing performance",
+                "Responsive experience across all devices",
+                "Scalable catalog for expanding product lines",
+                "Optimized global ecommerce experience"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss helped us deliver an elegant ecommerce experience that perfectly complements our luxury brand. The website is visually refined, intuitive to navigate, and provides an exceptional shopping journey for our global customers.",
+                "author": "Digital Commerce Team",
                 "position": "LEE BROOM"
             }
         },
         "hireResources": {
-            "label": "Hire React.js Developers",
-            "link": "/hire-us/hire-react-js-developers"
+            "label": "Hire BigCommerce Developer",
+            "link": "/hire-us/hire-bigcommerce-developers"
         }
     },
+
     {
         "slug": "good-good-ganja",
         "name": "Good Good Ganja",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_good-good-ganja_full.jpg",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
-        "techStack": "Bigcommerce",
+        "techStack": "BigCommerce",
         "link": "https://goodgoodganjashop.com/",
         "client": "Good Good Ganja",
-        "purpose": "An online cannabis marketplace offering premium cannabis products, edibles, concentrates, and accessories for adult consumers seeking quality and convenience.",
-        "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Good Good Ganja is a premium online cannabis dispensary offering curated flower, concentrates, edibles, vapes, subscription boxes, branded merchandise, and wholesale products through a modern BigCommerce storefront designed for a seamless shopping experience.",
+        "challenge": "The client required a scalable BigCommerce storefront capable of managing a large cannabis product catalog, subscription offerings, rewards programs, wholesale purchasing, and educational content while delivering a fast, intuitive, and mobile-friendly shopping experience.",
+        "solution": "We delivered a customized BigCommerce ecommerce solution featuring streamlined product discovery, responsive storefront design, optimized category navigation, secure checkout, subscription-ready shopping experiences, and scalable catalog management for long-term growth.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Premium Ecommerce Store",
+            "Subscription Box Support",
+            "Wholesale Shopping",
+            "Rewards & Referral Program",
+            "Responsive Storefront",
+            "Secure Checkout"
         ],
-        "country": "Canada",
+        "country": "United States",
         "caseStudy": {
-            "overview": "Good Good Ganja needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Good Good Ganja wanted an ecommerce platform that reflects its cannabis lifestyle brand while making it easy for customers to browse premium products, discover educational content, join loyalty programs, and purchase through a fast and secure online shopping experience.",
+            "coreCapabilities": [
+                "BigCommerce Development",
+                "Custom Theme Development",
+                "Ecommerce UX Design",
+                "Product Catalog Management",
+                "Performance Optimization",
+                "Store Maintenance & Support"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Good Good Ganja to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Commerce Planning",
+                    "description": "We analyzed customer journeys, product categories, subscription offerings, wholesale requirements, and loyalty features to create an optimized ecommerce strategy."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Storefront Experience",
+                    "description": "The storefront was designed with intuitive navigation, engaging product pages, responsive layouts, promotional sections, and streamlined browsing across all devices."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Bigcommerce, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "BigCommerce Development",
+                    "description": "We optimized the BigCommerce implementation for scalable catalog management, secure checkout, subscription experiences, wholesale support, and fast website performance."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Improved product discovery",
+                "Enhanced mobile shopping experience",
+                "Scalable ecommerce architecture",
+                "Streamlined category navigation",
+                "Optimized website performance",
+                "Better customer engagement through loyalty features"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a polished BigCommerce storefront that perfectly represents our brand. The shopping experience is intuitive, fast, and provides our customers with a seamless way to explore products, subscriptions, and rewards.",
                 "author": "Management Team",
                 "position": "Good Good Ganja"
             }
+        },
+        "hireResources": {
+            "label": "Hire BigCommerce Developer",
+            "link": "/hire-us/hire-bigcommerce-developers"
         }
     },
+
     {
         "slug": "color-matrics",
         "name": "Color Matrics",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_cs_full.png",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
-        "techStack": "Bigcommerce",
+        "techStack": "BigCommerce",
         "link": "https://colormetrics.com",
         "client": "Color Matrics",
-        "purpose": "A professional hair color brand offering innovative root touch-up and hair coloring solutions that deliver salon-quality results from the comfort of home.",
-        "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "ColorMetrics is a premium beauty brand offering innovative salon-quality hair color solutions for at-home use. Its BigCommerce storefront showcases patented root touch-up products, color care essentials, and a seamless ecommerce experience designed for modern consumers.",
+        "challenge": "The client needed a high-performing BigCommerce storefront that could effectively showcase multiple product lines, educate customers about proprietary color technology, support a frictionless checkout experience, and deliver consistent performance across all devices.",
+        "solution": "We built an optimized BigCommerce ecommerce experience focused on premium product presentation, intuitive navigation, responsive shopping, fast page performance, and streamlined checkout to improve customer confidence and purchasing.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Premium Ecommerce Store",
+            "Responsive Shopping Experience",
+            "Advanced Product Catalog",
+            "Buy with Prime Integration",
+            "Secure Checkout",
+            "Performance Optimization"
         ],
         "country": "USA",
         "caseStudy": {
-            "overview": "Color Matrics needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "ColorMetrics required a modern ecommerce platform that reflected its premium beauty brand while educating customers about its patented hair color technology. The focus was creating an intuitive shopping experience that highlights product benefits, simplifies product discovery, and supports online growth.",
+            "coreCapabilities": [
+                "BigCommerce Development",
+                "Custom Theme Development",
+                "Ecommerce UX Design",
+                "Product Catalog Management",
+                "Performance Optimization",
+                "Store Maintenance & Support"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Color Matrics to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Commerce Strategy",
+                    "description": "We evaluated the customer buying journey, product portfolio, and educational content requirements to create a user-focused ecommerce strategy."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Storefront Experience",
+                    "description": "The storefront was designed with premium product presentation, intuitive navigation, responsive layouts, and engaging product pages that build customer confidence."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Bigcommerce, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "BigCommerce Development",
+                    "description": "We optimized the BigCommerce implementation for fast performance, scalable catalog management, secure checkout, and a seamless shopping experience across desktop and mobile devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Improved product discovery",
+                "Enhanced mobile shopping experience",
+                "Faster storefront performance",
+                "Scalable ecommerce architecture",
+                "Streamlined customer purchasing journey",
+                "Better brand presentation"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a polished BigCommerce storefront that perfectly represents our brand. The website makes it easy for customers to understand our products, browse collections, and complete purchases with confidence.",
                 "author": "Management Team",
                 "position": "Color Matrics"
             }
+        },
+        "hireResources": {
+            "label": "Hire BigCommerce Developer",
+            "link": "/hire-us/hire-bigcommerce-developers"
         }
     },
+
     {
         "slug": "dane-apparel",
         "name": "Dane Apparel",
@@ -3801,7 +4914,7 @@ export const portfolioDetailsData = [
         "techStack": "Bigcommerce",
         "link": "https://dane-apparel.com/",
         "client": "Dane Apparel",
-        "purpose": "A modern fashion and apparel platform offering stylish, high-quality clothing designed for comfort, confidence, and everyday wear.",
+        "description": "A modern fashion and apparel platform offering stylish, high-quality clothing designed for comfort, confidence, and everyday wear.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3839,53 +4952,72 @@ export const portfolioDetailsData = [
             }
         }
     },
+
     {
         "slug": "caramel",
         "name": "Caramel",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_caramel_full.jpg",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
-        "techStack": "Bigcommerce",
+        "techStack": "BigCommerce",
         "link": "https://caramelcorn.com",
         "client": "Caramel",
-        "purpose": "A specialty snack brand offering handcrafted gourmet popcorn and sweet treats made with premium ingredients and unique flavors.",
-        "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Caramel is a premium gourmet popcorn brand offering handcrafted small-batch popcorn, seasonal collections, gift boxes, corporate gifts, and wholesale ordering through a modern BigCommerce storefront designed for a seamless online shopping experience.",
+        "challenge": "The client needed a scalable BigCommerce storefront capable of showcasing an expanding gourmet product catalog, customizable gift boxes, wholesale purchasing, and seasonal promotions while maintaining a fast, user-friendly shopping experience across all devices.",
+        "solution": "We developed an optimized BigCommerce ecommerce experience focused on premium product presentation, intuitive navigation, responsive shopping, streamlined product discovery, and scalable catalog management to support both retail and wholesale customers.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Premium Ecommerce Store",
+            "Gift Box Customization",
+            "Wholesale Ordering",
+            "Responsive Storefront",
+            "Secure Checkout",
+            "Performance Optimization"
         ],
         "country": "USA",
         "caseStudy": {
-            "overview": "Caramel needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Caramel wanted a premium ecommerce platform that reflects its handcrafted gourmet popcorn brand while making it easy for customers to browse flavors, build gift boxes, place wholesale orders, and purchase seasonal collections through a fast and intuitive shopping experience.",
+            "coreCapabilities": [
+                "BigCommerce Development",
+                "Custom Theme Development",
+                "Ecommerce UX Design",
+                "Product Catalog Management",
+                "Performance Optimization",
+                "Store Maintenance & Support"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Caramel to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Commerce Strategy",
+                    "description": "We analyzed customer buying behavior, gourmet product collections, gifting requirements, and wholesale workflows to build an ecommerce strategy focused on growth."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Storefront Experience",
+                    "description": "We created a visually engaging storefront featuring intuitive navigation, premium product pages, gift collections, seasonal promotions, and responsive shopping across every device."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Bigcommerce, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "BigCommerce Development",
+                    "description": "The BigCommerce storefront was optimized for scalable catalog management, wholesale functionality, secure checkout, and high-performance browsing to deliver a seamless customer experience."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Improved product discovery",
+                "Enhanced gifting experience",
+                "Optimized wholesale purchasing",
+                "Responsive shopping across all devices",
+                "Scalable ecommerce architecture",
+                "Faster storefront performance"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a polished BigCommerce storefront that beautifully represents our handcrafted brand. The website makes it easy for customers to explore flavors, purchase gift collections, and place wholesale orders through a smooth and intuitive shopping experience.",
                 "author": "Management Team",
                 "position": "Caramel"
             }
+        },
+        "hireResources": {
+            "label": "Hire BigCommerce Developer",
+            "link": "/hire-us/hire-bigcommerce-developers"
         }
     },
+
     {
         "slug": "intermat",
         "name": "Intermat",
@@ -3895,7 +5027,7 @@ export const portfolioDetailsData = [
         "techStack": "Bigcommerce",
         "link": "https://intermat-corp.com/",
         "client": "Intermat",
-        "purpose": "An industrial solutions company providing specialized materials, manufacturing support, and engineering services for commercial and industrial sectors.",
+        "description": "An industrial solutions company providing specialized materials, manufacturing support, and engineering services for commercial and industrial sectors.",
         "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [
@@ -3933,147 +5065,220 @@ export const portfolioDetailsData = [
             }
         }
     },
+
     {
         "slug": "locket-sisters",
         "name": "Locket Sisters",
         "portfolioImage": "/portfolio/bigcommerce/portfolio_locket-sisters-full.png",
         "category": "Bigcommerce",
         "timeline": "2-4 Months",
-        "techStack": "Bigcommerce",
+        "techStack": "BigCommerce",
         "link": "https://thelocketsisters.com/",
         "client": "Locket Sisters",
-        "purpose": "A personalized jewelry brand creating meaningful lockets and keepsake accessories designed to celebrate memories, relationships, and special moments.",
-        "challenge": "The client needed a robust Bigcommerce architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Bigcommerce, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "The Locket Sisters is a personalized jewelry brand offering beautifully crafted lockets, necklaces, charms, bracelets, and meaningful keepsake gifts. Its BigCommerce storefront delivers a premium shopping experience with product personalization, elegant collections, and seamless online purchasing.",
+        "challenge": "The client required a scalable BigCommerce storefront that could showcase customizable jewelry collections, simplify product personalization, manage growing product categories, and provide a smooth shopping experience across desktop and mobile devices.",
+        "solution": "We developed a refined BigCommerce ecommerce solution focused on premium product presentation, intuitive navigation, responsive shopping, streamlined personalization workflows, and optimized storefront performance to enhance the customer buying journey.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Personalized Jewelry Store",
+            "Custom Product Options",
+            "Responsive Storefront",
+            "Premium Product Catalog",
+            "Secure Checkout",
+            "Performance Optimization"
         ],
         "country": "USA",
         "caseStudy": {
-            "overview": "Locket Sisters needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Bigcommerce solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "The Locket Sisters wanted an ecommerce experience that reflected the emotional value of personalized jewelry while making it effortless for customers to customize keepsakes, browse curated collections, and purchase memorable gifts through an elegant online storefront.",
+            "coreCapabilities": [
+                "BigCommerce Development",
+                "Custom Theme Development",
+                "Ecommerce UX Design",
+                "Product Personalization",
+                "Performance Optimization",
+                "Store Maintenance & Support"
+            ],
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Locket Sisters to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Commerce Strategy",
+                    "description": "We analyzed customer purchasing behavior, personalization requirements, gifting journeys, and product organization to create an ecommerce strategy centered around meaningful shopping experiences."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Luxury Storefront Experience",
+                    "description": "The storefront was designed with elegant layouts, intuitive navigation, premium product pages, customization options, and responsive shopping to showcase personalized jewelry beautifully."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Bigcommerce, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "BigCommerce Development",
+                    "description": "We optimized the BigCommerce storefront for scalable catalog management, product customization workflows, secure checkout, and high-performance browsing across all modern devices."
                 }
             ],
             "results": [
-                "35% increase in conversion rate",
-                "Significantly reduced cart abandonment",
-                "Sub-second page load times for product pages"
+                "Improved product discovery",
+                "Enhanced personalization experience",
+                "Responsive shopping across all devices",
+                "Optimized storefront performance",
+                "Scalable ecommerce architecture",
+                "Streamlined customer purchasing journey"
             ],
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a polished BigCommerce storefront that beautifully reflects our brand. The shopping experience is elegant, intuitive, and makes it easy for customers to personalize jewelry and purchase meaningful gifts with confidence.",
                 "author": "Management Team",
-                "position": "Locket Sisters"
+                "position": "The Locket Sisters"
             }
+        },
+        "hireResources": {
+            "label": "Hire BigCommerce Developer",
+            "link": "/hire-us/hire-bigcommerce-developers"
         }
     },
+
+
+    //web design
     {
         "slug": "iiccrypto",
         "name": "IIC Metaverse",
         "portfolioImage": "/portfolio/custom/IIC-Metaverse-full.webp",
         "category": "web design",
         "timeline": "2-4 Months",
-        "techStack": "HTML + CSS + JS",
+        "techStack": "HTML + CSS + JavaScript",
         "link": "https://iiccrypto.com/",
         "client": "IIC Metaverse",
-        "purpose": "A blockchain-powered ecosystem that combines cryptocurrency, AI, and real-world assets to create a secure platform for trading, investing, and digital finance. It bridges innovative technology with practical real-world applications.",
-        "challenge": "The client needed a robust HTML + CSS + JS architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using HTML + CSS + JS, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Designed and developed a modern Web3 corporate website for IIC Metaverse, showcasing its blockchain ecosystem, AI-driven technologies, token economy, and real-world asset vision. The website delivers a premium digital experience with responsive layouts, engaging interactions, and clear communication of the platform's mission for investors, partners, and the broader crypto community.",
+        "challenge": "IIC Metaverse required a modern digital presence capable of presenting a complex blockchain ecosystem in a simple, trustworthy, and visually engaging way. The challenge was to communicate AI integration, tokenomics, ecosystem benefits, and future roadmap while maintaining exceptional performance, responsive design, and intuitive navigation across all devices.",
+        "solution": "We designed and developed a fully customized HTML, CSS, and JavaScript website focused on performance, modern UI/UX, and clear information architecture. Through responsive layouts, interactive sections, optimized assets, and smooth animations, we created a digital experience that effectively communicates the company's blockchain vision while delivering excellent usability and fast loading speeds.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Modern Web3 Website Design",
+            "Responsive Mobile-First Experience",
+            "Interactive Ecosystem Showcase",
+            "Token Economy Presentation",
+            "Performance Optimized Frontend",
+            "SEO-Friendly Architecture",
+            "Smooth UI Animations",
+            "Cross-Browser Compatibility"
         ],
         "country": "Brazil",
         "caseStudy": {
-            "overview": "IIC Metaverse needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "IIC Metaverse is a next-generation blockchain ecosystem combining cryptocurrency, artificial intelligence, and real-world assets into a unified digital finance platform. Our objective was to create a modern corporate website that clearly communicates the project's vision, technology, ecosystem, and token economy while establishing trust with investors, partners, and potential users through an engaging digital experience.",
+
+            "coreCapabilities": [
+                "Custom Website Development",
+                "Web3 UI/UX Design",
+                "Responsive Frontend Development",
+                "Landing Page Development",
+                "Interactive UI Animations",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at IIC Metaverse to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Content Strategy",
+                    "description": "We collaborated closely with the IIC Metaverse team to understand their blockchain ecosystem, AI initiatives, token economy, and long-term vision. This enabled us to organize complex technical information into a structured and user-friendly content experience."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "UI/UX Design & Frontend Development",
+                    "description": "Our designers and developers created a premium Web3 interface with responsive layouts, modern typography, engaging visuals, interactive animations, and intuitive navigation that effectively showcases the platform's ecosystem, technology, and business objectives."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing HTML + CSS + JS, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance Optimization & Deployment",
+                    "description": "The website was built using clean HTML, CSS, and JavaScript with optimized assets, responsive components, SEO best practices, and cross-browser compatibility, ensuring a fast, reliable, and scalable digital experience."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Successfully launched a modern Web3 corporate website.",
+                "Simplified communication of blockchain technology and ecosystem.",
+                "Enhanced visitor engagement through interactive UI and animations.",
+                "Responsive experience across desktop, tablet, and mobile devices.",
+                "Improved website performance with optimized frontend architecture.",
+                "Established a professional online presence for investors and partners."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss successfully transformed our vision into a modern and professional Web3 experience. Their team delivered a fast, responsive, and visually engaging website that communicates our ecosystem, technology, and long-term mission with exceptional clarity.",
                 "author": "Management Team",
                 "position": "IIC Metaverse"
             }
+        },
+        "hireResources": {
+            "label": "Hire Web Developer",
+            "link": "/hire-us/hire-web-developers"
         }
     },
+
     {
         "slug": "saveyourcapital",
         "name": "Save Your Capital",
         "portfolioImage": "/portfolio/custom/portfolio_saveyourcapital_full.webp",
         "category": "web design",
         "timeline": "2-4 Months",
-        "techStack": "HTML, CSS & Js",
+        "techStack": "HTML, CSS & JavaScript",
         "link": "https://saveyourcapital.co",
         "client": "Save Your Capital",
-        "purpose": "A trading discipline platform designed for intraday and options traders. It helps users reduce emotional trading, prevent overtrading, and protect capital through smart rules, alerts, and risk management tools.",
-        "challenge": "The client needed a robust HTML, CSS & Js architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using HTML, CSS & Js, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Designed and developed a modern landing website for Save Your Capital, a trading discipline platform built for intraday and options traders. The website showcases smart risk management tools, discipline tracking, broker connectivity, and behavioral insights through a high-performance, responsive, and conversion-focused user experience.",
+        "challenge": "The client needed a premium landing website capable of clearly communicating a unique trading discipline concept while encouraging early access registrations. The platform had to present complex trading psychology, risk management features, pricing plans, and broker integrations in an engaging and easy-to-understand format across all devices.",
+        "solution": "We designed and developed a fully customized website using HTML, CSS, and JavaScript with a modern UI, smooth animations, responsive layouts, and optimized performance. The website effectively highlights the platform's features, trading workflow, discipline score system, broker connectivity, and pricing while maximizing user engagement and conversions.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Modern SaaS Landing Page",
+            "Responsive Mobile-First Design",
+            "Interactive Feature Showcase",
+            "Pricing Section",
+            "Broker Integration Showcase",
+            "Performance Optimized Frontend",
+            "SEO-Friendly Architecture",
+            "Smooth UI Animations"
         ],
         "country": "UAE",
         "caseStudy": {
-            "overview": "Save Your Capital needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Save Your Capital is a trading discipline platform created to help intraday and options traders reduce emotional trading, prevent overtrading, and protect their capital through smart rules, alerts, and behavioral insights. Our goal was to design a high-converting website that clearly communicates the platform's value proposition while delivering a modern, trustworthy, and engaging digital experience.",
+
+            "coreCapabilities": [
+                "Custom Website Development",
+                "SaaS UI/UX Design",
+                "Responsive Frontend Development",
+                "Landing Page Development",
+                "Interactive UI Animations",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Save Your Capital to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We worked closely with the client to understand trader pain points, product positioning, broker connectivity, discipline tracking, pricing strategy, and user acquisition goals before planning the website structure."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "UI/UX Design & Frontend Development",
+                    "description": "Our team crafted a modern SaaS interface with engaging illustrations, responsive layouts, interactive sections, pricing modules, broker showcases, and clear calls-to-action that guide visitors toward early access registration."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing HTML, CSS & Js, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance Optimization & Launch",
+                    "description": "The website was developed using clean HTML, CSS, and JavaScript with optimized assets, fast-loading pages, SEO best practices, accessibility improvements, and cross-browser compatibility for a smooth experience on every device."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Successfully launched a premium SaaS marketing website.",
+                "Clearly communicated the platform's trading discipline workflow.",
+                "Improved user engagement through interactive sections and animations.",
+                "Delivered a responsive experience across desktop, tablet, and mobile devices.",
+                "Optimized website performance for faster loading and improved usability.",
+                "Created a strong digital presence supporting early-access registrations."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a professional website that perfectly represents our product vision. The team translated complex trading concepts into an engaging and user-friendly experience while maintaining exceptional performance across every device.",
                 "author": "Management Team",
                 "position": "Save Your Capital"
             }
+        },
+        "hireResources": {
+            "label": "Hire Web Developer",
+            "link": "/hire-us/hire-web-developers"
         }
     },
+
     {
         "slug": "better-quest",
         "name": "Better Quest",
@@ -4083,44 +5288,70 @@ export const portfolioDetailsData = [
         "techStack": "Web Design",
         "link": "https://kretoss.in/project/better-quest/home.html",
         "client": "Better Quest",
-        "purpose": "A goal-driven personal development platform that helps users track progress, build productive habits, complete challenges, and stay accountable while achieving personal and professional goals.",
-        "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Web Design, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Designed and developed an immersive promotional website for Better Quest, a health-focused gamification platform that encourages users to build healthier lifestyles through engaging gameplay. The website showcases how real-world activities such as walking, healthy eating, meditation, hydration, and sleep are transformed into in-game rewards while highlighting the platform's privacy-first approach, research initiatives, and digital health ecosystem.",
+        "challenge": "Better Quest required a visually immersive website capable of presenting a unique blend of gaming, digital health, privacy, and scientific research in a simple and engaging way. The challenge was to create an interactive experience that appeals to users, healthcare partners, and researchers while maintaining excellent performance, responsiveness, and accessibility across all devices.",
+        "solution": "We designed and developed a fully customized website featuring playful illustrations, interactive storytelling, responsive layouts, engaging animations, and optimized frontend performance. The website effectively communicates Better Quest's vision, gameplay mechanics, healthy habit tracking, privacy standards, and healthcare mission while delivering a premium user experience.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Gamified Website Design",
+            "Interactive Storytelling Experience",
+            "Responsive Mobile-First Design",
+            "Health Habit Showcase",
+            "App Download Landing Pages",
+            "Performance Optimized Frontend",
+            "SEO-Friendly Architecture",
+            "Smooth UI Animations"
         ],
         "country": "Australia",
         "caseStudy": {
-            "overview": "Better Quest needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Better Quest is an innovative health gamification platform developed by Bowhead Health that motivates users to improve their daily habits through an engaging mobile game experience. We partnered with the client to create a visually rich marketing website that explains the platform's mission, healthy lifestyle features, privacy-first philosophy, research initiatives, and game mechanics while encouraging mobile app downloads and community engagement.",
+
+            "coreCapabilities": [
+                "Custom Website Development",
+                "UI/UX Design",
+                "Responsive Frontend Development",
+                "Landing Page Development",
+                "Interactive Storytelling",
+                "Animation Integration",
+                "Performance Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Better Quest to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Content Strategy",
+                    "description": "We worked closely with the client to understand the Better Quest ecosystem, user journey, healthy habit tracking, healthcare vision, and research initiatives. This helped us organize complex information into a simple and engaging website structure."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Creative UI/UX Design",
+                    "description": "Our design team crafted a colorful, game-inspired interface featuring custom illustrations, immersive backgrounds, interactive content sections, animated assets, and responsive layouts that reflect the playful nature of the Better Quest platform."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Web Design, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Frontend Development & Optimization",
+                    "description": "The website was developed with clean, responsive code, optimized media assets, smooth scrolling animations, cross-browser compatibility, and SEO best practices to ensure excellent performance across desktop, tablet, and mobile devices."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Successfully launched a visually engaging healthcare gamification website.",
+                "Presented complex health and research concepts through intuitive storytelling.",
+                "Improved user engagement with immersive illustrations and interactive sections.",
+                "Delivered a seamless responsive experience across all devices.",
+                "Optimized website performance for faster loading and improved usability.",
+                "Created a strong digital presence supporting app downloads and platform awareness."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss brought our vision to life with a beautifully designed website that perfectly balances healthcare, gaming, and innovation. Their attention to user experience, animations, and responsive performance helped us communicate our mission in a fun and engaging way.",
                 "author": "Management Team",
                 "position": "Better Quest"
             }
+        },
+        "hireResources": {
+            "label": "Hire Web Developer",
+            "link": "/hire-us/hire-web-developers"
         }
     },
+
     {
         "slug": "wedding-invitation",
         "name": "Practical Information for International Guest",
@@ -4130,44 +5361,70 @@ export const portfolioDetailsData = [
         "techStack": "Web Design",
         "link": "https://kretoss.in/project/wedding/",
         "client": "Practical Information for International Guest",
-        "purpose": "A digital wedding platform that allows couples to share event details, schedules, photo galleries, RSVPs, and memorable moments with family and friends in one place.",
-        "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Web Design, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Designed and developed an elegant wedding information website that helps international guests access everything they need for the celebration in one place. The website presents the couple's story, wedding timeline, venue details, accommodations, dress code, RSVP information, and travel guidance through a beautifully crafted, responsive, and user-friendly experience.",
+        "challenge": "The client required a premium wedding website that could provide guests with all essential event information while maintaining a luxurious visual identity. The challenge was to organize schedules, venue details, accommodation recommendations, RSVP instructions, and travel information into an intuitive and mobile-friendly experience for guests traveling from different countries.",
+        "solution": "We designed and developed a fully customized wedding website featuring elegant layouts, responsive design, interactive event sections, accommodation listings, countdown elements, and clear navigation. The final experience combines beautiful visuals with practical information, allowing guests to quickly access everything they need before and during the wedding celebration.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Luxury Wedding Website Design",
+            "Responsive Mobile-First Layout",
+            "Wedding Timeline & Schedule",
+            "Venue Information",
+            "Accommodation Directory",
+            "RSVP & Contact Sections",
+            "Countdown Experience",
+            "Performance Optimized Frontend"
         ],
         "country": "Canada",
         "caseStudy": {
-            "overview": "Practical Information for International Guest needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Practical Information for International Guest is a custom-designed wedding website created to simplify communication between the couple and their guests. We developed a visually elegant digital experience where visitors can explore the wedding story, event schedule, venue, accommodations, dress code, gift information, RSVP details, and travel guidance through a beautifully organized interface.",
+
+            "coreCapabilities": [
+                "Custom Website Development",
+                "Wedding Website Design",
+                "Responsive Frontend Development",
+                "Landing Page Development",
+                "UI/UX Design",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Practical Information for International Guest to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Planning",
+                    "description": "We collaborated with the client to understand the complete wedding journey, guest requirements, travel logistics, accommodation preferences, event schedule, and overall design vision. This allowed us to structure the website around the needs of international guests."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "Elegant UI/UX Design",
+                    "description": "Our designers created a sophisticated wedding experience using premium typography, floral illustrations, soft color palettes, elegant imagery, and intuitive layouts that reflect the couple's personality while making information easy to access."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Web Design, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Development & Optimization",
+                    "description": "The website was developed with responsive layouts, optimized media assets, smooth scrolling, cross-browser compatibility, and fast-loading pages to ensure guests could access important wedding information from any device before and during the celebration."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Successfully launched a premium wedding information website.",
+                "Simplified guest access to schedules, venues, and accommodations.",
+                "Delivered a seamless experience across desktop, tablet, and mobile devices.",
+                "Improved accessibility of RSVP and contact information.",
+                "Created a beautiful digital experience that complements the wedding celebration.",
+                "Established a centralized destination for all guest communication."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a beautiful wedding website that exceeded our expectations. Every detail—from the elegant design to the intuitive guest experience—was thoughtfully crafted, making it easy for our family and friends to access all the information they needed for our special day.",
                 "author": "Management Team",
                 "position": "Practical Information for International Guest"
             }
+        },
+        "hireResources": {
+            "label": "Hire Web Developer",
+            "link": "/hire-us/hire-web-developers"
         }
     },
+
     {
         "slug": "atopic-diary",
         "name": "Atopic Diary",
@@ -4177,44 +5434,70 @@ export const portfolioDetailsData = [
         "techStack": "Web Design",
         "link": "https://kretoss.in/project/atopic-diary/",
         "client": "Atopic Diary",
-        "purpose": "A health tracking platform designed for individuals managing eczema and skin conditions. Users can monitor symptoms, track triggers, and gain insights to improve skin health.",
-        "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Web Design, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Designed and developed a modern healthcare website for Atopic Diary, a privacy-first digital health platform that empowers individuals living with Atopic Dermatitis to track symptoms, monitor skin health, securely own their medical data, and contribute to life-changing research. The website combines a clean medical interface with engaging storytelling to build trust among patients, researchers, and healthcare organizations.",
+        "challenge": "The client needed a professional healthcare website capable of communicating complex concepts such as blockchain-based data ownership, patient privacy, medical research, and symptom tracking in a simple, trustworthy, and accessible way. The platform also needed to encourage app downloads while maintaining outstanding performance across all devices.",
+        "solution": "We designed and developed a fully customized website with responsive layouts, modern healthcare-focused UI, engaging visual storytelling, optimized frontend performance, and intuitive navigation. The website clearly presents the platform's patient benefits, privacy standards, research ecosystem, and healthcare mission while delivering a premium user experience across desktop and mobile devices.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Healthcare Website Design",
+            "Responsive Mobile-First Experience",
+            "Patient Journey Showcase",
+            "Medical Research Sections",
+            "Privacy & Security Presentation",
+            "App Download Landing Experience",
+            "Performance Optimized Frontend",
+            "SEO-Friendly Architecture"
         ],
         "country": "Brazil",
         "caseStudy": {
-            "overview": "Atopic Diary needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Atopic Diary is a privacy-first digital health platform developed to help individuals living with Atopic Dermatitis better understand and manage their condition while securely owning their health data. We partnered with the client to create a professional healthcare website that effectively communicates the platform's patient-centric approach, blockchain-powered privacy, research initiatives, and digital health ecosystem through an engaging and easy-to-understand experience.",
+
+            "coreCapabilities": [
+                "Custom Website Development",
+                "Healthcare UI/UX Design",
+                "Responsive Frontend Development",
+                "Landing Page Development",
+                "Interactive Content Design",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Atopic Diary to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Healthcare Strategy",
+                    "description": "We collaborated with the client to understand the patient journey, healthcare objectives, blockchain-based privacy model, medical research initiatives, and platform functionality. This enabled us to organize complex healthcare information into a clear and user-friendly website structure."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "UI/UX Design & Frontend Development",
+                    "description": "Our team designed a clean healthcare-inspired interface featuring responsive layouts, engaging illustrations, intuitive navigation, patient-focused content sections, app promotion, and clear calls-to-action while maintaining a trustworthy visual identity."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Web Design, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance Optimization & Launch",
+                    "description": "The website was developed with responsive architecture, optimized media assets, fast-loading pages, SEO best practices, accessibility improvements, and cross-browser compatibility to ensure a seamless experience across desktop, tablet, and mobile devices."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Successfully launched a modern healthcare marketing website.",
+                "Clearly communicated patient privacy and blockchain-powered data ownership.",
+                "Improved presentation of medical research and healthcare partnerships.",
+                "Delivered a fully responsive experience across all screen sizes.",
+                "Optimized website performance for faster loading and better usability.",
+                "Created a trusted digital presence supporting patient engagement and app adoption."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a professional healthcare website that perfectly communicates our mission of empowering patients through privacy, innovation, and research. The clean design, responsive experience, and attention to detail have helped us build trust with both patients and healthcare professionals.",
                 "author": "Management Team",
                 "position": "Atopic Diary"
             }
+        },
+        "hireResources": {
+            "label": "Hire Web Developer",
+            "link": "/hire-us/hire-web-developers"
         }
     },
+
     {
         "slug": "skin-dao",
         "name": "Skin Dao",
@@ -4224,44 +5507,70 @@ export const portfolioDetailsData = [
         "techStack": "Web Design",
         "link": "https://skincare-adaa1.web.app/",
         "client": "Skin Dao",
-        "purpose": "A personalized skincare platform that helps users understand their skin, discover suitable products, and follow customized skincare routines for healthier skin.",
-        "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Web Design, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Designed and developed a modern healthcare web experience for Skin DAO, a digital skincare platform focused on helping users better understand and manage their skin health. The website presents personalized skincare journeys, educational content, privacy-focused experiences, and intuitive user interactions through a clean, responsive, and visually engaging interface.",
+        "challenge": "The client required a modern healthcare website capable of presenting personalized skincare experiences in a simple and trustworthy way. The challenge was to organize skincare guidance, digital health features, and educational content into an intuitive interface while maintaining fast performance, accessibility, and seamless responsiveness across all devices.",
+        "solution": "We designed and developed a fully customized website with modern UI/UX, responsive layouts, optimized frontend performance, and engaging visual storytelling. The platform was structured to clearly communicate Skin DAO's skincare ecosystem while providing an intuitive experience that encourages user engagement and confidence.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Healthcare Website Design",
+            "Responsive Mobile-First Design",
+            "Personalized Skincare Experience",
+            "Interactive User Journey",
+            "Modern UI/UX Design",
+            "Performance Optimized Frontend",
+            "SEO-Friendly Architecture",
+            "Cross-Browser Compatibility"
         ],
         "country": "Germany",
         "caseStudy": {
-            "overview": "Skin Dao needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Skin DAO is a modern skincare platform focused on delivering personalized digital skincare experiences through an intuitive and accessible interface. Our objective was to create a premium healthcare website that communicates the platform's vision while making skincare guidance, educational resources, and user engagement simple, trustworthy, and visually appealing.",
+
+            "coreCapabilities": [
+                "Custom Website Development",
+                "Healthcare UI/UX Design",
+                "Responsive Frontend Development",
+                "Landing Page Development",
+                "Interactive UI Design",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Skin Dao to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Content Strategy",
+                    "description": "We worked closely with the client to understand the platform's skincare vision, target audience, user journey, and digital healthcare objectives. This helped us organize the content into a structured and engaging website experience."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "UI/UX Design & Frontend Development",
+                    "description": "Our team designed a clean healthcare-inspired interface with responsive layouts, engaging visual elements, intuitive navigation, and interactive sections that improve user engagement while maintaining a premium brand identity."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Web Design, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance Optimization & Launch",
+                    "description": "The website was developed using modern frontend practices with responsive architecture, optimized assets, accessibility improvements, SEO best practices, and cross-browser compatibility to ensure a smooth experience across desktop, tablet, and mobile devices."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Successfully launched a modern healthcare website.",
+                "Improved presentation of personalized skincare services.",
+                "Delivered a responsive experience across desktop, tablet, and mobile devices.",
+                "Optimized website performance for fast loading and improved usability.",
+                "Created a professional digital presence that builds trust with users.",
+                "Established a scalable frontend foundation for future platform growth."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a modern and intuitive digital experience that perfectly represents our vision. The website combines clean design, responsive performance, and an engaging user journey, helping us communicate our skincare platform with clarity and professionalism.",
                 "author": "Management Team",
                 "position": "Skin Dao"
             }
+        },
+        "hireResources": {
+            "label": "Hire Web Developer",
+            "link": "/hire-us/hire-web-developers"
         }
     },
+
     {
         "slug": "core",
         "name": "Core CRMS",
@@ -4271,44 +5580,71 @@ export const portfolioDetailsData = [
         "techStack": "Web Design",
         "link": "https://kretoss.in/project/core_crms/",
         "client": "Core CRMS",
-        "purpose": "A comprehensive customer relationship management system that helps businesses manage leads, sales pipelines, customer interactions, and team performance from a centralized dashboard.",
-        "challenge": "The client needed a robust Web Design architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Web Design, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Designed and developed a modern SaaS website for Core CRMS, an inventory management and business operations platform that helps companies streamline inventory, products, vendors, customers, sales, and reporting through a centralized dashboard. The website combines clean UI, intuitive navigation, and conversion-focused layouts to effectively showcase the platform's capabilities and pricing.",
+        "challenge": "The client required a modern SaaS website capable of communicating a comprehensive inventory management solution without overwhelming potential customers. The challenge was to organize dashboards, analytics, inventory workflows, pricing plans, and business features into a clean, engaging, and responsive experience that builds trust and encourages free trial registrations.",
+        "solution": "We designed and developed a fully customized SaaS website featuring responsive layouts, modern dashboard-inspired visuals, interactive feature sections, pricing modules, testimonials, and conversion-focused call-to-actions. The website delivers an intuitive browsing experience while highlighting the platform's inventory management capabilities, reporting tools, and business automation features.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Modern SaaS Website Design",
+            "Responsive Mobile-First Layout",
+            "Interactive Dashboard Showcase",
+            "Pricing Plan Presentation",
+            "Business Analytics Sections",
+            "Performance Optimized Frontend",
+            "SEO-Friendly Architecture",
+            "Conversion-Focused Landing Pages"
         ],
         "country": "UK",
         "caseStudy": {
-            "overview": "Core CRMS needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized web design solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Core CRMS is a modern inventory management and CRM platform built to simplify business operations through centralized inventory tracking, customer management, vendor management, reporting, and sales analytics. We partnered with the client to create a premium SaaS marketing website that communicates the platform's capabilities through engaging visuals, structured content, and an intuitive user experience designed to maximize product adoption.",
+
+            "coreCapabilities": [
+                "Custom Website Development",
+                "SaaS UI/UX Design",
+                "Responsive Frontend Development",
+                "Landing Page Development",
+                "Dashboard UI Design",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Core CRMS to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated with the client to understand their inventory management workflows, CRM functionality, target audience, SaaS positioning, pricing strategy, and customer acquisition goals before defining the website structure."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "UI/UX Design & Frontend Development",
+                    "description": "Our design team created a modern SaaS interface using dashboard-inspired visuals, feature-focused layouts, pricing sections, testimonials, and responsive components that clearly communicate the platform's value while encouraging free trial registrations."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Web Design, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Performance Optimization & Launch",
+                    "description": "The website was developed with responsive architecture, optimized assets, fast-loading pages, SEO best practices, accessibility improvements, and cross-browser compatibility to ensure an exceptional user experience across desktop, tablet, and mobile devices."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Successfully launched a modern SaaS marketing website.",
+                "Clearly showcased inventory management and CRM capabilities.",
+                "Improved user engagement through dashboard-focused visuals and interactive sections.",
+                "Delivered a seamless responsive experience across all devices.",
+                "Optimized website performance for faster loading and improved usability.",
+                "Created a professional digital presence supporting product awareness and free trial conversions."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a clean, modern SaaS experience that perfectly represents our inventory management platform. Their attention to UI/UX, responsive design, and conversion-focused layouts helped us present our product professionally while making it easy for potential customers to understand our value.",
                 "author": "Management Team",
                 "position": "Core CRMS"
             }
+        },
+        "hireResources": {
+            "label": "Hire Web Developer",
+            "link": "/hire-us/hire-web-developers"
         }
     },
+
+    // Other
     {
         "slug": "clean-steam-pros",
         "name": "Clean Steam Pros",
@@ -4318,44 +5654,75 @@ export const portfolioDetailsData = [
         "techStack": "Hubspot",
         "link": "https://cleansteampros.com/",
         "client": "Clean Steam Pros",
-        "purpose": "A professional car detailing and steam-cleaning platform offering deep interior cleaning, paint correction, ceramic coating, and vehicle protection services. Designed to help car owners maintain showroom-quality results.",
-        "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Hubspot, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Clean Steam Pros is a premium HubSpot-powered website built for a professional mobile car detailing company specializing in steam cleaning, paint correction, ceramic coating, and long-term vehicle protection. The platform focuses on educating visitors about the company's unique Clean • Steam • Protect methodology while driving appointment bookings through a highly optimized customer journey.",
+
+        "challenge": "The client required a modern website that could effectively communicate premium detailing services, differentiate the brand from traditional car washes, showcase multiple service packages, establish credibility through testimonials and guarantees, and convert visitors into qualified booking inquiries across desktop and mobile devices.",
+
+        "solution": "We designed and developed a conversion-focused HubSpot website with engaging landing pages, intuitive navigation, persuasive service storytelling, responsive layouts, optimized lead generation forms, and SEO-friendly architecture. The platform emphasizes the Clean • Steam • Protect process while providing a seamless booking experience for customers.",
+
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom HubSpot Website Development",
+            "Responsive Mobile-First Design",
+            "Service Package Showcase",
+            "Conversion-Focused Landing Pages",
+            "Online Appointment Booking",
+            "Customer Testimonials & Satisfaction Guarantee",
+            "SEO Optimized Website Structure",
+            "High Performance & Fast Loading"
         ],
-        "country": "Canada",
+
+        "country": "United States",
+
         "caseStudy": {
-            "overview": "Clean Steam Pros needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Clean Steam Pros wanted a premium digital presence that reflected the quality of its professional detailing services while increasing appointment bookings and customer trust. The website was designed to educate visitors about the company's signature Clean • Steam • Protect methodology, showcase premium detailing packages, and create a frictionless booking experience that converts first-time visitors into loyal customers.",
+
+            "coreCapabilities": [
+                "Custom Website Development",
+                "HubSpot CMS Development",
+                "Responsive Frontend Development",
+                "Landing Page Development",
+                "Conversion Rate Optimization",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Clean Steam Pros to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Research & Business Strategy",
+                    "description": "We analyzed customer behavior, competitor offerings, and the vehicle detailing market to build a conversion-focused information architecture that clearly communicates premium services and encourages appointment bookings."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "UX/UI Design",
+                    "description": "Our designers crafted a clean, modern interface featuring service comparisons, the Clean • Steam • Protect process, customer testimonials, pricing packages, and strong calls-to-action while ensuring a seamless mobile-first experience."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Hubspot, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "HubSpot Development",
+                    "description": "We developed a scalable HubSpot CMS website with reusable content modules, responsive layouts, optimized forms, SEO best practices, and performance enhancements to support future marketing campaigns and lead generation."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Created a premium online brand experience aligned with the company's professional detailing services.",
+                "Improved visitor engagement through clear service presentation and intuitive navigation.",
+                "Increased booking potential with optimized landing pages and strategically placed call-to-action sections.",
+                "Delivered a fast, responsive website optimized for mobile users and search engines.",
+                "Built a scalable HubSpot platform that supports ongoing marketing campaigns and future business growth."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a website that truly represents our premium brand. The new platform clearly explains our Clean • Steam • Protect process, looks exceptional across every device, and provides a seamless experience that helps convert visitors into customers.",
                 "author": "Management Team",
                 "position": "Clean Steam Pros"
+            },
+
+            "hireResources": {
+                "label": "Hire Web Developer",
+                "link": "/hire-us/hire-web-developers"
             }
         }
     },
+
     {
         "slug": "one",
         "name": "One",
@@ -4364,45 +5731,71 @@ export const portfolioDetailsData = [
         "timeline": "2-4 Months",
         "techStack": "Hubspot",
         "link": "https://www.onefc.com/",
-        "client": "One",
-        "purpose": "A global martial arts and combat sports platform featuring MMA, Muay Thai, kickboxing, and grappling events. Fans can watch live fights, follow athletes, and stay updated with the latest sports content and events.",
-        "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Hubspot, integrating advanced features to deliver optimal performance and engagement.",
+        "client": "One Championship",
+        "description": "ONE Championship is the world's largest martial arts organization, delivering premium digital experiences for millions of fans worldwide. The platform brings together live events, athlete profiles, fight results, exclusive videos, ticket sales, memberships, and martial arts news through a fast, content-rich website optimized for global audiences.",
+        "challenge": "The client required a highly scalable digital platform capable of handling massive traffic spikes during live fight events while delivering real-time content, athlete information, videos, event schedules, ticketing, and multilingual experiences without compromising performance or user engagement.",
+        "solution": "We developed a modern, high-performance HubSpot-powered platform with responsive design, optimized content architecture, streamlined navigation, and scalable infrastructure. The solution enables fans to discover events, watch exclusive content, follow athletes, purchase tickets, and stay connected through a seamless digital experience across every device.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Live Event Showcase",
+            "Athlete Profiles & Rankings",
+            "Fight Results & Match Cards",
+            "Video & Media Library",
+            "Membership & Subscription Integration",
+            "Ticket Booking Experience",
+            "Responsive Mobile Experience",
+            "SEO Optimized Content Architecture"
         ],
-        "country": "Germany",
+        "country": "Singapore",
         "caseStudy": {
-            "overview": "One needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "ONE Championship needed a world-class digital platform capable of serving millions of martial arts fans across multiple countries. The goal was to centralize live events, athlete content, videos, news, memberships, and ticket sales into a fast, scalable website while maintaining exceptional user experience during high-traffic fight nights.",
+
+            "coreCapabilities": [
+                "Custom Website Development",
+                "HubSpot CMS Development",
+                "Responsive Frontend Development",
+                "Landing Page Development",
+                "Media & Content Platform Development",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at One to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Content Strategy",
+                    "description": "We analyzed the content ecosystem including live events, athlete profiles, rankings, videos, news, memberships, and ticketing to design a scalable information architecture capable of serving a global sports audience."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "UX/UI Design",
+                    "description": "Our team created an engaging sports-focused user experience with intuitive navigation, immersive event pages, athlete showcases, video galleries, and mobile-first layouts that maximize fan engagement."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Hubspot, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Development & Optimization",
+                    "description": "Using HubSpot CMS, we developed a scalable, high-performance website with reusable content modules, responsive layouts, optimized media delivery, SEO best practices, and infrastructure capable of supporting significant traffic during live events."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a premium digital experience for millions of global martial arts fans.",
+                "Improved content discovery across events, athletes, news, and videos.",
+                "Created a responsive platform optimized for desktop, tablet, and mobile viewing.",
+                "Enhanced user engagement with streamlined navigation and immersive event experiences.",
+                "Built a scalable content platform capable of supporting high traffic during major championship events."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
-                "position": "One"
+                "text": "Kretoss delivered a powerful digital platform that captures the excitement of ONE Championship. The website provides an exceptional experience for our global fan base, making it easier to discover events, follow athletes, and engage with our content across every device.",
+                "author": "Digital Team",
+                "position": "ONE Championship"
+            },
+
+            "hireResources": {
+                "label": "Hire Web Developer",
+                "link": "/hire-us/hire-web-developers"
             }
         }
     },
+
     {
         "slug": "aroconllc",
         "name": "Aroconllc",
@@ -4411,45 +5804,71 @@ export const portfolioDetailsData = [
         "timeline": "2-4 Months",
         "techStack": "Hubspot",
         "link": "https://www.aroconllc.com/",
-        "client": "Aroconllc",
-        "purpose": "A trusted roofing and exterior construction company providing roofing, siding, gutter, window, and storm damage solutions for residential and commercial properties.",
-        "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Hubspot, integrating advanced features to deliver optimal performance and engagement.",
+        "client": "AROCON Roofing & Construction",
+        "description": "AROCON Roofing & Construction is a professional HubSpot-powered website built for a leading Mid-Atlantic exterior remodeling company specializing in residential and commercial roofing, gutters, siding, windows, skylights, and maintenance plans. The platform helps homeowners easily request inspections, explore services, learn about warranties, and connect with certified roofing experts through a conversion-focused digital experience.",
+        "challenge": "The client needed a modern website capable of showcasing multiple exterior improvement services, educating homeowners, generating qualified leads, and handling growing traffic across several service regions. The platform also needed to establish trust through certifications, warranties, customer reviews, and an intuitive user experience.",
+        "solution": "We developed a scalable HubSpot website with responsive layouts, service-focused landing pages, optimized lead generation forms, local SEO architecture, and reusable CMS modules. The solution streamlines customer inquiries, highlights premium certifications, promotes maintenance plans, and delivers an exceptional browsing experience across every device.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom HubSpot Website Development",
+            "Residential & Commercial Service Pages",
+            "Online Inspection Request Forms",
+            "Service Area & Local SEO Pages",
+            "Customer Reviews & Warranty Showcase",
+            "Responsive Mobile-First Design",
+            "Performance Optimization",
+            "SEO-Friendly Content Architecture"
         ],
-        "country": "Germany",
+        "country": "United States",
         "caseStudy": {
-            "overview": "Aroconllc needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "AROCON Roofing & Construction wanted a premium digital platform that reflected its reputation as one of the Mid-Atlantic's leading exterior contractors. The objective was to simplify the customer journey from service discovery to inspection requests while showcasing roofing expertise, manufacturer certifications, warranties, financing options, and service coverage across Maryland, Virginia, Delaware, and surrounding regions.",
+
+            "coreCapabilities": [
+                "Custom Website Development",
+                "HubSpot CMS Development",
+                "Responsive Frontend Development",
+                "Landing Page Development",
+                "Local Business Website Development",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Aroconllc to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Research & Planning",
+                    "description": "We analyzed homeowner search behavior, local service markets, and the company's extensive roofing and exterior services to create a scalable website architecture optimized for lead generation and regional SEO."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "UX/UI Design",
+                    "description": "Our design team developed a clean, trust-focused interface featuring detailed service pages, financing information, certifications, customer reviews, warranty highlights, and strong call-to-action sections that guide visitors toward scheduling inspections."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Hubspot, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "HubSpot Development",
+                    "description": "Using HubSpot CMS, we built a high-performance, responsive website with reusable content modules, optimized forms, location-specific pages, SEO best practices, and a scalable infrastructure capable of supporting future marketing campaigns."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a professional digital experience that reflects AROCON's premium exterior remodeling services.",
+                "Improved lead generation through optimized inspection request forms and conversion-focused landing pages.",
+                "Enhanced local search visibility with service-area specific pages and SEO-optimized content.",
+                "Created a responsive website that performs seamlessly across desktop, tablet, and mobile devices.",
+                "Built a scalable HubSpot platform supporting future growth, marketing campaigns, and content expansion."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a website that perfectly represents our brand and professionalism. The new platform clearly showcases our services, certifications, and customer-first approach while making it easier for homeowners to schedule inspections and connect with our team.",
                 "author": "Management Team",
-                "position": "Aroconllc"
+                "position": "AROCON Roofing & Construction"
+            },
+
+            "hireResources": {
+                "label": "Hire Web Developer",
+                "link": "/hire-us/hire-web-developers"
             }
         }
     },
+
     {
         "slug": "intempt",
         "name": "Intempt",
@@ -4459,44 +5878,70 @@ export const portfolioDetailsData = [
         "techStack": "Hubspot",
         "link": "https://www.intempt.com/",
         "client": "Intempt",
-        "purpose": "A customer engagement and marketing automation platform that helps businesses create personalized digital experiences, increase conversions, and improve customer retention.",
-        "challenge": "The client needed a robust Hubspot architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Hubspot, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Intempt is an AI-powered Growth Operating System (GrowthOS) that unifies customer data, analytics, lifecycle automation, personalization, experimentation, and AI-driven sales execution into a single platform. Designed for modern SaaS and eCommerce businesses, it enables marketing, sales, and product teams to collaborate through real-time customer intelligence and automated growth workflows.",
+        "challenge": "Intempt required a modern digital platform capable of communicating a sophisticated AI product while simplifying complex customer data workflows. The website needed to clearly explain multiple products, educate prospective customers, generate qualified enterprise leads, and support rapid product evolution without sacrificing performance or user experience.",
+        "solution": "We built a scalable HubSpot-powered website with a modular CMS architecture, conversion-focused landing pages, responsive design, SEO optimization, and intuitive product storytelling. The platform effectively showcases AI-powered growth solutions, customer success stories, integrations, and enterprise capabilities while streamlining lead generation.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom HubSpot Website Development",
+            "AI Product Showcase",
+            "Interactive Product Landing Pages",
+            "Enterprise Lead Generation",
+            "Responsive Mobile-First Design",
+            "Integration & Partner Pages",
+            "SEO Optimized Architecture",
+            "Performance Optimization"
         ],
-        "country": "Canada",
+        "country": "United States",
         "caseStudy": {
-            "overview": "Intempt needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Intempt wanted a premium digital experience that reflected its position as an AI-native Growth Operating System. The objective was to simplify complex product messaging around customer data, AI agents, lifecycle automation, personalization, experimentation, and sales execution while creating a scalable platform capable of generating qualified enterprise leads and supporting continuous product growth.",
+
+            "coreCapabilities": [
+                "Custom Website Development",
+                "HubSpot CMS Development",
+                "Responsive Frontend Development",
+                "Landing Page Development",
+                "SaaS Product Website Development",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Intempt to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Product Discovery & Strategy",
+                    "description": "We analyzed Intempt's GrowthOS ecosystem, customer journey, AI capabilities, and enterprise value proposition to create a scalable information architecture that clearly communicates complex SaaS solutions to marketing, sales, and product teams."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "UX/UI Design",
+                    "description": "Our design team crafted a modern SaaS experience featuring product overviews, AI workflow explanations, integration showcases, customer success stories, pricing journeys, and conversion-focused call-to-action sections optimized for enterprise buyers."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Hubspot, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "HubSpot Development",
+                    "description": "Using HubSpot CMS, we developed a modular, high-performance website with reusable content components, responsive layouts, SEO best practices, optimized page speed, and scalable infrastructure capable of supporting future product launches and marketing campaigns."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Created a modern SaaS website that effectively communicates Intempt's AI-powered GrowthOS platform.",
+                "Improved enterprise lead generation through optimized landing pages and product-focused user journeys.",
+                "Enhanced user engagement with intuitive navigation and simplified AI product storytelling.",
+                "Delivered a fast, responsive website optimized for desktop, tablet, and mobile devices.",
+                "Built a scalable HubSpot CMS platform supporting continuous product expansion and future marketing initiatives."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a website that perfectly captures the vision of our AI-powered GrowthOS. The platform clearly communicates our products, simplifies complex concepts, and provides an exceptional experience that helps convert visitors into qualified enterprise opportunities.",
                 "author": "Management Team",
                 "position": "Intempt"
+            },
+
+            "hireResources": {
+                "label": "Hire Web Developer",
+                "link": "/hire-us/hire-web-developers"
             }
         }
     },
+
     {
         "slug": "automaximizer",
         "name": "Automaximizer",
@@ -4505,45 +5950,71 @@ export const portfolioDetailsData = [
         "timeline": "2-4 Months",
         "techStack": "Magento",
         "link": "https://www.automaximizer.com/",
-        "client": "Automaximizer",
-        "purpose": "An automotive dealership growth platform designed to help dealers increase sales, improve customer acquisition, and maximize business performance through data-driven solutions.",
-        "challenge": "The client needed a robust Magento architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Magento, integrating advanced features to deliver optimal performance and engagement.",
+        "client": "AutoMaximizer",
+        "description": "AutoMaximizer is a Magento-powered automotive eCommerce platform offering thousands of premium accessories and aftermarket products for cars, trucks, SUVs, motorcycles, RVs, and off-road vehicles. The platform provides a seamless shopping experience with categorized products, vehicle customization solutions, secure checkout, and responsive browsing across all devices.",
+        "challenge": "The client required a scalable Magento eCommerce platform capable of managing a large product catalog, delivering fast search and navigation, supporting secure online transactions, and providing a smooth shopping experience while maintaining excellent performance during high-traffic promotional campaigns.",
+        "solution": "We developed a high-performance Magento eCommerce solution with optimized product architecture, advanced category management, responsive storefront design, SEO-friendly pages, secure checkout workflows, and scalable infrastructure. The platform enables customers to easily discover, compare, and purchase automotive accessories while supporting future business growth.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Magento eCommerce Development",
+            "Large Product Catalog Management",
+            "Advanced Product Categories",
+            "Secure Shopping Cart & Checkout",
+            "Responsive Mobile Shopping Experience",
+            "Product Search & Filtering",
+            "SEO Optimized Store Structure",
+            "Performance Optimization"
         ],
-        "country": "UAE",
+        "country": "United States",
         "caseStudy": {
-            "overview": "Automaximizer needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "AutoMaximizer wanted to build a premium automotive eCommerce destination where customers could easily discover, customize, and purchase aftermarket accessories for virtually every type of vehicle. The objective was to create a scalable Magento platform capable of managing tens of thousands of products while delivering a fast, secure, and engaging online shopping experience.",
+
+            "coreCapabilities": [
+                "Custom Magento Development",
+                "eCommerce Store Development",
+                "Responsive Frontend Development",
+                "Product Catalog Management",
+                "Shopping Cart & Checkout Development",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Automaximizer to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Business Analysis & Planning",
+                    "description": "We analyzed AutoMaximizer's extensive automotive product catalog, customer buying journey, and category structure to build a scalable eCommerce architecture that simplifies product discovery and purchasing."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "UX/UI Design",
+                    "description": "Our design team created an intuitive shopping experience with organized product categories, advanced filtering, responsive layouts, promotional sections, and streamlined navigation that helps customers quickly find the right accessories for their vehicles."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Magento, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Magento Development",
+                    "description": "Using Magento, we developed a scalable eCommerce platform featuring optimized product management, secure checkout, responsive storefronts, SEO best practices, and performance enhancements capable of supporting continuous catalog expansion."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Built a scalable Magento store supporting a large automotive product inventory.",
+                "Improved product discovery through optimized navigation and advanced category organization.",
+                "Delivered a fast and responsive shopping experience across desktop, tablet, and mobile devices.",
+                "Enhanced customer confidence with secure checkout and intuitive purchasing workflows.",
+                "Created a future-ready eCommerce platform capable of supporting continued business growth and promotional campaigns."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a robust Magento eCommerce platform that perfectly supports our growing automotive marketplace. The website is fast, easy to navigate, and provides our customers with an outstanding shopping experience across every device.",
                 "author": "Management Team",
-                "position": "Automaximizer"
+                "position": "AutoMaximizer"
+            },
+
+            "hireResources": {
+                "label": "Hire Magento Developer",
+                "link": "/hire-us/hire-magento-developers"
             }
         }
     },
+
     {
         "slug": "rta-store",
         "name": "The RTA Store",
@@ -4553,44 +6024,70 @@ export const portfolioDetailsData = [
         "techStack": "Magento",
         "link": "https://www.thertastore.com/",
         "client": "The RTA Store",
-        "purpose": "An online marketplace specializing in ready-to-assemble cabinets and home improvement products, offering affordable and customizable solutions for kitchens and living spaces.",
-        "challenge": "The client needed a robust Magento architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Magento, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "The RTA Store is a Magento-powered eCommerce platform specializing in Ready-to-Assemble (RTA) kitchen cabinets, bathroom vanities, custom cabinetry, countertops, cabinet accessories, and professional kitchen design services. The platform provides homeowners, contractors, and designers with an intuitive online shopping experience, helping customers design and purchase high-quality cabinetry solutions for residential remodeling projects.",
+        "challenge": "The client required a scalable Magento eCommerce platform capable of managing thousands of cabinetry products, design resources, customization options, and educational content while delivering a seamless shopping experience, fast performance, and high conversion rates across desktop and mobile devices.",
+        "solution": "We developed a customized Magento solution featuring advanced product organization, responsive storefront design, optimized category pages, secure checkout, SEO-friendly architecture, and scalable infrastructure. The platform simplifies the cabinet buying journey while supporting kitchen design consultations, sample ordering, and future catalog expansion.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Custom Magento eCommerce Development",
+            "Kitchen Cabinet Product Catalog",
+            "Cabinet Door Style & Finish Showcase",
+            "Kitchen Design Consultation Pages",
+            "Secure Shopping Cart & Checkout",
+            "Responsive Mobile Shopping Experience",
+            "SEO Optimized Store Architecture",
+            "Performance Optimization"
         ],
-        "country": "Brazil",
+        "country": "United States",
         "caseStudy": {
-            "overview": "The RTA Store needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Other solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "The RTA Store wanted to create a premium online destination for homeowners, contractors, and interior designers looking for high-quality kitchen and bathroom cabinetry. The objective was to build a scalable Magento platform that simplifies product discovery, supports customization, showcases design inspiration, and delivers a smooth purchasing experience from planning to checkout.",
+
+            "coreCapabilities": [
+                "Custom Magento Development",
+                "eCommerce Store Development",
+                "Responsive Frontend Development",
+                "Product Catalog Management",
+                "Shopping Cart & Checkout Development",
+                "Performance Optimization",
+                "SEO Optimization",
+                "Website Maintenance & Support"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at The RTA Store to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Business Discovery & Planning",
+                    "description": "We analyzed the cabinetry buying journey, customer behavior, product hierarchy, and kitchen remodeling workflow to create an intuitive information architecture that simplifies product exploration and purchasing."
                 },
                 {
-                    "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "title": "UX/UI Design",
+                    "description": "Our team designed a modern shopping experience featuring cabinet collections, finish options, kitchen inspiration galleries, educational buying resources, and streamlined navigation that helps customers confidently plan their remodeling projects."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Magento, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Magento Development",
+                    "description": "Using Magento, we developed a scalable eCommerce platform with optimized product management, responsive layouts, secure checkout, SEO best practices, and performance enhancements capable of supporting a growing catalog and high-volume online traffic."
                 }
             ],
+
             "results": [
-                "40% reduction in data processing time",
-                "Zero downtime during peak traffic spikes",
-                "95% positive user feedback on the new interface"
+                "Delivered a premium Magento eCommerce experience for kitchen and bathroom remodeling customers.",
+                "Improved product discovery through organized cabinet collections and intuitive navigation.",
+                "Enhanced customer engagement with design inspiration, educational resources, and consultation workflows.",
+                "Created a responsive shopping experience optimized for desktop, tablet, and mobile devices.",
+                "Built a scalable Magento platform ready for future product expansion and continued business growth."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
+                "text": "Kretoss delivered a modern Magento platform that perfectly showcases our cabinetry collections and design services. The new website makes it easy for customers to explore products, request design assistance, and confidently purchase the right solutions for their remodeling projects.",
                 "author": "Management Team",
                 "position": "The RTA Store"
+            },
+
+            "hireResources": {
+                "label": "Hire Magento Developer",
+                "link": "/hire-us/hire-magento-developers"
             }
         }
     },
+
     {
         "slug": "hunters-unite",
         "name": "Hunters Unite",
@@ -4600,7 +6097,7 @@ export const portfolioDetailsData = [
         "techStack": "Magento",
         "link": "https://wolverinegt.shop/",
         "client": "Hunters Unite",
-        "purpose": "A performance automotive platform focused on high-quality vehicle upgrades, accessories, and solutions designed to enhance driving performance and style.",
+        "description": "A performance automotive platform focused on high-quality vehicle upgrades, accessories, and solutions designed to enhance driving performance and style.",
         "challenge": "The client needed a robust Magento architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using Magento, integrating advanced features to deliver optimal performance and engagement.",
         "keyFeatures": [

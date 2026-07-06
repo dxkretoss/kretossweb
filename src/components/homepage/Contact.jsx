@@ -170,7 +170,7 @@ export default function Contact() {
     return (
         <>
             <section ref={contactRef} id="Contact" className="contact">
-                <div className="w-layout-blockcontainer container contact-container w-container">
+                <div className="container-full-width w-layout-blockcontainer container">
                     <div className="contact-content-wrapper">
                         {/* Contact Form Block */}
                         <div style={{ "opacity": "0" }} className="contact-form-block">

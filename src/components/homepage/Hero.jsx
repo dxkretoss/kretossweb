@@ -456,7 +456,8 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="hero-contaciner-border">
-                    <div className="hero-border-box"></div><img
+                    {/* <div className="hero-border-box"></div> */}
+                    <img
                         src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b29e0aa9e3b73291734cce_Frame%202147228658.png"
                         loading="lazy" sizes="(max-width: 1919px) 100vw, 1920px"
                         srcSet="https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b29e0aa9e3b73291734cce_Frame%202147228658-p-500.png 500w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b29e0aa9e3b73291734cce_Frame%202147228658-p-1080.png 1080w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b29e0aa9e3b73291734cce_Frame%202147228658-p-1600.png 1600w, https://cdn.prod.website-files.com/6996a337655d586ffe288775/69b29e0aa9e3b73291734cce_Frame%202147228658.png 1920w"

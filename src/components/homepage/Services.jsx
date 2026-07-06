@@ -303,56 +303,56 @@ export default function Services() {
 
                 // Mobile/Tablet layout smooth entrance animations
                 mm.add("(max-width: 991px)", () => {
-                // Animate title block
-                gsap.fromTo(".project-title-area",
-                    { opacity: 0, y: 30 },
-                    {
-                        opacity: 1,
-                        y: 0,
-                        duration: 0.8,
-                        ease: "power3.out",
-                        scrollTrigger: {
-                            trigger: ".project-title-area",
-                            start: "top 85%",
-                            toggleActions: "play none none reverse"
-                        }
-                    }
-                );
-
-                    // Animate each individual service card
-                const cards = gsap.utils.toArray(".single-service-card");
-                    cards.forEach((card) => {
-                    gsap.fromTo(card,
-                            { opacity: 0, y: 40, scale: 0.95 },
+                    // Animate title block
+                    gsap.fromTo(".project-title-area",
+                        { opacity: 0, y: 30 },
                         {
                             opacity: 1,
                             y: 0,
-                            scale: 1,
                             duration: 0.8,
                             ease: "power3.out",
                             scrollTrigger: {
-                                trigger: card,
+                                trigger: ".project-title-area",
                                 start: "top 85%",
                                 toggleActions: "play none none reverse"
                             }
                         }
                     );
-                });
 
-                // Subtitle star icon entrance
-                gsap.fromTo(".project-subtitle-box .subtitle-image-icon",
-                    { scale: 0 },
-                    {
-                        scale: 1,
-                        duration: 1.2,
-                        ease: "power4.out",
-                        scrollTrigger: {
-                            trigger: ".project-subtitle-box",
-                            start: "top 90%",
-                            toggleActions: "play none none reverse"
+                    // Animate each individual service card
+                    const cards = gsap.utils.toArray(".single-service-card");
+                    cards.forEach((card) => {
+                        gsap.fromTo(card,
+                            { opacity: 0, y: 40, scale: 0.95 },
+                            {
+                                opacity: 1,
+                                y: 0,
+                                scale: 1,
+                                duration: 0.8,
+                                ease: "power3.out",
+                                scrollTrigger: {
+                                    trigger: card,
+                                    start: "top 85%",
+                                    toggleActions: "play none none reverse"
+                                }
+                            }
+                        );
+                    });
+
+                    // Subtitle star icon entrance
+                    gsap.fromTo(".project-subtitle-box .subtitle-image-icon",
+                        { scale: 0 },
+                        {
+                            scale: 1,
+                            duration: 1.2,
+                            ease: "power4.out",
+                            scrollTrigger: {
+                                trigger: ".project-subtitle-box",
+                                start: "top 90%",
+                                toggleActions: "play none none reverse"
+                            }
                         }
-                    }
-                );
+                    );
                 });
 
                 // Continuous spin for the subtitle star icon
@@ -390,7 +390,7 @@ export default function Services() {
                             style={{ "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(5.42395deg) rotateY(3.87425deg) rotateZ(-55.7892deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "willChange": "transform" }}
                         />
                     </div>
-                    <div className="w-layout-blockcontainer container w-container">
+                    <div className="w-layout-blockcontainer container-full-width container w-container">
                         <div className="service-section-block">
                             <div className="service-content-wrapper !overflow-visible">
                                 <div className="project-title-area"

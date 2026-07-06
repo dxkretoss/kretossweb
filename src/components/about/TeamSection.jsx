@@ -78,14 +78,14 @@ export default function TeamSection() {
 
 
                         {/* Description */}
-                        <p className="text-justify lg:text-left text-gray-500 text-sm sm:text-base leading-relaxed mb-8 sm:mb-10 max-w-xl">
+                        <p className="text-justify lg:text-left text-gray-500 text-sm sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-xl">
                             Mr. Ankur Kavathiya & Chintan Ramani founded Kretoss Technology in 2015 with the goal of assisting and supporting the expansion of small and medium-sized businesses. They can establish an online presence for their company and build it to generate more and more revenue.
                         </p>
 
                         {/* Button */}
-                        <div>
+                        {/* <div>
                             <AnimatedButton href="/team" text="MEET THE TEAM" />
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Right Content - Cards Grid */}
@@ -94,7 +94,7 @@ export default function TeamSection() {
                             <a
                                 key={idx}
                                 href={'#'}
-                                className="team-card flex flex-col bg-white rounded-md p-2 overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 group w-full max-w-full lg:max-w-[350px] h-[420px] sm:h-[400px] mx-auto"
+                                className="team-card flex flex-col bg-white rounded-md p-2 overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 group w-full max-w-full lg:max-w-[350px] h-[420px] sm:h-[360px] mx-auto"
                             >
                                 <div className="rounded-md overflow-hidden relative flex-1 bg-gray-100">
                                     <img
