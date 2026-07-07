@@ -85,7 +85,7 @@ export default function TeamsFuture() {
                     </div>
 
                     {/* Heading */}
-                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold text-white tracking-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-white tracking-tight">
                         What drives our <span className="bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text">employee experience</span>
                     </h2>
                 </div>

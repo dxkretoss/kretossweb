@@ -2960,17 +2960,17 @@ body {
 
 .about-right-box {
   flex-flow: column;
-  width: 350px;
   margin-left: auto;
   margin-right: auto;
-  min-height: 450px;
-  height: 100%;
   position: relative;
-  border-radius: 16px;
   overflow: hidden;
-  /* width: 85%; */
   display: flex;
-  position: relative;
+}
+
+.about-right-box video {
+  border-radius: 16px;
+  height: 100%;
+  max-height: 450px;
 }
 
 .about-title-text {
@@ -6128,7 +6128,7 @@ body {
 .about-section-title {
   font-size: 36px;
   line-height: 140%;
-  font-weight: var(--font-weight--font-semi-bold);
+  font-weight: 600;
   text-transform: capitalize;
   max-width: 650px;
 }

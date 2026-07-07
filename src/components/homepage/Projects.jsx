@@ -293,7 +293,7 @@ const ProjectCard = ({ project, id }) => {
                             </div>
 
                             {/* Title & Description */}
-                            <h3 className={`text-2xl sm:text-[32px] font-bold text-white mb-3 sm:mb-4 leading-tight`}>
+                            <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>
                                 {project.title}
                             </h3>
                             <p className={`text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>

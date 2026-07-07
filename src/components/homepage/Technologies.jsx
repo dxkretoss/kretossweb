@@ -155,7 +155,7 @@ export default function Technologies() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="technology-section-title text-4xl md:text-5xl font-bold text-gray-900 !mb-6 tracking-tight"
+            className="technology-section-title text-4xl md:text-5xl font-semibold text-gray-900 !mb-6 tracking-tight"
           >
             Technologies We Work With
           </motion.h2>
@@ -212,7 +212,7 @@ export default function Technologies() {
             >
               {/* Left Side: Description */}
               <div className="w-full lg:w-5/12 !space-y-6">
-                <h3 className="text-3xl lg:text-4xl font-bold !text-gray-900">
+                <h3 className="text-3xl lg:text-4xl font-semibold !text-gray-900">
                   {activeTab}
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-lg">

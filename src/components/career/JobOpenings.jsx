@@ -50,7 +50,7 @@ export default function JobOpenings() {
                         <Badge>We're Hiring</Badge>
                     </div>
 
-                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold text-[#111] tracking-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-[#111] tracking-tight">
                         Open Job Positions
                     </h2>
                 </div>
@@ -73,7 +73,7 @@ export default function JobOpenings() {
                             {/* Text Content */}
                             <div className={`w-full lg:w-1/2 bg-white rounded-2xl p-6 sm:p-8 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col justify-center ${job.imagePosition === 'right' ? 'lg:order-1' : 'lg:order-2'}`}>
                                 {/* Title */}
-                                <h3 className="text-2xl md:text-3xl font-bold text-[#111] mb-4 sm:mb-5">
+                                <h3 className="text-2xl md:text-3xl font-semibold text-[#111] mb-4 sm:mb-5">
                                     {job.title}
                                 </h3>
 

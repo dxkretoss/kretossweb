@@ -175,7 +175,7 @@ const PortfolioCard = ({ item }) => {
                         </div>
 
                         {/* Title & Description */}
-                        <h3 className={`text-2xl sm:text-[32px] font-bold text-white mb-3 sm:mb-4 leading-tight`}>
+                        <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>
                             {item.title}
                         </h3>
                         <p className={`text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>
@@ -340,7 +340,7 @@ export default function Portfolios() {
                         <Badge variant='white'>Categories</Badge>
                     </div>
 
-                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold text-white text-center">
+                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-white text-center">
                         Our Expertise
                     </h2>
                 </div>

@@ -131,7 +131,7 @@ export default function BuildWithUs() {
                         {/* Main Hero Box */}
                         <div className="bento-box bg-white rounded-2xl p-8 shadow-xl shadow-gray-200/50 border border-gray-100 relative overflow-hidden group flex flex-col justify-center h-full">
                             <div className="relative z-10">
-                                <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold text-[#111] leading-[1.1] mb-4 tracking-tight">
+                                <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-[#111] leading-[1.1] mb-4 tracking-tight">
                                     Be part of something <br className="hidden sm:block" />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0e54f1] to-cyan-500">
                                         extraordinary.

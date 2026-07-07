@@ -178,7 +178,7 @@ export default function AIVibeCodingWorkflow() {
 
             {/* Heading */}
 
-            <h2 className="technology-section-title flex flex-wrap gap-x-2 gap-y-1 text-3xl sm:text-4xl md:text-5xl font-bold !mb-4 md:!mb-6 tracking-tight text-[#0c1736]">
+            <h2 className="technology-section-title flex flex-wrap gap-x-2 gap-y-1 text-3xl sm:text-4xl md:text-5xl font-semibold !mb-4 md:!mb-6 tracking-tight text-[#0c1736]">
               AI-Powered
               <span className="block bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Vibe Coding

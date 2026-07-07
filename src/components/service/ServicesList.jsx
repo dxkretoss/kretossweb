@@ -233,7 +233,7 @@ export default function ServicesList() {
                         <Badge variant="blue">Our Capabilities</Badge>
 
                     </div>
-                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold text-[#111] tracking-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-[#111] tracking-tight">
                         Solutions We Deliver
                     </h2>
                 </div>
@@ -253,7 +253,7 @@ export default function ServicesList() {
                                         <div className="text-3xl md:text-5xl font-black bg-gradient-to-br from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text leading-none drop-shadow-sm">
                                             {service.id}
                                         </div>
-                                        <h3 className="text-lg md:text-3xl uppercase font-bold text-[#111] tracking-tight leading-tight">
+                                        <h3 className="text-lg md:text-3xl uppercase font-semibold text-[#111] tracking-tight leading-tight">
                                             {service.title}
                                         </h3>
                                     </div>

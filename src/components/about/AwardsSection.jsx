@@ -88,7 +88,7 @@ export default function AwardsSection() {
                             <div className='mb-5'>
                                 <Badge variant="blue">Awards</Badge>
                             </div>
-                            <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-bold tracking-tight text-black">Our Milestones</h2>
+                            <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold tracking-tight text-black">Our Milestones</h2>
                         </div>
 
                         {/* Awards List */}

@@ -335,7 +335,7 @@ export default function About() {
                                 playsInline
                                 onClick={toggleMute}
                                 className="about-video cursor-pointer"
-                                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+                                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                                 src="/aboutus-potrait.mp4"
                             />
                             <div
@@ -352,6 +352,7 @@ export default function About() {
                                     justifyContent: 'center',
                                     pointerEvents: 'none',
                                     zIndex: 10,
+                                    borderRadius: '16px',
                                     transition: 'opacity 0.3s',
                                     opacity: isMuted ? 1 : 0
                                 }}
