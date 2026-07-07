@@ -208,7 +208,7 @@ export default function PortfolioDetailsPage() {
                             </div>
 
                             {/* Right: Device mockup */}
-                            <div className="lg:col-span-6 flex justify-center items-end relative min-h-[500px] pt-15">
+                            <div className="lg:col-span-6 flex justify-center items-end relative min-h-[500px]">
                                 {isMobileApp ? (
                                     <div className="relative flex items-end">
 

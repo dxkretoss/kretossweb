@@ -351,7 +351,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "My100Days",
-                        "description": "An AI-powered career assistant that guides professionals through job roles, responsibilities, and career challenges with personalized advice and insights.",
+                        "description": "My100Days is an AI-powered personal growth and coaching mobile application designed to help users build better habits, achieve meaningful goals, and stay accountable through personalized daily guidance. The platform combines AI conversations, structured learning, focus area management, milestone tracking, and progress insights to create an engaging self-improvement journey.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -368,7 +368,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "TriSchedule",
-                        "description": "A health and performance tracking platform designed for athletes to monitor activities, training progress, fitness goals, and overall well-being.",
+                        "description": "TriSchedule is a comprehensive endurance sports and training management mobile application built for triathletes, runners, cyclists, and coaches. The platform enables users to plan workouts, monitor training progress, analyze performance metrics, manage events, and track fitness goals through an intuitive dashboard and data-driven insights.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -385,7 +385,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Wingman",
-                        "description": "An offline messaging app built for air travel, allowing passengers to connect and chat via Bluetooth without requiring internet or Wi-Fi.",
+                        "description": "Wingman is an innovative offline messaging application built specifically for airline passengers, enabling travelers to discover nearby users and communicate securely through Bluetooth without requiring internet connectivity or onboard Wi-Fi. The app creates a seamless in-flight social experience with private messaging, customizable profiles, read receipts, and premium features.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UK",
@@ -402,7 +402,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Book a Builder",
-                        "description": "A service marketplace where homeowners can post renovation projects and receive bids from verified contractors to find the best match.",
+                        "description": "Book a Builder is a construction project management and client communication platform that connects homeowners, builders, and contractors throughout the entire renovation process. The mobile application enables users to monitor project progress, manage tasks, exchange messages, share documents, receive real-time updates, and collaborate efficiently from a single intuitive dashboard.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -419,7 +419,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Klubbrabatten",
-                        "description": "A Swedish digital coupon platform offering exclusive discounts and deals from restaurants, retailers, and local businesses.",
+                        "description": "Klubbrabatten is a digital savings and rewards platform that helps users discover exclusive discounts from restaurants, cafés, retail stores, entertainment venues, and local businesses. The Flutter application combines location-based offers, interactive maps, merchant profiles, and digital coupons into a seamless mobile experience, making it easy for users to save money while supporting local businesses.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -436,7 +436,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Roamaly",
-                        "description": "A convenient eSIM marketplace that helps travelers purchase, activate, and manage mobile data plans worldwide.",
+                        "description": "Roamaly is a global eSIM marketplace that enables travelers to purchase, install, activate, and manage digital mobile data plans across multiple countries. The application offers seamless eSIM installation through QR codes, destination-based plan discovery, real-time data usage monitoring, and centralized eSIM management, providing travelers with reliable connectivity without the need for physical SIM cards.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "United Kingdom",
@@ -453,7 +453,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Sion Reservations",
-                        "description": "An event and club reservation platform that simplifies booking, ticket management, and guest experiences for venues and attendees.",
+                        "description": "Sion Reservations is a premium nightlife and event reservation platform that allows users to discover clubs, browse upcoming events, reserve tables, purchase event access, and manage membership credits through a seamless mobile experience. The application combines venue discovery, event booking, digital wallet functionality, and reservation management into a modern platform designed for both guests and nightlife venues.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -470,7 +470,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "City 2 City",
-                        "description": "A ride-booking platform that connects travelers with drivers for convenient and affordable intercity transportation.",
+                        "description": "City 2 City is a ride-sharing and intercity transportation platform that connects passengers with verified drivers for safe, affordable, and convenient travel between cities. The application enables users to search rides, book trips, become drivers, manage vehicles, track ride history, handle payments, and build trust through driver ratings and reviews all within a seamless mobile experience.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",
@@ -487,7 +487,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Drawn",
-                        "description": "A modern dating platform designed to help people discover meaningful connections through engaging profiles and smart matching.",
+                        "description": "Drawn is a modern social dating platform that helps users build meaningful relationships through intelligent profile matching, personalized interests, interactive conversations, and unique sketch-based compatibility features. The application combines profile discovery, instant messaging, match recommendations, rewards, and customizable preferences into an engaging mobile experience designed to foster authentic connections.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -504,7 +504,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Somnexis",
-                        "description": "A digital Bible platform where users can read scripture, share reflections, and engage with a faith-driven community.",
+                        "description": "Somnexis is an AI-powered biblical dream interpretation platform that helps users record dreams, explore scriptural symbolism, and discover faith-based insights through a comprehensive dream journal and biblical knowledge base. The application combines dream management, scripture references, symbol interpretation, and personalized reflections into an intuitive mobile experience for spiritual growth.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -521,7 +521,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Traivend",
-                        "description": "A crypto trading education platform that helps users learn market strategies, trading concepts, and investment fundamentals.",
+                        "description": "Traivend is a comprehensive trading education and financial learning platform designed to help beginners and experienced traders develop practical market knowledge. The application provides structured learning paths, live webinars, video courses, trading strategies, market terminology, educational articles, and community-driven content to help users build confidence in financial markets.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Brazil",
@@ -538,7 +538,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Offarat",
-                        "description": "An on-demand food delivery platform that connects customers with local restaurants for fast and convenient ordering.",
+                        "description": "Offarat is a comprehensive food discovery and restaurant marketplace that enables users to explore restaurants, browse menus, discover exclusive offers, and order food through an intuitive mobile experience. The platform combines restaurant listings, promotional campaigns, category-based browsing, and personalized recommendations to simplify dining and food ordering for customers.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "UAE",
@@ -555,7 +555,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Taxley",
-                        "description": "A tax and financial management platform that helps individuals and businesses manage taxes, compliance, and financial records with ease.",
+                        "description": "Taxley is a smart tax preparation and financial assistance platform that helps individuals complete tax returns through guided questionnaires, AI-assisted conversations, document management, and real-time tax calculations. The application simplifies complex tax processes into an intuitive step-by-step experience while helping users maximize deductions and file taxes with confidence.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "Canada",
@@ -572,7 +572,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Kolder Kid Universe",
-                        "description": "A music streaming platform featuring songs, audio content, and interactive experiences designed for children and families.",
+                        "description": "Kolder Kid Universe is a premium music and entertainment streaming platform that enables users to discover artists, stream music, watch exclusive videos, explore curated playlists, and enjoy an immersive multimedia experience. The application combines audio streaming, video content, personalized playlists, artist discovery, and media playback into a modern entertainment ecosystem.",
                         "timeline": "2-4 Months",
                         "acquisition": "N/A",
                         "country": "USA",

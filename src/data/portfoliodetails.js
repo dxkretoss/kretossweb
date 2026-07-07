@@ -1377,14 +1377,18 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "My100Days",
-        "description": "An AI-powered career assistant that guides professionals through job roles, responsibilities, and career challenges with personalized advice and insights.",
-        "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "My100Days is an AI-powered personal growth and coaching mobile application designed to help users build better habits, achieve meaningful goals, and stay accountable through personalized daily guidance. The platform combines AI conversations, structured learning, focus area management, milestone tracking, and progress insights to create an engaging self-improvement journey.",
+        "challenge": "The client envisioned a modern mobile application that could deliver personalized coaching at scale while keeping users engaged throughout their 100-day transformation journey. The platform needed to seamlessly combine AI-powered conversations, daily progress tracking, learning modules, subscriptions, and secure user management into an intuitive experience that performs consistently across both Android and iOS.",
+        "solution": "We designed and developed a scalable React Native application focused on delivering an exceptional user experience. The solution integrates AI-assisted coaching, personalized daily journeys, learning and observation modules, milestone tracking, subscription management, and secure authentication within a clean and responsive interface. The architecture was built to support future AI capabilities while ensuring smooth performance across multiple devices.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "AI Coaching Assistant",
+            "Personalized Daily Journey",
+            "Goal & Focus Area Management",
+            "Learning & Observation Modules",
+            "Milestone Tracking",
+            "Interactive AI Conversations",
+            "Subscription Management",
+            "Cross-Platform React Native App"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/my-100-days/portfolio_md_1.png",
@@ -1402,29 +1406,47 @@ export const portfolioDetailsData = [
         },
         "country": "Germany",
         "caseStudy": {
-            "overview": "My100Days needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "My100Days was built to make personal development more structured, engaging, and accessible through AI. The platform empowers users to stay committed to long-term goals by combining intelligent coaching, daily progress tracking, personalized learning, and milestone management within a beautifully designed mobile application. Our objective was to create a scalable React Native solution that delivers meaningful user experiences while supporting continuous engagement throughout the entire 100-day journey.",
+
+            "coreCapabilities": [
+                "AI-Powered Personal Coaching",
+                "Daily Habit & Journey Tracking",
+                "Goal & Focus Area Management",
+                "Learning & Observation Experience",
+                "Milestone & Progress Monitoring",
+                "Personalized Dashboard",
+                "Interactive AI Chat Interface",
+                "Subscription & Membership Management",
+                "Secure User Authentication",
+                "Cross-Platform React Native Development"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at My100Days to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated closely with the client to understand user behavior, coaching methodologies, and long-term engagement objectives. This research helped define a product strategy centered around daily motivation, personalized AI guidance, and measurable personal growth."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team created a clean and intuitive interface focused on reducing user friction while maximizing engagement. From onboarding and AI conversations to daily dashboards, focus areas, milestones, and subscription flows, every screen was designed to encourage consistency throughout the user's journey."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing React Native, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "React Native Development",
+                    "description": "We developed a high-performance cross-platform mobile application using React Native with secure authentication, AI-powered conversations, personalized dashboards, subscription management, and scalable architecture optimized for both Android and iOS platforms."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Successfully launched a cross-platform AI coaching application.",
+                "Delivered a seamless and engaging user experience across Android and iOS.",
+                "Simplified personal growth with structured daily journeys and milestone tracking.",
+                "Created a scalable architecture ready for future AI enhancements and feature expansion.",
+                "Improved user engagement through personalized coaching, learning modules, and progress insights."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss transformed our vision into a beautifully designed and highly engaging mobile application. Their expertise in React Native and product development helped us deliver an AI-powered coaching experience that motivates users every single day. The final product exceeded our expectations in both design quality and performance.",
+                "author": "Product Team",
                 "position": "My100Days"
             }
         },
@@ -1433,6 +1455,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-react-native-developers"
         }
     },
+
     {
         "slug": "trischedule",
         "name": "TriSchedule",
@@ -1442,14 +1465,18 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "TriSchedule",
-        "description": "A health and performance tracking platform designed for athletes to monitor activities, training progress, fitness goals, and overall well-being.",
-        "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "TriSchedule is a comprehensive endurance sports and training management mobile application built for triathletes, runners, cyclists, and coaches. The platform enables users to plan workouts, monitor training progress, analyze performance metrics, manage events, and track fitness goals through an intuitive dashboard and data-driven insights.",
+        "challenge": "The client wanted to replace fragmented training tools with a unified mobile platform capable of managing workouts, calendars, performance analytics, athlete progress, and event scheduling. The application needed to provide real-time statistics, an intuitive user experience, and scalable architecture while maintaining excellent performance across both Android and iOS devices.",
+        "solution": "We designed and developed a scalable Flutter application that centralizes workout planning, activity tracking, event scheduling, athlete performance analytics, and subscription management into one seamless experience. The solution delivers interactive dashboards, visual reports, calendar-based planning, and secure cloud synchronization while ensuring smooth cross-platform performance.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Workout Planning & Scheduling",
+            "Training Calendar",
+            "Performance Analytics Dashboard",
+            "Activity & Distance Tracking",
+            "Event Management",
+            "Athlete Progress Monitoring",
+            "Subscription Management",
+            "Cross-Platform Flutter App"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
@@ -1467,29 +1494,49 @@ export const portfolioDetailsData = [
         },
         "country": "Canada",
         "caseStudy": {
-            "overview": "TriSchedule needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "TriSchedule was created to simplify training management for endurance athletes by bringing workouts, performance analytics, scheduling, and progress tracking into a single mobile application. We developed a modern Flutter solution that enables athletes and coaches to organize training sessions, monitor key performance metrics, visualize progress through interactive dashboards, and stay prepared for upcoming events. The result is an intuitive platform that improves consistency, planning, and athletic performance.",
+
+            "coreCapabilities": [
+                "Endurance Training Platform",
+                "Workout Planning & Scheduling",
+                "Training Calendar Management",
+                "Performance Analytics Dashboard",
+                "Weekly Training Reports",
+                "Distance & Activity Tracking",
+                "Athlete Progress Monitoring",
+                "Event & Competition Management",
+                "Coach & Athlete Collaboration",
+                "Subscription & Membership Management",
+                "Secure User Authentication",
+                "Cross-Platform Flutter Development"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at TriSchedule to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated with the client to understand the complete training lifecycle of endurance athletes, identifying opportunities to simplify workout planning, event scheduling, performance tracking, and athlete engagement within one unified mobile platform."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team created an intuitive experience featuring training calendars, workout schedules, analytics dashboards, performance charts, event management, and athlete profiles. Every screen was optimized for quick navigation and effortless access to important training data."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Flutter Development",
+                    "description": "Using Flutter, we built a high-performance cross-platform application with secure authentication, workout scheduling, calendar management, interactive performance charts, activity tracking, subscription management, and scalable architecture optimized for Android and iOS."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered a unified training management platform for endurance athletes.",
+                "Simplified workout planning and calendar-based scheduling.",
+                "Enabled data-driven performance analysis through interactive dashboards.",
+                "Improved athlete engagement with activity tracking and event management.",
+                "Built a scalable Flutter architecture supporting future coaching and analytics features."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss successfully transformed our vision into a powerful and intuitive training platform. Their Flutter expertise allowed us to deliver a seamless experience that combines workout planning, performance analytics, scheduling, and athlete management into one modern mobile application.",
+                "author": "Product Team",
                 "position": "TriSchedule"
             }
         },
@@ -1498,23 +1545,28 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-flutter-developers"
         }
     },
+
     {
         "slug": "wingman",
         "name": "Wingman",
         "portfolioImage": "/portfolio/mobile-app/wingman/wingman.jpg",
         "category": "Mobile app",
         "timeline": "2-4 Months",
-        "techStack": "iOS Swift ",
+        "techStack": "iOS Swift",
         "link": "#",
         "client": "Wingman",
-        "description": "An offline messaging app built for air travel, allowing passengers to connect and chat via Bluetooth without requiring internet or Wi-Fi.",
-        "challenge": "The client needed a robust iOS Swift  architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using iOS Swift , integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Wingman is an innovative offline messaging application built specifically for airline passengers, enabling travelers to discover nearby users and communicate securely through Bluetooth without requiring internet connectivity or onboard Wi-Fi. The app creates a seamless in-flight social experience with private messaging, customizable profiles, read receipts, and premium features.",
+        "challenge": "The client wanted to create a reliable peer-to-peer communication platform that functions entirely offline during flights. The application needed to establish secure Bluetooth connections, support real-time messaging, manage nearby user discovery, and provide a premium user experience while ensuring privacy, low battery consumption, and smooth performance across iOS devices.",
+        "solution": "We designed and developed a native iOS application using Swift that leverages Bluetooth technology for offline messaging between nearby passengers. The solution includes secure peer discovery, private chat sessions, customizable user profiles, premium subscription management, read receipts, notification controls, and privacy settings, all delivered through a modern and intuitive interface optimized for the iOS ecosystem.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Offline Bluetooth Messaging",
+            "Nearby Passenger Discovery",
+            "Private One-to-One Chat",
+            "Custom User Profiles",
+            "Privacy & Notification Controls",
+            "Read Receipts",
+            "Premium Subscription Plans",
+            "Native iOS Swift Development"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/wingman/portfolio_wn_1.png",
@@ -1531,29 +1583,49 @@ export const portfolioDetailsData = [
         },
         "country": "UK",
         "caseStudy": {
-            "overview": "Wingman needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Wingman was designed to transform the in-flight passenger experience by enabling travelers to communicate without relying on internet connectivity. Using Bluetooth Low Energy (BLE), the application allows nearby passengers to discover one another, exchange messages securely, manage profiles, and enjoy a private communication experience throughout their journey. Our team delivered a high-performance native iOS application focused on reliability, simplicity, privacy, and seamless offline connectivity.",
+
+            "coreCapabilities": [
+                "Offline Bluetooth Communication",
+                "Nearby Passenger Discovery",
+                "Peer-to-Peer Messaging",
+                "Private Chat Management",
+                "Bluetooth Low Energy (BLE) Integration",
+                "User Profile Management",
+                "Read Receipts & Message Status",
+                "Privacy & Notification Controls",
+                "Premium Subscription Management",
+                "Secure Local Connectivity",
+                "Native iOS Swift Development",
+                "Scalable Mobile Architecture"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Wingman to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated with the client to understand the unique challenges of in-flight communication, defining an offline-first architecture centered around Bluetooth connectivity, passenger privacy, and effortless usability without internet access."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our designers crafted a clean and intuitive user experience featuring nearby passenger discovery, private messaging, profile management, subscription screens, connectivity settings, and customizable privacy controls to ensure users could communicate effortlessly during flights."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing iOS Swift , ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Native iOS Development",
+                    "description": "Using Swift and Bluetooth Low Energy (BLE), we developed a high-performance iOS application supporting secure peer-to-peer messaging, offline device discovery, profile management, subscription integration, read receipts, and optimized battery-efficient communication."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered a reliable offline messaging platform powered by Bluetooth technology.",
+                "Enabled secure passenger-to-passenger communication without internet or Wi-Fi.",
+                "Created a seamless native iOS experience optimized for airline travelers.",
+                "Integrated premium subscription features with advanced privacy controls.",
+                "Built a scalable architecture ready for future group messaging and enhanced connectivity features."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss brought our vision of offline in-flight communication to life with exceptional precision. Their expertise in native iOS development and Bluetooth technology resulted in a polished, reliable application that delivers exactly the seamless passenger experience we envisioned.",
+                "author": "Product Team",
                 "position": "Wingman"
             }
         },
@@ -1562,6 +1634,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-ios-developers"
         }
     },
+
     {
         "slug": "book-builder",
         "name": "Book a Builder",
@@ -1571,14 +1644,18 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Book a Builder",
-        "description": "A service marketplace where homeowners can post renovation projects and receive bids from verified contractors to find the best match.",
-        "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Book a Builder is a construction project management and client communication platform that connects homeowners, builders, and contractors throughout the entire renovation process. The mobile application enables users to monitor project progress, manage tasks, exchange messages, share documents, receive real-time updates, and collaborate efficiently from a single intuitive dashboard.",
+        "challenge": "The client required a modern mobile platform capable of streamlining construction project communication while keeping homeowners and contractors aligned in real time. The application needed to manage project updates, messaging, tasks, media, documents, and notifications within a secure, scalable React Native architecture that delivers a seamless user experience across both Android and iOS.",
+        "solution": "We developed a high-performance React Native application that centralizes project management, team communication, document sharing, progress tracking, and client collaboration into one platform. The solution provides real-time project visibility, instant messaging, task management, activity timelines, and secure user authentication while ensuring excellent performance across mobile devices.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Construction Project Management",
+            "Real-Time Project Updates",
+            "Task & Activity Tracking",
+            "In-App Team Messaging",
+            "Document & Media Sharing",
+            "Project Timeline Management",
+            "Push Notifications",
+            "Cross-Platform React Native App"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/bookbuilder/portfolio_bb_1.png",
@@ -1596,29 +1673,49 @@ export const portfolioDetailsData = [
         },
         "country": "Canada",
         "caseStudy": {
-            "overview": "Book a Builder needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Book a Builder was created to simplify communication and project management throughout residential construction and renovation projects. We built a scalable React Native application that enables homeowners, contractors, and project managers to collaborate through real-time updates, messaging, task management, document sharing, and project timelines. The platform provides complete visibility into project progress while improving communication and operational efficiency for every stakeholder.",
+
+            "coreCapabilities": [
+                "Construction Project Management",
+                "Client & Contractor Collaboration",
+                "Real-Time Project Timeline",
+                "Task & Activity Management",
+                "Project Progress Tracking",
+                "Document & File Management",
+                "Media & Photo Sharing",
+                "Instant Team Messaging",
+                "Project Notifications & Alerts",
+                "Secure User Authentication",
+                "Cross-Platform React Native Development",
+                "Scalable Cloud Architecture"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Book a Builder to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated with the client to understand construction workflows, contractor communication, homeowner expectations, and project management challenges. This helped us define a digital platform focused on transparency, collaboration, and real-time project visibility."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team created an intuitive mobile experience featuring project dashboards, messaging, activity feeds, task lists, document management, media galleries, notifications, and navigation optimized for both homeowners and construction professionals."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing React Native, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "React Native Development",
+                    "description": "Using React Native, we developed a scalable cross-platform application with secure authentication, project tracking, real-time messaging, document sharing, push notifications, media management, and cloud-based synchronization to ensure a reliable experience across Android and iOS."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered a centralized construction project management platform.",
+                "Improved collaboration between homeowners and contractors.",
+                "Simplified communication through integrated messaging and notifications.",
+                "Provided real-time project tracking with tasks, timelines, and progress updates.",
+                "Built a scalable React Native architecture supporting future project management enhancements."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss delivered a polished and highly intuitive construction management application that exceeded our expectations. Their team successfully combined project tracking, messaging, collaboration, and document management into one seamless mobile experience, making communication between homeowners and contractors significantly more efficient.",
+                "author": "Product Team",
                 "position": "Book a Builder"
             }
         },
@@ -1627,6 +1724,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-react-native-developers"
         }
     },
+
     {
         "slug": "klubbrabatten-mob",
         "name": "Klubbrabatten",
@@ -1636,14 +1734,18 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Klubbrabatten",
-        "description": "A Swedish digital coupon platform offering exclusive discounts and deals from restaurants, retailers, and local businesses.",
-        "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Klubbrabatten is a digital savings and rewards platform that helps users discover exclusive discounts from restaurants, cafés, retail stores, entertainment venues, and local businesses. The Flutter application combines location-based offers, interactive maps, merchant profiles, and digital coupons into a seamless mobile experience, making it easy for users to save money while supporting local businesses.",
+        "challenge": "The client wanted to modernize its traditional discount program into a fully digital mobile experience that would simplify coupon discovery, improve merchant visibility, and encourage user engagement. The application needed to provide location-aware offers, merchant listings, interactive maps, digital memberships, and a secure, scalable architecture capable of supporting thousands of active users across iOS and Android.",
+        "solution": "We designed and developed a scalable Flutter application that centralizes digital coupons, nearby offers, merchant discovery, interactive maps, and personalized user profiles into one intuitive platform. The solution delivers smooth navigation, real-time location services, secure authentication, and optimized performance while providing users with a convenient way to discover and redeem local discounts.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Digital Discount Coupons",
+            "Location-Based Offers",
+            "Interactive Merchant Map",
+            "Business Directory",
+            "Merchant Profiles",
+            "Personal Membership Account",
+            "Offer Discovery & Search",
+            "Cross-Platform Flutter App"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/Klubbrabatten/portfolio_klub_1.png",
@@ -1661,29 +1763,49 @@ export const portfolioDetailsData = [
         },
         "country": "Germany",
         "caseStudy": {
-            "overview": "Klubbrabatten needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Klubbrabatten was created to make local savings easier by transforming traditional discount booklets into a modern digital platform. We developed a Flutter-based mobile application that enables users to browse exclusive offers, discover nearby merchants, explore businesses through an interactive map, and access digital memberships from a single interface. The platform enhances customer engagement while providing merchants with greater visibility and a convenient way to connect with local consumers.",
+
+            "coreCapabilities": [
+                "Digital Coupon Platform",
+                "Local Business Marketplace",
+                "Location-Based Offer Discovery",
+                "Interactive Merchant Map",
+                "Restaurant & Retail Listings",
+                "Merchant Profile Management",
+                "Digital Membership System",
+                "Personalized User Dashboard",
+                "Offer Search & Filtering",
+                "Secure User Authentication",
+                "Cross-Platform Flutter Development",
+                "Scalable Cloud Architecture"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Klubbrabatten to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated with the client to understand user purchasing behavior and merchant requirements, defining a product strategy focused on improving offer discovery, increasing merchant visibility, and delivering a seamless digital savings experience."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team created a clean and intuitive interface featuring categorized offers, nearby business discovery, interactive maps, merchant profiles, digital membership management, and simplified navigation to maximize user engagement and coupon redemption."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Flutter Development",
+                    "description": "Using Flutter, we developed a high-performance cross-platform application with secure authentication, location services, interactive maps, merchant directories, personalized recommendations, and scalable cloud integration for Android and iOS users."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Successfully digitized a traditional discount membership platform.",
+                "Improved local offer discovery through interactive map integration.",
+                "Enhanced user engagement with personalized merchant browsing.",
+                "Simplified digital coupon access and membership management.",
+                "Built a scalable Flutter architecture supporting future loyalty and rewards features."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss successfully transformed our traditional savings program into a modern digital platform. Their Flutter expertise and attention to user experience resulted in a beautiful, intuitive application that makes discovering local offers and supporting merchants easier than ever.",
+                "author": "Product Team",
                 "position": "Klubbrabatten"
             }
         },
@@ -1692,6 +1814,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-flutter-developers"
         }
     },
+
     {
         "slug": "roamaly-app",
         "name": "Roamaly",
@@ -1701,14 +1824,18 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Roamaly",
-        "description": "A convenient eSIM marketplace that helps travelers purchase, activate, and manage mobile data plans worldwide.",
-        "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Roamaly is a global eSIM marketplace that enables travelers to purchase, install, activate, and manage digital mobile data plans across multiple countries. The application offers seamless eSIM installation through QR codes, destination-based plan discovery, real-time data usage monitoring, and centralized eSIM management, providing travelers with reliable connectivity without the need for physical SIM cards.",
+        "challenge": "The client wanted to simplify international mobile connectivity by creating a single platform where travelers could browse destinations, purchase eSIM plans, install them instantly, and manage active data packages. The application needed to support multiple countries, QR code activation, manual installation, secure payment workflows, and a scalable React Native architecture capable of delivering a smooth user experience worldwide.",
+        "solution": "We developed a scalable React Native application that combines global eSIM purchasing, instant QR code activation, manual installation support, destination discovery, and real-time plan management into one intuitive platform. The solution provides a streamlined onboarding experience, secure user authentication, active plan monitoring, and optimized performance across Android and iOS devices.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Global eSIM Marketplace",
+            "QR Code eSIM Installation",
+            "Manual eSIM Activation",
+            "Country & Destination Search",
+            "Real-Time Data Usage Tracking",
+            "Multi-Country Data Plans",
+            "Secure Account Management",
+            "Cross-Platform React Native App"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/roamaly/portfolio_roamaly_1.png",
@@ -1726,29 +1853,49 @@ export const portfolioDetailsData = [
         },
         "country": "Germany",
         "caseStudy": {
-            "overview": "Roamaly needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Roamaly was created to simplify international connectivity by giving travelers instant access to affordable eSIM plans across the globe. We designed and developed a modern React Native application that enables users to browse destinations, purchase data plans, activate eSIMs through QR codes or manual installation, and monitor active plans from a centralized dashboard. The platform eliminates the inconvenience of physical SIM cards while providing a seamless digital experience before and during travel.",
+
+            "coreCapabilities": [
+                "Global eSIM Marketplace",
+                "International Data Plan Management",
+                "QR Code eSIM Installation",
+                "Manual eSIM Configuration",
+                "Destination & Country Explorer",
+                "Real-Time Data Usage Monitoring",
+                "Multi-Country Connectivity",
+                "Digital eSIM Wallet",
+                "Travel Connectivity Dashboard",
+                "Secure User Authentication",
+                "Cross-Platform React Native Development",
+                "Scalable Cloud Architecture"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Roamaly to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We worked closely with the client to understand the challenges travelers face when purchasing mobile data abroad. This research helped define a digital-first experience focused on instant activation, global accessibility, and effortless eSIM management."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team created a streamlined interface featuring destination discovery, country selection, eSIM purchasing, QR code activation, manual installation instructions, active plan management, and personalized user dashboards for a frictionless travel experience."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing React Native, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "React Native Development",
+                    "description": "Using React Native, we developed a scalable mobile application with secure authentication, eSIM installation workflows, QR code generation, destination search, active plan monitoring, and cloud-based synchronization to ensure reliable performance across Android and iOS."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered a complete digital eSIM marketplace for international travelers.",
+                "Simplified global connectivity through instant QR code activation.",
+                "Enabled seamless management of multiple international data plans.",
+                "Improved travel convenience with destination-based plan discovery.",
+                "Built a scalable React Native architecture supporting future telecom integrations and global expansion."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss delivered an outstanding mobile experience that makes purchasing and activating eSIMs incredibly simple. Their React Native expertise enabled us to launch a modern, intuitive platform that helps travelers stay connected anywhere in the world with confidence.",
+                "author": "Product Team",
                 "position": "Roamaly"
             }
         },
@@ -1757,6 +1904,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-react-native-developers"
         }
     },
+
     {
         "slug": "sion",
         "name": "Sion Reservations",
@@ -1766,14 +1914,18 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Sion Reservations",
-        "description": "An event and club reservation platform that simplifies booking, ticket management, and guest experiences for venues and attendees.",
-        "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Sion Reservations is a premium nightlife and event reservation platform that allows users to discover clubs, browse upcoming events, reserve tables, purchase event access, and manage membership credits through a seamless mobile experience. The application combines venue discovery, event booking, digital wallet functionality, and reservation management into a modern platform designed for both guests and nightlife venues.",
+        "challenge": "The client wanted to digitize the nightclub reservation experience by replacing traditional booking methods with an intuitive mobile platform. The application needed to support event discovery, VIP table reservations, membership credits, venue information, ticket purchasing, and secure payment workflows while delivering a smooth and scalable Flutter experience across iOS devices.",
+        "solution": "We designed and developed a scalable Flutter application that centralizes event browsing, club discovery, VIP reservations, membership credit management, and digital booking workflows. The solution delivers an engaging user experience with real-time event listings, secure reservations, wallet integration, and optimized performance while providing venues with a streamlined customer booking experience.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Nightclub & Venue Discovery",
+            "Event Booking & Reservations",
+            "VIP Table Reservations",
+            "Digital Membership Wallet",
+            "Membership Credit Management",
+            "Club Profiles & Information",
+            "Event Countdown & Schedule",
+            "Cross-Platform Flutter App"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/sion/portfolio_sion_1.png",
@@ -1790,29 +1942,49 @@ export const portfolioDetailsData = [
         },
         "country": "Canada",
         "caseStudy": {
-            "overview": "Sion Reservations needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Sion Reservations was developed to modernize the nightlife reservation experience by bringing event discovery, VIP bookings, digital memberships, and venue management into a single mobile application. We built a Flutter-powered platform that enables users to browse clubs, reserve tables, purchase event access, manage membership credits, and explore venue details through an elegant and user-friendly interface. The solution helps venues increase customer engagement while providing guests with a premium reservation experience.",
+
+            "coreCapabilities": [
+                "Nightlife Reservation Platform",
+                "Club & Venue Discovery",
+                "Event Listing Management",
+                "VIP Table Reservation System",
+                "Digital Ticket Booking",
+                "Membership Credit Wallet",
+                "Club Profile Management",
+                "Event Countdown & Scheduling",
+                "Secure Reservation Management",
+                "Digital Payment Integration",
+                "Cross-Platform Flutter Development",
+                "Scalable Mobile Architecture"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Sion Reservations to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated closely with the client to understand the complete nightlife booking journey, identifying opportunities to simplify event discovery, VIP reservations, membership management, and venue engagement through a mobile-first experience."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team created a premium interface featuring club listings, event details, VIP reservation flows, membership wallets, venue information, countdown timers, and seamless navigation to deliver an engaging user experience."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Flutter Development",
+                    "description": "Using Flutter, we developed a high-performance cross-platform application with secure authentication, reservation management, digital wallet functionality, membership credits, event browsing, and scalable cloud integration optimized for future platform growth."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered a premium digital platform for nightclub reservations and event booking.",
+                "Simplified VIP table reservations and digital event access.",
+                "Enhanced customer engagement through club discovery and personalized event browsing.",
+                "Integrated membership credits and wallet management into a seamless booking experience.",
+                "Built a scalable Flutter architecture supporting future loyalty programs and venue partnerships."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss transformed our vision into a polished, premium reservation platform that perfectly reflects the nightlife experience we wanted to create. Their Flutter expertise, attention to detail, and focus on user experience resulted in a fast, intuitive application that exceeded our expectations.",
+                "author": "Product Team",
                 "position": "Sion Reservations"
             }
         },
@@ -1821,6 +1993,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-flutter-developers"
         }
     },
+
     {
         "slug": "city2city",
         "name": "City 2 City",
@@ -1830,14 +2003,18 @@ export const portfolioDetailsData = [
         "techStack": "Flutter, Node JS",
         "link": "#",
         "client": "City 2 City",
-        "description": "A ride-booking platform that connects travelers with drivers for convenient and affordable intercity transportation.",
-        "challenge": "The client needed a robust Flutter, Node JS architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Flutter, Node JS, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "City 2 City is a ride-sharing and intercity transportation platform that connects passengers with verified drivers for safe, affordable, and convenient travel between cities. The application enables users to search rides, book trips, become drivers, manage vehicles, track ride history, handle payments, and build trust through driver ratings and reviews all within a seamless mobile experience.",
+        "challenge": "The client wanted to build a scalable ride-sharing ecosystem that could efficiently connect passengers with drivers while simplifying ride bookings, driver onboarding, payment management, and trip tracking. The platform needed to provide a secure, user-friendly experience for both riders and drivers while supporting real-time ride management, profile verification, vehicle registration, and scalable backend services.",
+        "solution": "We designed and developed a high-performance Flutter application powered by a scalable Node.js backend. The solution centralizes ride booking, driver registration, vehicle management, payment tracking, user profiles, ratings, and trip history into one intuitive platform. By combining a responsive mobile interface with secure backend APIs, we delivered a reliable transportation ecosystem optimized for both passengers and drivers.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Intercity Ride Booking",
+            "Driver Registration & Verification",
+            "Vehicle Management",
+            "Trip History",
+            "Ratings & Reviews",
+            "Payment History",
+            "Passenger & Driver Profiles",
+            "Flutter + Node.js Architecture"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/city2city/portfolio_city2city_1.png",
@@ -1855,29 +2032,49 @@ export const portfolioDetailsData = [
         },
         "country": "USA",
         "caseStudy": {
-            "overview": "City 2 City needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "City 2 City was built to modernize intercity transportation by connecting passengers with trusted drivers through a secure and easy-to-use mobile platform. We developed a Flutter application supported by a scalable Node.js backend that enables users to search for rides, register as drivers, manage vehicles, monitor trip history, track payments, and build trust through ratings and reviews. The result is a complete ride-sharing ecosystem that delivers a seamless experience for both travelers and drivers.",
+
+            "coreCapabilities": [
+                "Intercity Ride Sharing Platform",
+                "Passenger Ride Booking",
+                "Driver Registration & Onboarding",
+                "Vehicle Registration & Management",
+                "Trip History Management",
+                "Driver Ratings & Reviews",
+                "Payment History & Earnings",
+                "Passenger & Driver Profiles",
+                "Secure User Authentication",
+                "Real-Time Ride Management",
+                "Flutter Mobile Development",
+                "Node.js Backend Development"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at City 2 City to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated closely with the client to understand the operational workflows of ride-sharing services, focusing on simplifying ride booking, driver onboarding, payment tracking, and user trust. This research helped define a scalable transportation platform that meets the needs of both passengers and drivers."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team created a clean, intuitive interface featuring ride search, driver registration, vehicle management, user profiles, payment history, ratings, and trip management. Every screen was optimized to provide a smooth and accessible experience for users on the move."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Flutter, Node JS, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Flutter & Node.js Development",
+                    "description": "We built a high-performance Flutter application backed by secure Node.js APIs to support ride bookings, driver verification, payment management, vehicle registration, trip history, user authentication, and scalable cloud infrastructure. The architecture ensures reliability, security, and future scalability as the platform grows."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered a complete intercity ride-sharing platform for passengers and drivers.",
+                "Simplified driver onboarding and vehicle registration through intuitive workflows.",
+                "Improved rider confidence with verified driver profiles, ratings, and reviews.",
+                "Enabled secure trip management and payment history through a centralized mobile platform.",
+                "Built a scalable Flutter and Node.js architecture ready for future ride-matching, live tracking, and payment integrations."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss successfully transformed our vision into a modern ride-sharing platform. Their expertise in Flutter and Node.js enabled us to launch a reliable, intuitive application that simplifies ride bookings, driver management, and payments while delivering an outstanding user experience.",
+                "author": "Product Team",
                 "position": "City 2 City"
             }
         },
@@ -1886,6 +2083,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-flutter-developers"
         }
     },
+
     {
         "slug": "drawn",
         "name": "Drawn",
@@ -1895,14 +2093,18 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Drawn",
-        "description": "A modern dating platform designed to help people discover meaningful connections through engaging profiles and smart matching.",
-        "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Drawn is a modern social dating platform that helps users build meaningful relationships through intelligent profile matching, personalized interests, interactive conversations, and unique sketch-based compatibility features. The application combines profile discovery, instant messaging, match recommendations, rewards, and customizable preferences into an engaging mobile experience designed to foster authentic connections.",
+        "challenge": "The client wanted to create a next-generation dating platform that stands out from traditional swipe-based applications by introducing creative matching experiences and stronger user engagement. The application needed to support profile discovery, intelligent matching, real-time messaging, user preferences, rewards, and scalable social interactions while delivering a secure and intuitive Flutter experience.",
+        "solution": "We designed and developed a scalable Flutter application that combines smart profile matching, sketch-based compatibility, instant messaging, user preferences, rewards, and interactive social features into one seamless platform. The solution delivers an elegant UI, secure authentication, personalized recommendations, and optimized performance while providing users with an enjoyable and engaging dating experience.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Smart Match Discovery",
+            "Sketch-Based Compatibility",
+            "Real-Time Chat & Messaging",
+            "User Profiles & Interests",
+            "Personalized Match Recommendations",
+            "Rewards & Unlockable Features",
+            "Interest-Based Matching",
+            "Cross-Platform Flutter App"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/drawn/portfolio_drawn_1.png",
@@ -1917,29 +2119,49 @@ export const portfolioDetailsData = [
         "appLinks": {},
         "country": "Germany",
         "caseStudy": {
-            "overview": "Drawn needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Drawn was created to redefine online dating by moving beyond traditional swipe mechanics and introducing a more engaging, personality-driven matching experience. We developed a Flutter-based mobile application that combines intelligent profile recommendations, sketch-based compatibility, personalized interests, real-time messaging, and gamified rewards into one intuitive platform. The result is a modern social experience that encourages meaningful conversations and genuine connections while maintaining a beautiful, responsive user interface.",
+
+            "coreCapabilities": [
+                "Online Dating Platform",
+                "Smart Match Recommendation Engine",
+                "Sketch-Based Compatibility Matching",
+                "User Profile Management",
+                "Interest-Based Match Personalization",
+                "Real-Time Messaging",
+                "Match Discovery & Recommendations",
+                "Gamified Rewards System",
+                "User Preference Management",
+                "Secure User Authentication",
+                "Cross-Platform Flutter Development",
+                "Scalable Social Networking Architecture"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Drawn to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We worked closely with the client to understand how users interact with dating applications and identified opportunities to create a more engaging, personality-focused experience. This research guided the development of a platform centered on meaningful interactions rather than endless swiping."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team crafted a vibrant and intuitive interface featuring profile discovery, interactive matching, chat conversations, rewards, personalized interests, compatibility sketches, and user preference management. Every screen was optimized to maximize engagement while keeping navigation simple and enjoyable."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Flutter Development",
+                    "description": "Using Flutter, we developed a scalable cross-platform application with secure authentication, intelligent matchmaking workflows, real-time messaging, personalized recommendations, rewards integration, and cloud-based architecture optimized for both Android and iOS platforms."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered a modern dating platform with an engaging, personality-focused user experience.",
+                "Enhanced user engagement through intelligent matching and sketch-based compatibility.",
+                "Simplified communication with integrated real-time messaging.",
+                "Increased platform interaction through gamified rewards and personalized recommendations.",
+                "Built a scalable Flutter architecture ready for future AI-powered matchmaking and premium membership features."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss transformed our vision into a beautifully designed and highly engaging dating platform. Their Flutter expertise and attention to user experience enabled us to create a unique matchmaking application that stands apart from traditional dating apps while delivering outstanding performance.",
+                "author": "Product Team",
                 "position": "Drawn"
             }
         },
@@ -1948,6 +2170,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-flutter-developers"
         }
     },
+
     {
         "slug": "somnexis",
         "name": "Somnexis",
@@ -1957,14 +2180,18 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Somnexis",
-        "description": "A digital Bible platform where users can read scripture, share reflections, and engage with a faith-driven community.",
-        "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Somnexis is an AI-powered biblical dream interpretation platform that helps users record dreams, explore scriptural symbolism, and discover faith-based insights through a comprehensive dream journal and biblical knowledge base. The application combines dream management, scripture references, symbol interpretation, and personalized reflections into an intuitive mobile experience for spiritual growth.",
+        "challenge": "The client wanted to create a modern faith-based application that could help users document dreams, interpret biblical symbolism, and access relevant scripture in a structured and meaningful way. The platform needed to support dream journaling, searchable biblical references, symbol interpretation, user profiles, and secure data management while maintaining an elegant and highly responsive Flutter experience.",
+        "solution": "We designed and developed a scalable Flutter application that centralizes dream journaling, biblical symbol interpretation, scripture references, personal reflections, and account management into one seamless platform. The solution provides an intuitive interface for recording dreams, exploring biblical meanings, and organizing personal spiritual insights while ensuring secure user authentication and optimized cross-platform performance.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Biblical Dream Journal",
+            "Dream Interpretation Library",
+            "Scripture Reference Directory",
+            "Biblical Symbol Search",
+            "Personal Dream Management",
+            "Faith-Based Reflection Tools",
+            "Secure User Profiles",
+            "Cross-Platform Flutter App"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/somnexis/portfolio_somnexis_1.png",
@@ -1981,29 +2208,49 @@ export const portfolioDetailsData = [
         },
         "country": "Canada",
         "caseStudy": {
-            "overview": "Somnexis needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Somnexis was developed to help individuals explore the spiritual meaning of dreams through biblical teachings and scripture-based interpretations. We created a Flutter-powered mobile application that enables users to maintain a personal dream journal, search biblical symbols, explore scripture references, record interpretations, and reflect on their spiritual journey within one elegant and easy-to-use platform. The solution bridges faith, technology, and personal growth by providing a structured environment for documenting and understanding dreams through a biblical perspective.",
+
+            "coreCapabilities": [
+                "Biblical Dream Interpretation Platform",
+                "Personal Dream Journal",
+                "Scripture Reference Directory",
+                "Biblical Symbol Dictionary",
+                "Dream Interpretation Management",
+                "Faith-Based Reflection System",
+                "Search & Discovery Engine",
+                "Personal Account Management",
+                "Secure User Authentication",
+                "Responsive Flutter Mobile Development",
+                "Cloud-Based Data Synchronization",
+                "Scalable Mobile Architecture"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Somnexis to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated closely with the client to understand biblical dream interpretation methodologies and user expectations. This research helped define a product focused on spiritual reflection, organized dream journaling, scripture exploration, and intuitive knowledge discovery."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team created a clean and calming interface featuring dream journals, biblical symbol directories, scripture references, profile management, and guided interpretation workflows. Every screen was designed to encourage reflection while ensuring effortless navigation."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Flutter Development",
+                    "description": "Using Flutter, we developed a secure cross-platform application with personalized dream journals, searchable biblical references, symbol interpretation modules, profile management, account settings, and scalable cloud architecture optimized for long-term growth and future AI-powered interpretation capabilities."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered a comprehensive biblical dream interpretation platform.",
+                "Simplified dream journaling with structured interpretation workflows.",
+                "Improved scripture discovery through searchable biblical symbol references.",
+                "Created an intuitive spiritual reflection experience for daily use.",
+                "Built a scalable Flutter architecture ready for future AI-assisted interpretation and premium educational features."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss transformed our vision into a beautifully designed faith-based mobile application. Their Flutter expertise and thoughtful approach resulted in an intuitive platform that makes biblical dream interpretation, scripture exploration, and personal reflection accessible to users around the world.",
+                "author": "Product Team",
                 "position": "Somnexis"
             }
         },
@@ -2012,6 +2259,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-flutter-developers"
         }
     },
+
     {
         "slug": "traivend",
         "name": "Traivend",
@@ -2021,14 +2269,18 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Traivend",
-        "description": "A crypto trading education platform that helps users learn market strategies, trading concepts, and investment fundamentals.",
-        "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Traivend is a comprehensive trading education and financial learning platform designed to help beginners and experienced traders develop practical market knowledge. The application provides structured learning paths, live webinars, video courses, trading strategies, market terminology, educational articles, and community-driven content to help users build confidence in financial markets.",
+        "challenge": "The client wanted to build an all-in-one learning ecosystem for traders that delivers educational content in an engaging and structured format. The platform needed to organize trading courses, webinars, articles, market concepts, and learning resources while providing a modern mobile experience with scalable content management, secure user authentication, and excellent performance across devices.",
+        "solution": "We designed and developed a scalable React Native application that centralizes trading education, video learning, webinars, market insights, educational resources, and personalized learning journeys into a single platform. The solution offers intuitive navigation, categorized learning modules, multimedia content, secure authentication, and optimized performance while creating an engaging educational experience for aspiring traders.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Trading Education Platform",
+            "Video Learning Library",
+            "Live Webinars & Events",
+            "Trading Strategy Courses",
+            "Market Terminology Dictionary",
+            "Educational Articles",
+            "Personalized Learning Journey",
+            "Cross-Platform React Native App"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/traivend/portfolio_traivend_1.png",
@@ -2045,29 +2297,49 @@ export const portfolioDetailsData = [
         },
         "country": "Brazil",
         "caseStudy": {
-            "overview": "Traivend needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Traivend was developed to make professional trading education accessible through a modern mobile-first learning platform. We built a React Native application that enables users to explore trading strategies, attend webinars, watch educational videos, study financial concepts, and follow structured learning paths from a single intuitive interface. The platform combines high-quality educational content with interactive learning experiences to help users improve their financial knowledge and trading confidence.",
+
+            "coreCapabilities": [
+                "Trading Education Platform",
+                "Financial Learning Management",
+                "Video Course Library",
+                "Live Webinar Platform",
+                "Trading Strategy Training",
+                "Market Terminology Dictionary",
+                "Educational Content Management",
+                "Learning Progress Tracking",
+                "Community Learning Resources",
+                "Secure User Authentication",
+                "Cross-Platform React Native Development",
+                "Scalable Content Delivery Architecture"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Traivend to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated with the client to understand how traders consume educational content and identified opportunities to create a structured mobile learning platform. The strategy focused on simplifying financial education through categorized courses, webinars, and practical learning resources."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team created a modern dark-themed interface featuring course libraries, webinar listings, educational articles, trading glossaries, learning dashboards, and multimedia content. Every screen was designed to improve readability, navigation, and long-term learner engagement."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing React Native, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "React Native Development",
+                    "description": "Using React Native, we developed a scalable cross-platform application with secure authentication, multimedia content delivery, webinar integration, educational resource management, personalized learning journeys, and cloud-based architecture optimized for future platform expansion."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered a complete mobile learning platform for trading education.",
+                "Centralized webinars, video courses, and financial resources into one application.",
+                "Improved learner engagement through structured educational pathways.",
+                "Simplified access to trading knowledge with categorized learning modules.",
+                "Built a scalable React Native architecture ready for certifications, premium subscriptions, and AI-powered personalized learning."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss successfully transformed our educational vision into a modern learning platform that makes trading knowledge accessible and engaging. Their React Native expertise, attention to user experience, and scalable architecture enabled us to launch a premium mobile education solution that exceeded our expectations.",
+                "author": "Product Team",
                 "position": "Traivend"
             }
         },
@@ -2076,6 +2348,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-react-native-developers"
         }
     },
+
     {
         "slug": "offarat",
         "name": "Offarat",
@@ -2085,14 +2358,18 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Offarat",
-        "description": "An on-demand food delivery platform that connects customers with local restaurants for fast and convenient ordering.",
-        "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Offarat is a comprehensive food discovery and restaurant marketplace that enables users to explore restaurants, browse menus, discover exclusive offers, and order food through an intuitive mobile experience. The platform combines restaurant listings, promotional campaigns, category-based browsing, and personalized recommendations to simplify dining and food ordering for customers.",
+        "challenge": "The client wanted to create a modern food marketplace capable of helping users discover restaurants, explore offers, browse menus, and place orders through a seamless mobile application. The platform needed to support restaurant discovery, promotional campaigns, category management, personalized recommendations, and scalable Flutter architecture while maintaining excellent performance across Android and iOS devices.",
+        "solution": "We designed and developed a scalable Flutter application that centralizes restaurant discovery, food promotions, menu browsing, category management, personalized recommendations, and ordering workflows into one engaging platform. The solution delivers an intuitive user experience, secure authentication, optimized content delivery, and responsive performance while enabling restaurants to promote offers and reach more customers.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Restaurant Discovery",
+            "Food Menu Browsing",
+            "Exclusive Deals & Offers",
+            "Category-Based Search",
+            "Featured Restaurants",
+            "Personalized Recommendations",
+            "Food Ordering Experience",
+            "Cross-Platform Flutter App"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/offarat/portfolio_offarat_1.png",
@@ -2110,29 +2387,49 @@ export const portfolioDetailsData = [
         },
         "country": "UAE",
         "caseStudy": {
-            "overview": "Offarat needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Offarat was developed to make discovering restaurants and exclusive food offers easier through a modern mobile marketplace. We built a Flutter-powered application that enables users to browse restaurants, explore menus, discover promotional campaigns, search by food categories, and access personalized recommendations from one intuitive interface. The platform helps restaurants increase visibility while providing customers with a seamless food discovery and ordering experience.",
+
+            "coreCapabilities": [
+                "Restaurant Marketplace Platform",
+                "Food Discovery Experience",
+                "Restaurant Directory Management",
+                "Digital Menu Management",
+                "Exclusive Offers & Promotions",
+                "Food Category Management",
+                "Featured Restaurant Listings",
+                "Personalized Food Recommendations",
+                "Search & Restaurant Discovery",
+                "Secure User Authentication",
+                "Cross-Platform Flutter Development",
+                "Scalable Cloud Architecture"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Offarat to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated with the client to understand customer ordering behavior and restaurant promotion requirements. This research helped define a marketplace focused on food discovery, promotional visibility, simplified navigation, and an engaging mobile-first user experience."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team created a vibrant, easy-to-use interface featuring restaurant listings, promotional banners, food categories, menu browsing, featured offers, and personalized recommendations. Every screen was optimized to reduce ordering friction while increasing user engagement."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Flutter Development",
+                    "description": "Using Flutter, we developed a high-performance cross-platform application with secure authentication, restaurant management, menu browsing, promotional content delivery, search functionality, category navigation, and scalable backend integration optimized for Android and iOS devices."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered a complete restaurant discovery and food marketplace platform.",
+                "Improved restaurant visibility through featured listings and promotional campaigns.",
+                "Simplified menu browsing with intuitive category-based navigation.",
+                "Enhanced customer engagement through personalized restaurant recommendations.",
+                "Built a scalable Flutter architecture ready for online ordering, loyalty programs, and delivery management."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss successfully transformed our vision into a modern food marketplace that beautifully combines restaurant discovery, promotional campaigns, and menu browsing. Their Flutter expertise and attention to user experience helped us launch an engaging platform that both customers and restaurant partners love using.",
+                "author": "Product Team",
                 "position": "Offarat"
             }
         },
@@ -2141,6 +2438,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-flutter-developers"
         }
     },
+
     {
         "slug": "taxley",
         "name": "Taxley",
@@ -2150,24 +2448,28 @@ export const portfolioDetailsData = [
         "techStack": "Flutter",
         "link": "#",
         "client": "Taxley",
-        "description": "A tax and financial management platform that helps individuals and businesses manage taxes, compliance, and financial records with ease.",
-        "challenge": "The client needed a robust Flutter architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using Flutter, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Taxley is a smart tax preparation and financial assistance platform that helps individuals complete tax returns through guided questionnaires, AI-assisted conversations, document management, and real-time tax calculations. The application simplifies complex tax processes into an intuitive step-by-step experience while helping users maximize deductions and file taxes with confidence.",
+        "challenge": "The client wanted to eliminate the complexity of tax filing by building a mobile-first platform that guides users through every stage of the tax preparation process. The application needed to combine intelligent questionnaires, conversational assistance, financial data collection, tax calculations, and secure document management while maintaining an intuitive user experience and scalable Flutter architecture.",
+        "solution": "We designed and developed a scalable Flutter application that digitizes the tax filing journey through guided workflows, AI-powered assistance, personalized questionnaires, secure financial information management, and automated tax calculations. The platform delivers a simple, user-friendly experience that helps users prepare tax returns accurately while reducing the time and effort required for tax filing.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Guided Tax Filing",
+            "AI Tax Assistant",
+            "Interactive Tax Questionnaires",
+            "Income & Deduction Management",
+            "Real-Time Tax Calculations",
+            "Secure Financial Data Management",
+            "Progress Tracking",
+            "Cross-Platform Flutter App"
         ],
         "mobileScreens": [
-            "/portfolio/mobile-app/trischedule/portfolio_ts_1.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_2.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_3.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_4.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_5.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_6.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_7.png",
-            "/portfolio/mobile-app/trischedule/portfolio_ts_8.png"
+            "/portfolio/mobile-app/taxley/portfolio_taxley_1.png",
+            "/portfolio/mobile-app/taxley/portfolio_taxley_2.png",
+            "/portfolio/mobile-app/taxley/portfolio_taxley_3.png",
+            "/portfolio/mobile-app/taxley/portfolio_taxley_4.png",
+            "/portfolio/mobile-app/taxley/portfolio_taxley_5.png",
+            "/portfolio/mobile-app/taxley/portfolio_taxley_6.png",
+            "/portfolio/mobile-app/taxley/portfolio_taxley_7.png",
+            "/portfolio/mobile-app/taxley/portfolio_taxley_8.png"
         ],
         "appLinks": {
             "android": "https://play.google.com/store/apps/details?id=ch.kayosys.steuern",
@@ -2175,29 +2477,49 @@ export const portfolioDetailsData = [
         },
         "country": "Canada",
         "caseStudy": {
-            "overview": "Taxley needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Taxley was built to simplify tax preparation by transforming complicated tax forms into a guided digital experience. We developed a Flutter-powered mobile application that combines intelligent questionnaires, conversational tax assistance, automated calculations, financial information management, and progress tracking into one seamless platform. The solution enables individuals to prepare tax returns efficiently while reducing complexity, improving accuracy, and providing a stress-free filing experience.",
+
+            "coreCapabilities": [
+                "Digital Tax Filing Platform",
+                "AI Tax Assistant",
+                "Interactive Tax Questionnaire",
+                "Income & Deduction Management",
+                "Automated Tax Calculations",
+                "Financial Information Management",
+                "Tax Return Progress Tracking",
+                "Secure Document & Data Management",
+                "Personal Tax Dashboard",
+                "Secure User Authentication",
+                "Cross-Platform Flutter Development",
+                "Scalable Financial Application Architecture"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Taxley to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated with the client to understand the pain points users face during tax preparation. This research helped us create a guided digital workflow focused on simplifying tax filing through intelligent questionnaires, automated calculations, and conversational assistance."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team crafted a clean, approachable interface featuring guided tax steps, AI conversations, financial forms, progress indicators, summaries, and profile management. Every screen was optimized to reduce user confusion while making complex tax information easy to understand."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing Flutter, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "Flutter Development",
+                    "description": "Using Flutter, we developed a secure cross-platform application with intelligent tax workflows, financial data management, conversational guidance, automated tax calculations, user authentication, and scalable cloud architecture optimized for long-term platform growth."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered an intuitive mobile platform for digital tax preparation.",
+                "Simplified tax filing through guided questionnaires and AI-assisted workflows.",
+                "Reduced complexity with automated calculations and organized financial information.",
+                "Improved user confidence through structured progress tracking and conversational guidance.",
+                "Built a scalable Flutter architecture ready for future tax regulation updates, AI enhancements, and financial service integrations."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss transformed our vision into an intuitive tax preparation platform that makes filing taxes significantly easier for users. Their Flutter expertise, thoughtful UX design, and scalable architecture enabled us to deliver a secure, modern, and highly accessible financial application.",
+                "author": "Product Team",
                 "position": "Taxley"
             }
         },
@@ -2206,6 +2528,7 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-flutter-developers"
         }
     },
+
     {
         "slug": "kolderkiduniverse",
         "name": "Kolder Kid Universe",
@@ -2215,14 +2538,18 @@ export const portfolioDetailsData = [
         "techStack": "React Native",
         "link": "#",
         "client": "Kolder Kid Universe",
-        "description": "A music streaming platform featuring songs, audio content, and interactive experiences designed for children and families.",
-        "challenge": "The client needed a robust React Native architecture that could handle increasing traffic while maintaining a seamless user experience.",
-        "solution": "We engineered a customized platform using React Native, integrating advanced features to deliver optimal performance and engagement.",
+        "description": "Kolder Kid Universe is a premium music and entertainment streaming platform that enables users to discover artists, stream music, watch exclusive videos, explore curated playlists, and enjoy an immersive multimedia experience. The application combines audio streaming, video content, personalized playlists, artist discovery, and media playback into a modern entertainment ecosystem.",
+        "challenge": "The client wanted to build a scalable digital entertainment platform capable of delivering high-quality audio and video streaming while offering personalized music discovery and content management. The application needed to support playlists, artist profiles, media playback, content categorization, and seamless streaming performance across mobile devices using a robust React Native architecture.",
+        "solution": "We designed and developed a high-performance React Native application that centralizes music streaming, video playback, playlist management, artist discovery, and multimedia content into one intuitive platform. The solution delivers smooth streaming, modern UI/UX, personalized recommendations, and scalable cloud architecture, ensuring an engaging entertainment experience for users.",
         "keyFeatures": [
-            "Scalable Architecture",
-            "Responsive Design",
-            "High Performance",
-            "Secure Infrastructure"
+            "Music & Audio Streaming",
+            "Video Streaming Platform",
+            "Artist Discovery",
+            "Playlist Management",
+            "Integrated Media Player",
+            "Personalized Content Recommendations",
+            "Category-Based Content Browsing",
+            "Cross-Platform React Native App"
         ],
         "mobileScreens": [
             "/portfolio/mobile-app/kolderkiduniverse/portfolio_kolderkiduniverse_1.png",
@@ -2240,29 +2567,49 @@ export const portfolioDetailsData = [
         },
         "country": "USA",
         "caseStudy": {
-            "overview": "Kolder Kid Universe needed a robust and scalable architecture to handle their growing user base while maintaining a seamless experience. We engineered a highly customized Mobile app solution designed to meet their specific operational goals and long-term vision.",
+            "overview": "Kolder Kid Universe was created to provide artists and audiences with a modern digital entertainment platform where music, videos, and exclusive content can be discovered and enjoyed from a single application. We developed a React Native solution that enables users to browse artists, stream music, watch videos, manage playlists, and enjoy an immersive media experience with fast performance and intuitive navigation. The platform combines engaging design with scalable streaming technology to support future content growth and audience engagement.",
+
+            "coreCapabilities": [
+                "Music Streaming Platform",
+                "Video Streaming Experience",
+                "Artist & Creator Discovery",
+                "Playlist Management",
+                "Integrated Audio Player",
+                "Multimedia Content Management",
+                "Personalized Content Recommendations",
+                "Category & Genre Browsing",
+                "Media Library Management",
+                "Secure User Authentication",
+                "Cross-Platform React Native Development",
+                "Scalable Streaming Infrastructure"
+            ],
+
             "process": [
                 {
-                    "title": "Discovery & Strategy",
-                    "description": "We collaborated closely with the stakeholders at Kolder Kid Universe to identify system bottlenecks and mapped out a scalable architecture tailored to their needs."
+                    "title": "Discovery & Product Strategy",
+                    "description": "We collaborated with the client to understand how users consume music and entertainment content, defining a product strategy focused on seamless streaming, intuitive navigation, artist discovery, and personalized content recommendations."
                 },
                 {
                     "title": "UI/UX Design",
-                    "description": "Our design team created a modern, intuitive interface that simplifies complex workflows into easily digestible screens, prioritizing user engagement."
+                    "description": "Our design team crafted a premium dark-themed interface featuring featured content, artist profiles, playlists, music and video libraries, media player controls, and categorized content discovery. Every screen was optimized for smooth navigation and long user engagement."
                 },
                 {
-                    "title": "Development & Launch",
-                    "description": "We built a high-performance solution utilizing React Native, ensuring maximum reliability, security, and zero downtime during peak loads."
+                    "title": "React Native Development",
+                    "description": "Using React Native, we developed a scalable streaming application with secure authentication, media playback, playlist management, artist profiles, multimedia content delivery, personalized recommendations, and cloud-based architecture optimized for Android and iOS."
                 }
             ],
+
             "results": [
-                "4.9/5 average rating on App Stores",
-                "60% increase in daily active users",
-                "Seamless offline data synchronization"
+                "Delivered a modern multimedia streaming platform for music and video content.",
+                "Enabled seamless music playback with integrated playlist management.",
+                "Improved user engagement through personalized recommendations and artist discovery.",
+                "Created an intuitive entertainment experience with responsive media controls and content categorization.",
+                "Built a scalable React Native architecture ready for premium subscriptions, live streaming, and expanded creator content."
             ],
+
             "testimonial": {
-                "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
-                "author": "Management Team",
+                "text": "Kretoss successfully transformed our vision into a premium entertainment platform. Their expertise in React Native, multimedia streaming, and user experience enabled us to launch a fast, engaging application that delivers an outstanding music and video experience for our audience.",
+                "author": "Product Team",
                 "position": "Kolder Kid Universe"
             }
         },
