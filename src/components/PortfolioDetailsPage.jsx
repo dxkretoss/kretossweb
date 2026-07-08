@@ -358,7 +358,7 @@ export default function PortfolioDetailsPage() {
                     </aside>
 
                     {/* ── Main Content ── */}
-                    <main className="lg:col-span-9 space-y-20">
+                    <main className="lg:col-span-9 space-y-10">
 
                         {/* 1. OVERVIEW */}
                         <motion.section
@@ -470,14 +470,14 @@ export default function PortfolioDetailsPage() {
                             <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0f1e] tracking-tight mb-3 leading-tight">
                                 How We Built the Solution
                             </h2>
-                            <p className="text-[#62646a] text-base leading-relaxed mb-10 max-w-2xl">
+                            <p className="text-[#62646a] text-base leading-relaxed mb-5 max-w-2xl">
                                 Our engagement followed a structured, phased approach — from deep discovery through to a polished, production-ready deployment.
                             </p>
 
                             {/* Process steps — vertical timeline */}
                             <div className="relative">
                                 <div className="absolute left-5 top-0 bottom-0 w-px bg-gray-200 hidden sm:block" />
-                                <div className="space-y-8">
+                                <div className="space-y-6">
                                     {(project.caseStudy?.process || [
                                         { title: 'Discovery & Strategy', description: 'In-depth stakeholder workshops, competitor analysis, and technical scoping to align on goals and define the product roadmap.' },
                                         { title: 'UI/UX Design', description: 'High-fidelity wireframes and interactive prototypes refined through iterative user feedback sessions.' },
@@ -524,12 +524,12 @@ export default function PortfolioDetailsPage() {
                             <h2 className="text-3xl md:text-[36px] font-semibold text-[#0a0f1e] tracking-tight mb-3 leading-tight">
                                 Measurable Outcomes Delivered
                             </h2>
-                            <p className="text-[#62646a] text-base leading-relaxed mb-10 max-w-2xl">
+                            <p className="text-[#62646a] text-base leading-relaxed mb-5 max-w-2xl">
                                 Post-launch audits and client feedback confirmed that the solution exceeded every key performance target set during discovery.
                             </p>
 
                             {/* Results list */}
-                            <div className="mb-10 grid grid-cols-2 gap-x-4 gap-y-4">
+                            <div className="mb-4 grid grid-cols-2 gap-x-4 gap-y-4">
                                 {(project.caseStudy?.results || [
                                     '40% reduction in average page load time',
                                     'Zero critical downtime incidents post-launch',
@@ -541,7 +541,7 @@ export default function PortfolioDetailsPage() {
                                         whileInView={{ opacity: 1, x: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.4, delay: i * 0.08 }}
-                                        className="flex items-center gap-4 bg-white border border-gray-200 rounded-2xl p-3 hover:shadow-sm hover:border-green-200 transition-all duration-300"
+                                        className="flex items-flex-start gap-4 bg-white border border-gray-200 rounded-2xl p-3 hover:shadow-sm hover:border-green-200 transition-all duration-300"
                                     >
                                         <div className="w-7 h-7 rounded-full bg-slate-500/10 text-slate-800 flex items-center justify-center shrink-0 mt-0.5">
                                             <FaCheck className="w-3 h-3" />

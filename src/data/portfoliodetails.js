@@ -62,6 +62,7 @@ export const portfolioDetailsData = [
                 "Improved operational efficiency while enhancing the overall guest experience."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_1",
                 "text": "Kretoss delivered exactly what we envisioned—a modern platform that simplifies hospitality operations without disrupting existing systems. Their team understood both the technical challenges and the operational realities of the industry, resulting in a product that's scalable, intuitive, and built for long-term growth.",
                 "author": "Management Team",
                 "position": "Guestway"
@@ -136,6 +137,7 @@ export const portfolioDetailsData = [
                 "Created an intuitive user experience that simplifies the complete job search lifecycle."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_2",
                 "text": "The Kretoss team successfully transformed our vision into a modern AI-powered career platform. They didn't just build features—they understood the entire job search journey and delivered a product that feels intelligent, secure, and incredibly easy to use. Their technical expertise and attention to user experience made NextHunt exactly the platform we envisioned.",
                 "author": "John",
                 "position": "CEO, NextHunt",
@@ -203,6 +205,7 @@ export const portfolioDetailsData = [
                 "Implemented enterprise-grade security practices for user authentication and transaction handling."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_3",
                 "text": "Kretoss successfully transformed our vision into a modern cryptocurrency trading platform. Their team delivered a secure, scalable solution with an intuitive user experience that makes peer-to-peer trading simple while maintaining the reliability expected from a blockchain-based application.",
                 "author": "Management Team",
                 "position": "Palzea"
@@ -273,6 +276,7 @@ export const portfolioDetailsData = [
                 "Created an intuitive user experience that simplifies sports operations across multiple user roles."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_4",
                 "text": "Working with Kretoss was an outstanding experience. Their team understood both the operational and technical challenges of sports management and delivered a modern platform that combines AI, analytics, and intuitive workflows into one seamless solution. The result has exceeded our expectations and provides a strong foundation for our future growth.",
                 "author": "Management Team",
                 "position": "Dreamlod"
@@ -343,6 +347,7 @@ export const portfolioDetailsData = [
                 "Strengthened the club's digital identity with a modern, high-performance web platform."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_5",
                 "text": "Kretoss delivered a modern platform that perfectly reflects our club's identity. The website is fast, intuitive, and gives our supporters everything they need—from match information and player statistics to club news and ticket updates. Their team understood our vision and translated it into a professional digital experience.",
                 "author": "Management Team",
                 "position": "Phoenix FC"
@@ -415,6 +420,7 @@ export const portfolioDetailsData = [
                 "Established a secure foundation for long-term growth in the digital asset ecosystem."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_6",
                 "text": "Kretoss delivered a cryptocurrency platform that combines performance, security, and an exceptional user experience. Their team understood the complexities of exchange development and built a scalable ecosystem that supports everything from trading and staking to wallet management and portfolio tracking. The result is a modern platform ready to grow with our business.",
                 "author": "Management Team",
                 "position": "Palzea Networks"
@@ -485,6 +491,7 @@ export const portfolioDetailsData = [
                 "Established a secure cloud platform for managing critical financial and compliance data."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_7",
                 "text": "Kretoss helped us transform our vision into a practical business platform that genuinely simplifies financial management for entrepreneurs. Their team focused on usability, performance, and scalability, delivering a product that's intuitive, reliable, and built to grow alongside our users.",
                 "author": "Management Team",
                 "position": "Fily"
@@ -555,6 +562,7 @@ export const portfolioDetailsData = [
                 "Established a strong digital foundation for expanding student travel services globally."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_8",
                 "text": "Kretoss transformed our vision into a modern travel platform that genuinely simplifies how students plan their journeys. Their team focused on creating an intuitive experience while building a scalable foundation that allows us to continuously expand our travel services with confidence.",
                 "author": "Management Team",
                 "position": "STB Inc."
@@ -625,6 +633,7 @@ export const portfolioDetailsData = [
                 "Established a secure foundation for expanding partnerships with businesses and community organizations."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_9",
                 "text": "Kretoss helped us transform a traditional fundraising concept into a modern digital platform. Their team delivered a scalable solution that makes membership management, fundraising, and partner collaboration significantly easier while providing an outstanding experience for our users.",
                 "author": "Management Team",
                 "position": "Klubbrabatten"
@@ -676,6 +685,7 @@ export const portfolioDetailsData = [
                 "95% positive user feedback on the new interface"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_10",
                 "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
                 "author": "Management Team",
                 "position": "Giveaway"
@@ -746,6 +756,7 @@ export const portfolioDetailsData = [
                 "Established a strong digital foundation for expanding AI-powered healthcare services."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_11",
                 "text": "Kretoss helped transform our vision into a secure and intuitive AI health platform. Their team understood the importance of privacy, accessibility, and user trust, delivering a conversational experience that makes reliable health information available whenever people need it most.",
                 "author": "Management Team",
                 "position": "SarhaChat"
@@ -814,6 +825,7 @@ export const portfolioDetailsData = [
                 "Established a flexible foundation for future AI-powered analytics, advanced trading research, and community-driven strategy development."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_12",
                 "text": "Kretoss successfully transformed our vision into a powerful trading intelligence platform. Their team understood the complexity of financial markets and delivered a fast, scalable solution that combines advanced analytical tools with an exceptional user experience. The result is a platform that helps traders make smarter, more confident decisions every day.",
                 "author": "Management Team",
                 "position": "WallStreet.io"
@@ -886,6 +898,7 @@ export const portfolioDetailsData = [
                 "Established a strong technical foundation for expanding enterprise AI automation services."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_13",
                 "text": "Kretoss helped us transform our vision into a scalable AI Voice Agent platform that businesses can deploy quickly and confidently. Their team understood both the technical complexity of conversational AI and the operational needs of modern businesses, delivering a solution that's reliable, intuitive, and built for long-term growth.",
                 "author": "Management Team",
                 "position": "AllBots"
@@ -933,6 +946,7 @@ export const portfolioDetailsData = [
                 "95% positive user feedback on the new interface"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_14",
                 "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
                 "author": "Management Team",
                 "position": "Searchive"
@@ -1005,6 +1019,7 @@ export const portfolioDetailsData = [
                 "Established a future-ready foundation for expanding AI-powered financial services and enterprise integrations."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_15",
                 "text": "Kretoss helped us transform an ambitious vision into a powerful financial accounting platform. Their team combined technical expertise with a deep understanding of financial workflows to deliver a secure, scalable solution that simplifies accounting while leveraging the benefits of AI and blockchain technology.",
                 "author": "Management Team",
                 "position": "Coyna"
@@ -1075,6 +1090,7 @@ export const portfolioDetailsData = [
                 "Established a strong digital foundation for industry networking, exhibitions, and commercial opportunities."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_16",
                 "text": "Kretoss helped us build a platform that has become a valuable digital resource for the ceramic industry. Their team understood the complexity of our business ecosystem and delivered a scalable solution that connects companies, promotes products, and supports meaningful business growth across the industry.",
                 "author": "Management Team",
                 "position": "Gujarat Tiles Info"
@@ -1145,6 +1161,7 @@ export const portfolioDetailsData = [
                 "Established a secure digital foundation for efficient healthcare inventory management."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_17",
                 "text": "Kretoss understood the operational challenges faced by modern dental practices and delivered an inventory management platform that is intuitive, reliable, and built around real clinical workflows. Their solution has simplified inventory management while giving us greater visibility and confidence in our day-to-day operations.",
                 "author": "Management Team",
                 "position": "Implant Stock"
@@ -1215,6 +1232,7 @@ export const portfolioDetailsData = [
                 "Established a secure digital foundation for modern healthcare recruitment and staffing operations."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_18",
                 "text": "Kretoss delivered a platform that modernized the way we connect pharmacies with qualified locum pharmacists. Their team understood both the operational and technical challenges of healthcare recruitment, creating a scalable solution that improves efficiency for employers and healthcare professionals alike.",
                 "author": "Management Team",
                 "position": "Locum Prime"
@@ -1285,6 +1303,7 @@ export const portfolioDetailsData = [
                 "Established a flexible foundation for expanding financial services and client communication."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_19",
                 "text": "Kretoss delivered a platform that perfectly reflects our values of professionalism, trust, and long-term client relationships. Their team combined technical excellence with thoughtful user experience design, creating a scalable digital solution that supports our continued growth in the financial services industry.",
                 "author": "Management Team",
                 "position": "Trust Arthur Group"
@@ -1355,6 +1374,7 @@ export const portfolioDetailsData = [
                 "Established a secure digital foundation for modern tax advisory and client management services."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_20",
                 "text": "Kretoss helped us modernize the tax filing experience through a secure and intuitive digital platform. Their team understood both the technical and operational requirements of tax preparation, delivering a solution that simplifies client communication, document management, and workflow automation while maintaining the highest standards of reliability and security.",
                 "author": "Management Team",
                 "position": "Taxley"
@@ -1445,6 +1465,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_21",
                 "text": "Kretoss transformed our vision into a beautifully designed and highly engaging mobile application. Their expertise in React Native and product development helped us deliver an AI-powered coaching experience that motivates users every single day. The final product exceeded our expectations in both design quality and performance.",
                 "author": "Product Team",
                 "position": "My100Days"
@@ -1535,6 +1556,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_22",
                 "text": "Kretoss successfully transformed our vision into a powerful and intuitive training platform. Their Flutter expertise allowed us to deliver a seamless experience that combines workout planning, performance analytics, scheduling, and athlete management into one modern mobile application.",
                 "author": "Product Team",
                 "position": "TriSchedule"
@@ -1624,6 +1646,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_23",
                 "text": "Kretoss brought our vision of offline in-flight communication to life with exceptional precision. Their expertise in native iOS development and Bluetooth technology resulted in a polished, reliable application that delivers exactly the seamless passenger experience we envisioned.",
                 "author": "Product Team",
                 "position": "Wingman"
@@ -1714,6 +1737,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_24",
                 "text": "Kretoss delivered a polished and highly intuitive construction management application that exceeded our expectations. Their team successfully combined project tracking, messaging, collaboration, and document management into one seamless mobile experience, making communication between homeowners and contractors significantly more efficient.",
                 "author": "Product Team",
                 "position": "Book a Builder"
@@ -1804,6 +1828,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_25",
                 "text": "Kretoss successfully transformed our traditional savings program into a modern digital platform. Their Flutter expertise and attention to user experience resulted in a beautiful, intuitive application that makes discovering local offers and supporting merchants easier than ever.",
                 "author": "Product Team",
                 "position": "Klubbrabatten"
@@ -1894,6 +1919,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_26",
                 "text": "Kretoss delivered an outstanding mobile experience that makes purchasing and activating eSIMs incredibly simple. Their React Native expertise enabled us to launch a modern, intuitive platform that helps travelers stay connected anywhere in the world with confidence.",
                 "author": "Product Team",
                 "position": "Roamaly"
@@ -1983,6 +2009,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_27",
                 "text": "Kretoss transformed our vision into a polished, premium reservation platform that perfectly reflects the nightlife experience we wanted to create. Their Flutter expertise, attention to detail, and focus on user experience resulted in a fast, intuitive application that exceeded our expectations.",
                 "author": "Product Team",
                 "position": "Sion Reservations"
@@ -2073,6 +2100,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_28",
                 "text": "Kretoss successfully transformed our vision into a modern ride-sharing platform. Their expertise in Flutter and Node.js enabled us to launch a reliable, intuitive application that simplifies ride bookings, driver management, and payments while delivering an outstanding user experience.",
                 "author": "Product Team",
                 "position": "City 2 City"
@@ -2160,6 +2188,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_29",
                 "text": "Kretoss transformed our vision into a beautifully designed and highly engaging dating platform. Their Flutter expertise and attention to user experience enabled us to create a unique matchmaking application that stands apart from traditional dating apps while delivering outstanding performance.",
                 "author": "Product Team",
                 "position": "Drawn"
@@ -2249,6 +2278,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_30",
                 "text": "Kretoss transformed our vision into a beautifully designed faith-based mobile application. Their Flutter expertise and thoughtful approach resulted in an intuitive platform that makes biblical dream interpretation, scripture exploration, and personal reflection accessible to users around the world.",
                 "author": "Product Team",
                 "position": "Somnexis"
@@ -2338,6 +2368,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_31",
                 "text": "Kretoss successfully transformed our educational vision into a modern learning platform that makes trading knowledge accessible and engaging. Their React Native expertise, attention to user experience, and scalable architecture enabled us to launch a premium mobile education solution that exceeded our expectations.",
                 "author": "Product Team",
                 "position": "Traivend"
@@ -2428,6 +2459,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_32",
                 "text": "Kretoss successfully transformed our vision into a modern food marketplace that beautifully combines restaurant discovery, promotional campaigns, and menu browsing. Their Flutter expertise and attention to user experience helped us launch an engaging platform that both customers and restaurant partners love using.",
                 "author": "Product Team",
                 "position": "Offarat"
@@ -2518,6 +2550,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_33",
                 "text": "Kretoss transformed our vision into an intuitive tax preparation platform that makes filing taxes significantly easier for users. Their Flutter expertise, thoughtful UX design, and scalable architecture enabled us to deliver a secure, modern, and highly accessible financial application.",
                 "author": "Product Team",
                 "position": "Taxley"
@@ -2608,6 +2641,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_34",
                 "text": "Kretoss successfully transformed our vision into a premium entertainment platform. Their expertise in React Native, multimedia streaming, and user experience enabled us to launch a fast, engaging application that delivers an outstanding music and video experience for our audience.",
                 "author": "Product Team",
                 "position": "Kolder Kid Universe"
@@ -2680,6 +2714,7 @@ export const portfolioDetailsData = [
                 "Established a conversion-focused eCommerce foundation for long-term customer retention."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_35",
                 "text": "Kretoss delivered a Shopify experience that perfectly represents our brand and makes shopping simple for our customers. Their team combined thoughtful design with technical expertise to create a fast, scalable storefront that supports our growth while staying true to the values behind Kate's Real Food.",
                 "author": "Management Team",
                 "position": "Kate's Real Food"
@@ -2751,6 +2786,7 @@ export const portfolioDetailsData = [
                 "Established a high-performance eCommerce foundation for long-term customer acquisition and retention."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_36",
                 "text": "Kretoss delivered a Shopify experience that truly reflects our brand and our commitment to premium customer experiences. Their team combined thoughtful design, technical expertise, and eCommerce best practices to create a storefront that's fast, scalable, and built to support our continued growth.",
                 "author": "Management Team",
                 "position": "Ludic Life"
@@ -2822,6 +2858,7 @@ export const portfolioDetailsData = [
                 "Established a strong technical foundation for continued global business growth."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_37",
                 "text": "Kretoss delivered a professional digital platform that supports our international growth strategy. Their team understood the unique requirements of wholesale commerce and created a scalable Shopify solution that effectively showcases our brand while making it easier for distributors and retail partners to connect with us worldwide.",
                 "author": "Management Team",
                 "position": "Ludic Global"
@@ -2874,6 +2911,7 @@ export const portfolioDetailsData = [
                 "Sub-second page load times for product pages"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_38",
                 "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
                 "author": "Management Team",
                 "position": "Ludic Kitchen"
@@ -2945,6 +2983,7 @@ export const portfolioDetailsData = [
                 "Established a long-term digital foundation for expanding relationship education and wellness programs."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_39",
                 "text": "Kretoss understood that our platform was about transforming lives, not simply selling services. They created a beautiful Shopify experience that communicates our mission, simplifies workshop registrations, and makes it easy for couples to engage with our programs. The result perfectly reflects the values of Almost Peaceful.",
                 "author": "Management Team",
                 "position": "Almost Peaceful"
@@ -3016,6 +3055,7 @@ export const portfolioDetailsData = [
                 "Established a high-performance eCommerce platform that supports long-term brand growth."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_40",
                 "text": "Kretoss helped us build an eCommerce platform that reflects the quality and performance of our products. Their team delivered a fast, scalable Shopify experience that makes it easy for customers to explore our collections and shop with confidence.",
                 "author": "Management Team",
                 "position": "Impetus Health"
@@ -3087,6 +3127,7 @@ export const portfolioDetailsData = [
                 "Established a high-performance eCommerce foundation for long-term international growth."
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_41",
                 "text": "Kretoss delivered a Shopify experience that makes purchasing travel connectivity simple and intuitive. Their team created a scalable platform that clearly communicates our products while helping travelers quickly find the right eSIM plan for their destination.",
                 "author": "Management Team",
                 "position": "Roamaly"
@@ -3153,6 +3194,7 @@ export const portfolioDetailsData = [
                 "Professional and scalable Shopify eCommerce platform"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_42",
                 "text": "The new Shopify store perfectly represents our brand and makes it much easier for customers to browse our collections and purchase personalized products. The shopping experience feels modern, fast, and intuitive.",
                 "author": "Management Team",
                 "position": "Kids Posters"
@@ -3219,6 +3261,7 @@ export const portfolioDetailsData = [
                 "Scalable eCommerce platform for future product expansion"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_43",
                 "text": "The Shopify store perfectly communicates our product's value while providing a smooth and professional shopping experience. The final result reflects our brand and makes it easier for customers to understand, trust, and purchase our solution.",
                 "author": "Management Team",
                 "position": "The Pawcan"
@@ -3285,6 +3328,7 @@ export const portfolioDetailsData = [
                 "Scalable eCommerce platform for future product launches"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_44",
                 "text": "The new Shopify experience beautifully represents our brand and makes exploring our fragrance collections effortless. The store feels premium, performs smoothly, and provides exactly the shopping experience we envisioned for our customers.",
                 "author": "Management Team",
                 "position": "Recreation Beauty"
@@ -3351,6 +3395,7 @@ export const portfolioDetailsData = [
                 "Scalable eCommerce platform for future collections"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_45",
                 "text": "The new Shopify store perfectly represents our brand and delivers the premium shopping experience we envisioned. The design, performance, and user journey make it effortless for customers to discover our collections and shop with confidence.",
                 "author": "Management Team",
                 "position": "Tango Swim"
@@ -3417,6 +3462,7 @@ export const portfolioDetailsData = [
                 "Scalable platform supporting both retail and wholesale growth"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_46",
                 "text": "The new Shopify store perfectly reflects our brand and makes it easy for hospitality professionals to explore our collections and place orders. The experience is modern, fast, and aligns with the quality of our products.",
                 "author": "Management Team",
                 "position": "Tilit"
@@ -3483,6 +3529,7 @@ export const portfolioDetailsData = [
                 "Scalable eCommerce platform supporting subscriptions and future product expansion"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_47",
                 "text": "The new Shopify experience perfectly represents our brand and makes it simple for athletes to find the right products and complete their purchases. The storefront is fast, intuitive, and aligns with the performance standards our customers expect.",
                 "author": "Management Team",
                 "position": "Honey Stinger"
@@ -3549,6 +3596,7 @@ export const portfolioDetailsData = [
                 "Scalable eCommerce platform for future seasonal collections"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_48",
                 "text": "The Shopify store perfectly captures our brand identity and delivers the premium shopping experience we envisioned. Customers can easily browse our collections, and the entire experience feels modern, elegant, and effortless.",
                 "author": "Management Team",
                 "position": "Moanarose"
@@ -3615,6 +3663,7 @@ export const portfolioDetailsData = [
                 "Scalable platform for future product launches and seasonal collections"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_49",
                 "text": "The new Shopify store perfectly reflects our brand and makes shopping for press-on nails simple, enjoyable, and visually engaging. The customer experience is smooth from browsing to checkout, and the final result aligns perfectly with our vision.",
                 "author": "Management Team",
                 "position": "Prime Nails"
@@ -3681,6 +3730,7 @@ export const portfolioDetailsData = [
                 "Scalable eCommerce platform supporting future product expansion"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_50",
                 "text": "The new Shopify store perfectly represents our sustainability mission while making it easy for customers to browse our extensive product range and shop online. The experience is clean, intuitive, and performs exceptionally well.",
                 "author": "Management Team",
                 "position": "The Source Bulk Foods"
@@ -3747,6 +3797,7 @@ export const portfolioDetailsData = [
                 "Scalable eCommerce platform supporting future product expansion"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_51",
                 "text": "The new Shopify store makes it easy for our customers to browse thousands of jewelry components while maintaining the premium experience our brand is known for. The storefront is fast, organized, and perfectly supports both retail and wholesale buyers.",
                 "author": "Management Team",
                 "position": "Beadspoint"
@@ -3813,6 +3864,7 @@ export const portfolioDetailsData = [
                 "Scalable eCommerce platform supporting future healthcare products"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_52",
                 "text": "The new Shopify store presents our products in a professional and trustworthy way while making it easy for customers to learn about our solutions and shop with complete confidence and privacy. The experience perfectly reflects our brand values.",
                 "author": "Management Team",
                 "position": "Vacurect"
@@ -3879,6 +3931,7 @@ export const portfolioDetailsData = [
                 "Scalable Shopify platform supporting future product launches"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_53",
                 "text": "The new Shopify storefront beautifully represents our brand while making it easier for customers to explore our skincare collections and understand the science behind our products. The shopping experience is elegant, intuitive, and perfectly aligned with our premium positioning.",
                 "author": "Management Team",
                 "position": "Hydro Peptide"
@@ -3945,6 +3998,7 @@ export const portfolioDetailsData = [
                 "Scalable eCommerce platform supporting global product launches"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_54",
                 "text": "The new Shopify storefront captures our brand identity perfectly and provides a premium shopping experience for fighters around the world. The design, performance, and customer journey align seamlessly with the quality and purpose of our products.",
                 "author": "Management Team",
                 "position": "Boxraw"
@@ -3997,6 +4051,7 @@ export const portfolioDetailsData = [
                 "Sub-second page load times for product pages"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_55",
                 "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
                 "author": "Management Team",
                 "position": "Ultimate Ears"
@@ -4063,6 +4118,7 @@ export const portfolioDetailsData = [
                 "Scalable Shopify platform supporting future artists and artwork collections"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_56",
                 "text": "The Shopify store beautifully reflects our vision of making premium art accessible online. Customers can easily explore curated collections, discover talented artists, and enjoy a seamless shopping experience that truly represents our brand.",
                 "author": "Management Team",
                 "position": "Ruumi Art"
@@ -4129,6 +4185,7 @@ export const portfolioDetailsData = [
                 "Scalable eCommerce platform supporting future product launches"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_57",
                 "text": "The new Shopify storefront perfectly reflects our brand identity and delivers the premium shopping experience we wanted for our customers. The product presentation, navigation, and overall performance make exploring our collections effortless.",
                 "author": "Management Team",
                 "position": "Ludic"
@@ -4195,6 +4252,7 @@ export const portfolioDetailsData = [
                 "Scalable Shopify platform supporting future product launches"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_58",
                 "text": "The new Shopify storefront beautifully communicates our brand and makes it easy for customers to discover the right hair wellness solutions. The experience is intuitive, educational, and perfectly reflects the premium quality of our products.",
                 "author": "Management Team",
                 "position": "Vegamour"
@@ -4261,6 +4319,7 @@ export const portfolioDetailsData = [
                 "Scalable platform supporting future services, case studies, and business growth"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_59",
                 "text": "Our new Shopify website clearly communicates our expertise, showcases our work, and provides a seamless experience for businesses looking for a trusted Shopify development partner. It has become a strong foundation for our digital presence and lead generation efforts.",
                 "author": "Management Team",
                 "position": "Kretoss"
@@ -4327,6 +4386,7 @@ export const portfolioDetailsData = [
                 "Scalable Shopify platform supporting future product launches"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_60",
                 "text": "The new Shopify storefront beautifully represents our brand and makes it easy for customers to explore our wellness collections and discover products that fit their lifestyle. The experience is intuitive, educational, and perfectly reflects our commitment to natural self-care.",
                 "author": "Management Team",
                 "position": "Vitality"
@@ -4393,6 +4453,7 @@ export const portfolioDetailsData = [
                 "Scalable Shopify platform supporting future product launches"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_61",
                 "text": "The new Shopify storefront beautifully represents our commitment to purity and traditional food craftsmanship. Customers can easily explore our products, understand our sourcing philosophy, and enjoy a seamless shopping experience that reflects the quality of our brand.",
                 "author": "Management Team",
                 "position": "Anveshan Farm Technologies"
@@ -4466,6 +4527,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_62",
                 "text": "The new website perfectly represents our business and makes it much easier for customers to explore our services and request appointments. The experience is fast, professional, and easy to manage.",
                 "author": "Management Team",
                 "position": "Anthem Home Comfort"
@@ -4538,6 +4600,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_63",
                 "text": "Kretoss delivered a modern website that clearly communicates our transportation services and technology platform. The result is a fast, professional experience that supports our brand and business growth.",
                 "author": "Management Team",
                 "position": "Freight Plus"
@@ -4610,6 +4673,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_64",
                 "text": "Kretoss delivered a modern website that clearly represents our regulatory expertise and makes it easier for businesses to understand our services and connect with our team.",
                 "author": "Management Team",
                 "position": "Sobel Consultancy"
@@ -4682,6 +4746,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_65",
                 "text": "Kretoss delivered a modern website that showcases our services professionally and makes it easy for customers to explore our portfolio and connect with our team. The platform is fast, intuitive, and easy to manage.",
                 "author": "Management Team",
                 "position": "Beepec"
@@ -4754,6 +4819,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_66",
                 "text": "Kretoss delivered a modern website that perfectly represents our brand and sustainability mission. The platform provides an intuitive experience for customers while making content management simple for our team.",
                 "author": "Management Team",
                 "position": "The Source Bulk Foods"
@@ -4826,6 +4892,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_67",
                 "text": "Kretoss delivered a professional website that clearly communicates our investment services while providing a modern and trustworthy experience for our customers. The platform is fast, scalable, and easy for our team to manage.",
                 "author": "Management Team",
                 "position": "EasyGold24"
@@ -4898,6 +4965,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_68",
                 "text": "Kretoss delivered a modern website that reflects our brand and development expertise while making it easy for investors and partners to explore our projects. The platform is professional, fast, and simple to manage.",
                 "author": "Management Team",
                 "position": "Meridian Pacific Properties"
@@ -4970,6 +5038,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_69",
                 "text": "Kretoss delivered a website that perfectly represents our pub and makes it easy for guests to explore our menus, reserve tables, and stay updated on events. The platform is fast, modern, and easy for our team to manage.",
                 "author": "Management Team",
                 "position": "The Penny"
@@ -5042,6 +5111,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_70",
                 "text": "Kretoss delivered a modern website that clearly communicates our construction marketplace and AI-powered services. The platform provides an intuitive experience for customers while making content management simple for our team.",
                 "author": "Management Team",
                 "position": "Litehaus"
@@ -5111,6 +5181,7 @@ export const portfolioDetailsData = [
                 "Optimized global ecommerce experience"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_71",
                 "text": "Kretoss helped us deliver an elegant ecommerce experience that perfectly complements our luxury brand. The website is visually refined, intuitive to navigate, and provides an exceptional shopping journey for our global customers.",
                 "author": "Digital Commerce Team",
                 "position": "LEE BROOM"
@@ -5176,6 +5247,7 @@ export const portfolioDetailsData = [
                 "Better customer engagement through loyalty features"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_72",
                 "text": "Kretoss delivered a polished BigCommerce storefront that perfectly represents our brand. The shopping experience is intuitive, fast, and provides our customers with a seamless way to explore products, subscriptions, and rewards.",
                 "author": "Management Team",
                 "position": "Good Good Ganja"
@@ -5241,6 +5313,7 @@ export const portfolioDetailsData = [
                 "Better brand presentation"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_73",
                 "text": "Kretoss delivered a polished BigCommerce storefront that perfectly represents our brand. The website makes it easy for customers to understand our products, browse collections, and complete purchases with confidence.",
                 "author": "Management Team",
                 "position": "Color Matrics"
@@ -5293,6 +5366,7 @@ export const portfolioDetailsData = [
                 "Sub-second page load times for product pages"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_74",
                 "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
                 "author": "Management Team",
                 "position": "Dane Apparel"
@@ -5354,6 +5428,7 @@ export const portfolioDetailsData = [
                 "Faster storefront performance"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_75",
                 "text": "Kretoss delivered a polished BigCommerce storefront that beautifully represents our handcrafted brand. The website makes it easy for customers to explore flavors, purchase gift collections, and place wholesale orders through a smooth and intuitive shopping experience.",
                 "author": "Management Team",
                 "position": "Caramel"
@@ -5406,6 +5481,7 @@ export const portfolioDetailsData = [
                 "Sub-second page load times for product pages"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_76",
                 "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
                 "author": "Management Team",
                 "position": "Intermat"
@@ -5467,6 +5543,7 @@ export const portfolioDetailsData = [
                 "Streamlined customer purchasing journey"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_77",
                 "text": "Kretoss delivered a polished BigCommerce storefront that beautifully reflects our brand. The shopping experience is elegant, intuitive, and makes it easy for customers to personalize jewelry and purchase meaningful gifts with confidence.",
                 "author": "Management Team",
                 "position": "The Locket Sisters"
@@ -5542,6 +5619,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_78",
                 "text": "Kretoss successfully transformed our vision into a modern and professional Web3 experience. Their team delivered a fast, responsive, and visually engaging website that communicates our ecosystem, technology, and long-term mission with exceptional clarity.",
                 "author": "Management Team",
                 "position": "IIC Metaverse"
@@ -5615,6 +5693,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_79",
                 "text": "Kretoss delivered a professional website that perfectly represents our product vision. The team translated complex trading concepts into an engaging and user-friendly experience while maintaining exceptional performance across every device.",
                 "author": "Management Team",
                 "position": "Save Your Capital"
@@ -5688,6 +5767,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_80",
                 "text": "Kretoss brought our vision to life with a beautifully designed website that perfectly balances healthcare, gaming, and innovation. Their attention to user experience, animations, and responsive performance helped us communicate our mission in a fun and engaging way.",
                 "author": "Management Team",
                 "position": "Better Quest"
@@ -5761,6 +5841,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_81",
                 "text": "Kretoss delivered a beautiful wedding website that exceeded our expectations. Every detail—from the elegant design to the intuitive guest experience—was thoughtfully crafted, making it easy for our family and friends to access all the information they needed for our special day.",
                 "author": "Management Team",
                 "position": "Practical Information for International Guest"
@@ -5834,6 +5915,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_82",
                 "text": "Kretoss delivered a professional healthcare website that perfectly communicates our mission of empowering patients through privacy, innovation, and research. The clean design, responsive experience, and attention to detail have helped us build trust with both patients and healthcare professionals.",
                 "author": "Management Team",
                 "position": "Atopic Diary"
@@ -5907,6 +5989,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_83",
                 "text": "Kretoss delivered a modern and intuitive digital experience that perfectly represents our vision. The website combines clean design, responsive performance, and an engaging user journey, helping us communicate our skincare platform with clarity and professionalism.",
                 "author": "Management Team",
                 "position": "Skin Dao"
@@ -5980,6 +6063,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_84",
                 "text": "Kretoss delivered a clean, modern SaaS experience that perfectly represents our inventory management platform. Their attention to UI/UX, responsive design, and conversion-focused layouts helped us present our product professionally while making it easy for potential customers to understand our value.",
                 "author": "Management Team",
                 "position": "Core CRMS"
@@ -6058,6 +6142,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_85",
                 "text": "Kretoss delivered a website that truly represents our premium brand. The new platform clearly explains our Clean • Steam • Protect process, looks exceptional across every device, and provides a seamless experience that helps convert visitors into customers.",
                 "author": "Management Team",
                 "position": "Clean Steam Pros"
@@ -6131,6 +6216,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_86",
                 "text": "Kretoss delivered a powerful digital platform that captures the excitement of ONE Championship. The website provides an exceptional experience for our global fan base, making it easier to discover events, follow athletes, and engage with our content across every device.",
                 "author": "Digital Team",
                 "position": "ONE Championship"
@@ -6204,6 +6290,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_87",
                 "text": "Kretoss delivered a website that perfectly represents our brand and professionalism. The new platform clearly showcases our services, certifications, and customer-first approach while making it easier for homeowners to schedule inspections and connect with our team.",
                 "author": "Management Team",
                 "position": "AROCON Roofing & Construction"
@@ -6277,6 +6364,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_88",
                 "text": "Kretoss delivered a website that perfectly captures the vision of our AI-powered GrowthOS. The platform clearly communicates our products, simplifies complex concepts, and provides an exceptional experience that helps convert visitors into qualified enterprise opportunities.",
                 "author": "Management Team",
                 "position": "Intempt"
@@ -6350,6 +6438,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_89",
                 "text": "Kretoss delivered a robust Magento eCommerce platform that perfectly supports our growing automotive marketplace. The website is fast, easy to navigate, and provides our customers with an outstanding shopping experience across every device.",
                 "author": "Management Team",
                 "position": "AutoMaximizer"
@@ -6423,6 +6512,7 @@ export const portfolioDetailsData = [
             ],
 
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_90",
                 "text": "Kretoss delivered a modern Magento platform that perfectly showcases our cabinetry collections and design services. The new website makes it easy for customers to explore products, request design assistance, and confidently purchase the right solutions for their remodeling projects.",
                 "author": "Management Team",
                 "position": "The RTA Store"
@@ -6476,6 +6566,7 @@ export const portfolioDetailsData = [
                 "95% positive user feedback on the new interface"
             ],
             "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=kretoss_91",
                 "text": "The team at Kretoss delivered far beyond our expectations. The new platform is blazing fast, incredibly stable, and our users absolutely love the new experience.",
                 "author": "Management Team",
                 "position": "Hunters Unite"
