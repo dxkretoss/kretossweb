@@ -202,8 +202,8 @@ export default function Contact() {
 
                                             <div className="contact-group">
                                                 <div className="single-contact-group">
-                                                    <label htmlFor="Services-1" className="contact-label">Services required*</label>
-                                                    <select id="Services-1" name="Services" data-name="Services" className="contact-input input-dropdown w-select" defaultValue="">
+                                                    <label htmlFor="Services-1" className="contact-label" >Services required*</label>
+                                                    <select id="Services-1" name="Services" data-name="Services" className="contact-input input-dropdown w-select !py-0" defaultValue="">
                                                         <option value="" disabled>Select Your Service</option>
                                                         <option value="UI/UX Design" className="bg-[#0f0f0f] text-white">UI/UX Design</option>
                                                         <option value="Web Development" className="bg-[#0f0f0f] text-white">Web Development</option>
@@ -212,7 +212,7 @@ export default function Contact() {
                                                 </div>
                                                 <div className="single-contact-group">
                                                     <label htmlFor="field-2" className="contact-label">Project budget*</label>
-                                                    <select id="field-2" name="field-2" data-name="Field 2" className="contact-input input-dropdown w-select">
+                                                    <select id="field-2" name="field-2" data-name="Field 2" className="contact-input input-dropdown w-select !py-0">
                                                         <option value="">Select Your Range</option>
                                                         {budgetOptions.map(opt => (
                                                             <option key={opt.value} value={opt.value}>{opt.label}</option>

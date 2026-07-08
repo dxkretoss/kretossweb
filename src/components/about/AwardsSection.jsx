@@ -100,7 +100,7 @@ export default function AwardsSection() {
                                 >
                                     {/* Left: Text */}
                                     <div className="flex flex-col gap-1 sm:gap-2 relative z-20">
-                                        <h3 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-wide text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                                        <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                                             {award.title}
                                         </h3>
                                         <p className="text-gray-600 text-sm md:text-base">

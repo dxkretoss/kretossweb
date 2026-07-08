@@ -8,7 +8,7 @@ export const jobsData = [
         category: "Development",
         experience: "2-4 Years",
         description: "We are looking for a talented MERN Stack Developer to design, develop, and maintain scalable web applications. The ideal candidate should be comfortable working across frontend and backend and passionate about building high-quality products.",
-        image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         imagePosition: "left",
         responsibilities: [
             "Develop full-stack web applications using MongoDB, Express.js, React.js & Node.js",
@@ -45,7 +45,7 @@ export const jobsData = [
         category: "Sales",
         experience: "1-3 Years",
         description: "We are looking for a skilled Business Development Executive who will be responsible for generating new business opportunities, handling client communications, and writing proposals across various platforms. The ideal candidate should have strong English communication skills, a good understanding of freelance portals, and basic technical knowledge to align client requirements with internal teams.",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         imagePosition: "right",
         responsibilities: [
             "Generate new leads and identify potential clients through various channels",

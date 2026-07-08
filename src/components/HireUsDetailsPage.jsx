@@ -265,47 +265,47 @@ export default function HireUsDetailsPage() {
         if (title.includes('android')) {
             return (
                 <div className="space-y-3">
-                    <p>Get skilled developers who are fully focused on your project from start to finish.</p>
-                    <p>We help businesses build <strong>mobile applications</strong>, <strong>Android apps</strong>, and <strong>custom software</strong> tailored to their unique requirements.</p>
+                    <p>Get skilled Developers who are fully focused on your project from start to finish.</p>
+                    <p>We help businesses build <strong>Mobile Applications</strong>, <strong>Android apps</strong>, and <strong>custom software</strong> tailored to their unique requirements.</p>
                 </div>
             );
         }
         if (title.includes('ios') || title.includes('apple')) {
             return (
                 <div className="space-y-3">
-                    <p>Get skilled developers who are fully focused on your project from start to finish.</p>
-                    <p>We help businesses build <strong>iOS applications</strong>, <strong>iPhone & iPad apps</strong>, and <strong>custom mobile software</strong> tailored to their unique requirements.</p>
+                    <p>Get skilled Developers who are fully focused on your project from start to finish.</p>
+                    <p>We help businesses build <strong>iOS Applications</strong>, <strong>iPhone & iPad apps</strong>, and <strong>custom mobile software</strong> tailored to their unique requirements.</p>
                 </div>
             );
         }
         if (title.includes('flutter') || title.includes('react native') || title.includes('mobile app')) {
             return (
                 <div className="space-y-3">
-                    <p>Get skilled developers who are fully focused on your project from start to finish.</p>
-                    <p>We help businesses build <strong>cross-platform mobile apps</strong>, <strong>hybrid applications</strong>, and <strong>custom software</strong> tailored to their unique requirements.</p>
+                    <p>Get skilled Developers who are fully focused on your project from start to finish.</p>
+                    <p>We help businesses build <strong>Cross-platform mobile apps</strong>, <strong>Hybrid applications</strong>, and <strong>custom software</strong> tailored to their unique requirements.</p>
                 </div>
             );
         }
         if (title.includes('shopify') || title.includes('magento') || title.includes('woocommerce') || title.includes('wordpress')) {
             return (
                 <div className="space-y-3">
-                    <p>Get skilled developers who are fully focused on your project from start to finish.</p>
-                    <p>We help businesses build <strong>eCommerce stores</strong>, <strong>responsive websites</strong>, and <strong>custom CMS solutions</strong> tailored to their unique requirements.</p>
+                    <p>Get skilled Developers who are fully focused on your project from start to finish.</p>
+                    <p>We help businesses build <strong>eCommerce stores</strong>, <strong>Responsive websites</strong>, and <strong>custom CMS solutions</strong> tailored to their unique requirements.</p>
                 </div>
             );
         }
         if (title.includes('laravel') || title.includes('php') || title.includes('node') || title.includes('python')) {
             return (
                 <div className="space-y-3">
-                    <p>Get skilled developers who are fully focused on your project from start to finish.</p>
-                    <p>We help businesses build <strong>backend systems</strong>, <strong>secure APIs</strong>, and <strong>custom server software</strong> tailored to their unique requirements.</p>
+                    <p>Get skilled Developers who are fully focused on your project from start to finish.</p>
+                    <p>We help businesses build <strong>Backend systems</strong>, <strong>Secure APIs</strong>, and <strong>Custom Server Software</strong> tailored to their unique requirements.</p>
                 </div>
             );
         }
         return (
             <div className="space-y-3">
-                <p>Get skilled developers who are fully focused on your project from start to finish.</p>
-                <p>We help businesses build <strong>web applications</strong>, <strong>eCommerce platforms</strong>, and <strong>custom software</strong> tailored to their unique requirements.</p>
+                <p>Get skilled Developers who are fully focused on your project from start to finish.</p>
+                <p>We help businesses build <strong>Web Applications</strong>, <strong>eCommerce platforms</strong>, and <strong>custom software</strong> tailored to their unique requirements.</p>
             </div>
         );
     };
@@ -781,8 +781,7 @@ export default function HireUsDetailsPage() {
                             </div>
                             <div className="p-5 bg-white flex flex-col flex-grow">
                                 <div className="mb-4 space-y-3">
-                                    <p className="text-[#404145] text-[14px] leading-[1.6]">
-                                        <strong className="text-[#222325] mr-1.5">{role.plans?.[activeTab]?.name || `${activeTab.toUpperCase()}`}</strong>
+                                    <p className="text-[#404145] text-[14px] leading-[1.6] capitalize">
                                         {renderTechTerms()}
                                     </p>
                                 </div>
@@ -827,8 +826,8 @@ export default function HireUsDetailsPage() {
                                         )}
                                         <h4 className="font-bold text-[#222325] text-[14px]">Need flexibility when hiring?</h4>
                                     </div>
-                                    <p className="text-[#404145] text-[14px] leading-relaxed">
-                                        {`Hire dedicated ${getCleanTechName()} developers on an hourly basis, part-time, or full-time basis for development, maintenance, support, and feature enhancements.`}
+                                    <p className="text-[#404145] text-[14px] leading-relaxed capitalize">
+                                        {`Hire Dedicated ${getCleanTechName()} developers on an hourly basis, part-time, or full-time basis for development, maintenance, support, and feature enhancements.`}
                                     </p>
                                 </div>
 

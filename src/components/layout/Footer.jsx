@@ -81,13 +81,14 @@ export default function Footer({ currentRoute }) {
 
     // Country roll lists
     const countryList = [
-        "United States",
-        "Singapore",
-        "Malaysia",
-        "Bangladesh",
+        "India",
+        "USA",
+        "UK",
+        "Brazil",
         "South Africa",
-        "Indonesia",
-        "India"
+        "Australia",
+        "Germany",
+        "UAE"
     ];
 
     return (

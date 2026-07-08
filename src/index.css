@@ -81,7 +81,7 @@
 
 @media (min-width: 768px) {
   .desktop-scroll-mode-auto {
-    animation: auto-scroll-bg 32s ease-in-out infinite alternate !important;
+    animation: auto-scroll-bg 15s ease-in-out infinite alternate !important;
     animation-play-state: paused !important;
   }
 
@@ -90,12 +90,12 @@
   }
 
   .desktop-scroll-mode-playing {
-    animation: auto-scroll-bg 32s ease-in-out infinite alternate !important;
+    animation: auto-scroll-bg 15s ease-in-out infinite alternate !important;
     animation-play-state: running !important;
   }
 
   .desktop-scroll-mode-paused {
-    animation: auto-scroll-bg 32s ease-in-out infinite alternate !important;
+    animation: auto-scroll-bg 15s ease-in-out infinite alternate !important;
     animation-play-state: paused !important;
   }
 }
@@ -2578,7 +2578,7 @@ body {
   line-height: var(--line-height--height-medium);
   font-weight: var(--font-weight--font-regular);
   border: 1px solid #fff3;
-  height: 52px;
+  height: 40px;
   margin-bottom: 0;
   padding: 15px 12px;
   transition: all .3s;
@@ -2656,7 +2656,7 @@ body {
 .contact-call-text {
   color: var(--_color---base-colors--white);
   font-size: 16px;
-  font-weight: var(--font-weight--font-medium);
+  font-weight: 400;
   text-transform: none;
 }
 
@@ -6814,7 +6814,7 @@ body {
 
   .contact-call-text,
   .call-link {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /* .contact-about-block {
