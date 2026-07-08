@@ -16,6 +16,7 @@ import {
     SiSupabase, SiSolidity, SiMysql, SiCodeigniter, SiTensorflow
 } from 'react-icons/si';
 import { ArrowRight } from 'lucide-react';
+import AnimatedButton from './ui/AnimatedButton';
 
 const getCountryFlag = (country) => {
     if (!country) return '';
@@ -172,8 +173,34 @@ export default function HireUsDetailsPage() {
 
     if (!role) {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-[#fafcff]">
-                <div className="text-[#0a1520] text-2xl font-bold">Role not found</div>
+            <div className="min-h-screen flex flex-col items-center justify-center bg-[#fafcff] relative overflow-hidden px-4">
+                {/* Background decorative elements */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-[#44c7f6]/10 to-[#0037f0]/5 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#0037f0]/5 rounded-full blur-3xl pointer-events-none translate-x-1/3 translate-y-1/3"></div>
+
+                <div className="relative z-10 flex flex-col items-center text-center max-w-lg transition-all duration-700 ease-out transform translate-y-0 opacity-100">
+                    <div className="w-24 h-24 bg-white shadow-xl shadow-blue-900/5 rounded-3xl flex items-center justify-center mb-8 rotate-3 transform transition-transform hover:rotate-6">
+                        <svg className="w-12 h-12 text-[#0037f0]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                        </svg>
+                    </div>
+
+                    <h1 className="text-4xl sm:text-5xl font-extrabold text-[#0a0a0a] tracking-tight mb-4">
+                        Role Not Found
+                    </h1>
+
+                    <p className="text-[#62646a] text-lg mb-10 leading-relaxed">
+                        Oops! The role you are looking for doesn't exist, has been moved, or the URL is incorrect.
+                    </p>
+
+                    <div className="flex items-center gap-4">
+                        <AnimatedButton
+                            text="BACK TO HOME"
+                            href="/"
+                            className="!w-auto"
+                        />
+                    </div>
+                </div>
             </div>
         );
     }
@@ -354,7 +381,7 @@ export default function HireUsDetailsPage() {
                                         <div className="flex flex-col lg:flex-row gap-2 rounded-[8px] overflow-hidden items-stretch w-full">
                                             <div className="w-full lg:w-[60%] relative flex items-center justify-center self-stretch">
                                                 <div className="w-full h-full bg-[#1a1d24]">
-                                                    <img ref={imgRef} src={project.image} alt={project.title} className="w-full h-full object-contain" crossOrigin="anonymous" />
+                                                    <img ref={imgRef} src={project.image} alt={project.title} className="w-full h-full object-cover" crossOrigin="anonymous" />
                                                 </div>
                                             </div>
                                             <div className="w-full lg:w-[40%] p-4 flex flex-col justify-between self-stretch relative overflow-hidden transition-colors duration-500"
@@ -536,6 +563,10 @@ export default function HireUsDetailsPage() {
 
                             {role.aboutGig?.note && (
                                 <p className="mt-4 text-[#62646a] text-[15px]">{role.aboutGig.note}</p>
+                            )}
+
+                            {role.aboutGig?.availability && (
+                                <p className="mt-4 text-[#62646a] text-[15px]">{role.aboutGig.availability}</p>
                             )}
                         </div>
                     </div>

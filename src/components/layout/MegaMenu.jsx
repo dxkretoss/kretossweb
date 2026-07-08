@@ -3,7 +3,7 @@ import { ArrowRight, ChevronRight } from 'lucide-react';
 import { hireUsData } from '../../data/hireus';
 
 const MegaMenu = forwardRef(({ isOpen, onClose, position = 'top', onMouseEnter, onMouseLeave }, ref) => {
-    const categories = ["Frontend Developers", "Backend Developers", "App Developers", "Web Developer"];
+    const categories = ["Frontend Developers", "Backend Developers", "Mobile App Developers", "Web Developer", "Full Stack Developers"];
 
     const isTop = position === 'top';
 
@@ -33,7 +33,7 @@ const MegaMenu = forwardRef(({ isOpen, onClose, position = 'top', onMouseEnter, 
                 <div className={bridgeClasses}></div>
 
                 <div className="container mx-auto px-8 md:px-12 relative z-10">
-                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-x-8 gap-y-10 text-left">
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-10 text-left">
                         {categories.map(cat => {
                             const categoryRoles = hireUsData.filter(r => r.category === cat);
                             if (categoryRoles.length === 0) return null;
