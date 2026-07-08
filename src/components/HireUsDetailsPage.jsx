@@ -94,6 +94,7 @@ export default function HireUsDetailsPage() {
     const { roleSlug } = useParams();
     const navigate = useNavigate();
     const [role, setRole] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
     const [activeTab, setActiveTab] = useState('standard');
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [formData, setFormData] = useState({ name: '', email: '', phone: '', summary: '', budget: '' });
@@ -120,11 +121,20 @@ export default function HireUsDetailsPage() {
     };
 
     useEffect(() => {
-        const foundRole = hireUsData.find(r => r.slug === roleSlug);
-        if (foundRole) {
-            setRole(foundRole);
-            document.title = `${foundRole.title} | Kretoss Technology`;
-        }
+        setIsLoading(true);
+        // Simulate a brief loading period for smoother UX
+        const timer = setTimeout(() => {
+            const foundRole = hireUsData.find(r => r.slug === roleSlug);
+            if (foundRole) {
+                setRole(foundRole);
+                document.title = `${foundRole.title} | Kretoss Technology`;
+            } else {
+                setRole(null);
+            }
+            setIsLoading(false);
+        }, 600); // 600ms loading duration
+
+        return () => clearTimeout(timer);
     }, [roleSlug]);
 
     useEffect(() => {
@@ -170,6 +180,18 @@ export default function HireUsDetailsPage() {
         }, 5000);
         return () => clearInterval(timer);
     }, [role?.images]);
+
+    if (isLoading) {
+        return (
+            <div className="min-h-screen flex flex-col items-center justify-center bg-[#fafcff] relative overflow-hidden">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-[#44c7f6]/10 to-[#0037f0]/5 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="relative z-10 flex flex-col items-center">
+                    <div className="w-16 h-16 border-4 border-blue-100 border-t-[#0037f0] rounded-full animate-spin shadow-lg"></div>
+                    <p className="mt-6 text-[#0037f0] font-medium tracking-wide animate-pulse">Loading...</p>
+                </div>
+            </div>
+        );
+    }
 
     if (!role) {
         return (

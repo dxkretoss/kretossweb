@@ -1028,7 +1028,6 @@ export const hireUsData = [
             }
         ]
     },
-
     {
         "slug": "hire-nestjs-developer",
         "category": "Backend Developers",
@@ -1200,8 +1199,6 @@ export const hireUsData = [
             }
         ]
     },
-
-
     {
         "slug": "hire-php-developer",
         "category": "Backend Developers",
@@ -1673,6 +1670,8 @@ export const hireUsData = [
             }
         ]
     },
+
+    // Mobile App Developers
     {
         "slug": "hire-flutter-developer",
         "category": "Mobile App Developers",
@@ -2615,6 +2614,8 @@ export const hireUsData = [
             }
         ]
     },
+
+    //Web Developer
     {
         "slug": "hire-shopify-developer",
         "category": "Web Developer",
@@ -3400,6 +3401,8 @@ export const hireUsData = [
             }
         ]
     },
+
+    //Full Stack Developers
     {
         "slug": "hire-mern-stack-developer",
         "category": "Full Stack Developers",
@@ -4028,4 +4031,1048 @@ export const hireUsData = [
             }
         ]
     },
+
+    // Frontend Developer
+    {
+        "slug": "hire-frontend-developer",
+        "title": "Hire Frontend Developer",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        "breadcrumbs": [
+            "Hire Us",
+            "Hire Frontend Developer"
+        ],
+        "gigTitle": "Hire Dedicated Frontend Developer Or Fixed Cost Frontend Development Team",
+        "seller": {
+            "name": "Ankur Patel",
+            "title": "Founder & CEO",
+            "rating": 4.9,
+            "reviews": 183,
+            "ordersInQueue": 2,
+            "avatar": "/grouppics/ankursir.png"
+        },
+        "aboutGig": {
+            "intro": "Looking to hire an experienced <strong>Frontend Developer</strong> who can transform your ideas, Figma designs, or existing website into a fast, responsive, and engaging web application? At <strong>Kretoss Technology</strong>, our frontend developers build modern user interfaces that deliver exceptional user experiences across desktops, tablets, and mobile devices.",
+            "intro2": "Whether you need a business website, SaaS platform, admin dashboard, eCommerce storefront, CRM, fintech portal, or enterprise application, our frontend team selects the most suitable technology—React.js, Next.js, Vue.js, Angular, or HTML/CSS—to build a scalable and future-ready solution.",
+            "whatYouGetTitle": "Frontend Development Services We Offer",
+            "whatYouGet": [
+                "Custom Frontend Web Application Development.",
+                "Responsive Website Development for Mobile, Tablet & Desktop.",
+                "Figma, Adobe XD & PSD to Pixel-Perfect Code.",
+                "React.js, Next.js, Vue.js & Angular Development.",
+                "Landing Pages, Corporate Websites & SaaS Dashboards.",
+                "UI Animation using GSAP, Framer Motion & CSS.",
+                "REST API & GraphQL Integration.",
+                "Frontend Performance Optimization & Core Web Vitals Improvements.",
+                "Website Maintenance, Feature Enhancements & Long-Term Support."
+            ],
+            "whyChooseUsTitle": "Why Hire Our Frontend Developers?",
+            "whyChooseUs": [
+                "Experienced frontend engineers with expertise across modern JavaScript frameworks.",
+                "Pixel-perfect implementation matching your UI/UX designs.",
+                "SEO-friendly, responsive and accessible development.",
+                "Reusable component architecture for easier future maintenance.",
+                "Clean, scalable and well-documented codebase.",
+                "Fast-loading websites optimized for Core Web Vitals.",
+                "Agile development process with weekly progress updates.",
+                "Complete source code ownership and NDA protection."
+            ],
+            "note": "Our frontend developers choose the right technology based on your business goals rather than forcing a specific framework. Every project is built with performance, maintainability, responsiveness, and scalability in mind.",
+            "availability": "Hire frontend developers hourly, monthly, full-time, or build a dedicated frontend development team with flexible timezone support."
+        },
+        "reviews": [
+            {
+                "id": 1,
+                "name": "Olivia Thompson",
+                "avatar": "https://i.pravatar.cc/100?img=48",
+                "country": "United Kingdom",
+                "rating": 5,
+                "date": "3 weeks ago",
+                "comment": "Our company needed a complete redesign of an outdated customer portal. The Kretoss frontend team transformed our Figma designs into a beautiful, responsive web application. The attention to detail, animations, and overall user experience impressed both our internal team and our customers.",
+                "price": "$7,000 - $14,000",
+                "duration": "7 weeks"
+            },
+            {
+                "id": 2,
+                "name": "Marcus Jensen",
+                "avatar": "https://i.pravatar.cc/100?img=52",
+                "country": "Denmark",
+                "rating": 5,
+                "date": "1 month ago",
+                "comment": "We didn't know which frontend technology was right for our SaaS product. Their team explained the pros and cons of each option and recommended the best approach. The final application is incredibly fast, mobile-friendly, and much easier for our users to navigate.",
+                "price": "$9,000 - $18,000",
+                "duration": "9 weeks"
+            },
+            {
+                "id": 3,
+                "name": "Daniel Brooks",
+                "avatar": "https://i.pravatar.cc/100?img=14",
+                "country": "Canada",
+                "rating": 5,
+                "date": "2 months ago",
+                "comment": "Excellent frontend development partner. They built our dashboard, integrated APIs, optimized loading speed, and even improved accessibility. Communication was clear throughout the project and every milestone was delivered on schedule.",
+                "price": "$5,000 - $11,000",
+                "duration": "6 weeks"
+            }
+        ],
+        "tags": [
+            "hire frontend developer",
+            "frontend development company",
+            "frontend web developer",
+            "react developer",
+            "next js developer",
+            "vue js developer",
+            "angular developer",
+            "responsive website development",
+            "javascript developer",
+            "ui development services"
+        ],
+        "portfolio": [
+            {
+                "image": "/portfolio/custom/portfolio_palzea-widget.webp",
+                "title": "Palzea Widget",
+                "date": "February 2025",
+                "description": "Designed and developed a modern cryptocurrency platform interface featuring responsive layouts, real-time data visualization, wallet management, and interactive dashboards optimized for desktop and mobile users.",
+                "tags": [
+                    "Frontend",
+                    "+6"
+                ],
+                "cost": "$2500-$5000",
+                "duration": "3-6 months",
+                "timeline": "2-4 Months",
+                "country": "UK",
+                "techStack": "React.js • TypeScript • Tailwind CSS • REST APIs",
+                "category": "Frontend Development",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_dreamload.webp",
+                "title": "Dreamload",
+                "date": "January 2025",
+                "description": "Created an interactive sports analytics platform with responsive dashboards, charts, advanced filtering, and seamless API integration to deliver a smooth user experience across devices.",
+                "tags": [
+                    "Dashboard",
+                    "+4"
+                ],
+                "cost": "$1500-$3000",
+                "duration": "1-3 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "Next.js • React.js • Chart.js • Tailwind CSS",
+                "category": "Frontend Development",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_phoenix.webp",
+                "title": "PhoenixFC",
+                "date": "November 2024",
+                "description": "Developed a modern sports club website featuring dynamic content, event pages, player profiles, responsive layouts, and engaging UI interactions for fans and members.",
+                "tags": [
+                    "Enterprise",
+                    "+8"
+                ],
+                "cost": "$5000-$10000",
+                "duration": "6+ months",
+                "timeline": "6 Months",
+                "country": "USA",
+                "techStack": "Vue.js • JavaScript • Tailwind CSS • REST APIs",
+                "category": "Frontend Development",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Which frontend technology is best for my project?",
+                "answer": "It depends on your business goals, project complexity, SEO requirements, and future scalability. Our team evaluates your requirements and recommends the most suitable technology, whether it's React.js, Next.js, Vue.js, Angular, or another modern framework."
+            },
+            {
+                "question": "Can you develop from Figma, Adobe XD, or PSD designs?",
+                "answer": "Yes. We specialize in converting Figma, Adobe XD, PSD, and Sketch designs into responsive, pixel-perfect websites and web applications while maintaining design accuracy across all devices."
+            },
+            {
+                "question": "Do you optimize website speed and Core Web Vitals?",
+                "answer": "Absolutely. Every frontend project is optimized for performance using code splitting, lazy loading, image optimization, caching strategies, and modern development practices to improve loading speed and search engine rankings."
+            },
+            {
+                "question": "Can you work with my existing backend or API?",
+                "answer": "Yes. Our frontend developers can integrate with any REST API, GraphQL API, or existing backend built with Node.js, Laravel, PHP, Python, .NET, Java, or other technologies."
+            },
+            {
+                "question": "Can I hire a dedicated frontend developer for my team?",
+                "answer": "Yes. You can hire experienced frontend developers on an hourly, monthly, or full-time basis. They can work as an extension of your in-house team, participate in daily meetings, use your preferred project management tools, and follow your development workflow."
+            }
+        ]
+    },
+
+    // Backend Developer
+    {
+        "slug": "hire-backend-developer",
+        "title": "Hire Backend Developer",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        "breadcrumbs": [
+            "Hire Us",
+            "Hire Backend Developer"
+        ],
+        "gigTitle": "Hire Dedicated Backend Developer Or Fixed Cost Backend Development Team",
+        "seller": {
+            "name": "Ankur Patel",
+            "title": "Founder & CEO",
+            "rating": 4.9,
+            "reviews": 183,
+            "ordersInQueue": 2,
+            "avatar": "/grouppics/ankursir.png"
+        },
+        "aboutGig": {
+            "intro": "Looking to hire an experienced <strong>Backend Developer</strong> to build secure, scalable, and high-performance server-side applications? At <strong>Kretoss Technology</strong>, we develop powerful backend solutions that handle business logic, APIs, databases, authentication, and cloud infrastructure for startups, enterprises, and growing businesses.",
+            "intro2": "Whether you're building a SaaS platform, marketplace, CRM, ERP system, fintech application, healthcare platform, mobile app backend, or enterprise software, our backend developers choose the right technology stack to ensure long-term scalability, security, and performance.",
+            "whatYouGetTitle": "Backend Development Services We Offer",
+            "whatYouGet": [
+                "Custom Backend Application Development.",
+                "REST API & GraphQL API Development.",
+                "Database Architecture & Optimization.",
+                "Authentication & User Management Systems.",
+                "Payment Gateway & Third-Party API Integration.",
+                "Real-Time Features using WebSockets & Event-Driven Architecture.",
+                "Cloud Deployment, Docker & CI/CD Setup.",
+                "Backend Maintenance, Scaling & Performance Optimization.",
+                "Microservices & Enterprise Backend Architecture."
+            ],
+            "whyChooseUsTitle": "Why Hire Our Backend Developers?",
+            "whyChooseUs": [
+                "Expert backend engineers experienced across multiple technologies.",
+                "Scalable architecture built for future business growth.",
+                "Secure API development following industry best practices.",
+                "Optimized database design for speed and reliability.",
+                "Well-documented, maintainable, and clean backend code.",
+                "Transparent communication and Agile development process.",
+                "Cloud-ready applications with automated deployment pipelines.",
+                "Complete source code ownership with NDA protection."
+            ],
+            "note": "Every backend application is designed with security, scalability, performance, maintainability, and future expansion in mind. We select the most suitable backend technology based on your project requirements instead of forcing a single framework.",
+            "availability": "Hire backend developers hourly, monthly, full-time, or build a dedicated backend development team with flexible timezone support."
+        },
+        "reviews": [
+            {
+                "id": 1,
+                "name": "Jonathan Miller",
+                "avatar": "https://i.pravatar.cc/100?img=18",
+                "country": "United States",
+                "rating": 5,
+                "date": "3 weeks ago",
+                "comment": "Our SaaS platform was growing rapidly, and we needed a backend that could handle increasing traffic without sacrificing performance. The Kretoss team redesigned our backend architecture, optimized the database, and delivered a solution that's been running flawlessly ever since. Their technical expertise and communication were outstanding.",
+                "price": "$10,000 - $18,000",
+                "duration": "8 weeks"
+            },
+            {
+                "id": 2,
+                "name": "Charlotte Evans",
+                "avatar": "https://i.pravatar.cc/100?img=24",
+                "country": "Australia",
+                "rating": 5,
+                "date": "1 month ago",
+                "comment": "We hired Kretoss to develop the backend for our healthcare platform. They built secure APIs, user authentication, reporting modules, and integrated multiple third-party services. Everything was delivered on schedule, and their support after launch has been exceptional.",
+                "price": "$12,000 - $22,000",
+                "duration": "9 weeks"
+            },
+            {
+                "id": 3,
+                "name": "Marco Bellini",
+                "avatar": "https://i.pravatar.cc/100?img=59",
+                "country": "Italy",
+                "rating": 4.9,
+                "date": "2 months ago",
+                "comment": "What impressed us most was their ability to understand our business before writing any code. They recommended the right backend architecture, improved our original plan, and delivered a highly stable system that's easy for our team to maintain. We look forward to working together again.",
+                "price": "$8,000 - $16,000",
+                "duration": "7 weeks"
+            }
+        ],
+        "tags": [
+            "hire backend developer",
+            "backend development company",
+            "backend engineer",
+            "api development services",
+            "server side developer",
+            "custom backend development",
+            "database development",
+            "cloud backend development",
+            "microservices development",
+            "backend software development"
+        ],
+        "portfolio": [
+            {
+                "image": "/portfolio/custom/portfolio_palzea-widget.webp",
+                "title": "Palzea Widget",
+                "date": "February 2025",
+                "description": "Developed a scalable backend infrastructure for a cryptocurrency platform featuring secure wallet management, transaction processing, authentication, real-time updates, and blockchain API integrations.",
+                "tags": [
+                    "Backend",
+                    "+6"
+                ],
+                "cost": "$4000-$9000",
+                "duration": "3-6 months",
+                "timeline": "3-5 Months",
+                "country": "UK",
+                "techStack": "Node.js • NestJS • PostgreSQL • Redis",
+                "category": "Backend Development",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_dreamload.webp",
+                "title": "Dreamload",
+                "date": "January 2025",
+                "description": "Built a secure backend platform for a sports analytics application with REST APIs, user management, scheduling, notifications, reporting, and AI integration.",
+                "tags": [
+                    "API Platform",
+                    "+5"
+                ],
+                "cost": "$3000-$7000",
+                "duration": "2-4 months",
+                "timeline": "2-4 Months",
+                "country": "UAE",
+                "techStack": "Node.js • Python • PostgreSQL",
+                "category": "Backend Development",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_phoenix.webp",
+                "title": "PhoenixFC",
+                "date": "November 2024",
+                "description": "Engineered a centralized backend platform to manage memberships, player information, event scheduling, notifications, media assets, analytics, and administrative workflows.",
+                "tags": [
+                    "Enterprise",
+                    "+8"
+                ],
+                "cost": "$7000-$15000",
+                "duration": "6+ months",
+                "timeline": "6 Months",
+                "country": "USA",
+                "techStack": "NestJS • PostgreSQL • Redis • Docker",
+                "category": "Enterprise Backend",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Which backend technology is best for my project?",
+                "answer": "The right backend technology depends on your business goals, scalability requirements, expected traffic, integrations, and future plans. Our team evaluates your project and recommends the most suitable solution, whether that's Node.js, NestJS, Laravel, Django, ASP.NET, Python, PHP, or another backend technology."
+            },
+            {
+                "question": "Can you develop secure APIs for web and mobile applications?",
+                "answer": "Yes. We develop secure REST APIs and GraphQL APIs with authentication, authorization, encryption, rate limiting, logging, validation, and role-based access control to ensure your application remains secure and scalable."
+            },
+            {
+                "question": "Do you handle database design and optimization?",
+                "answer": "Absolutely. We design efficient database architectures using SQL and NoSQL databases, optimize queries, improve indexing, and ensure your backend performs reliably as your business grows."
+            },
+            {
+                "question": "Can you integrate third-party services into my backend?",
+                "answer": "Yes. We integrate payment gateways, CRM platforms, ERP systems, email services, SMS providers, cloud storage, AI services, analytics tools, and hundreds of third-party APIs based on your business requirements."
+            },
+            {
+                "question": "Can I hire a dedicated backend developer for my existing project?",
+                "answer": "Yes. Our backend developers can join your existing development team, improve current systems, build new APIs, optimize databases, fix performance issues, implement new features, or provide long-term maintenance and support."
+            }
+        ]
+    },
+
+    // Mobile App Developer
+    {
+        "slug": "hire-mobile-app-developer",
+        "title": "Hire Mobile App Developer",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+        "breadcrumbs": [
+            "Hire Us",
+            "Hire Mobile App Developer"
+        ],
+        "gigTitle": "Hire Dedicated Mobile App Developer Or Fixed Cost Mobile App Development Team",
+        "seller": {
+            "name": "Ankur Patel",
+            "title": "Founder & CEO",
+            "rating": 4.9,
+            "reviews": 183,
+            "ordersInQueue": 2,
+            "avatar": "/grouppics/ankursir.png"
+        },
+        "aboutGig": {
+            "intro": "Looking to hire an experienced <strong>Mobile App Developer</strong> to transform your idea into a high-quality Android or iOS application? At <strong>Kretoss Technology</strong>, we build powerful, user-friendly, and scalable mobile applications that help startups, enterprises, and growing businesses deliver exceptional digital experiences across every device.",
+            "intro2": "Whether you're launching a startup MVP, eCommerce app, healthcare platform, fintech solution, food delivery app, marketplace, social networking app, or enterprise mobile application, our team selects the most suitable technology—Flutter, React Native, Android, iOS, Kotlin, or Swift—to build the best solution for your business.",
+            "whatYouGetTitle": "Mobile App Development Services We Offer",
+            "whatYouGet": [
+                "Custom Android & iOS App Development.",
+                "Cross-Platform Mobile App Development.",
+                "Native Mobile Application Development.",
+                "UI/UX Design & Interactive User Experiences.",
+                "REST API & Backend Integration.",
+                "Payment Gateway, Maps & Third-Party Integrations.",
+                "App Store & Google Play Store Deployment.",
+                "Maintenance, Feature Enhancements & Long-Term Support.",
+                "Performance Optimization & App Modernization."
+            ],
+            "whyChooseUsTitle": "Why Hire Our Mobile App Developers?",
+            "whyChooseUs": [
+                "Experienced mobile app developers with expertise across multiple technologies.",
+                "Business-focused solutions designed around your goals—not just code.",
+                "Beautiful, intuitive, and user-friendly mobile interfaces.",
+                "Scalable architecture for future growth.",
+                "Agile development with complete project transparency.",
+                "App Store & Google Play publishing assistance.",
+                "Regular testing across multiple devices.",
+                "Complete source code ownership and NDA protection."
+            ],
+            "note": "Every mobile application is designed with performance, security, scalability, and an exceptional user experience in mind. We recommend the most suitable technology based on your project requirements rather than forcing a specific platform.",
+            "availability": "Hire mobile app developers hourly, monthly, full-time, or build a dedicated mobile development team with flexible timezone support."
+        },
+        "reviews": [
+            {
+                "id": 1,
+                "name": "Sophia Mitchell",
+                "avatar": "https://i.pravatar.cc/100?img=38",
+                "country": "United States",
+                "rating": 5,
+                "date": "3 weeks ago",
+                "comment": "We approached Kretoss with only an app idea and they handled everything from planning and design to development and launch. The entire experience was smooth, communication was excellent, and our app is now successfully serving thousands of users. We couldn't have asked for a better development partner.",
+                "price": "$12,000 - $20,000",
+                "duration": "10 weeks"
+            },
+            {
+                "id": 2,
+                "name": "David Armstrong",
+                "avatar": "https://i.pravatar.cc/100?img=55",
+                "country": "United Kingdom",
+                "rating": 5,
+                "date": "1 month ago",
+                "comment": "Our company needed both Android and iPhone apps for our customers. The Kretoss team helped us choose the right technology, delivered both apps on schedule, and managed the entire publishing process. Their professionalism and technical expertise exceeded our expectations.",
+                "price": "$15,000 - $30,000",
+                "duration": "12 weeks"
+            },
+            {
+                "id": 3,
+                "name": "Emily Rodriguez",
+                "avatar": "https://i.pravatar.cc/100?img=44",
+                "country": "Canada",
+                "rating": 4.9,
+                "date": "2 months ago",
+                "comment": "What impressed us most was how involved the team was throughout the project. They suggested features we hadn't considered, solved technical challenges quickly, and delivered an app that our customers genuinely enjoy using. Their support after launch has also been fantastic.",
+                "price": "$8,000 - $16,000",
+                "duration": "8 weeks"
+            }
+        ],
+        "tags": [
+            "hire mobile app developer",
+            "mobile app development company",
+            "android app developer",
+            "ios app developer",
+            "cross platform app development",
+            "custom mobile app development",
+            "flutter developer",
+            "react native developer",
+            "mobile application development services",
+            "app development company"
+        ],
+        "portfolio": [
+            {
+                "image": "/portfolio/custom/portfolio_palzea-widget.webp",
+                "title": "Palzea Wallet",
+                "date": "February 2025",
+                "description": "Designed and developed a secure cryptocurrency wallet application with real-time portfolio tracking, QR payments, wallet management, biometric authentication, and seamless blockchain integration.",
+                "tags": [
+                    "FinTech",
+                    "+6"
+                ],
+                "cost": "$5000-$10000",
+                "duration": "3-5 months",
+                "timeline": "4 Months",
+                "country": "UK",
+                "techStack": "Flutter • Node.js • Firebase • Blockchain APIs",
+                "category": "Mobile Application",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_dreamload.webp",
+                "title": "Dreamload",
+                "date": "January 2025",
+                "description": "Built a mobile sports management application enabling athletes and coaches to manage training schedules, performance reports, notifications, and team communication from anywhere.",
+                "tags": [
+                    "Sports",
+                    "+4"
+                ],
+                "cost": "$4000-$9000",
+                "duration": "3 months",
+                "timeline": "3 Months",
+                "country": "UAE",
+                "techStack": "React Native • Node.js • PostgreSQL",
+                "category": "Mobile Application",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_phoenix.webp",
+                "title": "PhoenixFC",
+                "date": "November 2024",
+                "description": "Created a feature-rich sports club mobile application allowing members to manage registrations, purchase tickets, receive live match notifications, and stay connected with the club community.",
+                "tags": [
+                    "Sports Club",
+                    "+8"
+                ],
+                "cost": "$10000-$18000",
+                "duration": "6 months",
+                "timeline": "6 Months",
+                "country": "USA",
+                "techStack": "Flutter • Firebase • REST APIs",
+                "category": "Enterprise Mobile App",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Which mobile app technology is best for my project?",
+                "answer": "The right technology depends on your budget, target audience, required features, timeline, and long-term business goals. Our team evaluates your requirements and recommends the most suitable option, whether it's Flutter, React Native, Android, iOS, Kotlin, or Swift."
+            },
+            {
+                "question": "Can you develop both Android and iPhone applications?",
+                "answer": "Yes. We build native Android apps, native iOS apps, and cross-platform applications that work seamlessly across both operating systems while maintaining excellent performance and user experience."
+            },
+            {
+                "question": "Will you publish my application to the App Store and Google Play?",
+                "answer": "Absolutely. We handle the complete submission process, including preparing store assets, optimizing listings, meeting platform guidelines, and assisting with approvals for both the Apple App Store and Google Play Store."
+            },
+            {
+                "question": "Can you integrate my mobile app with an existing website or backend?",
+                "answer": "Yes. We integrate mobile applications with existing websites, CRM systems, ERP platforms, payment gateways, cloud services, APIs, and third-party business software to create a seamless digital ecosystem."
+            },
+            {
+                "question": "Do you provide ongoing maintenance after the app is launched?",
+                "answer": "Yes. We offer long-term maintenance services, including bug fixes, security updates, OS compatibility updates, performance optimization, feature development, and technical support to keep your application running smoothly."
+            }
+        ]
+    },
+
+    // Data Analytics
+    {
+        "slug": "hire-data-analytics",
+        "title": "Hire Data Analytics Expert",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        "breadcrumbs": [
+            "Hire Us",
+            "Hire Data Analytics Expert"
+        ],
+        "gigTitle": "Hire Dedicated Data Analytics Expert Or Fixed Cost Data Analytics Project",
+        "seller": {
+            "name": "Ankur Patel",
+            "title": "Founder & CEO",
+            "rating": 4.9,
+            "reviews": 183,
+            "ordersInQueue": 2,
+            "avatar": "/grouppics/ankursir.png"
+        },
+        "aboutGig": {
+            "intro": "Looking to hire an experienced <strong>Data Analytics Expert</strong> who can turn your business data into meaningful insights? At <strong>Kretoss Technology</strong>, we help organizations collect, analyze, visualize, and interpret data to improve decision-making, optimize operations, and identify new growth opportunities.",
+            "intro2": "Whether you need executive dashboards, sales analytics, customer behavior analysis, financial reporting, operational insights, marketing performance tracking, or predictive analytics, our data specialists deliver solutions that help you make smarter business decisions with confidence.",
+            "whatYouGetTitle": "Data Analytics Services We Offer",
+            "whatYouGet": [
+                "Business Intelligence & Executive Dashboards.",
+                "Interactive Reports using Power BI, Tableau & Looker Studio.",
+                "Sales, Marketing & Customer Analytics.",
+                "Financial & Operational Performance Reporting.",
+                "Data Cleaning, Transformation & Visualization.",
+                "Database Querying & SQL Reporting.",
+                "Predictive Analytics & Business Forecasting.",
+                "Custom KPI Dashboards & Automated Reports.",
+                "Data Integration from Multiple Business Systems."
+            ],
+            "whyChooseUsTitle": "Why Hire Our Data Analytics Experts?",
+            "whyChooseUs": [
+                "Experienced analysts with strong business understanding.",
+                "Transform complex data into clear, actionable insights.",
+                "Interactive dashboards designed for executives and teams.",
+                "Automated reporting to save time and improve productivity.",
+                "Accurate data modeling and visualization best practices.",
+                "Secure handling of confidential business information.",
+                "Scalable analytics solutions for growing organizations.",
+                "Transparent communication and business-focused consulting."
+            ],
+            "note": "Every analytics solution is tailored to your business objectives, ensuring accurate reporting, meaningful insights, interactive dashboards, and reliable data that supports better decision-making.",
+            "availability": "Hire data analytics experts hourly, monthly, full-time, or build a dedicated analytics team with flexible timezone support."
+        },
+        "reviews": [
+            {
+                "id": 1,
+                "name": "Jennifer Parker",
+                "avatar": "https://i.pravatar.cc/100?img=42",
+                "country": "United States",
+                "rating": 5,
+                "date": "3 weeks ago",
+                "comment": "We had years of business data but struggled to make sense of it. Kretoss created executive dashboards that instantly showed our sales performance, customer trends, and operational KPIs. Our leadership team now makes decisions much faster thanks to their analytics expertise.",
+                "price": "$4,000 - $8,000",
+                "duration": "4 weeks"
+            },
+            {
+                "id": 2,
+                "name": "Oliver Schmidt",
+                "avatar": "https://i.pravatar.cc/100?img=54",
+                "country": "Germany",
+                "rating": 5,
+                "date": "1 month ago",
+                "comment": "The reporting process that previously took us several days each month is now fully automated. Their dashboards are easy to understand, visually impressive, and provide exactly the information our management team needs every day.",
+                "price": "$5,000 - $10,000",
+                "duration": "5 weeks"
+            },
+            {
+                "id": 3,
+                "name": "Rachel Cooper",
+                "avatar": "https://i.pravatar.cc/100?img=21",
+                "country": "Australia",
+                "rating": 5,
+                "date": "2 months ago",
+                "comment": "The Kretoss team didn't just build reports—they helped us understand our business better. They identified trends we had completely overlooked and provided recommendations that improved both sales performance and operational efficiency.",
+                "price": "$6,000 - $12,000",
+                "duration": "6 weeks"
+            }
+        ],
+        "tags": [
+            "hire data analytics expert",
+            "business intelligence services",
+            "data analytics company",
+            "power bi developer",
+            "tableau consultant",
+            "dashboard development",
+            "business reporting",
+            "data visualization services",
+            "sql reporting",
+            "analytics consulting"
+        ],
+        "portfolio": [
+            {
+                "image": "/portfolio/custom/portfolio_palzea-widget.webp",
+                "title": "Crypto Business Analytics",
+                "date": "February 2025",
+                "description": "Developed interactive executive dashboards for a cryptocurrency platform, providing real-time portfolio tracking, trading analytics, customer insights, and financial reporting for business stakeholders.",
+                "tags": [
+                    "Business Intelligence",
+                    "+6"
+                ],
+                "cost": "$3000-$7000",
+                "duration": "2-4 months",
+                "timeline": "3 Months",
+                "country": "UK",
+                "techStack": "Power BI • SQL • Python • Azure",
+                "category": "Business Intelligence",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_dreamload.webp",
+                "title": "Sports Performance Analytics",
+                "date": "January 2025",
+                "description": "Created performance dashboards and predictive analytics for a sports organization, helping coaches and management monitor athlete performance, attendance, and operational KPIs.",
+                "tags": [
+                    "Analytics",
+                    "+5"
+                ],
+                "cost": "$2500-$6000",
+                "duration": "2 months",
+                "timeline": "2 Months",
+                "country": "UAE",
+                "techStack": "Tableau • Python • PostgreSQL",
+                "category": "Analytics Dashboard",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_phoenix.webp",
+                "title": "Executive Reporting Platform",
+                "date": "November 2024",
+                "description": "Built an executive reporting solution that consolidated financial, operational, and customer data into a single interactive dashboard, enabling leadership teams to monitor business performance in real time.",
+                "tags": [
+                    "Executive Dashboard",
+                    "+8"
+                ],
+                "cost": "$7000-$14000",
+                "duration": "5 months",
+                "timeline": "5 Months",
+                "country": "USA",
+                "techStack": "Power BI • SQL Server • Python",
+                "category": "Business Intelligence",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
+            }
+        ],
+        "faqs": [
+            {
+                "question": "How can data analytics help my business?",
+                "answer": "Data analytics helps you understand business performance, customer behavior, sales trends, operational efficiency, and financial metrics. Instead of relying on assumptions, you can make informed decisions using real-time insights backed by accurate data."
+            },
+            {
+                "question": "Can you create dashboards for our management team?",
+                "answer": "Yes. We design interactive dashboards that allow executives and managers to monitor KPIs, sales, revenue, customer growth, operations, inventory, marketing campaigns, and other critical business metrics from one place."
+            },
+            {
+                "question": "Which analytics tools do you use?",
+                "answer": "We work with leading analytics and business intelligence platforms including Power BI, Tableau, Looker Studio, SQL, Python, Excel, and cloud-based reporting solutions. We recommend the most suitable platform based on your business requirements."
+            },
+            {
+                "question": "Can you integrate data from multiple systems?",
+                "answer": "Absolutely. We can combine data from CRMs, ERPs, accounting software, eCommerce platforms, marketing tools, databases, APIs, spreadsheets, and other business systems into a single centralized reporting solution."
+            },
+            {
+                "question": "Can I hire a dedicated data analytics expert for ongoing reporting?",
+                "answer": "Yes. You can hire our data analytics experts on an hourly, monthly, or full-time basis for dashboard development, automated reporting, business intelligence consulting, KPI monitoring, and continuous analytics support."
+            }
+        ]
+    },
+
+    // Hire Cloud Infrastructure
+    {
+        "slug": "hire-cloud-infrastructure",
+        "title": "Hire Cloud Infrastructure Expert",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+        "breadcrumbs": [
+            "Hire Us",
+            "Hire Cloud Infrastructure Expert"
+        ],
+        "gigTitle": "Hire Dedicated Cloud Infrastructure Expert Or Fixed Cost Cloud Infrastructure Project",
+        "seller": {
+            "name": "Ankur Patel",
+            "title": "Founder & CEO",
+            "rating": 4.9,
+            "reviews": 183,
+            "ordersInQueue": 2,
+            "avatar": "/grouppics/ankursir.png"
+        },
+        "aboutGig": {
+            "intro": "Looking to hire an experienced <strong>Cloud Infrastructure Expert</strong> to build, deploy, secure, and manage your cloud environment? At <strong>Kretoss Technology</strong>, we help businesses create reliable, scalable, and cost-effective cloud infrastructure that keeps applications running smoothly while supporting future growth.",
+            "intro2": "Whether you're launching a startup, migrating enterprise systems to the cloud, deploying SaaS applications, managing high-traffic platforms, or optimizing existing infrastructure, our cloud specialists deliver secure and highly available solutions tailored to your business objectives.",
+            "whatYouGetTitle": "Cloud Infrastructure Services We Offer",
+            "whatYouGet": [
+                "Cloud Architecture Design & Infrastructure Planning.",
+                "Application Deployment & Cloud Migration.",
+                "AWS, Microsoft Azure & Google Cloud Solutions.",
+                "Docker Containerization & Kubernetes Orchestration.",
+                "CI/CD Pipeline Setup & Deployment Automation.",
+                "Cloud Security, Monitoring & Backup Solutions.",
+                "Infrastructure Performance Optimization.",
+                "Disaster Recovery & High Availability Configuration.",
+                "24/7 Infrastructure Maintenance & Technical Support."
+            ],
+            "whyChooseUsTitle": "Why Hire Our Cloud Infrastructure Experts?",
+            "whyChooseUs": [
+                "Experienced cloud engineers with enterprise deployment expertise.",
+                "Highly secure and scalable cloud architecture.",
+                "Infrastructure optimized for performance and cost efficiency.",
+                "Automated deployment pipelines to reduce downtime.",
+                "Continuous monitoring and proactive maintenance.",
+                "Reliable disaster recovery and backup strategies.",
+                "Transparent communication throughout every project.",
+                "Complete documentation and long-term infrastructure support."
+            ],
+            "note": "Every cloud infrastructure is designed for security, scalability, reliability, and business continuity while following industry best practices and modern cloud architecture standards.",
+            "availability": "Hire cloud infrastructure experts hourly, monthly, full-time, or build a dedicated cloud engineering team with flexible timezone support."
+        },
+        "reviews": [
+            {
+                "id": 1,
+                "name": "William Carter",
+                "avatar": "https://i.pravatar.cc/100?img=22",
+                "country": "United States",
+                "rating": 5,
+                "date": "3 weeks ago",
+                "comment": "Our application was experiencing frequent downtime during traffic spikes. The Kretoss team redesigned our cloud infrastructure, improved performance, and implemented automated scaling. Since deployment, we've had significantly better uptime and much faster response times.",
+                "price": "$8,000 - $15,000",
+                "duration": "5 weeks"
+            },
+            {
+                "id": 2,
+                "name": "Natalie Hughes",
+                "avatar": "https://i.pravatar.cc/100?img=30",
+                "country": "United Kingdom",
+                "rating": 5,
+                "date": "1 month ago",
+                "comment": "We migrated our legacy systems to the cloud with Kretoss, and the entire process was handled professionally. They planned every step carefully, minimized downtime, and ensured our team experienced no disruption during the migration.",
+                "price": "$12,000 - $20,000",
+                "duration": "7 weeks"
+            },
+            {
+                "id": 3,
+                "name": "Thomas Berg",
+                "avatar": "https://i.pravatar.cc/100?img=17",
+                "country": "Sweden",
+                "rating": 4.9,
+                "date": "2 months ago",
+                "comment": "Beyond simply deploying our platform, Kretoss optimized our cloud infrastructure, reducing hosting costs while improving performance. Their proactive monitoring and ongoing support have been invaluable to our business.",
+                "price": "$6,000 - $12,000",
+                "duration": "6 weeks"
+            }
+        ],
+        "tags": [
+            "hire cloud infrastructure expert",
+            "cloud infrastructure services",
+            "cloud consulting company",
+            "aws cloud engineer",
+            "azure cloud consultant",
+            "google cloud platform",
+            "cloud migration services",
+            "devops consulting",
+            "kubernetes deployment",
+            "cloud infrastructure management"
+        ],
+        "portfolio": [
+            {
+                "image": "/portfolio/custom/portfolio_palzea-widget.webp",
+                "title": "Palzea Cloud Platform",
+                "date": "February 2025",
+                "description": "Designed and deployed a highly available cloud infrastructure for a cryptocurrency platform featuring automated scaling, secure networking, monitoring, backups, and continuous deployment pipelines.",
+                "tags": [
+                    "Cloud",
+                    "+6"
+                ],
+                "cost": "$6000-$12000",
+                "duration": "3-5 months",
+                "timeline": "4 Months",
+                "country": "UK",
+                "techStack": "AWS • Docker • Kubernetes • Terraform",
+                "category": "Cloud Infrastructure",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_dreamload.webp",
+                "title": "Dreamload",
+                "date": "January 2025",
+                "description": "Built a scalable cloud environment supporting thousands of concurrent users with automated deployments, centralized monitoring, backup strategies, and high availability infrastructure.",
+                "tags": [
+                    "Cloud",
+                    "+5"
+                ],
+                "cost": "$5000-$10000",
+                "duration": "3 months",
+                "timeline": "3 Months",
+                "country": "UAE",
+                "techStack": "Azure • Docker • GitHub Actions",
+                "category": "Cloud Infrastructure",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_phoenix.webp",
+                "title": "PhoenixFC",
+                "date": "November 2024",
+                "description": "Migrated an enterprise sports platform to a modern cloud infrastructure with load balancing, automated backups, disaster recovery planning, and continuous monitoring to ensure maximum uptime.",
+                "tags": [
+                    "Enterprise",
+                    "+8"
+                ],
+                "cost": "$10000-$18000",
+                "duration": "6 months",
+                "timeline": "6 Months",
+                "country": "USA",
+                "techStack": "Google Cloud • Kubernetes • Terraform",
+                "category": "Enterprise Infrastructure",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
+            }
+        ],
+        "faqs": [
+            {
+                "question": "What does a cloud infrastructure expert do?",
+                "answer": "A cloud infrastructure expert designs, deploys, secures, and manages cloud environments that host your applications, databases, and business systems. Their goal is to ensure your platform remains fast, secure, scalable, and available to users at all times."
+            },
+            {
+                "question": "Which cloud platform is best for my business?",
+                "answer": "The best cloud platform depends on your application requirements, expected traffic, budget, security needs, and future growth plans. We evaluate your project and recommend the most suitable solution, whether it's AWS, Microsoft Azure, Google Cloud Platform, or a hybrid cloud environment."
+            },
+            {
+                "question": "Can you migrate my existing application to the cloud?",
+                "answer": "Yes. We handle complete cloud migration projects, including infrastructure planning, application deployment, database migration, security configuration, testing, and post-migration monitoring while minimizing downtime."
+            },
+            {
+                "question": "Do you provide ongoing cloud management and monitoring?",
+                "answer": "Absolutely. We offer continuous monitoring, server maintenance, security updates, backup management, performance optimization, incident response, and infrastructure scaling to keep your applications running efficiently."
+            },
+            {
+                "question": "Can I hire a dedicated cloud infrastructure engineer?",
+                "answer": "Yes. You can hire experienced cloud engineers on an hourly, monthly, or full-time basis to manage your infrastructure, optimize cloud costs, deploy new services, improve security, and support your development team."
+            }
+        ]
+    },
+
+    // Hire CMS Developer
+    {
+        "slug": "hire-cms-developer",
+        "title": "Hire CMS Developer",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
+        "breadcrumbs": [
+            "Hire Us",
+            "Hire CMS Developer"
+        ],
+        "gigTitle": "Hire Dedicated CMS Developer Or Fixed Cost CMS Development Project",
+        "seller": {
+            "name": "Ankur Patel",
+            "title": "Founder & CEO",
+            "rating": 4.9,
+            "reviews": 183,
+            "ordersInQueue": 2,
+            "avatar": "/grouppics/ankursir.png"
+        },
+        "aboutGig": {
+            "intro": "Looking to hire an experienced <strong>CMS Developer</strong> to build a powerful, easy-to-manage website? At <strong>Kretoss Technology</strong>, we develop custom Content Management System (CMS) solutions that allow businesses to update content, manage products, publish blogs, and grow their online presence without technical knowledge.",
+            "intro2": "Whether you need a business website, corporate portal, eCommerce store, news website, educational platform, healthcare portal, or custom CMS solution, our experts help you select the right platform—including WordPress, Shopify, Webflow, Strapi, Contentful, Sanity, or other headless CMS technologies—to match your business goals.",
+            "whatYouGetTitle": "CMS Development Services We Offer",
+            "whatYouGet": [
+                "Custom CMS Website Development.",
+                "WordPress, Shopify & Webflow Development.",
+                "Headless CMS Development using Strapi, Contentful & Sanity.",
+                "CMS Migration & Website Redesign.",
+                "Custom Theme & Template Development.",
+                "Plugin & Extension Development.",
+                "API Integration & Third-Party Services.",
+                "Website Performance Optimization.",
+                "CMS Maintenance, Security Updates & Long-Term Support."
+            ],
+            "whyChooseUsTitle": "Why Hire Our CMS Developers?",
+            "whyChooseUs": [
+                "Expert developers across leading CMS platforms.",
+                "Easy-to-manage websites for non-technical users.",
+                "SEO-friendly website architecture.",
+                "Responsive design for desktop, tablet and mobile.",
+                "Fast-loading and secure CMS solutions.",
+                "Scalable architecture for future business growth.",
+                "Transparent communication throughout development.",
+                "100% source code ownership after project completion."
+            ],
+            "note": "Every CMS solution is designed with usability, security, scalability, and SEO in mind, enabling your team to manage website content efficiently without depending on developers for everyday updates.",
+            "availability": "Hire CMS developers hourly, monthly, full-time, or build a dedicated CMS development team with flexible timezone support."
+        },
+        "reviews": [
+            {
+                "id": 1,
+                "name": "Rebecca Collins",
+                "avatar": "https://i.pravatar.cc/100?img=43",
+                "country": "United Kingdom",
+                "rating": 5,
+                "date": "3 weeks ago",
+                "comment": "We wanted a website that our marketing team could update without relying on developers. Kretoss built a CMS that is incredibly easy to manage while maintaining a professional design. Publishing new content now takes minutes instead of days.",
+                "price": "$4,000 - $8,000",
+                "duration": "5 weeks"
+            },
+            {
+                "id": 2,
+                "name": "Nicholas Turner",
+                "avatar": "https://i.pravatar.cc/100?img=57",
+                "country": "Canada",
+                "rating": 5,
+                "date": "1 month ago",
+                "comment": "Our old website was difficult to maintain and frequently required developer support. The new CMS developed by Kretoss is fast, secure, and gives our internal team complete control over content, images, and pages. The entire experience exceeded our expectations.",
+                "price": "$6,000 - $10,000",
+                "duration": "6 weeks"
+            },
+            {
+                "id": 3,
+                "name": "Melissa Grant",
+                "avatar": "https://i.pravatar.cc/100?img=35",
+                "country": "Australia",
+                "rating": 4.9,
+                "date": "2 months ago",
+                "comment": "Kretoss helped us migrate from an outdated CMS to a modern platform without affecting our SEO or website performance. Everything was planned carefully, and the transition was completely smooth. Their support after launch has been outstanding.",
+                "price": "$5,000 - $9,000",
+                "duration": "4 weeks"
+            }
+        ],
+        "tags": [
+            "hire cms developer",
+            "cms development company",
+            "content management system",
+            "wordpress developer",
+            "shopify developer",
+            "webflow developer",
+            "headless cms development",
+            "cms migration services",
+            "custom cms development",
+            "website management system"
+        ],
+        "portfolio": [
+            {
+                "image": "/portfolio/custom/portfolio_palzea-widget.webp",
+                "title": "Palzea CMS",
+                "date": "February 2025",
+                "description": "Built a custom CMS allowing administrators to manage cryptocurrency news, educational content, landing pages, banners, and user resources without requiring technical assistance.",
+                "tags": [
+                    "CMS",
+                    "+6"
+                ],
+                "cost": "$3000-$7000",
+                "duration": "2-4 months",
+                "timeline": "3 Months",
+                "country": "UK",
+                "techStack": "WordPress • PHP • MySQL",
+                "category": "CMS Development",
+                "link": "https://palzeaa-crypto-widget.netlify.app",
+                "slug": "palzea-widget"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_dreamload.webp",
+                "title": "Dreamload",
+                "date": "January 2025",
+                "description": "Developed a headless CMS enabling sports organizations to manage news, events, player profiles, media galleries, and website content from a centralized administration panel.",
+                "tags": [
+                    "Headless CMS",
+                    "+5"
+                ],
+                "cost": "$4000-$8000",
+                "duration": "3 months",
+                "timeline": "3 Months",
+                "country": "UAE",
+                "techStack": "Strapi • Node.js • PostgreSQL",
+                "category": "Headless CMS",
+                "link": "https://dreamlod.com",
+                "slug": "dreamload"
+            },
+            {
+                "image": "/portfolio/custom/portfolio_phoenix.webp",
+                "title": "PhoenixFC",
+                "date": "November 2024",
+                "description": "Created an enterprise CMS allowing administrators to manage teams, schedules, blogs, memberships, announcements, media assets, and website pages through a simple administrative interface.",
+                "tags": [
+                    "Enterprise CMS",
+                    "+8"
+                ],
+                "cost": "$7000-$14000",
+                "duration": "5 months",
+                "timeline": "5 Months",
+                "country": "USA",
+                "techStack": "Webflow • Custom CMS • APIs",
+                "category": "Enterprise Website",
+                "link": "https://phoenixsclub.com",
+                "slug": "phoenixfc"
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Which CMS platform is best for my website?",
+                "answer": "The ideal CMS depends on your business goals, content requirements, scalability, budget, and future plans. We evaluate your needs and recommend the most suitable platform, whether that's WordPress, Shopify, Webflow, Strapi, Contentful, Sanity, or another CMS solution."
+            },
+            {
+                "question": "Can you migrate my existing website to a new CMS?",
+                "answer": "Yes. We provide complete CMS migration services, including content migration, SEO preservation, URL redirects, media transfer, design recreation, and testing to ensure a seamless transition with minimal downtime."
+            },
+            {
+                "question": "Will I be able to manage the website myself after launch?",
+                "answer": "Absolutely. We build user-friendly content management systems that allow you to update pages, blogs, products, images, videos, menus, and other content without requiring programming knowledge. We also provide training if needed."
+            },
+            {
+                "question": "Can you customize existing CMS themes and plugins?",
+                "answer": "Yes. Our developers customize themes, build custom plugins, integrate third-party services, and develop unique CMS features tailored to your business requirements while maintaining performance and security."
+            },
+            {
+                "question": "Do you provide ongoing CMS maintenance and support?",
+                "answer": "Yes. We offer long-term CMS maintenance services including security updates, plugin upgrades, performance optimization, backups, bug fixes, feature enhancements, and technical support to keep your website running smoothly."
+            }
+        ]
+    }
 ];
