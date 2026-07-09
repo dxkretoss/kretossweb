@@ -38,7 +38,7 @@ export default function HeroSection() {
                 </svg>
             ),
             subtitle: "Global Tech Partner",
-            gradient: "from-[#f86602] to-[#ff9b50]",
+            gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "VISION GLOBALLY RECOGNIZED TECHNOLOGY PARTNER TRANSFORMING IDEAS IMPACTFUL EXPERIENCES NEW STANDARDS CREATIVITY EXCELLENCE CONTINUOUS ",
             desc: "Our vision is to become a globally recognized technology partner, known for transforming ideas into impactful digital experiences. We aim to set new standards in UI/UX and application development by embracing creativity, excellence, and continuous innovation."
         },
@@ -50,7 +50,7 @@ export default function HeroSection() {
                 </svg>
             ),
             subtitle: "Exceeding Expectations",
-            gradient: "from-[#10b981] to-[#3b82f6]",
+            gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "GOAL HIGH QUALITY SCALABLE INTUITIVE DIGITAL PRODUCTS EXCEED CLIENT EXPECTATIONS LONG TERM PARTNERSHIPS TRANSPARENCY DEADLINES EVOLVING ",
             desc: "Our goal is to consistently deliver high-quality, scalable, and intuitive digital products that exceed client expectations. We strive to build long-term partnerships by maintaining transparency, meeting deadlines, and constantly evolving with emerging technologies to stay ahead in a dynamic digital world."
         }

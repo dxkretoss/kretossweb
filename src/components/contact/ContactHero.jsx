@@ -37,7 +37,7 @@ export default function ContactHero() {
                 </svg>
             ),
             subtitle: "Build Together",
-            gradient: "from-[#f86602] to-[#ff9b50]",
+            gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "COLLABORATE PARTNERSHIP TEAMWORK AGILE DEVELOPMENT TRANSPARENT COMMUNICATION SHARED SUCCESS SEAMLESS INTEGRATION ",
             desc: "We believe in true partnership. Work closely with our dedicated team of designers and developers through an agile, transparent process to bring your digital product to life with precision and care."
         },
@@ -49,7 +49,7 @@ export default function ContactHero() {
                 </svg>
             ),
             subtitle: "Long-Term Growth",
-            gradient: "from-[#10b981] to-[#3b82f6]",
+            gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "SUPPORT MAINTENANCE SCALABILITY OPTIMIZATION CONTINUOUS IMPROVEMENT RELIABILITY SECURITY PERFORMANCE ENHANCEMENT ",
             desc: "Our commitment doesn't end at launch. We provide ongoing support, maintenance, and strategic optimization to ensure your digital solutions remain secure, performant, and scalable as your business grows."
         }

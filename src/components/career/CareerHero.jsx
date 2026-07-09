@@ -37,7 +37,7 @@ export default function CareerHero() {
                 </svg>
             ),
             subtitle: "Continuous Learning",
-            gradient: "from-[#f86602] to-[#ff9b50]",
+            gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "GROWTH MENTORSHIP SKILLS DEVELOPMENT LEARNING OPPORTUNITIES LEADERSHIP CAREER PATH ADVANCEMENT TRAINING ",
             desc: "Your career progression is our priority. We provide continuous learning opportunities, mentorship, and resources to help you master new skills, take on leadership roles, and accelerate your professional growth."
         },
@@ -49,7 +49,7 @@ export default function CareerHero() {
                 </svg>
             ),
             subtitle: "Work-Life Harmony",
-            gradient: "from-[#10b981] to-[#3b82f6]",
+            gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "PERKS BENEFITS WELLNESS REMOTE FLEXIBLE SCHEDULE HEALTHCARE BONUSES BALANCE RETREATS ",
             desc: "We believe in rewarding hard work. Enjoy a comprehensive benefits package including flexible working hours, remote work options, wellness programs, and competitive bonuses designed to support a healthy work-life balance."
         }

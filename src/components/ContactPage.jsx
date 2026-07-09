@@ -26,10 +26,10 @@ const StarRating = ({ rating }) => {
 };
 
 const REVIEWS_DATA = [
-    { name: 'Google', rating: 4.9 },
-    { name: 'Clutch', rating: 5.0 },
+    { name: 'Google', rating: 4.9, logo: "/Review/google.svg", },
+    { name: 'Clutch', rating: 5.0, logo: "/Review/cluth.png", },
     // { name: 'Sitejabber', rating: 4.0 },
-    { name: 'Trustpilot', rating: 4.7 }
+    { name: 'Trustpilot', rating: 4.7, logo: "/Review/trustpilot.svg", }
 ];
 
 export default function ContactPage() {
@@ -186,12 +186,15 @@ export default function ContactPage() {
                             </div>
 
                             {/* Reviews above Author */}
-                            <div className="flex flex-col justify-start items-start gap-5 mt-0 md:mt-12 pt-8 md:pt-10 border-t border-gray-100">
+                            <div className="flex flex-col justify-start items-start gap-5 pt-8 md:pt-14 border-t border-gray-100">
                                 {/* Single Animated Review */}
                                 <div className="h-[24px] overflow-hidden flex items-center">
                                     <div className="flex items-center gap-3" ref={reviewWrapperRef}>
-                                        <div className="w-[85px] text-[18px] font-bold text-[#111]">
-                                            {REVIEWS_DATA[activeReview].name}
+                                        <div className='flex gap-2 items-center'>
+                                            <img src={REVIEWS_DATA[activeReview].logo} alt="Google" className="h-4 w-4 object-contain" />
+                                            <div className="text-[18px] font-bold text-[#111]">
+                                                {REVIEWS_DATA[activeReview].name}
+                                            </div>
                                         </div>
                                         <StarRating rating={REVIEWS_DATA[activeReview].rating} />
                                         <div className="text-[14px] font-medium text-gray-600">

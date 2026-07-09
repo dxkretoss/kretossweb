@@ -25,7 +25,7 @@ export default function ServiceHero() {
                 </svg>
             ),
             subtitle: "Intelligent Automation",
-            gradient: "from-[#a855f7] to-[#ec4899]",
+            gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "ARTIFICIAL INTELLIGENCE MACHINE LEARNING AUTOMATION DATA SCIENCE PREDICTIVE ANALYTICS SMART SOLUTIONS NEURAL NETWORKS ",
             desc: "Leverage the power of Artificial Intelligence. We integrate advanced AI models, machine learning, and automation to streamline your operations and unlock data-driven insights."
         },
@@ -37,7 +37,7 @@ export default function ServiceHero() {
                 </svg>
             ),
             subtitle: "Next-Gen Development",
-            gradient: "from-[#14b8a6] to-[#0ea5e9]",
+            gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "VIBE CODING AGILE MODERN DEVELOPMENT LOW CODE NO CODE RAPID PROTOTYPING SEAMLESS DELIVERY INNOVATION SPEED ",
             desc: "Experience development at the speed of thought. Vibe coding utilizes modern AI-assisted rapid development workflows to deliver high-quality, scalable products faster than ever before."
         },
@@ -61,7 +61,7 @@ export default function ServiceHero() {
                 </svg>
             ),
             subtitle: "Scalable & Robust",
-            gradient: "from-[#f86602] to-[#ff9b50]",
+            gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "FRONTEND BACKEND FULLSTACK REACT NEXTJS NODEJS PERFORMANCE SEO OPTIMIZATION RESPONSIVE ARCHITECTURE ",
             desc: "We build blazing-fast, secure, and highly scalable web applications. Utilizing modern frameworks like React and Next.js, we ensure your digital presence is technically flawless and ready for future growth."
         },
@@ -73,7 +73,7 @@ export default function ServiceHero() {
                 </svg>
             ),
             subtitle: "Native & Cross-Platform",
-            gradient: "from-[#10b981] to-[#3b82f6]",
+            gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "IOS ANDROID REACT NATIVE FLUTTER MOBILE EXPERIENCE APP STORE GOOGLE PLAY PERFORMANCE NATIVE UI UX ",
             desc: "Reach your audience everywhere with premium mobile applications. We develop feature-rich iOS and Android apps using native and cross-platform technologies to deliver exceptional on-the-go experiences."
         }

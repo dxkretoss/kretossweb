@@ -449,7 +449,7 @@ export default function Hero() {
                         </div>
                         <div className="hero-top-content">
                             <div className="hero-text-button" style={{ opacity: 0 }}>
-                                <div className="hero-text">We partner with enterprises and startups to build high-performance digital products—fast, secure, and designed for real-world scalability</div>
+                                <div className="hero-text">We partner with enterprises and startups to build high-performance digital products fast, secure, and designed for real-world scalability</div>
                                 <AnimatedButton href="#Contact" text="LET'S TALK" />
                             </div>
                         </div>
