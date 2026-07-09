@@ -134,7 +134,7 @@ export default function PortfolioDetailsPage() {
         <div className="bg-white text-[#222325] min-h-screen font-sans antialiased">
 
             {/* ─── HERO ─── */}
-            <section className="relative bg-gradient-to-b from-[#f4f7ff] to-white border-b border-gray-200 pb-0 pt-20 overflow-hidden">
+            <section className="relative bg-gradient-to-b from-[#f4f7ff] to-white border-b border-gray-200 pb-0 pt-10 md:pt-20 overflow-hidden">
                 <div className='container mx-auto w-layout-blockcontainer container-full-width'>
                     <div className="absolute inset-0 bg-[linear-gradient(to_right,#0037f008_1px,transparent_1px),linear-gradient(to_bottom,#0037f008_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
                     <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#0037f0]/5 blur-[140px] pointer-events-none" />
@@ -144,40 +144,40 @@ export default function PortfolioDetailsPage() {
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
 
                             {/* Left: Title + meta */}
-                            <div className="lg:col-span-6 pb-10 space-y-6">
+                            <div className="lg:col-span-6 pb-0 md:pb-10 space-y-6">
                                 {/* Category pill */}
                                 <span className="inline-flex items-center gap-2 text-slate-800 text-[10px] font-bold uppercase tracking-widest px-3 rounded-full border border-[#0037f0]/15">
                                     <span className="w-1.5 h-1.5 rounded-full bg-slate-800 inline-block"></span>
                                     {project.category} · Case Study
                                 </span>
 
-                                <h1 className="text-[24px] md:text-[42px] font-semibold text-[#0a0f1e] tracking-tight leading-[1.0]">
+                                <h1 className="text-[28px] md:text-[42px] font-semibold text-[#0a0f1e] tracking-tight leading-[1.0]">
                                     {project.name}
                                 </h1>
 
-                                <p className="text-[#62646a] text-lg leading-relaxed">
+                                <p className="text-[#62646a] text-[14px] md:text-lg leading-relaxed">
                                     {project.description}
                                 </p>
 
                                 {/* Quick-stat pills */}
-                                <div className="flex flex-wrap gap-3 pt-2">
+                                <div className="flex flex-wrap gap-3">
                                     {[
                                         { label: 'Country', value: project.country || 'Global', icon: FaGlobe },
                                         { label: 'Timeline', value: project.timeline || 'N/A', icon: FaClock },
                                         { label: 'Stack', value: project.techStack, icon: FaCode },
                                     ].map((s) => (
-                                        <div key={s.label} className="bg-white border border-gray-200 rounded-xl px-4 py-2.5 shadow-sm flex items-center gap-2">
+                                        <div key={s.label} className="bg-white border border-gray-200 rounded-xl px-3 md:px-4 py-1 md:py-2.5 shadow-sm flex items-center gap-2">
                                             <span className="flex items-center text-[10px] font-bold text-gray-400 uppercase tracking-wider">
-                                                <s.icon className="text-[14px]" />
+                                                <s.icon className="text-[12px] md:text-[14px]" />
                                                 {/* {s.label} */}
                                             </span>
-                                            <span className="text-sm font-bold text-[#222325]">{s.value}</span>
+                                            <span className="text-[12px] md:text-sm font-bold text-[#222325]">{s.value}</span>
                                         </div>
                                     ))}
                                 </div>
 
                                 {/* CTA & Hire Resources */}
-                                <div className="pt-4 flex flex-wrap items-center gap-4">
+                                <div className="flex flex-wrap items-center gap-4">
                                     {project.appLinks ? (
                                         <div className="flex flex-wrap gap-3">
                                             {project.appLinks.android && <a href={project.appLinks.android} target="_blank" rel="noreferrer"><img src="/portfolio/google_play_btn.jpg" alt="Google Play" className="h-[44px] hover:opacity-80 transition-opacity rounded-md" /></a>}
@@ -208,7 +208,7 @@ export default function PortfolioDetailsPage() {
                             </div>
 
                             {/* Right: Device mockup */}
-                            <div className="lg:col-span-6 flex justify-center items-end relative min-h-[500px]">
+                            <div className="lg:col-span-6 flex justify-center items-end relative min-h-[auto] lg:min-h-[500px] mt-10 lg:mt-0">
                                 {isMobileApp ? (
                                     <div className="relative flex items-end">
 
@@ -217,7 +217,7 @@ export default function PortfolioDetailsPage() {
                                             <motion.div
                                                 animate={{ y: [0, -20, 0] }}
                                                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                                                className="absolute -left-28 sm:-left-36 bottom-16 w-[180px] sm:w-[210px] bg-[#1c1c1e] rounded-[2rem] p-[4px] shadow-2xl border border-[#3a3a3c] -rotate-[10deg] opacity-80 blur-[1px] z-0"
+                                                className="absolute -left-28 sm:-left-36 bottom-16 w-[180px] sm:w-[210px] bg-[#1c1c1e] rounded-[2rem] p-[4px] shadow-2xl border border-[#3a3a3c] -rotate-[10deg] opacity-80 blur-[1px] z-0 hidden sm:block"
                                             >
                                                 <div className="relative w-full bg-black rounded-[1.8rem] p-1 shadow-[inset_0_0_2px_rgba(255,255,255,0.1)] overflow-hidden">
                                                     {/* Dynamic Island */}
@@ -233,7 +233,7 @@ export default function PortfolioDetailsPage() {
                                             <motion.div
                                                 animate={{ y: [0, -20, 0] }}
                                                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                                                className="absolute -right-28 sm:-right-36 bottom-12 w-[180px] sm:w-[210px] bg-[#1c1c1e] rounded-[2rem] p-[4px] shadow-2xl border border-[#3a3a3c] rotate-[10deg] opacity-80 blur-[1px] z-0"
+                                                className="absolute -right-28 sm:-right-36 bottom-12 w-[180px] sm:w-[210px] bg-[#1c1c1e] rounded-[2rem] p-[4px] shadow-2xl border border-[#3a3a3c] rotate-[10deg] opacity-80 blur-[1px] z-0 hidden sm:block"
                                             >
                                                 <div className="relative w-full bg-black rounded-[1.8rem] p-1 shadow-[inset_0_0_2px_rgba(255,255,255,0.1)] overflow-hidden">
                                                     {/* Dynamic Island */}
@@ -268,7 +268,7 @@ export default function PortfolioDetailsPage() {
                                                                     className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 pointer-events-none ${i === currentScreenIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                                                                 />
                                                             ))}
-                                                            <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center opacity-100 group-hover/screen:opacity-0 transition-opacity duration-500 z-30 pointer-events-none">
+                                                            <div className="absolute inset-0 bg-black/50 hidden md:flex flex-col items-center justify-center text-center opacity-100 group-hover/screen:opacity-0 transition-opacity duration-500 z-30 pointer-events-none">
                                                                 <span className="text-white text-[10px] font-bold tracking-widest uppercase drop-shadow-md">Tap to navigate</span>
                                                             </div>
                                                         </div>
@@ -290,7 +290,7 @@ export default function PortfolioDetailsPage() {
                                                     className={`w-full h-full bg-top desktop-scroll-container desktop-scroll-mode-${desktopScrollMode} cursor-pointer`}
                                                     style={{ backgroundImage: `url(${project.portfolioImage})`, backgroundSize: '100% auto', backgroundRepeat: 'no-repeat' }}
                                                 />
-                                                <div className="absolute inset-0 bg-black/55 backdrop-blur-[1px] flex flex-col items-center justify-center text-center opacity-100 group-hover/screen:opacity-0 transition-opacity duration-500 z-30 pointer-events-none">
+                                                <div className="absolute inset-0 bg-black/55 backdrop-blur-[1px] hidden md:flex flex-col items-center justify-center text-center opacity-100 group-hover/screen:opacity-0 transition-opacity duration-500 z-30 pointer-events-none">
                                                     <FaChevronRight className="text-white w-4 h-4 rotate-90 mb-2 opacity-70" />
                                                     <span className="text-white text-[11px] font-bold tracking-wider uppercase">Hover to scroll</span>
                                                     <span className="text-gray-400 text-[10px] mt-0.5">Click to play / pause</span>
@@ -325,7 +325,7 @@ export default function PortfolioDetailsPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 relative">
 
                     {/* ── Sticky Left Sidebar Nav ── */}
-                    <aside className="lg:col-span-3 hidden lg:block">
+                    <aside className="xl:col-span-3 !hidden xl:!block">
                         <div className="sticky top-10 space-y-1">
                             <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4">On this page</p>
                             {navItems.map((item) => (
@@ -342,7 +342,7 @@ export default function PortfolioDetailsPage() {
                                 </button>
                             ))}
 
-                            {/* Project key features */}
+                            {/* Project key features (Desktop Only) */}
                             {project.keyFeatures && (
                                 <div className="mt-8 pt-6 border-t border-gray-200 space-y-3">
                                     <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Key Features</p>
@@ -358,7 +358,7 @@ export default function PortfolioDetailsPage() {
                     </aside>
 
                     {/* ── Main Content ── */}
-                    <main className="lg:col-span-9 space-y-10">
+                    <main className="lg:col-span-12 xl:col-span-9 space-y-10">
 
                         {/* 1. OVERVIEW */}
                         <motion.section
@@ -372,10 +372,10 @@ export default function PortfolioDetailsPage() {
                                 <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest">Overview</span>
                                 <div className="h-px flex-1 bg-gray-200" />
                             </div>
-                            <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0f1e] tracking-tight mb-6 leading-tight">
+                            <h2 className="text-[28px] md:text-[36px] font-semibold text-[#0a0f1e] tracking-tight mb-3 md:mb-6 leading-tight">
                                 About the Project
                             </h2>
-                            <p className="text-[#444] text-lg leading-[1.85] mb-8">
+                            <p className="text-[#444] text-[14px] md:text-lg leading-[1.85] mb-8">
                                 {project.caseStudy?.overview || `We partnered with ${clientName} to address critical user experience challenges, optimize the system architecture, and deliver a scalable solution aligned with their long-term vision.`}
                             </p>
 
@@ -410,18 +410,18 @@ export default function PortfolioDetailsPage() {
                                 <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest">The Challenge</span>
                                 <div className="h-px flex-1 bg-gray-200" />
                             </div>
-                            <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0f1e] tracking-tight mb-6 leading-tight">
+                            <h2 className="text-[28px] md:text-[36px] font-semibold text-[#0a0f1e] tracking-tight mb-3 md:mb-6 leading-tight">
                                 What Problem Were We Solving?
                             </h2>
 
                             {/* Challenge pull-quote */}
                             <div className="relative bg-[#fafbff] border-l-4 border-slate-700 rounded-r-2xl pl-6 pr-6 py-6 mb-8">
-                                <p className="text-[#444] text-lg leading-relaxed italic">
+                                <p className="text-[#444] text-base md:text-lg leading-relaxed italic">
                                     "{project.challenge || `${clientName} needed a robust, scalable architecture capable of handling rapid growth while delivering a seamless, high-performance experience to end users.`}"
                                 </p>
                             </div>
 
-                            <p className="text-[#62646a] text-base leading-[1.9] mb-8">
+                            <p className="text-[#62646a] text-[14px] md:text-base leading-[1.9] mb-8">
                                 {project.solution || `We dove deep into the product's pain points — conducting stakeholder workshops, reviewing existing infrastructure, and mapping out user flows — before designing a solution that addressed both immediate bottlenecks and long-term scalability requirements.`}
                             </p>
 
@@ -444,7 +444,7 @@ export default function PortfolioDetailsPage() {
                                         body: 'Sensitive data lacked proper encryption and access control layers required for compliance.'
                                     },
                                 ].map((c) => (
-                                    <div key={c.num} className="relative overflow-hidden bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md hover:border-[#0037f0]/20 transition-all duration-300 group">
+                                    <div key={c.num} className="relative overflow-hidden bg-white border border-gray-200 rounded-2xl p-4 md:p-6 hover:shadow-md hover:border-[#0037f0]/20 transition-all duration-300 group">
                                         <span className="absolute top-2 right-3 text-6xl font-black text-gray-100/70 select-none pointer-events-none z-0 transition-transform duration-500 group-hover:scale-110 group-hover:text-[#0037f0]/5">{c.num}</span>
                                         <div className="relative z-10 pt-2">
                                             <h4 className="text-[#222325] font-bold text-base mb-2">{c.title}</h4>
@@ -467,10 +467,10 @@ export default function PortfolioDetailsPage() {
                                 <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest">Our Process</span>
                                 <div className="h-px flex-1 bg-gray-200" />
                             </div>
-                            <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0f1e] tracking-tight mb-3 leading-tight">
+                            <h2 className="text-[28px] md:text-[36px] font-semibold text-[#0a0f1e] tracking-tight mb-3 leading-tight">
                                 How We Built the Solution
                             </h2>
-                            <p className="text-[#62646a] text-base leading-relaxed mb-5 max-w-2xl">
+                            <p className="text-[#62646a] text-[14px] md:text-base leading-relaxed mb-5 max-w-2xl">
                                 Our engagement followed a structured, phased approach — from deep discovery through to a polished, production-ready deployment.
                             </p>
 
@@ -496,12 +496,12 @@ export default function PortfolioDetailsPage() {
                                                 {String(i + 1).padStart(2, '0')}
                                             </div>
 
-                                            <div className="bg-[#f7f9ff] border border-gray-200 rounded-2xl p-6 hover:border-[#0037f0]/25 hover:shadow-md transition-all duration-300">
+                                            <div className="bg-[#f7f9ff] border border-gray-200 rounded-2xl p-4 md:p-6 hover:border-[#0037f0]/25 hover:shadow-md transition-all duration-300">
                                                 <div className="flex items-center gap-2 mb-3">
                                                     <span className="sm:hidden text-xs font-black text-[#0037f0]">{String(i + 1).padStart(2, '0')}</span>
-                                                    <h4 className="text-[#222325] font-bold text-lg">{step.title}</h4>
+                                                    <h4 className="text-[#222325] font-bold text-base md:text-lg">{step.title}</h4>
                                                 </div>
-                                                <p className="text-[#62646a] text-base leading-relaxed">{step.description}</p>
+                                                <p className="text-[#62646a] text-[14px] md:text-base leading-relaxed">{step.description}</p>
                                             </div>
                                         </motion.div>
                                     ))}
@@ -521,15 +521,15 @@ export default function PortfolioDetailsPage() {
                                 <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest">Results & Impact</span>
                                 <div className="h-px flex-1 bg-gray-200" />
                             </div>
-                            <h2 className="text-3xl md:text-[36px] font-semibold text-[#0a0f1e] tracking-tight mb-3 leading-tight">
+                            <h2 className="text-[28px] md:text-[36px] font-semibold text-[#0a0f1e] tracking-tight mb-3 leading-tight">
                                 Measurable Outcomes Delivered
                             </h2>
-                            <p className="text-[#62646a] text-base leading-relaxed mb-5 max-w-2xl">
+                            <p className="text-[#62646a] text-[14px] md:text-base leading-relaxed mb-5 max-w-2xl">
                                 Post-launch audits and client feedback confirmed that the solution exceeded every key performance target set during discovery.
                             </p>
 
                             {/* Results list */}
-                            <div className="mb-4 grid grid-cols-2 gap-x-4 gap-y-4">
+                            <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">
                                 {(project.caseStudy?.results || [
                                     '40% reduction in average page load time',
                                     'Zero critical downtime incidents post-launch',
@@ -546,7 +546,7 @@ export default function PortfolioDetailsPage() {
                                         <div className="w-7 h-7 rounded-full bg-slate-500/10 text-slate-800 flex items-center justify-center shrink-0 mt-0.5">
                                             <FaCheck className="w-3 h-3" />
                                         </div>
-                                        <p className="text-[#222325] text-base font-normal leading-snug">{result}</p>
+                                        <p className="text-[#222325] text-sm md:text-base font-normal leading-snug">{result}</p>
                                     </motion.div>
                                 ))}
                             </div>
@@ -558,7 +558,7 @@ export default function PortfolioDetailsPage() {
                                     { value: '< 1.2s', label: 'Page Load Time', sub: 'Blazing fast interactions across global regions.' },
                                     { value: '99.99%', label: 'System Uptime', sub: 'Fault-tolerant config on scalable server stacks.' },
                                 ].map((m, i) => (
-                                    <div key={i} className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-slate-300 hover:shadow-sm transition-all duration-300">
+                                    <div key={i} className="bg-white border border-slate-200 rounded-2xl p-4 md:p-6 hover:border-slate-300 hover:shadow-sm transition-all duration-300">
                                         <span className="text-3xl font-black text-slate-900 block mb-1">{m.value}</span>
                                         <span className="text-sm font-bold text-slate-700 block mb-2">{m.label}</span>
                                         <span className="text-xs text-slate-500 leading-relaxed">{m.sub}</span>
@@ -581,7 +581,7 @@ export default function PortfolioDetailsPage() {
                                     <div className="h-px flex-1 bg-gray-200" />
                                 </div>
 
-                                <div className="relative bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 rounded-3xl p-8 md:p-10">
+                                <div className="relative bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 rounded-3xl p-4 md:p-10">
                                     <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8">
                                         <div className="flex items-center gap-4">
                                             {project.caseStudy.testimonial.image ? (
@@ -618,6 +618,25 @@ export default function PortfolioDetailsPage() {
                                             "{project.caseStudy.testimonial.text}"
                                         </blockquote>
                                     </div>
+                                </div>
+                            </motion.section>
+                        )}
+
+                        {/* 6. KEY FEATURES (Mobile Only) */}
+                        {project.keyFeatures && (
+                            <motion.section
+                                initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
+                                variants={fadeUp}
+                                className="scroll-mt-28 xl:!hidden block"
+                            >
+                                <div className="mt-8 pt-6 border-t border-gray-200 space-y-3">
+                                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Key Features</p>
+                                    {project.keyFeatures.map((f, i) => (
+                                        <div key={i} className="flex items-center gap-2">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-slate-500 shrink-0" />
+                                            <span className="text-xs text-[#62646a] font-medium">{f}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </motion.section>
                         )}

@@ -116,16 +116,16 @@ export default function FloatingNav() {
                 onMouseLeave={handleMegaMenuLeave}
             />
 
-            {/* Button inside max-w overlay */ }
-    <div className="absolute inset-0 w-full h-full flex items-center pointer-events-none">
-        <div className="w-layout-blockcontainer container-full-width w-container mx-auto relative w-full h-full flex items-center">
-            <div className="absolute right-0 lg:right-5 pointer-events-auto flex items-center">
-                <div className="scale-75 origin-right sm:scale-90 md:scale-100">
-                    <BookCallButton />
+            {/* Button inside max-w overlay */}
+            <div className="hidden lg:block absolute inset-0 w-full h-full flex items-center pointer-events-none">
+                <div className="w-layout-blockcontainer container-full-width w-container mx-auto relative w-full h-full flex items-center">
+                    <div className="absolute right-0 lg:right-5 pointer-events-auto flex items-center">
+                        <div className="scale-75 origin-right sm:scale-90 md:scale-100">
+                            <BookCallButton />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
         </div >
     );
 }

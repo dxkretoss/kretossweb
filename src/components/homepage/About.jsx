@@ -327,24 +327,25 @@ export default function About() {
                                 ))}
                             </div>
                         </div>
-                        <div className="about-right-box">
-                            <video
-                                ref={videoRef}
-                                muted={isMuted}
-                                loop
-                                playsInline
-                                onClick={toggleMute}
-                                className="about-video cursor-pointer"
-                                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-                                src="/aboutus-potrait.mp4"
-                            />
-                            <div
-                                style={{
-                                    position: 'absolute',
-                                    top: 0,
-                                    left: 0,
-                                    width: '100%',
-                                    height: '100%',
+                        <div className="about-right-box" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <div style={{ position: 'relative', height: '100%', aspectRatio: '9/16' }}>
+                                <video
+                                    ref={videoRef}
+                                    muted={isMuted}
+                                    loop
+                                    playsInline
+                                    onClick={toggleMute}
+                                    className="about-video cursor-pointer"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }}
+                                    src="/aboutus-potrait.mp4"
+                                />
+                                <div
+                                    style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        width: '100%',
+                                        height: '100%',
                                     backgroundColor: 'rgba(0, 0, 0, 0.45)',
                                     display: 'flex',
                                     flexDirection: 'column',
@@ -380,6 +381,7 @@ export default function About() {
                                 }}>
                                     Tap to unmute
                                 </span>
+                            </div>
                             </div>
                         </div>
                     </div>

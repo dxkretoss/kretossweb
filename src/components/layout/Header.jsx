@@ -171,24 +171,24 @@ export default function Header({ currentRoute }) {
         setIsMenuOpen(false); // Close menu on navigation
     };
 
-    // Lock body scroll and stop Lenis smooth scrolling when mobile menu or mega menu is open
-    // useEffect(() => {
-    //     if (isMenuOpen || isMegaMenuOpen) {
-    //         document.documentElement.style.overflow = 'hidden';
-    //         document.body.style.overflow = 'hidden';
-    //         if (window.lenis) window.lenis.stop();
-    //     } else {
-    //         document.documentElement.style.overflow = '';
-    //         document.body.style.overflow = '';
-    //         if (window.lenis) window.lenis.start();
-    //     }
+    // Lock body scroll and stop Lenis smooth scrolling when mobile menu is open
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.documentElement.style.overflow = 'hidden';
+            document.body.style.overflow = 'hidden';
+            if (window.lenis) window.lenis.stop();
+        } else {
+            document.documentElement.style.overflow = '';
+            document.body.style.overflow = '';
+            if (window.lenis) window.lenis.start();
+        }
 
-    //     return () => {
-    //         document.documentElement.style.overflow = '';
-    //         document.body.style.overflow = '';
-    //         if (window.lenis) window.lenis.start();
-    //     };
-    // }, [isMenuOpen, isMegaMenuOpen]);
+        return () => {
+            document.documentElement.style.overflow = '';
+            document.body.style.overflow = '';
+            if (window.lenis) window.lenis.start();
+        };
+    }, [isMenuOpen]);
 
     return (
         <>

@@ -177,10 +177,7 @@ export default function Contact() {
                             <div className="contact-form-wrapper">
                                 <div className="contact-form-wrapper-dev">
                                     <div className="contact-form-box w-form">
-                                        <form id="email-form" name="email-form" data-name="Email Form" method="get"
-                                            className="contact-form" data-wf-page-id="6996a337655d586ffe288774"
-                                            data-wf-element-id="b09bb3e0-8acd-7f5d-cd42-fa88661e496a" aria-label="Email Form">
-
+                                        <form onSubmit={(e) => e.preventDefault()} name="email-form" data-name="Email Form" className="contact-form" aria-label="Email Form">
                                             <div className="single-contact-group">
                                                 <label htmlFor="Name" className="contact-label">Full Name</label>
                                                 <input className="contact-input w-input" maxLength="256" name="Name"
@@ -235,7 +232,7 @@ export default function Contact() {
                                                 </div>
                                                 <div className="contact-call-box">
                                                     <div className="contact-call-text">Not in the mood to submit the from?</div>
-                                                    <a href="/#Contact" className="call-link w-inline-block">
+                                                    <a href="/Contact" className="call-link w-inline-block">
                                                         <div>Book A Call Directly</div>
                                                     </a>
                                                 </div>
