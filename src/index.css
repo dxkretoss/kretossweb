@@ -6,6 +6,78 @@
   --font-sans: 'Inter', sans-serif;
 }
 
+@keyframes svc-pulse {
+
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes svc-dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+@keyframes svc-dash-reverse {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@keyframes svc-float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes svc-float-delayed {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes svc-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes svc-blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -96,13 +168,22 @@
   }
 }
 
+/* React Phone Input Overrides */
+.react-tel-input .country-list {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  overscroll-behavior: contain !important;
+  max-height: 250px !important;
+  overflow-y: auto !important;
+}
+
 /* Global Dark Theme Settings */
 html,
 body {
   background-color: #0c0c0c !important;
   color: #ffffff !important;
   font-family: 'Inter', sans-serif;
-  scroll-behavior: auto !important;
+  scroll-behavior: smooth !important;
   margin: 0;
   padding: 0;
   /* overflow-x: hidden; */
@@ -120,12 +201,8 @@ html {
   font-family: sans-serif;
 }
 
-body {
-  margin: 0;
-}
-
 html {
-  scroll-behavior: auto !important;
+  scroll-behavior: smooth !important;
 }
 
 
@@ -277,7 +354,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 img {
@@ -573,7 +650,8 @@ body {
   font-family: Inter, sans-serif;
   color: #eae8e8;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 22px;
+  /* line-height: 150%; */
   font-weight: 400;
 }
 
@@ -715,7 +793,8 @@ body {
   align-items: center;
   display: flex;
   position: absolute;
-  bottom: 80px;
+  bottom: 40px;
+  left: 20px;
 }
 
 .copyright-text {
@@ -896,7 +975,7 @@ body {
 }
 
 .contact-content-wrapper {
-  padding: 60px 40px;
+  padding: 40px;
   border-radius: 6px;
   border: 1px solid #0a0a0a29;
   justify-content: space-between;
@@ -1066,8 +1145,8 @@ body {
 }
 
 .contact-title-text {
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   flex-flow: column;
   display: flex;
 }
@@ -3726,7 +3805,7 @@ body {
   }
 
   .author-image-box {
-    width: 250px;
+    width: 200px;
   }
 
   .author-title-designation {
@@ -4184,7 +4263,6 @@ body {
     max-width: 728px;
   }
 
-  body {}
 
   .footer-top-box {
     flex-flow: column;
@@ -4799,8 +4877,6 @@ body {
     max-width: none;
   }
 
-  body {}
-
   .footer-top-wrapper {
     padding: 60px 20px;
     padding-left: 0;
@@ -5080,8 +5156,6 @@ body {
   .w-container {
     max-width: none;
   }
-
-  body {}
 
   .footer-top-box {
     grid-template-columns: 1fr;

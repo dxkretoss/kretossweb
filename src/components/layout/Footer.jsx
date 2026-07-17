@@ -320,10 +320,10 @@ export default function Footer({ currentRoute }) {
                                         loading="lazy"
                                         className="footer-image"
                                     />
-                                    <div className="copyright-box">
-                                        <div className="copyright-text !text-center">
-                                            © All Rights Reserved Kretoss Technology
-                                        </div>
+                                </div>
+                                <div className="copyright-box">
+                                    <div className="copyright-text !text-left">
+                                        © All Rights Reserved Kretoss Technology
                                     </div>
                                 </div>
                             </div>

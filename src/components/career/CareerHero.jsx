@@ -27,7 +27,7 @@ export default function CareerHero() {
             subtitle: "Collaborative & Inclusive",
             gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "CULTURE DIVERSITY INCLUSION TEAMWORK INNOVATION FLEXIBILITY EMPOWERMENT RESPECT FUN COLLABORATION CREATIVITY ",
-            desc: "We foster an open, inclusive, and collaborative environment where every voice matters. We believe that a positive culture drives innovation and empowers our team to do their best work while actually enjoying the journey."
+            desc: "We foster an open, collaborative environment where every voice matters. A positive culture drives innovation and empowers our team to do their best work."
         },
         {
             title: "GROWTH",
@@ -39,7 +39,7 @@ export default function CareerHero() {
             subtitle: "Continuous Learning",
             gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "GROWTH MENTORSHIP SKILLS DEVELOPMENT LEARNING OPPORTUNITIES LEADERSHIP CAREER PATH ADVANCEMENT TRAINING ",
-            desc: "Your career progression is our priority. We provide continuous learning opportunities, mentorship, and resources to help you master new skills, take on leadership roles, and accelerate your professional growth."
+            desc: "Your career progression is our priority. We provide continuous learning, mentorship, and resources to help you master new skills and accelerate your growth."
         },
         {
             title: "PERKS",
@@ -51,7 +51,7 @@ export default function CareerHero() {
             subtitle: "Work-Life Harmony",
             gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "PERKS BENEFITS WELLNESS REMOTE FLEXIBLE SCHEDULE HEALTHCARE BONUSES BALANCE RETREATS ",
-            desc: "We believe in rewarding hard work. Enjoy a comprehensive benefits package including flexible working hours, remote work options, wellness programs, and competitive bonuses designed to support a healthy work-life balance."
+            desc: "We believe in rewarding hard work. Enjoy flexible hours, remote work options, wellness programs, and competitive bonuses to support a healthy work-life balance."
         }
     ];
 
@@ -163,7 +163,7 @@ export default function CareerHero() {
                             <Badge variant='white'>Careers</Badge>
                         </div>
 
-                        <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 lg:mb-8">
+                        <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 ">
                             <AnimatedWord text="Unlock new " isGradient={false} />
                             <AnimatedWord text="career" isGradient={true} />
                             <AnimatedWord text="Opportunities with us" isGradient={false} />
@@ -197,7 +197,7 @@ export default function CareerHero() {
                             {/* Background Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[linear-gradient(#44c7f6,#0037f0)] opacity-20 blur-[80px] -z-20 rounded-full pointer-events-none"></div>
                             {/* Card Stack Container */}
-                            <div className="relative w-full aspect-[4/5] sm:aspect-[4/4.5] perspective-[1000px]">
+                            <div className="relative w-full aspect-[4/4] sm:aspect-[4/3.5] perspective-[1000px]">
                                 {cards.map((card, idx) => {
                                     const offset = (idx - activeIndex + cards.length) % cards.length;
 

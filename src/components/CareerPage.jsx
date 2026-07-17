@@ -10,8 +10,9 @@ export default function CareerPage() {
         <div className="bg-[#0a0a0a] min-h-screen text-white">
             <CareerHero />
             <BuildWithUs />
-            <TeamsFuture />
             <JobOpenings />
+            <TeamsFuture />
+
             <CTASection />
         </div>
     );

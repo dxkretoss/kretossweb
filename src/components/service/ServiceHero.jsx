@@ -27,7 +27,7 @@ export default function ServiceHero() {
             subtitle: "Intelligent Automation",
             gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "ARTIFICIAL INTELLIGENCE MACHINE LEARNING AUTOMATION DATA SCIENCE PREDICTIVE ANALYTICS SMART SOLUTIONS NEURAL NETWORKS ",
-            desc: "Leverage the power of Artificial Intelligence. We integrate advanced AI models, machine learning, and automation to streamline your operations and unlock data-driven insights."
+            desc: "Integrate advanced AI models, machine learning, and automation to streamline your operations and unlock data-driven insights for smarter decisions."
         },
         {
             title: "VIBE CODING",
@@ -39,20 +39,20 @@ export default function ServiceHero() {
             subtitle: "Next-Gen Development",
             gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "VIBE CODING AGILE MODERN DEVELOPMENT LOW CODE NO CODE RAPID PROTOTYPING SEAMLESS DELIVERY INNOVATION SPEED ",
-            desc: "Experience development at the speed of thought. Vibe coding utilizes modern AI-assisted rapid development workflows to deliver high-quality, scalable products faster than ever before."
+            desc: "Experience rapid development workflows. We utilize modern AI-assisted coding to deliver high-quality, scalable products faster than ever before."
         },
-        {
-            title: "UI/UX DESIGN",
-            icon: (
-                <svg className="w-4 h-4 text-current" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                </svg>
-            ),
-            subtitle: "User-Centric Experiences",
-            gradient: "from-[#44c7f6] to-[#0037f0]",
-            bgText: "DESIGN PROTOTYPE WIREFRAME USER INTERFACE EXPERIENCE RESEARCH USABILITY ACCESSIBILITY CREATIVE VISUAL JOURNEY ",
-            desc: "We craft stunning, intuitive interfaces that captivate users and drive engagement. From deep user research to high-fidelity prototyping, our UI/UX designs bridge the gap between human needs and digital functionality."
-        },
+        // {
+        //     title: "UI/UX DESIGN",
+        //     icon: (
+        //         <svg className="w-4 h-4 text-current" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        //             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+        //         </svg>
+        //     ),
+        //     subtitle: "User-Centric Experiences",
+        //     gradient: "from-[#44c7f6] to-[#0037f0]",
+        //     bgText: "DESIGN PROTOTYPE WIREFRAME USER INTERFACE EXPERIENCE RESEARCH USABILITY ACCESSIBILITY CREATIVE VISUAL JOURNEY ",
+        //     desc: "We craft stunning, intuitive interfaces that captivate users and drive engagement. From deep user research to high-fidelity prototyping, our UI/UX designs bridge the gap between human needs and digital functionality."
+        // },
         {
             title: "WEB DEV",
             icon: (
@@ -63,7 +63,7 @@ export default function ServiceHero() {
             subtitle: "Scalable & Robust",
             gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "FRONTEND BACKEND FULLSTACK REACT NEXTJS NODEJS PERFORMANCE SEO OPTIMIZATION RESPONSIVE ARCHITECTURE ",
-            desc: "We build blazing-fast, secure, and highly scalable web applications. Utilizing modern frameworks like React and Next.js, we ensure your digital presence is technically flawless and ready for future growth."
+            desc: "We build blazing-fast, secure web applications. Using modern frameworks like React and Next.js, we ensure your digital presence is flawless and ready for growth."
         },
         {
             title: "MOBILE APPS",
@@ -75,7 +75,7 @@ export default function ServiceHero() {
             subtitle: "Native & Cross-Platform",
             gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "IOS ANDROID REACT NATIVE FLUTTER MOBILE EXPERIENCE APP STORE GOOGLE PLAY PERFORMANCE NATIVE UI UX ",
-            desc: "Reach your audience everywhere with premium mobile applications. We develop feature-rich iOS and Android apps using native and cross-platform technologies to deliver exceptional on-the-go experiences."
+            desc: "Reach your audience everywhere with premium mobile apps. We develop feature-rich iOS and Android applications using native and cross-platform technologies."
         }
     ];
 
@@ -188,15 +188,14 @@ export default function ServiceHero() {
                             <Badge variant="white">Our Services</Badge>
                         </div>
 
-                        <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 lg:mb-8">
-                            <AnimatedWord text="Design & " isGradient={false} /><br />
-                            <AnimatedWord text="Development " isGradient={false} /><br />
-                            <AnimatedWord text="Agency - " isGradient={false} />
-                            <AnimatedWord text="Services" isGradient={true} />
+                        <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 ">
+                            <AnimatedWord text="AI" isGradient={false} /><br />
+                            <AnimatedWord text="Automation " isGradient={false} /><br />
+                            <AnimatedWord text="& Development " isGradient={true} />
                         </h1>
 
                         <p className="banner-text text-base sm:text-xl text-gray-300 max-w-lg font-medium mb-8">
-                            <AnimatedWord text="We design, develop, and deliver creative solutions for growing brands." isGradient={false} />
+                            <AnimatedWord text="We build intelligent AI solutions and automate workflows to help businesses work smarter and scale faster." isGradient={false} />
                         </p>
 
                     </div>
@@ -223,7 +222,7 @@ export default function ServiceHero() {
                             {/* Background Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[linear-gradient(#44c7f6,#0037f0)] opacity-20 blur-[80px] -z-20 rounded-full pointer-events-none"></div>
                             {/* Card Stack Container */}
-                            <div className="relative w-full aspect-[4/5] sm:aspect-[4/4.5] perspective-[1000px]">
+                            <div className="relative w-full aspect-[4/4] sm:aspect-[4/3.5] perspective-[1000px]">
                                 {cards.map((card, idx) => {
                                     const offset = (idx - activeIndex + cards.length) % cards.length;
 

@@ -130,7 +130,7 @@ export default function Works() {
     const stepsData = [
         {
             id: "01",
-            duration: "2 Hours",
+            duration: "1 Day",
             title: "Discover",
             description: "We dive deep into your vision, goals, audience, and requirements to understand exactly what your business needs to succeed.",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288817_files-02.svg"
@@ -144,7 +144,7 @@ export default function Works() {
         },
         {
             id: "03",
-            duration: "2-4 Days",
+            duration: "2-4 Weeks",
             title: "Create & Develop",
             description: "Our team designs and develops powerful digital experiences with modern technology, seamless functionality, and stunning visuals.",
             icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288817_files-02.svg"

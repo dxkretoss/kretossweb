@@ -1,8 +1,10 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
 import Badge from '../ui/Badge';
+import axios from 'axios';
+import { toast, Toaster } from 'react-hot-toast';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,6 +58,58 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 
 export default function Contact() {
     const contactRef = useRef(null);
+    const [formData, setFormData] = useState({
+        fullName: '',
+        email: '',
+        companyName: '',
+        projectBudget: '',
+        projectDetails: ''
+    });
+    const [loading, setLoading] = useState(false);
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // Validation
+        if (!formData.fullName || !formData.email || !formData.projectBudget || !formData.projectDetails) {
+            toast.error("Please fill in all required fields.");
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            toast.error("Please enter a valid email address.");
+            return;
+        }
+
+        try {
+            setLoading(true);
+            const apiUrl = import.meta.env.VITE_API_URL || '';
+            const response = await axios.post(`${apiUrl}/v1/kretoss-new/contact`, formData);
+
+            if (response.data.success) {
+                toast.success(response.data.message || "Contact form submitted successfully!");
+                setFormData({
+                    fullName: '',
+                    email: '',
+                    companyName: '',
+                    projectBudget: '',
+                    projectDetails: ''
+                });
+            } else {
+                toast.error(response.data.message || "Failed to submit. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            toast.error("An error occurred while submitting the form.");
+        } finally {
+            setLoading(false);
+        }
+    };
 
     // Dropdown and form configuration
     const budgetOptions = [
@@ -170,6 +224,7 @@ export default function Contact() {
     return (
         <>
             <section ref={contactRef} id="Contact" className="contact">
+                <Toaster />
                 <div className="container-full-width w-layout-blockcontainer container">
                     <div className="contact-content-wrapper">
                         {/* Contact Form Block */}
@@ -177,57 +232,54 @@ export default function Contact() {
                             <div className="contact-form-wrapper">
                                 <div className="contact-form-wrapper-dev">
                                     <div className="contact-form-box w-form">
-                                        <form onSubmit={(e) => e.preventDefault()} name="email-form" data-name="Email Form" className="contact-form" aria-label="Email Form">
-                                            <div className="single-contact-group">
-                                                <label htmlFor="Name" className="contact-label">Full Name</label>
-                                                <input className="contact-input w-input" maxLength="256" name="Name"
-                                                    data-name="Name" placeholder="Enter Your Name" type="text" id="Name" />
-                                            </div>
+                                        <form onSubmit={handleSubmit} name="email-form" data-name="Email Form" className="contact-form" aria-label="Email Form">
+
 
                                             <div className="contact-group">
                                                 <div className="single-contact-group">
-                                                    <label htmlFor="Company-Name" className="contact-label">Company name</label>
-                                                    <input className="contact-input w-input" maxLength="256" name="Company-Name"
-                                                        data-name="Company Name" placeholder="Enter name" type="text" id="Company-Name" />
+                                                    <label htmlFor="fullName" className="contact-label">Full Name*</label>
+                                                    <input className="contact-input w-input" maxLength="256" name="fullName"
+                                                        value={formData.fullName} onChange={handleChange}
+                                                        data-name="Name" placeholder="Enter Your Name" type="text" id="fullName" required />
                                                 </div>
+
                                                 <div className="single-contact-group">
                                                     <label htmlFor="email" className="contact-label">Email*</label>
                                                     <input className="contact-input w-input" maxLength="256" name="email" data-name="Email"
-                                                        placeholder="Enter Your Email" type="email" id="email" />
+                                                        value={formData.email} onChange={handleChange}
+                                                        placeholder="Enter Your Email" type="email" id="email" required />
                                                 </div>
                                             </div>
 
                                             <div className="contact-group">
                                                 <div className="single-contact-group">
-                                                    <label htmlFor="Services-1" className="contact-label" >Services required*</label>
-                                                    <select id="Services-1" name="Services" data-name="Services" className="contact-input input-dropdown w-select !py-0" defaultValue="">
-                                                        <option value="" disabled>Select Your Service</option>
-                                                        <option value="UI/UX Design" className="bg-[#0f0f0f] text-white">UI/UX Design</option>
-                                                        <option value="Web Development" className="bg-[#0f0f0f] text-white">Web Development</option>
-                                                        <option value="App Development" className="bg-[#0f0f0f] text-white">App Development</option>
-                                                    </select>
+                                                    <label htmlFor="companyName" className="contact-label">Company name</label>
+                                                    <input className="contact-input w-input" maxLength="256" name="companyName"
+                                                        value={formData.companyName} onChange={handleChange}
+                                                        data-name="Company Name" placeholder="Enter name" type="text" id="companyName" />
                                                 </div>
                                                 <div className="single-contact-group">
-                                                    <label htmlFor="field-2" className="contact-label">Project budget*</label>
-                                                    <select id="field-2" name="field-2" data-name="Field 2" className="contact-input input-dropdown w-select !py-0">
+                                                    <label htmlFor="projectBudget" className="contact-label">Project budget*</label>
+                                                    <select id="projectBudget" name="projectBudget" value={formData.projectBudget} onChange={handleChange} data-name="Project budget" className="contact-input input-dropdown w-select !py-0" required>
                                                         <option value="">Select Your Range</option>
                                                         {budgetOptions.map(opt => (
-                                                            <option key={opt.value} value={opt.value}>{opt.label}</option>
+                                                            <option key={opt.value} value={opt.label}>{opt.label}</option>
                                                         ))}
                                                     </select>
                                                 </div>
                                             </div>
 
                                             <div className="single-contact-group">
-                                                <label htmlFor="field" className="contact-label">Projects Details*</label>
-                                                <textarea placeholder="Tell us more about your idea" maxLength="5000" id="field" name="field" data-name="Field"
-                                                    className="textarea w-input"></textarea>
+                                                <label htmlFor="projectDetails" className="contact-label">Projects Details*</label>
+                                                <textarea placeholder="Tell us more about your idea" maxLength="5000" id="projectDetails" name="projectDetails" data-name="Project Details"
+                                                    value={formData.projectDetails} onChange={handleChange}
+                                                    className="textarea w-input" required></textarea>
                                             </div>
 
                                             <div className="contact-button-text">
                                                 <div className="form-button">
                                                     <div className="button-text-wrapper _02">
-                                                        <input type="submit" data-wait="Please wait..." className="button-front-text form-text w-button" value="let’s work together" />
+                                                        <input type="submit" disabled={loading} data-wait="Please wait..." className="button-front-text form-text w-button" value={loading ? "Sending..." : "let’s work together"} style={{ cursor: loading ? "not-allowed" : "pointer" }} />
                                                     </div>
                                                 </div>
                                                 <div className="contact-call-box">

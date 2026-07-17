@@ -44,7 +44,7 @@ export default function JobOpenings() {
         <section ref={sectionRef} className="py-10 lg:py-20 bg-[#fafcff] relative">
             <div className="container mx-auto w-layout-blockcontainer container-full-width relative z-10">
                 {/* Header */}
-                <div className="job-header flex flex-col items-center text-center mb-8 sm:mb-16">
+                <div className="job-header flex flex-col items-center text-center mb-8 sm:mb-10">
                     {/* Badge */}
                     <div className='mb-5'>
                         <Badge>We're Hiring</Badge>
@@ -58,22 +58,22 @@ export default function JobOpenings() {
                 {/* Job Cards */}
                 <div className="jobs-container flex flex-col gap-8">
                     {jobsData.map((job) => (
-                        <div key={job.id} className="job-card flex flex-col lg:flex-row gap-6 lg:gap-8 min-h-[400px]">
+                        <div key={job.id} className="job-card flex flex-col lg:flex-row gap-6 lg:gap-8 min-h-[260px]">
 
                             {/* Render Image First on Mobile, conditional on Desktop */}
                             <div className={`w-full lg:w-1/2 rounded-2xl overflow-hidden relative group ${job.imagePosition === 'right' ? 'lg:order-2' : 'lg:order-1'}`}>
                                 <img
                                     src={job.image}
                                     alt={job.title}
-                                    className="w-full object-cover h-[250px] sm:h-[300px] lg:h-full lg:min-h-full group-hover:scale-105 transition-transform duration-700 ease-out"
+                                    className="w-full object-cover h-[250px] lg:h-full lg:absolute lg:inset-0 group-hover:scale-105 transition-transform duration-700 ease-out"
                                 />
                                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                             </div>
 
                             {/* Text Content */}
-                            <div className={`w-full lg:w-1/2 bg-white rounded-2xl p-6 sm:p-8 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col justify-center ${job.imagePosition === 'right' ? 'lg:order-1' : 'lg:order-2'}`}>
+                            <div className={`w-full lg:w-1/2 bg-white rounded-2xl p-6 sm:p-8 lg:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col justify-center ${job.imagePosition === 'right' ? 'lg:order-1' : 'lg:order-2'}`}>
                                 {/* Title */}
-                                <h3 className="text-2xl md:text-3xl font-semibold text-[#111] mb-4 sm:mb-5">
+                                <h3 className="text-2xl md:text-3xl font-semibold text-[#111] mb-4">
                                     {job.title}
                                 </h3>
 
@@ -90,12 +90,12 @@ export default function JobOpenings() {
                                 </div>
 
                                 {/* Description */}
-                                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-5 md:mb-10">
+                                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-5">
                                     {job.description}
                                 </p>
 
                                 {/* Action Button */}
-                                <div className="mt-4">
+                                <div>
                                     <AnimatedButton
                                         href={`/careers/${job.slug}`}
                                         text="APPLY NOW"

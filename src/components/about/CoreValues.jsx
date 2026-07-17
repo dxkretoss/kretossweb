@@ -4,9 +4,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Badge from "../ui/Badge";
 
 const values = [
+    // {
+    //     title: "Development",
+    //     desc: "Our growth work process is designed to ensure sustainable and measurable",
+    // },
     {
-        title: "Development",
-        desc: "Our growth work process is designed to ensure sustainable and measurable",
+        title: "AI-FIRST THINKING",
+        desc: "We embrace AI to create smarter, faster, and more impactful solutions.",
     },
     {
         title: "Team Work",

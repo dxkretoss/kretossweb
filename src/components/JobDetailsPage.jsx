@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { jobsData } from '../data/jobs';
 import AnimatedButton from './ui/AnimatedButton';
@@ -6,6 +6,43 @@ import AnimatedButton from './ui/AnimatedButton';
 export default function JobDetailsPage() {
     const { slug } = useParams();
     const job = jobsData.find(j => j.slug === slug);
+
+    const [formData, setFormData] = useState({
+        fullName: '',
+        email: '',
+        phone: '',
+        appliedFor: job ? job.title : '',
+        experience: '',
+        currentSalary: '',
+        expectedSalary: '',
+        linkedinUrl: '',
+        resume: null
+    });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+    };
+
+    const handleFileChange = (e) => {
+        setFormData(prev => ({ ...prev, resume: e.target.files[0] }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert('Application submitted successfully!');
+        setFormData({
+            fullName: '',
+            email: '',
+            phone: '',
+            appliedFor: job ? job.title : '',
+            experience: '',
+            currentSalary: '',
+            expectedSalary: '',
+            linkedinUrl: '',
+            resume: null
+        });
+    };
 
     React.useLayoutEffect(() => {
         const scrollToTop = () => {
@@ -101,10 +138,10 @@ export default function JobDetailsPage() {
 
             {/* Main Content Area */}
             <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-6xl">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
                     {/* Left Column (Job Details) */}
-                    <div className="lg:col-span-2 flex flex-col gap-8 md:gap-12">
+                    <div className="lg:col-span-1 flex flex-col gap-8">
 
                         {/* Job Description */}
                         <section>
@@ -168,21 +205,80 @@ export default function JobDetailsPage() {
                         )}
                     </div>
 
-                    {/* Right Column (Sticky Sidebar) */}
-                    <div className="lg:col-span-1 lg:sticky lg:top-32 w-full mt-6 lg:mt-0">
-                        <div className="bg-[#111] text-white rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden group">
-
-                            <h3 className="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 leading-snug">
-                                Build your future with us, together we grow
+                    {/* Right Column (Application Form) */}
+                    <div className="lg:col-span-1 lg:sticky lg:top-0 w-full mt-6 lg:mt-0">
+                        <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
+                            <h3 className="text-xl sm:text-2xl font-bold mb-6 text-gray-900 leading-snug">
+                                Apply for {job.title}
                             </h3>
 
-                            <div className="mb-6 sm:mb-8">
-                                <AnimatedButton href={`/careers/${slug}/apply`} text="APPLY NOW" />
-                            </div>
+                            <form onSubmit={handleSubmit} className="space-y-4">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    {/* Full Name */}
+                                    <div className='single-contact-group'>
+                                        <label className="contact-label !text-gray-800 text-sm mb-1 block">Full Name<span className="text-blue-500 ml-1">*</span></label>
+                                        <input type="text" name="fullName" required value={formData.fullName} onChange={handleInputChange} placeholder="Enter Your Name" className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors text-sm" />
+                                    </div>
 
-                            <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                Join us and shape a successful future through innovative projects and collaborative growth.
-                            </p>
+                                    <div className='single-contact-group'>
+                                        <label className="contact-label !text-gray-800 text-sm mb-1 block">Email<span className="text-blue-500 ml-1">*</span></label>
+                                        <input type="email" name="email" required value={formData.email} onChange={handleInputChange} placeholder="Enter Your Email" className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors text-sm" />
+                                    </div>
+                                </div>
+                                {/* Email & Phone */}
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    {/* Experience */}
+                                    <div className='single-contact-group'>
+                                        <label className="contact-label !text-gray-800 text-sm mb-1 block">Experience<span className="text-blue-500 ml-1">*</span></label>
+                                        <select name="experience" required value={formData.experience} onChange={handleInputChange} className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors appearance-none text-sm">
+                                            <option value="" disabled className="text-gray-400">Select</option>
+                                            <option value="Fresher">Fresher</option>
+                                            <option value="1-2 Years">1-2 Years</option>
+                                            <option value="3-5 Years">3-5 Years</option>
+                                            <option value="5+ Years">5+ Years</option>
+                                        </select>
+                                    </div>
+
+                                    <div className='single-contact-group'>
+                                        <label className="contact-label !text-gray-800 text-sm mb-1 block">Phone<span className="text-blue-500 ml-1">*</span></label>
+                                        <input type="tel" name="phone" required value={formData.phone} onChange={handleInputChange} placeholder="Enter Your Number" className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors text-sm" />
+                                    </div>
+                                </div>
+
+                                {/* Salary */}
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div className='single-contact-group'>
+                                        <label className="contact-label !text-gray-800 text-sm mb-1 block">Current Salary<span className="text-blue-500 ml-1">*</span></label>
+                                        <input type="text" name="currentSalary" required value={formData.currentSalary} onChange={handleInputChange} placeholder="e.g. 25,000" className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors text-sm" />
+                                    </div>
+                                    <div className='single-contact-group'>
+                                        <label className="contact-label !text-gray-800 text-sm mb-1 block">Expected Salary<span className="text-blue-500 ml-1">*</span></label>
+                                        <input type="text" name="expectedSalary" required value={formData.expectedSalary} onChange={handleInputChange} placeholder="e.g. 35,000" className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors text-sm" />
+                                    </div>
+                                </div>
+                                {/* LinkedIn */}
+                                <div className='single-contact-group'>
+                                    <label className="contact-label !text-gray-800 text-sm mb-1 block">LinkedIn Profile<span className="text-blue-500 ml-1">*</span></label>
+                                    <input type="url" name="linkedinUrl" required value={formData.linkedinUrl} onChange={handleInputChange} placeholder="Enter URL" className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors text-sm" />
+                                </div>
+                                {/* Resume */}
+                                <div className='single-contact-group'>
+                                    <label className="contact-label !text-gray-800 text-sm mb-1 block">Resume Attachment<span className="text-blue-500 ml-1">*</span></label>
+                                    <div className="h-[40px] relative w-full bg-gray-50 border border-gray-200 rounded-md focus-within:border-[#44c7f6] focus-within:ring-1 focus-within:ring-[#44c7f6] transition-colors text-sm">
+                                        <input type="file" name="resume" required onChange={handleFileChange} className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" accept=".pdf,.doc,.docx" />
+                                        <div className="h-[40px] flex items-center justify-between px-3">
+                                            <span className={formData.resume ? 'text-gray-900 truncate' : 'text-gray-400'}>{formData.resume ? formData.resume.name : 'Choose File'}</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-400"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button type="submit" className="h-[44px] flex justify-center items-center mt-3 w-full rounded-md text-white font-bold uppercase hover:shadow-lg hover:shadow-[#0037f0]/20 hover:opacity-90 transition-all duration-300" style={{ background: 'linear-gradient(#44c7f6,#0037f0)', border: '1px solid #f8f8f8', fontSize: '14px' }}>
+                                        Submit Application
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
 

@@ -141,7 +141,8 @@ export default function Header({ currentRoute }) {
         { text: "Services", href: "/services", current: currentRoute === 'services' },
         { text: "Portfolio", href: "/portfolio", current: currentRoute === 'portfolio' },
         { text: "Careers", href: "/careers", current: currentRoute === 'careers' },
-        { text: "Hire Us!", isMegaMenuTrigger: true, current: currentRoute === 'hire-us', highlight: true }
+        // { text: "Hire Us!", isMegaMenuTrigger: true, current: currentRoute === 'hire-us', highlight: true }
+        { text: "Hire Us!", href: "/hire-us", current: currentRoute === 'hire-us', highlight: true }
     ];
 
     // Fast scroll handler that stops propagation and uses native smooth scrolling
@@ -226,7 +227,7 @@ export default function Header({ currentRoute }) {
                                                     href={link.href}
                                                     onClick={(e) => handleScroll(e, link.href)}
                                                     aria-current={link.current ? "page" : undefined}
-                                                    className={`menu-link w-inline-block ${link.current ? "w--current" : ""} ${link.highlight ? "font-bold transition-all duration-300" : ""}`}
+                                                    className={`menu-link w-inline-block ${link.current ? "w--current" : ""} ${link.highlight ? "font-semibold transition-all duration-300" : ""}`}
                                                 >
                                                     <div className={`menu-txt m-0 p-0 leading-none ${link.highlight ? "text-transparent bg-clip-text bg-[linear-gradient(110deg,#44c7f6,45%,#ffffff,55%,#0037f0)] animate-shine" : ""}`}>{link.text}</div>
                                                 </a>

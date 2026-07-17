@@ -2,6 +2,10 @@ import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Badge from '../ui/Badge';
+import {
+    CloudAnimation, FrontendAnimation, BackendAnimation, MobileAnimation,
+    CMSAnimation, AnalyticsAnimation, VibeCodingAnimation, ERPAnimation
+} from './ServiceAnimations';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,7 +60,7 @@ const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefi
 };
 
 // Reusable ServiceCard subcomponent
-const ServiceCard = ({ number, title, excerpt, imgSrc, srcSet, projectCount, cardClass, dataWId, linkDataWId }) => {
+const ServiceCard = ({ number, title, excerpt, Animation, projectCount, cardClass, dataWId, linkDataWId }) => {
     const cardRef = useRef(null);
 
     useLayoutEffect(() => {
@@ -124,13 +128,9 @@ const ServiceCard = ({ number, title, excerpt, imgSrc, srcSet, projectCount, car
             </div>
             <div className="servide-thumbnail-button">
                 <div className="service-image-box">
-                    <img
-                        src={imgSrc}
-                        loading="lazy"
-                        sizes="100vw" alt="Service Card Image"
-                        srcSet={srcSet}
-                        className="service-card-image"
-                    />
+                    <div className="service-card-image relative w-full h-full flex items-center justify-center bg-[#0d0d0d] overflow-hidden">
+                        {Animation && <Animation />}
+                    </div>
                 </div>
                 {/* <a data-w-id={linkDataWId} href="#Contact" className="service-card-link w-inline-block" aria-label="Get This ServiceGet This Service">
                     <div className="service-text-box">
@@ -164,8 +164,7 @@ export default function Services() {
             number: "01",
             title: "Cloud Infrastructure",
             excerpt: "Scalable and secure cloud architecture optimized for high-demand enterprise applications and 99.9% uptime.",
-            imgSrc: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-            srcSet: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80 800w",
+            Animation: CloudAnimation,
             projectCount: "28+ Projects",
             cardClass: "_01",
             dataWId: "7ba2c9fc-e567-d38f-880a-0f0d02ad444d",
@@ -175,8 +174,7 @@ export default function Services() {
             number: "02",
             title: "Frontend Excellence",
             excerpt: "Building responsive, lightning-fast user interfaces using modern frameworks and performance-first methodology.",
-            imgSrc: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80",
-            srcSet: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80 800w",
+            Animation: FrontendAnimation,
             projectCount: "34+ Projects",
             cardClass: "_02",
             dataWId: "188b70d9-9ccb-b630-fa3e-37af8680f01d",
@@ -186,8 +184,7 @@ export default function Services() {
             number: "03",
             title: "Backend Systems",
             excerpt: "Robust server-side logic and sophisticated database management for mission-critical business systems.",
-            imgSrc: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
-            srcSet: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80 800w",
+            Animation: BackendAnimation,
             projectCount: "90+ Projects",
             cardClass: "_03",
             dataWId: "dea47cae-1763-3ca2-1904-948e3c97b196",
@@ -197,8 +194,7 @@ export default function Services() {
             number: "04",
             title: "Mobile Development",
             excerpt: "High-performance native and cross-platform mobile experiences that delight users on every device.",
-            imgSrc: "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80",
-            srcSet: "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80 800w",
+            Animation: MobileAnimation,
             projectCount: "09+ Projects",
             cardClass: "_04",
             dataWId: "1c5dac51-26ed-5099-d9d1-2ae6efac5ec6",
@@ -208,8 +204,7 @@ export default function Services() {
             number: "05",
             title: "CMS",
             excerpt: "Flexible CMS solutions for easy content management, scalability, and performance.",
-            imgSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-            srcSet: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80 800w",
+            Animation: CMSAnimation,
             projectCount: "42+ Projects",
             cardClass: "_01",
             dataWId: "7ba2c9fc-e567-d38f-880a-0f0d02ad444d",
@@ -219,8 +214,7 @@ export default function Services() {
             number: "06",
             title: "Data Analytics",
             excerpt: "Transforming raw data into actionable intelligence through advanced visualization & ML pipelines.",
-            imgSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-            srcSet: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80 800w",
+            Animation: AnalyticsAnimation,
             projectCount: "19+ Projects",
             cardClass: "_02",
             dataWId: "188b70d9-9ccb-b630-fa3e-37af8680f01d",
@@ -230,8 +224,7 @@ export default function Services() {
             number: "07",
             title: "Vibe Coding",
             excerpt: "Fast-track product development using vibe-coding tools and scalable engineering practices.",
-            imgSrc: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&w=800&q=80",
-            srcSet: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&w=800&q=80 800w",
+            Animation: VibeCodingAnimation,
             projectCount: "37+ Projects",
             cardClass: "_03",
             dataWId: "dea47cae-1763-3ca2-1904-948e3c97b196",
@@ -241,8 +234,7 @@ export default function Services() {
             number: "08",
             title: "Python & ERP Development",
             excerpt: "High-performance ERP and backend development using Python, Django, and Odoo.",
-            imgSrc: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80",
-            srcSet: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80 800w",
+            Animation: ERPAnimation,
             projectCount: "25+ Projects",
             cardClass: "_04",
             dataWId: "1c5dac51-26ed-5099-d9d1-2ae6efac5ec6",
@@ -408,8 +400,7 @@ export default function Services() {
                                             number={service.number}
                                             title={service.title}
                                             excerpt={service.excerpt}
-                                            imgSrc={service.imgSrc}
-                                            srcSet={service.srcSet}
+                                            Animation={service.Animation}
                                             projectCount={service.projectCount}
                                             cardClass={service.cardClass}
                                             dataWId={service.dataWId}

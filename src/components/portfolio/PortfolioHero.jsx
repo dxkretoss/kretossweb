@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef, useState, useEffect } from 'react';
 import gsap from 'gsap';
 import Badge from '../ui/Badge';
+import AnimatedButton from '../ui/AnimatedButton';
 
 const AnimatedWord = ({ text, isGradient }) => {
     const gradientClass = isGradient ? "bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text" : "";
@@ -18,13 +19,13 @@ export default function PortfolioHero() {
 
     const cards = [
         {
-            image: "/portfolio/Drawn.png"
+            image: "/portfolio/custom/klubbrabatten-new.jpg"
         },
         {
-            image: "/portfolio/fily.webp"
+            image: "/portfolio/custom/Fily-new.jpg"
         },
         {
-            image: "/portfolio/palzea.webp"
+            image: "/portfolio/custom/Palzea-new.png"
         }
     ];
 
@@ -67,6 +68,7 @@ export default function PortfolioHero() {
             gsap.set(".banner-title", { y: 30 }); // Parent handles Y movement
             gsap.set(".banner-text", { y: 30 });  // Parent handles Y movement
             gsap.set(".hero-word", { opacity: 0, y: 15 }); // Words handle opacity and minor slide
+            gsap.set(".banner-btn", { opacity: 0, y: 20 });
             gsap.set(".circle-shape-rotate", { opacity: 0, scale: 0.8, xPercent: -50, yPercent: -50 });
             gsap.set(".hero-video-box", { opacity: 0, x: 50 });
 
@@ -85,6 +87,7 @@ export default function PortfolioHero() {
                     { opacity: 1, y: 0, duration: 0.8, ease: "power4.out", stagger: { each: 0.1, from: "start" }, clearProps: "opacity,transform" },
                     0.4
                 )
+                .to(".banner-btn", { opacity: 1, y: 0, duration: 0.8, ease: "power4.out" }, 0.6)
                 .to(".circle-shape-rotate", { opacity: 1, scale: 1, duration: 0.8, ease: "power4.out" }, 0.2)
                 .to(".hero-video-box", { opacity: 1, x: 0, duration: 1, ease: "power4.out" }, 0.4);
 
@@ -136,7 +139,7 @@ export default function PortfolioHero() {
                             <Badge variant='white'>Portfolio</Badge>
                         </div>
 
-                        <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 lg:mb-8">
+                        <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 ">
                             <AnimatedWord text="Check Out Our Best" isGradient={false} /><br />
                             <AnimatedWord text="Design & Development" isGradient={true} /><br />
                             <AnimatedWord text="Works" isGradient={false} />
@@ -145,6 +148,14 @@ export default function PortfolioHero() {
                         <p className="banner-text text-base sm:text-xl text-gray-300 max-w-lg font-medium mb-8">
                             <AnimatedWord text="We specialize in innovative design and development solutions, tailored for impactful brand growth." isGradient={false} />
                         </p>
+
+                        <div className="banner-btn opacity-0 translate-y-4">
+                            <AnimatedButton
+                                text="Check Our Behance"
+                                href="https://www.behance.net/kretoss"
+                                target="_blank"
+                            />
+                        </div>
 
                     </div>
 

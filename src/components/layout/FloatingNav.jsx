@@ -91,6 +91,7 @@ export default function FloatingNav() {
                     </Link>
 
                     {/* Hire Us Mega Menu Trigger */}
+                    {/* 
                     <div
                         className="relative flex items-center"
                         onMouseEnter={handleMegaMenuEnter}
@@ -103,7 +104,11 @@ export default function FloatingNav() {
                             <span className="text-transparent bg-clip-text  bg-[linear-gradient(110deg,#3eb9f5,45%,#ffffff,55%,#3eb9f5)] animate-shine">Hire Us!</span>
                             <ChevronDown className={`w-4 h-4 text-[#44c7f6] transition-transform duration-300 ${isMegaMenuOpen ? "rotate-180" : ""}`} />
                         </button>
-                    </div>
+                    </div> 
+                    */}
+                    <Link to="/hire-us" className={`flex items-center gap-1 text-base font-medium transition-colors whitespace-nowrap ${location.pathname === '/hire-us' ? 'text-[#44c7f6]' : 'text-gray-300 hover:text-white'}`}>
+                        <span className="text-transparent bg-clip-text  bg-[linear-gradient(110deg,#3eb9f5,45%,#ffffff,55%,#3eb9f5)] animate-shine">Hire Us!</span>
+                    </Link>
                 </div>
             </div>
 

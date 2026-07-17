@@ -141,10 +141,10 @@ export default function PortfolioDetailsPage() {
 
                     <div className="relative z-10">
 
-                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
                             {/* Left: Title + meta */}
-                            <div className="lg:col-span-6 pb-0 md:pb-10 space-y-6">
+                            <div className="lg:col-span-5 pb-0 md:pb-10 space-y-6">
                                 {/* Category pill */}
                                 <span className="inline-flex items-center gap-2 text-slate-800 text-[10px] font-bold uppercase tracking-widest px-3 rounded-full border border-[#0037f0]/15">
                                     <span className="w-1.5 h-1.5 rounded-full bg-slate-800 inline-block"></span>
@@ -196,19 +196,17 @@ export default function PortfolioDetailsPage() {
                                         </span>
                                     )}
 
-                                    {/* Dynamic Hire Resources Button */}
-                                    {project.hireResources && (
-                                        <AnimatedHireButton
-                                            href={project.hireResources.link}
-                                            text={project.hireResources.label}
-                                            className="h-[44px]"
-                                        />
-                                    )}
+                                    {/* Hire Category Button */}
+                                    <AnimatedHireButton
+                                        href="/hire-us"
+                                        text={`Hire ${project.category} Developer →`}
+                                        className="h-[44px]"
+                                    />
                                 </div>
                             </div>
 
                             {/* Right: Device mockup */}
-                            <div className="lg:col-span-6 flex justify-center items-end relative min-h-[auto] lg:min-h-[500px] mt-10 lg:mt-0">
+                            <div className="lg:col-span-7 flex justify-center items-end relative min-h-[auto] lg:min-h-[500px] mt-10 lg:mt-0">
                                 {isMobileApp ? (
                                     <div className="relative flex items-end">
 
@@ -282,7 +280,7 @@ export default function PortfolioDetailsPage() {
                                         </div>
                                     </div>
                                 ) : (
-                                    <div className="relative w-[88%] max-w-[600px] mx-auto lg:ml-auto lg:mr-2 xl:mr-4">
+                                    <div className="relative w-[88%] max-w-[750px] mx-auto lg:ml-auto lg:mr-2 xl:mr-4">
                                         <div className="relative w-full bg-[#0d0d0d] rounded-t-2xl border-[10px] border-[#1e1e1f] shadow-[0_30px_80px_rgba(0,0,0,0.2)] aspect-video overflow-hidden">
                                             <div className="relative w-full h-full bg-[#121212] overflow-hidden group/screen">
                                                 <div

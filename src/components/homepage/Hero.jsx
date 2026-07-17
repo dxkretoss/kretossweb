@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { Globe, Settings, Palette, Code } from 'lucide-react';
+import { Globe, Settings, Palette, Code, Bot, Monitor } from 'lucide-react';
 import AnimatedButton from '../ui/AnimatedButton';
 
 // Subcomponent: SplitText
@@ -131,7 +131,7 @@ const FloatingBadge = ({ text, type = 'purple', arrowRot = -17.9137, badgeClass 
         arrowClass = "hero-arrow-box right-arrow hero-arrow-box _04";
         shapeClass = "hero-shape-box right-shape";
         if (arrowRot === -17.9137) arrowRot = -90.375;
-    } else if (type === 'web') {
+    } else if (type === 'Custom Software') {
         bgColor = "#a9bf15";
         textColor = "#fff";
         arrowClass = "hero-arrow-box _03"; // Bottom-right
@@ -370,10 +370,10 @@ export default function Hero() {
                             {/* Building Future-Ready Software for Enterprises and Disruptive Startups */}
                             <div className="hero-title-box">
                                 <FloatingBadge
-                                    text="Web"
-                                    type="web"
+                                    text="Custom Software"
+                                    type="Custom Software"
                                     badgeClass="!absolute !top-12 md:!-top-20 !-left-[10px] md:!left-[200px] !z-10 scale-75 md:scale-100"
-                                    iconComponent={<Globe size={18} color="#fff" />}
+                                    iconComponent={<Monitor size={18} color="#fff" />}
                                 />
 
                                 <FloatingBadge
@@ -430,9 +430,9 @@ export default function Hero() {
                                 </div>
                                 <div className="hero-text-three">
                                     <FloatingBadge
-                                        text="UI Design"
+                                        text="AI Automation"
                                         type="purple"
-                                        iconComponent={<Palette size={18} color="#fff" />}
+                                        iconComponent={<Bot size={18} color="#fff" />}
                                     />
                                     <div className="hero-bottom-title" aria-label="Startups.">
                                         <h2 className="hero-bbottom-ttitle banner-04 !text-center" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
@@ -450,7 +450,7 @@ export default function Hero() {
                         <div className="hero-top-content">
                             <div className="hero-text-button" style={{ opacity: 0 }}>
                                 <div className="hero-text">We partner with enterprises and startups to build high-performance digital products fast, secure, and designed for real-world scalability</div>
-                                <AnimatedButton href="#Contact" text="LET'S TALK" />
+                                <AnimatedButton href="/Contact" text="LET'S TALK" />
                             </div>
                         </div>
                     </div>

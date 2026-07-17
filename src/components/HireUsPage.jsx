@@ -1,27 +1,34 @@
-import React, { useEffect } from 'react';
-import HireUsHero from './hire-us/HireUsHero';
-import WhyChooseUs from './hire-us/WhyChooseUs';
-import HiringModels from './hire-us/HiringModels';
-import HireUsList from './hire-us/HireUsList';
-import DevelopmentProcess from './hire-us/DevelopmentProcess';
-import IndustriesServe from './hire-us/IndustriesServe';
-import CTASection from './about/CTASection';
+import HireUsHero from './hireus/HireUsHero';
+import Technologies from './hireus/Technologies';
+import HireModal from './hireus/HireModal';
+import WhyChoose from './hireus/WhyChoose';
+import WhatWeBuild from './hireus/WhatWeBuild';
+import HowItsWork from './hireus/HowItsWork';
+import Portfolio from './hireus/Portfolio';
+import Testimonials from './hireus/Testimonials';
+import Faq from './hireus/Faq';
+import ContactForm from './hireus/ContactForm';
+import FinalCta from './hireus/FinalCta';
+import Projects from './homepage/Projects';
 
-export default function HireUsPage() {
-    useEffect(() => {
-        document.title = "Hire Dedicated Developers | Kretoss Technology";
-        window.scrollTo(0, 0);
-    }, []);
+const HireUsPage = () => {
 
     return (
-        <div className="bg-[#fafcff] min-h-screen">
+        <div>
             <HireUsHero />
-            <WhyChooseUs />
-            <HiringModels />
-            <HireUsList />
-            <DevelopmentProcess />
-            <IndustriesServe />
-            <CTASection />
+            <Technologies />
+            <HireModal />
+            <WhyChoose />
+            <WhatWeBuild />
+            <HowItsWork />
+            <Projects />
+            {/* <Portfolio /> */}
+            <Testimonials />
+            <Faq />
+            <ContactForm />
+            <FinalCta />
         </div>
     );
-}
+};
+
+export default HireUsPage;

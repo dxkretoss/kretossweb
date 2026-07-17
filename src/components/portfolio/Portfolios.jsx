@@ -91,6 +91,7 @@ const getTechIcons = (techString) => {
 
 const PortfolioCard = ({ item }) => {
     const [bgColor, setBgColor] = useState('#111111');
+    const [imageLoaded, setImageLoaded] = useState(false);
     const imgRef = useRef(null);
 
     useEffect(() => {
@@ -114,8 +115,10 @@ const PortfolioCard = ({ item }) => {
                     } else {
                         imgRef.current.dataset.isDark = 'false';
                     }
+                    setImageLoaded(true);
                 } catch (e) {
                     console.log('Failed to extract color:', e);
+                    setImageLoaded(true);
                 }
             };
 
@@ -134,13 +137,22 @@ const PortfolioCard = ({ item }) => {
 
                 {/* Left Side - Image Panel */}
                 <div
-                    className="w-full xl:w-[60%] relative flex items-center justify-center self-stretch"
+                    className="w-full xl:w-[60%] relative flex items-center justify-center self-stretch bg-[#1a1a1a] rounded-[5px] overflow-hidden"
                 >
+                    {!imageLoaded && (
+                        <div className="absolute inset-0 bg-white/10 animate-pulse rounded-[5px]"></div>
+                    )}
                     <img
                         ref={imgRef}
                         src={item.portfolioImage}
                         alt={item.title}
-                        className="w-full h-full object-cover rounded-[5px]"
+                        className={`w-full h-full object-cover rounded-[5px] transition-opacity duration-500 relative z-10 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                        onLoad={() => {
+                            if (imgRef.current && imgRef.current.complete) {
+                                // Fallback in case extractColor event listener takes too long
+                                // setImageLoaded is also handled in extractColor
+                            }
+                        }}
                     />
                 </div>
 
@@ -166,18 +178,24 @@ const PortfolioCard = ({ item }) => {
                 >
                     <div>
                         {/* Tags */}
-                        <div className="flex flex-wrap gap-3 mb-6">
-                            {item.tags?.map((tag, idx) => (
-                                <span key={idx} className={`bg-white/10 text-white border-[#FFFFFF1A] text-xs md:text-sm px-4 py-1.5 rounded-[4px] border`}>
-                                    {tag}
-                                </span>
-                            ))}
+                        <div className='flex justify-between items-start'>
+                            <div className="flex flex-wrap gap-2 md:gap-3 mb-6">
+                                {item.tags?.map((tag, idx) => (
+                                    <span key={idx} className="bg-white/10 text-white border border-[#FFFFFF1A] text-xs md:text-sm px-3 md:px-4 rounded-[4px] flex items-center justify-center h-[32px] md:h-[36px]">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                            {item.portfolioLogo &&
+                                <div className="flex items-center justify-center shrink-0 ml-2 self-start bg-white/10 border border-[#FFFFFF1A] px-3 rounded-[4px] w-[100px] md:w-[120px] h-[32px] md:h-[36px]">
+                                    <img src={item.portfolioLogo} alt={item.title} className="max-w-full max-h-[16px] md:max-h-[20px] object-contain" />
+                                </div>
+                            }
                         </div>
-
                         {/* Title & Description */}
-                        <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>
+                        {/* <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>
                             {item.title}
-                        </h3>
+                        </h3> */}
                         <p className={`text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>
                             {item.description}
                         </p>
@@ -257,10 +275,11 @@ export default function Portfolios() {
         "Custom web",
         "Mobile app",
         "Shopify",
-        "Wordpress",
+        "Python",
+        // "Wordpress",
         "Bigcommerce",
         "web design",
-        "ui/ux",
+        // "ui/ux",
         "Other"
     ];
 
@@ -340,7 +359,7 @@ export default function Portfolios() {
                         <Badge variant='white'>Categories</Badge>
                     </div>
 
-                    <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-white text-center">
+                    <h2 className="text-[28px] lg:text-[36px] font-semibold text-white text-center mb-5 mt-2">
                         Our Expertise
                     </h2>
                 </div>
@@ -382,7 +401,7 @@ export default function Portfolios() {
                 <div className="flex flex-col gap-6 lg:gap-12">
                     {currentItems.length > 0 ? (
                         currentItems.map((item, index) => (
-                            <PortfolioCard key={index} item={item} />
+                            <PortfolioCard key={item.slug || index} item={item} />
                         ))
                     ) : (
                         <div className="text-center py-20 text-gray-500">

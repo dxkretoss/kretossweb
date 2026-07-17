@@ -3,55 +3,66 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedButton from '../ui/AnimatedButton';
 import Badge from '../ui/Badge';
+import ErpAnimation from './ErpAnimation';
+import VibeCodingAnimation from './VibeCodingAnimation';
+import MobileAnimation from './MobileAnimation';
+import BackendAnimation from './BackendAnimation';
+import DataAnimation from './DataAnimation';
+import CloudAnimation from './CloudAnimation';
+import FrontendAnimation from './FrontendAnimation';
+import CmsAnimation from './CmsAnimation';
 import {
     FaReact, FaAngular, FaVuejs, FaNodeJs, FaPython,
     FaLaravel, FaJava, FaSwift, FaApple, FaAws,
-    FaDigitalOcean, FaWordpress, FaShopify, FaMagento,
+    FaDigitalOcean, FaWordpress, FaShopify, FaMagento, FaGithub, FaHeart,
     FaDrupal, FaJs, FaChartBar, FaChartLine, FaMicrosoft, FaDatabase, FaCode
 } from 'react-icons/fa';
 import {
     SiNextdotjs, SiNestjs, SiFlutter, SiKotlin,
-    SiPandas, SiGooglecloud, SiBigcommerce
+    SiPandas, SiGooglecloud, SiBigcommerce, SiSap, SiN8N,
 } from 'react-icons/si';
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 const servicesData = [
     {
         id: "01",
-        title: "Frontend Excellence",
-        desc: "Building responsive, lightning-fast user interfaces using modern frameworks and performance-first methodology.",
-        image: "/services/main_frontend.png",
-        icon: "/services/icon_frontend.png",
+        title: "ERP & Automation",
+        desc: "Streamline business operations with custom ERP systems and intelligent automation solutions that connect workflows, reduce manual tasks, and improve overall efficiency.",
+        isErpAnimation: true,
         technologies: [
-            { num: "01", name: "React.js", Icon: FaReact },
-            { num: "02", name: "Angular", Icon: FaAngular },
-            { num: "03", name: "Vue.js", Icon: FaVuejs },
-            { num: "04", name: "Next.js", Icon: SiNextdotjs },
-            { num: "05", name: "Knockout JS", Icon: FaJs },
+            { num: "01", name: "Python", Icon: FaPython },
+            { num: "02", name: "SAP", Icon: SiSap },
+            { num: "03", name: "Odoo", Icon: FaCode },
+            { num: "04", name: "n8n", Icon: SiN8N },
+            { num: "05", name: "Power Automate", Icon: FaMicrosoft },
         ],
-        link: "/hire-us/hire-frontend-developer"
+        link: "/hire-us"
     },
 
     {
         id: "02",
-        title: "Backend Systems",
-        desc: "Robust server-side logic and sophisticated database management for mission-critical business systems.",
-        image: "/services/main_backend.png",
-        icon: "/services/icon_backend.png",
+        title: "Vibe Coding",
+        desc: "Accelerate product development with AI-powered coding tools and modern engineering workflows, helping transform ideas into functional, scalable digital products faster.",
+        isVibeCodingAnimation: true,
+        image: "/services/main_vibecoding.png",
+        icon: "/services/icon_vibecoding.png",
         technologies: [
-            { num: "01", name: "Node.js", Icon: FaNodeJs },
-            { num: "02", name: "Python", Icon: FaPython },
-            { num: "03", name: "NestJS", Icon: SiNestjs },
-            { num: "04", name: "Laravel", Icon: FaLaravel },
-            { num: "05", name: "Java", Icon: FaJava },
+            { num: "01", name: "Cursor", Icon: FaCode },
+            { num: "02", name: "GitHub Copilot", Icon: FaGithub },
+            { num: "03", name: "Claude Code", Icon: FaCode },
+            { num: "04", name: "Lovable", Icon: FaHeart },
+            { num: "05", name: "Replit", Icon: FaCode },
         ],
-        link: "/hire-us/hire-backend-developer"
+        link: "/hire-us"
     },
+
     {
         id: "03",
         title: "Mobile App Development",
-        desc: "High-performance native and cross-platform mobile experiences that delight users on every device.",
+        desc: "Build fast, intuitive, and scalable mobile applications for iOS and Android that deliver seamless user experiences across devices and support long-term business growth.",
+        isMobileAnimation: true,
         image: "/services/main_mobile.png",
         icon: "/services/icon_mobile.png",
         technologies: [
@@ -61,12 +72,31 @@ const servicesData = [
             { num: "04", name: "iOS", Icon: FaApple },
             { num: "05", name: "Kotlin", Icon: SiKotlin },
         ],
-        link: "/hire-us/hire-mobile-app-developer"
+        link: "/hire-us"
     },
+
     {
         id: "04",
+        title: "Backend Systems",
+        desc: "Power your applications with secure, scalable backend systems designed to handle complex business logic, APIs, databases, integrations, and growing user demands.",
+        isBackendAnimation: true,
+        image: "/services/main_backend.png",
+        icon: "/services/icon_backend.png",
+        technologies: [
+            { num: "01", name: "Node.js", Icon: FaNodeJs },
+            { num: "02", name: "Python", Icon: FaPython },
+            { num: "03", name: "NestJS", Icon: SiNestjs },
+            { num: "04", name: "Laravel", Icon: FaLaravel },
+            { num: "05", name: "Java", Icon: FaJava },
+        ],
+        link: "/hire-us"
+    },
+
+    {
+        id: "05",
         title: "Data Analytics",
-        desc: "Transforming raw data into actionable intelligence through advanced visualization and ML pipelines.",
+        desc: "Turn complex business data into clear, actionable insights with powerful analytics, interactive dashboards, reporting solutions, and intelligent data processing.",
+        isDataAnimation: true,
         image: "/services/main_data.png",
         icon: "/services/icon_data.png",
         technologies: [
@@ -75,12 +105,14 @@ const servicesData = [
             { num: "03", name: "Tableau", Icon: FaChartBar },
             { num: "04", name: "Power BI", Icon: FaChartLine }
         ],
-        link: "/hire-us/hire-data-analytics"
+        link: "/hire-us"
     },
+
     {
-        id: "05",
+        id: "06",
         title: "Cloud Infrastructure",
-        desc: "Scalable and secure cloud architecture optimized for high-demand enterprise applications and 99.9% uptime.",
+        desc: "Build secure, scalable, and reliable cloud infrastructure that keeps your applications available, optimized, and ready to handle increasing traffic and business growth.",
+        isCloudAnimation: true,
         image: "/services/main_cloud.png",
         icon: "/services/icon_cloud.png",
         technologies: [
@@ -90,12 +122,31 @@ const servicesData = [
             { num: "04", name: "Oracle Cloud", Icon: FaDatabase },
             { num: "05", name: "DigitalOcean", Icon: FaDigitalOcean },
         ],
-        link: "/hire-us/hire-cloud-infrastructure"
+        link: "/hire-us"
     },
+
     {
-        id: "06",
+        id: "07",
+        title: "Frontend Excellence",
+        desc: "Create modern, responsive, and high-performance user interfaces that deliver smooth digital experiences while maintaining accessibility, scalability, and fast loading speeds.",
+        isFrontendAnimation: true,
+        image: "/services/main_frontend.png",
+        icon: "/services/icon_frontend.png",
+        technologies: [
+            { num: "01", name: "React.js", Icon: FaReact },
+            { num: "02", name: "Angular", Icon: FaAngular },
+            { num: "03", name: "Vue.js", Icon: FaVuejs },
+            { num: "04", name: "Next.js", Icon: SiNextdotjs },
+            { num: "05", name: "Knockout JS", Icon: FaJs },
+        ],
+        link: "/hire-us"
+    },
+
+    {
+        id: "08",
         title: "CMS",
-        desc: "Flexible CMS solutions for easy content management, scalability, and performance.",
+        desc: "Build flexible and easy-to-manage CMS solutions that give your team complete control over content while ensuring strong performance, scalability, and security.",
+        isCmsAnimation: true,
         image: "/services/main_cms.png",
         icon: "/services/icon_cms.png",
         technologies: [
@@ -105,39 +156,10 @@ const servicesData = [
             { num: "04", name: "Drupal", Icon: FaDrupal },
             { num: "05", name: "BigCommerce", Icon: SiBigcommerce },
         ],
-        link: "/hire-us/hire-cms-developer"
+        link: "/hire-us"
     },
-    {
-        id: "07",
-        title: "Vibe Coding",
-        desc: "Fast-track product development using vibe-coding tools and scalable engineering practices.",
-        image: "/services/main_vibecoding.png",
-        icon: "/services/icon_vibecoding.png",
-        technologies: [
-            { num: "01", name: "AI", Icon: FaChartLine },
-            { num: "02", name: "Cursor", Icon: FaCode },
-            { num: "03", name: "Copilot", Icon: FaReact },
-            { num: "04", name: "Python", Icon: FaPython },
-            { num: "05", name: "Prompting", Icon: FaJs },
-        ],
-        link: "/hire-us/vibe-coding-developer"
-    },
-    {
-        id: "08",
-        title: "Python & ERP Development",
-        desc: "High-performance ERP and backend development using Python, Django, and Odoo.",
-        image: "/services/main_pythonerp.png",
-        icon: "/services/icon_pythonerp.png",
-        technologies: [
-            { num: "01", name: "Python", Icon: FaPython },
-            { num: "02", name: "Django", Icon: FaPython },
-            { num: "03", name: "Odoo", Icon: FaCode },
-            { num: "04", name: "PostgreSQL", Icon: FaDatabase },
-            { num: "05", name: "AWS", Icon: FaAws },
-        ],
-        link: "/hire-us/python-developer"
-    }
 ];
+
 
 export default function ServicesList() {
     const containerRef = useRef(null);
@@ -277,27 +299,45 @@ export default function ServicesList() {
 
                                 {/* Image Area */}
                                 <div className={`service-img-col w-full lg:w-5/12 relative z-10 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
+                                    {service.isErpAnimation ? (
+                                        <ErpAnimation />
+                                    ) : service.isVibeCodingAnimation ? (
+                                        <VibeCodingAnimation />
+                                    ) : service.isMobileAnimation ? (
+                                        <MobileAnimation />
+                                    ) : service.isBackendAnimation ? (
+                                        <BackendAnimation />
+                                    ) : service.isDataAnimation ? (
+                                        <DataAnimation />
+                                    ) : service.isCloudAnimation ? (
+                                        <CloudAnimation />
+                                    ) : service.isFrontendAnimation ? (
+                                        <FrontendAnimation />
+                                    ) : service.isCmsAnimation ? (
+                                        <CmsAnimation />
+                                    ) : (
+                                        <>
+                                            {/* Decorative background circle */}
+                                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-[#0037f0]/5 to-transparent rounded-full -z-10 blur-2xl"></div>
 
-                                    {/* Decorative background circle */}
-                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-[#0037f0]/5 to-transparent rounded-full -z-10 blur-2xl"></div>
+                                            <div className="relative w-full aspect-[16/11] rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white transform perspective-1000 group-hover:rotate-y-[-2deg] group-hover:rotate-x-[2deg] transition-transform duration-700 ease-out">
+                                                <img
+                                                    src={service.image}
+                                                    alt={service.title}
+                                                    loading="lazy"
+                                                    className="w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
+                                                />
 
-                                    <div className="relative w-full aspect-[16/11] rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white transform perspective-1000 group-hover:rotate-y-[-2deg] group-hover:rotate-x-[2deg] transition-transform duration-700 ease-out">
-                                        <img
-                                            src={service.image}
-                                            alt={service.title}
-                                            loading="lazy"
-                                            className="w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
-                                        />
+                                                {/* Subtle overlay gradient */}
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                            </div>
 
-                                        {/* Subtle overlay gradient */}
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                                    </div>
-
-                                    {/* Floating tech element decorative */}
-                                    <div className={`absolute -bottom-6 sm:-bottom-8 ${isEven ? 'right-4 sm:-right-8' : 'left-4 sm:-left-8'} w-16 h-16 sm:w-24 sm:h-24 bg-white rounded-xl sm:rounded-2xl shadow-xl flex items-center justify-center border border-gray-100 animate-[bounce_5s_infinite] overflow-hidden`}>
-                                        <img src={service.icon} alt={`${service.title} icon`} className="w-[85%] h-[85%] object-cover rounded-lg sm:rounded-xl" />
-                                    </div>
-
+                                            {/* Floating tech element decorative */}
+                                            <div className={`absolute -bottom-6 sm:-bottom-8 ${isEven ? 'right-4 sm:-right-8' : 'left-4 sm:-left-8'} w-16 h-16 sm:w-24 sm:h-24 bg-white rounded-xl sm:rounded-2xl shadow-xl flex items-center justify-center border border-gray-100 animate-[bounce_5s_infinite] overflow-hidden`}>
+                                                <img src={service.icon} alt="tech icon" className="w-8 h-8 sm:w-12 sm:h-12 object-contain" />
+                                            </div>
+                                        </>
+                                    )}
                                 </div>
 
                             </div>

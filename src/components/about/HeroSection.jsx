@@ -27,7 +27,7 @@ export default function HeroSection() {
             subtitle: "Empowering Businesses",
             gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "MISSION INNOVATION USER CENTRIC DIGITAL SOLUTIONS SEAMLESS UI UX DESIGN ROBUST WEB MOBILE APPLICATIONS ENGAGEMENT VALUE ",
-            desc: "At Kretoss Technology, our mission is to empower businesses by delivering innovative, user-centric digital solutions. We are committed to crafting seamless UI/UX designs and robust web and mobile applications that drive engagement, enhance user experience, and create measurable value for our clients across industries."
+            desc: "At Kretoss, our mission is to empower businesses with innovative digital solutions. We craft seamless UI/UX designs and robust applications that drive engagement and create measurable value for our clients."
         },
         {
             title: "VISION",
@@ -40,7 +40,7 @@ export default function HeroSection() {
             subtitle: "Global Tech Partner",
             gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "VISION GLOBALLY RECOGNIZED TECHNOLOGY PARTNER TRANSFORMING IDEAS IMPACTFUL EXPERIENCES NEW STANDARDS CREATIVITY EXCELLENCE CONTINUOUS ",
-            desc: "Our vision is to become a globally recognized technology partner, known for transforming ideas into impactful digital experiences. We aim to set new standards in UI/UX and application development by embracing creativity, excellence, and continuous innovation."
+            desc: "Our vision is to become a globally recognized partner, transforming ideas into impactful digital experiences. We aim to set new standards in development by embracing creativity, excellence, and continuous innovation."
         },
         {
             title: "GOAL",
@@ -52,7 +52,7 @@ export default function HeroSection() {
             subtitle: "Exceeding Expectations",
             gradient: "from-[#44c7f6] to-[#0037f0]",
             bgText: "GOAL HIGH QUALITY SCALABLE INTUITIVE DIGITAL PRODUCTS EXCEED CLIENT EXPECTATIONS LONG TERM PARTNERSHIPS TRANSPARENCY DEADLINES EVOLVING ",
-            desc: "Our goal is to consistently deliver high-quality, scalable, and intuitive digital products that exceed client expectations. We strive to build long-term partnerships by maintaining transparency, meeting deadlines, and constantly evolving with emerging technologies to stay ahead in a dynamic digital world."
+            desc: "Our goal is to deliver scalable and intuitive digital products that exceed expectations. We strive to build long-term partnerships through transparency, timely delivery, and evolving with emerging technologies."
         }
     ];
 
@@ -164,17 +164,17 @@ export default function HeroSection() {
                             <Badge variant='white'>About us</Badge>
                         </div>
 
-                        <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 lg:mb-8">
-                            <AnimatedWord text="Stunning " isGradient={true} />
-                            <AnimatedWord text="Design" isGradient={false} /><br />
-                            <AnimatedWord text="Smart " isGradient={false} />
-                            <AnimatedWord text="Development" isGradient={true} /><br />
-                            <AnimatedWord text="Real " isGradient={false} />
-                            <AnimatedWord text="Impact" isGradient={true} />
+                        <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 ">
+                            <AnimatedWord text="Build with " isGradient={false} />
+                            <AnimatedWord text="AI" isGradient={true} /><br />
+                            <AnimatedWord text="Automate " isGradient={true} />
+                            <AnimatedWord text="Everything" isGradient={false} /><br />
+                            <AnimatedWord text="Scale " isGradient={false} />
+                            <AnimatedWord text="Without Limits" isGradient={true} />
                         </h1>
 
                         <p className="banner-text text-base sm:text-xl text-gray-300 max-w-lg font-medium mb-8 ">
-                            <AnimatedWord text="We take you from consultation to successful launch." isGradient={false} />
+                            <AnimatedWord text="Transforming ideas into powerful AI solutions built to automate, innovate, and scale." isGradient={false} />
                         </p>
 
                     </div>
@@ -201,7 +201,7 @@ export default function HeroSection() {
                             {/* Background Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[linear-gradient(#44c7f6,#0037f0)] opacity-20 blur-[80px] -z-20 rounded-full pointer-events-none"></div>
                             {/* Card Stack Container */}
-                            <div className="relative w-full aspect-[4/5] sm:aspect-[4/4.5] perspective-[1000px]">
+                            <div className="relative w-full aspect-[4/4] sm:aspect-[4/3.5] perspective-[1000px]">
                                 {cards.map((card, idx) => {
                                     const offset = (idx - activeIndex + cards.length) % cards.length;
 

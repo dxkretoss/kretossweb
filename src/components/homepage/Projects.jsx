@@ -284,18 +284,25 @@ const ProjectCard = ({ project, id }) => {
                     >
                         <div>
                             {/* Tags */}
-                            <div className="flex flex-wrap gap-3 mb-6">
-                                {project.tags?.map((tag, idx) => (
-                                    <span key={idx} className={`bg-white/10 text-white border-[#FFFFFF1A] text-xs md:text-sm px-4 py-1.5 rounded-[4px] border`}>
-                                        {tag}
-                                    </span>
-                                ))}
+                            <div className='flex justify-between items-start'>
+                                <div className="flex flex-wrap gap-2 md:gap-3 mb-6">
+                                    {project.tags?.map((tag, idx) => (
+                                        <span key={idx} className="bg-white/10 text-white border border-[#FFFFFF1A] text-xs md:text-sm px-3 md:px-4 rounded-[4px] flex items-center justify-center h-[32px] md:h-[36px]">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                                {project.portfolioLogo &&
+                                    <div className="flex items-center justify-center shrink-0 ml-2 self-start bg-white/10 border border-[#FFFFFF1A] px-3 rounded-[4px] w-[100px] md:w-[120px] h-[32px] md:h-[36px]">
+                                        <img src={project.portfolioLogo} alt={project.title} className="max-w-full max-h-[16px] md:max-h-[20px] object-contain" />
+                                    </div>
+                                }
                             </div>
 
                             {/* Title & Description */}
-                            <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>
+                            {/* <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>
                                 {project.title}
-                            </h3>
+                            </h3> */}
                             <p className={`text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>
                                 {project.description}
                             </p>
@@ -374,34 +381,38 @@ export default function Projects() {
     const projectsList = [
         {
             "id": "01",
-            "slug": "nexthunt",
-            "portfolioImage": "/portfolio/custom/portfolio_nexthunt.webp",
+            "slug": "klubbrabatten",
+            "portfolioImage": "/portfolio/custom/klubbrabatten-new.jpg",
+            "portfolioLogo": "/portfolio/custom/Klubbrabatten-logo.png",
+
             "category": "Custom web",
             "tags": [
-                "NextHunt",
+                "Klubbrabatten",
                 "Web"
             ],
-            "title": "NextHunt",
-            "description": "NextHunt is an AI-powered career platform that automates the entire job search process. Instead of spending hours searching and applying manually, users receive personalized job matches, AI-tailored resumes, automated applications, and privacy-first career management while remaining completely invisible to their current employer.",
-            "timeline": "2-4 Months",
+            "title": "Klubbrabatten",
+            "description": "Klubbrabatten is a digital membership and fundraising platform that helps organizations raise funds through exclusive discounts while giving members access to valuable local and national offers.",
+            "timeline": "8-12 Months",
             "acquisition": "N/A",
             "country": "Germany",
-            "techStack": "React.js + Supabase",
+            "techStack": "ReactJS + Supabase + Node.js",
             "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "link": "/portfolio/nexthunt"
+            "link": "/portfolio/klubbrabatten"
         },
         {
             "id": "02",
             "slug": "palzea-widget",
-            "portfolioImage": "/portfolio/custom/portfolio_palzea-widget.webp",
+            "portfolioImage": "/portfolio/custom/Palzea-new.png",
+            "portfolioLogo": "/portfolio/custom/palzea-logo.png",
+
             "category": "Custom web",
             "tags": [
                 "Widget",
                 "Web"
             ],
             "title": "Palzea Widget",
-            "description": "Palzea is a secure peer-to-peer cryptocurrency trading platform that enables users to buy and sell digital assets directly with one another. The platform simplifies crypto transactions through real-time trading, integrated wallets, escrow protection, and an intuitive interface designed for both beginners and experienced traders.",
-            "timeline": "2-4 Months",
+            "description": "Palzea is a secure peer-to-peer crypto trading platform that enables users to buy and sell digital assets with real-time trading, integrated wallets, and escrow protection.",
+            "timeline": "4-6 Months",
             "acquisition": "N/A",
             "country": "UK",
             "techStack": "Blockchain + React.js + Node.js",
@@ -411,38 +422,40 @@ export default function Projects() {
         {
             "id": "03",
             "slug": "fily",
-            "portfolioImage": "/portfolio/custom/portfolio_fily.webp",
+            "portfolioImage": "/portfolio/custom/Fily-new.jpg",
+            "portfolioLogo": "/portfolio/custom/Fily-logo.png",
+
             "category": "Custom web",
             "tags": [
                 "Fily",
                 "Web"
             ],
             "title": "Fily",
-            "description": "Fily is an AI-powered business assistant built for Indian businesses, freelancers, and startups. The platform simplifies GST compliance, invoicing, bill management, tax reminders, expense tracking, and financial monitoring from a single intuitive dashboard, helping business owners stay compliant without accounting complexity.",
+            "description": "Fily is an AI-powered business assistant that simplifies GST compliance, invoicing, expenses, tax reminders, and financial management for Indian businesses and freelancers.",
             "timeline": "2-4 Months",
             "acquisition": "N/A",
-            "country": "USA",
+            "country": "India",
             "techStack": "ReactJS + Supabase",
             "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
             "link": "/portfolio/fily"
         },
         {
             "id": "04",
-            "slug": "klubbrabatten",
-            "portfolioImage": "/portfolio/custom/portfolio_klubbrabatten.webp",
+            "portfolioImage": "/portfolio/custom/domino_hub_new.jpg",
+            "portfolioLogo": "/portfolio/custom/domino-logo.png",
             "category": "Custom web",
             "tags": [
-                "Klubbrabatten",
+                "Domino Hub - Club's Edition",
                 "Web"
             ],
-            "title": "Klubbrabatten",
-            "description": "Klubbrabatten is a digital membership and fundraising platform that connects sports clubs, schools, associations, businesses, and consumers through exclusive discounts and member benefits. The platform enables organizations to raise funds while providing members with access to local and national offers through a seamless digital experience.",
-            "timeline": "2-4 Months",
+            "title": "Domino Hub - Club's Edition",
+            "description": "Domino Hub is a tournament and club management platform that helps domino communities manage members, tournaments, player statistics, leaderboards, attendance, and club operations.",
+            "timeline": "6-8 Months",
             "acquisition": "N/A",
-            "country": "Canada",
-            "techStack": "ReactJS + Supabase + Node.js",
+            "country": "Australia",
+            "techStack": "React.js + Node.js + Postgresql",
             "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "link": "/portfolio/klubbrabatten"
+            "link": "/portfolio/domino-hub"
         },
     ];
 

@@ -33,8 +33,14 @@ const awards = [
         desc: "The Genuine Quality",
         year: "2024",
         image: "/awards/award-cup-5.png"
+    },
+    {
+        title: "AI Innovation Excellence",
+        desc: "Next-Gen AI Solutions",
+        year: "2025",
+        image: "/awards/award-cup-6.png"
     }
-];
+].sort((a, b) => parseInt(b.year) - parseInt(a.year));
 
 export default function AwardsSection() {
     const sectionRef = useRef(null);

@@ -66,7 +66,7 @@ export default function App() {
                     <Route path="/portfolio" element={<PortfolioPage />} />
                     <Route path="/portfolio/:slug" element={<PortfolioDetailsPage />} />
                     <Route path="/hire-us" element={<HireUsPage />} />
-                    <Route path="/hire-us/:roleSlug" element={<HireUsDetailsPage />} />
+                    {/* <Route path="/hire-us/:roleSlug" element={<HireUsDetailsPage />} /> */}
                     <Route path="/careers" element={<CareerPage />} />
                     <Route path="/careers/:slug" element={<JobDetailsPage />} />
                     <Route path="/careers/:slug/apply" element={<JobApplicationPage />} />
