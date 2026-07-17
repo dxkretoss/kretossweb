@@ -185,12 +185,19 @@ const PortfolioCard = ({ item }) => {
                                         {tag}
                                     </span>
                                 ))}
+                                {item.activeUsers && (
+                                    <span className="bg-[#44c7f6]/10 text-[#44c7f6] border border-[#44c7f6]/50 text-xs md:text-sm px-3 md:px-4 rounded-[4px] flex items-center justify-center gap-1.5 h-[32px] md:h-[36px] font-medium whitespace-nowrap shadow-[0_0_12px_rgba(68,199,246,0.3)] animate-pulse">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                                        {item.activeUsers}
+                                    </span>
+                                )}
                             </div>
-                            {item.portfolioLogo &&
+                            
+                            {item.portfolioLogo && (
                                 <div className="flex items-center justify-center shrink-0 ml-2 self-start bg-white/10 border border-[#FFFFFF1A] px-3 rounded-[4px] w-[100px] md:w-[120px] h-[32px] md:h-[36px]">
                                     <img src={item.portfolioLogo} alt={item.title} className="max-w-full max-h-[16px] md:max-h-[20px] object-contain" />
                                 </div>
-                            }
+                            )}
                         </div>
                         {/* Title & Description */}
                         {/* <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>

@@ -151,9 +151,10 @@ export default function PortfolioHero() {
 
                         <div className="banner-btn opacity-0 translate-y-4">
                             <AnimatedButton
-                                text="Check Our Behance"
+                                text="Behance Portfolio"
                                 href="https://www.behance.net/kretoss"
                                 target="_blank"
+                                className='!uppercase'
                             />
                         </div>
 

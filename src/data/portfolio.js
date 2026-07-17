@@ -422,6 +422,7 @@ export const portfolioData = {
                                 "Klubbrabatten",
                                 "Mobile App"
                         ],
+                        "activeUsers": "10K+ Users",
                         "title": "Klubbrabatten",
                         "description": "Klubbrabatten is a digital savings platform that helps users discover exclusive local offers, explore nearby businesses, and access discounts through maps and digital coupons.",
                         "timeline": "10-12 Months",
