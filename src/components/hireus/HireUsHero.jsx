@@ -97,11 +97,11 @@ const HireUsHero = () => {
                                                 <img src={dev.img} alt={dev.name} className="w-full h-full object-cover grayscale" />
                                             </div>
                                             <div>
-                                                <h4 className="font-semibold text-[#0a1520] text-base">{dev.role}</h4>
+                                                <h4 className="font-semibold text-[#0a1520] text-sm md:text-base">{dev.role}</h4>
                                                 <p className="text-[12px] text-gray-500 font-medium">{dev.skills}</p>
                                             </div>
                                         </div>
-                                        <div className="px-4 py-1 bg-[#e8f7ec] text-[#22a04c] text-[12px] font-bold rounded-full border border-[#c1ebd0]">
+                                        <div className="px-2 md:px-4 py-1 bg-[#e8f7ec] text-[#22a04c] text-[10px] md:text-[12px] font-bold rounded-full border border-[#c1ebd0]">
                                             Available
                                         </div>
                                     </div>
