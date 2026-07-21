@@ -87,18 +87,18 @@ const WhyChoose = () => {
                     {reasons.map((reason, index) => (
                         <motion.div
                             key={index}
-                            className="bg-white rounded-2xl p-4 md:p-8 border border-gray-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgba(0,55,240,0.06)] hover:-translate-y-1 transition-all duration-300 group"
+                            className="bg-white rounded-2xl p-4 md:p-6 border border-gray-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgba(0,55,240,0.06)] hover:-translate-y-1 transition-all duration-300 group"
                             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
                         >
-                            <div className='flex flex-row md:flex-col items-center gap-2 '>
-                                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${reason.bg} transition-transform group-hover:scale-110 duration-300`}>
+                            <div className='flex items-center gap-4 mb-4'>
+                                <div className={`w-8 h-8 shrink-0 rounded-xl flex items-center justify-center ${reason.bg} transition-transform group-hover:scale-110 duration-300`}>
                                     {reason.icon}
                                 </div>
-                                <h4 className="text-lg font-bold text-[#0a1520] mb-3 leading-snug">
+                                <h4 className="text-base font-bold text-[#0a1520] leading-tight">
                                     {reason.title}
                                 </h4>
                             </div>
-                            <p className="text-gray-500 text-[15px] leading-relaxed">
+                            <p className="text-gray-500 text-[14px] leading-relaxed">
                                 {reason.description}
                             </p>
                         </motion.div>

@@ -632,7 +632,7 @@ const Technologies = () => {
                         />
                     </div>
 
-                    <div className="flex md:justify-center gap-3 overflow-x-auto pb-4 scrollbar-hide" data-lenis-prevent="true">
+                    <div className="flex md:justify-center gap-3 overflow-x-auto pb-4 scrollbar-hide">
                         {filters.map(filter => (
                             <button
                                 key={filter}

@@ -185,7 +185,7 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 
@@ -2137,7 +2137,7 @@ body {
   border-right: 1px solid #ffffff29;
   flex-flow: column;
   padding-top: 130px;
-  padding-bottom: 150px;
+  padding-bottom: 130px;
   display: flex;
 }
 
@@ -4528,7 +4528,7 @@ body {
 
   .hero-content-wrapper {
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 
   .technology,
@@ -5061,7 +5061,7 @@ body {
 
   .hero-content-wrapper {
     padding-top: 60px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 
   .nav-link.w--current {

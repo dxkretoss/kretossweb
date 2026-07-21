@@ -10,8 +10,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
 
 // Prevent ScrollTrigger from violently jumping to top on iOS when DOM height changes (like expanding text)
+// We use ignoreMobileResize in App.jsx instead, which is safer for desktop.
 ScrollTrigger.config({
-  autoRefreshEvents: "visibilitychange,DOMContentLoaded,load" // removed "resize"
+  autoRefreshEvents: "visibilitychange,DOMContentLoaded,load,resize" 
 });
 
 window.gsap = gsap;
