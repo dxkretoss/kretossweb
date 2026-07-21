@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X } from 'lucide-react';
+import { X, CheckCircle2 } from 'lucide-react';
 import PhoneInputModule from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import axios from 'axios';
@@ -15,8 +15,13 @@ const HireFormModal = ({ isOpen, onClose, devName, title }) => {
         message: ''
     });
     const [loading, setLoading] = useState(false);
+    const [isSuccess, setIsSuccess] = useState(false);
 
-    if (!isOpen) return null;
+    if (!isOpen) {
+        // Reset success state if modal is forced closed externally
+        if (isSuccess) setIsSuccess(false);
+        return null;
+    }
 
     const shortName = devName ? devName.split(' ')[0] : 'our developer';
     const displayName = devName ? devName : 'a Developer';
@@ -50,16 +55,20 @@ const HireFormModal = ({ isOpen, onClose, devName, title }) => {
             const response = await axios.post(`${apiUrl}/v1/kretoss-new/hire-us`, payload);
 
             if (response.data.success) {
-                toast.success(response.data.message || "Request submitted successfully!");
+                // Show success view inside modal
+                setIsSuccess(true);
+                
                 setFormData({
                     name: '',
                     email: '',
                     whatsappNumber: '',
                     message: ''
                 });
+                
+                // Auto close after showing success message
                 setTimeout(() => {
-                    onClose();
-                }, 2000); // Delay closing so the toast can be seen
+                    handleClose();
+                }, 3000); 
             } else {
                 toast.error(response.data.message || "Failed to submit. Please try again.");
             }
@@ -78,6 +87,7 @@ const HireFormModal = ({ isOpen, onClose, devName, title }) => {
             whatsappNumber: '',
             message: ''
         });
+        setIsSuccess(false);
         onClose();
     };
 
@@ -105,41 +115,53 @@ const HireFormModal = ({ isOpen, onClose, devName, title }) => {
                 </div>
 
                 <div className="p-6 overflow-y-auto" data-lenis-prevent="true">
-                    <form className="space-y-4" onSubmit={handleSubmit}>
-                        <div className="grid grid-cols-2 gap-4">
-                            <div>
-                                <label className="block text-[12px] font-extrabold text-[#475569] uppercase tracking-wider mb-1.5">Name</label>
-                                <input required type="text" name="name" value={formData.name} onChange={handleChange} placeholder="John Smith" className="w-full p-3 px-4 rounded-xl border border-[#e2e8f0] text-[15px] font-medium text-[#0f172a] placeholder-[#94a3b8] outline-none focus:border-[#3b82f6] focus:ring-1 focus:ring-[#3b82f6] transition-all" />
+                    {isSuccess ? (
+                        <div className="flex flex-col items-center justify-center py-10 px-4 text-center animate-in fade-in slide-in-from-bottom-4 duration-500">
+                            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-5 shadow-inner">
+                                <CheckCircle2 className="w-8 h-8 text-green-600 animate-bounce" />
+                            </div>
+                            <h4 className="text-2xl font-bold text-[#0a1520] mb-2 tracking-tight">Request Submitted!</h4>
+                            <p className="text-gray-500 text-[15px] max-w-[280px] mx-auto leading-relaxed">
+                                Thank you for reaching out. We will get back to you shortly.
+                            </p>
+                        </div>
+                    ) : (
+                        <form className="space-y-4" onSubmit={handleSubmit}>
+                            <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-[12px] font-extrabold text-[#475569] uppercase tracking-wider mb-1.5">Name</label>
+                                    <input required type="text" name="name" value={formData.name} onChange={handleChange} placeholder="John Smith" className="w-full p-3 px-4 rounded-xl border border-[#e2e8f0] text-[15px] font-medium text-[#0f172a] placeholder-[#94a3b8] outline-none focus:border-[#3b82f6] focus:ring-1 focus:ring-[#3b82f6] transition-all" />
+                                </div>
+
+                                <div>
+                                    <label className="block text-[12px] font-extrabold text-[#475569] uppercase tracking-wider mb-1.5">Email</label>
+                                    <input required type="email" name="email" value={formData.email} onChange={handleChange} placeholder="john@example.com" className="w-full p-3 px-4 rounded-xl border border-[#e2e8f0] text-[15px] font-medium text-[#0f172a] placeholder-[#94a3b8] outline-none focus:border-[#3b82f6] focus:ring-1 focus:ring-[#3b82f6] transition-all" />
+                                </div>
                             </div>
 
                             <div>
-                                <label className="block text-[12px] font-extrabold text-[#475569] uppercase tracking-wider mb-1.5">Email</label>
-                                <input required type="email" name="email" value={formData.email} onChange={handleChange} placeholder="john@example.com" className="w-full p-3 px-4 rounded-xl border border-[#e2e8f0] text-[15px] font-medium text-[#0f172a] placeholder-[#94a3b8] outline-none focus:border-[#3b82f6] focus:ring-1 focus:ring-[#3b82f6] transition-all" />
+                                <label className="block text-[12px] font-extrabold text-[#475569] uppercase tracking-wider mb-1.5">Whatsapp Number</label>
+                                <PhoneInput
+                                    country={'in'}
+                                    value={formData.whatsappNumber}
+                                    onChange={phone => setFormData({ ...formData, whatsappNumber: phone })}
+                                    containerClass="!w-full"
+                                    inputClass="!w-full !py-[23px] !pl-[60px] !pr-4 !rounded-xl !border-[#e2e8f0] focus:!border-[#3b82f6] !text-[15px] !font-medium !text-[#0f172a]"
+                                    buttonClass="!border-[#e2e8f0] !border-r-0 !rounded-l-xl !bg-white hover:!bg-gray-50 !px-1.5"
+                                    dropdownClass="!rounded-xl !shadow-xl !border-gray-100"
+                                />
                             </div>
-                        </div>
 
-                        <div>
-                            <label className="block text-[12px] font-extrabold text-[#475569] uppercase tracking-wider mb-1.5">Whatsapp Number</label>
-                            <PhoneInput
-                                country={'in'}
-                                value={formData.whatsappNumber}
-                                onChange={phone => setFormData({ ...formData, whatsappNumber: phone })}
-                                containerClass="!w-full"
-                                inputClass="!w-full !py-[23px] !pl-[60px] !pr-4 !rounded-xl !border-[#e2e8f0] focus:!border-[#3b82f6] !text-[15px] !font-medium !text-[#0f172a]"
-                                buttonClass="!border-[#e2e8f0] !border-r-0 !rounded-l-xl !bg-white hover:!bg-gray-50 !px-1.5"
-                                dropdownClass="!rounded-xl !shadow-xl !border-gray-100"
-                            />
-                        </div>
+                            <div>
+                                <label className="block text-[12px] font-extrabold text-[#475569] uppercase tracking-wider mb-1.5">Message</label>
+                                <textarea required rows="3" name="message" value={formData.message} onChange={handleChange} placeholder={`I want to hire ${shortName} for...`} className="w-full p-3 px-4 rounded-xl border border-[#e2e8f0] text-[15px] font-medium text-[#0f172a] placeholder-[#94a3b8] outline-none focus:border-[#3b82f6] focus:ring-1 focus:ring-[#3b82f6] transition-all resize-none"></textarea>
+                            </div>
 
-                        <div>
-                            <label className="block text-[12px] font-extrabold text-[#475569] uppercase tracking-wider mb-1.5">Message</label>
-                            <textarea required rows="3" name="message" value={formData.message} onChange={handleChange} placeholder={`I want to hire ${shortName} for...`} className="w-full p-3 px-4 rounded-xl border border-[#e2e8f0] text-[15px] font-medium text-[#0f172a] placeholder-[#94a3b8] outline-none focus:border-[#3b82f6] focus:ring-1 focus:ring-[#3b82f6] transition-all resize-none"></textarea>
-                        </div>
-
-                        <button type="submit" disabled={loading} className="h-[44px] w-full bg-[#0a1520] text-white font-bold text-[15px] rounded-xl transition-colors mt-2 flex items-center justify-center disabled:opacity-70 disabled:cursor-not-allowed">
-                            {loading ? "Submitting..." : "Submit Request"}
-                        </button>
-                    </form>
+                            <button type="submit" disabled={loading} className="h-[44px] w-full bg-[#0a1520] text-white font-bold text-[15px] rounded-xl transition-colors mt-2 flex items-center justify-center disabled:opacity-70 disabled:cursor-not-allowed">
+                                {loading ? "Submitting..." : "Submit Request"}
+                            </button>
+                        </form>
+                    )}
                 </div>
             </div>
         </div>

@@ -105,6 +105,10 @@ const HowItsWork = () => {
                                     {step.description}
                                 </p>
 
+                                {/* Connecting Line (Mobile only) */}
+                                {step.id !== 5 && (
+                                    <div className="block md:hidden absolute -bottom-[40px] left-1/2 -translate-x-1/2 w-[2px] h-[40px] bg-gradient-to-b from-indigo-200 to-blue-100 z-0"></div>
+                                )}
                             </motion.div>
                         ))}
                     </motion.div>

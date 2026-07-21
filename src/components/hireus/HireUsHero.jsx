@@ -16,7 +16,7 @@ const HireUsHero = () => {
             <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#8b5cf6]/5 rounded-full blur-[100px] pointer-events-none transform -translate-x-1/3 translate-y-1/3" />
 
             <div className="container mx-auto px-6 relative z-10 w-layout-blockcontainer container-full-width w-container">
-                <div className="grid lg:grid-cols-2 gap-16 lg:gap-12 items-center">
+                <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
                     {/* Left Column (Text Content) */}
                     <motion.div

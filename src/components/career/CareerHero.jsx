@@ -154,7 +154,7 @@ export default function CareerHero() {
             </div>
 
             <div className="container mx-auto w-layout-blockcontainer container-full-width relative relative z-10 mt-0 lg:mt-0">
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-8">
 
                     {/* Left Content */}
                     <div className="w-full lg:w-[55%] flex flex-col items-center sm:items-start text-center sm:text-left relative z-20">
@@ -197,7 +197,7 @@ export default function CareerHero() {
                             {/* Background Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[linear-gradient(#44c7f6,#0037f0)] opacity-20 blur-[80px] -z-20 rounded-full pointer-events-none"></div>
                             {/* Card Stack Container */}
-                            <div className="relative w-full aspect-[4/4] sm:aspect-[4/3.5] perspective-[1000px]">
+                            <div className="relative w-full aspect-[4/2.3] sm:aspect-[4/3.5] perspective-[1000px]">
                                 {cards.map((card, idx) => {
                                     const offset = (idx - activeIndex + cards.length) % cards.length;
 
@@ -230,7 +230,7 @@ export default function CareerHero() {
                                             className={`absolute inset-0 bg-[#121212] border border-white/10 rounded-xl overflow-hidden transition-all duration-700 ease-out origin-bottom ${transformClass} ${zIndex} ${opacity} ${shadow}`}
                                         >
                                             {/* Card Top / Image Area */}
-                                            <div className="relative w-full h-[35%] bg-[#080808] overflow-hidden flex items-center justify-center border-b border-white/5">
+                                            <div className="relative w-full h-[35%] bg-[#080808] overflow-hidden hidden sm:flex items-center justify-center border-b border-white/5">
                                                 {/* Text Background Pattern */}
                                                 <div className={`absolute inset-0 opacity-10 flex flex-wrap content-start p-3 text-xs font-mono overflow-hidden break-all leading-tight select-none bg-gradient-to-br ${card.gradient} text-transparent bg-clip-text`}>
                                                     {Array(15).fill(card.bgText).join(" ")}
@@ -246,19 +246,24 @@ export default function CareerHero() {
                                             </div>
 
                                             {/* Card Bottom / Details Area */}
-                                            <div className="h-[65%] p-5 sm:p-6 flex flex-col bg-gradient-to-b from-[#181818] to-[#0a0a0a]">
-                                                <div className="flex items-center justify-between text-gray-300 mb-4">
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="bg-white/5 w-8 h-8 rounded-full flex items-center justify-center text-sm border border-white/10 shadow-inner">
-                                                            {card.icon}
-                                                        </div>
-                                                        <span className="font-semibold tracking-wide text-sm sm:text-base text-white">{card.subtitle}</span>
+                                            <div className="h-full sm:h-[65%] p-5 sm:p-6 flex flex-col bg-gradient-to-b from-[#181818] to-[#0a0a0a] relative">
+                                                <div className="flex items-center gap-3 mb-3 sm:mb-4">
+                                                    <div className="bg-white/5 w-8 h-8 rounded-full flex items-center justify-center text-sm border border-white/10 shadow-inner shrink-0">
+                                                        {card.icon}
                                                     </div>
+                                                    <span className="font-semibold tracking-wide text-[13px] sm:text-base text-white pr-4">{card.subtitle}</span>
                                                 </div>
 
-                                                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed text-justify">
+                                                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed text-justify mb-6 sm:mb-0">
                                                     {card.desc}
                                                 </p>
+                                                
+                                                {/* Mobile Badge for Title positioned at bottom right */}
+                                                <div className="absolute bottom-4 right-4 sm:hidden z-10">
+                                                    <span className={`text-xs font-black uppercase tracking-wider bg-gradient-to-r ${card.gradient} text-transparent bg-clip-text`}>
+                                                        {card.title}
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     );

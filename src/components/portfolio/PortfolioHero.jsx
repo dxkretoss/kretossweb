@@ -130,7 +130,7 @@ export default function PortfolioHero() {
             </div>
 
             <div className="container mx-auto w-layout-blockcontainer container-full-width relative relative z-10 mt-0 lg:mt-0">
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-8">
 
                     {/* Left Content */}
                     <div className="w-full lg:w-[55%] flex flex-col items-center sm:items-start text-center sm:text-left relative z-20">

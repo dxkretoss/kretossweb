@@ -23,6 +23,7 @@ export default function PortfolioDetailsPage() {
     const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
     const [desktopScrollMode, setDesktopScrollMode] = useState('auto');
     const [activeSection, setActiveSection] = useState('overview');
+    const [isOverviewExpanded, setIsOverviewExpanded] = useState(false);
 
     const sectionRefs = {
         overview: useRef(null),
@@ -155,7 +156,7 @@ export default function PortfolioDetailsPage() {
                                     {project.name}
                                 </h1>
 
-                                <p className="text-[#62646a] text-[14px] md:text-lg leading-relaxed">
+                                <p className="hidden md:block text-[#62646a] text-[14px] md:text-lg leading-relaxed">
                                     {project.description}
                                 </p>
 
@@ -319,7 +320,7 @@ export default function PortfolioDetailsPage() {
 
 
             {/* ─── BODY: Sidebar + Content ─── */}
-            <div className="container mx-auto w-layout-blockcontainer container-full-width py-16">
+            <div className="container mx-auto w-layout-blockcontainer container-full-width py-10 md:py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 relative">
 
                     {/* ── Sticky Left Sidebar Nav ── */}
@@ -373,9 +374,18 @@ export default function PortfolioDetailsPage() {
                             <h2 className="text-[28px] md:text-[36px] font-semibold text-[#0a0f1e] tracking-tight mb-3 md:mb-6 leading-tight">
                                 About the Project
                             </h2>
-                            <p className="text-[#444] text-[14px] md:text-lg leading-[1.85] mb-8">
-                                {project.caseStudy?.overview || `We partnered with ${clientName} to address critical user experience challenges, optimize the system architecture, and deliver a scalable solution aligned with their long-term vision.`}
-                            </p>
+                            <div className="mb-8">
+                                <p className={`text-[#444] text-[14px] md:text-lg leading-[1.85] ${!isOverviewExpanded ? 'line-clamp-2 md:line-clamp-none' : ''}`}>
+                                    {project.caseStudy?.overview || `We partnered with ${clientName} to address critical user experience challenges, optimize the system architecture, and deliver a scalable solution aligned with their long-term vision.`}
+                                </p>
+                                <button
+                                    type="button"
+                                    onClick={(e) => { e.preventDefault(); setIsOverviewExpanded(!isOverviewExpanded); }}
+                                    className="md:hidden text-[#44c7f6] text-sm font-semibold hover:text-[#0037f0] mt-1"
+                                >
+                                    {isOverviewExpanded ? 'See less' : 'See more...'}
+                                </button>
+                            </div>
 
                             {/* Core Capabilities (Replaced Redundant Stats) */}
                             {project.caseStudy?.coreCapabilities && project.caseStudy.coreCapabilities.length > 0 && (
