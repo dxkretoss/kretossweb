@@ -16,26 +16,14 @@ export default function Layout() {
         // document.documentElement.setAttribute('data-wf-page', '6996a337655d586ffe288774');
         // document.documentElement.setAttribute('data-wf-site', '6996a337655d586ffe288775');
 
-        // Calibrate GSAP ScrollTriggers after route switches
-        setTimeout(() => {
+        const timeoutId = setTimeout(() => {
             if (window.ScrollTrigger) {
                 window.ScrollTrigger.refresh();
             }
         }, 150);
 
-        // ResizeObserver guarantees ScrollTrigger recalibrates if images load late and shift the layout!
-        let resizeTimeout;
-        const resizeObserver = new ResizeObserver(() => {
-            clearTimeout(resizeTimeout);
-            resizeTimeout = setTimeout(() => {
-                if (window.ScrollTrigger) window.ScrollTrigger.refresh();
-            }, 100);
-        });
-        resizeObserver.observe(document.body);
-
         return () => {
-            resizeObserver.disconnect();
-            clearTimeout(resizeTimeout);
+            clearTimeout(timeoutId);
         };
     }, [location.pathname]);
 

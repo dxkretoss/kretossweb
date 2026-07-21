@@ -258,7 +258,7 @@ export default function ContactPage() {
                             </div>
 
                             {/* Reviews above Author */}
-                            <div className="flex flex-col justify-start items-start gap-5 mt-auto border-t border-gray-100">
+                            <div className="flex flex-col justify-start items-start gap-5 mt-4 md:mt-auto border-t border-gray-100">
                                 {/* Single Animated Review */}
                                 <div className="h-[24px] overflow-hidden flex items-center">
                                     <div className="flex items-center gap-3" ref={reviewWrapperRef}>

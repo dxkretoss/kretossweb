@@ -81,9 +81,9 @@ export default function ContactHero() {
                     0.4
                 )
                 .to(".circle-shape-rotate", { opacity: 1, scale: 1, duration: 0.8, ease: "power4.out" }, 0.2)
-                .fromTo(".office-card", 
-                    { opacity: 0, y: 40, scale: 0.95 }, 
-                    { opacity: 1, y: 0, scale: 1, duration: 1, stagger: 0.2, ease: "power4.out", clearProps: "transform" }, 
+                .fromTo(".office-card",
+                    { opacity: 0, y: 40, scale: 0.95 },
+                    { opacity: 1, y: 0, scale: 1, duration: 1, stagger: 0.2, ease: "power4.out", clearProps: "transform" },
                     0.4
                 );
 
@@ -136,7 +136,7 @@ export default function ContactHero() {
             </div>
 
             <div className="container mx-auto w-layout-blockcontainer container-full-width relative z-10 px-4 md:px-8">
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8 max-w-7xl mx-auto">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-8 max-w-7xl mx-auto">
                     {/* Left Side */}
                     <div className="w-full lg:w-[55%] flex flex-col items-center sm:items-start text-center sm:text-left relative z-20">
                         <div className='mb-6 subtitle-box'>
@@ -150,14 +150,14 @@ export default function ContactHero() {
                             <AnimatedWord text="Today" isGradient={true} />
                         </h1>
 
-                        <p className="banner-text text-lg md:text-xl text-gray-300 max-w-xl font-medium mb-8">
+                        <p className="banner-text text-lg md:text-xl text-gray-300 max-w-xl font-medium mb-2 md:mb-8">
                             <AnimatedWord text="We're a creative design & development agency crafting meaningful digital experiences for growing brands." isGradient={false} />
                         </p>
                     </div>
 
                     {/* Right Content - Unique Staggered Office Cards */}
-                    <div className="w-full lg:w-[45%] relative z-20 flex justify-center mt-12 lg:mt-0 min-h-[350px]">
-                        
+                    <div className="w-full lg:w-[45%] relative z-20 flex justify-center mt-2 lg:mt-0 lg:min-h-[350px]">
+
                         {/* Abstract Glow Background */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] pointer-events-none">
                             <div className="absolute top-[10%] right-[10%] w-[150px] h-[150px] bg-[#44c7f6] rounded-full mix-blend-screen filter blur-[80px] opacity-30 animate-pulse"></div>
@@ -165,7 +165,7 @@ export default function ContactHero() {
                         </div>
 
                         <div className="relative w-full max-w-[450px] h-full flex flex-col items-center justify-center gap-6 sm:gap-0">
-                            
+
                             <div className="flex items-center gap-4 mb-4 sm:mb-8 w-full justify-center">
                                 <span className="h-[1px] w-12 sm:w-16 bg-gradient-to-r from-transparent to-[#44c7f6]/60"></span>
                                 <h2 className="text-white/90 font-medium text-sm md:text-base uppercase tracking-[0.3em] whitespace-nowrap">Our Offices</h2>
@@ -175,13 +175,13 @@ export default function ContactHero() {
                             {offices.map((office, idx) => {
                                 const isFirst = idx === 0;
                                 return (
-                                    <div 
+                                    <div
                                         key={idx}
                                         className={`office-card group relative w-full sm:w-[360px] rounded-3xl bg-[#111]/80 backdrop-blur-xl border border-white/10 p-5 transition-all duration-500 ease-out hover:border-[#44c7f6]/50 hover:bg-[#161616]/90 hover:-translate-y-3 hover:shadow-[0_20px_40px_-15px_rgba(68,199,246,0.3)] hover:z-30 ${isFirst ? 'z-20 sm:-translate-x-6 sm:-rotate-3' : 'z-10 sm:translate-x-10 sm:-mt-16 sm:rotate-2'}`}
                                     >
                                         {/* Inner glowing effect on hover */}
                                         <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-[#44c7f6]/5 to-transparent pointer-events-none"></div>
-                                        
+
                                         <div className="relative z-10">
                                             {/* Header */}
                                             <div className="flex items-center justify-between mb-4 pb-4 border-b border-white/5">
