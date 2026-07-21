@@ -103,13 +103,19 @@ export default function TeamsFuture() {
                                 {/* Top glowing line */}
                                 <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#0e54f1] to-transparent pointer-events-none"></div>
 
-                                {/* Icon Container */}
-                                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-b from-[#44c7f6] to-[#0037f0] flex items-center justify-center text-white mb-6 sm:mb-8 relative z-20 shadow-[0_8px_25px_-5px_rgba(0,55,240,0.5)] border border-white/10">
-                                    {feature.icon}
+                                {/* Header (Icon + Title) */}
+                                <div className="flex flex-row md:flex-col items-center md:items-start mb-4 md:mb-0">
+                                    <div className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-b from-[#44c7f6] to-[#0037f0] flex items-center justify-center text-white mr-4 md:mr-0 mb-0 md:mb-6 lg:mb-8 relative z-20 shadow-[0_8px_25px_-5px_rgba(0,55,240,0.5)] border border-white/10">
+                                        {feature.icon}
+                                    </div>
+                                    
+                                    <h3 className="md:hidden text-[18px] sm:text-xl font-semibold text-white relative z-20">
+                                        {feature.title}
+                                    </h3>
                                 </div>
 
                                 {/* Content */}
-                                <h3 className="text-xl md:text-2xl font-semibold text-white mb-3 sm:mb-4 relative z-20">
+                                <h3 className="hidden md:block text-xl md:text-2xl font-semibold text-white mb-3 sm:mb-4 relative z-20">
                                     {feature.title}
                                 </h3>
                                 <p className="text-[#888888] text-sm sm:text-[15px] md:text-base leading-relaxed relative z-20 font-medium">

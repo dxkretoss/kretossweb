@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ContactHero from './contact/ContactHero';
 import axios from 'axios';
 import { toast, Toaster } from 'react-hot-toast';
+import AnimatedButton from './ui/AnimatedButton';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,7 +53,7 @@ export default function ContactPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+
         if (!formData.fullName || !formData.email || !formData.projectBudget || !formData.projectDetails) {
             toast.error("Please fill in all required fields.");
             return;
@@ -207,7 +208,7 @@ export default function ContactPage() {
                                 <div className="flex flex-col items-start gap-2">
 
                                     <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-[#0a0a0a] leading-[1.1] tracking-tight">
-                                        Have questions?
+                                        Have Questions?
                                     </h2>
                                     <p className="text-gray-500 text-[14px] sm:text-base leading-relaxed max-w-md">
                                         Contact us using the form and details on this page. We're ready to help bring your ideas to life.
@@ -215,10 +216,11 @@ export default function ContactPage() {
                                 </div>
 
 
+                                <AnimatedButton href="https://calendly.com/ankur-k-kretoss/30min" text="BOOK A CALL"
+                                    target="_blank"></AnimatedButton>
 
                                 {/* Quick Contact Info */}
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {/* Phone */}
+                                {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div className="flex flex-col gap-3 group">
                                         <div className="flex items-center gap-3">
                                             <div className="w-8 h-8 rounded-md bg-white border border-gray-100 text-slate-900 flex items-center justify-center transition-all duration-300">
@@ -231,7 +233,6 @@ export default function ContactPage() {
                                         <p className="text-gray-600 font-medium text-base">(+91) 63534-23473</p>
                                     </div>
 
-                                    {/* Email */}
                                     <div className="flex flex-col gap-3 group">
                                         <div className="flex items-center gap-3">
                                             <div className="w-8 h-8 rounded-md bg-white border border-gray-100 text-slate-900 flex items-center justify-center transition-all duration-300">
@@ -252,14 +253,14 @@ export default function ContactPage() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
                             </div>
 
                             {/* Reviews above Author */}
                             <div className="flex flex-col justify-start items-start gap-5 mt-auto border-t border-gray-100">
                                 {/* Single Animated Review */}
-                                {/* <div className="h-[24px] overflow-hidden flex items-center">
+                                <div className="h-[24px] overflow-hidden flex items-center">
                                     <div className="flex items-center gap-3" ref={reviewWrapperRef}>
                                         <div className='flex gap-2 items-center'>
                                             <img src={REVIEWS_DATA[activeReview].logo} alt="Google" className="h-4 w-4 object-contain" />
@@ -272,7 +273,7 @@ export default function ContactPage() {
                                             {REVIEWS_DATA[activeReview].rating.toFixed(1)} / 5
                                         </div>
                                     </div>
-                                </div> */}
+                                </div>
 
                                 {/* Author info */}
                                 <div className="contact-author-review">

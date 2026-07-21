@@ -303,13 +303,13 @@ const ProjectCard = ({ project, id }) => {
                             {/* <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>
                                 {project.title}
                             </h3> */}
-                            <p className={`text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>
+                            <p className={`hidden md:block text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>
                                 {project.description}
                             </p>
                         </div>
 
                         {/* Stats & Actions */}
-                        <div className="flex flex-col mt-auto pt-8">
+                        <div className="flex flex-col mt-auto pt-0 md:pt-8">
                             <div className="flex flex-wrap justify-between gap-6 mb-8">
                                 <div>
                                     <p className={`text-[#DADADA] text-sm mb-1`}>Project timeline</p>

@@ -42,6 +42,7 @@ export default function About() {
 
     const videoRef = useRef(null);
     const [isMuted, setIsMuted] = useState(true);
+    const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleMute = () => {
         setIsMuted(!isMuted);
@@ -99,7 +100,7 @@ export default function About() {
             gsap.set(".about-subtitle-box", { opacity: 0, y: 100 });
             gsap.set(".about-subtitle-box .subtitle-image-icon", { rotate: 0, scale: 0 });
             gsap.set(".about-section-title", { opacity: 0, y: 100 });
-            gsap.set(".about-text", { opacity: 0, y: 100 });
+            gsap.set(".about-text-container", { opacity: 0, y: 100 });
             gsap.set(".about-button", { opacity: 0, y: 100 });
             gsap.set(".about-video", { opacity: 0, scale: 0.8 });
             gsap.set(".about-counter", { opacity: 0 });
@@ -164,7 +165,7 @@ export default function About() {
                 );
 
                 // 4. About text and button: same pattern
-                tl.fromTo(".about-text",
+                tl.fromTo(".about-text-container",
                     { opacity: 0, y: 100 },
                     {
                         opacity: 1,
@@ -293,7 +294,7 @@ export default function About() {
         <>
             <section ref={aboutRef} id="About" className="about">
                 <div className="container-full-width w-layout-blockcontainer container w-container">
-                    <div className="about-content-wrapper" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'space-between' }}>
+                    <div className="about-content-wrapper flex flex-wrap gap-[1rem] md:gap-[2rem] justify-between">
                         <div className="about-left-box">
                             <div className="about-slider" style={{ transform: "scaleX(0)", transformOrigin: "left center" }}>
                                 <div className="about-slider-two"></div>
@@ -309,7 +310,18 @@ export default function About() {
                                     Crafting Scalable, Secure, & Smart Digital Experiences
                                 </h2>
                             </div>
-                            <div className="about-text">Trusted by global clients, Kretoss Technology is your technology partner for mobile apps, websites, and digital solutions affordable, reliable, and tailored to your business needs. With over 12 years of experience, we deliver scalable, high-quality solutions that drive real business growth.</div>
+                            <div className="about-text-container relative mb-5">
+                                <div className={`about-text !mb-1 ${!isExpanded ? 'line-clamp-2 md:line-clamp-none' : ''}`}>
+                                    Trusted by global clients, Kretoss Technology is your technology partner for mobile apps, websites, and digital solutions affordable, reliable, and tailored to your business needs. With over 12 years of experience, we deliver scalable, high-quality solutions that drive real business growth.
+                                </div>
+                                <button 
+                                    type="button"
+                                    onClick={(e) => { e.preventDefault(); setIsExpanded(!isExpanded); }}
+                                    className="md:hidden text-[#44c7f6] text-sm font-semibold hover:text-[#0037f0] transition-colors leading-none"
+                                >
+                                    {isExpanded ? 'See less' : 'See more...'}
+                                </button>
+                            </div>
 
                             <div className="about-button">
                                 <AnimatedButton href="/about" text="MORE ABOUT US" ></AnimatedButton>
@@ -346,42 +358,42 @@ export default function About() {
                                         left: 0,
                                         width: '100%',
                                         height: '100%',
-                                    backgroundColor: 'rgba(0, 0, 0, 0.45)',
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    pointerEvents: 'none',
-                                    zIndex: 10,
-                                    borderRadius: '16px',
-                                    transition: 'opacity 0.3s',
-                                    opacity: isMuted ? 1 : 0
-                                }}
-                            >
-                                <div style={{
-                                    width: '64px',
-                                    height: '64px',
-                                    borderRadius: '50%',
-                                    backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                                    backdropFilter: 'blur(8px)',
-                                    WebkitBackdropFilter: 'blur(8px)',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    border: '1px solid rgba(255, 255, 255, 0.3)',
-                                    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                                    marginBottom: '8px'
-                                }}>
-                                    <VolumeX color="white" size={32} />
+                                        backgroundColor: 'rgba(0, 0, 0, 0.45)',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        pointerEvents: 'none',
+                                        zIndex: 10,
+                                        borderRadius: '16px',
+                                        transition: 'opacity 0.3s',
+                                        opacity: isMuted ? 1 : 0
+                                    }}
+                                >
+                                    <div style={{
+                                        width: '64px',
+                                        height: '64px',
+                                        borderRadius: '50%',
+                                        backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                                        backdropFilter: 'blur(8px)',
+                                        WebkitBackdropFilter: 'blur(8px)',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        border: '1px solid rgba(255, 255, 255, 0.3)',
+                                        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                                        marginBottom: '8px'
+                                    }}>
+                                        <VolumeX color="white" size={32} />
+                                    </div>
+                                    <span style={{
+                                        color: 'white',
+                                        fontWeight: '600',
+                                        fontSize: '16px'
+                                    }}>
+                                        Tap to unmute
+                                    </span>
                                 </div>
-                                <span style={{
-                                    color: 'white',
-                                    fontWeight: '600',
-                                    fontSize: '16px'
-                                }}>
-                                    Tap to unmute
-                                </span>
-                            </div>
                             </div>
                         </div>
                     </div>

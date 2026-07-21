@@ -139,25 +139,28 @@ export default function CoreValues() {
                                 {/* Overlay */}
                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 -z-10"></div>
 
-                                {/* Icon */}
-                                <div className="mb-4">
+                                {/* Header */}
+                                <div className="flex flex-row md:flex-col items-center md:items-start mb-4">
                                     <img
                                         loading="lazy"
                                         src="https://cdn.prod.website-files.com/6988869bae0a8bee880dad7e/69c90d3846893a3b52616a9a_shape.svg"
                                         alt="Star Icon"
-                                        className="w-8 h-8 mb-4 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12"
+                                        className="w-8 h-8 mr-4 md:mr-0 md:mb-4 shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12"
                                     />
-
-                                    <div className="w-full h-px bg-gradient-to-r from-white/20 to-transparent"></div>
+                                    <h3 className="md:hidden text-lg sm:text-xl font-bold tracking-wide text-white uppercase group-hover:text-blue-200 transition-colors duration-300">
+                                        {val.title}
+                                    </h3>
                                 </div>
+
+                                <div className="w-full h-px bg-gradient-to-r from-white/20 to-transparent mb-4"></div>
 
                                 {/* Text */}
                                 <div>
-                                    <h3 className="text-xl md:text-2xl font-bold tracking-wide mb-4 text-white uppercase group-hover:text-blue-200 transition-colors duration-300">
+                                    <h3 className="hidden md:block text-xl md:text-2xl font-bold tracking-wide mb-4 text-white uppercase group-hover:text-blue-200 transition-colors duration-300">
                                         {val.title}
                                     </h3>
 
-                                    <p className="text-gray-400 text-sm leading-relaxed pr-4 group-hover:text-gray-300 transition-colors duration-300">
+                                    <p className="text-gray-400 text-sm leading-relaxed pr-0 md:pr-4 group-hover:text-gray-300 transition-colors duration-300">
                                         {val.desc}
                                     </p>
                                 </div>

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Check, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 import HireFormModal from './HireFormModal';
+import AnimatedButton from '../ui/AnimatedButton';
+import AnimatedHireButton from '../ui/AnimatedHireButton';
 
 const HireUsHero = () => {
     const [showHireModal, setShowHireModal] = useState(false);
@@ -37,13 +39,11 @@ const HireUsHero = () => {
                             Scale your team with experienced React, Flutter, Shopify, Node.js, Python, WordPress, .NET, and Full Stack developers. Hire hourly, monthly, or get a fixed-cost project estimate from experts trusted by businesses worldwide.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                            <button onClick={(e) => { e.preventDefault(); setModalTitle(''); setShowHireModal(true); }} className="h-[44px] inline-flex justify-center items-center px-8 py-4 rounded-md bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-white font-semibold text-[16px] hover:opacity-90 transition-all duration-300 shadow-lg shadow-[#2563eb]/30 hover:shadow-[#2563eb]/40 hover:-translate-y-1">
-                                Hire Developer &rarr;
-                            </button>
-                            <button onClick={(e) => { e.preventDefault(); setModalTitle('Get Fixed Cost Quote'); setShowHireModal(true); }} className="h-[44px] inline-flex justify-center items-center px-8 py-4 rounded-md bg-white text-[#0037f0] font-semibold text-[16px] border border-[#0037f0]/20 hover:border-[#0037f0] hover:bg-gray-50 transition-all duration-300 shadow-sm hover:-translate-y-1">
-                                Get Fixed Cost Quote  &rarr;
-                            </button>
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
+                            <AnimatedButton text="HIRE DEVELOPER" onClick={(e) => { e.preventDefault(); setModalTitle(''); setShowHireModal(true); }} >
+                            </AnimatedButton>
+                            <AnimatedHireButton text="GET FIXED COST QUOTE" onClick={(e) => { e.preventDefault(); setModalTitle('Get Fixed Cost Quote'); setShowHireModal(true); }} className="h-[44px]" >
+                            </AnimatedHireButton>
                         </div>
 
                         {/* Checkmark Pills */}
@@ -72,7 +72,7 @@ const HireUsHero = () => {
                         {/* Start within 48 hours Badge */}
                         <div className="text-[14px] absolute -top-6 -right-2 lg:-top-6 lg:right-12 bg-white px-6 py-2.5 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.08)] z-20 flex items-center gap-2 border border-gray-100 font-semibold text-[#0a1520] animate-bounce-slow">
                             <Zap className="w-5 h-5 text-orange-500 fill-orange-500" />
-                            Start within 48 hours
+                            Start within 10 hours
                         </div>
 
                         {/* Browser Window Mockup */}

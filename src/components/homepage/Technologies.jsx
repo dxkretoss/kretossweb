@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Badge from '../ui/Badge';
 import AnimatedButton from '../ui/AnimatedButton';
@@ -124,6 +124,11 @@ const tabs = Object.keys(technologiesData);
 
 export default function Technologies() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  useEffect(() => {
+    setIsExpanded(false);
+  }, [activeTab]);
 
   return (
     <section className="technology bg-[#fafcff] relative overflow-hidden">
@@ -150,12 +155,12 @@ export default function Technologies() {
         </div>
 
         {/* Header */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-5 md:mb-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="technology-section-title text-4xl md:text-5xl font-semibold text-gray-900 !mb-6 tracking-tight"
+            className="technology-section-title text-4xl md:text-5xl font-semibold text-gray-900 mb-3 md:!mb-6 tracking-tight"
           >
             Technologies We Work With
           </motion.h2>
@@ -164,7 +169,7 @@ export default function Technologies() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
+            className="hidden md:block text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
           >
             We work on a wide range of tools and technologies to cater to client business requirements for existing projects or new applications.
           </motion.p>
@@ -176,12 +181,13 @@ export default function Technologies() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="flex overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] w-full justify-start lg:justify-center items-center gap-2 mb-16 p-2 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50 max-w-full lg:max-w-fit mx-auto"
+          className="flex overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] w-full justify-start lg:justify-center items-center gap-2 mb-8 md:mb-16 p-2 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50 max-w-full lg:max-w-fit mx-auto"
         >
           {tabs.map((tab) => (
             <button
               key={tab}
-              onClick={() => setActiveTab(tab)}
+              type="button"
+              onClick={(e) => { e.preventDefault(); setActiveTab(tab); }}
               className={`relative px-6 py-3 rounded-xl text-sm md:text-base font-semibold transition-colors duration-300 outline-none whitespace-nowrap shrink-0 ${activeTab === tab ? "!text-white" : "!text-gray-500 hover:text-gray-900"
                 }`}
               style={{ WebkitTapHighlightColor: "transparent" }}
@@ -208,16 +214,25 @@ export default function Technologies() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center w-full"
+              className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center w-full"
             >
               {/* Left Side: Description */}
-              <div className="w-full lg:w-5/12 !space-y-6">
-                <h3 className="text-3xl lg:text-4xl font-semibold !text-gray-900">
+              <div className="w-full lg:w-5/12 !space-y-3 md:!space-y-6">
+                <h3 className="text-[24px] lg:text-4xl font-semibold !text-gray-900">
                   {activeTab}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  {technologiesData[activeTab].description}
-                </p>
+                <div className="relative mb-2 md:mb-0">
+                  <p className={`text-gray-600 leading-relaxed text-sm md:text-lg ${!isExpanded ? 'line-clamp-2 md:line-clamp-none' : ''}`}>
+                    {technologiesData[activeTab].description}
+                  </p>
+                  <button 
+                      type="button"
+                      onClick={(e) => { e.preventDefault(); setIsExpanded(!isExpanded); }}
+                      className="md:hidden text-[#44c7f6] text-sm font-semibold hover:text-[#0037f0] transition-colors mt-1"
+                  >
+                      {isExpanded ? 'See less' : 'See more...'}
+                  </button>
+                </div>
 
                 <div className="pt-2">
                   <AnimatedButton text="LET'S WORK TOGETHER" href="/contact" />

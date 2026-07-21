@@ -276,6 +276,10 @@ export default function Footer({ currentRoute }) {
                     </div>
                 </div>
 
+                <div className="copyright-text !text-center mt-4 block md:hidden">
+                    © All Rights Reserved Kretoss Technology
+                </div>
+
                 {/* Footer Credits / Address Area */}
                 <div className="footer-bottom-wrapper">
                     <div className="w-layout-blockcontainer container w-container">
@@ -322,7 +326,7 @@ export default function Footer({ currentRoute }) {
                                     />
                                 </div>
                                 <div className="copyright-box">
-                                    <div className="copyright-text !text-left">
+                                    <div className="copyright-text !text-left hidden md:block">
                                         © All Rights Reserved Kretoss Technology
                                     </div>
                                 </div>

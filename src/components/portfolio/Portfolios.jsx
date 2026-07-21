@@ -192,7 +192,7 @@ const PortfolioCard = ({ item }) => {
                                     </span>
                                 )}
                             </div>
-                            
+
                             {item.portfolioLogo && (
                                 <div className="flex items-center justify-center shrink-0 ml-2 self-start bg-white/10 border border-[#FFFFFF1A] px-3 rounded-[4px] w-[100px] md:w-[120px] h-[32px] md:h-[36px]">
                                     <img src={item.portfolioLogo} alt={item.title} className="max-w-full max-h-[16px] md:max-h-[20px] object-contain" />
@@ -203,13 +203,13 @@ const PortfolioCard = ({ item }) => {
                         {/* <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>
                             {item.title}
                         </h3> */}
-                        <p className={`text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>
+                        <p className={`hidden md:block text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>
                             {item.description}
                         </p>
                     </div>
 
                     {/* Stats & Actions */}
-                    <div className="flex flex-col mt-auto pt-8">
+                    <div className="flex flex-col mt-auto pt-0 md:pt-8">
                         <div className="flex flex-wrap justify-between gap-6 mb-8">
                             <div>
                                 <p className={`text-[#DADADA] text-sm mb-1`}>Project timeline</p>
@@ -388,7 +388,7 @@ export default function Portfolios() {
                             <AnimatedButtonwithoutaero
                                 key={index}
                                 text={category.toUpperCase()}
-                                href={`#${category.replace(/\s+/g, '-').toLowerCase()}`}
+                                href="javascript:void(0)"
                                 className="!w-auto"
                                 onClick={handleCategoryClick}
                             />
@@ -396,7 +396,7 @@ export default function Portfolios() {
                             <AnimatedButtonBorder
                                 key={index}
                                 text={category.toUpperCase()}
-                                href={`#${category.replace(/\s+/g, '-').toLowerCase()}`}
+                                href="javascript:void(0)"
                                 className="!w-auto"
                                 onClick={handleCategoryClick}
                             />

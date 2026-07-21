@@ -15,14 +15,20 @@ import HireUsDetailsPage from './components/HireUsDetailsPage';
 import HireUsPage from './components/HireUsPage';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 function ScrollToTop() {
     const { pathname } = useLocation();
+    const prevPathRef = React.useRef(pathname);
 
     useEffect(() => {
-        window.scrollTo(0, 0);
-        if (window.lenis) {
-            window.lenis.scrollTo(0, { immediate: true });
+        if (prevPathRef.current !== pathname) {
+            window.scrollTo(0, 0);
+            if (window.lenis) {
+                window.lenis.scrollTo(0, { immediate: true });
+            }
+            prevPathRef.current = pathname;
         }
     }, [pathname]);
 
@@ -31,24 +37,40 @@ function ScrollToTop() {
 
 export default function App() {
     useEffect(() => {
+        // Disable Lenis on touch devices. iOS has native smooth momentum scrolling
+        // and using a JS scroll library on iOS causes severe jumping bugs when DOM changes.
+        const isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+        
+        // Configure ScrollTrigger to not aggressively refresh on mobile when height changes
+        ScrollTrigger.config({ ignoreMobileResize: true });
+
+        if (isTouch) {
+            window.lenis = null;
+            return;
+        }
+
         const lenis = new Lenis({
             lerp: 0.07, // Lower lerp means smoother, longer inertia
             smoothWheel: true,
             wheelMultiplier: 0.8,
-            touchMultiplier: 1.5,
+            // Removed touch properties since we disable it on touch devices entirely
         });
 
         // Expose globally for route change resets
         window.lenis = lenis;
 
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
+        // Sync Lenis with GSAP ScrollTrigger
+        lenis.on('scroll', ScrollTrigger.update);
 
-        requestAnimationFrame(raf);
+        const updateLenis = (time) => {
+            lenis.raf(time * 1000);
+        };
+
+        gsap.ticker.add(updateLenis);
+        gsap.ticker.lagSmoothing(0);
 
         return () => {
+            gsap.ticker.remove(updateLenis);
             lenis.destroy();
         };
     }, []);

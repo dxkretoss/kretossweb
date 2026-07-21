@@ -19,14 +19,14 @@ export default function ContactHero() {
         {
             country: "India",
             icon: "https://flagcdn.com/in.svg",
-            address: "B-1007, Shilp Corporate Park, Near Rajpath Club, Rajpath-Rangoli Road, Ahmedabad. 380054",
-            email: "hello@kretoss.com"
+            label: "Headquarters",
+            address: "B-1007, Shilp Corporate Park, Near Rajpath Club, Rajpath-Rangoli Road, Ahmedabad. 380054"
         },
         {
             country: "United States",
             icon: "https://flagcdn.com/us.svg",
-            address: "9245 East Wood Drive, SCOTTSDALE, AZ 85260",
-            email: "hello@kretoss.com"
+            label: "Global Branch",
+            address: "9245 East Wood Drive, SCOTTSDALE, AZ 85260"
         }
     ];
 
@@ -62,7 +62,7 @@ export default function ContactHero() {
             gsap.set(".banner-title", { y: 30 });
             gsap.set(".banner-text", { y: 30 });
             gsap.set(".hero-word", { opacity: 0, y: 15 });
-            gsap.set(".office-card", { opacity: 0, y: 30 });
+            gsap.set(".office-card", { opacity: 0, y: 40, scale: 0.95 });
             gsap.set(".circle-shape-rotate", { opacity: 0, scale: 0.8, xPercent: -50, yPercent: -50 });
 
             const tl = gsap.timeline();
@@ -81,10 +81,10 @@ export default function ContactHero() {
                     0.4
                 )
                 .to(".circle-shape-rotate", { opacity: 1, scale: 1, duration: 0.8, ease: "power4.out" }, 0.2)
-                .fromTo(".office-card",
-                    { opacity: 0, y: 30 },
-                    { opacity: 1, y: 0, duration: 0.8, ease: "power4.out", stagger: 0.2, clearProps: "transform" },
-                    0.6
+                .fromTo(".office-card", 
+                    { opacity: 0, y: 40, scale: 0.95 }, 
+                    { opacity: 1, y: 0, scale: 1, duration: 1, stagger: 0.2, ease: "power4.out", clearProps: "transform" }, 
+                    0.4
                 );
 
             // Continuous animations
@@ -135,53 +135,82 @@ export default function ContactHero() {
                 />
             </div>
 
-            <div className="container mx-auto relative z-10 px-4 md:px-8">
-                <div className="flex flex-col items-center justify-center text-center max-w-5xl mx-auto">
-
-                    <div className='mb-6 subtitle-box'>
-                        <Badge variant='white'>Contact Us</Badge>
-                    </div>
-
-                    <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] tracking-tight mb-6">
-                        <AnimatedWord text="Build " isGradient={false} />
-                        <AnimatedWord text="Together " isGradient={false} />
-                        <AnimatedWord text="Today" isGradient={true} />
-                    </h1>
-
-                    <p className="banner-text text-lg md:text-xl text-gray-300 max-w-2xl font-medium mb-8">
-                        <AnimatedWord text="We're a creative design & development agency crafting meaningful digital experiences for growing brands." isGradient={false} />
-                    </p>
-
-                    {/* Offices Section */}
-                    <div className="w-full flex flex-col items-center pt-12 relative mt-4">
-                        {/* Decorative top border */}
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/4 h-[1px] bg-gradient-to-r from-transparent via-[#44c7f6]/50 to-transparent shadow-[0_0_15px_#44c7f6]"></div>
-
-                        <div className="flex items-center gap-4 mb-4">
-                            <span className="h-[1px] w-12 bg-gradient-to-r from-transparent to-[#44c7f6]/60"></span>
-                            <h2 className="text-white/90 font-medium text-sm md:text-base uppercase tracking-[0.3em]">Our Offices</h2>
-                            <span className="h-[1px] w-12 bg-gradient-to-l from-transparent to-[#0037f0]/60"></span>
+            <div className="container mx-auto w-layout-blockcontainer container-full-width relative z-10 px-4 md:px-8">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8 max-w-7xl mx-auto">
+                    {/* Left Side */}
+                    <div className="w-full lg:w-[55%] flex flex-col items-center sm:items-start text-center sm:text-left relative z-20">
+                        <div className='mb-6 subtitle-box'>
+                            <Badge variant='white'>Contact Us</Badge>
                         </div>
 
-                        <div className="w-full flex flex-col md:flex-row justify-center items-start gap-12 md:gap-24 relative z-10">
-                            {offices.map((office, idx) => (
-                                <div key={idx} className="flex flex-col items-center text-center relative px-6 py-4">
-                                    <div className="flex items-center gap-3 mb-5">
-                                        <div className="flex items-center justify-center w-8 h-8 rounded-full bg-white/5 border border-white/10 overflow-hidden">
-                                            <img src={office.icon} alt={office.country} className="w-6 h-6 rounded-full object-cover" />
+                        <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] tracking-tight mb-6">
+                            <AnimatedWord text="Build " isGradient={false} />
+                            <AnimatedWord text="Together " isGradient={false} />
+                            <br className="hidden lg:block" />
+                            <AnimatedWord text="Today" isGradient={true} />
+                        </h1>
+
+                        <p className="banner-text text-lg md:text-xl text-gray-300 max-w-xl font-medium mb-8">
+                            <AnimatedWord text="We're a creative design & development agency crafting meaningful digital experiences for growing brands." isGradient={false} />
+                        </p>
+                    </div>
+
+                    {/* Right Content - Unique Staggered Office Cards */}
+                    <div className="w-full lg:w-[45%] relative z-20 flex justify-center mt-12 lg:mt-0 min-h-[350px]">
+                        
+                        {/* Abstract Glow Background */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] pointer-events-none">
+                            <div className="absolute top-[10%] right-[10%] w-[150px] h-[150px] bg-[#44c7f6] rounded-full mix-blend-screen filter blur-[80px] opacity-30 animate-pulse"></div>
+                            <div className="absolute bottom-[10%] left-[10%] w-[200px] h-[200px] bg-[#0037f0] rounded-full mix-blend-screen filter blur-[80px] opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+                        </div>
+
+                        <div className="relative w-full max-w-[450px] h-full flex flex-col items-center justify-center gap-6 sm:gap-0">
+                            
+                            <div className="flex items-center gap-4 mb-4 sm:mb-8 w-full justify-center">
+                                <span className="h-[1px] w-12 sm:w-16 bg-gradient-to-r from-transparent to-[#44c7f6]/60"></span>
+                                <h2 className="text-white/90 font-medium text-sm md:text-base uppercase tracking-[0.3em] whitespace-nowrap">Our Offices</h2>
+                                <span className="h-[1px] w-12 sm:w-16 bg-gradient-to-l from-transparent to-[#0037f0]/60"></span>
+                            </div>
+
+                            {offices.map((office, idx) => {
+                                const isFirst = idx === 0;
+                                return (
+                                    <div 
+                                        key={idx}
+                                        className={`office-card group relative w-full sm:w-[360px] rounded-3xl bg-[#111]/80 backdrop-blur-xl border border-white/10 p-5 transition-all duration-500 ease-out hover:border-[#44c7f6]/50 hover:bg-[#161616]/90 hover:-translate-y-3 hover:shadow-[0_20px_40px_-15px_rgba(68,199,246,0.3)] hover:z-30 ${isFirst ? 'z-20 sm:-translate-x-6 sm:-rotate-3' : 'z-10 sm:translate-x-10 sm:-mt-16 sm:rotate-2'}`}
+                                    >
+                                        {/* Inner glowing effect on hover */}
+                                        <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-[#44c7f6]/5 to-transparent pointer-events-none"></div>
+                                        
+                                        <div className="relative z-10">
+                                            {/* Header */}
+                                            <div className="flex items-center justify-between mb-4 pb-4 border-b border-white/5">
+                                                <div className="flex items-center gap-4">
+                                                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center overflow-hidden shadow-inner group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                                                        <img src={office.icon} alt={office.country} className="w-full h-full object-cover" />
+                                                    </div>
+                                                    <div>
+                                                        <h3 className="text-xl font-bold bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text tracking-wide">{office.country}</h3>
+                                                        <p className="text-[#44c7f6] text-[10px] font-bold tracking-[0.2em] uppercase mt-0.5 opacity-80">{office.label}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Details */}
+                                            <div>
+                                                <div className="flex items-start gap-3 text-gray-400 group-hover:text-gray-200 transition-colors duration-300">
+                                                    <div className="w-7 h-7 shrink-0 rounded-full bg-white/5 flex items-center justify-center mt-0.5">
+                                                        <svg className="w-3.5 h-3.5 text-[#0037f0] group-hover:text-[#44c7f6] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                                    </div>
+                                                    <p className="text-sm leading-relaxed font-medium">{office.address}</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3 className="text-xl md:text-2xl font-bold text-white tracking-wide">{office.country}</h3>
                                     </div>
-
-                                    <div className="text-gray-400 max-w-[380px] text-[15px] leading-relaxed">
-                                        <p>{office.address}</p>
-                                    </div>
-                                </div>
-                            ))}
+                                )
+                            })}
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

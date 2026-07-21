@@ -137,7 +137,7 @@ export default function BuildWithUs() {
                                         extraordinary.
                                     </span>
                                 </h2>
-                                <p className="text-gray-500 text-base sm:text-lg max-w-xl leading-relaxed mb-4">
+                                <p className="text-gray-500 text-sm sm:text-lg max-w-xl leading-relaxed mb-4">
                                     Joining our team means being part of a dynamic group of professionals dedicated to shaping the future with innovative tech.
                                 </p>
                                 <div className="inline-block">
