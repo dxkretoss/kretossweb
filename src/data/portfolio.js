@@ -441,7 +441,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Dolks",
-                        "description": "Dolks is a maritime networking platform that connects professionals and businesses through an interactive globe, business discovery, social networking, messaging, and industry events.",
+                        "description": "Dolks is a maritime networking platform featuring an interactive <strong>3D Earth globe</strong> where users can discover professionals and businesses through location-based pins. Clicking a pin smoothly zooms into the location and displays the associated profile, alongside social networking, messaging, and industry event features.",
                         "timeline": "12-14 Months",
                         "acquisition": "N/A",
                         "country": "Germany",
@@ -458,6 +458,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Offarat",
+                        "activeUsers": "10K+ Users",
                         "description": "Offarat is a food discovery platform that helps users explore restaurants, browse menus, discover exclusive offers, and order food through a simple and personalized mobile experience.",
                         "timeline": "10-12 Months",
                         "acquisition": "N/A",
@@ -475,6 +476,7 @@ export const portfolioData = {
                                 "Mobile App"
                         ],
                         "title": "Book a Builder",
+                        "activeUsers": "10K+ Users",
                         "description": "Book a Builder connects homeowners, builders, and contractors to manage project progress, tasks, communication, documents, and real-time updates from one intuitive mobile platform.",
                         "timeline": "8-10 Months",
                         "acquisition": "N/A",

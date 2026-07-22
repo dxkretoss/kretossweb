@@ -89,6 +89,91 @@ const getTechIcons = (techString) => {
     return uniqueIcons;
 };
 
+const hexToRgb = (hex) => {
+    if (!hex) return { r: 68, g: 199, b: 246 };
+    let cleanHex = hex.replace('#', '');
+    if (cleanHex.length === 3) {
+        cleanHex = cleanHex.split('').map(c => c + c).join('');
+    }
+    const num = parseInt(cleanHex, 16);
+    if (isNaN(num)) return { r: 68, g: 199, b: 246 };
+    return {
+        r: (num >> 16) & 255,
+        g: (num >> 8) & 255,
+        b: num & 255
+    };
+};
+
+const rgbToHsl = (r, g, b) => {
+    r /= 255; g /= 255; b /= 255;
+    const max = Math.max(r, g, b), min = Math.min(r, g, b);
+    let h, s, l = (max + min) / 2;
+
+    if (max === min) {
+        h = s = 0;
+    } else {
+        const d = max - min;
+        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+        switch (max) {
+            case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+            case g: h = (b - r) / d + 2; break;
+            case b: h = (r - g) / d + 4; break;
+        }
+        h /= 6;
+    }
+    return { h: Math.round(h * 360), s, l };
+};
+
+const hslToRgb = (h, s, l) => {
+    let r, g, b;
+    if (s === 0) {
+        r = g = b = l;
+    } else {
+        const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+        const p = 2 * l - q;
+        const hue2rgb = (p, q, t) => {
+            if (t < 0) t += 1;
+            if (t > 1) t -= 1;
+            if (t < 1/6) return p + (q - p) * 6 * t;
+            if (t < 1/2) return q;
+            if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+            return p;
+        };
+        r = hue2rgb(p, q, (h / 360) + 1/3);
+        g = hue2rgb(p, q, (h / 360));
+        b = hue2rgb(p, q, (h / 360) - 1/3);
+    }
+    return {
+        r: Math.round(r * 255),
+        g: Math.round(g * 255),
+        b: Math.round(b * 255)
+    };
+};
+
+const getDynamicBadgeStyle = (bgColor) => {
+    const rgb = hexToRgb(bgColor);
+    const { h, s } = rgbToHsl(rgb.r, rgb.g, rgb.b);
+
+    let accentRgb;
+    if (s < 0.1) {
+        accentRgb = { r: 68, g: 199, b: 246 };
+    } else {
+        accentRgb = hslToRgb(h, Math.max(s, 0.85), 0.65);
+    }
+
+    const { r, g, b } = accentRgb;
+
+    return {
+        accentColor: `rgb(${r}, ${g}, ${b})`,
+        badgeStyle: {
+            backgroundColor: 'rgba(255, 255, 255, 0.08)',
+            color: '#FFFFFF',
+            borderColor: `rgba(${r}, ${g}, ${b}, 0.65)`,
+            boxShadow: `0 0 12px rgba(${r}, ${g}, ${b}, 0.35)`
+        }
+    };
+};
+
 const PortfolioCard = ({ item }) => {
     const [bgColor, setBgColor] = useState('#111111');
     const [imageLoaded, setImageLoaded] = useState(false);
@@ -100,20 +185,21 @@ const PortfolioCard = ({ item }) => {
 
             const extractColor = async () => {
                 try {
-                    // Extract color only from the top-left 50x50 pixels to avoid the white mockups
-                    const color = await fac.getColorAsync(imgRef.current, {
+                    const img = imgRef.current;
+                    const naturalHeight = img.naturalHeight || img.clientHeight || 400;
+                    // Extract color directly from the bottom-left box region of the image canvas
+                    const color = await fac.getColorAsync(img, {
                         left: 10,
-                        top: 10,
-                        width: 50,
-                        height: 50,
+                        top: Math.max(10, naturalHeight - 80),
+                        width: 60,
+                        height: 60,
                         algorithm: 'dominant'
                     });
                     setBgColor(color.hex);
-                    // Store if it's light or dark for dynamic text colors
                     if (color.isDark) {
-                        imgRef.current.dataset.isDark = 'true';
+                        img.dataset.isDark = 'true';
                     } else {
-                        imgRef.current.dataset.isDark = 'false';
+                        img.dataset.isDark = 'false';
                     }
                     setImageLoaded(true);
                 } catch (e) {
@@ -185,12 +271,21 @@ const PortfolioCard = ({ item }) => {
                                         {tag}
                                     </span>
                                 ))}
-                                {item.activeUsers && (
-                                    <span className="bg-[#44c7f6]/10 text-[#44c7f6] border border-[#44c7f6]/50 text-xs md:text-sm px-3 md:px-4 rounded-[4px] flex items-center justify-center gap-1.5 h-[32px] md:h-[36px] font-medium whitespace-nowrap shadow-[0_0_12px_rgba(68,199,246,0.3)] animate-pulse">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
-                                        {item.activeUsers}
-                                    </span>
-                                )}
+                                {item.activeUsers && (() => {
+                                    const { accentColor, badgeStyle } = getDynamicBadgeStyle(bgColor);
+                                    return (
+                                        <span
+                                            className="text-xs md:text-sm px-3 md:px-4 rounded-[4px] flex items-center justify-center gap-1.5 h-[32px] md:h-[36px] font-medium whitespace-nowrap border animate-pulse transition-all duration-500"
+                                            style={badgeStyle}
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={accentColor} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                                <polyline points="16 7 22 7 22 13"></polyline>
+                                            </svg>
+                                            {item.activeUsers}
+                                        </span>
+                                    );
+                                })()}
                             </div>
 
                             {item.portfolioLogo && (
@@ -203,9 +298,10 @@ const PortfolioCard = ({ item }) => {
                         {/* <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>
                             {item.title}
                         </h3> */}
-                        <p className={`hidden md:block text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>
-                            {item.description}
-                        </p>
+                        <p 
+                            className={`hidden md:block text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}
+                            dangerouslySetInnerHTML={{ __html: item.description }}
+                        />
                     </div>
 
                     {/* Stats & Actions */}
