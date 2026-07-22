@@ -44,6 +44,13 @@ export default function JobDetailsPage() {
         });
     };
 
+    const [copied, setCopied] = useState(false);
+    const handleCopyEmail = () => {
+        navigator.clipboard.writeText('hr@kretoss.com');
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+    };
+
     React.useLayoutEffect(() => {
         const scrollToTop = () => {
             if (window.lenis) {
@@ -205,16 +212,66 @@ export default function JobDetailsPage() {
                         )}
                     </div>
 
-                    {/* Right Column (Application Form) */}
-                    <div className="lg:col-span-1 lg:sticky lg:top-0 w-full mt-6 lg:mt-0">
-                        <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
-                            <h3 className="text-xl sm:text-2xl font-bold mb-6 text-gray-900 leading-snug">
-                                Apply for {job.title}
-                            </h3>
+                    {/* Right Column (Application Box) */}
+                    <div className="lg:col-span-1 lg:sticky lg:top-24 w-full mt-6 lg:mt-0">
+                        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-lg relative">
+                            <div className="flex flex-col">
+                                <h3 className="text-lg sm:text-xl font-bold mb-4 text-gray-900 border-b border-gray-100 pb-3">
+                                    How to Apply
+                                </h3>
 
+                                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                                    To apply for the <span className="font-semibold text-gray-800">{job.title}</span> position, please send your updated resume and cover letter directly to our recruitment team.
+                                </p>
+
+                                {/* Email Badge */}
+                                <div className="bg-gray-50 border border-gray-200/60 rounded-lg p-4 flex items-center justify-between">
+                                    <div className="flex flex-col min-w-0">
+                                        <span className="text-[10px] text-gray-400 uppercase tracking-wider font-semibold mb-0.5">Recruitment Email</span>
+                                        <a 
+                                            href={`mailto:hr@kretoss.com?subject=Application for ${encodeURIComponent(job.title)}`}
+                                            className="text-base font-semibold text-[#0037f0] hover:underline truncate"
+                                        >
+                                            hr@kretoss.com
+                                        </a>
+                                    </div>
+                                    <button 
+                                        onClick={handleCopyEmail}
+                                        className="ml-3 flex items-center justify-center w-8 h-8 rounded-md bg-white border border-gray-200 text-gray-500 hover:text-gray-800 hover:border-gray-300 transition-all shadow-sm shrink-0"
+                                        title="Copy Email Address"
+                                    >
+                                        {copied ? (
+                                            <svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        ) : (
+                                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                                            </svg>
+                                        )}
+                                    </button>
+                                </div>
+                                
+                                {copied && (
+                                    <div className="text-right mt-1.5">
+                                        <span className="text-xs text-green-600 font-medium">Copied to clipboard!</span>
+                                    </div>
+                                )}
+
+                                <div className="mt-6 pt-4 border-t border-gray-100 flex items-start gap-2">
+                                    <svg className="w-4 h-4 text-gray-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span className="text-[11px] text-gray-500 leading-relaxed">
+                                        Please mention <strong>"{job.title}"</strong> in the subject line of your email.
+                                    </span>
+                                </div>
+                            </div>
+
+                            {/* Commented Out Form for Reference */}
+                            {/* 
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {/* Full Name */}
                                     <div className='single-contact-group'>
                                         <label className="contact-label !text-gray-800 text-sm mb-1 block">Full Name<span className="text-blue-500 ml-1">*</span></label>
                                         <input type="text" name="fullName" required value={formData.fullName} onChange={handleInputChange} placeholder="Enter Your Name" className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors text-sm" />
@@ -225,9 +282,7 @@ export default function JobDetailsPage() {
                                         <input type="email" name="email" required value={formData.email} onChange={handleInputChange} placeholder="Enter Your Email" className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors text-sm" />
                                     </div>
                                 </div>
-                                {/* Email & Phone */}
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {/* Experience */}
                                     <div className='single-contact-group'>
                                         <label className="contact-label !text-gray-800 text-sm mb-1 block">Experience<span className="text-blue-500 ml-1">*</span></label>
                                         <select name="experience" required value={formData.experience} onChange={handleInputChange} className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors appearance-none text-sm">
@@ -245,7 +300,6 @@ export default function JobDetailsPage() {
                                     </div>
                                 </div>
 
-                                {/* Salary */}
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div className='single-contact-group'>
                                         <label className="contact-label !text-gray-800 text-sm mb-1 block">Current Salary<span className="text-blue-500 ml-1">*</span></label>
@@ -256,12 +310,10 @@ export default function JobDetailsPage() {
                                         <input type="text" name="expectedSalary" required value={formData.expectedSalary} onChange={handleInputChange} placeholder="e.g. 35,000" className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors text-sm" />
                                     </div>
                                 </div>
-                                {/* LinkedIn */}
                                 <div className='single-contact-group'>
                                     <label className="contact-label !text-gray-800 text-sm mb-1 block">LinkedIn Profile<span className="text-blue-500 ml-1">*</span></label>
                                     <input type="url" name="linkedinUrl" required value={formData.linkedinUrl} onChange={handleInputChange} placeholder="Enter URL" className="h-[40px] w-full bg-gray-50 border border-gray-200 rounded-md px-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#44c7f6] focus:ring-1 focus:ring-[#44c7f6] transition-colors text-sm" />
                                 </div>
-                                {/* Resume */}
                                 <div className='single-contact-group'>
                                     <label className="contact-label !text-gray-800 text-sm mb-1 block">Resume Attachment<span className="text-blue-500 ml-1">*</span></label>
                                     <div className="h-[40px] relative w-full bg-gray-50 border border-gray-200 rounded-md focus-within:border-[#44c7f6] focus-within:ring-1 focus-within:ring-[#44c7f6] transition-colors text-sm">
@@ -279,6 +331,7 @@ export default function JobDetailsPage() {
                                     </button>
                                 </div>
                             </form>
+                            */}
                         </div>
                     </div>
 

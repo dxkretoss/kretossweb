@@ -164,8 +164,8 @@ export default function CareerHero() {
                         </div>
 
                         <h1 className="banner-title text-[32px] lg:text-[60px] font-bold text-white leading-[1.1] sm:leading-[1.1] tracking-tight mb-6 ">
-                            <AnimatedWord text="Unlock new " isGradient={false} />
-                            <AnimatedWord text="career" isGradient={true} />
+                            <AnimatedWord text="Unlock New " isGradient={false} />
+                            <AnimatedWord text="Career" isGradient={true} />
                             <AnimatedWord text="Opportunities with us" isGradient={false} />
                         </h1>
 
@@ -257,7 +257,7 @@ export default function CareerHero() {
                                                 <p className="text-gray-400 text-xs sm:text-sm leading-relaxed text-justify mb-6 sm:mb-0">
                                                     {card.desc}
                                                 </p>
-                                                
+
                                                 {/* Mobile Badge for Title positioned at bottom right */}
                                                 <div className="absolute bottom-4 right-4 sm:hidden z-10">
                                                     <span className={`text-xs font-black uppercase tracking-wider bg-gradient-to-r ${card.gradient} text-transparent bg-clip-text`}>

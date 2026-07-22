@@ -89,19 +89,19 @@ export default function TeamSection() {
                     </div>
 
                     {/* Right Content - Cards Grid */}
-                    <div className="team-grid grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-0 lg:mt-0">
+                    <div className="team-grid grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[480px] w-full mt-0 lg:mt-0 lg:ml-auto">
                         {teamMembersTop.map((member, idx) => (
                             <a
                                 key={idx}
                                 href={'#'}
-                                className="team-card flex flex-col bg-white rounded-md p-2 overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 group w-full max-w-[250px] sm:max-w-full lg:max-w-[350px] h-[320px] sm:h-[360px] mx-auto"
+                                className="team-card flex flex-col bg-white rounded-md p-2 overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 group w-full max-w-[190px] sm:max-w-[210px] lg:max-w-[230px] h-[260px] sm:h-[280px] lg:h-[300px] mx-auto"
                             >
                                 <div className="rounded-md overflow-hidden relative flex-1 bg-gray-100">
                                     <img
                                         loading="lazy"
                                         alt={member.name}
                                         src={member.image}
-                                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                        className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                                     />
                                 </div>
                                 <div className="pt-3 pb-2 px-2 text-left">

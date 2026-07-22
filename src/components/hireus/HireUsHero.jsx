@@ -94,7 +94,7 @@ const HireUsHero = () => {
                                     <div key={i} className="flex items-center justify-between p-4 rounded-xl border border-gray-100 bg-[#fbfdff] hover:border-blue-100 hover:shadow-md transition-all duration-300 group">
                                         <div className="flex items-center gap-4">
                                             <div className="w-12 h-12 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.08)] group-hover:scale-105 transition-transform border-2 border-white shrink-0">
-                                                <img src={dev.img} alt={dev.name} className="w-full h-full object-cover grayscale" />
+                                                <img src={dev.img} alt={dev.name} className="w-full h-full object-fill grayscale" />
                                             </div>
                                             <div>
                                                 <h4 className="font-semibold text-[#0a1520] text-sm md:text-base">{dev.role}</h4>

@@ -706,7 +706,7 @@ const Technologies = () => {
                                 <div className="bg-[#f8faff] rounded-xl p-4 mb-5 border border-blue-50/50">
                                     <div className="flex items-center gap-3 mb-3">
                                         <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border-2 border-white shadow-sm bg-gray-100">
-                                            <img src={item.devImage} alt={item.devName} className="w-full h-full object-cover grayscale" />
+                                            <img src={item.devImage} alt={item.devName} className="w-full h-full object-fill grayscale" />
                                         </div>
                                         <div>
                                             <h5 className="font-bold text-[#0a1520] text-[15px] leading-tight">{item.devName}</h5>
@@ -865,7 +865,7 @@ const Technologies = () => {
 
                                 <div className="flex gap-4 items-center">
                                     <div className="w-16 h-16 sm:w-14 sm:h-14 rounded-full bg-gray-200 overflow-hidden border-4 border-white shadow-lg shrink-0">
-                                        <img src={selectedDev.devImage} alt={selectedDev.devName} className="w-full h-full object-cover grayscale" />
+                                        <img src={selectedDev.devImage} alt={selectedDev.devName} className="w-full h-full object-fill grayscale" />
                                     </div>
                                     <div className='flex flex-col justify-center'>
                                         <div className='flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2 mb-1.5 mt-1 sm:mt-0'>
