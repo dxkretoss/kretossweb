@@ -1132,24 +1132,24 @@ export const portfolioData = {
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolio/prime-nails"
                 },
-                {
-                        "slug": "source-bulk-foods",
-                        "portfolioImage": "/portfolio/shopify/portfolio_sourcebulkfoods.png",
-                        "portfolioLogo": "/portfolio/shopify/portfolio_sourcebulkfoods_logo.png",
-                        "category": "Shopify",
-                        "tags": [
-                                "The Source Bulk Foods",
-                                "Shopify"
-                        ],
-                        "title": "The Source Bulk Foods",
-                        "description": "The Source Bulk Foods offers wholefoods, organic ingredients, healthy snacks, pantry essentials, and sustainable household products designed to support convenient zero-waste shopping.",
-                        "timeline": "2-4 Months",
-                        "acquisition": "N/A",
-                        "country": "Australia",
-                        "techStack": "Shopify",
-                        "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
-                        "link": "/portfolio/source-bulk-foods"
-                },
+                // {
+                //         "slug": "source-bulk-foods",
+                //         "portfolioImage": "/portfolio/shopify/portfolio_sourcebulkfoods.png",
+                //         "portfolioLogo": "/portfolio/shopify/portfolio_sourcebulkfoods_logo.png",
+                //         "category": "Shopify",
+                //         "tags": [
+                //                 "The Source Bulk Foods",
+                //                 "Shopify"
+                //         ],
+                //         "title": "The Source Bulk Foods",
+                //         "description": "The Source Bulk Foods offers wholefoods, organic ingredients, healthy snacks, pantry essentials, and sustainable household products designed to support convenient zero-waste shopping.",
+                //         "timeline": "2-4 Months",
+                //         "acquisition": "N/A",
+                //         "country": "Australia",
+                //         "techStack": "Shopify",
+                //         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
+                //         "link": "/portfolio/source-bulk-foods"
+                // },
                 {
                         "slug": "beadspoint",
                         "portfolioImage": "/portfolio/shopify/portfolio_beadspoint.png",
@@ -1669,8 +1669,8 @@ export const portfolioData = {
         "Other": [
                 {
                         "slug": "source-bulk-foods-wordpress",
-                        "portfolioImage": "/portfolio/wordpress/portfolio_source_foods.jpg",
-                        // "portfolioLogo": "/portfolio/wordpress/portfolio_source_foods_logo.png",
+                        "portfolioImage": "/portfolio/wordpress/portfolio_source_foods.png",
+                        "portfolioLogo": "/portfolio/wordpress/portfolio_source_foods_logo.png",
                         "category": "Wordpress",
                         "tags": [
                                 "The Source Bulk Foods",

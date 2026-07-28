@@ -26,10 +26,7 @@ export default function PortfolioDetailsPage() {
     const [activeSection, setActiveSection] = useState('overview');
     const [isOverviewExpanded, setIsOverviewExpanded] = useState(false);
 
-    useDocumentMetadata({
-        title: project ? `${project.title} Case Study | Kretoss Technology` : "Case Study | Kretoss Technology",
-        description: project ? `${project.title} case study by Kretoss Technology. Discover the challenges, solutions, and technologies we used to build it.` : "Read our case studies by Kretoss Technology."
-    });
+
 
     const sectionRefs = {
         overview: useRef(null),
@@ -43,6 +40,11 @@ export default function PortfolioDetailsPage() {
         const foundProject = portfolioDetailsData.find(p => p.slug === slug);
         setProject(foundProject);
     }, [slug]);
+
+    useDocumentMetadata({
+        title: project ? `${project.name} Case Study | Kretoss Technology` : "Case Study | Kretoss Technology",
+        description: project ? `${project.name} case study by Kretoss Technology. Discover the challenges, solutions, and technologies we used to build it.` : "Read our case studies by Kretoss Technology."
+    });
 
     useEffect(() => {
         if (project) {

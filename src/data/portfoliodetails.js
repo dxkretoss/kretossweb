@@ -4714,72 +4714,72 @@ export const portfolioDetailsData = [
         }
     },
 
-    {
-        "slug": "source-bulk-foods",
-        "name": "The Source Bulk Foods",
-        "portfolioImage": "/portfolio/shopify/portfolio_sourcebulkfoods_full.webp",
-        "category": "Shopify",
-        "timeline": "2-4 Months",
-        "techStack": "Shopify",
-        "link": "https://thesourcebulkfoods.ie/",
-        "client": "The Source Bulk Foods",
-        "description": "The Source Bulk Foods offers wholefoods, organic ingredients, healthy snacks, pantry essentials, and sustainable household products designed to support convenient zero-waste shopping.",
-        "challenge": "The client needed a modern Shopify storefront capable of showcasing a large catalog of bulk food and eco-friendly products while making it easy for customers to browse categories, purchase flexible quantities, and enjoy a seamless online shopping experience across all devices.",
-        "solution": "We developed a custom Shopify storefront focused on organized product categories, intuitive navigation, responsive design, optimized product pages, and a streamlined checkout experience. The platform reflects the brand's sustainability mission while making online bulk shopping simple, fast, and convenient.",
-        "keyFeatures": [
-            "Custom Shopify Storefront",
-            "Large Product Catalog Management",
-            "Collection-Based Navigation",
-            "Mobile Responsive Design",
-            "Performance Optimization",
-            "Secure Shopify Checkout"
-        ],
-        "country": "Australia",
-        "caseStudy": {
-            "overview": "The Source Bulk Foods Ireland is a leading zero-waste grocery retailer offering hundreds of bulk food products, organic ingredients, healthy snacks, and sustainable lifestyle essentials. The objective was to build a Shopify experience that reflects the brand's commitment to sustainability while providing customers with an intuitive and efficient online shopping journey.",
-            "coreCapabilities": [
-                "Custom Shopify Development",
-                "Bulk Grocery eCommerce",
-                "Large Product Catalog",
-                "Sustainable Shopping Experience",
-                "Collection Management",
-                "Responsive Storefront",
-                "Conversion Optimization",
-                "Performance Optimization"
-            ],
-            "process": [
-                {
-                    "title": "Discovery & Shopping Experience Strategy",
-                    "description": "We analyzed the product catalog, customer shopping behavior, and sustainability-focused buying journey to organize hundreds of products into easy-to-navigate collections that simplify product discovery."
-                },
-                {
-                    "title": "Custom Shopify Development",
-                    "description": "Our team developed a responsive Shopify storefront featuring structured product categories, detailed product pages, intuitive navigation, optimized search experience, and a streamlined purchasing flow designed for both new and returning customers."
-                },
-                {
-                    "title": "Performance & Store Optimization",
-                    "description": "Before launch, we optimized page speed, responsive layouts, image performance, SEO fundamentals, and checkout usability to deliver a fast and reliable shopping experience across desktop and mobile devices."
-                }
-            ],
-            "results": [
-                "Improved product discovery across hundreds of bulk food products",
-                "Optimized shopping experience for desktop and mobile users",
-                "Fast-loading Shopify storefront",
-                "Simplified customer journey from browsing to checkout",
-                "Scalable eCommerce platform supporting future product expansion"
-            ],
-            "testimonial": {
-                "image": "https://i.pravatar.cc/150?u=kretoss_50",
-                "text": "The new Shopify store perfectly represents our sustainability mission while making it easy for customers to browse our extensive product range and shop online. The experience is clean, intuitive, and performs exceptionally well.",
-                "author": "Joseph Garcia",
-                "position": "The Source Bulk Foods"
-            }
-        },
-        "hireResources": {
-            "label": "Hire Shopify Developer",
-            "link": "/hire-us/hire-shopify-developers"
-        }
-    },
+    // {
+    //     "slug": "source-bulk-foods",
+    //     "name": "The Source Bulk Foods",
+    //     "portfolioImage": "/portfolio/shopify/portfolio_sourcebulkfoods_full.webp",
+    //     "category": "Shopify",
+    //     "timeline": "2-4 Months",
+    //     "techStack": "Shopify",
+    //     "link": "https://thesourcebulkfoods.ie/",
+    //     "client": "The Source Bulk Foods",
+    //     "description": "The Source Bulk Foods offers wholefoods, organic ingredients, healthy snacks, pantry essentials, and sustainable household products designed to support convenient zero-waste shopping.",
+    //     "challenge": "The client needed a modern Shopify storefront capable of showcasing a large catalog of bulk food and eco-friendly products while making it easy for customers to browse categories, purchase flexible quantities, and enjoy a seamless online shopping experience across all devices.",
+    //     "solution": "We developed a custom Shopify storefront focused on organized product categories, intuitive navigation, responsive design, optimized product pages, and a streamlined checkout experience. The platform reflects the brand's sustainability mission while making online bulk shopping simple, fast, and convenient.",
+    //     "keyFeatures": [
+    //         "Custom Shopify Storefront",
+    //         "Large Product Catalog Management",
+    //         "Collection-Based Navigation",
+    //         "Mobile Responsive Design",
+    //         "Performance Optimization",
+    //         "Secure Shopify Checkout"
+    //     ],
+    //     "country": "Australia",
+    //     "caseStudy": {
+    //         "overview": "The Source Bulk Foods Ireland is a leading zero-waste grocery retailer offering hundreds of bulk food products, organic ingredients, healthy snacks, and sustainable lifestyle essentials. The objective was to build a Shopify experience that reflects the brand's commitment to sustainability while providing customers with an intuitive and efficient online shopping journey.",
+    //         "coreCapabilities": [
+    //             "Custom Shopify Development",
+    //             "Bulk Grocery eCommerce",
+    //             "Large Product Catalog",
+    //             "Sustainable Shopping Experience",
+    //             "Collection Management",
+    //             "Responsive Storefront",
+    //             "Conversion Optimization",
+    //             "Performance Optimization"
+    //         ],
+    //         "process": [
+    //             {
+    //                 "title": "Discovery & Shopping Experience Strategy",
+    //                 "description": "We analyzed the product catalog, customer shopping behavior, and sustainability-focused buying journey to organize hundreds of products into easy-to-navigate collections that simplify product discovery."
+    //             },
+    //             {
+    //                 "title": "Custom Shopify Development",
+    //                 "description": "Our team developed a responsive Shopify storefront featuring structured product categories, detailed product pages, intuitive navigation, optimized search experience, and a streamlined purchasing flow designed for both new and returning customers."
+    //             },
+    //             {
+    //                 "title": "Performance & Store Optimization",
+    //                 "description": "Before launch, we optimized page speed, responsive layouts, image performance, SEO fundamentals, and checkout usability to deliver a fast and reliable shopping experience across desktop and mobile devices."
+    //             }
+    //         ],
+    //         "results": [
+    //             "Improved product discovery across hundreds of bulk food products",
+    //             "Optimized shopping experience for desktop and mobile users",
+    //             "Fast-loading Shopify storefront",
+    //             "Simplified customer journey from browsing to checkout",
+    //             "Scalable eCommerce platform supporting future product expansion"
+    //         ],
+    //         "testimonial": {
+    //             "image": "https://i.pravatar.cc/150?u=kretoss_50",
+    //             "text": "The new Shopify store perfectly represents our sustainability mission while making it easy for customers to browse our extensive product range and shop online. The experience is clean, intuitive, and performs exceptionally well.",
+    //             "author": "Joseph Garcia",
+    //             "position": "The Source Bulk Foods"
+    //         }
+    //     },
+    //     "hireResources": {
+    //         "label": "Hire Shopify Developer",
+    //         "link": "/hire-us/hire-shopify-developers"
+    //     }
+    // },
 
     {
         "slug": "beadspoint",
