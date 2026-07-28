@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState, useRef } from 'react';
+import React, { useLayoutEffect, useState, useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -31,6 +31,18 @@ const FaqItem = ({ id, question, answer, dataWId, isActive, onClick }) => {
 export default function Faq() {
     const [activeIndex, setActiveIndex] = useState("01"); // Initially step 1 is expanded
     const faqRef = useRef(null);
+
+    useEffect(() => {
+        const isMobile = window.innerWidth < 992;
+        if (isMobile) return;
+
+        const timer = setTimeout(() => {
+            if (window.ScrollTrigger) {
+                window.ScrollTrigger.refresh();
+            }
+        }, 300);
+        return () => clearTimeout(timer);
+    }, [activeIndex]);
 
     // Accordion data source
     const faqList = [

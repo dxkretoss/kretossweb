@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronRight, ChevronLeft } from 'lucide-react';
 import { hireUsData } from '../../data/hireus';
 
@@ -31,7 +32,7 @@ const MegaMenu = forwardRef(({ isOpen, onClose, position = 'top', onMouseEnter, 
                             <ul className="space-y-0">
                                 {categoryRoles.map(role => (
                                     <li key={role.slug}>
-                                        <a href={`/hire-us/${role.slug}`} className="flex items-center gap-2 py-1 px-1.5 -ml-1.5 rounded-lg hover:bg-gradient-to-r hover:from-white hover:to-[#f0f7ff] border border-transparent hover:border-[#44c7f6]/20 hover:shadow-sm transition-all duration-300 group relative overflow-hidden pr-3">
+                                        <Link onClick={onClose} to={`/hire-us/${role.slug}`} className="flex items-center gap-2 py-1 px-1.5 -ml-1.5 rounded-lg hover:bg-gradient-to-r hover:from-white hover:to-[#f0f7ff] border border-transparent hover:border-[#44c7f6]/20 hover:shadow-sm transition-all duration-300 group relative overflow-hidden pr-3">
                                             {/* ICON */}
                                             <div className="relative w-8 h-8 shrink-0 flex items-center justify-center bg-white rounded-lg shadow-sm border border-gray-100 group-hover:border-[#44c7f6]/40 group-hover:shadow-[0_2px_10px_rgba(68,199,246,0.15)] transition-all duration-300 z-10">
                                                 <img src={role.icon} alt="" className="w-4 h-4 opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform duration-300" />
@@ -41,7 +42,7 @@ const MegaMenu = forwardRef(({ isOpen, onClose, position = 'top', onMouseEnter, 
                                             <span className="relative whitespace-nowrap text-[#0a1520]/80 font-semibold text-[13px] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#0037f0] group-hover:to-[#44c7f6] transition-colors z-10 flex-1">{role.title.replace('Hire ', '')}</span>
                                             
                                             <ArrowRight className="w-3.5 h-3.5 text-[#0037f0] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 relative z-10 shrink-0" />
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -61,11 +62,11 @@ const MegaMenu = forwardRef(({ isOpen, onClose, position = 'top', onMouseEnter, 
                     { text: "Hire Cloud Infrastructure", href: "/hire-us/hire-cloud-infrastructure" },
                     { text: "Hire CMS Developer", href: "/hire-us/hire-cms-developer" }
                 ].map(link => (
-                    <a key={link.text} href={link.href} className="group flex items-center gap-1 text-[12.5px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0037f0] to-[#44c7f6] hover:scale-105 transition-all duration-300">
+                    <Link onClick={onClose} key={link.text} to={link.href} className="group flex items-center gap-1 text-[12.5px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0037f0] to-[#44c7f6] hover:scale-105 transition-all duration-300">
                         <ChevronRight className="w-3.5 h-3.5 text-[#0037f0]" />
                         <span>{link.text}</span>
                         <ArrowRight className="w-3.5 h-3.5 text-[#44c7f6] opacity-0 -ml-2 group-hover:opacity-100 group-hover:ml-1 transition-all duration-300" />
-                    </a>
+                    </Link>
                 ))}
             </div>
         </div>

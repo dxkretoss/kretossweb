@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef, useState, useEffect } from 'react';
 import gsap from 'gsap';
 import Badge from '../ui/Badge';
 import AnimatedButton from '../ui/AnimatedButton';
+import { projectsList } from '../../data/importantportfolio';
 
 const AnimatedWord = ({ text, isGradient }) => {
     const gradientClass = isGradient ? "bg-gradient-to-r from-[#44c7f6] to-[#0037f0] text-transparent bg-clip-text" : "";
@@ -17,17 +18,7 @@ export default function PortfolioHero() {
     const fadeGradientRef = useRef(null);
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const cards = [
-        {
-            image: "/portfolio/custom/klubbrabatten-new.jpg"
-        },
-        {
-            image: "/portfolio/custom/Fily-new.jpg"
-        },
-        {
-            image: "/portfolio/custom/Palzea-new.png"
-        }
-    ];
+    const cards = projectsList;
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -191,7 +182,16 @@ export default function PortfolioHero() {
 
                                     {/* Screen Content */}
                                     <div className="relative w-full h-full bg-[#121212] overflow-hidden">
-                                        <div className="relative w-full h-full">
+                                        {/* Fallback Kretoss Logo (shows while loading) */}
+                                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-50 z-0">
+                                            <img
+                                                src="/kretoss-logo.svg"
+                                                alt="Kretoss Logo"
+                                                className="w-[40%] max-w-[120px] object-contain filter brightness-125"
+                                            />
+                                        </div>
+
+                                        <div className="relative w-full h-full z-10">
                                             {cards.map((card, idx) => {
                                                 const isActive = idx === activeIndex;
                                                 return (
@@ -200,7 +200,7 @@ export default function PortfolioHero() {
                                                         className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${isActive ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                                                     >
                                                         <img
-                                                            src={card.image}
+                                                            src={card.portfolioImage}
                                                             alt={`Portfolio Work ${idx + 1}`}
                                                             className="w-full h-full object-cover object-top"
                                                         />

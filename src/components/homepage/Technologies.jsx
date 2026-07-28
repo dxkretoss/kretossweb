@@ -130,6 +130,8 @@ export default function Technologies() {
     setIsExpanded(false);
   }, [activeTab]);
 
+
+
   return (
     <section className="technology bg-[#fafcff] relative overflow-hidden">
       {/* SVG Definitions for Gradient Icons */}

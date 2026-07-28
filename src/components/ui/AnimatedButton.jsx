@@ -1,4 +1,5 @@
 import React, { useRef, useLayoutEffect } from 'react';
+import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 
 // Reusable SplitText component to generate letters for GSAP animations
@@ -87,47 +88,61 @@ export default function AnimatedButton({ href = "#Contact", text = "LET'S TALK",
         return () => ctx.revert();
     }, []);
 
+    const isInternal = href.startsWith('/') && !href.startsWith('//');
+
+    const buttonContent = (
+        <>
+            <div className="button-text-wrapper" style={{ position: 'relative', overflow: 'hidden' }}>
+                <div className="button-text-box" style={{ position: 'relative' }}>
+                    <div className="button-front-text">
+                        <SplitText text={text} startIndex={1} />
+                    </div>
+                    {/* Absolutely positioned directly under the front text */}
+                    <div className="button-back-text" style={{ position: 'absolute', top: 0, left: 0, width: '100%', pointerEvents: 'none' }}>
+                        <SplitText text={text} startIndex={100} />
+                    </div>
+                </div>
+            </div>
+            <div className="button-arrow-box" style={{ position: 'relative', overflow: 'hidden' }}>
+                <div className="button-arrow-box-icon">
+                    <img
+                        loading="lazy"
+                        src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bf_Arrow%20Right%20Up.svg"
+                        alt="Button Icon"
+                        className="button-front-arrow"
+                        style={{ transform: "translate3d(0px, 0px, 0px)", position: 'relative', zIndex: 2 }}
+                    />
+                    <img
+                        loading="lazy"
+                        src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bf_Arrow%20Right%20Up.svg"
+                        alt="Button Icon"
+                        className="button-back-arrow"
+                        style={{ transform: "translate3d(-13px, 14px, 0px)", position: 'absolute', top: 0, left: 0, zIndex: 1 }}
+                    />
+                </div>
+            </div>
+            <div className="button-dot-box">
+                <div className="button-dot"></div>
+                <div className="button-dot"></div>
+            </div>
+            <div className="button-dot-box right-box">
+                <div className="button-dot"></div>
+                <div className="button-dot"></div>
+            </div>
+        </>
+    );
+
     return (
         <div className={`hero-button ${className}`}>
-            <a ref={buttonRef} href={href} target={target} onClick={onClick} className="primary-button w-inline-block" aria-label={text} style={{ position: 'relative' }}>
-                <div className="button-text-wrapper" style={{ position: 'relative', overflow: 'hidden' }}>
-                    <div className="button-text-box" style={{ position: 'relative' }}>
-                        <div className="button-front-text">
-                            <SplitText text={text} startIndex={1} />
-                        </div>
-                        {/* Absolutely positioned directly under the front text */}
-                        <div className="button-back-text" style={{ position: 'absolute', top: 0, left: 0, width: '100%', pointerEvents: 'none' }}>
-                            <SplitText text={text} startIndex={100} />
-                        </div>
-                    </div>
-                </div>
-                <div className="button-arrow-box" style={{ position: 'relative', overflow: 'hidden' }}>
-                    <div className="button-arrow-box-icon">
-                        <img
-                            loading="lazy"
-                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bf_Arrow%20Right%20Up.svg"
-                            alt="Button Icon"
-                            className="button-front-arrow"
-                            style={{ transform: "translate3d(0px, 0px, 0px)", position: 'relative', zIndex: 2 }}
-                        />
-                        <img
-                            loading="lazy"
-                            src="https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe2887bf_Arrow%20Right%20Up.svg"
-                            alt="Button Icon"
-                            className="button-back-arrow"
-                            style={{ transform: "translate3d(-13px, 14px, 0px)", position: 'absolute', top: 0, left: 0, zIndex: 1 }}
-                        />
-                    </div>
-                </div>
-                <div className="button-dot-box">
-                    <div className="button-dot"></div>
-                    <div className="button-dot"></div>
-                </div>
-                <div className="button-dot-box right-box">
-                    <div className="button-dot"></div>
-                    <div className="button-dot"></div>
-                </div>
-            </a>
+            {isInternal ? (
+                <Link ref={buttonRef} to={href} onClick={onClick} className="primary-button w-inline-block" aria-label={text} style={{ position: 'relative' }}>
+                    {buttonContent}
+                </Link>
+            ) : (
+                <a ref={buttonRef} href={href} target={target} onClick={onClick} className="primary-button w-inline-block" aria-label={text} style={{ position: 'relative' }}>
+                    {buttonContent}
+                </a>
+            )}
         </div>
     );
 }

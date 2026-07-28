@@ -1,6 +1,7 @@
 import React from 'react';
 import { Award, GraduationCap, Gem, RefreshCw, Shield, BarChart3, Target, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Badge from '../ui/Badge';
 
 const reasons = [
     {
@@ -66,9 +67,10 @@ const WhyChoose = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h3 className="text-[#0037f0] font-bold text-[12px] tracking-[0.15em] uppercase mb-2">
-                        Why Choose Kretoss
-                    </h3>
+
+                    <div className="flex items-center justify-center mb-4">
+                        <Badge variant='blue'>Why Choose Kretoss</Badge>
+                    </div>
                     <h2 className="text-[24px] md:text-[36px] font-semibold leading-tight text-[#0a1520]">
                         Built on Trust, Delivered with Discipline
                     </h2>

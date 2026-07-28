@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Check, User, FileText, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
 import HireFormModal from './HireFormModal';
+import Badge from '../ui/Badge';
 
 const HireModal = () => {
     const [showHireModal, setShowHireModal] = useState(false);
@@ -19,9 +20,11 @@ const HireModal = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h3 className="text-[#0037f0] font-bold text-[13px] tracking-[0.15em] uppercase mb-4">
-                        Engagement Models
-                    </h3>
+
+                    <div className="flex items-center justify-center mb-4">
+                        <Badge variant='blue'>Engagement Models</Badge>
+                    </div>
+
                     <h2 className="text-[24px] md:text-[36px] font-semibold text-[#0a1520] mb-4">
                         Choose Your Hiring Model
                     </h2>

@@ -1,4 +1,5 @@
 import React, { useRef, useLayoutEffect } from 'react';
+import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 
 const SplitText = ({ text, startIndex = 1 }) => {
@@ -77,16 +78,10 @@ export default function AnimatedHireButton({ href = "#", text = "HIRE DEVELOPERS
         return () => ctx.revert();
     }, []);
 
-    return (
-        <a
-            ref={buttonRef}
-            href={href}
-            target={target}
-            onClick={onClick}
-            className={`inline-flex items-center gap-2 bg-[#f4f7ff] text-[#0037f0] border border-[#0037f0]/20 font-bold text-[13px] tracking-wide uppercase rounded-md shadow-sm ${className}`}
-            aria-label={text}
-            style={{ position: 'relative' }}
-        >
+    const isInternal = href.startsWith('/') && !href.startsWith('//');
+
+    const buttonContent = (
+        <>
             <div className="button-text-wrapper" style={{ position: 'relative', overflow: 'hidden' }}>
                 <div className="button-text-box" style={{ position: 'relative', color: '#0037f0' }}>
                     <div className="button-front-text" style={{ position: 'relative' }}>
@@ -106,6 +101,31 @@ export default function AnimatedHireButton({ href = "#", text = "HIRE DEVELOPERS
                 <div className="button-dot" style={{ backgroundColor: '#0037f0' }}></div>
                 <div className="button-dot" style={{ backgroundColor: '#0037f0' }}></div>
             </div>
+        </>
+    );
+
+    return isInternal ? (
+        <Link
+            ref={buttonRef}
+            to={href}
+            onClick={onClick}
+            className={`inline-flex items-center gap-2 bg-[#f4f7ff] text-[#0037f0] border border-[#0037f0]/20 font-bold text-[13px] tracking-wide uppercase rounded-md shadow-sm ${className}`}
+            aria-label={text}
+            style={{ position: 'relative' }}
+        >
+            {buttonContent}
+        </Link>
+    ) : (
+        <a
+            ref={buttonRef}
+            href={href}
+            target={target}
+            onClick={onClick}
+            className={`inline-flex items-center gap-2 bg-[#f4f7ff] text-[#0037f0] border border-[#0037f0]/20 font-bold text-[13px] tracking-wide uppercase rounded-md shadow-sm ${className}`}
+            aria-label={text}
+            style={{ position: 'relative' }}
+        >
+            {buttonContent}
         </a>
     );
 }

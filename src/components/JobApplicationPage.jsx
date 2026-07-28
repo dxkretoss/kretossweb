@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { jobsData } from '../data/jobs';
+import useDocumentMetadata from '../hooks/useDocumentMetadata';
 
 export default function JobApplicationPage() {
     const { slug } = useParams();
     const navigate = useNavigate();
     const [selectedJob, setSelectedJob] = useState('');
+
+    useDocumentMetadata({
+        title: `Apply for ${selectedJob || 'Job'} | Careers | Kretoss Technology`,
+        description: `Apply for the ${selectedJob || 'Job'} position at Kretoss Technology. Fill out the application form and attach your resume.`
+    });
 
     // Form state
     const [formData, setFormData] = useState({

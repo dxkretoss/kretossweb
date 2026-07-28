@@ -1,9 +1,9 @@
-import React, { useLayoutEffect, useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { motion } from 'framer-motion';
 import { FastAverageColor } from 'fast-average-color';
 import Badge from '../ui/Badge';
+import { projectsList } from '../../data/importantportfolio';
 import {
     FaReact, FaAngular, FaVuejs, FaNodeJs, FaPython,
     FaLaravel, FaJava, FaSwift, FaApple, FaAws,
@@ -19,25 +19,55 @@ import {
 
 const getCountryFlag = (country) => {
     if (!country) return '';
-    const flags = {
-        'usa': '🇺🇸',
-        'united states': '🇺🇸',
-        'uk': '🇬🇧',
-        'united kingdom': '🇬🇧',
-        'australia': '🇦🇺',
-        'germany': '🇩🇪',
-        'brazil': '🇧🇷',
-        'canada': '🇨🇦',
-        'uae': '🇦🇪',
-        'india': '🇮🇳',
-        'singapore': '🇸🇬',
-        'switzerland': '🇨🇭',
-        'portugal': '🇵🇹',
-        'vietnam': '🇻🇳',
-        'indonesia': '🇮🇩',
-        'sweden': '🇸🇪'
+    const flagCodes = {
+        'usa': 'us',
+        'united states': 'us',
+        'uk': 'gb',
+        'united kingdom': 'gb',
+        'australia': 'au',
+        'germany': 'de',
+        'brazil': 'br',
+        'canada': 'ca',
+        'uae': 'ae',
+        'india': 'in',
+        'singapore': 'sg',
+        'switzerland': 'ch',
+        'portugal': 'pt',
+        'vietnam': 'vn',
+        'indonesia': 'id',
+        'sweden': 'se',
+        'france': 'fr',
+        'italy': 'it',
+        'spain': 'es',
+        'mexico': 'mx',
+        'netherlands': 'nl',
+        'japan': 'jp',
+        'china': 'cn',
+        'south korea': 'kr',
+        'new zealand': 'nz',
+        'ireland': 'ie',
+        'denmark': 'dk',
+        'norway': 'no',
+        'finland': 'fi',
+        'belgium': 'be',
+        'austria': 'at',
+        'poland': 'pl'
     };
-    return flags[country.toLowerCase()] || '🌍';
+
+    const code = flagCodes[country.toLowerCase()];
+    if (code) {
+        return (
+            <img
+                src={`https://flagcdn.com/w20/${code}.png`}
+                srcSet={`https://flagcdn.com/w40/${code}.png 2x`}
+                width="20"
+                alt={country}
+                className="inline-block object-contain shadow-sm"
+            />
+        );
+    }
+
+    return '🌍';
 };
 
 const getTechIcons = (techString) => {
@@ -88,7 +118,16 @@ const getTechIcons = (techString) => {
     return uniqueIcons;
 };
 
-gsap.registerPlugin(ScrollTrigger);
+const getDynamicBadgeStyle = (bgColor) => {
+    return {
+        accentColor: '#10b981',
+        badgeStyle: {
+            backgroundColor: 'rgba(16, 185, 129, 0.15)',
+            borderColor: 'rgba(16, 185, 129, 0.3)',
+            color: '#10b981'
+        }
+    };
+};
 
 // SplitText helper for dynamic GSAP word/letter layouts
 const SplitText = ({ text, wordClassPrefix = "gsap_split_word", letterClassPrefix = "gsap_split_letter", startIndex = 1, plainStyle = false }) => {
@@ -216,18 +255,13 @@ const ProjectCard = ({ project, id }) => {
                 // Mobile layout smooth entrance animation
                 mm.add("(max-width: 991px)", () => {
                     gsap.fromTo(inner,
-                        { scale: 0.95, opacity: 0, y: 50 },
+                        { scale: 0.95, opacity: 0, y: 30 },
                         {
                             scale: 1,
                             opacity: 1,
                             y: 0,
                             duration: 0.8,
-                            ease: "power3.out",
-                            scrollTrigger: {
-                                trigger: outer,
-                                start: "top 85%",
-                                toggleActions: "play none none none"
-                            }
+                            ease: "power3.out"
                         }
                     );
                 });
@@ -291,6 +325,21 @@ const ProjectCard = ({ project, id }) => {
                                             {tag}
                                         </span>
                                     ))}
+                                    {project.activeUsers && (() => {
+                                        const { accentColor, badgeStyle } = getDynamicBadgeStyle(bgColor);
+                                        return (
+                                            <span
+                                                className="text-xs md:text-sm px-3 md:px-4 rounded-[4px] flex items-center justify-center gap-1.5 h-[32px] md:h-[36px] font-medium whitespace-nowrap border animate-pulse transition-all duration-500"
+                                                style={badgeStyle}
+                                            >
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={accentColor} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                                    <polyline points="16 7 22 7 22 13"></polyline>
+                                                </svg>
+                                                {project.activeUsers}
+                                            </span>
+                                        );
+                                    })()}
                                 </div>
                                 {project.portfolioLogo &&
                                     <div className="flex items-center justify-center shrink-0 ml-2 self-start bg-white/10 border border-[#FFFFFF1A] px-3 rounded-[4px] w-[100px] md:w-[120px] h-[32px] md:h-[36px]">
@@ -303,8 +352,8 @@ const ProjectCard = ({ project, id }) => {
                             {/* <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>
                                 {project.title}
                             </h3> */}
-                            <p className={`hidden md:block text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}>
-                                {project.description}
+                            <p className={`hidden md:block text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}
+                                dangerouslySetInnerHTML={{ __html: project.description }}>
                             </p>
                         </div>
 
@@ -377,131 +426,25 @@ const ProjectCard = ({ project, id }) => {
 };
 
 export default function Projects() {
-    // Dynamic Portfolio Projects Array
-    const projectsList = [
-        {
-            "id": "01",
-            "slug": "klubbrabatten",
-            "portfolioImage": "/portfolio/custom/klubbrabatten-new.jpg",
-            "portfolioLogo": "/portfolio/custom/Klubbrabatten-logo.png",
-
-            "category": "Custom web",
-            "tags": [
-                "Klubbrabatten",
-                "Web"
-            ],
-            "title": "Klubbrabatten",
-            "description": "Klubbrabatten is a digital membership and fundraising platform that helps organizations raise funds through exclusive discounts while giving members access to valuable local and national offers.",
-            "timeline": "8-12 Months",
-            "acquisition": "N/A",
-            "country": "Germany",
-            "techStack": "ReactJS + Supabase + Node.js",
-            "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "link": "/portfolio/klubbrabatten"
-        },
-        {
-            "id": "02",
-            "slug": "palzea-widget",
-            "portfolioImage": "/portfolio/custom/Palzea-new.png",
-            "portfolioLogo": "/portfolio/custom/palzea-logo.png",
-
-            "category": "Custom web",
-            "tags": [
-                "Widget",
-                "Web"
-            ],
-            "title": "Palzea Widget",
-            "description": "Palzea is a secure peer-to-peer crypto trading platform that enables users to buy and sell digital assets with real-time trading, integrated wallets, and escrow protection.",
-            "timeline": "4-6 Months",
-            "acquisition": "N/A",
-            "country": "UK",
-            "techStack": "Blockchain + React.js + Node.js",
-            "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "link": "/portfolio/palzea-widget"
-        },
-        {
-            "id": "03",
-            "slug": "fily",
-            "portfolioImage": "/portfolio/custom/Fily-new.jpg",
-            "portfolioLogo": "/portfolio/custom/Fily-logo.png",
-
-            "category": "Custom web",
-            "tags": [
-                "Fily",
-                "Web"
-            ],
-            "title": "Fily",
-            "description": "Fily is an AI-powered business assistant that simplifies GST compliance, invoicing, expenses, tax reminders, and financial management for Indian businesses and freelancers.",
-            "timeline": "2-4 Months",
-            "acquisition": "N/A",
-            "country": "India",
-            "techStack": "ReactJS + Supabase",
-            "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "link": "/portfolio/fily"
-        },
-        {
-            "id": "04",
-            "portfolioImage": "/portfolio/custom/domino_hub_new.jpg",
-            "portfolioLogo": "/portfolio/custom/domino-logo.png",
-            "category": "Custom web",
-            "tags": [
-                "Domino Hub - Club's Edition",
-                "Web"
-            ],
-            "title": "Domino Hub - Club's Edition",
-            "description": "Domino Hub is a tournament and club management platform that helps domino communities manage members, tournaments, player statistics, leaderboards, attendance, and club operations.",
-            "timeline": "6-8 Months",
-            "acquisition": "N/A",
-            "country": "Australia",
-            "techStack": "React.js + Node.js + Postgresql",
-            "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "link": "/portfolio/domino-hub"
-        },
-    ];
-
     const projectsRef = useRef(null);
-
-    useLayoutEffect(() => {
-        let ctx;
-        const timer = setTimeout(() => {
-            gsap.registerPlugin(ScrollTrigger);
-            ctx = gsap.context(() => {
-                // Title block scale and slide animation
-                gsap.fromTo(".home-project-title",
-                    { opacity: 0, y: 50 },
-                    {
-                        opacity: 1,
-                        y: 0,
-                        duration: 1,
-                        ease: "power4.out",
-                        scrollTrigger: {
-                            trigger: ".home-project-title",
-                            start: "top 90%",
-                            toggleActions: "play none none none"
-                        }
-                    }
-                );
-            }, projectsRef);
-        }, 100);
-
-        return () => {
-            clearTimeout(timer);
-            if (ctx) ctx.revert();
-        };
-    }, []);
 
     return (
         <>
             <section ref={projectsRef} id="Projects" className="project pb-20">
                 <div className="w-layout-blockcontainer container-full-width  container w-container">
                     <div className="project-content-wrapper">
-                        <div className="home-project-title _02 flex flex-col items-center mb-12">
-
+                        <motion.div
+                            className="home-project-title _02 flex flex-col items-center mb-12"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-10%" }}
+                            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                        >
                             <Badge variant="white">Industry Hit Projects</Badge>
                             <h2 className="title white text-center mt-4" aria-label="Where Great Ideas Became Real Results">
                                 <SplitText text="Where Great Ideas Became Real Results" startIndex={1} />
                             </h2>
-                        </div>
+                        </motion.div>
                         <div className="project-card-wrapper-box">
                             <div className="project-card-wrapper flex flex-col gap-6 lg:gap-12">
                                 {projectsList.map((project) => (

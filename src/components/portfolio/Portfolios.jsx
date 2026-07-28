@@ -20,25 +20,55 @@ import {
 
 const getCountryFlag = (country) => {
     if (!country) return '';
-    const flags = {
-        'usa': '🇺🇸',
-        'united states': '🇺🇸',
-        'uk': '🇬🇧',
-        'united kingdom': '🇬🇧',
-        'australia': '🇦🇺',
-        'germany': '🇩🇪',
-        'brazil': '🇧🇷',
-        'canada': '🇨🇦',
-        'uae': '🇦🇪',
-        'india': '🇮🇳',
-        'singapore': '🇸🇬',
-        'switzerland': '🇨🇭',
-        'portugal': '🇵🇹',
-        'vietnam': '🇻🇳',
-        'indonesia': '🇮🇩',
-        'sweden': '🇸🇪'
+    const flagCodes = {
+        'usa': 'us',
+        'united states': 'us',
+        'uk': 'gb',
+        'united kingdom': 'gb',
+        'australia': 'au',
+        'germany': 'de',
+        'brazil': 'br',
+        'canada': 'ca',
+        'uae': 'ae',
+        'india': 'in',
+        'singapore': 'sg',
+        'switzerland': 'ch',
+        'portugal': 'pt',
+        'vietnam': 'vn',
+        'indonesia': 'id',
+        'sweden': 'se',
+        'france': 'fr',
+        'italy': 'it',
+        'spain': 'es',
+        'mexico': 'mx',
+        'netherlands': 'nl',
+        'japan': 'jp',
+        'china': 'cn',
+        'south korea': 'kr',
+        'new zealand': 'nz',
+        'ireland': 'ie',
+        'denmark': 'dk',
+        'norway': 'no',
+        'finland': 'fi',
+        'belgium': 'be',
+        'austria': 'at',
+        'poland': 'pl'
     };
-    return flags[country.toLowerCase()] || '🌍';
+
+    const code = flagCodes[country.toLowerCase()];
+    if (code) {
+        return (
+            <img
+                src={`https://flagcdn.com/w20/${code}.png`}
+                srcSet={`https://flagcdn.com/w40/${code}.png 2x`}
+                width="20"
+                alt={country}
+                className="inline-block object-contain shadow-sm"
+            />
+        );
+    }
+
+    return '🌍';
 };
 
 const getTechIcons = (techString) => {
@@ -134,14 +164,14 @@ const hslToRgb = (h, s, l) => {
         const hue2rgb = (p, q, t) => {
             if (t < 0) t += 1;
             if (t > 1) t -= 1;
-            if (t < 1/6) return p + (q - p) * 6 * t;
-            if (t < 1/2) return q;
-            if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+            if (t < 1 / 6) return p + (q - p) * 6 * t;
+            if (t < 1 / 2) return q;
+            if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
             return p;
         };
-        r = hue2rgb(p, q, (h / 360) + 1/3);
+        r = hue2rgb(p, q, (h / 360) + 1 / 3);
         g = hue2rgb(p, q, (h / 360));
-        b = hue2rgb(p, q, (h / 360) - 1/3);
+        b = hue2rgb(p, q, (h / 360) - 1 / 3);
     }
     return {
         r: Math.round(r * 255),
@@ -298,7 +328,7 @@ const PortfolioCard = ({ item }) => {
                         {/* <h3 className={`text-2xl sm:text-[32px] font-semibold text-white mb-3 sm:mb-4 leading-tight`}>
                             {item.title}
                         </h3> */}
-                        <p 
+                        <p
                             className={`hidden md:block text-white text-[14px] md:text-[16px] mb-6 sm:mb-8 leading-relaxed`}
                             dangerouslySetInnerHTML={{ __html: item.description }}
                         />

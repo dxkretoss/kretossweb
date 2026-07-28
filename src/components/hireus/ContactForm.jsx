@@ -5,6 +5,7 @@ import 'react-phone-input-2/lib/style.css';
 import { motion } from 'framer-motion';
 import axios from 'axios';
 import { toast, Toaster } from 'react-hot-toast';
+import Badge from '../ui/Badge';
 
 const PhoneInput = PhoneInputModule.default ? PhoneInputModule.default : PhoneInputModule;
 
@@ -25,7 +26,7 @@ const ContactForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+
         if (!formData.fullName || !formData.email || !formData.whatsappNumber || !formData.projectDescription) {
             toast.error("Please fill in all required fields.");
             return;
@@ -85,9 +86,11 @@ const ContactForm = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <div className="text-[#3b82f6] font-bold text-[12px] tracking-[0.15em] uppercase mb-4">
-                            Hire Top Talent
+
+                        <div className="flex items-center justify-start mb-4">
+                            <Badge variant='blue'>Hire Top Talent</Badge>
                         </div>
+
                         <h2 className="text-[24px] md:text-[36px] font-semibold leading-[1.1] text-[#0f172a] mb-6 tracking-tight">
                             Build Your Dream Team Today
                         </h2>

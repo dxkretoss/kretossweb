@@ -11,8 +11,14 @@ import ClientMarquee from './homepage/ClientMarquee'
 import AIVibeCodingWorkflow from './homepage/AIVibeCodingWorkflow'
 import Technologies from './homepage/Technologies'
 import Faq from './homepage/Faq'
+import useDocumentMetadata from '../hooks/useDocumentMetadata'
 
 export default function Homepage() {
+    useDocumentMetadata({
+        title: "Kretoss Technology | Top Web & Mobile App Development Company",
+        description: "Kretoss Technology is a premier Web and Mobile Application Development Company delivering innovative custom software, ERP, and AI solutions globally."
+    });
+
     return (
         <div>
             <Hero />

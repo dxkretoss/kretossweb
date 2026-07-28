@@ -1,6 +1,7 @@
 import React from 'react';
 import { MessageSquare, FileSearch, Code2, Rocket, Target, FileEdit, MessageCircle, Puzzle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Badge from '../ui/Badge';
 
 const steps = [
     {
@@ -53,9 +54,10 @@ const HowItsWork = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h3 className="text-[#3b82f6] font-bold text-[12px] tracking-[0.15em] uppercase mb-4">
-                        How It Works
-                    </h3>
+
+                    <div className="flex items-center justify-center mb-4">
+                        <Badge>How It Works</Badge>
+                    </div>
                     <h2 className="text-[24px] md:text-[36px] font-semibold text-[#0f172a] mb-5 tracking-tight">
                         Simple Development Process
                     </h2>

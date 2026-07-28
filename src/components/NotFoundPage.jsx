@@ -1,7 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useDocumentMetadata from '../hooks/useDocumentMetadata';
 
 export default function NotFoundPage() {
+    useDocumentMetadata({
+        title: "Page Not Found | Kretoss Technology",
+        description: "The page you are looking for does not exist. Back to home."
+    });
+
     return (
         <section className="min-h-screen flex flex-col items-center justify-center bg-[#0c0c0c] text-white py-24 px-6 md:px-12 relative overflow-hidden">
             {/* Background Glow */}

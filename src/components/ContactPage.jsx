@@ -1,5 +1,6 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
+import useDocumentMetadata from '../hooks/useDocumentMetadata';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ContactHero from './contact/ContactHero';
 import axios from 'axios';
@@ -36,6 +37,11 @@ const REVIEWS_DATA = [
 ];
 
 export default function ContactPage() {
+    useDocumentMetadata({
+        title: "Contact Us | Kretoss Technology",
+        description: "Get in touch with Kretoss Technology. Book a consultation, request a project quote, or reach out to our team for queries."
+    });
+
     const [activeReview, setActiveReview] = useState(0);
     const reviewWrapperRef = useRef(null);
     const [loading, setLoading] = useState(false);

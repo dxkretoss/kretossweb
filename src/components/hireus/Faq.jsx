@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Badge from '../ui/Badge';
 
 const faqs = [
     {
@@ -41,16 +42,17 @@ const Faq = () => {
             <div className="mx-auto px-6 max-w-[850px]">
 
                 {/* Header */}
-                <motion.div 
+                <motion.div
                     className="text-center mb-14"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h3 className="text-[#3b82f6] font-bold text-[12px] tracking-[0.15em] uppercase mb-4">
-                        FAQ
-                    </h3>
+
+                    <div className="flex items-center justify-center mb-4">
+                        <Badge variant='blue'>FAQ</Badge>
+                    </div>
                     <h2 className="text-[24px] md:text-[36px] font-semibold text-[#0f172a] mb-5 tracking-tight">
                         Frequently Asked Questions
                     </h2>
@@ -58,7 +60,7 @@ const Faq = () => {
 
                 {/* FAQ List */}
                 {/* FAQ List */}
-                <motion.div 
+                <motion.div
                     className="flex flex-col gap-4"
                     initial="hidden"
                     whileInView="visible"

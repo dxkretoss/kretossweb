@@ -376,7 +376,6 @@ export const portfolioDetailsData = [
                 "Created an intuitive user experience that simplifies the complete job search lifecycle."
             ],
             "testimonial": {
-                "image": "https://i.pravatar.cc/150?u=kretoss_2",
                 "text": "The Kretoss team successfully transformed our vision into a modern AI-powered career platform. They didn't just build features—they understood the entire job search journey and delivered a product that feels intelligent, secure, and incredibly easy to use. Their technical expertise and attention to user experience made NextHunt exactly the platform we envisioned.",
                 "author": "Paul King",
                 "position": "CEO, NextHunt",
@@ -1152,7 +1151,7 @@ export const portfolioDetailsData = [
         "timeline": "2-3 Months",
         "techStack": "ReactJS",
         "link": "https://searchive.co.uk/",
-        "client": "Searchive",
+        "client": "c",
         "description": "A recruitment platform designed to simplify candidate sourcing, screening, and hiring for growing organizations.",
         "challenge": "The client needed a robust ReactJS architecture that could handle increasing traffic while maintaining a seamless user experience.",
         "solution": "We engineered a customized platform using ReactJS, integrating advanced features to deliver optimal performance and engagement.",

@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
+import useDocumentMetadata from '../hooks/useDocumentMetadata';
 import { motion, AnimatePresence } from 'framer-motion';
 import { portfolioDetailsData } from '../data/portfoliodetails';
 import AnimatedButton from './ui/AnimatedButton';
@@ -24,6 +25,11 @@ export default function PortfolioDetailsPage() {
     const [desktopScrollMode, setDesktopScrollMode] = useState('auto');
     const [activeSection, setActiveSection] = useState('overview');
     const [isOverviewExpanded, setIsOverviewExpanded] = useState(false);
+
+    useDocumentMetadata({
+        title: project ? `${project.title} Case Study | Kretoss Technology` : "Case Study | Kretoss Technology",
+        description: project ? `${project.title} case study by Kretoss Technology. Discover the challenges, solutions, and technologies we used to build it.` : "Read our case studies by Kretoss Technology."
+    });
 
     const sectionRefs = {
         overview: useRef(null),
@@ -259,6 +265,14 @@ export default function PortfolioDetailsPage() {
 
                                                     {project.mobileScreens ? (
                                                         <div className="w-full relative group/screen select-none rounded-[2.3rem] overflow-hidden bg-black">
+                                                            {/* Fallback Kretoss Logo (shows while loading) */}
+                                                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-50 z-0">
+                                                                <img
+                                                                    src="/kretoss-logo.svg"
+                                                                    alt="Kretoss Logo"
+                                                                    className="w-[40%] max-w-[100px] object-contain filter brightness-125"
+                                                                />
+                                                            </div>
                                                             <div className="absolute inset-y-0 left-0 w-1/2 z-20 cursor-pointer" onClick={prevScreen} />
                                                             <div className="absolute inset-y-0 right-0 w-1/2 z-20 cursor-pointer" onClick={nextScreen} />
                                                             <img src={project.mobileScreens[0]} className="w-full h-auto block invisible pointer-events-none" alt="" />
@@ -284,9 +298,17 @@ export default function PortfolioDetailsPage() {
                                     <div className="relative w-[88%] max-w-[750px] mx-auto lg:ml-auto lg:mr-2 xl:mr-4">
                                         <div className="relative w-full bg-[#0d0d0d] rounded-t-2xl border-[10px] border-[#1e1e1f] shadow-[0_30px_80px_rgba(0,0,0,0.2)] aspect-video overflow-hidden">
                                             <div className="relative w-full h-full bg-[#121212] overflow-hidden group/screen">
+                                                {/* Fallback Kretoss Logo (shows while loading) */}
+                                                <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-50 z-0">
+                                                    <img
+                                                        src="/kretoss-logo.svg"
+                                                        alt="Kretoss Logo"
+                                                        className="w-[30%] max-w-[120px] object-contain filter brightness-125"
+                                                    />
+                                                </div>
                                                 <div
                                                     onClick={() => setDesktopScrollMode(prev => prev === 'paused' ? 'playing' : 'paused')}
-                                                    className={`w-full h-full bg-top desktop-scroll-container desktop-scroll-mode-${desktopScrollMode} cursor-pointer`}
+                                                    className={`relative z-10 w-full h-full bg-top desktop-scroll-container desktop-scroll-mode-${desktopScrollMode} cursor-pointer`}
                                                     style={{ backgroundImage: `url(${project.portfolioImage})`, backgroundSize: '100% auto', backgroundRepeat: 'no-repeat' }}
                                                 />
                                                 <div className="absolute inset-0 bg-black/55 backdrop-blur-[1px] hidden md:flex flex-col items-center justify-center text-center opacity-100 group-hover/screen:opacity-0 transition-opacity duration-500 z-30 pointer-events-none">

@@ -11,6 +11,7 @@ import {
 import PhoneInputModule from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import HireFormModal from './HireFormModal';
+import Badge from '../ui/Badge';
 const PhoneInput = PhoneInputModule.default ? PhoneInputModule.default : PhoneInputModule;
 
 const techLogos = {
@@ -574,6 +575,18 @@ const Technologies = () => {
 
     const filters = ["All", "Frontend", "Backend", "Mobile", "E-commerce", "Full Stack"];
 
+    useEffect(() => {
+        const isMobile = window.innerWidth < 992;
+        if (isMobile) return;
+
+        const timer = setTimeout(() => {
+            if (window.ScrollTrigger) {
+                window.ScrollTrigger.refresh();
+            }
+        }, 400);
+        return () => clearTimeout(timer);
+    }, [activeFilter, searchQuery, currentPage]);
+
     const filteredData = techData.filter(item => {
         const matchesFilter = activeFilter === 'All' || item.category.toLowerCase() === activeFilter.toLowerCase();
         const matchesSearch = item.tech.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -599,7 +612,10 @@ const Technologies = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h3 className="text-[#0037f0] font-bold text-[12px] tracking-[0.15em] uppercase mb-4">Browse Technologies</h3>
+
+                    <div className="flex items-center justify-center mb-4">
+                        <Badge variant='blue'>Browse Technologies</Badge>
+                    </div>
                     <h2 className="text-[24px] md:text-[36px] font-semibold text-[#0a1520] mb-4">Find the Right Expertise</h2>
                     <p className="text-[#555] text-[14px] lg:text-base mb-6">
                         From frontend frameworks to full-stack teams hire vetted engineers across every major technology.
@@ -608,7 +624,7 @@ const Technologies = () => {
 
                 {/* Search & Filters */}
                 <motion.div
-                    className="max-w-4xl mx-auto mb-12"
+                    className="max-w-4xl mx-auto mb-6 md:mb-12"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -628,8 +644,24 @@ const Technologies = () => {
                                     return newParams;
                                 }, { replace: true });
                             }}
-                            className="h-[44px] w-full py-5 pl-10 pr-6 rounded-2xl border border-gray-200 outline-none focus:border-[#0037f0] focus:ring-4 focus:ring-[#0037f0]/10 transition-all text-lg text-gray-700"
+                            className="h-[44px] w-full py-5 pl-10 pr-10 rounded-2xl border border-gray-200 outline-none focus:border-[#0037f0] focus:ring-4 focus:ring-[#0037f0]/10 transition-all text-lg text-gray-700"
                         />
+                        {searchQuery && (
+                            <button
+                                onClick={() => {
+                                    setSearchQuery('');
+                                    setSearchParams(prev => {
+                                        const newParams = new URLSearchParams(prev);
+                                        newParams.set('page', '1');
+                                        return newParams;
+                                    }, { replace: true });
+                                }}
+                                className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-gray-600 rounded-full hover:bg-gray-100 transition-colors"
+                                aria-label="Clear search"
+                            >
+                                <X className="w-4 h-4" />
+                            </button>
+                        )}
                     </div>
 
                     <div className="flex md:justify-center gap-3 overflow-x-auto pb-4 scrollbar-hide">
@@ -657,102 +689,120 @@ const Technologies = () => {
 
                 {/* Grid */}
                 <AnimatePresence mode="wait">
-                    <motion.div
-                        key={`${activeFilter}-${currentPage}-${searchQuery}`}
-                        id="technologies-grid"
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-                        initial="hidden"
-                        animate="visible"
-                        exit="exit"
-                        variants={{
-                            hidden: { opacity: 0 },
-                            visible: {
-                                opacity: 1,
-                                transition: { staggerChildren: 0.05 }
-                            },
-                            exit: { opacity: 0, transition: { duration: 0.2 } }
-                        }}
-                    >
-                        {paginatedData.map(item => (
-                            <motion.div
-                                key={item.id}
-                                className="bg-white rounded-2xl border border-gray-200 p-3 md:p-6 hover:shadow-xl hover:shadow-[#0037f0]/5 hover:border-blue-100 transition-all duration-300 flex flex-col h-full"
-                                variants={{
-                                    hidden: { opacity: 0, scale: 0.95, y: 10 },
-                                    visible: { opacity: 1, scale: 1, y: 0 }
-                                }}
-                            >
+                    {filteredData.length === 0 ? (
+                        <motion.div
+                            key="no-results"
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0 }}
+                            className="flex flex-col items-center justify-center py-24 text-center w-full"
+                        >
+                            <div className="w-20 h-20 bg-gray-50/50 rounded-full flex items-center justify-center mb-5 shadow-sm border border-gray-100">
+                                <Search className="w-8 h-8 text-gray-300" />
+                            </div>
+                            <h3 className="text-xl md:text-2xl font-bold text-[#0a1520] mb-3">No expertise found</h3>
+                            <p className="text-gray-500 max-w-md text-[15px]">
+                                We couldn't find any technologies matching <span className="font-semibold text-gray-700">"{searchQuery}"</span>. Try checking for typos or searching with different terms.
+                            </p>
+                        </motion.div>
+                    ) : (
+                        <motion.div
+                            key={`${activeFilter}-${currentPage}-${searchQuery}`}
+                            id="technologies-grid"
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+                            initial="hidden"
+                            animate="visible"
+                            exit="exit"
+                            variants={{
+                                hidden: { opacity: 0 },
+                                visible: {
+                                    opacity: 1,
+                                    transition: { staggerChildren: 0.05 }
+                                },
+                                exit: { opacity: 0, transition: { duration: 0.2 } }
+                            }}
+                        >
+                            {paginatedData.map(item => (
+                                <motion.div
+                                    key={item.id}
+                                    className="bg-white rounded-2xl border border-gray-200 p-3 md:p-6 hover:shadow-xl hover:shadow-[#0037f0]/5 hover:border-blue-100 transition-all duration-300 flex flex-col h-full"
+                                    variants={{
+                                        hidden: { opacity: 0, scale: 0.95, y: 10 },
+                                        visible: { opacity: 1, scale: 1, y: 0 }
+                                    }}
+                                >
 
-                                {/* Tech Header */}
-                                <div className="flex items-center gap-4 mb-4">
-                                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl ${item.iconBg} ${item.iconColor}`}>
-                                        {techLogos[item.tech] ? (
-                                            React.createElement(techLogos[item.tech], { className: "w-6 h-6" })
-                                        ) : (
-                                            item.iconText
-                                        )}
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-[#0a1520] text-[17px] leading-tight">{item.tech}</h4>
-                                        <span className="text-[11px] font-bold text-gray-400 uppercase tracking-wider">{item.category}</span>
-                                    </div>
-                                </div>
-
-                                <p className="text-gray-500 text-[15px] leading-relaxed mb-6 flex-1">
-                                    {item.description}
-                                </p>
-
-                                {/* Dev Info */}
-                                <div className="bg-[#f8faff] rounded-xl p-4 mb-5 border border-blue-50/50">
-                                    <div className="flex items-center gap-3 mb-3">
-                                        <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border-2 border-white shadow-sm bg-gray-100">
-                                            <img src={item.devImage} alt={item.devName} className="w-full h-full object-fill grayscale" />
+                                    {/* Tech Header */}
+                                    <div className="flex items-center gap-4 mb-4">
+                                        <div className={`w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl ${item.iconBg} ${item.iconColor}`}>
+                                            {techLogos[item.tech] ? (
+                                                React.createElement(techLogos[item.tech], { className: "w-6 h-6" })
+                                            ) : (
+                                                item.iconText
+                                            )}
                                         </div>
                                         <div>
-                                            <h5 className="font-bold text-[#0a1520] text-[15px] leading-tight">{item.devName}</h5>
-                                            <span className={`text-[10px] font-black uppercase tracking-wider ${item.devRole.includes('SENIOR') ? 'text-[#0037f0]' :
-                                                item.devRole.includes('LEAD') ? 'text-purple-600' :
-                                                    item.devRole.includes('MID') ? 'text-[#0ea5e9]' : 'text-orange-500'
-                                                }`}>{item.devRole}</span>
+                                            <h4 className="font-bold text-[#0a1520] text-[17px] leading-tight">{item.tech}</h4>
+                                            <span className="text-[11px] font-bold text-gray-400 uppercase tracking-wider">{item.category}</span>
                                         </div>
                                     </div>
-                                    <div className="flex items-center gap-1.5">
-                                        <div className="flex text-amber-400">
-                                            {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-current" />)}
-                                        </div>
-                                        <span className="font-bold text-gray-800 text-[13px] ml-1">{item.rating}</span>
-                                        <span className="text-gray-400 text-[13px]">({item.reviews} reviews)</span>
-                                    </div>
-                                </div>
 
-                                {/* Action Buttons */}
-                                <div className="flex items-stretch gap-2 mt-auto h-11">
-                                    {item.showHireNow ? (
-                                        <button onClick={() => { setSelectedDev(item); setShowHireForm(true); }} className="h-[44px] flex-1 bg-[#0a1520] text-white font-bold text-[14px] rounded-lg hover:bg-gray-800 transition-colors">
-                                            Hire Now
-                                        </button>
-                                    ) : (
-                                        <div className="h-[44px] flex-1 bg-[#eefaf1] text-[#22a04c] rounded-lg border border-[#cbeed5] flex flex-col justify-center px-2.5 overflow-hidden">
-                                            <div className="flex items-center gap-1 text-[11.5px] font-bold leading-tight">
-                                                <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />
-                                                <span className="truncate">Hired: {item.hiredBy}</span>
+                                    <p className="text-gray-500 text-[15px] leading-relaxed mb-6 flex-1">
+                                        {item.description}
+                                    </p>
+
+                                    {/* Dev Info */}
+                                    <div className="bg-[#f8faff] rounded-xl p-4 mb-5 border border-blue-50/50">
+                                        <div className="flex items-center gap-3 mb-3">
+                                            <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border-2 border-white shadow-sm bg-gray-100">
+                                                <img src={item.devImage} alt={item.devName} className="w-full h-full object-fill grayscale" />
                                             </div>
-                                            <div className="text-[9.5px] font-bold opacity-80 pl-4.5 mt-0.5 truncate leading-tight flex items-center gap-1">
-                                                <img src={`https://flagcdn.com/w20/${item.countryCode.toLowerCase()}.png`} alt={item.countryCode} className="w-3.5 h-auto rounded-[1px] shadow-[0_0_2px_rgba(0,0,0,0.2)]" />
-                                                <span>{item.country}</span>
+                                            <div>
+                                                <h5 className="font-bold text-[#0a1520] text-[15px] leading-tight">{item.devName}</h5>
+                                                <span className={`text-[10px] font-black uppercase tracking-wider ${item.devRole.includes('SENIOR') ? 'text-[#0037f0]' :
+                                                    item.devRole.includes('LEAD') ? 'text-purple-600' :
+                                                        item.devRole.includes('MID') ? 'text-[#0ea5e9]' : 'text-orange-500'
+                                                    }`}>{item.devRole}</span>
                                             </div>
                                         </div>
-                                    )}
-                                    <button
-                                        onClick={() => setSelectedDev(item)}
-                                        className="h-[44px] flex-1 bg-white text-[#0037f0] font-bold text-[14px] rounded-lg border border-gray-200 hover:border-[#0037f0] hover:bg-blue-50 transition-colors flex items-center justify-center"
-                                    >
-                                        View Details
-                                    </button>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </motion.div>
+                                        <div className="flex items-center gap-1.5">
+                                            <div className="flex text-amber-400">
+                                                {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-current" />)}
+                                            </div>
+                                            <span className="font-bold text-gray-800 text-[13px] ml-1">{item.rating}</span>
+                                            <span className="text-gray-400 text-[13px]">({item.reviews} reviews)</span>
+                                        </div>
+                                    </div>
+
+                                    {/* Action Buttons */}
+                                    <div className="flex items-stretch gap-2 mt-auto h-11">
+                                        {item.showHireNow ? (
+                                            <button onClick={() => { setSelectedDev(item); setShowHireForm(true); }} className="h-[44px] flex-1 bg-[#0a1520] text-white font-bold text-[14px] rounded-lg hover:bg-gray-800 transition-colors">
+                                                Hire Now
+                                            </button>
+                                        ) : (
+                                            <div className="h-[44px] flex-1 bg-[#eefaf1] text-[#22a04c] rounded-lg border border-[#cbeed5] flex flex-col justify-center px-2.5 overflow-hidden">
+                                                <div className="flex items-center gap-1 text-[11.5px] font-bold leading-tight">
+                                                    <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />
+                                                    <span className="truncate">Hired: {item.hiredBy}</span>
+                                                </div>
+                                                <div className="text-[9.5px] font-bold opacity-80 pl-4.5 mt-0.5 truncate leading-tight flex items-center gap-1">
+                                                    <img src={`https://flagcdn.com/w20/${item.countryCode.toLowerCase()}.png`} alt={item.countryCode} className="w-3.5 h-auto rounded-[1px] shadow-[0_0_2px_rgba(0,0,0,0.2)]" />
+                                                    <span>{item.country}</span>
+                                                </div>
+                                            </div>
+                                        )}
+                                        <button
+                                            onClick={() => setSelectedDev(item)}
+                                            className="h-[44px] flex-1 bg-white text-[#0037f0] font-bold text-[14px] rounded-lg border border-gray-200 hover:border-[#0037f0] hover:bg-blue-50 transition-colors flex items-center justify-center"
+                                        >
+                                            View Details
+                                        </button>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    )}
                 </AnimatePresence>
 
                 {/* Pagination */}

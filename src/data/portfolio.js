@@ -4,8 +4,8 @@ export const portfolioData = {
                 //new
                 {
                         "slug": "klubbrabatten",
-                        "portfolioImage": "/portfolio/custom/klubbrabatten-new.jpg",
-                        "portfolioLogo": "/portfolio/custom/Klubbrabatten-logo.png",
+                        "portfolioImage": "/portfolio/custom/portfolio_klubbrabatten.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_klubbrabatten_logo.png",
 
                         "category": "Custom web",
                         "tags": [
@@ -23,8 +23,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "palzea-widget",
-                        "portfolioImage": "/portfolio/custom/Palzea-new.png",
-                        "portfolioLogo": "/portfolio/custom/palzea-logo.png",
+                        "portfolioImage": "/portfolio/custom/portfolio_palzea-widget.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_palzea_logo.png",
 
                         "category": "Custom web",
                         "tags": [
@@ -42,8 +42,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "fily",
-                        "portfolioImage": "/portfolio/custom/Fily-new.jpg",
-                        "portfolioLogo": "/portfolio/custom/Fily-logo.png",
+                        "portfolioImage": "/portfolio/custom/portfolio_fily.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_fily_logo.png",
 
                         "category": "Custom web",
                         "tags": [
@@ -61,7 +61,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "palzea",
-                        "portfolioImage": "/portfolio/custom/portfolio_palzea.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_palzea.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_palzea_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Palzea",
@@ -79,7 +80,7 @@ export const portfolioData = {
 
                 {
                         "slug": "domino-hub",
-                        "portfolioImage": "/portfolio/custom/domino_hub_new.jpg",
+                        "portfolioImage": "/portfolio/custom/Domino_hub.png",
                         "portfolioLogo": "/portfolio/custom/domino-logo.png",
                         "category": "Custom web",
                         "tags": [
@@ -98,7 +99,8 @@ export const portfolioData = {
 
                 {
                         "slug": "guestway",
-                        "portfolioImage": "/portfolio/custom/Guestway.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_guestway.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_guestway_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Guestway",
@@ -115,7 +117,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "nexthunt",
-                        "portfolioImage": "/portfolio/custom/portfolio_nexthunt.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_nexthunt.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_nexthunt_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "NextHunt",
@@ -130,26 +133,28 @@ export const portfolioData = {
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolio/nexthunt"
                 },
-                {
-                        "slug": "wallstreets",
-                        "portfolioImage": "/portfolio/custom/portfolio_wallstreet.webp",
-                        "category": "Custom web",
-                        "tags": [
-                                "Wall Street",
-                                "Web"
-                        ],
-                        "title": "Wall Street",
-                        "description": "WallStreet.io is an advanced trading platform offering real-time market data, backtesting, intelligent screeners, and strategy validation to support smarter, data-driven investment decisions.",
-                        "timeline": "2-3 Months",
-                        "acquisition": "N/A",
-                        "country": "USA",
-                        "techStack": "Angular & Laravel",
-                        "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                        "link": "/portfolio/wallstreets"
-                },
+                // {
+                //         "slug": "wallstreets",
+                //         "portfolioImage": "/portfolio/custom/portfolio_wallstreet.webp",
+                //         "portfolioLogo": "/portfolio/custom/portfolio_wallstreet_logo.png",
+                //         "category": "Custom web",
+                //         "tags": [
+                //                 "Wall Street",
+                //                 "Web"
+                //         ],
+                //         "title": "Wall Street",
+                //         "description": "WallStreet.io is an advanced trading platform offering real-time market data, backtesting, intelligent screeners, and strategy validation to support smarter, data-driven investment decisions.",
+                //         "timeline": "2-3 Months",
+                //         "acquisition": "N/A",
+                //         "country": "USA",
+                //         "techStack": "Angular & Laravel",
+                //         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                //         "link": "/portfolio/wallstreets"
+                // },
                 {
                         "slug": "allbots",
-                        "portfolioImage": "/portfolio/custom/portfolio_allbots.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_allbots.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_allbots_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Allbots",
@@ -167,7 +172,8 @@ export const portfolioData = {
 
                 {
                         "slug": "dreamload",
-                        "portfolioImage": "/portfolio/custom/portfolio_dreamload.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_dreamload.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_dreamload_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Dreamload",
@@ -184,7 +190,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "phoenixfc",
-                        "portfolioImage": "/portfolio/custom/portfolio_phoenix.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_phoenix.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_phoenix_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "PhoenixFC",
@@ -202,7 +209,8 @@ export const portfolioData = {
 
                 {
                         "slug": "stb",
-                        "portfolioImage": "/portfolio/custom/portfolio_stb.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_stb.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_stb_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Student Travel Buddy",
@@ -218,26 +226,28 @@ export const portfolioData = {
                         "link": "/portfolio/stb"
                 },
 
-                {
-                        "slug": "giveaways",
-                        "portfolioImage": "/portfolio/custom/portfolio_giveaways.webp",
-                        "category": "Custom web",
-                        "tags": [
-                                "Giveaway",
-                                "Web"
-                        ],
-                        "title": "Giveaway",
-                        "description": "A campaign management platform that helps brands run giveaways, engage audiences, and increase customer participation.",
-                        "timeline": "1-2 Months",
-                        "acquisition": "N/A",
-                        "country": "Canada",
-                        "techStack": "Laravel",
-                        "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                        "link": "/portfolio/giveaways"
-                },
+                // {
+                //         "slug": "giveaways",
+                //         "portfolioImage": "/portfolio/custom/portfolio_giveaways.png",
+                //         "portfolioLogo": "/portfolio/custom/portfolio_giveaways_logo.png",
+                //         "category": "Custom web",
+                //         "tags": [
+                //                 "Giveaway",
+                //                 "Web"
+                //         ],
+                //         "title": "Giveaway",
+                //         "description": "A campaign management platform that helps brands run giveaways, engage audiences, and increase customer participation.",
+                //         "timeline": "1-2 Months",
+                //         "acquisition": "N/A",
+                //         "country": "Canada",
+                //         "techStack": "Laravel",
+                //         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                //         "link": "/portfolio/giveaways"
+                // },
                 {
                         "slug": "sarhachat",
-                        "portfolioImage": "/portfolio/custom/portfolio_sarhachat.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_sarhachat.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_sarhachat_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Sarhachat",
@@ -253,26 +263,28 @@ export const portfolioData = {
                         "link": "/portfolio/sarhachat"
                 },
 
-                {
-                        "slug": "searchive",
-                        "portfolioImage": "/portfolio/custom/portfolio_searchive.webp",
-                        "category": "Custom web",
-                        "tags": [
-                                "Searchive",
-                                "Web"
-                        ],
-                        "title": "Searchive",
-                        "description": "A recruitment platform designed to simplify candidate sourcing, screening, and hiring for growing organizations.",
-                        "timeline": "2-3 Months",
-                        "acquisition": "N/A",
-                        "country": "Brazil",
-                        "techStack": "ReactJS",
-                        "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                        "link": "/portfolio/searchive"
-                },
+                // {
+                //         "slug": "searchive",
+                //         "portfolioImage": "/portfolio/custom/portfolio_searchive.png",
+                //         "portfolioLogo": "/portfolio/custom/portfolio_searchive_logo.png",
+                //         "category": "Custom web",
+                //         "tags": [
+                //                 "Searchive",
+                //                 "Web"
+                //         ],
+                //         "title": "Searchive",
+                //         "description": "A recruitment platform designed to simplify candidate sourcing, screening, and hiring for growing organizations.",
+                //         "timeline": "2-3 Months",
+                //         "acquisition": "N/A",
+                //         "country": "Brazil",
+                //         "techStack": "ReactJS",
+                //         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                //         "link": "/portfolio/searchive"
+                // },
                 {
                         "slug": "coyna",
-                        "portfolioImage": "/portfolio/custom/portfolio_coyna.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_coyna.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_coyna_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Coyna",
@@ -289,7 +301,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "gujarat-tiles-info",
-                        "portfolioImage": "/portfolio/custom/portfolio_gujarat_tiles_info.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_gujarat_tiles_info.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_gujarat_tiles_info_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Gujarat Tiles Info",
@@ -306,7 +319,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "implanstock",
-                        "portfolioImage": "/portfolio/custom/portfolio_implantstock.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_implantstock.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_implantstock_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Implant Stock",
@@ -323,7 +337,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "locum-prime",
-                        "portfolioImage": "/portfolio/custom/portfolio_locumprime.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_locumprime.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_locumprime_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Locum Prime",
@@ -340,7 +355,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "trust-arthur-group",
-                        "portfolioImage": "/portfolio/custom/portfolio_trust_arthur_group.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_trust_arthur_group.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_trust_arthur_group_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Trust Arthur Group",
@@ -355,23 +371,24 @@ export const portfolioData = {
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolio/trust-arthur-group"
                 },
-                {
-                        "slug": "taxley-custom",
-                        "portfolioImage": "/portfolio/custom/portfolio_taxley.webp",
-                        "category": "Custom web",
-                        "tags": [
-                                "Taxley",
-                                "Web"
-                        ],
-                        "title": "Taxley",
-                        "description": "Taxley simplifies Swiss tax filing through secure document uploads, digital preparation workflows, expert reviews, and online communication for a faster and more transparent tax experience.",
-                        "timeline": "6-7 Months",
-                        "acquisition": "N/A",
-                        "country": "Canada",
-                        "techStack": "MySQL, Node JS, ReactJS",
-                        "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                        "link": "/portfolio/taxley-custom"
-                }
+                // {
+                //         "slug": "taxley-custom",
+                //         "portfolioImage": "/portfolio/custom/portfolio_taxley.png",
+                //         "portfolioLogo": "/portfolio/custom/portfolio_taxley_logo.png",
+                //         "category": "Custom web",
+                //         "tags": [
+                //                 "Taxley",
+                //                 "Web"
+                //         ],
+                //         "title": "Taxley",
+                //         "description": "Taxley simplifies Swiss tax filing through secure document uploads, digital preparation workflows, expert reviews, and online communication for a faster and more transparent tax experience.",
+                //         "timeline": "6-7 Months",
+                //         "acquisition": "N/A",
+                //         "country": "Canada",
+                //         "techStack": "MySQL, Node JS, ReactJS",
+                //         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                //         "link": "/portfolio/taxley-custom"
+                // }
         ],
         "Python": [
                 {
@@ -699,7 +716,8 @@ export const portfolioData = {
         "Shopify": [
                 {
                         "slug": "ludic-life",
-                        "portfolioImage": "/portfolio/shopify/portfolio_ludic-life.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_ludic-life.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_ludic_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Ludic Life",
@@ -716,7 +734,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "honey-stinger",
-                        "portfolioImage": "/portfolio/shopify/portfolio_honeyStinger.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_honeyStinger.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_honeyStinger_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Honey Stinger",
@@ -733,7 +752,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "ludic-global",
-                        "portfolioImage": "/portfolio/shopify/portfolio_ludic-global.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_ludic-global.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_ludic_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Ludic Global",
@@ -750,7 +770,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "tango-swim",
-                        "portfolioImage": "/portfolio/shopify/portfolio_tango.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_tango.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_tango_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Tango Swim",
@@ -767,7 +788,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "amatsubu",
-                        "portfolioImage": "/portfolio/shopify/portfolio_amatsubu.jpg",
+                        "portfolioImage": "/portfolio/shopify/portfolio_amatsubu.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_amatsubu_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Amatsubu",
@@ -785,7 +807,8 @@ export const portfolioData = {
 
                 {
                         "slug": "femmefunn",
-                        "portfolioImage": "/portfolio/shopify/portfolio_femmefunn.jpg",
+                        "portfolioImage": "/portfolio/shopify/portfolio_femmefunn.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_femmefunn_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "FemmeFunn",
@@ -802,7 +825,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "ohherb",
-                        "portfolioImage": "/portfolio/shopify/portfolio_ohherb.jpg",
+                        "portfolioImage": "/portfolio/shopify/portfolio_ohherb.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_ohherb_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Oh herb",
@@ -820,7 +844,8 @@ export const portfolioData = {
 
                 {
                         "slug": "bylivi",
-                        "portfolioImage": "/portfolio/shopify/portfolio_bylivi.jpg",
+                        "portfolioImage": "/portfolio/shopify/portfolio_bylivi.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_bylivi_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "By Livi",
@@ -837,7 +862,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "repflex",
-                        "portfolioImage": "/portfolio/shopify/portfolio_repflex.jpg",
+                        "portfolioImage": "/portfolio/shopify/portfolio_repflex.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_repflex_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Repflex",
@@ -854,7 +880,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "mikrofarmen",
-                        "portfolioImage": "/portfolio/shopify/portfolio_mikrofarmen.jpg",
+                        "portfolioImage": "/portfolio/shopify/portfolio_mikrofarmen.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_mikrofarmen_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Mikrofarmen",
@@ -871,7 +898,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "crackcookies",
-                        "portfolioImage": "/portfolio/shopify/portfolio_crack_cookies.jpg",
+                        "portfolioImage": "/portfolio/shopify/portfolio_crack_cookies.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_crack_cookies_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "CrackCookies",
@@ -905,7 +933,8 @@ export const portfolioData = {
                 // },
                 {
                         "slug": "kates-real-food",
-                        "portfolioImage": "/portfolio/shopify/portfolio_katesrealfood.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_katesrealfood.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_katesrealfood_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Kate's Real Food",
@@ -923,7 +952,8 @@ export const portfolioData = {
 
                 {
                         "slug": "ludic-kitchen",
-                        "portfolioImage": "/portfolio/shopify/portfolio_ludic-kitchen.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_ludic-kitchen.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_ludic-kitchen_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Ludic Kitchen",
@@ -940,7 +970,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "almost-peaceful",
-                        "portfolioImage": "/portfolio/shopify/portfolio_almost.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_almost.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_almost_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Almost Peaceful",
@@ -957,7 +988,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "impetus-health",
-                        "portfolioImage": "/portfolio/shopify/portfolio_impectus.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_impectus.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_impectus_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Impetus Health",
@@ -972,26 +1004,28 @@ export const portfolioData = {
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
                         "link": "/portfolio/impetus-health"
                 },
-                {
-                        "slug": "roamaly",
-                        "portfolioImage": "/portfolio/shopify/portfolio_roamaly.webp",
-                        "category": "Shopify",
-                        "tags": [
-                                "Roamaly",
-                                "Shopify"
-                        ],
-                        "title": "Roamaly",
-                        "description": "Roamaly helps travelers purchase, activate, and manage eSIM data plans worldwide with instant digital activation, flexible options, and a seamless international connectivity experience.",
-                        "timeline": "2-4 Months",
-                        "acquisition": "N/A",
-                        "country": "United Kingdom",
-                        "techStack": "Shopify",
-                        "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
-                        "link": "/portfolio/roamaly"
-                },
+                // {
+                //         "slug": "roamaly",
+                //         "portfolioImage": "/portfolio/shopify/portfolio_roamaly.png",
+                //         "portfolioLogo": "/portfolio/shopify/portfolio_roamaly_logo.png",
+                //         "category": "Shopify",
+                //         "tags": [
+                //                 "Roamaly",
+                //                 "Shopify"
+                //         ],
+                //         "title": "Roamaly",
+                //         "description": "Roamaly helps travelers purchase, activate, and manage eSIM data plans worldwide with instant digital activation, flexible options, and a seamless international connectivity experience.",
+                //         "timeline": "2-4 Months",
+                //         "acquisition": "N/A",
+                //         "country": "United Kingdom",
+                //         "techStack": "Shopify",
+                //         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
+                //         "link": "/portfolio/roamaly"
+                // },
                 {
                         "slug": "kids-posters",
-                        "portfolioImage": "/portfolio/shopify/portfolio_kidsPoster.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_kidsPoster.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_kidsPoster_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Kids Posters",
@@ -1008,7 +1042,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "the-pawcan",
-                        "portfolioImage": "/portfolio/shopify/portfolio_pawcan.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_pawcan.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_pawcan_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "The Pawcan",
@@ -1025,7 +1060,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "recreation-beauty",
-                        "portfolioImage": "/portfolio/shopify/portfolio_recreation.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_recreation.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_recreation_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Recreation Beauty",
@@ -1043,7 +1079,8 @@ export const portfolioData = {
 
                 {
                         "slug": "tilit",
-                        "portfolioImage": "/portfolio/shopify/portfolio_tilit.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_tilit.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_tilit_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Tilit",
@@ -1061,7 +1098,8 @@ export const portfolioData = {
 
                 {
                         "slug": "moanarose",
-                        "portfolioImage": "/portfolio/shopify/portfolio_moanarose.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_moanarose.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_moanarose_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Moanarose",
@@ -1078,7 +1116,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "prime-nails",
-                        "portfolioImage": "/portfolio/shopify/portfolio_primeNails.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_primeNails.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_primeNails_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Prime Nails",
@@ -1095,7 +1134,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "source-bulk-foods",
-                        "portfolioImage": "/portfolio/shopify/portfolio_sourcebulkfoods.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_sourcebulkfoods.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_sourcebulkfoods_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "The Source Bulk Foods",
@@ -1112,7 +1152,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "beadspoint",
-                        "portfolioImage": "/portfolio/shopify/portfolio_beadspoint.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_beadspoint.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_beadspoint_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Beadspoint",
@@ -1129,7 +1170,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "vacurect",
-                        "portfolioImage": "/portfolio/shopify/portfolio_vacurect.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_vacurect.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_vacurect_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Vacurect",
@@ -1146,7 +1188,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "hydro-peptide",
-                        "portfolioImage": "/portfolio/shopify/portfolio_hydroPeptide.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_hydroPeptide.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_hydroPeptide_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Hydro Peptide",
@@ -1163,7 +1206,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "boxraw",
-                        "portfolioImage": "/portfolio/shopify/portfolio_boxraw.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_boxraw.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_boxraw_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Boxraw",
@@ -1180,7 +1224,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "ultimate-ears",
-                        "portfolioImage": "/portfolio/shopify/portfolio_ultimateEars.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_ultimateEars.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_ultimateEars_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Ultimate Ears",
@@ -1197,7 +1242,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "ruumi-art",
-                        "portfolioImage": "/portfolio/shopify/portfolio_ruumiArt.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_ruumiArt.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_ruumiArt_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Ruumi Art",
@@ -1214,7 +1260,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "ludic",
-                        "portfolioImage": "/portfolio/shopify/portfolio_ludic.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_ludic.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_ludic_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Ludic",
@@ -1231,7 +1278,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "vegamour",
-                        "portfolioImage": "/portfolio/shopify/portfolio_vegamour.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_vegamour.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_vegamour_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Vegamour",
@@ -1248,7 +1296,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "kretoss",
-                        "portfolioImage": "/portfolio/shopify/portfolio_kretoss.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_kretoss.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_kretoss_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Kretoss",
@@ -1265,7 +1314,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "vitality",
-                        "portfolioImage": "/portfolio/shopify/portfolio_vitality.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_vitality.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_vitality_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Vitality",
@@ -1282,7 +1332,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "anveshan-farm-technologies",
-                        "portfolioImage": "/portfolio/shopify/portfolio_anveshan.webp",
+                        "portfolioImage": "/portfolio/shopify/portfolio_anveshan.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_anveshan_logo.png",
                         "category": "Shopify",
                         "tags": [
                                 "Anveshan Farm Technologies",
@@ -1301,7 +1352,8 @@ export const portfolioData = {
         "Bigcommerce": [
                 {
                         "slug": "leebroom",
-                        "portfolioImage": "/portfolio/bigcommerce/portfolio_leebroom.jpg",
+                        "portfolioImage": "/portfolio/bigcommerce/portfolio_leebroom.png",
+                        "portfolioLogo": "/portfolio/bigcommerce/portfolio_leebroom_logo.png",
                         "category": "Bigcommerce",
                         "tags": [
                                 "LEE BROOM",
@@ -1318,7 +1370,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "locket-sisters",
-                        "portfolioImage": "/portfolio/bigcommerce/portfolio_locket-sisters.jpg",
+                        "portfolioImage": "/portfolio/bigcommerce/portfolio_locket-sisters.png",
+                        "portfolioLogo": "/portfolio/bigcommerce/portfolio_locket-sisters_logo.png",
                         "category": "Bigcommerce",
                         "tags": [
                                 "Locket Sisters",
@@ -1335,7 +1388,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "caramel",
-                        "portfolioImage": "/portfolio/bigcommerce/portfolio_caramel.jpg",
+                        "portfolioImage": "/portfolio/bigcommerce/portfolio_caramel.png",
+                        "portfolioLogo": "/portfolio/bigcommerce/portfolio_caramel_logo.png",
                         "category": "Bigcommerce",
                         "tags": [
                                 "Caramel",
@@ -1354,6 +1408,7 @@ export const portfolioData = {
                 {
                         "slug": "color-matrics",
                         "portfolioImage": "/portfolio/bigcommerce/portfolio_cs.png",
+                        "portfolioLogo": "/portfolio/bigcommerce/portfolio_cs_logo.png",
                         "category": "Bigcommerce",
                         "tags": [
                                 "Color Matrics",
@@ -1370,7 +1425,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "dane-apparel",
-                        "portfolioImage": "/portfolio/bigcommerce/portfolio_dane-apparel.jpg",
+                        "portfolioImage": "/portfolio/bigcommerce/portfolio_dane-apparel.png",
+                        "portfolioLogo": "/portfolio/bigcommerce/portfolio_dane-apparel_logo.png",
                         "category": "Bigcommerce",
                         "tags": [
                                 "Dane Apparel",
@@ -1389,6 +1445,7 @@ export const portfolioData = {
                 {
                         "slug": "intermat",
                         "portfolioImage": "/portfolio/bigcommerce/portfolio_intermat.png",
+                        "portfolioLogo": "/portfolio/bigcommerce/portfolio_intermat_logo.png",
                         "category": "Bigcommerce",
                         "tags": [
                                 "Intermat",
@@ -1406,6 +1463,7 @@ export const portfolioData = {
                 {
                         "slug": "good-good-ganja",
                         "portfolioImage": "/portfolio/bigcommerce/portfolio_good-good-ganja.png",
+                        "portfolioLogo": "/portfolio/bigcommerce/portfolio_good-good-ganja_logo.png",
                         "category": "Bigcommerce",
                         "tags": [
                                 "Good Good Ganja",
@@ -1425,7 +1483,8 @@ export const portfolioData = {
         "web design": [
                 {
                         "slug": "iiccrypto",
-                        "portfolioImage": "/portfolio/custom/IIC-Metaverse.webp",
+                        "portfolioImage": "/portfolio/web-design/portfolio_iic_metaverse.png",
+                        "portfolioLogo": "/portfolio/web-design/portfolio_iic_metaverse_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "IIC Metaverse",
@@ -1442,7 +1501,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "evergreen",
-                        "portfolioImage": "/portfolio/web-design/portfolio_evergreen.jpg",
+                        "portfolioImage": "/portfolio/web-design/portfolio_evergreen.png",
+                        "portfolioLogo": "/portfolio/web-design/portfolio_evergreen_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Evergreen Health",
@@ -1459,7 +1519,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "skin-dao",
-                        "portfolioImage": "/portfolio/web-design/portfolio_skin_dao.jpg",
+                        "portfolioImage": "/portfolio/web-design/portfolio_skin_dao.png",
+                        "portfolioLogo": "/portfolio/web-design/portfolio_skin_dao_logo.png",
                         "category": "web design",
                         "tags": [
                                 "Skin Dao",
@@ -1476,7 +1537,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "harborstone",
-                        "portfolioImage": "/portfolio/web-design/portfolio_harborstone.jpg",
+                        "portfolioImage": "/portfolio/web-design/portfolio_harborstone.png",
+                        "portfolioLogo": "/portfolio/web-design/portfolio_harborstone-logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Harborstone",
@@ -1493,7 +1555,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "saveyourcapital",
-                        "portfolioImage": "/portfolio/custom/portfolio_saveyourcapital.webp",
+                        "portfolioImage": "/portfolio/custom/portfolio_saveyourcapital.png",
+                        "portfolioLogo": "/portfolio/custom/portfolio_saveyourcapital_logo.png",
                         "category": "web design",
                         "tags": [
                                 "Save Your Capital",
@@ -1510,7 +1573,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "glasspro",
-                        "portfolioImage": "/portfolio/web-design/portfolio_glasspro.jpg",
+                        "portfolioImage": "/portfolio/web-design/portfolio_glasspro.png",
+                        "portfolioLogo": "/portfolio/web-design/portfolio_glasspro_logo.png",
                         "category": "Custom web",
                         "tags": [
                                 "Glasspro",
@@ -1530,7 +1594,8 @@ export const portfolioData = {
 
                 {
                         "slug": "better-quest",
-                        "portfolioImage": "/portfolio/web-design/portfolio_better_quest.jpg",
+                        "portfolioImage": "/portfolio/web-design/portfolio_better_quest.png",
+                        "portfolioLogo": "/portfolio/web-design/portfolio_better_quest_logo.png",
                         "category": "web design",
                         "tags": [
                                 "Better Quest",
@@ -1547,7 +1612,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "wedding-invitation",
-                        "portfolioImage": "/portfolio/web-design/portfolio_wedding_invitation.jpg",
+                        "portfolioImage": "/portfolio/web-design/portfolio_wedding_invitation.png",
+                        // "portfolioLogo": "/portfolio/web-design/portfolio_wedding_invitation_logo.png",
                         "category": "web design",
                         "tags": [
                                 "Wedding",
@@ -1564,7 +1630,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "atopic-diary",
-                        "portfolioImage": "/portfolio/web-design/portfolio_atopic_diary.jpg",
+                        "portfolioImage": "/portfolio/web-design/portfolio_atopic_diary.png",
+                        "portfolioLogo": "/portfolio/web-design/portfolio_atopic_diary_logo.png",
                         "category": "web design",
                         "tags": [
                                 "Atopic Diary",
@@ -1582,7 +1649,8 @@ export const portfolioData = {
 
                 {
                         "slug": "core",
-                        "portfolioImage": "/portfolio/web-design/portfolio_core.jpg",
+                        "portfolioImage": "/portfolio/web-design/portfolio_core.png",
+                        "portfolioLogo": "/portfolio/web-design/portfolio_core_logo.png",
                         "category": "web design",
                         "tags": [
                                 "Core CRMS",
@@ -1602,6 +1670,7 @@ export const portfolioData = {
                 {
                         "slug": "source-bulk-foods-wordpress",
                         "portfolioImage": "/portfolio/wordpress/portfolio_source_foods.jpg",
+                        // "portfolioLogo": "/portfolio/wordpress/portfolio_source_foods_logo.png",
                         "category": "Wordpress",
                         "tags": [
                                 "The Source Bulk Foods",
@@ -1618,7 +1687,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "one",
-                        "portfolioImage": "/portfolio/other/portfolio_one.jpg",
+                        "portfolioImage": "/portfolio/other/portfolio_one.png",
+                        "portfolioLogo": "/portfolio/other/portfolio_one_logo.png",
                         "category": "Other",
                         "tags": [
                                 "One",
@@ -1635,7 +1705,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "automaximizer",
-                        "portfolioImage": "/portfolio/other/portfolio_automaximizer.jpg",
+                        "portfolioImage": "/portfolio/other/portfolio_automaximizer.png",
+                        "portfolioLogo": "/portfolio/other/portfolio_automaximizer_logo.png",
                         "category": "Other",
                         "tags": [
                                 "Automaximizer",
@@ -1652,7 +1723,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "easygold",
-                        "portfolioImage": "/portfolio/wordpress/portfolio_easygold.jpg",
+                        "portfolioImage": "/portfolio/wordpress/portfolio_easygold.png",
+                        "portfolioLogo": "/portfolio/wordpress/portfolio_easygold_logo.png",
                         "category": "Wordpress",
                         "tags": [
                                 "EasyGold24",
@@ -1669,7 +1741,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "intempt",
-                        "portfolioImage": "/portfolio/other/portfolio_intempt.jpg",
+                        "portfolioImage": "/portfolio/other/portfolio_intempt.png",
+                        "portfolioLogo": "/portfolio/other/portfolio_intempt_logo.png",
                         "category": "Other",
                         "tags": [
                                 "Intempt",
@@ -1687,6 +1760,7 @@ export const portfolioData = {
                 {
                         "slug": "hunters-unite",
                         "portfolioImage": "/portfolio/other/portfolio_hunters_unite.jpg",
+                        // "portfolioLogo": "/portfolio/other/portfolio_hunters_unite_logo.png",
                         "category": "Other",
                         "tags": [
                                 "Hunters Unite",
@@ -1703,7 +1777,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "anthem",
-                        "portfolioImage": "/portfolio/wordpress/portfolio_anthem.jpg",
+                        "portfolioImage": "/portfolio/wordpress/portfolio_anthem.png",
+                        "portfolioLogo": "/portfolio/wordpress/portfolio_anthem_logo.png",
                         "category": "Wordpress",
                         "tags": [
                                 "Anthem Home Comfort",
@@ -1720,7 +1795,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "freight-plus",
-                        "portfolioImage": "/portfolio/wordpress/portfolio_freightplus.jpg",
+                        "portfolioImage": "/portfolio/wordpress/portfolio_freightplus.png",
+                        "portfolioLogo": "/portfolio/wordpress/portfolio_freightplus_logo.png",
                         "category": "Wordpress",
                         "tags": [
                                 "Freight Plus",
@@ -1737,7 +1813,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "sobel",
-                        "portfolioImage": "/portfolio/wordpress/portfolio_sobel.jpg",
+                        "portfolioImage": "/portfolio/wordpress/portfolio_sobel.png",
+                        "portfolioLogo": "/portfolio/wordpress/portfolio_sobel_logo.png",
                         "category": "Wordpress",
                         "tags": [
                                 "Sobel",
@@ -1754,7 +1831,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "beepec",
-                        "portfolioImage": "/portfolio/wordpress/portfolio_beepec.jpg",
+                        "portfolioImage": "/portfolio/wordpress/portfolio_beepec.png",
+                        "portfolioLogo": "/portfolio/wordpress/portfolio_beepec_logo.png",
                         "category": "Wordpress",
                         "tags": [
                                 "Beepec",
@@ -1773,7 +1851,8 @@ export const portfolioData = {
 
                 {
                         "slug": "meridian-pacific-properties",
-                        "portfolioImage": "/portfolio/wordpress/portfolio_meridian.jpg",
+                        "portfolioImage": "/portfolio/wordpress/portfolio_meridian.png",
+                        "portfolioLogo": "/portfolio/wordpress/portfolio_meridian_logo.png",
                         "category": "Wordpress",
                         "tags": [
                                 "Meridian Pacific Properties",
@@ -1790,7 +1869,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "the-penny",
-                        "portfolioImage": "/portfolio/wordpress/portfolio_penny.jpg",
+                        "portfolioImage": "/portfolio/wordpress/portfolio_penny.png",
+                        "portfolioLogo": "/portfolio/wordpress/portfolio_penny_logo.png",
                         "category": "Wordpress",
                         "tags": [
                                 "The Penny",
@@ -1807,7 +1887,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "litehaus",
-                        "portfolioImage": "/portfolio/wordpress/portfolio_litehaus.jpg",
+                        "portfolioImage": "/portfolio/wordpress/portfolio_litehaus.png",
+                        "portfolioLogo": "/portfolio/wordpress/portfolio_litehaus_logo.png",
                         "category": "Wordpress",
                         "tags": [
                                 "Litehaus",
@@ -1824,7 +1905,8 @@ export const portfolioData = {
                 },
                 {
                         "slug": "clean-steam-pros",
-                        "portfolioImage": "/portfolio/other/portfolio_clean_steam_pros.jpg",
+                        "portfolioImage": "/portfolio/other/portfolio_clean_steam_pros.png",
+                        "portfolioLogo": "/portfolio/other/portfolio_clean_steam_pros_logo.png",
                         "category": "Other",
                         "tags": [
                                 "Clean Steam Pros",
@@ -1842,7 +1924,8 @@ export const portfolioData = {
 
                 {
                         "slug": "aroconllc",
-                        "portfolioImage": "/portfolio/other/portfolio_aroconllc.jpg",
+                        "portfolioImage": "/portfolio/other/portfolio_aroconllc.png",
+                        "portfolioLogo": "/portfolio/other/portfolio_aroconllc_logo.png",
                         "category": "Other",
                         "tags": [
                                 "Aroconllc",
@@ -1861,7 +1944,8 @@ export const portfolioData = {
 
                 {
                         "slug": "rta-store",
-                        "portfolioImage": "/portfolio/other/portfolio_rta.jpg",
+                        "portfolioImage": "/portfolio/other/portfolio_rta.png",
+                        "portfolioLogo": "/portfolio/other/portfolio_rta_logo.png",
                         "category": "Other",
                         "tags": [
                                 "The RTA Store",

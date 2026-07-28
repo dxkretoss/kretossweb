@@ -89,12 +89,12 @@ export default function TeamSection() {
                     </div>
 
                     {/* Right Content - Cards Grid */}
-                    <div className="team-grid grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[480px] w-full mt-0 lg:mt-0 lg:ml-auto">
+                    <div className="team-grid grid grid-cols-2 gap-3 sm:gap-4 max-w-[480px] w-full mt-0 lg:mt-0 lg:ml-auto">
                         {teamMembersTop.map((member, idx) => (
                             <a
                                 key={idx}
                                 href={'#'}
-                                className="team-card flex flex-col bg-white rounded-md p-2 overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 group w-full max-w-[190px] sm:max-w-[210px] lg:max-w-[230px] h-[260px] sm:h-[280px] lg:h-[300px] mx-auto"
+                                className="team-card flex flex-col bg-white rounded-md p-1.5 sm:p-2 overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 group w-full max-w-[190px] sm:max-w-[210px] lg:max-w-[230px] h-[220px] sm:h-[280px] lg:h-[300px] mx-auto"
                             >
                                 <div className="rounded-md overflow-hidden relative flex-1 bg-gray-100">
                                     <img
@@ -104,9 +104,9 @@ export default function TeamSection() {
                                         className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                                     />
                                 </div>
-                                <div className="pt-3 pb-2 px-2 text-left">
-                                    <h3 className="text-lg font-bold text-gray-900 mb-0.5 tracking-tight">{member.name}</h3>
-                                    <p className="text-gray-500 font-medium text-sm">{member.role}</p>
+                                <div className="pt-2 sm:pt-3 pb-1 sm:pb-2 px-1 sm:px-2 text-left">
+                                    <h3 className="text-sm sm:text-lg font-bold text-gray-900 mb-0.5 tracking-tight leading-snug">{member.name}</h3>
+                                    <p className="text-gray-500 font-semibold text-[11px] sm:text-sm">{member.role}</p>
                                 </div>
                             </a>
                         ))}

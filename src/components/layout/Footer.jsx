@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import AnimatedButton from '../ui/AnimatedButton';
 
@@ -25,7 +26,7 @@ export default function Footer({ currentRoute }) {
     }, [trustBadges.length]);
 
     const tickerItems = technologies.map((tech) => ({
-        icon: "https://cdn.prod.website-files.com/6996a337655d586ffe288775/6996a337655d586ffe288792_Group%202087325406.svg",
+        icon: "/ticker.svg",
         text: tech
     }));
 
@@ -39,6 +40,7 @@ export default function Footer({ currentRoute }) {
                 { label: "Services", href: "/services", isCurrent: currentRoute === 'services' },
                 { label: "Portfolio", href: "/portfolio", isCurrent: currentRoute === 'portfolio' },
                 { label: "Careers", href: "/careers", isCurrent: currentRoute === 'careers' },
+                { label: "Hire Us", href: "/hire-us", isCurrent: currentRoute === 'hire-us' },
                 { label: "Contact", href: "/contact", isCurrent: currentRoute === 'contact' },
             ],
         }
@@ -128,9 +130,9 @@ export default function Footer({ currentRoute }) {
                                             <h3 className="footer-menu-title">{menu.title}</h3>
                                             <div className="footer-link-box">
                                                 {menu.links.map((link, lIdx) => (
-                                                    <a
+                                                    <Link
                                                         key={lIdx}
-                                                        href={link.href}
+                                                        to={link.href}
                                                         aria-current={link.isCurrent ? "page" : undefined}
                                                         className={`footer-link w-inline-block ${link.isCurrent ? 'w--current' : ''}`}
                                                     >
@@ -139,7 +141,7 @@ export default function Footer({ currentRoute }) {
                                                         ) : (
                                                             <div>{link.label}</div>
                                                         )}
-                                                    </a>
+                                                    </Link>
                                                 ))}
                                             </div>
                                         </div>

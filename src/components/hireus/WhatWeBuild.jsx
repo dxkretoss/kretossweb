@@ -5,6 +5,7 @@ import {
     Building2, Bot, Store, Calendar,
     Server, ShoppingCart, LayoutDashboard, Plug
 } from 'lucide-react';
+import Badge from '../ui/Badge';
 
 const items = [
     {
@@ -75,16 +76,18 @@ const WhatWeBuild = () => {
             <div className="container mx-auto px-6 w-layout-blockcontainer container-full-width w-container">
 
                 {/* Header */}
-                <motion.div 
+                <motion.div
                     className="text-center max-w-3xl mx-auto mb-8"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h3 className="text-blue-400 font-bold text-[12px] tracking-[0.15em] uppercase mb-4">
-                        What We Build
-                    </h3>
+
+
+                    <div className="flex items-center justify-center mb-4">
+                        <Badge variant='white'>What We Build</Badge>
+                    </div>
                     <h2 className="text-[24px] md:text-[36px] font-semibold leading-tight text-white mb-2">
                         Software for Every Business Need
                     </h2>
@@ -94,7 +97,7 @@ const WhatWeBuild = () => {
                 </motion.div>
 
                 {/* Grid */}
-                <motion.div 
+                <motion.div
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 max-w-7xl mx-auto"
                     initial="hidden"
                     whileInView="visible"

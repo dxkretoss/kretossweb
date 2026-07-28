@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import useDocumentMetadata from '../hooks/useDocumentMetadata';
 import { jobsData } from '../data/jobs';
 import AnimatedButton from './ui/AnimatedButton';
 
 export default function JobDetailsPage() {
     const { slug } = useParams();
     const job = jobsData.find(j => j.slug === slug);
+
+    useDocumentMetadata({
+        title: job ? `${job.title} | Careers | Kretoss Technology` : "Job Position | Careers | Kretoss Technology",
+        description: job ? `Apply for the ${job.title} position at Kretoss Technology. Read the details, requirements, responsibilities, and send your resume.` : "Apply for careers at Kretoss Technology."
+    });
 
     const [formData, setFormData] = useState({
         fullName: '',

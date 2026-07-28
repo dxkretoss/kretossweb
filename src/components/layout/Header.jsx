@@ -198,13 +198,13 @@ export default function Header({ currentRoute }) {
                     <div className="header-content-wrapper">
                         <div className="navbar-wrapper w-nav">
                             <div className="navbar-content">
-                                <a href="/" aria-current="page" className="nav-link w-nav-brand w--current" aria-label="home">
+                                <Link to="/" aria-current="page" className="nav-link w-nav-brand w--current" aria-label="home">
                                     <img
                                         alt="img"
                                         src="/kretoss-logo.svg"
                                         className="nav-logo"
                                     />
-                                </a>
+                                </Link>
 
 
                                 <nav
@@ -223,14 +223,14 @@ export default function Header({ currentRoute }) {
                                                     <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${link.highlight ? "text-[#44c7f6]" : ""} ${isMegaMenuOpen ? "rotate-180" : ""}`} />
                                                 </button>
                                             ) : (
-                                                <a
-                                                    href={link.href}
+                                                <Link
+                                                    to={link.href}
                                                     onClick={(e) => handleScroll(e, link.href)}
                                                     aria-current={link.current ? "page" : undefined}
                                                     className={`menu-link w-inline-block ${link.current ? "w--current" : ""} ${link.highlight ? "font-semibold transition-all duration-300" : ""}`}
                                                 >
                                                     <div className={`menu-txt m-0 p-0 leading-none ${link.highlight ? "text-transparent bg-clip-text bg-[linear-gradient(110deg,#44c7f6,45%,#ffffff,55%,#0037f0)] animate-shine" : ""}`}>{link.text}</div>
-                                                </a>
+                                                </Link>
                                             )}
 
                                             {link.isMegaMenuTrigger && (

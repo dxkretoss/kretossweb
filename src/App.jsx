@@ -11,12 +11,14 @@ import CareerPage from './components/CareerPage';
 import JobDetailsPage from './components/JobDetailsPage';
 import JobApplicationPage from './components/JobApplicationPage';
 import NotFoundPage from './components/NotFoundPage';
-import HireUsDetailsPage from './components/HireUsDetailsPage';
 import HireUsPage from './components/HireUsPage';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+window.ScrollTrigger = ScrollTrigger;
 
 function ScrollToTop() {
     const { pathname } = useLocation();
