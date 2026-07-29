@@ -806,6 +806,43 @@ export const portfolioData = {
                 },
 
                 {
+                        "slug": "kt-shopify",
+                        "portfolioImage": "/portfolio/shopify/portfolio_kt.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_kt_logo.png",
+                        "category": "Shopify",
+                        "tags": [
+                                "KT",
+                                "Shopify"
+                        ],
+                        "title": "KT",
+                        "description": "KT Life is a premium Shopify-based beauty and personal care brand offering salon-grade haircare, skincare, and grooming products for women, men, and kids. The platform delivers a seamless shopping experience with science-backed formulations and modern eCommerce design.",
+                        "acquisition": "N/A",
+                        "timeline": "1-2 Months",
+                        "country": "India",
+                        "techStack": "Shopify",
+                        "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
+                        "link": "/portfolio/kt-shopify"
+                },
+
+                {
+                        "slug": "empower",
+                        "portfolioImage": "/portfolio/shopify/portfolio_empower.png",
+                        "portfolioLogo": "/portfolio/shopify/portfolio_empower_logo.png",
+                        "category": "Shopify",
+                        "tags": [
+                                "Empower",
+                                "Shopify"
+                        ],
+                        "title": "Empower",
+                        "description": "Empower Health & Performance is a premium Shopify wellness brand offering science-backed recovery supplements. The platform combines engaging product education, seamless shopping, and a conversion-focused experience for active lifestyles.", "timeline": "1-2 Months",
+                        "acquisition": "N/A",
+                        "timeline": "2-4 Months",
+                        "country": "UK",
+                        "techStack": "Shopify",
+                        "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg",
+                        "link": "/portfolio/empower"
+                },
+                {
                         "slug": "femmefunn",
                         "portfolioImage": "/portfolio/shopify/portfolio_femmefunn.png",
                         "portfolioLogo": "/portfolio/shopify/portfolio_femmefunn_logo.png",
@@ -1516,6 +1553,24 @@ export const portfolioData = {
                         "techStack": "HTML + CSS + JS",
                         "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                         "link": "/portfolio/evergreen"
+                },
+                {
+                        "slug": "callsheet",
+                        "portfolioImage": "/portfolio/web-design/portfolio_callsheet.png",
+                        "portfolioLogo": "/portfolio/web-design/portfolio_callsheet_logo.png",
+                        "category": "Custom web",
+                        "tags": [
+                                "Callsheet",
+                                "Web"
+                        ],
+                        "title": "Callsheet",
+                        "description": "Callsheet is a modern production management platform that simplifies film and video shoot planning. It enables production teams to manage call sheets, cast, crew, locations, schedules, and daily operations through an intuitive web application.",
+                        "timeline": "2-3 Months",
+                        "acquisition": "N/A",
+                        "country": "India",
+                        "techStack": "React + Firebase",
+                        "techIcon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                        "link": "/portfolio/callsheet"
                 },
                 {
                         "slug": "skin-dao",

@@ -3171,6 +3171,169 @@ export const portfolioDetailsData = [
     },
 
     {
+        "slug": "empower",
+        "name": "Empower",
+        "portfolioImage": "/portfolio/shopify/portfolio_empower_full.jpg",
+        "category": "Shopify",
+        "timeline": "1-2 Months",
+        "techStack": "Shopify",
+        "link": "https://empowerhp.co.uk/",
+        "client": "Empower",
+        "description": "Empower Health & Performance is a premium Shopify wellness brand offering science-backed recovery supplements. The platform combines engaging product education, seamless shopping, and a conversion-focused experience for active lifestyles.",
+        "challenge": "Empower needed a premium Shopify storefront that effectively communicated the benefits of its Recovery Shot while building customer trust and increasing online conversions. The website had to educate visitors about recovery science, highlight product ingredients and certifications, showcase customer testimonials, support subscription purchases, and deliver a fast, mobile-first shopping experience that reflected the brand's premium positioning.",
+
+        "solution": "We developed a custom Shopify eCommerce experience centered around product education, conversion optimization, and brand storytelling. The storefront showcases the Recovery Shot with clear benefit sections, ingredient highlights, customer reviews, FAQs, subscription options, and a streamlined checkout process. Every page was optimized for performance, responsiveness, and user engagement to maximize customer confidence and sales.",
+
+        "keyFeatures": [
+            "Custom Shopify Storefront",
+            "Premium Health & Wellness eCommerce",
+            "Recovery Shot Product Showcase",
+            "Science-Backed Ingredient Sections",
+            "Subscription Purchase Integration",
+            "Customer Reviews & Testimonials",
+            "Interactive FAQ Section",
+            "Mobile-First Responsive Design",
+            "Secure Shopify Checkout",
+            "Performance & Speed Optimization",
+            "Brand Storytelling Experience",
+            "SEO-Friendly Shopify Architecture"
+        ],
+        "country": "UK",
+        "caseStudy": {
+            "overview": "Empower Health & Performance partnered with us to build a modern Shopify storefront that reflects its premium recovery brand. The objective was to educate customers about the Recovery Shot, simplify purchasing, promote subscriptions, and create a seamless shopping experience across all devices. We delivered a high-performing Shopify solution that combines engaging visuals, product education, and conversion-focused design to help grow the brand online.",
+
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Health & Wellness eCommerce",
+                "Subscription Commerce",
+                "Conversion Rate Optimization",
+                "Responsive Storefront Design",
+                "Performance Optimization",
+                "Customer Testimonial Integration",
+                "Scalable Shopify Architecture"
+            ],
+
+            "process": [
+                {
+                    "title": "Brand Discovery & Customer Experience Planning",
+                    "description": "We collaborated with the Empower team to understand their target audience, product positioning, recovery benefits, and subscription strategy. This enabled us to design a customer journey focused on education, trust, and conversion."
+                },
+                {
+                    "title": "Custom Shopify Store Development",
+                    "description": "We designed and developed a modern Shopify storefront featuring product benefit sections, ingredient highlights, customer testimonials, FAQs, subscription purchasing, responsive layouts, and intuitive navigation that simplifies the buying experience."
+                },
+                {
+                    "title": "Performance & Conversion Optimization",
+                    "description": "The store was optimized for fast loading, mobile performance, SEO, and secure checkout. Clear calls-to-action, streamlined product pages, and subscription-focused purchasing flows help maximize engagement and long-term customer retention."
+                }
+            ],
+
+            "results": [
+                "Delivered a premium Shopify storefront aligned with the Empower brand identity.",
+                "Created an engaging product education experience through ingredient and benefit sections.",
+                "Improved customer trust with testimonials, FAQs, and science-backed messaging.",
+                "Enhanced recurring revenue opportunities through subscription purchasing.",
+                "Built a responsive shopping experience optimized for desktop, tablet, and mobile devices.",
+                "Developed a scalable Shopify platform ready for future product expansion and brand growth."
+            ],
+
+            "testimonial": {
+                "image": "https://i.pravatar.cc/158?u=scott",
+                "text": "The new Shopify website perfectly represents our brand and makes it easy for customers to understand our product and complete their purchase. The shopping experience is fast, professional, and optimized for every device.",
+                "author": "Empower Team",
+                "position": "Empower Health & Performance"
+            }
+
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
+        }
+    },
+
+    {
+        "slug": "kt-shopify",
+        "name": "KT",
+        "portfolioImage": "/portfolio/shopify/portfolio_kt_full.jpg",
+        "category": "Shopify",
+        "timeline": "1-2 Months",
+        "techStack": "Shopify",
+        "link": "https://ktlife.in/",
+        "client": "KT",
+        "description": "KT Life is a premium Shopify-based beauty and personal care brand offering salon-grade haircare, skincare, and grooming products for women, men, and kids. The platform delivers a seamless shopping experience with science-backed formulations and modern eCommerce design.",
+
+        "challenge": "KT Life required a premium Shopify storefront capable of showcasing multiple beauty and personal care brands while delivering a fast, engaging, and conversion-focused shopping experience. The platform needed to support extensive product catalogs, educational content, customer reviews, promotional campaigns, and responsive shopping across all devices.",
+
+        "solution": "We developed a custom Shopify storefront focused on performance, brand storytelling, and conversion optimization. The platform highlights product collections, featured brands, customer testimonials, educational blogs, and promotional offers while providing a seamless shopping experience with secure checkout and mobile-first performance.",
+
+        "keyFeatures": [
+            "Custom Shopify Storefront",
+            "Multi-Brand Product Catalog",
+            "Haircare & Skincare Collections",
+            "Men, Women & Kids Categories",
+            "Customer Reviews & Testimonials",
+            "Promotional Campaigns & Offers",
+            "Educational Blog Integration",
+            "Responsive Mobile-First Design",
+            "Secure Shopify Checkout",
+            "Performance Optimized Storefront",
+            "SEO-Friendly Architecture",
+            "Scalable eCommerce Platform"
+        ],
+
+        "country": "India",
+        "caseStudy": {
+            "overview": "KT Life partnered with us to build a modern Shopify eCommerce platform for its growing portfolio of beauty and personal care brands. The objective was to create a premium shopping experience that showcases salon-grade products, promotes customer trust, and simplifies product discovery through an intuitive, high-performance storefront.",
+
+            "coreCapabilities": [
+                "Custom Shopify Development",
+                "Beauty & Personal Care eCommerce",
+                "Responsive Storefront Design",
+                "Conversion Rate Optimization",
+                "Performance Optimization",
+                "Content & Blog Integration",
+                "Customer Review Integration",
+                "Scalable Shopify Architecture"
+            ],
+
+            "process": [
+                {
+                    "title": "Brand Discovery & Store Planning",
+                    "description": "We collaborated with the KT Life team to understand their product portfolio, target audience, customer journey, and brand positioning. This helped us create a shopping experience focused on trust, education, and seamless product discovery."
+                },
+                {
+                    "title": "Custom Shopify Development",
+                    "description": "We designed and developed a responsive Shopify storefront featuring multiple product collections, promotional campaigns, customer reviews, educational blogs, featured products, and intuitive navigation to improve the overall shopping experience."
+                },
+                {
+                    "title": "Performance & Conversion Optimization",
+                    "description": "The platform was optimized for speed, SEO, mobile responsiveness, and secure checkout. Conversion-focused layouts, fast-loading pages, and scalable architecture ensure long-term business growth and an excellent user experience."
+                }
+            ],
+
+            "results": [
+                "Delivered a premium Shopify storefront aligned with the KT Life brand.",
+                "Improved product discovery through organized collections and intuitive navigation.",
+                "Enhanced customer engagement with educational blogs and testimonials.",
+                "Optimized shopping experience across desktop, tablet, and mobile devices.",
+                "Created a scalable eCommerce platform supporting multiple product categories.",
+                "Built a high-performance Shopify store ready for future product expansion."
+            ],
+
+            "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=olivia-green",
+                "text": "The Shopify store perfectly represents our brand and delivers an exceptional shopping experience. The platform is fast, visually engaging, and makes it easy for customers to discover products across all of our collections.",
+                "author": "Rahul Mehta",
+                "position": "KT Life"
+            }
+        },
+        "hireResources": {
+            "label": "Hire Shopify Developer",
+            "link": "/hire-us/hire-shopify-developers"
+        }
+    },
+
+    {
         "slug": "femmefunn",
         "name": "FemmeFunn",
         "portfolioImage": "/portfolio/shopify/portfolio_femmefunn_full.jpg",
@@ -7006,6 +7169,91 @@ export const portfolioDetailsData = [
             "link": "/hire-us/hire-web-developers"
         }
     },
+
+
+    {
+        "slug": "callsheet",
+        "name": "Callsheet",
+        "portfolioImage": "/portfolio/web-design/portfolio_callsheet_full.jpg",
+        "category": "web design",
+        "timeline": "2-3 Months",
+        "techStack": "React + Firebase",
+        "link": "https://callsheet-prototype.kretoss.in/",
+        "client": "IIC Metaverse",
+        "description": "Callsheet is a modern production management platform that simplifies film and video shoot planning. It enables production teams to manage call sheets, cast, crew, locations, schedules, and daily operations through an intuitive web application.",
+
+        "challenge": "Production teams often rely on spreadsheets and disconnected tools to manage daily shoot schedules, cast, crew, and location details, resulting in communication gaps and time-consuming manual work. Callsheet required a centralized platform that streamlines production planning, automates repetitive workflows, and provides a seamless experience across every stage of a shoot.",
+
+        "solution": "We developed a modern React and Firebase-based web application that digitizes the entire production workflow. The platform enables production managers to organize projects, manage cast and crew, generate professional call sheets, schedule shoot days, track locations, and collaborate efficiently through a responsive, user-friendly interface.",
+
+        "keyFeatures": [
+            "Production Dashboard",
+            "Call Sheet Management",
+            "Cast & Crew Management",
+            "Location Management",
+            "Scene & Schedule Planning",
+            "Project Management",
+            "Responsive Web Application",
+            "Firebase Authentication",
+            "Cloud Data Management",
+            "Modern React Interface",
+            "Real-Time Data Synchronization",
+            "Scalable Production Workflow"
+        ],
+
+        "country": "India",
+        "caseStudy": {
+            "overview": "Callsheet was developed to modernize film production management by replacing manual spreadsheets with a centralized digital platform. The application enables production teams to organize projects, manage cast and crew, schedule shoots, generate professional call sheets, and streamline daily production workflows through an intuitive cloud-based solution.",
+
+            "coreCapabilities": [
+                "React Application Development",
+                "Firebase Integration",
+                "Production Management System",
+                "Call Sheet Automation",
+                "Responsive UI/UX Design",
+                "Real-Time Database",
+                "Cloud-Based Workflow",
+                "Performance Optimization"
+            ],
+
+            "process": [
+                {
+                    "title": "Requirement Analysis & Workflow Planning",
+                    "description": "We worked closely with the client to understand real-world film production workflows, identifying how projects, call sheets, cast, crew, scenes, locations, and schedules should be managed within a unified platform."
+                },
+                {
+                    "title": "Application Design & Development",
+                    "description": "Using React and Firebase, we built a responsive production management system featuring project dashboards, cast and crew management, location tracking, scheduling tools, and professional call sheet generation with an intuitive user experience."
+                },
+                {
+                    "title": "Testing & Performance Optimization",
+                    "description": "The application was optimized for speed, scalability, and reliability with secure authentication, real-time cloud synchronization, responsive layouts, and a clean architecture capable of supporting growing production teams."
+                }
+            ],
+
+            "results": [
+                "Delivered a complete cloud-based production management platform.",
+                "Reduced manual work through centralized production workflows.",
+                "Simplified call sheet creation and production scheduling.",
+                "Improved collaboration between production teams and crew members.",
+                "Built a responsive application optimized for desktop and tablet usage.",
+                "Created a scalable foundation for future production management features."
+            ],
+
+            "testimonial": {
+                "image": "https://i.pravatar.cc/150?u=callsheet-production",
+                "text": "The platform has transformed how we organize film productions. Managing projects, cast, crew, schedules, and call sheets is now significantly faster and more efficient through a single, intuitive application.",
+                "author": "David Morgan",
+                "position": "Production Manager"
+            }
+        },
+
+        "hireResources": {
+            "label": "Hire Web Developer",
+            "link": "/hire-us/hire-web-developers"
+        }
+    },
+
 
     {
         "slug": "better-quest",
